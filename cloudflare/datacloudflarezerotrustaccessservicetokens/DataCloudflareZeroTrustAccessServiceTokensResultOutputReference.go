@@ -24,7 +24,6 @@ type DataCloudflareZeroTrustAccessServiceTokensResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -37,7 +36,6 @@ type DataCloudflareZeroTrustAccessServiceTokensResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareZeroTrustAccessServiceTokensResult
 	SetInternalValue(val *DataCloudflareZeroTrustAccessServiceTokensResult)
-	LastSeenAt() *string
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -47,7 +45,6 @@ type DataCloudflareZeroTrustAccessServiceTokensResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UpdatedAt() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -117,16 +114,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -187,16 +174,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) LastSeenAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastSeenAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -222,16 +199,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReferen
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
 		&returns,
 	)
 	return returns

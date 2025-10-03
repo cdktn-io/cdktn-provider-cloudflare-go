@@ -4223,7 +4223,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "consumerServiceUrl", GoGetter: "ConsumerServiceUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "consumerServiceUrlInput", GoGetter: "ConsumerServiceUrlInput"},
-			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "customAttributes", GoGetter: "CustomAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "customAttributesInput", GoGetter: "CustomAttributesInput"},
@@ -4297,7 +4296,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference{}

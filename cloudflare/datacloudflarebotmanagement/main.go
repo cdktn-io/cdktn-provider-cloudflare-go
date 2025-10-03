@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "autoUpdateModel", GoGetter: "AutoUpdateModel"},
 			_jsii_.MemberProperty{JsiiProperty: "bmCookieEnabled", GoGetter: "BmCookieEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "cfRobotsVariant", GoGetter: "CfRobotsVariant"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "crawlerProtection", GoGetter: "CrawlerProtection"},

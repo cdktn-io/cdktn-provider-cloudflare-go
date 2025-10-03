@@ -30,7 +30,6 @@ type DataCloudflareZeroTrustAccessApplicationsResultSaasAppOutputReference inter
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConsumerServiceUrl() *string
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -64,7 +63,6 @@ type DataCloudflareZeroTrustAccessApplicationsResultSaasAppOutputReference inter
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UpdatedAt() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -189,16 +187,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultSaasAppOutputR
 	_jsii_.Get(
 		j,
 		"consumerServiceUrl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultSaasAppOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -409,16 +397,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultSaasAppOutputR
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultSaasAppOutputReference) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
 		&returns,
 	)
 	return returns

@@ -12,13 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 type DataCloudflareZeroTrustAccessCustomPage interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AppCount() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -27,7 +26,6 @@ type DataCloudflareZeroTrustAccessCustomPage interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	CustomHtml() *string
 	CustomPageId() *string
 	SetCustomPageId(val *string)
@@ -66,7 +64,6 @@ type DataCloudflareZeroTrustAccessCustomPage interface {
 	TerraformResourceType() *string
 	Type() *string
 	Uid() *string
-	UpdatedAt() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -135,16 +132,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) AccountIdInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -170,16 +157,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) Count() interface{} 
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -365,18 +342,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) Uid() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
 func NewDataCloudflareZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessCustomPageConfig) DataCloudflareZeroTrustAccessCustomPage {
 	_init_.Initialize()
 
@@ -394,7 +361,7 @@ func NewDataCloudflareZeroTrustAccessCustomPage(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
 func NewDataCloudflareZeroTrustAccessCustomPage_Override(d DataCloudflareZeroTrustAccessCustomPage, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessCustomPageConfig) {
 	_init_.Initialize()
 

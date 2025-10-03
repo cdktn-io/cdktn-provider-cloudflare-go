@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_group cloudflare_zero_trust_access_group}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_group cloudflare_zero_trust_access_group}.
 type DataCloudflareZeroTrustAccessGroup interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -26,7 +26,6 @@ type DataCloudflareZeroTrustAccessGroup interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,7 +67,6 @@ type DataCloudflareZeroTrustAccessGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UpdatedAt() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -169,16 +167,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroup) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroup) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -394,16 +382,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroup) TerraformResourceType() *
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroup) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroup) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -425,7 +403,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroup) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_group cloudflare_zero_trust_access_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_group cloudflare_zero_trust_access_group} Data Source.
 func NewDataCloudflareZeroTrustAccessGroup(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessGroupConfig) DataCloudflareZeroTrustAccessGroup {
 	_init_.Initialize()
 
@@ -443,7 +421,7 @@ func NewDataCloudflareZeroTrustAccessGroup(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_access_group cloudflare_zero_trust_access_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_group cloudflare_zero_trust_access_group} Data Source.
 func NewDataCloudflareZeroTrustAccessGroup_Override(d DataCloudflareZeroTrustAccessGroup, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessGroupConfig) {
 	_init_.Initialize()
 

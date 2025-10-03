@@ -13,6 +13,7 @@ import (
 
 type WorkersScriptAssetsOutputReference interface {
 	cdktf.ComplexObject
+	AssetManifestSha256() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +31,9 @@ type WorkersScriptAssetsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Directory() *string
+	SetDirectory(val *string)
+	DirectoryInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -71,6 +75,7 @@ type WorkersScriptAssetsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfig(value *WorkersScriptAssetsConfig)
 	ResetConfig()
+	ResetDirectory()
 	ResetJwt()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -85,6 +90,16 @@ type WorkersScriptAssetsOutputReference interface {
 // The jsii proxy struct for WorkersScriptAssetsOutputReference
 type jsiiProxy_WorkersScriptAssetsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsOutputReference) AssetManifestSha256() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetManifestSha256",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WorkersScriptAssetsOutputReference) ComplexObjectIndex() interface{} {
@@ -132,6 +147,26 @@ func (j *jsiiProxy_WorkersScriptAssetsOutputReference) CreationStack() *[]*strin
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsOutputReference) Directory() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directory",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsOutputReference) DirectoryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directoryInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +278,17 @@ func (j *jsiiProxy_WorkersScriptAssetsOutputReference)SetComplexObjectIsFromSet(
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsOutputReference)SetDirectory(val *string) {
+	if err := j.validateSetDirectoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"directory",
 		val,
 	)
 }
@@ -492,6 +538,14 @@ func (w *jsiiProxy_WorkersScriptAssetsOutputReference) ResetConfig() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetConfig",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptAssetsOutputReference) ResetDirectory() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDirectory",
 		nil, // no parameters
 	)
 }

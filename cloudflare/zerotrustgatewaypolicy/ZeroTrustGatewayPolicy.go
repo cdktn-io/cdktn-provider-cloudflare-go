@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
 type ZeroTrustGatewayPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -74,7 +74,6 @@ type ZeroTrustGatewayPolicy interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	NotSharable() cdktf.IResolvable
 	Precedence() *float64
 	SetPrecedence(val *float64)
 	PrecedenceInput() *float64
@@ -93,6 +92,7 @@ type ZeroTrustGatewayPolicy interface {
 	RuleSettingsInput() interface{}
 	Schedule() ZeroTrustGatewayPolicyScheduleOutputReference
 	ScheduleInput() interface{}
+	Sharable() cdktf.IResolvable
 	SourceAccount() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -493,16 +493,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) NotSharable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"notSharable",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayPolicy) Precedence() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -603,6 +593,16 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) ScheduleInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) Sharable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sharable",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicy) SourceAccount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -694,7 +694,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) WarningStatus() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) ZeroTrustGatewayPolicy {
 	_init_.Initialize()
 
@@ -712,7 +712,7 @@ func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *Z
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy_Override(z ZeroTrustGatewayPolicy, scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) {
 	_init_.Initialize()
 

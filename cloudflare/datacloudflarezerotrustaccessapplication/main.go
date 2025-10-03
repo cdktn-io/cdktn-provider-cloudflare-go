@@ -31,7 +31,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "corsHeaders", GoGetter: "CorsHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "customDenyMessage", GoGetter: "CustomDenyMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "customDenyUrl", GoGetter: "CustomDenyUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "customNonIdentityDenyUrl", GoGetter: "CustomNonIdentityDenyUrl"},
@@ -97,7 +96,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
@@ -3826,7 +3824,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "consumerServiceUrl", GoGetter: "ConsumerServiceUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "customAttributes", GoGetter: "CustomAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "customClaims", GoGetter: "CustomClaims"},
@@ -3861,7 +3858,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustAccessApplicationSaasAppOutputReference{}

@@ -43,11 +43,11 @@ type DataCloudflareZeroTrustGatewayPoliciesResultOutputReference interface {
 	InternalValue() *DataCloudflareZeroTrustGatewayPoliciesResult
 	SetInternalValue(val *DataCloudflareZeroTrustGatewayPoliciesResult)
 	Name() *string
-	NotSharable() cdktf.IResolvable
 	Precedence() *float64
 	ReadOnly() cdktf.IResolvable
 	RuleSettings() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference
 	Schedule() DataCloudflareZeroTrustGatewayPoliciesResultScheduleOutputReference
+	Sharable() cdktf.IResolvable
 	SourceAccount() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -260,16 +260,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultOutputReference) NotSharable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"notSharable",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultOutputReference) Precedence() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -305,6 +295,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultOutputReference) 
 	_jsii_.Get(
 		j,
 		"schedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultOutputReference) Sharable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sharable",
 		&returns,
 	)
 	return returns

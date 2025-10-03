@@ -233,6 +233,7 @@ func init() {
 		"@cdktf/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelOutputReference",
 		reflect.TypeOf((*DataCloudflareMagicWanGreTunnelGreTunnelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "automaticReturnRouting", GoGetter: "AutomaticReturnRouting"},
 			_jsii_.MemberProperty{JsiiProperty: "bgp", GoGetter: "Bgp"},
 			_jsii_.MemberProperty{JsiiProperty: "bgpStatus", GoGetter: "BgpStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudflareGreEndpoint", GoGetter: "CloudflareGreEndpoint"},

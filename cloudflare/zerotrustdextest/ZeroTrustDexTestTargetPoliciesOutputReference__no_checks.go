@@ -59,19 +59,11 @@ func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetDefaultParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
 

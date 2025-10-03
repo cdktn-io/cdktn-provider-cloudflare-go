@@ -103,6 +103,10 @@ func (j *jsiiProxy_BotManagement) validateSetBmCookieEnabledParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_BotManagement) validateSetCfRobotsVariantParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotManagement) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

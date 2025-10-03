@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
 type ZeroTrustDexTest interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -73,9 +73,7 @@ type ZeroTrustDexTest interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Targeted() interface{}
-	SetTargeted(val interface{})
-	TargetedInput() interface{}
+	Targeted() cdktf.IResolvable
 	TargetPolicies() ZeroTrustDexTestTargetPoliciesList
 	TargetPoliciesInput() interface{}
 	// Experimental.
@@ -134,7 +132,6 @@ type ZeroTrustDexTest interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTargeted()
 	ResetTargetPolicies()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -414,21 +411,11 @@ func (j *jsiiProxy_ZeroTrustDexTest) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTest) Targeted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustDexTest) Targeted() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"targeted",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDexTest) TargetedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"targetedInput",
 		&returns,
 	)
 	return returns
@@ -495,7 +482,7 @@ func (j *jsiiProxy_ZeroTrustDexTest) TestId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
 func NewZeroTrustDexTest(scope constructs.Construct, id *string, config *ZeroTrustDexTestConfig) ZeroTrustDexTest {
 	_init_.Initialize()
 
@@ -513,7 +500,7 @@ func NewZeroTrustDexTest(scope constructs.Construct, id *string, config *ZeroTru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
 func NewZeroTrustDexTest_Override(z ZeroTrustDexTest, scope constructs.Construct, id *string, config *ZeroTrustDexTestConfig) {
 	_init_.Initialize()
 
@@ -643,17 +630,6 @@ func (j *jsiiProxy_ZeroTrustDexTest)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustDexTest)SetTargeted(val interface{}) {
-	if err := j.validateSetTargetedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"targeted",
 		val,
 	)
 }
@@ -1045,14 +1021,6 @@ func (z *jsiiProxy_ZeroTrustDexTest) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDexTest) ResetTargeted() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetTargeted",
 		nil, // no parameters
 	)
 }

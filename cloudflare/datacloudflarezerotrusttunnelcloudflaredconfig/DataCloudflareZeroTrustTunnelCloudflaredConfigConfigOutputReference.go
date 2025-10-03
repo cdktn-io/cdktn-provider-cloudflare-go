@@ -42,7 +42,6 @@ type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOutputReference interfa
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WarpRouting() DataCloudflareZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -167,16 +166,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOutputRef
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOutputReference) WarpRouting() DataCloudflareZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference {
-	var returns DataCloudflareZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference
-	_jsii_.Get(
-		j,
-		"warpRouting",
 		&returns,
 	)
 	return returns

@@ -5,61 +5,63 @@ package zerotrustgatewaysettings
 
 
 type ZeroTrustGatewaySettingsSettings struct {
-	// Activity log settings.
+	// Specify activity log settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#activity_log ZeroTrustGatewaySettings#activity_log}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#activity_log ZeroTrustGatewaySettings#activity_log}
 	ActivityLog *ZeroTrustGatewaySettingsSettingsActivityLog `field:"optional" json:"activityLog" yaml:"activityLog"`
-	// Anti-virus settings.
+	// Specify anti-virus settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#antivirus ZeroTrustGatewaySettings#antivirus}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#antivirus ZeroTrustGatewaySettings#antivirus}
 	Antivirus *ZeroTrustGatewaySettingsSettingsAntivirus `field:"optional" json:"antivirus" yaml:"antivirus"`
-	// Block page layout settings.
+	// Specify block page layout settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#block_page ZeroTrustGatewaySettings#block_page}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#block_page ZeroTrustGatewaySettings#block_page}
 	BlockPage *ZeroTrustGatewaySettingsSettingsBlockPage `field:"optional" json:"blockPage" yaml:"blockPage"`
-	// DLP body scanning settings.
+	// Specify the DLP inspection mode.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#body_scanning ZeroTrustGatewaySettings#body_scanning}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#body_scanning ZeroTrustGatewaySettings#body_scanning}
 	BodyScanning *ZeroTrustGatewaySettingsSettingsBodyScanning `field:"optional" json:"bodyScanning" yaml:"bodyScanning"`
-	// Browser isolation settings.
+	// Specify Clientless Browser Isolation settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#browser_isolation ZeroTrustGatewaySettings#browser_isolation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#browser_isolation ZeroTrustGatewaySettings#browser_isolation}
 	BrowserIsolation *ZeroTrustGatewaySettingsSettingsBrowserIsolation `field:"optional" json:"browserIsolation" yaml:"browserIsolation"`
-	// Certificate settings for Gateway TLS interception. If not specified, the Cloudflare Root CA will be used.
+	// Specify certificate settings for Gateway TLS interception. If unset, the Cloudflare Root CA handles interception.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#certificate ZeroTrustGatewaySettings#certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#certificate ZeroTrustGatewaySettings#certificate}
 	Certificate *ZeroTrustGatewaySettingsSettingsCertificate `field:"optional" json:"certificate" yaml:"certificate"`
-	// Custom certificate settings for BYO-PKI. (deprecated and replaced by `certificate`).
+	// Specify custom certificate settings for BYO-PKI. This field is deprecated; use `certificate` instead.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#custom_certificate ZeroTrustGatewaySettings#custom_certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#custom_certificate ZeroTrustGatewaySettings#custom_certificate}
 	CustomCertificate *ZeroTrustGatewaySettingsSettingsCustomCertificate `field:"optional" json:"customCertificate" yaml:"customCertificate"`
-	// Extended e-mail matching settings.
+	// Specify user email settings for the firewall policies.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#extended_email_matching ZeroTrustGatewaySettings#extended_email_matching}
+	// When this is enabled, we standardize the email addresses in the identity part of the rule, so that they match the extended email variants in the firewall policies. When this setting is turned off, the email addresses in the identity part of the rule will be matched exactly as provided. If your email has `.` or `+` modifiers, you should enable this setting.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#extended_email_matching ZeroTrustGatewaySettings#extended_email_matching}
 	ExtendedEmailMatching *ZeroTrustGatewaySettingsSettingsExtendedEmailMatching `field:"optional" json:"extendedEmailMatching" yaml:"extendedEmailMatching"`
-	// FIPS settings.
+	// Specify FIPS settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#fips ZeroTrustGatewaySettings#fips}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#fips ZeroTrustGatewaySettings#fips}
 	Fips *ZeroTrustGatewaySettingsSettingsFips `field:"optional" json:"fips" yaml:"fips"`
-	// Setting to enable host selector in egress policies.
+	// Enable host selection in egress policies.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#host_selector ZeroTrustGatewaySettings#host_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#host_selector ZeroTrustGatewaySettings#host_selector}
 	HostSelector *ZeroTrustGatewaySettingsSettingsHostSelector `field:"optional" json:"hostSelector" yaml:"hostSelector"`
-	// Setting to define inspection settings.
+	// Define the proxy inspection mode.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#inspection ZeroTrustGatewaySettings#inspection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#inspection ZeroTrustGatewaySettings#inspection}
 	Inspection *ZeroTrustGatewaySettingsSettingsInspection `field:"optional" json:"inspection" yaml:"inspection"`
-	// Protocol Detection settings.
+	// Specify whether to detect protocols from the initial bytes of client traffic.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#protocol_detection ZeroTrustGatewaySettings#protocol_detection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#protocol_detection ZeroTrustGatewaySettings#protocol_detection}
 	ProtocolDetection *ZeroTrustGatewaySettingsSettingsProtocolDetection `field:"optional" json:"protocolDetection" yaml:"protocolDetection"`
-	// Sandbox settings.
+	// Specify whether to enable the sandbox.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#sandbox ZeroTrustGatewaySettings#sandbox}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#sandbox ZeroTrustGatewaySettings#sandbox}
 	Sandbox *ZeroTrustGatewaySettingsSettingsSandbox `field:"optional" json:"sandbox" yaml:"sandbox"`
-	// TLS interception settings.
+	// Specify whether to inspect encrypted HTTP traffic.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#tls_decrypt ZeroTrustGatewaySettings#tls_decrypt}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/zero_trust_gateway_settings#tls_decrypt ZeroTrustGatewaySettings#tls_decrypt}
 	TlsDecrypt *ZeroTrustGatewaySettingsSettingsTlsDecrypt `field:"optional" json:"tlsDecrypt" yaml:"tlsDecrypt"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktf.TerraformResource
 	AiBotsProtection() *string
@@ -26,6 +26,9 @@ type BotManagement interface {
 	BmCookieEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CfRobotsVariant() *string
+	SetCfRobotsVariant(val *string)
+	CfRobotsVariantInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -152,6 +155,7 @@ type BotManagement interface {
 	ResetAiBotsProtection()
 	ResetAutoUpdateModel()
 	ResetBmCookieEnabled()
+	ResetCfRobotsVariant()
 	ResetCrawlerProtection()
 	ResetEnableJs()
 	ResetFightMode()
@@ -248,6 +252,26 @@ func (j *jsiiProxy_BotManagement) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) CfRobotsVariant() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cfRobotsVariant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) CfRobotsVariantInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cfRobotsVariantInput",
 		&returns,
 	)
 	return returns
@@ -654,7 +678,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -672,7 +696,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -712,6 +736,17 @@ func (j *jsiiProxy_BotManagement)SetBmCookieEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"bmCookieEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetCfRobotsVariant(val *string) {
+	if err := j.validateSetCfRobotsVariantParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cfRobotsVariant",
 		val,
 	)
 }
@@ -1278,6 +1313,14 @@ func (b *jsiiProxy_BotManagement) ResetBmCookieEnabled() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetBmCookieEnabled",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetCfRobotsVariant() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCfRobotsVariant",
 		nil, // no parameters
 	)
 }

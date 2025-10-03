@@ -24,7 +24,6 @@ type DataCloudflareZeroTrustAccessMtlsCertificatesResultOutputReference interfac
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -46,7 +45,6 @@ type DataCloudflareZeroTrustAccessMtlsCertificatesResultOutputReference interfac
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UpdatedAt() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -111,16 +109,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificatesResultOutputRefe
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificatesResultOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -211,16 +199,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificatesResultOutputRefe
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificatesResultOutputReference) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
 		&returns,
 	)
 	return returns

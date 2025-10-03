@@ -17,11 +17,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "appCount", GoGetter: "AppCount"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "customHtml", GoGetter: "CustomHtml"},
 			_jsii_.MemberProperty{JsiiProperty: "customPageId", GoGetter: "CustomPageId"},
 			_jsii_.MemberProperty{JsiiProperty: "customPageIdInput", GoGetter: "CustomPageIdInput"},
@@ -59,7 +57,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustAccessCustomPage{}

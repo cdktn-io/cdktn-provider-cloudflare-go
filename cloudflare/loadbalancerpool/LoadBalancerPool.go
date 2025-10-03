@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
 type LoadBalancerPool interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -72,6 +72,9 @@ type LoadBalancerPool interface {
 	ModifiedOn() *string
 	Monitor() *string
 	SetMonitor(val *string)
+	MonitorGroup() *string
+	SetMonitorGroup(val *string)
+	MonitorGroupInput() *string
 	MonitorInput() *string
 	Name() *string
 	SetName(val *string)
@@ -159,6 +162,7 @@ type LoadBalancerPool interface {
 	ResetLongitude()
 	ResetMinimumOrigins()
 	ResetMonitor()
+	ResetMonitorGroup()
 	ResetNotificationEmail()
 	ResetNotificationFilter()
 	ResetOriginSteering()
@@ -483,6 +487,26 @@ func (j *jsiiProxy_LoadBalancerPool) Monitor() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerPool) MonitorGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitorGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPool) MonitorGroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitorGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerPool) MonitorInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -674,7 +698,7 @@ func (j *jsiiProxy_LoadBalancerPool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) LoadBalancerPool {
 	_init_.Initialize()
 
@@ -692,7 +716,7 @@ func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool_Override(l LoadBalancerPool, scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) {
 	_init_.Initialize()
 
@@ -836,6 +860,17 @@ func (j *jsiiProxy_LoadBalancerPool)SetMonitor(val *string) {
 	_jsii_.Set(
 		j,
 		"monitor",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerPool)SetMonitorGroup(val *string) {
+	if err := j.validateSetMonitorGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monitorGroup",
 		val,
 	)
 }
@@ -1338,6 +1373,14 @@ func (l *jsiiProxy_LoadBalancerPool) ResetMonitor() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetMonitor",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPool) ResetMonitorGroup() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMonitorGroup",
 		nil, // no parameters
 	)
 }

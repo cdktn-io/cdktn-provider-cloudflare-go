@@ -16,6 +16,12 @@ type WorkerVersionBindingsOutputReference interface {
 	Algorithm() *string
 	SetAlgorithm(val *string)
 	AlgorithmInput() *string
+	AllowedDestinationAddresses() *[]*string
+	SetAllowedDestinationAddresses(val *[]*string)
+	AllowedDestinationAddressesInput() *[]*string
+	AllowedSenderAddresses() *[]*string
+	SetAllowedSenderAddresses(val *[]*string)
+	AllowedSenderAddressesInput() *[]*string
 	BucketName() *string
 	SetBucketName(val *string)
 	BucketNameInput() *string
@@ -43,6 +49,9 @@ type WorkerVersionBindingsOutputReference interface {
 	Dataset() *string
 	SetDataset(val *string)
 	DatasetInput() *string
+	DestinationAddress() *string
+	SetDestinationAddress(val *string)
+	DestinationAddressInput() *string
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
@@ -62,6 +71,9 @@ type WorkerVersionBindingsOutputReference interface {
 	Json() *string
 	SetJson(val *string)
 	JsonInput() *string
+	Jurisdiction() *string
+	SetJurisdiction(val *string)
+	JurisdictionInput() *string
 	KeyBase64() *string
 	SetKeyBase64(val *string)
 	KeyBase64Input() *string
@@ -77,8 +89,14 @@ type WorkerVersionBindingsOutputReference interface {
 	SetNamespaceId(val *string)
 	NamespaceIdInput() *string
 	NamespaceInput() *string
+	OldName() *string
+	SetOldName(val *string)
+	OldNameInput() *string
 	Outbound() WorkerVersionBindingsOutboundOutputReference
 	OutboundInput() interface{}
+	Part() *string
+	SetPart(val *string)
+	PartInput() *string
 	Pipeline() *string
 	SetPipeline(val *string)
 	PipelineInput() *string
@@ -114,6 +132,9 @@ type WorkerVersionBindingsOutputReference interface {
 	Usages() *[]*string
 	SetUsages(val *[]*string)
 	UsagesInput() *[]*string
+	VersionId() *string
+	SetVersionId(val *string)
+	VersionIdInput() *string
 	WorkflowName() *string
 	SetWorkflowName(val *string)
 	WorkflowNameInput() *string
@@ -143,20 +164,26 @@ type WorkerVersionBindingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOutbound(value *WorkerVersionBindingsOutbound)
 	ResetAlgorithm()
+	ResetAllowedDestinationAddresses()
+	ResetAllowedSenderAddresses()
 	ResetBucketName()
 	ResetCertificateId()
 	ResetClassName()
 	ResetDataset()
+	ResetDestinationAddress()
 	ResetEnvironment()
 	ResetFormat()
 	ResetId()
 	ResetIndexName()
 	ResetJson()
+	ResetJurisdiction()
 	ResetKeyBase64()
 	ResetKeyJwk()
 	ResetNamespace()
 	ResetNamespaceId()
+	ResetOldName()
 	ResetOutbound()
+	ResetPart()
 	ResetPipeline()
 	ResetQueueName()
 	ResetScriptName()
@@ -165,6 +192,7 @@ type WorkerVersionBindingsOutputReference interface {
 	ResetStoreId()
 	ResetText()
 	ResetUsages()
+	ResetVersionId()
 	ResetWorkflowName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -196,6 +224,46 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) AlgorithmInput() *strin
 	_jsii_.Get(
 		j,
 		"algorithmInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) AllowedDestinationAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedDestinationAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) AllowedDestinationAddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedDestinationAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) AllowedSenderAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedSenderAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) AllowedSenderAddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedSenderAddressesInput",
 		&returns,
 	)
 	return returns
@@ -306,6 +374,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) DatasetInput() *string 
 	_jsii_.Get(
 		j,
 		"datasetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) DestinationAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) DestinationAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationAddressInput",
 		&returns,
 	)
 	return returns
@@ -431,6 +519,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) JsonInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) JurisdictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) KeyBase64() *string {
 	var returns *string
 	_jsii_.Get(
@@ -531,6 +639,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) NamespaceInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) OldName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oldName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) OldNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oldNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) Outbound() WorkerVersionBindingsOutboundOutputReference {
 	var returns WorkerVersionBindingsOutboundOutputReference
 	_jsii_.Get(
@@ -546,6 +674,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) OutboundInput() interfa
 	_jsii_.Get(
 		j,
 		"outboundInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) Part() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"part",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) PartInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partInput",
 		&returns,
 	)
 	return returns
@@ -751,6 +899,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) UsagesInput() *[]*strin
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) VersionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) VersionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) WorkflowName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -806,6 +974,28 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetAlgorithm(val *string
 	_jsii_.Set(
 		j,
 		"algorithm",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetAllowedDestinationAddresses(val *[]*string) {
+	if err := j.validateSetAllowedDestinationAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedDestinationAddresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetAllowedSenderAddresses(val *[]*string) {
+	if err := j.validateSetAllowedSenderAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedSenderAddresses",
 		val,
 	)
 }
@@ -876,6 +1066,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetDataset(val *string) 
 	)
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetDestinationAddress(val *string) {
+	if err := j.validateSetDestinationAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinationAddress",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetEnvironment(val *string) {
 	if err := j.validateSetEnvironmentParameters(val); err != nil {
 		panic(err)
@@ -942,6 +1143,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetJson(val *string) {
 	)
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetJurisdiction(val *string) {
+	if err := j.validateSetJurisdictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jurisdiction",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetKeyBase64(val *string) {
 	if err := j.validateSetKeyBase64Parameters(val); err != nil {
 		panic(err)
@@ -993,6 +1205,28 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetNamespaceId(val *stri
 	_jsii_.Set(
 		j,
 		"namespaceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetOldName(val *string) {
+	if err := j.validateSetOldNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oldName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetPart(val *string) {
+	if err := j.validateSetPartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"part",
 		val,
 	)
 }
@@ -1114,6 +1348,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetUsages(val *[]*string
 	_jsii_.Set(
 		j,
 		"usages",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetVersionId(val *string) {
+	if err := j.validateSetVersionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"versionId",
 		val,
 	)
 }
@@ -1334,6 +1579,22 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetAlgorithm() {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetAllowedDestinationAddresses() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAllowedDestinationAddresses",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetAllowedSenderAddresses() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAllowedSenderAddresses",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetBucketName() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1362,6 +1623,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetDataset() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetDataset",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetDestinationAddress() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDestinationAddress",
 		nil, // no parameters
 	)
 }
@@ -1406,6 +1675,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetJson() {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetJurisdiction() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJurisdiction",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetKeyBase64() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1438,10 +1715,26 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetNamespaceId() {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetOldName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOldName",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetOutbound() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOutbound",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetPart() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPart",
 		nil, // no parameters
 	)
 }
@@ -1506,6 +1799,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetUsages() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetUsages",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetVersionId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetVersionId",
 		nil, // no parameters
 	)
 }

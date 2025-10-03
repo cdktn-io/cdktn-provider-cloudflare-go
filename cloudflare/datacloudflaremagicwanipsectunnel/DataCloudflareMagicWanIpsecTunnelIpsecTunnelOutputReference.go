@@ -14,6 +14,7 @@ import (
 type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
 	cdktf.ComplexObject
 	AllowNullCipher() cdktf.IResolvable
+	AutomaticReturnRouting() cdktf.IResolvable
 	Bgp() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference
 	BgpStatus() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpStatusOutputReference
 	CloudflareEndpoint() *string
@@ -34,6 +35,7 @@ type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomerEndpoint() *string
+	CustomRemoteIdentities() DataCloudflareMagicWanIpsecTunnelIpsecTunnelCustomRemoteIdentitiesOutputReference
 	Description() *string
 	// Experimental.
 	Fqn() *string
@@ -99,6 +101,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	_jsii_.Get(
 		j,
 		"allowNullCipher",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) AutomaticReturnRouting() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"automaticReturnRouting",
 		&returns,
 	)
 	return returns
@@ -179,6 +191,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	_jsii_.Get(
 		j,
 		"customerEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) CustomRemoteIdentities() DataCloudflareMagicWanIpsecTunnelIpsecTunnelCustomRemoteIdentitiesOutputReference {
+	var returns DataCloudflareMagicWanIpsecTunnelIpsecTunnelCustomRemoteIdentitiesOutputReference
+	_jsii_.Get(
+		j,
+		"customRemoteIdentities",
 		&returns,
 	)
 	return returns

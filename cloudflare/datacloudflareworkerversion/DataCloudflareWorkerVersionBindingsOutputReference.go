@@ -14,6 +14,8 @@ import (
 type DataCloudflareWorkerVersionBindingsOutputReference interface {
 	cdktf.ComplexObject
 	Algorithm() *string
+	AllowedDestinationAddresses() *[]*string
+	AllowedSenderAddresses() *[]*string
 	BucketName() *string
 	CertificateId() *string
 	ClassName() *string
@@ -33,6 +35,7 @@ type DataCloudflareWorkerVersionBindingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Dataset() *string
+	DestinationAddress() *string
 	Environment() *string
 	Format() *string
 	// Experimental.
@@ -42,12 +45,15 @@ type DataCloudflareWorkerVersionBindingsOutputReference interface {
 	InternalValue() *DataCloudflareWorkerVersionBindings
 	SetInternalValue(val *DataCloudflareWorkerVersionBindings)
 	Json() *string
+	Jurisdiction() *string
 	KeyBase64() *string
 	KeyJwk() *string
 	Name() *string
 	Namespace() *string
 	NamespaceId() *string
+	OldName() *string
 	Outbound() DataCloudflareWorkerVersionBindingsOutboundOutputReference
+	Part() *string
 	Pipeline() *string
 	QueueName() *string
 	ScriptName() *string
@@ -65,6 +71,7 @@ type DataCloudflareWorkerVersionBindingsOutputReference interface {
 	Text() *string
 	Type() *string
 	Usages() *[]*string
+	VersionId() *string
 	WorkflowName() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -110,6 +117,26 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Algorithm
 	_jsii_.Get(
 		j,
 		"algorithm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) AllowedDestinationAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedDestinationAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) AllowedSenderAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedSenderAddresses",
 		&returns,
 	)
 	return returns
@@ -185,6 +212,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Dataset()
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) DestinationAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationAddress",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Environment() *string {
 	var returns *string
 	_jsii_.Get(
@@ -255,6 +292,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Json() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) KeyBase64() *string {
 	var returns *string
 	_jsii_.Get(
@@ -305,11 +352,31 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Namespace
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) OldName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oldName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Outbound() DataCloudflareWorkerVersionBindingsOutboundOutputReference {
 	var returns DataCloudflareWorkerVersionBindingsOutboundOutputReference
 	_jsii_.Get(
 		j,
 		"outbound",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Part() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"part",
 		&returns,
 	)
 	return returns
@@ -420,6 +487,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Usages() 
 	_jsii_.Get(
 		j,
 		"usages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) VersionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionId",
 		&returns,
 	)
 	return returns

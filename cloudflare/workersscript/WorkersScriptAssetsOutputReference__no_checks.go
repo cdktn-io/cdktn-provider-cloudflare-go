@@ -63,6 +63,10 @@ func (j *jsiiProxy_WorkersScriptAssetsOutputReference) validateSetComplexObjectI
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptAssetsOutputReference) validateSetDirectoryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptAssetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

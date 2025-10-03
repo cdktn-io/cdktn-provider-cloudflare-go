@@ -71,6 +71,7 @@ type ZoneDnsSettingsNameserversOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetNsSet()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -491,6 +492,14 @@ func (z *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) ResetNsSet() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetNsSet",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetType",
 		nil, // no parameters
 	)
 }

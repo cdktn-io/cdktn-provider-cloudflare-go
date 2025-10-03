@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareMagicWanGreTunnelGreTunnelOutputReference interface {
 	cdktf.ComplexObject
+	AutomaticReturnRouting() cdktf.IResolvable
 	Bgp() DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference
 	BgpStatus() DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference
 	CloudflareGreEndpoint() *string
@@ -91,6 +92,16 @@ type DataCloudflareMagicWanGreTunnelGreTunnelOutputReference interface {
 // The jsii proxy struct for DataCloudflareMagicWanGreTunnelGreTunnelOutputReference
 type jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) AutomaticReturnRouting() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"automaticReturnRouting",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) Bgp() DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference {

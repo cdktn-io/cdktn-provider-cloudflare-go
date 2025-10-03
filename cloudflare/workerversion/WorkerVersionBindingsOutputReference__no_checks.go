@@ -59,6 +59,14 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetAlgorithmPar
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetAllowedDestinationAddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetAllowedSenderAddressesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetBucketNameParameters(val *string) error {
 	return nil
 }
@@ -80,6 +88,10 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetComplexObjec
 }
 
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetDatasetParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetDestinationAddressParameters(val *string) error {
 	return nil
 }
 
@@ -107,6 +119,10 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetJsonParamete
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetJurisdictionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetKeyBase64Parameters(val *string) error {
 	return nil
 }
@@ -124,6 +140,14 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetNamespacePar
 }
 
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetNamespaceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetOldNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetPartParameters(val *string) error {
 	return nil
 }
 
@@ -168,6 +192,10 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetTypeParamete
 }
 
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetUsagesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetVersionIdParameters(val *string) error {
 	return nil
 }
 

@@ -34,6 +34,7 @@ type DataCloudflareAccountsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareAccountsResult
 	SetInternalValue(val *DataCloudflareAccountsResult)
+	ManagedBy() DataCloudflareAccountsResultManagedByOutputReference
 	Name() *string
 	Settings() DataCloudflareAccountsResultSettingsOutputReference
 	// Experimental.
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataCloudflareAccountsResultOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountsResultOutputReference) ManagedBy() DataCloudflareAccountsResultManagedByOutputReference {
+	var returns DataCloudflareAccountsResultManagedByOutputReference
+	_jsii_.Get(
+		j,
+		"managedBy",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project cloudflare_pages_project}.
 type PagesProject interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -47,6 +47,8 @@ type PagesProject interface {
 	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
+	Framework() *string
+	FrameworkVersion() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
@@ -60,9 +62,11 @@ type PagesProject interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PreviewScriptName() *string
 	ProductionBranch() *string
 	SetProductionBranch(val *string)
 	ProductionBranchInput() *string
+	ProductionScriptName() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,6 +86,7 @@ type PagesProject interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UsesFunctions() cdktf.IResolvable
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -133,7 +138,6 @@ type PagesProject interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProductionBranch()
 	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -313,6 +317,26 @@ func (j *jsiiProxy_PagesProject) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PagesProject) Framework() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"framework",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProject) FrameworkVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"frameworkVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProject) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -383,6 +407,16 @@ func (j *jsiiProxy_PagesProject) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PagesProject) PreviewScriptName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"previewScriptName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProject) ProductionBranch() *string {
 	var returns *string
 	_jsii_.Get(
@@ -398,6 +432,16 @@ func (j *jsiiProxy_PagesProject) ProductionBranchInput() *string {
 	_jsii_.Get(
 		j,
 		"productionBranchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProject) ProductionScriptName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"productionScriptName",
 		&returns,
 	)
 	return returns
@@ -493,8 +537,18 @@ func (j *jsiiProxy_PagesProject) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PagesProject) UsesFunctions() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"usesFunctions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjectConfig) PagesProject {
 	_init_.Initialize()
 
@@ -512,7 +566,7 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject_Override(p PagesProject, scope constructs.Construct, id *string, config *PagesProjectConfig) {
 	_init_.Initialize()
 
@@ -1030,14 +1084,6 @@ func (p *jsiiProxy_PagesProject) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PagesProject) ResetProductionBranch() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetProductionBranch",
 		nil, // no parameters
 	)
 }

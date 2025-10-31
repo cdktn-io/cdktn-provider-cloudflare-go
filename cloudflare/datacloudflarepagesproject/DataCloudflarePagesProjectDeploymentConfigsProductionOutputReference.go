@@ -14,8 +14,10 @@ import (
 type DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference interface {
 	cdktf.ComplexObject
 	AiBindings() DataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsMap
+	AlwaysUseLatestCompatibilityDate() cdktf.IResolvable
 	AnalyticsEngineDatasets() DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap
 	Browsers() DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap
+	BuildImageMajorVersion() *float64
 	CompatibilityDate() *string
 	CompatibilityFlags() *[]*string
 	// the index of the complex object in a list.
@@ -36,12 +38,14 @@ type DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference interf
 	D1Databases() DataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesMap
 	DurableObjectNamespaces() DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap
 	EnvVars() DataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsMap
+	FailOpen() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	HyperdriveBindings() DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsMap
 	InternalValue() *DataCloudflarePagesProjectDeploymentConfigsProduction
 	SetInternalValue(val *DataCloudflarePagesProjectDeploymentConfigsProduction)
 	KvNamespaces() DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMap
+	Limits() DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference
 	MtlsCertificates() DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesMap
 	Placement() DataCloudflarePagesProjectDeploymentConfigsProductionPlacementOutputReference
 	QueueProducers() DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersMap
@@ -55,7 +59,9 @@ type DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference interf
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UsageModel() *string
 	VectorizeBindings() DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap
+	WranglerConfigHash() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -105,6 +111,16 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference) AlwaysUseLatestCompatibilityDate() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"alwaysUseLatestCompatibilityDate",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference) AnalyticsEngineDatasets() DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap {
 	var returns DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap
 	_jsii_.Get(
@@ -120,6 +136,16 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputRe
 	_jsii_.Get(
 		j,
 		"browsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference) BuildImageMajorVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"buildImageMajorVersion",
 		&returns,
 	)
 	return returns
@@ -205,6 +231,16 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference) FailOpen() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"failOpen",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -240,6 +276,16 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputRe
 	_jsii_.Get(
 		j,
 		"kvNamespaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference) Limits() DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference {
+	var returns DataCloudflarePagesProjectDeploymentConfigsProductionLimitsOutputReference
+	_jsii_.Get(
+		j,
+		"limits",
 		&returns,
 	)
 	return returns
@@ -315,11 +361,31 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference) UsageModel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usageModel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference) VectorizeBindings() DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap {
 	var returns DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsMap
 	_jsii_.Get(
 		j,
 		"vectorizeBindings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionOutputReference) WranglerConfigHash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wranglerConfigHash",
 		&returns,
 	)
 	return returns

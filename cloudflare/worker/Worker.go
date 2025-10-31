@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker cloudflare_worker}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/worker cloudflare_worker}.
 type Worker interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -68,6 +68,7 @@ type Worker interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	References() WorkerReferencesOutputReference
 	Subdomain() WorkerSubdomainOutputReference
 	SubdomainInput() interface{}
 	Tags() *[]*string
@@ -384,6 +385,16 @@ func (j *jsiiProxy_Worker) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Worker) References() WorkerReferencesOutputReference {
+	var returns WorkerReferencesOutputReference
+	_jsii_.Get(
+		j,
+		"references",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Worker) Subdomain() WorkerSubdomainOutputReference {
 	var returns WorkerSubdomainOutputReference
 	_jsii_.Get(
@@ -485,7 +496,7 @@ func (j *jsiiProxy_Worker) UpdatedOn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker cloudflare_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/worker cloudflare_worker} Resource.
 func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Worker {
 	_init_.Initialize()
 
@@ -503,7 +514,7 @@ func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Wor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/worker cloudflare_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/worker cloudflare_worker} Resource.
 func NewWorker_Override(w Worker, scope constructs.Construct, id *string, config *WorkerConfig) {
 	_init_.Initialize()
 

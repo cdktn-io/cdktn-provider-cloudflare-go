@@ -219,14 +219,6 @@ func (j *jsiiProxy_DataCloudflareApiShield) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiShield) validateSetPropertiesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareApiShield) validateSetZoneIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

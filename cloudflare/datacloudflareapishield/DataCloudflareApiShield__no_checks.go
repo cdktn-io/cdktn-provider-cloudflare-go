@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataCloudflareApiShield) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiShield) validateSetPropertiesParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareApiShield) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

@@ -35,6 +35,9 @@ type DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference 
 	InternalValue() *DataCloudflareZeroTrustAccessApplicationsResultDestinations
 	SetInternalValue(val *DataCloudflareZeroTrustAccessApplicationsResultDestinations)
 	L4Protocol() *string
+	McpServerId() *string
+	SetMcpServerId(val *string)
+	McpServerIdInput() *string
 	PortRange() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -71,6 +74,7 @@ type DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMcpServerId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -161,6 +165,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOu
 	_jsii_.Get(
 		j,
 		"l4Protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference) McpServerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mcpServerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference) McpServerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mcpServerIdInput",
 		&returns,
 	)
 	return returns
@@ -283,6 +307,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference)SetMcpServerId(val *string) {
+	if err := j.validateSetMcpServerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mcpServerId",
 		val,
 	)
 }
@@ -493,6 +528,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOu
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference) ResetMcpServerId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMcpServerId",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

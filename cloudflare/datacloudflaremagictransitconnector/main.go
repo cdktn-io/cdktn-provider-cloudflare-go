@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lastHeartbeat", GoGetter: "LastHeartbeat"},
 			_jsii_.MemberProperty{JsiiProperty: "lastSeenVersion", GoGetter: "LastSeenVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "lastUpdated", GoGetter: "LastUpdated"},
+			_jsii_.MemberProperty{JsiiProperty: "licenseKey", GoGetter: "LicenseKey"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "notes", GoGetter: "Notes"},

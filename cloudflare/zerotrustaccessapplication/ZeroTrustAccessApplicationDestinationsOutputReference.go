@@ -41,6 +41,9 @@ type ZeroTrustAccessApplicationDestinationsOutputReference interface {
 	L4Protocol() *string
 	SetL4Protocol(val *string)
 	L4ProtocolInput() *string
+	McpServerId() *string
+	SetMcpServerId(val *string)
+	McpServerIdInput() *string
 	PortRange() *string
 	SetPortRange(val *string)
 	PortRangeInput() *string
@@ -88,6 +91,7 @@ type ZeroTrustAccessApplicationDestinationsOutputReference interface {
 	ResetCidr()
 	ResetHostname()
 	ResetL4Protocol()
+	ResetMcpServerId()
 	ResetPortRange()
 	ResetType()
 	ResetUri()
@@ -212,6 +216,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) L4Prot
 	_jsii_.Get(
 		j,
 		"l4ProtocolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) McpServerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mcpServerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) McpServerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mcpServerIdInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +431,17 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetL4Pr
 	_jsii_.Set(
 		j,
 		"l4Protocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetMcpServerId(val *string) {
+	if err := j.validateSetMcpServerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mcpServerId",
 		val,
 	)
 }
@@ -683,6 +718,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetL
 	_jsii_.InvokeVoid(
 		z,
 		"resetL4Protocol",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetMcpServerId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMcpServerId",
 		nil, // no parameters
 	)
 }

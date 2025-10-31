@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationDestinationsOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationDestinationsOutputReference) validateSetMcpServerIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationDestinationsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

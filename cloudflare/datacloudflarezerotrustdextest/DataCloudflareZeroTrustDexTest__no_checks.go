@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) validatePutTargetPoliciesParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustDexTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

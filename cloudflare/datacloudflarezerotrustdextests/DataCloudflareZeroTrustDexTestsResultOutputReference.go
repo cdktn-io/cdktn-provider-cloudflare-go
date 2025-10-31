@@ -39,6 +39,7 @@ type DataCloudflareZeroTrustDexTestsResultOutputReference interface {
 	Name() *string
 	Targeted() cdktf.IResolvable
 	TargetPolicies() DataCloudflareZeroTrustDexTestsResultTargetPoliciesList
+	TargetPoliciesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +73,8 @@ type DataCloudflareZeroTrustDexTestsResultOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutTargetPolicies(value interface{})
+	ResetTargetPolicies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -202,6 +205,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) TargetP
 	_jsii_.Get(
 		j,
 		"targetPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) TargetPoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetPoliciesInput",
 		&returns,
 	)
 	return returns
@@ -504,6 +517,25 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) PutTargetPolicies(value interface{}) {
+	if err := d.validatePutTargetPoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTargetPolicies",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) ResetTargetPolicies() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTargetPolicies",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield cloudflare_api_shield}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield cloudflare_api_shield}.
 type DataCloudflareApiShield interface {
 	cdktf.TerraformDataSource
 	AuthIdCharacteristics() DataCloudflareApiShieldAuthIdCharacteristicsList
@@ -42,9 +42,6 @@ type DataCloudflareApiShield interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	Properties() *[]*string
-	SetProperties(val *[]*string)
-	PropertiesInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -88,7 +85,6 @@ type DataCloudflareApiShield interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProperties()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -208,26 +204,6 @@ func (j *jsiiProxy_DataCloudflareApiShield) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShield) Properties() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"properties",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareApiShield) PropertiesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"propertiesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareApiShield) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -299,7 +275,7 @@ func (j *jsiiProxy_DataCloudflareApiShield) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield cloudflare_api_shield} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield cloudflare_api_shield} Data Source.
 func NewDataCloudflareApiShield(scope constructs.Construct, id *string, config *DataCloudflareApiShieldConfig) DataCloudflareApiShield {
 	_init_.Initialize()
 
@@ -317,7 +293,7 @@ func NewDataCloudflareApiShield(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/api_shield cloudflare_api_shield} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/api_shield cloudflare_api_shield} Data Source.
 func NewDataCloudflareApiShield_Override(d DataCloudflareApiShield, scope constructs.Construct, id *string, config *DataCloudflareApiShieldConfig) {
 	_init_.Initialize()
 
@@ -362,17 +338,6 @@ func (j *jsiiProxy_DataCloudflareApiShield)SetLifecycle(val *cdktf.TerraformReso
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareApiShield)SetProperties(val *[]*string) {
-	if err := j.validateSetPropertiesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"properties",
 		val,
 	)
 }
@@ -685,14 +650,6 @@ func (d *jsiiProxy_DataCloudflareApiShield) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareApiShield) ResetProperties() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetProperties",
 		nil, // no parameters
 	)
 }

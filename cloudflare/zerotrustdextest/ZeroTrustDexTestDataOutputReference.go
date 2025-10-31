@@ -73,6 +73,8 @@ type ZeroTrustDexTestDataOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHost()
+	ResetKind()
 	ResetMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -519,6 +521,22 @@ func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) ResetKind() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetKind",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) ResetMethod() {

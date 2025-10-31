@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTestTargetPoliciesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDexTestTargetPoliciesOutputReference) validateSetInternalValueParameters(val *DataCloudflareZeroTrustDexTestTargetPolicies) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTestTargetPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

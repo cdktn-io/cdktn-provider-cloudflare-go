@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/account cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/account cloudflare_account}.
 type DataCloudflareAccount interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -46,6 +46,7 @@ type DataCloudflareAccount interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedBy() DataCloudflareAccountManagedByOutputReference
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -253,6 +254,16 @@ func (j *jsiiProxy_DataCloudflareAccount) Lifecycle() *cdktf.TerraformResourceLi
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccount) ManagedBy() DataCloudflareAccountManagedByOutputReference {
+	var returns DataCloudflareAccountManagedByOutputReference
+	_jsii_.Get(
+		j,
+		"managedBy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccount) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -344,7 +355,7 @@ func (j *jsiiProxy_DataCloudflareAccount) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/account cloudflare_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/account cloudflare_account} Data Source.
 func NewDataCloudflareAccount(scope constructs.Construct, id *string, config *DataCloudflareAccountConfig) DataCloudflareAccount {
 	_init_.Initialize()
 
@@ -362,7 +373,7 @@ func NewDataCloudflareAccount(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/account cloudflare_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/account cloudflare_account} Data Source.
 func NewDataCloudflareAccount_Override(d DataCloudflareAccount, scope constructs.Construct, id *string, config *DataCloudflareAccountConfig) {
 	_init_.Initialize()
 

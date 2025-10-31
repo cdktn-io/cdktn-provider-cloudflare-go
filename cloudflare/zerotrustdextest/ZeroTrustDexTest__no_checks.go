@@ -135,6 +135,10 @@ func (j *jsiiProxy_ZeroTrustDexTest) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDexTest) validateSetTargetedParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewZeroTrustDexTestParameters(scope constructs.Construct, id *string, config *ZeroTrustDexTestConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
 type DataCloudflareZeroTrustAccessMtlsCertificate interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) ZoneIdInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
 func NewDataCloudflareZeroTrustAccessMtlsCertificate(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessMtlsCertificateConfig) DataCloudflareZeroTrustAccessMtlsCertificate {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataCloudflareZeroTrustAccessMtlsCertificate(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
 func NewDataCloudflareZeroTrustAccessMtlsCertificate_Override(d DataCloudflareZeroTrustAccessMtlsCertificate, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessMtlsCertificateConfig) {
 	_init_.Initialize()
 

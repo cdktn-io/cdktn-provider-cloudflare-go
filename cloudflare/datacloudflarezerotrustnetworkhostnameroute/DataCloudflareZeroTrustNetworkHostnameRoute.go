@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route}.
 type DataCloudflareZeroTrustNetworkHostnameRoute interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoute) TunnelName() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source.
 func NewDataCloudflareZeroTrustNetworkHostnameRoute(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustNetworkHostnameRouteConfig) DataCloudflareZeroTrustNetworkHostnameRoute {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataCloudflareZeroTrustNetworkHostnameRoute(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source.
 func NewDataCloudflareZeroTrustNetworkHostnameRoute_Override(d DataCloudflareZeroTrustNetworkHostnameRoute, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustNetworkHostnameRouteConfig) {
 	_init_.Initialize()
 

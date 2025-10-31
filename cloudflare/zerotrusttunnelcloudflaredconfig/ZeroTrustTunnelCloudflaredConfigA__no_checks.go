@@ -123,6 +123,10 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetTunnelIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetWarpRoutingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewZeroTrustTunnelCloudflaredConfigAParameters(scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredConfigAConfig) error {
 	return nil
 }

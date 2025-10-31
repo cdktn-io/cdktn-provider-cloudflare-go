@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector}.
 type DataCloudflareMagicTransitConnector interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -49,6 +49,7 @@ type DataCloudflareMagicTransitConnector interface {
 	LastHeartbeat() *string
 	LastSeenVersion() *string
 	LastUpdated() *string
+	LicenseKey() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -307,6 +308,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnector) LastUpdated() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicTransitConnector) LicenseKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"licenseKey",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicTransitConnector) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -398,7 +409,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnector) Timezone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
 func NewDataCloudflareMagicTransitConnector(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorConfig) DataCloudflareMagicTransitConnector {
 	_init_.Initialize()
 
@@ -416,7 +427,7 @@ func NewDataCloudflareMagicTransitConnector(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
 func NewDataCloudflareMagicTransitConnector_Override(d DataCloudflareMagicTransitConnector, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorConfig) {
 	_init_.Initialize()
 

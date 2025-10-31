@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account cloudflare_account}.
 type Account interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,8 @@ type Account interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedBy() AccountManagedByOutputReference
+	ManagedByInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -116,8 +118,10 @@ type Account interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutManagedBy(value *AccountManagedBy)
 	PutSettings(value *AccountSettings)
 	PutUnit(value *AccountUnit)
+	ResetManagedBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -247,6 +251,26 @@ func (j *jsiiProxy_Account) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Account) ManagedBy() AccountManagedByOutputReference {
+	var returns AccountManagedByOutputReference
+	_jsii_.Get(
+		j,
+		"managedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Account) ManagedByInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedByInput",
 		&returns,
 	)
 	return returns
@@ -403,7 +427,7 @@ func (j *jsiiProxy_Account) UnitInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) Account {
 	_init_.Initialize()
 
@@ -421,7 +445,7 @@ func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.11.0/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount_Override(a Account, scope constructs.Construct, id *string, config *AccountConfig) {
 	_init_.Initialize()
 
@@ -875,6 +899,17 @@ func (a *jsiiProxy_Account) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_Account) PutManagedBy(value *AccountManagedBy) {
+	if err := a.validatePutManagedByParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putManagedBy",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_Account) PutSettings(value *AccountSettings) {
 	if err := a.validatePutSettingsParameters(value); err != nil {
 		panic(err)
@@ -894,6 +929,14 @@ func (a *jsiiProxy_Account) PutUnit(value *AccountUnit) {
 		a,
 		"putUnit",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_Account) ResetManagedBy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetManagedBy",
+		nil, // no parameters
 	)
 }
 

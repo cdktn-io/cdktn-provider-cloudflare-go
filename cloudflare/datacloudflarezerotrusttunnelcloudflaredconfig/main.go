@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tunnelId", GoGetter: "TunnelId"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelIdInput", GoGetter: "TunnelIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
+			_jsii_.MemberProperty{JsiiProperty: "warpRoutingEnabled", GoGetter: "WarpRoutingEnabled"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA{}

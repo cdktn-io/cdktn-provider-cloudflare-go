@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateGe
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeAzureAdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

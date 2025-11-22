@@ -43,11 +43,11 @@ func (w *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidcOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIsDefaultOidcOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

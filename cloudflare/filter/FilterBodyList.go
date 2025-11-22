@@ -41,7 +41,7 @@ type FilterBodyList interface {
 	Get(index *float64) FilterBodyOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (f *jsiiProxy_FilterBodyList) Get(index *float64) FilterBodyOutputReference
 	return returns
 }
 
-func (f *jsiiProxy_FilterBodyList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FilterBodyList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (f *jsiiProxy_FilterBodyList) Resolve(_context cdktf.IResolveContext) inter
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

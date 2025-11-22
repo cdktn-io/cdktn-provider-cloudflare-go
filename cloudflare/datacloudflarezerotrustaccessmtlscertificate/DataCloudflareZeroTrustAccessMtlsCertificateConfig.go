@@ -22,17 +22,17 @@ type DataCloudflareZeroTrustAccessMtlsCertificateConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_mtls_certificate#account_id DataCloudflareZeroTrustAccessMtlsCertificate#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_mtls_certificate#certificate_id DataCloudflareZeroTrustAccessMtlsCertificate#certificate_id}
-	CertificateId *string `field:"optional" json:"certificateId" yaml:"certificateId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_mtls_certificate#certificate_id DataCloudflareZeroTrustAccessMtlsCertificate#certificate_id}
+	CertificateId *string `field:"required" json:"certificateId" yaml:"certificateId"`
+	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_mtls_certificate#account_id DataCloudflareZeroTrustAccessMtlsCertificate#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_mtls_certificate#zone_id DataCloudflareZeroTrustAccessMtlsCertificate#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_mtls_certificate#zone_id DataCloudflareZeroTrustAccessMtlsCertificate#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

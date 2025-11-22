@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareAccountSubscriptionRatePlanOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareAccountSubscriptionRatePlanOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareAccountSubscriptionRatePlanOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareAccountSubscriptionRatePlanOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareAccountSubscriptionRatePlanOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

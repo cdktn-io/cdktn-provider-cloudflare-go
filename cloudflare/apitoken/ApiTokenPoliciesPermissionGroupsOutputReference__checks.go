@@ -85,28 +85,17 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validatePutMetaParameters(value *ApiTokenPoliciesPermissionGroupsMeta) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

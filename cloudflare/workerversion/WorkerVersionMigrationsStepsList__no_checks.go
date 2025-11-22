@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsStepsList) validateGetParameters(index
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionMigrationsStepsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerVersionMigrationsStepsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

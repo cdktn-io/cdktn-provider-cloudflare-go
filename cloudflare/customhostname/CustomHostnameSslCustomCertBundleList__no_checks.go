@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomHostnameSslCustomCertBundleList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameSslCustomCertBundleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomHostnameSslCustomCertBundleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

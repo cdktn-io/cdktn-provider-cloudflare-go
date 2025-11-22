@@ -15,7 +15,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsList) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

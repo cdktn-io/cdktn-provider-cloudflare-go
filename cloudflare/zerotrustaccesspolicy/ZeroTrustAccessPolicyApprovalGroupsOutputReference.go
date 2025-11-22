@@ -72,12 +72,12 @@ type ZeroTrustAccessPolicyApprovalGroupsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetEmailAddresses()
 	ResetEmailListUuid()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -506,8 +506,8 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsOutputReference) Interpola
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -515,7 +515,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsOutputReference) Interpola
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsOutputReference) ResetEmai
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := z.validateResolveParameters(_context); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsOutputReference) Resolve(_
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

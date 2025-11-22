@@ -15,7 +15,7 @@ func (w *jsiiProxy_WebAnalyticsSiteRulesList) validateGetParameters(index *float
 	return nil
 }
 
-func (w *jsiiProxy_WebAnalyticsSiteRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebAnalyticsSiteRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomainOu
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomainOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomainOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomainOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIncludeEmailDomainOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

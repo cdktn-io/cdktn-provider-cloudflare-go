@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareR2BucketEventNotificationRulesList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketEventNotificationRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareR2BucketEventNotificationRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

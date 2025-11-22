@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsList) validateGetParamete
 	return nil
 }
 
-func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

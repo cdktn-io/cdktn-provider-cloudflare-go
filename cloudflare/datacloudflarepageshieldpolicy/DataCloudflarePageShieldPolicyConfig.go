@@ -24,11 +24,11 @@ type DataCloudflarePageShieldPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_shield_policy#zone_id DataCloudflarePageShieldPolicy#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_shield_policy#policy_id DataCloudflarePageShieldPolicy#policy_id}
+	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/page_shield_policy#policy_id DataCloudflarePageShieldPolicy#policy_id}
-	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_shield_policy#zone_id DataCloudflarePageShieldPolicy#zone_id}
+	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

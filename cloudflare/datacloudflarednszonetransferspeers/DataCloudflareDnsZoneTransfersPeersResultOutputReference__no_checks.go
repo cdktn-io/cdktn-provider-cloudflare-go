@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeersResultOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeersResultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeersResultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeersResultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeersResultOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

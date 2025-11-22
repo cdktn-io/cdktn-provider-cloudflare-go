@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationDestinationsList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

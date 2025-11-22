@@ -43,11 +43,11 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateGetStringMapA
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

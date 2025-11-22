@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

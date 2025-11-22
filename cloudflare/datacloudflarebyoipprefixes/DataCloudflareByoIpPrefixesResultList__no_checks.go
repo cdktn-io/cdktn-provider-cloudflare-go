@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateGetStringMap
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicWanStaticRouteScopeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

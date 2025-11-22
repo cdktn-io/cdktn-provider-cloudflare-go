@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

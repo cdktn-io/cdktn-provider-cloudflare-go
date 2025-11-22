@@ -43,7 +43,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) val
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) val
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsAntivirusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

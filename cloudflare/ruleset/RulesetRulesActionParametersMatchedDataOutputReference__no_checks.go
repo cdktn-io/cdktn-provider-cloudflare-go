@@ -43,11 +43,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference) valid
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersMatchedDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

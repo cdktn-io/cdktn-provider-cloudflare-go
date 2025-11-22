@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkersScriptNamedHandlersList) validateGetParameters(index *
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptNamedHandlersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersScriptNamedHandlersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

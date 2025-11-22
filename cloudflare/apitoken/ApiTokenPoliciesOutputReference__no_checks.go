@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validatePutPermissionGroupsP
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiTokenPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetInternalValuePara
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetResourcesParameters(val *map[string]*string) error {
+func (j *jsiiProxy_ApiTokenPoliciesOutputReference) validateSetResourcesParameters(val *string) error {
 	return nil
 }
 

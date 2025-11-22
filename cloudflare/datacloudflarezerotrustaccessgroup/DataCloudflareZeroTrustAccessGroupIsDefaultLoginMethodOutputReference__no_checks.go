@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultLoginMethodOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultLoginMethodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultLoginMethodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultLoginMethodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultLoginMethodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

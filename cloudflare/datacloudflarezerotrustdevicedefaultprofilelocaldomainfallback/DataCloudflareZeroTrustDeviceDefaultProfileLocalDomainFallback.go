@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}.
 type DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -40,6 +40,7 @@ type DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -216,6 +217,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbac
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -297,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig) DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback {
 	_init_.Initialize()
 
@@ -315,7 +326,7 @@ func NewDataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback(scope con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback_Override(d DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig) {
 	_init_.Initialize()
 

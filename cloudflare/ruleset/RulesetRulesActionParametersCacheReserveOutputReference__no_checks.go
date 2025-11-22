@@ -43,11 +43,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) vali
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

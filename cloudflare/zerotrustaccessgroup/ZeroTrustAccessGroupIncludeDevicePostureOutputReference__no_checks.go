@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeDevicePostureOutputReference) vali
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupIncludeDevicePostureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeDevicePostureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupIncludeDevicePostureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeDevicePostureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareR2BucketLockRulesOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLockRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareR2BucketLockRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLockRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareR2BucketLockRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

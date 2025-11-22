@@ -207,7 +207,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAlgorithms(value interface{})
 	PutAutominify(value *RulesetRulesActionParametersAutominify)
 	PutBrowserTtl(value *RulesetRulesActionParametersBrowserTtl)
@@ -286,7 +286,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -2096,8 +2096,8 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationAsL
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -2105,7 +2105,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -2783,8 +2783,8 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetUri() {
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -2792,7 +2792,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

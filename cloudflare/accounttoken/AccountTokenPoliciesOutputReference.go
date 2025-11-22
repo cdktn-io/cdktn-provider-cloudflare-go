@@ -33,14 +33,13 @@ type AccountTokenPoliciesOutputReference interface {
 	EffectInput() *string
 	// Experimental.
 	Fqn() *string
-	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	PermissionGroups() AccountTokenPoliciesPermissionGroupsList
 	PermissionGroupsInput() interface{}
-	Resources() *map[string]*string
-	SetResources(val *map[string]*string)
-	ResourcesInput() *map[string]*string
+	Resources() *string
+	SetResources(val *string)
+	ResourcesInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,11 +71,11 @@ type AccountTokenPoliciesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutPermissionGroups(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -149,16 +148,6 @@ func (j *jsiiProxy_AccountTokenPoliciesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesOutputReference) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AccountTokenPoliciesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -189,8 +178,8 @@ func (j *jsiiProxy_AccountTokenPoliciesOutputReference) PermissionGroupsInput() 
 	return returns
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesOutputReference) Resources() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_AccountTokenPoliciesOutputReference) Resources() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"resources",
@@ -199,8 +188,8 @@ func (j *jsiiProxy_AccountTokenPoliciesOutputReference) Resources() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesOutputReference) ResourcesInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_AccountTokenPoliciesOutputReference) ResourcesInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"resourcesInput",
@@ -301,7 +290,7 @@ func (j *jsiiProxy_AccountTokenPoliciesOutputReference)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesOutputReference)SetResources(val *map[string]*string) {
+func (j *jsiiProxy_AccountTokenPoliciesOutputReference)SetResources(val *string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,8 +493,8 @@ func (a *jsiiProxy_AccountTokenPoliciesOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (a *jsiiProxy_AccountTokenPoliciesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AccountTokenPoliciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -513,7 +502,7 @@ func (a *jsiiProxy_AccountTokenPoliciesOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -531,8 +520,8 @@ func (a *jsiiProxy_AccountTokenPoliciesOutputReference) PutPermissionGroups(valu
 	)
 }
 
-func (a *jsiiProxy_AccountTokenPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AccountTokenPoliciesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -540,7 +529,7 @@ func (a *jsiiProxy_AccountTokenPoliciesOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

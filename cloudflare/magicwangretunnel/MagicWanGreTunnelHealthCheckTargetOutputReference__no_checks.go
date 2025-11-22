@@ -43,11 +43,11 @@ func (m *jsiiProxy_MagicWanGreTunnelHealthCheckTargetOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanGreTunnelHealthCheckTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicWanGreTunnelHealthCheckTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanGreTunnelHealthCheckTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicWanGreTunnelHealthCheckTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

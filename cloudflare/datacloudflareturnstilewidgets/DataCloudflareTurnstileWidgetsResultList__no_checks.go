@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

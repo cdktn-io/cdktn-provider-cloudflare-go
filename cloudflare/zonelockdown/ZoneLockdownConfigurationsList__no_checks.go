@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZoneLockdownConfigurationsList) validateGetParameters(index *
 	return nil
 }
 
-func (z *jsiiProxy_ZoneLockdownConfigurationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneLockdownConfigurationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

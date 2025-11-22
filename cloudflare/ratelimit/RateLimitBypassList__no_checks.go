@@ -15,7 +15,7 @@ func (r *jsiiProxy_RateLimitBypassList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitBypassList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RateLimitBypassList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

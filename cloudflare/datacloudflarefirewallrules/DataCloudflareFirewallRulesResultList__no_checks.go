@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareFirewallRulesResultList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareFirewallRulesResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareFirewallRulesResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

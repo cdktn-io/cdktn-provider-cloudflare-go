@@ -43,7 +43,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) validateGetStringMapAttributePar
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) validatePutRatelimitParameters(v
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

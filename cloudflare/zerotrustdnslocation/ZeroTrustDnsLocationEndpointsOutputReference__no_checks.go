@@ -43,7 +43,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) validateGetStri
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) validatePutIpv6
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

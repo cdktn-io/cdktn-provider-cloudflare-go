@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesThresholdsOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesThresholdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesThresholdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesThresholdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesThresholdsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

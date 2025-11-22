@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkerVersionModulesOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionModulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkerVersionModulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionModulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerVersionModulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -56,6 +56,10 @@ func (j *jsiiProxy_WorkerVersionModulesOutputReference) validateSetComplexObject
 }
 
 func (j *jsiiProxy_WorkerVersionModulesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerVersionModulesOutputReference) validateSetContentBase64Parameters(val *string) error {
 	return nil
 }
 

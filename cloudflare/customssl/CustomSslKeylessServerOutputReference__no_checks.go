@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomSslKeylessServerOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_CustomSslKeylessServerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomSslKeylessServerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomSslKeylessServerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomSslKeylessServerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

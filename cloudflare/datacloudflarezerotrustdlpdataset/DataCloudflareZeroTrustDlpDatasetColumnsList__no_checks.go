@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpDatasetColumnsList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpDatasetColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpDatasetColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

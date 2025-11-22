@@ -43,7 +43,7 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) validatePutSettingsParamete
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

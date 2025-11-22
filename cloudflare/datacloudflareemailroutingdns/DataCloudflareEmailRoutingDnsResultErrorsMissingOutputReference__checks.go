@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingDnsResultErrorsMissingOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingDnsResultErrorsMissingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataCloudflareEmailRoutingDnsResultErrorsMissingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareEmailRoutingDnsResultErrorsMissingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataCloudflareEmailRoutingDnsResultErrorsMissingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnectorConnectionsList) validateGetParam
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnectorConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustTunnelWarpConnectorConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

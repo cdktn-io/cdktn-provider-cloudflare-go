@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReferenc
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

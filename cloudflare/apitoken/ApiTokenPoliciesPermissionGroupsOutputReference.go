@@ -35,9 +35,6 @@ type ApiTokenPoliciesPermissionGroupsOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Meta() ApiTokenPoliciesPermissionGroupsMetaOutputReference
-	MetaInput() interface{}
-	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,12 +66,10 @@ type ApiTokenPoliciesPermissionGroupsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutMeta(value *ApiTokenPoliciesPermissionGroupsMeta)
-	ResetMeta()
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -152,36 +147,6 @@ func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Meta() ApiTokenPoliciesPermissionGroupsMetaOutputReference {
-	var returns ApiTokenPoliciesPermissionGroupsMetaOutputReference
-	_jsii_.Get(
-		j,
-		"meta",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) MetaInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"metaInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
 		&returns,
 	)
 	return returns
@@ -471,8 +436,8 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Interpolatio
 	return returns
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -480,34 +445,15 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) PutMeta(value *ApiTokenPoliciesPermissionGroupsMeta) {
-	if err := a.validatePutMetaParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putMeta",
-		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) ResetMeta() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetMeta",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -515,7 +461,7 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

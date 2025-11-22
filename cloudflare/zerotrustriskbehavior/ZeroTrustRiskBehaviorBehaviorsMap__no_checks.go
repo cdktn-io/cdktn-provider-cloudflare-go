@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateInterpolationForAt
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

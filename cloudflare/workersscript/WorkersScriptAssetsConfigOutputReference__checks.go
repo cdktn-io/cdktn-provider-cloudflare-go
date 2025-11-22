@@ -85,17 +85,17 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateGetStringMa
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -222,21 +222,9 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetRedirect
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetRunWorkerFirstParameters(val interface{}) error {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetRunWorkerFirstParameters(val *map[string]interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerPoolOriginsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

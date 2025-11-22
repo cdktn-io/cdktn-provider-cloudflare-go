@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

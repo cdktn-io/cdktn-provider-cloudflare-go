@@ -33,6 +33,7 @@ type DataCloudflareZeroTrustDexTestsResultOutputReference interface {
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareZeroTrustDexTestsResult
 	SetInternalValue(val *DataCloudflareZeroTrustDexTestsResult)
 	Interval() *string
@@ -72,12 +73,12 @@ type DataCloudflareZeroTrustDexTestsResultOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutTargetPolicies(value interface{})
 	ResetTargetPolicies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Fqn() *
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -503,8 +514,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -512,7 +523,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Interpo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +549,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) ResetTa
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +558,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Resolve
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

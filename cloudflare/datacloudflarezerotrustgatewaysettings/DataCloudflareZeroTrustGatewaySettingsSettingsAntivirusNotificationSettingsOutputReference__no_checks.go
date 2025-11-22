@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusNotifi
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

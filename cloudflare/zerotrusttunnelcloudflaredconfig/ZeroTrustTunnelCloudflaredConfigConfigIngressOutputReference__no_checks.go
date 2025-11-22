@@ -43,7 +43,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference)
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference)
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

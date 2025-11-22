@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateGetPa
 	return nil
 }
 
-func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

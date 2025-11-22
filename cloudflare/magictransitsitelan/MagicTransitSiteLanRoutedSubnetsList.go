@@ -41,7 +41,7 @@ type MagicTransitSiteLanRoutedSubnetsList interface {
 	Get(index *float64) MagicTransitSiteLanRoutedSubnetsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) Get(index *float64) Mag
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

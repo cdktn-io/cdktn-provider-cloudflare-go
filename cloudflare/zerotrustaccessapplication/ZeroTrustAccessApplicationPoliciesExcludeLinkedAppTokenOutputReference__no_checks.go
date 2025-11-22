@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeLinkedAppTokenOutput
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeLinkedAppTokenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeLinkedAppTokenOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeLinkedAppTokenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeLinkedAppTokenOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

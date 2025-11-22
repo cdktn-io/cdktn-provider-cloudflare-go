@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyOu
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

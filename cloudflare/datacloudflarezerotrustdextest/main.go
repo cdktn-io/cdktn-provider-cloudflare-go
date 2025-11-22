@@ -48,7 +48,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetPolicies", GoMethod: "PutTargetPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDexTestId", GoMethod: "ResetDexTestId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetPolicies", GoMethod: "ResetTargetPolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

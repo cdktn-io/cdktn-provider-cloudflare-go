@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkerReferencesDurableObjectsList) validateGetParameters(ind
 	return nil
 }
 
-func (w *jsiiProxy_WorkerReferencesDurableObjectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerReferencesDurableObjectsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

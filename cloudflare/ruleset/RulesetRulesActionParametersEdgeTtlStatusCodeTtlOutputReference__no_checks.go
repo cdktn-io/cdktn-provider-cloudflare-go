@@ -43,7 +43,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReferen
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReferen
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

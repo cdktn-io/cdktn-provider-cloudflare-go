@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressList) validateGe
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

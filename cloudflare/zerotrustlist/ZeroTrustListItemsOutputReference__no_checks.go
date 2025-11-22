@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustListItemsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustListItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustListItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustListItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustListItemsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

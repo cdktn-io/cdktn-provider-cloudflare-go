@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWorkersCronTriggerSchedulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

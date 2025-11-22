@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/total_tls cloudflare_total_tls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/total_tls cloudflare_total_tls}.
 type DataCloudflareTotalTls interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -37,6 +37,7 @@ type DataCloudflareTotalTls interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -196,6 +197,16 @@ func (j *jsiiProxy_DataCloudflareTotalTls) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareTotalTls) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareTotalTls) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -297,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareTotalTls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/total_tls cloudflare_total_tls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/total_tls cloudflare_total_tls} Data Source.
 func NewDataCloudflareTotalTls(scope constructs.Construct, id *string, config *DataCloudflareTotalTlsConfig) DataCloudflareTotalTls {
 	_init_.Initialize()
 
@@ -315,7 +326,7 @@ func NewDataCloudflareTotalTls(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/total_tls cloudflare_total_tls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/total_tls cloudflare_total_tls} Data Source.
 func NewDataCloudflareTotalTls_Override(d DataCloudflareTotalTls, scope constructs.Construct, id *string, config *DataCloudflareTotalTlsConfig) {
 	_init_.Initialize()
 

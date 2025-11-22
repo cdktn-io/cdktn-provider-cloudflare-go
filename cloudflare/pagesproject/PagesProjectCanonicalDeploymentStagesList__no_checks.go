@@ -15,7 +15,7 @@ func (p *jsiiProxy_PagesProjectCanonicalDeploymentStagesList) validateGetParamet
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectCanonicalDeploymentStagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectCanonicalDeploymentStagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

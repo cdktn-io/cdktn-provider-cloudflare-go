@@ -85,17 +85,17 @@ func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

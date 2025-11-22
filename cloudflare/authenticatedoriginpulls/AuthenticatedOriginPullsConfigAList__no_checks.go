@@ -15,7 +15,7 @@ func (a *jsiiProxy_AuthenticatedOriginPullsConfigAList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsConfigAList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuthenticatedOriginPullsConfigAList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

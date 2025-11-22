@@ -9,7 +9,7 @@ type LoadBalancerPoolOriginsHeader struct {
 	//
 	// Current support is 1 'Host' header override per origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/load_balancer_pool#host LoadBalancerPool#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/load_balancer_pool#host LoadBalancerPool#host}
 	Host *[]*string `field:"optional" json:"host" yaml:"host"`
 }
 

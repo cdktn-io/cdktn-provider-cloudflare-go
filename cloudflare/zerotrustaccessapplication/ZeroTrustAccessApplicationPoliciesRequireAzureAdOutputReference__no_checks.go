@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReferen
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

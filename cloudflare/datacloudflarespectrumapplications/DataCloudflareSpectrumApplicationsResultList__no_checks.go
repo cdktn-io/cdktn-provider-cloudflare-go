@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

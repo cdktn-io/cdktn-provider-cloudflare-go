@@ -43,11 +43,11 @@ func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

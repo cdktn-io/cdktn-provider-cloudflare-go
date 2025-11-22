@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmailRoutingRuleActionsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRuleActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailRoutingRuleActionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

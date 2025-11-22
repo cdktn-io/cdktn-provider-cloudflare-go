@@ -46,7 +46,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "references", GoGetter: "References"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkerId", GoMethod: "ResetWorkerId"},
 			_jsii_.MemberProperty{JsiiProperty: "subdomain", GoGetter: "Subdomain"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},

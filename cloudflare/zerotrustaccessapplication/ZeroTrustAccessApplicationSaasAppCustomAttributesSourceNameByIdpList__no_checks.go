@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameBy
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

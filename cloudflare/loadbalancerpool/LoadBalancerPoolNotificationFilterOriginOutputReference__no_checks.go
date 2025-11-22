@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) vali
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOriginOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

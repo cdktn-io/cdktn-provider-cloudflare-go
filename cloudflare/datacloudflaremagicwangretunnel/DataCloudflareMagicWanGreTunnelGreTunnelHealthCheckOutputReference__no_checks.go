@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

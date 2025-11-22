@@ -45,9 +45,13 @@ type DataCloudflareWorkersScriptsResultOutputReference interface {
 	MigrationTag() *string
 	ModifiedOn() *string
 	NamedHandlers() DataCloudflareWorkersScriptsResultNamedHandlersList
+	Observability() DataCloudflareWorkersScriptsResultObservabilityOutputReference
 	Placement() DataCloudflareWorkersScriptsResultPlacementOutputReference
 	PlacementMode() *string
 	PlacementStatus() *string
+	Routes() DataCloudflareWorkersScriptsResultRoutesList
+	Tag() *string
+	Tags() *[]*string
 	TailConsumers() DataCloudflareWorkersScriptsResultTailConsumersList
 	// Experimental.
 	TerraformAttribute() *string
@@ -81,10 +85,10 @@ type DataCloudflareWorkersScriptsResultOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -277,6 +281,16 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) NamedHandl
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Observability() DataCloudflareWorkersScriptsResultObservabilityOutputReference {
+	var returns DataCloudflareWorkersScriptsResultObservabilityOutputReference
+	_jsii_.Get(
+		j,
+		"observability",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Placement() DataCloudflareWorkersScriptsResultPlacementOutputReference {
 	var returns DataCloudflareWorkersScriptsResultPlacementOutputReference
 	_jsii_.Get(
@@ -302,6 +316,36 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) PlacementS
 	_jsii_.Get(
 		j,
 		"placementStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Routes() DataCloudflareWorkersScriptsResultRoutesList {
+	var returns DataCloudflareWorkersScriptsResultRoutesList
+	_jsii_.Get(
+		j,
+		"routes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Tag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns
@@ -600,8 +644,8 @@ func (d *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Interpolat
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -609,15 +653,15 @@ func (d *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Interpolat
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -625,7 +669,7 @@ func (d *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOktaOutputReference) validateGetSt
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOktaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOktaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOktaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOktaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

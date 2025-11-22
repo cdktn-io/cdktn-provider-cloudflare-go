@@ -55,7 +55,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "require", GoGetter: "Require"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPolicyId", GoMethod: "ResetPolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "reusable", GoGetter: "Reusable"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionDuration", GoGetter: "SessionDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

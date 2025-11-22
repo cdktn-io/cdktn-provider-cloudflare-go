@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksList) validateGetParamet
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

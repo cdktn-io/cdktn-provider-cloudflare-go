@@ -15,7 +15,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsMap) validateInter
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

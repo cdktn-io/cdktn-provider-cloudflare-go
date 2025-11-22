@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerMonitorsResultList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerMonitorsResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareLoadBalancerMonitorsResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
 type DataCloudflareZeroTrustDlpPredefinedProfile interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -25,17 +25,15 @@ type DataCloudflareZeroTrustDlpPredefinedProfile interface {
 	ConfidenceThreshold() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	ContextAwareness() DataCloudflareZeroTrustDlpPredefinedProfileContextAwarenessOutputReference
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Description() *string
+	EnabledEntries() *[]*string
 	Entries() DataCloudflareZeroTrustDlpPredefinedProfileEntriesList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -70,8 +68,6 @@ type DataCloudflareZeroTrustDlpPredefinedProfile interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	UpdatedAt() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -189,31 +185,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) ContextAwareness() DataCloudflareZeroTrustDlpPredefinedProfileContextAwarenessOutputReference {
-	var returns DataCloudflareZeroTrustDlpPredefinedProfileContextAwarenessOutputReference
-	_jsii_.Get(
-		j,
-		"contextAwareness",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -229,11 +205,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) DependsOn() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) Description() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) EnabledEntries() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"description",
+		"enabledEntries",
 		&returns,
 	)
 	return returns
@@ -409,28 +385,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) TerraformResourc
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfile) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Data Source.
 func NewDataCloudflareZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpPredefinedProfileConfig) DataCloudflareZeroTrustDlpPredefinedProfile {
 	_init_.Initialize()
 
@@ -448,7 +404,7 @@ func NewDataCloudflareZeroTrustDlpPredefinedProfile(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Data Source.
 func NewDataCloudflareZeroTrustDlpPredefinedProfile_Override(d DataCloudflareZeroTrustDlpPredefinedProfile, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpPredefinedProfileConfig) {
 	_init_.Initialize()
 

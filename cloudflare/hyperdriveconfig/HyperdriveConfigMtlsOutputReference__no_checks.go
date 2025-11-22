@@ -43,11 +43,11 @@ func (h *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (h *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HyperdriveConfigMtlsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

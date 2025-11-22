@@ -43,7 +43,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateGetStr
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersScriptObservabilityLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

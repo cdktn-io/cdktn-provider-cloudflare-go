@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database cloudflare_d1_database}.
 type D1Database interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -45,6 +45,9 @@ type D1Database interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Jurisdiction() *string
+	SetJurisdiction(val *string)
+	JurisdictionInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -122,6 +125,7 @@ type D1Database interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutReadReplication(value *D1DatabaseReadReplication)
+	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -270,6 +274,26 @@ func (j *jsiiProxy_D1Database) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) JurisdictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdictionInput",
 		&returns,
 	)
 	return returns
@@ -446,7 +470,7 @@ func (j *jsiiProxy_D1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseConfig) D1Database {
 	_init_.Initialize()
 
@@ -464,7 +488,7 @@ func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database_Override(d D1Database, scope constructs.Construct, id *string, config *D1DatabaseConfig) {
 	_init_.Initialize()
 
@@ -520,6 +544,17 @@ func (j *jsiiProxy_D1Database)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_D1Database)SetJurisdiction(val *string) {
+	if err := j.validateSetJurisdictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jurisdiction",
 		val,
 	)
 }
@@ -937,6 +972,14 @@ func (d *jsiiProxy_D1Database) PutReadReplication(value *D1DatabaseReadReplicati
 		d,
 		"putReadReplication",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_D1Database) ResetJurisdiction() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetJurisdiction",
+		nil, // no parameters
 	)
 }
 

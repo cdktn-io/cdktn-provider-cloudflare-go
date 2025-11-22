@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSitesResultList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSitesResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareMagicTransitSitesResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

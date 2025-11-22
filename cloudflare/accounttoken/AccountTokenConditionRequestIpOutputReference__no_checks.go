@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountTokenConditionRequestIpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

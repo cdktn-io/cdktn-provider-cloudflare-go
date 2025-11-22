@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
 type DataCloudflareZeroTrustAccessMtlsCertificate interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -93,7 +93,6 @@ type DataCloudflareZeroTrustAccessMtlsCertificate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
-	ResetCertificateId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -368,7 +367,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) ZoneIdInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
 func NewDataCloudflareZeroTrustAccessMtlsCertificate(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessMtlsCertificateConfig) DataCloudflareZeroTrustAccessMtlsCertificate {
 	_init_.Initialize()
 
@@ -386,7 +385,7 @@ func NewDataCloudflareZeroTrustAccessMtlsCertificate(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Data Source.
 func NewDataCloudflareZeroTrustAccessMtlsCertificate_Override(d DataCloudflareZeroTrustAccessMtlsCertificate, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessMtlsCertificateConfig) {
 	_init_.Initialize()
 
@@ -765,14 +764,6 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) ResetAccountId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessMtlsCertificate) ResetCertificateId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCertificateId",
 		nil, // no parameters
 	)
 }

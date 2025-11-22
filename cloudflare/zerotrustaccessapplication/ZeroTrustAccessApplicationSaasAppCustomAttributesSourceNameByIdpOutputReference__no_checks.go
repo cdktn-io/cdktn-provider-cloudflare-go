@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameBy
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsDotNetworksOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsDotNetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsDotNetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsDotNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsDotNetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

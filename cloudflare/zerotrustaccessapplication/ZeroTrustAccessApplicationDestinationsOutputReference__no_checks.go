@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

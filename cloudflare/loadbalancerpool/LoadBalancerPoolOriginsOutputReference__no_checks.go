@@ -43,7 +43,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validatePutHeaderPara
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

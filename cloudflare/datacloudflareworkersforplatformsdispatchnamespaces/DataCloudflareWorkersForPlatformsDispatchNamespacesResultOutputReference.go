@@ -32,6 +32,7 @@ type DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareWorkersForPlatformsDispatchNamespacesResult
 	SetInternalValue(val *DataCloudflareWorkersForPlatformsDispatchNamespacesResult)
 	ModifiedBy() *string
@@ -71,10 +72,10 @@ type DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference in
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -142,6 +143,16 @@ func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutp
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -490,8 +501,8 @@ func (d *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutp
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -499,15 +510,15 @@ func (d *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutp
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -515,7 +526,7 @@ func (d *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespacesResultOutp
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

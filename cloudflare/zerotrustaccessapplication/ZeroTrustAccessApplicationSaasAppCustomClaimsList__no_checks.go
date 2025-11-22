@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) validateGe
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespace
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

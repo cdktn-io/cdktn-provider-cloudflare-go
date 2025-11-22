@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
 type DataCloudflareZeroTrustDeviceDefaultProfile interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -50,6 +50,7 @@ type DataCloudflareZeroTrustDeviceDefaultProfile interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GatewayUniqueId() *string
+	Id() *string
 	Include() DataCloudflareZeroTrustDeviceDefaultProfileIncludeList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -332,6 +333,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfile) GatewayUniqueId(
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfile) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfile) Include() DataCloudflareZeroTrustDeviceDefaultProfileIncludeList {
 	var returns DataCloudflareZeroTrustDeviceDefaultProfileIncludeList
 	_jsii_.Get(
@@ -473,7 +484,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfile) TunnelProtocol()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileConfig) DataCloudflareZeroTrustDeviceDefaultProfile {
 	_init_.Initialize()
 
@@ -491,7 +502,7 @@ func NewDataCloudflareZeroTrustDeviceDefaultProfile(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfile_Override(d DataCloudflareZeroTrustDeviceDefaultProfile, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileConfig) {
 	_init_.Initialize()
 

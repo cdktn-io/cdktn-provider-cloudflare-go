@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileEntriesList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileEntriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileEntriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

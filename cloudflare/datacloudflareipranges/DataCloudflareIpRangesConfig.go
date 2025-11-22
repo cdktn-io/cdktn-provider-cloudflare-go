@@ -24,7 +24,7 @@ type DataCloudflareIpRangesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specified as `jdcloud` to list IPs used by JD Cloud data centers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/ip_ranges#networks DataCloudflareIpRanges#networks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/ip_ranges#networks DataCloudflareIpRanges#networks}
 	Networks *string `field:"optional" json:"networks" yaml:"networks"`
 }
 

@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkerReferencesDurableObjectsOutputReference) validateGetStr
 	return nil
 }
 
-func (w *jsiiProxy_WorkerReferencesDurableObjectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkerReferencesDurableObjectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkerReferencesDurableObjectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerReferencesDurableObjectsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

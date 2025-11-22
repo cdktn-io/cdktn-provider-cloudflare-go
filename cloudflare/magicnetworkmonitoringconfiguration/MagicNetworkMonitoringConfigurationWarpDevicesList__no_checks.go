@@ -15,7 +15,7 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesList) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

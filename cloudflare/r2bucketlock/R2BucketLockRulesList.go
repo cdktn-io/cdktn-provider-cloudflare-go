@@ -41,7 +41,7 @@ type R2BucketLockRulesList interface {
 	Get(index *float64) R2BucketLockRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (r *jsiiProxy_R2BucketLockRulesList) Get(index *float64) R2BucketLockRulesO
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketLockRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_R2BucketLockRulesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (r *jsiiProxy_R2BucketLockRulesList) Resolve(_context cdktf.IResolveContext
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

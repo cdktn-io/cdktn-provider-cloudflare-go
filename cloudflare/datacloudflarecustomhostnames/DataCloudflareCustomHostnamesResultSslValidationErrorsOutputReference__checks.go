@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationErrorsOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationErrorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationErrorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationErrorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationErrorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/organizations cloudflare_organizations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/organizations cloudflare_organizations}.
 type DataCloudflareOrganizations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataCloudflareOrganizations) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/organizations cloudflare_organizations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/organizations cloudflare_organizations} Data Source.
 func NewDataCloudflareOrganizations(scope constructs.Construct, id *string, config *DataCloudflareOrganizationsConfig) DataCloudflareOrganizations {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataCloudflareOrganizations(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/organizations cloudflare_organizations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/organizations cloudflare_organizations} Data Source.
 func NewDataCloudflareOrganizations_Override(d DataCloudflareOrganizations, scope constructs.Construct, id *string, config *DataCloudflareOrganizationsConfig) {
 	_init_.Initialize()
 

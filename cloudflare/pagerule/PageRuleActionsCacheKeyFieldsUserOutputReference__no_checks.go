@@ -43,11 +43,11 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

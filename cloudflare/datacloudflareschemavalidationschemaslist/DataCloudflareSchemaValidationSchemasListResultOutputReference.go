@@ -31,6 +31,7 @@ type DataCloudflareSchemaValidationSchemasListResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareSchemaValidationSchemasListResult
 	SetInternalValue(val *DataCloudflareSchemaValidationSchemasListResult)
 	Kind() *string
@@ -69,10 +70,10 @@ type DataCloudflareSchemaValidationSchemasListResultOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -130,6 +131,16 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -468,8 +479,8 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -477,15 +488,15 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -493,7 +504,7 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasListResultOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

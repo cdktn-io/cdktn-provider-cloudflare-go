@@ -43,11 +43,11 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateGetString
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -64,6 +64,10 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetIdPara
 }
 
 func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetProvisionLicenseParameters(val interface{}) error {
 	return nil
 }
 

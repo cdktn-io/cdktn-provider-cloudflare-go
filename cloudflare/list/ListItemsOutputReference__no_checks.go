@@ -43,7 +43,7 @@ func (l *jsiiProxy_ListItemsOutputReference) validateGetStringMapAttributeParame
 	return nil
 }
 
-func (l *jsiiProxy_ListItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_ListItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_ListItemsOutputReference) validatePutRedirectParameters(value
 	return nil
 }
 
-func (l *jsiiProxy_ListItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_ListItemsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

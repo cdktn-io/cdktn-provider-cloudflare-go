@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) validat
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

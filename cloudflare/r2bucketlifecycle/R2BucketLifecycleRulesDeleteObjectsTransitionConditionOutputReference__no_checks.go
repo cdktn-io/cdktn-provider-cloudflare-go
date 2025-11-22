@@ -43,11 +43,11 @@ func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

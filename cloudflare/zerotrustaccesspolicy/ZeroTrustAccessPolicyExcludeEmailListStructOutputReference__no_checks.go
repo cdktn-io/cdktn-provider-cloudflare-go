@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeEmailListStructOutputReference) v
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeEmailListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeEmailListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeEmailListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeEmailListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

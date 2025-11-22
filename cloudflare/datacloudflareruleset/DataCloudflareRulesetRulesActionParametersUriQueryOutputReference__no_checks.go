@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersUriQueryOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersUriQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersUriQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersUriQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersUriQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

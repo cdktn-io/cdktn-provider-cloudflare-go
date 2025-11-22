@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

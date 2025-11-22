@@ -43,7 +43,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

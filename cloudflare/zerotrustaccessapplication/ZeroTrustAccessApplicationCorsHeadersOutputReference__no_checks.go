@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validat
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationCorsHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

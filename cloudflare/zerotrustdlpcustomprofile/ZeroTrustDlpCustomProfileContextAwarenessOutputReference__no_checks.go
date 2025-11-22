@@ -43,7 +43,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) val
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) val
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

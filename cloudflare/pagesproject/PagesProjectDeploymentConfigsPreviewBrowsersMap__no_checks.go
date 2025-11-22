@@ -15,7 +15,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) validateInte
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewBrowsersMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

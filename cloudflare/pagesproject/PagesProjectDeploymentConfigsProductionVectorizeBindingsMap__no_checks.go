@@ -15,7 +15,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionVectorizeBindingsMap) 
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionVectorizeBindingsMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionVectorizeBindingsMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

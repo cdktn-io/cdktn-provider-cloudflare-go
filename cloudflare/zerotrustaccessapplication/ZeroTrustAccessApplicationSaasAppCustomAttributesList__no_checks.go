@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

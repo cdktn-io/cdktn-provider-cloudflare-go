@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zone_hold cloudflare_zone_hold}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zone_hold cloudflare_zone_hold}.
 type DataCloudflareZoneHold interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -37,6 +37,7 @@ type DataCloudflareZoneHold interface {
 	FriendlyUniqueId() *string
 	Hold() cdktf.IResolvable
 	HoldAfter() *string
+	Id() *string
 	IncludeSubdomains() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -196,6 +197,16 @@ func (j *jsiiProxy_DataCloudflareZoneHold) HoldAfter() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZoneHold) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZoneHold) IncludeSubdomains() *string {
 	var returns *string
 	_jsii_.Get(
@@ -297,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareZoneHold) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zone_hold cloudflare_zone_hold} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zone_hold cloudflare_zone_hold} Data Source.
 func NewDataCloudflareZoneHold(scope constructs.Construct, id *string, config *DataCloudflareZoneHoldConfig) DataCloudflareZoneHold {
 	_init_.Initialize()
 
@@ -315,7 +326,7 @@ func NewDataCloudflareZoneHold(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/zone_hold cloudflare_zone_hold} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zone_hold cloudflare_zone_hold} Data Source.
 func NewDataCloudflareZoneHold_Override(d DataCloudflareZoneHold, scope constructs.Construct, id *string, config *DataCloudflareZoneHoldConfig) {
 	_init_.Initialize()
 

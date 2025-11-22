@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsLi
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

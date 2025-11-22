@@ -15,7 +15,7 @@ func (f *jsiiProxy_FilterBodyList) validateGetParameters(index *float64) error {
 	return nil
 }
 
-func (f *jsiiProxy_FilterBodyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FilterBodyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceO
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

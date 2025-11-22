@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationRecordsOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareCustomHostnamesResultSslValidationRecordsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

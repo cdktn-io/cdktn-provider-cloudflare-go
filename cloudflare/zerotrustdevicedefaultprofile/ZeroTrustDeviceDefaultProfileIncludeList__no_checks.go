@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeList) validateGetParamete
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

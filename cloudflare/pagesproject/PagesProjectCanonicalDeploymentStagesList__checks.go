@@ -27,9 +27,9 @@ func (p *jsiiProxy_PagesProjectCanonicalDeploymentStagesList) validateGetParamet
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectCanonicalDeploymentStagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PagesProjectCanonicalDeploymentStagesList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

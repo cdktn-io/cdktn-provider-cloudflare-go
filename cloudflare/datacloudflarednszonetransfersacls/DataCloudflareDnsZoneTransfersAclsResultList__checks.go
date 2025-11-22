@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersAclsResultList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareDnsZoneTransfersAclsResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersAclsResultList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

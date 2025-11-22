@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validat
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

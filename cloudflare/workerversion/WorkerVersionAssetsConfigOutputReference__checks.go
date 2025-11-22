@@ -85,17 +85,17 @@ func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateGetStringMa
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -206,7 +206,7 @@ func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateSetNotFound
 	return nil
 }
 
-func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateSetRunWorkerFirstParameters(val *[]*string) error {
+func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateSetRunWorkerFirstParameters(val *map[string]interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

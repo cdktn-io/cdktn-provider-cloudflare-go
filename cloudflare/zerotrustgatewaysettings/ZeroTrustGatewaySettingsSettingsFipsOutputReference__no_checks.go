@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) validate
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsFipsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) validateGet
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

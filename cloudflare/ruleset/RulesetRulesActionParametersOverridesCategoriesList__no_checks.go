@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

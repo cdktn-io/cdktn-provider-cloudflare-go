@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateGetStringMa
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateSetNotFound
 	return nil
 }
 
-func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateSetRunWorkerFirstParameters(val *[]*string) error {
+func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateSetRunWorkerFirstParameters(val *map[string]interface{}) error {
 	return nil
 }
 

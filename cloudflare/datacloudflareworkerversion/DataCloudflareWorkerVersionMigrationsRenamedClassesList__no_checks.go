@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareWorkerVersionMigrationsRenamedClassesList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkerVersionMigrationsRenamedClassesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWorkerVersionMigrationsRenamedClassesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

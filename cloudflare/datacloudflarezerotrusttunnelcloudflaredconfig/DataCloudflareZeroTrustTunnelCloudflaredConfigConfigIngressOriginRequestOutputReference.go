@@ -40,6 +40,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	SetInternalValue(val *DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest)
 	KeepAliveConnections() *float64
 	KeepAliveTimeout() *float64
+	MatchSnItoHost() cdktf.IResolvable
 	NoHappyEyeballs() cdktf.IResolvable
 	NoTlsVerify() cdktf.IResolvable
 	OriginServerName() *string
@@ -77,10 +78,10 @@ type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -218,6 +219,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	_jsii_.Get(
 		j,
 		"keepAliveTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) MatchSnItoHost() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"matchSnItoHost",
 		&returns,
 	)
 	return returns
@@ -556,8 +567,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -565,15 +576,15 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -581,7 +592,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileFallbackDomainsLis
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileFallbackDomainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileFallbackDomainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

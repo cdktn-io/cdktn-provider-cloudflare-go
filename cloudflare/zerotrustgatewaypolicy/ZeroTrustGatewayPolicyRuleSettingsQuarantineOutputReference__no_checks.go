@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference) 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

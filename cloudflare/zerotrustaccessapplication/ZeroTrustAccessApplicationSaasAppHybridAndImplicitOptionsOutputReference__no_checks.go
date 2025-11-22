@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

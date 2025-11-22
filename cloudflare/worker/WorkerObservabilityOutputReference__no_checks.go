@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (w *jsiiProxy_WorkerObservabilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkerObservabilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) validatePutLogsParameters
 	return nil
 }
 
-func (w *jsiiProxy_WorkerObservabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerObservabilityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

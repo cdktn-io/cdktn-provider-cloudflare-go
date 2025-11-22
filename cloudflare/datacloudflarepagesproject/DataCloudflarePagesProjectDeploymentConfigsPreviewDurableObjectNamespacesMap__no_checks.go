@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObje
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

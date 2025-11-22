@@ -22,15 +22,19 @@ type ZeroTrustGatewayProxyEndpointConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint#account_id ZeroTrustGatewayProxyEndpoint#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint#account_id ZeroTrustGatewayProxyEndpoint#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Specify the list of CIDRs to restrict ingress connections.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint#ips ZeroTrustGatewayProxyEndpoint#ips}
-	Ips *[]*string `field:"required" json:"ips" yaml:"ips"`
 	// Specify the name of the proxy endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_gateway_proxy_endpoint#name ZeroTrustGatewayProxyEndpoint#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint#name ZeroTrustGatewayProxyEndpoint#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// Specify the list of CIDRs to restrict ingress connections.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint#ips ZeroTrustGatewayProxyEndpoint#ips}
+	Ips *[]*string `field:"optional" json:"ips" yaml:"ips"`
+	// The proxy endpoint kind Available values: "ip", "identity".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_gateway_proxy_endpoint#kind ZeroTrustGatewayProxyEndpoint#kind}
+	Kind *string `field:"optional" json:"kind" yaml:"kind"`
 }
 

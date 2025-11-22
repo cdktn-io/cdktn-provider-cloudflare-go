@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) validateGetStri
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) validatePutWork
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersScriptBindingsOutboundOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

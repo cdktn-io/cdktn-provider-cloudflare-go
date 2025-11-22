@@ -43,11 +43,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputRefe
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesList) validateGetParameters(ind
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDexTestTargetPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

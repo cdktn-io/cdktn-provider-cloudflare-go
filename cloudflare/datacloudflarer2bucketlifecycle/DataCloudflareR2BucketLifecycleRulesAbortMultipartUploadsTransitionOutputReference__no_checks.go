@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTran
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

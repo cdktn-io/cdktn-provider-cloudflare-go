@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/logpush_job cloudflare_logpush_job}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/logpush_job cloudflare_logpush_job}.
 type DataCloudflareLogpushJob interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -103,7 +103,6 @@ type DataCloudflareLogpushJob interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
-	ResetJobId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareLogpushJob) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/logpush_job cloudflare_logpush_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/logpush_job cloudflare_logpush_job} Data Source.
 func NewDataCloudflareLogpushJob(scope constructs.Construct, id *string, config *DataCloudflareLogpushJobConfig) DataCloudflareLogpushJob {
 	_init_.Initialize()
 
@@ -496,7 +495,7 @@ func NewDataCloudflareLogpushJob(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/logpush_job cloudflare_logpush_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/logpush_job cloudflare_logpush_job} Data Source.
 func NewDataCloudflareLogpushJob_Override(d DataCloudflareLogpushJob, scope constructs.Construct, id *string, config *DataCloudflareLogpushJobConfig) {
 	_init_.Initialize()
 
@@ -875,14 +874,6 @@ func (d *jsiiProxy_DataCloudflareLogpushJob) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLogpushJob) ResetJobId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetJobId",
 		nil, // no parameters
 	)
 }

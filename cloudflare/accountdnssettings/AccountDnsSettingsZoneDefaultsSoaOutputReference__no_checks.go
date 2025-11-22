@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

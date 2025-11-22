@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareWorkerReferencesDispatchNamespaceOutboundsList)
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkerReferencesDispatchNamespaceOutboundsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWorkerReferencesDispatchNamespaceOutboundsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

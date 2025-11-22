@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) vali
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

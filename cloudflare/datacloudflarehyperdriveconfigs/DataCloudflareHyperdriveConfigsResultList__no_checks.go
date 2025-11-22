@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

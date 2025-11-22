@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference) 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

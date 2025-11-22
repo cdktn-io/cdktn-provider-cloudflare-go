@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkerVersionModulesList) validateGetParameters(index *float6
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionModulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerVersionModulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

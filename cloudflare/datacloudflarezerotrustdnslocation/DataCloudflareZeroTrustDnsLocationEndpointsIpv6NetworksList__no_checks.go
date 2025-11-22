@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (r *jsiiProxy_RateLimitMatchHeadersOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitMatchHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RateLimitMatchHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitMatchHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RateLimitMatchHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

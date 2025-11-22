@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiTokenPoliciesList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiTokenPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

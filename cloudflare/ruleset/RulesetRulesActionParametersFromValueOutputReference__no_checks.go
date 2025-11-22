@@ -43,7 +43,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) validat
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) validat
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

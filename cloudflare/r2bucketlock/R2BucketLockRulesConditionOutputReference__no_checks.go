@@ -43,11 +43,11 @@ func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateGetStringM
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

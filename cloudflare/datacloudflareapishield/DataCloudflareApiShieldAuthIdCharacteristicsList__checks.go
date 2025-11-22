@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataCloudflareApiShieldAuthIdCharacteristicsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldAuthIdCharacteristicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataCloudflareApiShieldAuthIdCharacteristicsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

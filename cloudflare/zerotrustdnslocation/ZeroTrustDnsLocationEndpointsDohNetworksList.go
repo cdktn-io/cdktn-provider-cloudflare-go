@@ -41,7 +41,7 @@ type ZeroTrustDnsLocationEndpointsDohNetworksList interface {
 	Get(index *float64) ZeroTrustDnsLocationEndpointsDohNetworksOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) Get(index *floa
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := z.validateResolveParameters(_context); err != nil {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) Resolve(_contex
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

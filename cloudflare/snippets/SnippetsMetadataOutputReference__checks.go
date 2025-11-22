@@ -85,17 +85,17 @@ func (s *jsiiProxy_SnippetsMetadataOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (s *jsiiProxy_SnippetsMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SnippetsMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_SnippetsMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SnippetsMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

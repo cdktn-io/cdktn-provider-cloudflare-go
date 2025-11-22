@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareAccountMemberRolesPermissionsSslOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareAccountMemberRolesPermissionsSslOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareAccountMemberRolesPermissionsSslOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareAccountMemberRolesPermissionsSslOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareAccountMemberRolesPermissionsSslOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

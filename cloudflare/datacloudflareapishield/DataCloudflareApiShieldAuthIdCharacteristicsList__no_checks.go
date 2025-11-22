@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldAuthIdCharacteristicsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldAuthIdCharacteristicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareApiShieldAuthIdCharacteristicsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

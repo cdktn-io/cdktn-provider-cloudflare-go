@@ -15,7 +15,7 @@ func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) validateInterpolat
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

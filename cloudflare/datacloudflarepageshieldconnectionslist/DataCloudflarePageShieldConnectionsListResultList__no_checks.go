@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

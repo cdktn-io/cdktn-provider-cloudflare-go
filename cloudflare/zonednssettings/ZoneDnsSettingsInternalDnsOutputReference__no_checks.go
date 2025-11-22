@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZoneDnsSettingsInternalDnsOutputReference) validateGetStringM
 	return nil
 }
 
-func (z *jsiiProxy_ZoneDnsSettingsInternalDnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZoneDnsSettingsInternalDnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZoneDnsSettingsInternalDnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneDnsSettingsInternalDnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

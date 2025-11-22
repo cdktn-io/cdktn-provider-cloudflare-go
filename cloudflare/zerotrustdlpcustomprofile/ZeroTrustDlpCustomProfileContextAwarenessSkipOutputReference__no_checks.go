@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference)
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

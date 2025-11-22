@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustRiskBehaviorBehaviorsMap) validateInte
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustRiskBehaviorBehaviorsMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustRiskBehaviorBehaviorsMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

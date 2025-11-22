@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsList) validateGetP
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsStepsOutputReference) validateGetStrin
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionMigrationsStepsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkerVersionMigrationsStepsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsStepsOutputReference) validatePutTrans
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionMigrationsStepsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerVersionMigrationsStepsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

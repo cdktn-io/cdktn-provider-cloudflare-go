@@ -43,15 +43,11 @@ func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validatePutMetaParameters(value *ApiTokenPoliciesPermissionGroupsMeta) error {
-	return nil
-}
-
-func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiTokenPoliciesPermissionGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

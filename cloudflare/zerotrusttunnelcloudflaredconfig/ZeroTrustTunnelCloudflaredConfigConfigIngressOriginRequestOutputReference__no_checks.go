@@ -43,7 +43,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -92,6 +92,10 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 }
 
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetKeepAliveTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) validateSetMatchSnItoHostParameters(val interface{}) error {
 	return nil
 }
 

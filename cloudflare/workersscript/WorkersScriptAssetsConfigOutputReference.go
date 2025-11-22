@@ -44,9 +44,9 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	Redirects() *string
 	SetRedirects(val *string)
 	RedirectsInput() *string
-	RunWorkerFirst() interface{}
-	SetRunWorkerFirst(val interface{})
-	RunWorkerFirstInput() interface{}
+	RunWorkerFirst() *map[string]interface{}
+	SetRunWorkerFirst(val *map[string]interface{})
+	RunWorkerFirstInput() *map[string]interface{}
 	ServeDirectly() interface{}
 	SetServeDirectly(val interface{})
 	ServeDirectlyInput() interface{}
@@ -81,7 +81,7 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetHeaders()
 	ResetHtmlHandling()
 	ResetNotFoundHandling()
@@ -90,7 +90,7 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	ResetServeDirectly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -233,8 +233,8 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RedirectsInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirst() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirst() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"runWorkerFirst",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirst() in
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirstInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RunWorkerFirstInput() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"runWorkerFirstInput",
@@ -398,7 +398,7 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRedirects(val *st
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRunWorkerFirst(val interface{}) {
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRunWorkerFirst(val *map[string]interface{}) {
 	if err := j.validateSetRunWorkerFirstParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,8 +612,8 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) InterpolationAsList
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -621,7 +621,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -676,8 +676,8 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ResetServeDirectly(
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -685,7 +685,7 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

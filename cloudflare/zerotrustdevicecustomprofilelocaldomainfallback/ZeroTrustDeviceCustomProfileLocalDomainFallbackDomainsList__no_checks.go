@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList) v
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

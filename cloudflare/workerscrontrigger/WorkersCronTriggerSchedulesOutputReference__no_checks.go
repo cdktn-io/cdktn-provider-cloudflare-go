@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateGetString
 	return nil
 }
 
-func (w *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputRef
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

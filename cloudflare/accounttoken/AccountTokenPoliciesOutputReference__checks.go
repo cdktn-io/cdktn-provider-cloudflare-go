@@ -85,9 +85,9 @@ func (a *jsiiProxy_AccountTokenPoliciesOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (a *jsiiProxy_AccountTokenPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AccountTokenPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (a *jsiiProxy_AccountTokenPoliciesOutputReference) validatePutPermissionGro
 	return nil
 }
 
-func (a *jsiiProxy_AccountTokenPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AccountTokenPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -229,7 +229,7 @@ func (j *jsiiProxy_AccountTokenPoliciesOutputReference) validateSetInternalValue
 	return nil
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesOutputReference) validateSetResourcesParameters(val *map[string]*string) error {
+func (j *jsiiProxy_AccountTokenPoliciesOutputReference) validateSetResourcesParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesExposedCredentialCheckOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesExposedCredentialCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareRulesetRulesExposedCredentialCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesExposedCredentialCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRulesetRulesExposedCredentialCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

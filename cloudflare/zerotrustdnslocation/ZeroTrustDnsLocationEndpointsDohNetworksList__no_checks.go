@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) validateGetPara
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDohNetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

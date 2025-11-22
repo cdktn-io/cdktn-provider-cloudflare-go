@@ -43,7 +43,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) validatePutStorageClas
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

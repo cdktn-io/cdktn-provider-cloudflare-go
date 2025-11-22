@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkersCronTriggerSchedulesList) validateGetParameters(index 
 	return nil
 }
 
-func (w *jsiiProxy_WorkersCronTriggerSchedulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersCronTriggerSchedulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

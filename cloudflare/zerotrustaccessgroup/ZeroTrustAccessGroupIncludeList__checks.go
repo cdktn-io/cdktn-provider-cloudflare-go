@@ -29,9 +29,9 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeList) validateGetParameters(index 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupIncludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

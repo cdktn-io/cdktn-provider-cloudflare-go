@@ -15,7 +15,7 @@ func (s *jsiiProxy_SnippetRulesRulesList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (s *jsiiProxy_SnippetRulesRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SnippetRulesRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

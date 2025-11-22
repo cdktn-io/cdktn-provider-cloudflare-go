@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

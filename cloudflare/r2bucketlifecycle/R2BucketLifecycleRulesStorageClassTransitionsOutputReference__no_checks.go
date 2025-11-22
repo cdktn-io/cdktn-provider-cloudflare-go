@@ -43,7 +43,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

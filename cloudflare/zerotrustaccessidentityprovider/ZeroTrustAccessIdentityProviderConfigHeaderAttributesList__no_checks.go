@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigHeaderAttributesList) va
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigHeaderAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigHeaderAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -144,7 +144,7 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutHeaderAttributes(value interface{})
 	ResetAppsDomain()
 	ResetAttributes()
@@ -175,7 +175,7 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	ResetTokenUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -1347,8 +1347,8 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Interp
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -1356,7 +1356,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Interp
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1590,8 +1590,8 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetT
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := z.validateResolveParameters(_context); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1599,7 +1599,7 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Resolv
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

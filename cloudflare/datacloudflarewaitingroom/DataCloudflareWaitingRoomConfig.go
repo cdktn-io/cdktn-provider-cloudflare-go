@@ -22,11 +22,11 @@ type DataCloudflareWaitingRoomConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/waiting_room#waiting_room_id DataCloudflareWaitingRoom#waiting_room_id}.
+	WaitingRoomId *string `field:"required" json:"waitingRoomId" yaml:"waitingRoomId"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/waiting_room#zone_id DataCloudflareWaitingRoom#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/waiting_room#zone_id DataCloudflareWaitingRoom#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/waiting_room#waiting_room_id DataCloudflareWaitingRoom#waiting_room_id}.
-	WaitingRoomId *string `field:"optional" json:"waitingRoomId" yaml:"waitingRoomId"`
 }
 

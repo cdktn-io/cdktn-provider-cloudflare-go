@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveB
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateGetStringM
 	return nil
 }
 
-func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

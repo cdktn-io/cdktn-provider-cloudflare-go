@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRulesResultList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRulesResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRulesResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

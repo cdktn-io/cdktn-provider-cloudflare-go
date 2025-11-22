@@ -80,7 +80,7 @@ type DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference interface
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutName(value *DataCloudflareAccountDnsSettingsInternalViewFilterName)
 	ResetDirection()
 	ResetMatch()
@@ -90,7 +90,7 @@ type DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference interface
 	ResetZoneName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -601,8 +601,8 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViewFilterOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -610,7 +610,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViewFilterOutputRefer
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -676,8 +676,8 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViewFilterOutputRefer
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -685,7 +685,7 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViewFilterOutputRefer
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

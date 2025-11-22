@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateGetSt
 	return nil
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

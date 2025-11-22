@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

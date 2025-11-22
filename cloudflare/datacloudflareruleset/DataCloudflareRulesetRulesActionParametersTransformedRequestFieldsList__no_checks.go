@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersTransformedRequestF
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

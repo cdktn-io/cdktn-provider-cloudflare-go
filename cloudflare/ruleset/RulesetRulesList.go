@@ -41,7 +41,7 @@ type RulesetRulesList interface {
 	Get(index *float64) RulesetRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (r *jsiiProxy_RulesetRulesList) Get(index *float64) RulesetRulesOutputRefer
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RulesetRulesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (r *jsiiProxy_RulesetRulesList) Resolve(_context cdktf.IResolveContext) int
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

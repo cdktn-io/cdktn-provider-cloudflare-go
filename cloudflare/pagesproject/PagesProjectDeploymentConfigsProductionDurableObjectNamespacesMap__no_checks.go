@@ -15,7 +15,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionDurableObjectNamespace
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

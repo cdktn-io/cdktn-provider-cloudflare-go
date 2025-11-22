@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareCustomSslKeylessServerOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomSslKeylessServerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareCustomSslKeylessServerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomSslKeylessServerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareCustomSslKeylessServerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

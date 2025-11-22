@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApiTokenConditionOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiTokenConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApiTokenConditionOutputReference) validatePutRequestIpParamet
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiTokenConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

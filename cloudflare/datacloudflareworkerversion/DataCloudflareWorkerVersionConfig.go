@@ -24,21 +24,21 @@ type DataCloudflareWorkerVersionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker_version#account_id DataCloudflareWorkerVersion#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker_version#account_id DataCloudflareWorkerVersion#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// Identifier for the version, which can be ID or the literal "latest" to operate on the most recently created version.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker_version#version_id DataCloudflareWorkerVersion#version_id}
+	VersionId *string `field:"required" json:"versionId" yaml:"versionId"`
 	// Identifier for the Worker, which can be ID or name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker_version#worker_id DataCloudflareWorkerVersion#worker_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker_version#worker_id DataCloudflareWorkerVersion#worker_id}
 	WorkerId *string `field:"required" json:"workerId" yaml:"workerId"`
 	// Whether to include the `modules` property of the version in the response, which contains code and sourcemap content and may add several megabytes to the response size.
 	//
 	// Available values: "modules".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker_version#include DataCloudflareWorkerVersion#include}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker_version#include DataCloudflareWorkerVersion#include}
 	Include *string `field:"optional" json:"include" yaml:"include"`
-	// Identifier for the version, which can be ID or the literal "latest" to operate on the most recently created version.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/worker_version#version_id DataCloudflareWorkerVersion#version_id}
-	VersionId *string `field:"optional" json:"versionId" yaml:"versionId"`
 }
 

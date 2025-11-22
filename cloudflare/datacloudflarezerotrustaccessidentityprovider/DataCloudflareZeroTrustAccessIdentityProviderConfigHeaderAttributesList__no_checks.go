@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigHeaderAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigHeaderAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigHeaderAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

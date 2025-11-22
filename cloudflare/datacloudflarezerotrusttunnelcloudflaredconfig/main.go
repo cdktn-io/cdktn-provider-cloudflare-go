@@ -55,7 +55,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tunnelId", GoGetter: "TunnelId"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelIdInput", GoGetter: "TunnelIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
-			_jsii_.MemberProperty{JsiiProperty: "warpRoutingEnabled", GoGetter: "WarpRoutingEnabled"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA{}
@@ -168,6 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveConnections", GoGetter: "KeepAliveConnections"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveTimeout", GoGetter: "KeepAliveTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "matchSnItoHost", GoGetter: "MatchSnItoHost"},
 			_jsii_.MemberProperty{JsiiProperty: "noHappyEyeballs", GoGetter: "NoHappyEyeballs"},
 			_jsii_.MemberProperty{JsiiProperty: "noTlsVerify", GoGetter: "NoTlsVerify"},
 			_jsii_.MemberProperty{JsiiProperty: "originServerName", GoGetter: "OriginServerName"},
@@ -293,6 +293,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveConnections", GoGetter: "KeepAliveConnections"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveTimeout", GoGetter: "KeepAliveTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "matchSnItoHost", GoGetter: "MatchSnItoHost"},
 			_jsii_.MemberProperty{JsiiProperty: "noHappyEyeballs", GoGetter: "NoHappyEyeballs"},
 			_jsii_.MemberProperty{JsiiProperty: "noTlsVerify", GoGetter: "NoTlsVerify"},
 			_jsii_.MemberProperty{JsiiProperty: "originServerName", GoGetter: "OriginServerName"},

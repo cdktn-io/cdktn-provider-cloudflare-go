@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkerReferencesQueuesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (w *jsiiProxy_WorkerReferencesQueuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerReferencesQueuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

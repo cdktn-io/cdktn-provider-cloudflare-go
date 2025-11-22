@@ -22,13 +22,13 @@ type DataCloudflareRateLimitConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Defines an identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/rate_limit#zone_id DataCloudflareRateLimit#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Defines the unique identifier of the rate limit.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/rate_limit#rate_limit_id DataCloudflareRateLimit#rate_limit_id}
-	RateLimitId *string `field:"optional" json:"rateLimitId" yaml:"rateLimitId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/rate_limit#rate_limit_id DataCloudflareRateLimit#rate_limit_id}
+	RateLimitId *string `field:"required" json:"rateLimitId" yaml:"rateLimitId"`
+	// Defines an identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/rate_limit#zone_id DataCloudflareRateLimit#zone_id}
+	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

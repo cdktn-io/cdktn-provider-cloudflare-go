@@ -43,6 +43,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	// Experimental.
 	Fqn() *string
 	GatewayUniqueId() *string
+	Id() *string
 	Include() DataCloudflareZeroTrustDeviceCustomProfilesResultIncludeList
 	InternalValue() *DataCloudflareZeroTrustDeviceCustomProfilesResult
 	SetInternalValue(val *DataCloudflareZeroTrustDeviceCustomProfilesResult)
@@ -90,10 +91,10 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -271,6 +272,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"gatewayUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -699,8 +710,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -708,15 +719,15 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -724,7 +735,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsWebhooksList) validateGetParamete
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsWebhooksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsWebhooksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

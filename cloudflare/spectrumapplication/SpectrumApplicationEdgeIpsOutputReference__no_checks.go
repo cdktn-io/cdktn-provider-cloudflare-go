@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateGetStringM
 	return nil
 }
 
-func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

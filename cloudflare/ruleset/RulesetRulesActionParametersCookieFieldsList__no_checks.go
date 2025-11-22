@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCookieFieldsList) validateGetPara
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCookieFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCookieFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

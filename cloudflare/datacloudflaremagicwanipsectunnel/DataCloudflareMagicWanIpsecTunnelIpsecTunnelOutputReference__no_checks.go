@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

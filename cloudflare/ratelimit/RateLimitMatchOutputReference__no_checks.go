@@ -43,7 +43,7 @@ func (r *jsiiProxy_RateLimitMatchOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RateLimitMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (r *jsiiProxy_RateLimitMatchOutputReference) validatePutResponseParameters(
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RateLimitMatchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

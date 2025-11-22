@@ -46,7 +46,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "physport", GoGetter: "Physport"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLanId", GoMethod: "ResetLanId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "routedSubnets", GoGetter: "RoutedSubnets"},
 			_jsii_.MemberProperty{JsiiProperty: "siteId", GoGetter: "SiteId"},

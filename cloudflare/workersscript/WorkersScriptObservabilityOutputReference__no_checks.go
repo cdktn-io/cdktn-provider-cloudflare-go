@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) validateGetStringM
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) validatePutLogsPar
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

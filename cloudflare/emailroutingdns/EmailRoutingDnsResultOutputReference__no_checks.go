@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

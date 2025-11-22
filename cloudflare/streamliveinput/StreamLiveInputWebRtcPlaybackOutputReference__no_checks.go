@@ -43,11 +43,11 @@ func (s *jsiiProxy_StreamLiveInputWebRtcPlaybackOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_StreamLiveInputWebRtcPlaybackOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StreamLiveInputWebRtcPlaybackOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StreamLiveInputWebRtcPlaybackOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StreamLiveInputWebRtcPlaybackOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

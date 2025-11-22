@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAlgorithmsList) validateGetParame
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersAlgorithmsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersAlgorithmsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

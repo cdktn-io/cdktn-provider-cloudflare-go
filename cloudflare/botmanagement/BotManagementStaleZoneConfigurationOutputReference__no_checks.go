@@ -43,11 +43,11 @@ func (b *jsiiProxy_BotManagementStaleZoneConfigurationOutputReference) validateG
 	return nil
 }
 
-func (b *jsiiProxy_BotManagementStaleZoneConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BotManagementStaleZoneConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BotManagementStaleZoneConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BotManagementStaleZoneConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

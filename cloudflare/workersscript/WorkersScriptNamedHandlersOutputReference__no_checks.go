@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkersScriptNamedHandlersOutputReference) validateGetStringM
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptNamedHandlersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkersScriptNamedHandlersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptNamedHandlersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersScriptNamedHandlersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

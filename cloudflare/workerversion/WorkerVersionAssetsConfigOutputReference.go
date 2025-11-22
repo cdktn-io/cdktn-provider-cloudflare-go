@@ -38,9 +38,9 @@ type WorkerVersionAssetsConfigOutputReference interface {
 	NotFoundHandling() *string
 	SetNotFoundHandling(val *string)
 	NotFoundHandlingInput() *string
-	RunWorkerFirst() *[]*string
-	SetRunWorkerFirst(val *[]*string)
-	RunWorkerFirstInput() *[]*string
+	RunWorkerFirst() *map[string]interface{}
+	SetRunWorkerFirst(val *map[string]interface{})
+	RunWorkerFirstInput() *map[string]interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,13 +72,13 @@ type WorkerVersionAssetsConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetHtmlHandling()
 	ResetNotFoundHandling()
 	ResetRunWorkerFirst()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) NotFoundHandlingInp
 	return returns
 }
 
-func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) RunWorkerFirst() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) RunWorkerFirst() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"runWorkerFirst",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) RunWorkerFirst() *[
 	return returns
 }
 
-func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) RunWorkerFirstInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) RunWorkerFirstInput() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"runWorkerFirstInput",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference)SetNotFoundHandling(
 	)
 }
 
-func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference)SetRunWorkerFirst(val *[]*string) {
+func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference)SetRunWorkerFirst(val *map[string]interface{}) {
 	if err := j.validateSetRunWorkerFirstParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,8 +507,8 @@ func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) InterpolationAsList
 	return returns
 }
 
-func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -516,7 +516,7 @@ func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) ResetRunWorkerFirst
 	)
 }
 
-func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

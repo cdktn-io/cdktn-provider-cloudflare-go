@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateGetParamet
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

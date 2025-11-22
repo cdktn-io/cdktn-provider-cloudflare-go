@@ -15,7 +15,7 @@ func (w *jsiiProxy_WaitingRoomRulesRulesList) validateGetParameters(index *float
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoomRulesRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WaitingRoomRulesRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

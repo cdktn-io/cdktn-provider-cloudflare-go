@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/dns_firewall cloudflare_dns_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/dns_firewall cloudflare_dns_firewall}.
 type DataCloudflareDnsFirewall interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -97,7 +97,6 @@ type DataCloudflareDnsFirewall interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetDnsFirewallId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataCloudflareDnsFirewall) UpstreamIps() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
 func NewDataCloudflareDnsFirewall(scope constructs.Construct, id *string, config *DataCloudflareDnsFirewallConfig) DataCloudflareDnsFirewall {
 	_init_.Initialize()
 
@@ -449,7 +448,7 @@ func NewDataCloudflareDnsFirewall(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
 func NewDataCloudflareDnsFirewall_Override(d DataCloudflareDnsFirewall, scope constructs.Construct, id *string, config *DataCloudflareDnsFirewallConfig) {
 	_init_.Initialize()
 
@@ -810,14 +809,6 @@ func (d *jsiiProxy_DataCloudflareDnsFirewall) OverrideLogicalId(newLogicalId *st
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareDnsFirewall) ResetDnsFirewallId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDnsFirewallId",
-		nil, // no parameters
 	)
 }
 

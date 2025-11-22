@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcc
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

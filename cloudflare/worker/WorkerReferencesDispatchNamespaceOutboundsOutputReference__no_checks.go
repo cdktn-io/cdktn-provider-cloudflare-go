@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) va
 	return nil
 }
 
-func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

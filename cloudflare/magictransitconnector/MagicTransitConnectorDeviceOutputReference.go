@@ -35,6 +35,9 @@ type MagicTransitConnectorDeviceOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ProvisionLicense() interface{}
+	SetProvisionLicense(val interface{})
+	ProvisionLicenseInput() interface{}
 	SerialNumber() *string
 	SetSerialNumber(val *string)
 	SerialNumberInput() *string
@@ -69,12 +72,13 @@ type MagicTransitConnectorDeviceOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetId()
+	ResetProvisionLicense()
 	ResetSerialNumber()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InternalValue() i
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ProvisionLicense() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"provisionLicense",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ProvisionLicenseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"provisionLicenseInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetProvisionLicense(val interface{}) {
+	if err := j.validateSetProvisionLicenseParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionLicense",
 		val,
 	)
 }
@@ -472,8 +507,8 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -481,7 +516,7 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -496,6 +531,14 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ResetId() {
 	)
 }
 
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ResetProvisionLicense() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProvisionLicense",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ResetSerialNumber() {
 	_jsii_.InvokeVoid(
 		m,
@@ -504,8 +547,8 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ResetSerialNumber
 	)
 }
 
-func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +556,7 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

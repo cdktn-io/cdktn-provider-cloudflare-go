@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsEmailList) validateGetParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsEmailList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsEmailList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

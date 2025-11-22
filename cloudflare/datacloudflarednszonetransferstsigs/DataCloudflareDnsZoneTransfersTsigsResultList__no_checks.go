@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersTsigsResultList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareDnsZoneTransfersTsigsResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersTsigsResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

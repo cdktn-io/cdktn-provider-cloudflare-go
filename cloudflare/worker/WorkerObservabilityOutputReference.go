@@ -71,14 +71,14 @@ type WorkerObservabilityOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutLogs(value *WorkerObservabilityLogs)
 	ResetEnabled()
 	ResetHeadSamplingRate()
 	ResetLogs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -496,8 +496,8 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (w *jsiiProxy_WorkerObservabilityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkerObservabilityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -505,7 +505,7 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) ResetLogs() {
 	)
 }
 
-func (w *jsiiProxy_WorkerObservabilityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkerObservabilityOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

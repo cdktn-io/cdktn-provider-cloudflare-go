@@ -85,17 +85,17 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

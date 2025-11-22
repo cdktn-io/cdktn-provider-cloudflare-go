@@ -43,7 +43,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateGetStringM
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutSession
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

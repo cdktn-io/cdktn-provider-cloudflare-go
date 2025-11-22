@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsList) validateGet
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,17 +85,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeAzureAdOutputReference) validateG
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeAzureAdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeAzureAdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeAzureAdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeAzureAdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

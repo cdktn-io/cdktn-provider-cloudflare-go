@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validatePutTagP
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

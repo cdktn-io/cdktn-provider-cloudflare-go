@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkersScriptPlacementOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptPlacementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkersScriptPlacementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptPlacementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersScriptPlacementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

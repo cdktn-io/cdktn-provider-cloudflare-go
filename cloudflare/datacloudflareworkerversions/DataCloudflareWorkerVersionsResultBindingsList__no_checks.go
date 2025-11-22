@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareWorkerVersionsResultBindingsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkerVersionsResultBindingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWorkerVersionsResultBindingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcheckHttpConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

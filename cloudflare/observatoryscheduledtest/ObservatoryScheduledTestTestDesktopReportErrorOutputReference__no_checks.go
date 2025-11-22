@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

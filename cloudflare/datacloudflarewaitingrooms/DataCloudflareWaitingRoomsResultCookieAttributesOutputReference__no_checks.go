@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

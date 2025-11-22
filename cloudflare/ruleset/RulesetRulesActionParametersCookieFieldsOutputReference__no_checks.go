@@ -43,11 +43,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersCookieFieldsOutputReference) vali
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCookieFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCookieFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCookieFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCookieFieldsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

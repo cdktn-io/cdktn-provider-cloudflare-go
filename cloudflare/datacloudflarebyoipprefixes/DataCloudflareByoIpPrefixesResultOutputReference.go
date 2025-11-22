@@ -35,16 +35,21 @@ type DataCloudflareByoIpPrefixesResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DelegateLoaCreation() cdktf.IResolvable
 	Description() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	InternalValue() *DataCloudflareByoIpPrefixesResult
 	SetInternalValue(val *DataCloudflareByoIpPrefixesResult)
+	IrrValidationState() *string
 	LoaDocumentId() *string
 	ModifiedAt() *string
 	OnDemandEnabled() cdktf.IResolvable
 	OnDemandLocked() cdktf.IResolvable
+	OwnershipValidationState() *string
+	OwnershipValidationToken() *string
+	RpkiValidationState() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +81,10 @@ type DataCloudflareByoIpPrefixesResultOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -192,6 +197,16 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) CreationSta
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) DelegateLoaCreation() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"delegateLoaCreation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Description() *string {
 	var returns *string
 	_jsii_.Get(
@@ -232,6 +247,16 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) InternalVal
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) IrrValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"irrValidationState",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) LoaDocumentId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -267,6 +292,36 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OnDemandLoc
 	_jsii_.Get(
 		j,
 		"onDemandLocked",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OwnershipValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownershipValidationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OwnershipValidationToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownershipValidationToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) RpkiValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rpkiValidationState",
 		&returns,
 	)
 	return returns
@@ -545,8 +600,8 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -554,15 +609,15 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -570,7 +625,7 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

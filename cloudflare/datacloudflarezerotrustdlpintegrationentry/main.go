@@ -49,7 +49,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "profileId", GoGetter: "ProfileId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEntryId", GoMethod: "ResetEntryId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "secret", GoGetter: "Secret"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

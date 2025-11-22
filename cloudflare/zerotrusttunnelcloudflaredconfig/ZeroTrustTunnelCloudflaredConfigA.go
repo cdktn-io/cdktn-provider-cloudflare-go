@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}.
 type ZeroTrustTunnelCloudflaredConfigA interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -75,9 +75,6 @@ type ZeroTrustTunnelCloudflaredConfigA interface {
 	SetTunnelId(val *string)
 	TunnelIdInput() *string
 	Version() *float64
-	WarpRoutingEnabled() interface{}
-	SetWarpRoutingEnabled(val interface{})
-	WarpRoutingEnabledInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -127,7 +124,6 @@ type ZeroTrustTunnelCloudflaredConfigA interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSource()
-	ResetWarpRoutingEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -416,28 +412,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) Version() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) WarpRoutingEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"warpRoutingEnabled",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) WarpRoutingEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"warpRoutingEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
 func NewZeroTrustTunnelCloudflaredConfigA(scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredConfigAConfig) ZeroTrustTunnelCloudflaredConfigA {
 	_init_.Initialize()
 
@@ -455,7 +431,7 @@ func NewZeroTrustTunnelCloudflaredConfigA(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
 func NewZeroTrustTunnelCloudflaredConfigA_Override(z ZeroTrustTunnelCloudflaredConfigA, scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredConfigAConfig) {
 	_init_.Initialize()
 
@@ -563,17 +539,6 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA)SetTunnelId(val *string) {
 	_jsii_.Set(
 		j,
 		"tunnelId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA)SetWarpRoutingEnabled(val interface{}) {
-	if err := j.validateSetWarpRoutingEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"warpRoutingEnabled",
 		val,
 	)
 }
@@ -962,14 +927,6 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) ResetSource() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetSource",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) ResetWarpRoutingEnabled() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetWarpRoutingEnabled",
 		nil, // no parameters
 	)
 }

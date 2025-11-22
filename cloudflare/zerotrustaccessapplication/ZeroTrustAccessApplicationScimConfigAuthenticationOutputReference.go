@@ -90,7 +90,7 @@ type ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference interface
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAuthorizationUrl()
 	ResetClientId()
 	ResetClientSecret()
@@ -101,7 +101,7 @@ type ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference interface
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -716,8 +716,8 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputRefer
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -725,7 +725,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputRefer
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -796,8 +796,8 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputRefer
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := z.validateResolveParameters(_context); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -805,7 +805,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputRefer
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

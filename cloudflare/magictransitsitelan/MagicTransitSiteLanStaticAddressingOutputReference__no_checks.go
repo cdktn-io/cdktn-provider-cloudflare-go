@@ -43,7 +43,7 @@ func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingOutputReference) validateP
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

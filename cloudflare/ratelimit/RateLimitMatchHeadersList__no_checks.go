@@ -15,7 +15,7 @@ func (r *jsiiProxy_RateLimitMatchHeadersList) validateGetParameters(index *float
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitMatchHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RateLimitMatchHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiShieldOperationFeaturesOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_ApiShieldOperationFeaturesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiShieldOperationFeaturesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiShieldOperationFeaturesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiShieldOperationFeaturesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

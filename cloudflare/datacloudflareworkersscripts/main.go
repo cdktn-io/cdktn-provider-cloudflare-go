@@ -151,6 +151,86 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultObservability",
+		reflect.TypeOf((*DataCloudflareWorkersScriptsResultObservability)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultObservabilityLogs",
+		reflect.TypeOf((*DataCloudflareWorkersScriptsResultObservabilityLogs)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultObservabilityLogsOutputReference",
+		reflect.TypeOf((*DataCloudflareWorkersScriptsResultObservabilityLogsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "destinations", GoGetter: "Destinations"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "headSamplingRate", GoGetter: "HeadSamplingRate"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "invocationLogs", GoGetter: "InvocationLogs"},
+			_jsii_.MemberProperty{JsiiProperty: "persist", GoGetter: "Persist"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataCloudflareWorkersScriptsResultObservabilityLogsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultObservabilityOutputReference",
+		reflect.TypeOf((*DataCloudflareWorkersScriptsResultObservabilityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "headSamplingRate", GoGetter: "HeadSamplingRate"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "logs", GoGetter: "Logs"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataCloudflareWorkersScriptsResultObservabilityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultOutputReference",
 		reflect.TypeOf((*DataCloudflareWorkersScriptsResultOutputReference)(nil)).Elem(),
@@ -185,10 +265,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "migrationTag", GoGetter: "MigrationTag"},
 			_jsii_.MemberProperty{JsiiProperty: "modifiedOn", GoGetter: "ModifiedOn"},
 			_jsii_.MemberProperty{JsiiProperty: "namedHandlers", GoGetter: "NamedHandlers"},
+			_jsii_.MemberProperty{JsiiProperty: "observability", GoGetter: "Observability"},
 			_jsii_.MemberProperty{JsiiProperty: "placement", GoGetter: "Placement"},
 			_jsii_.MemberProperty{JsiiProperty: "placementMode", GoGetter: "PlacementMode"},
 			_jsii_.MemberProperty{JsiiProperty: "placementStatus", GoGetter: "PlacementStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "routes", GoGetter: "Routes"},
+			_jsii_.MemberProperty{JsiiProperty: "tag", GoGetter: "Tag"},
+			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tailConsumers", GoGetter: "TailConsumers"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -236,6 +320,66 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultRoutes",
+		reflect.TypeOf((*DataCloudflareWorkersScriptsResultRoutes)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultRoutesList",
+		reflect.TypeOf((*DataCloudflareWorkersScriptsResultRoutesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataCloudflareWorkersScriptsResultRoutesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.dataCloudflareWorkersScripts.DataCloudflareWorkersScriptsResultRoutesOutputReference",
+		reflect.TypeOf((*DataCloudflareWorkersScriptsResultRoutesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pattern", GoGetter: "Pattern"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "script", GoGetter: "Script"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataCloudflareWorkersScriptsResultRoutesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

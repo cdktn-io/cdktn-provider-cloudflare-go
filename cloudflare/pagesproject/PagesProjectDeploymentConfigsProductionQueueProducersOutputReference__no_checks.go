@@ -43,11 +43,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersOutputRe
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionQueueProducersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

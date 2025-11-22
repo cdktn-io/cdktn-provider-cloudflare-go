@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsList) validateGetParameters(
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetUploadsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference)
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsDnsResolversI
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

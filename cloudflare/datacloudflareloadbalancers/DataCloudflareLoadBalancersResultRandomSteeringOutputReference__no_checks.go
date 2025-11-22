@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultRandomSteeringOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancersResultRandomSteeringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareLoadBalancersResultRandomSteeringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancersResultRandomSteeringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareLoadBalancersResultRandomSteeringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

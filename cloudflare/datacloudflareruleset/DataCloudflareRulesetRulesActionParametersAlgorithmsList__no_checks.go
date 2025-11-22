@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAlgorithmsList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAlgorithmsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAlgorithmsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

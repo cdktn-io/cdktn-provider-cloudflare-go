@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

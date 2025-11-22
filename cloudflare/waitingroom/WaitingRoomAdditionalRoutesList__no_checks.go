@@ -15,7 +15,7 @@ func (w *jsiiProxy_WaitingRoomAdditionalRoutesList) validateGetParameters(index 
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoomAdditionalRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WaitingRoomAdditionalRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

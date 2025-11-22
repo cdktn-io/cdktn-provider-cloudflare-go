@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference) validateGetStr
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

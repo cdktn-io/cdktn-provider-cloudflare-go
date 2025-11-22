@@ -43,7 +43,7 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsOutputReference) validatePutN
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference
 	return nil
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicNetworkMonitoringConfigurationWarpDevicesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

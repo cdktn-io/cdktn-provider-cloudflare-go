@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validatePutP
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

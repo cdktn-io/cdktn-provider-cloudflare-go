@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsHeaderOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

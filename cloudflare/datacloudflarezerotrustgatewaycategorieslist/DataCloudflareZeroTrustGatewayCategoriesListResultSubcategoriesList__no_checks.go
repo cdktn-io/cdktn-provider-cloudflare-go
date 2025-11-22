@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategori
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

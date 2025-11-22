@@ -15,7 +15,7 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesList) validateGetParameters(ind
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketEventNotificationRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketEventNotificationRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

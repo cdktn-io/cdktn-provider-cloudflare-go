@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesList) validateGetParame
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileSharedEntriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

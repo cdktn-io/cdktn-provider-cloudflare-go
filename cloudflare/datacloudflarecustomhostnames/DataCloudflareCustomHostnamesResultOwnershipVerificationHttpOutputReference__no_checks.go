@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultOwnershipVerificationHttpO
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomHostnamesResultOwnershipVerificationHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareCustomHostnamesResultOwnershipVerificationHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomHostnamesResultOwnershipVerificationHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareCustomHostnamesResultOwnershipVerificationHttpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

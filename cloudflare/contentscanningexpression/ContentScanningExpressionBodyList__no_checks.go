@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContentScanningExpressionBodyList) validateGetParameters(inde
 	return nil
 }
 
-func (c *jsiiProxy_ContentScanningExpressionBodyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContentScanningExpressionBodyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

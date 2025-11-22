@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

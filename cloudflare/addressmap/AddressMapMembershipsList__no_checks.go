@@ -15,7 +15,7 @@ func (a *jsiiProxy_AddressMapMembershipsList) validateGetParameters(index *float
 	return nil
 }
 
-func (a *jsiiProxy_AddressMapMembershipsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AddressMapMembershipsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) validatePu
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomHostnameOwnershipVerificationOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameOwnershipVerificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomHostnameOwnershipVerificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameOwnershipVerificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomHostnameOwnershipVerificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

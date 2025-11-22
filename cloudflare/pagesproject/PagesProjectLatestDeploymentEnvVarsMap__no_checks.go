@@ -15,7 +15,7 @@ func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) validateInterpolation
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_D1DatabaseReadReplicationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

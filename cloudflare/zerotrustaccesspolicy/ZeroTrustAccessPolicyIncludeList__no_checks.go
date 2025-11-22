@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeList) validateGetParameters(index
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

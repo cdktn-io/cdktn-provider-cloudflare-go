@@ -15,7 +15,7 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) validateGetParameters(i
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

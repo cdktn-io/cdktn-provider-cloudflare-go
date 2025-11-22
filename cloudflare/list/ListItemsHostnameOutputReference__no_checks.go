@@ -43,11 +43,11 @@ func (l *jsiiProxy_ListItemsHostnameOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (l *jsiiProxy_ListItemsHostnameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_ListItemsHostnameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_ListItemsHostnameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_ListItemsHostnameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

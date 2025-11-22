@@ -15,7 +15,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap) vali
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

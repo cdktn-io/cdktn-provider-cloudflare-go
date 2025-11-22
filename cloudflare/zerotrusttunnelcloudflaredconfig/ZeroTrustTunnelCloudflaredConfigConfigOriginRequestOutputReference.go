@@ -55,6 +55,9 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interfac
 	KeepAliveTimeout() *float64
 	SetKeepAliveTimeout(val *float64)
 	KeepAliveTimeoutInput() *float64
+	MatchSnItoHost() interface{}
+	SetMatchSnItoHost(val interface{})
+	MatchSnItoHostInput() interface{}
 	NoHappyEyeballs() interface{}
 	SetNoHappyEyeballs(val interface{})
 	NoHappyEyeballsInput() interface{}
@@ -104,7 +107,7 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interfac
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAccess(value *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess)
 	ResetAccess()
 	ResetCaPool()
@@ -114,6 +117,7 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interfac
 	ResetHttpHostHeader()
 	ResetKeepAliveConnections()
 	ResetKeepAliveTimeout()
+	ResetMatchSnItoHost()
 	ResetNoHappyEyeballs()
 	ResetNoTlsVerify()
 	ResetOriginServerName()
@@ -122,7 +126,7 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interfac
 	ResetTlsTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -340,6 +344,26 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	_jsii_.Get(
 		j,
 		"keepAliveTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) MatchSnItoHost() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"matchSnItoHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) MatchSnItoHostInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"matchSnItoHostInput",
 		&returns,
 	)
 	return returns
@@ -623,6 +647,17 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetMatchSnItoHost(val interface{}) {
+	if err := j.validateSetMatchSnItoHostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"matchSnItoHost",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetNoHappyEyeballs(val interface{}) {
 	if err := j.validateSetNoHappyEyeballsParameters(val); err != nil {
 		panic(err)
@@ -881,8 +916,8 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -890,7 +925,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -972,6 +1007,14 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ResetMatchSnItoHost() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMatchSnItoHost",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ResetNoHappyEyeballs() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1020,8 +1063,8 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := z.validateResolveParameters(_context); err != nil {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1029,7 +1072,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

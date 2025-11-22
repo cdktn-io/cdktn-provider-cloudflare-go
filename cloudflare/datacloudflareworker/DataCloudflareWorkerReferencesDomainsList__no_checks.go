@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareWorkerReferencesDomainsList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkerReferencesDomainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWorkerReferencesDomainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareCustomHostnamesResultList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomHostnamesResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareCustomHostnamesResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

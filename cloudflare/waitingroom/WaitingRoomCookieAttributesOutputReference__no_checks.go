@@ -43,11 +43,11 @@ func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateGetString
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WaitingRoomCookieAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

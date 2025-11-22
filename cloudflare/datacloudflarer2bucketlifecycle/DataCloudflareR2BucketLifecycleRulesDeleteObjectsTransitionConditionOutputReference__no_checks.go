@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionCo
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

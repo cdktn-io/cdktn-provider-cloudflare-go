@@ -69,12 +69,12 @@ type UserAgentBlockingRuleConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetTarget()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -472,8 +472,8 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Interpolat
 	return returns
 }
 
-func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := u.validateInterpolationForAttributeParameters(property); err != nil {
+func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -481,7 +481,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Interpolat
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) ResetValue
 	)
 }
 
-func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := u.validateResolveParameters(_context); err != nil {
+func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := u.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (u *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		u,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

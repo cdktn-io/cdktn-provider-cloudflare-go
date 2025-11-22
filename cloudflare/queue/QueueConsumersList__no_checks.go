@@ -15,7 +15,7 @@ func (q *jsiiProxy_QueueConsumersList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (q *jsiiProxy_QueueConsumersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QueueConsumersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

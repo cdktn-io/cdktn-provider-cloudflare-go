@@ -43,7 +43,7 @@ func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validatePutTarge
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

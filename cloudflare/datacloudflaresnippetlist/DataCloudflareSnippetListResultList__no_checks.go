@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareSnippetListResultList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareSnippetListResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareSnippetListResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

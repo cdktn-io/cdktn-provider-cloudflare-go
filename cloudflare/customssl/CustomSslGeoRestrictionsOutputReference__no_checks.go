@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomSslGeoRestrictionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

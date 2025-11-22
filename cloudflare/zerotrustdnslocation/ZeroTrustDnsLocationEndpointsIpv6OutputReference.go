@@ -68,13 +68,13 @@ type ZeroTrustDnsLocationEndpointsIpv6OutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutNetworks(value interface{})
 	ResetEnabled()
 	ResetNetworks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -461,8 +461,8 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Interpolati
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -470,7 +470,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Interpolati
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) ResetNetwor
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := z.validateResolveParameters(_context); err != nil {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) Resolve(_co
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

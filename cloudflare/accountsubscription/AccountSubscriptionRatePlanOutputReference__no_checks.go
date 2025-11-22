@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountSubscriptionRatePlanOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

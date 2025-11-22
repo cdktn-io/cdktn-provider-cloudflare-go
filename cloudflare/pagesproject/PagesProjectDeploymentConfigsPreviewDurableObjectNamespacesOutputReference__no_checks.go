@@ -43,11 +43,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOu
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

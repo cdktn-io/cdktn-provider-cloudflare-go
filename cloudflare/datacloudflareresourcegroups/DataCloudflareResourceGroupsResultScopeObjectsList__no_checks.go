@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareResourceGroupsResultScopeObjectsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareResourceGroupsResultScopeObjectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareResourceGroupsResultScopeObjectsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

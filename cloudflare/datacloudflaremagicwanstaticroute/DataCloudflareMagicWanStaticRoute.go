@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/magic_wan_static_route cloudflare_magic_wan_static_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/magic_wan_static_route cloudflare_magic_wan_static_route}.
 type DataCloudflareMagicWanStaticRoute interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -38,6 +38,7 @@ type DataCloudflareMagicWanStaticRoute interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -197,6 +198,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanStaticRoute) FriendlyUniqueId() *string
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicWanStaticRoute) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicWanStaticRoute) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -298,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanStaticRoute) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/magic_wan_static_route cloudflare_magic_wan_static_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/magic_wan_static_route cloudflare_magic_wan_static_route} Data Source.
 func NewDataCloudflareMagicWanStaticRoute(scope constructs.Construct, id *string, config *DataCloudflareMagicWanStaticRouteConfig) DataCloudflareMagicWanStaticRoute {
 	_init_.Initialize()
 
@@ -316,7 +327,7 @@ func NewDataCloudflareMagicWanStaticRoute(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/magic_wan_static_route cloudflare_magic_wan_static_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/magic_wan_static_route cloudflare_magic_wan_static_route} Data Source.
 func NewDataCloudflareMagicWanStaticRoute_Override(d DataCloudflareMagicWanStaticRoute, scope constructs.Construct, id *string, config *DataCloudflareMagicWanStaticRouteConfig) {
 	_init_.Initialize()
 

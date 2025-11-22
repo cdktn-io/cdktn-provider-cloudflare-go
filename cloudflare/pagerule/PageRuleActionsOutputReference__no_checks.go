@@ -43,7 +43,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PageRuleActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutForwardingUrlParam
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PageRuleActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

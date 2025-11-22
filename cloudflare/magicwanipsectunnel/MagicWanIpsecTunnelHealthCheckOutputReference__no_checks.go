@@ -43,7 +43,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validatePutTar
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

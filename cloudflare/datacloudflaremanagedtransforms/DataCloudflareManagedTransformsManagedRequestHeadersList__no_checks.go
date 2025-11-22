@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareManagedTransformsManagedRequestHeadersList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareManagedTransformsManagedRequestHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareManagedTransformsManagedRequestHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

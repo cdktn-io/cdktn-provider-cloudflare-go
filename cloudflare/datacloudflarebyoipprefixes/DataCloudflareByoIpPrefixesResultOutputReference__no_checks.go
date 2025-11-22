@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -41,7 +41,7 @@ type ZeroTrustAccessApplicationSaasAppCustomAttributesList interface {
 	Get(index *float64) ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) Get(in
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := z.validateResolveParameters(_context); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesList) Resolv
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

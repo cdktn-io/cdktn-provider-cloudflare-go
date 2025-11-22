@@ -43,11 +43,11 @@ func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

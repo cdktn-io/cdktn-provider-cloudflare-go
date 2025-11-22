@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
 type ZeroTrustDlpPredefinedProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -35,18 +35,17 @@ type ZeroTrustDlpPredefinedProfile interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	ContextAwareness() ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference
-	ContextAwarenessInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Description() *string
+	EnabledEntries() *[]*string
+	SetEnabledEntries(val *[]*string)
+	EnabledEntriesInput() *[]*string
 	Entries() ZeroTrustDlpPredefinedProfileEntriesList
 	EntriesInput() interface{}
 	// Experimental.
@@ -88,8 +87,6 @@ type ZeroTrustDlpPredefinedProfile interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -133,12 +130,11 @@ type ZeroTrustDlpPredefinedProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutContextAwareness(value *ZeroTrustDlpPredefinedProfileContextAwareness)
 	PutEntries(value interface{})
 	ResetAiContextEnabled()
 	ResetAllowedMatchCount()
 	ResetConfidenceThreshold()
-	ResetContextAwareness()
+	ResetEnabledEntries()
 	ResetEntries()
 	ResetOcrEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -272,41 +268,11 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) ContextAwareness() ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference {
-	var returns ZeroTrustDlpPredefinedProfileContextAwarenessOutputReference
-	_jsii_.Get(
-		j,
-		"contextAwareness",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) ContextAwarenessInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"contextAwarenessInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -322,11 +288,21 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) Description() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) EnabledEntries() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"description",
+		"enabledEntries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) EnabledEntriesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledEntriesInput",
 		&returns,
 	)
 	return returns
@@ -532,28 +508,8 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) TerraformResourceType() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
 func NewZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedProfileConfig) ZeroTrustDlpPredefinedProfile {
 	_init_.Initialize()
 
@@ -571,7 +527,7 @@ func NewZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
 func NewZeroTrustDlpPredefinedProfile_Override(z ZeroTrustDlpPredefinedProfile, scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedProfileConfig) {
 	_init_.Initialize()
 
@@ -652,6 +608,17 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile)SetEnabledEntries(val *[]*string) {
+	if err := j.validateSetEnabledEntriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabledEntries",
 		val,
 	)
 }
@@ -1069,17 +1036,6 @@ func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) OverrideLogicalId(newLogicalId
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) PutContextAwareness(value *ZeroTrustDlpPredefinedProfileContextAwareness) {
-	if err := z.validatePutContextAwarenessParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putContextAwareness",
-		[]interface{}{value},
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) PutEntries(value interface{}) {
 	if err := z.validatePutEntriesParameters(value); err != nil {
 		panic(err)
@@ -1115,10 +1071,10 @@ func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) ResetConfidenceThreshold() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) ResetContextAwareness() {
+func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) ResetEnabledEntries() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetContextAwareness",
+		"resetEnabledEntries",
 		nil, // no parameters
 	)
 }

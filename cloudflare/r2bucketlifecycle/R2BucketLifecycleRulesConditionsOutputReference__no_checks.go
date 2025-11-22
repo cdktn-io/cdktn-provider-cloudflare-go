@@ -43,11 +43,11 @@ func (r *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateGetS
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

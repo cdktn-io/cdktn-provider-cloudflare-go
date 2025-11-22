@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsTransferredClassesList) validateGetPar
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionMigrationsTransferredClassesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerVersionMigrationsTransferredClassesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

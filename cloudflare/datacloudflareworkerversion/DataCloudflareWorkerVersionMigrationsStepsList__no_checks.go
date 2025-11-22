@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareWorkerVersionMigrationsStepsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkerVersionMigrationsStepsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWorkerVersionMigrationsStepsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

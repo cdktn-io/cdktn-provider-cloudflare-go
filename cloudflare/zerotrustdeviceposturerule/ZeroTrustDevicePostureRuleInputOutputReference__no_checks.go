@@ -43,7 +43,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateGetSt
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validatePutLo
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroupsListResultList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroupsListResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroupsListResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

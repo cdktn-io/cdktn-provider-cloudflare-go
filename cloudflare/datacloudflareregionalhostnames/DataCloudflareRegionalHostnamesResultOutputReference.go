@@ -32,6 +32,7 @@ type DataCloudflareRegionalHostnamesResultOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Hostname() *string
+	Id() *string
 	InternalValue() *DataCloudflareRegionalHostnamesResult
 	SetInternalValue(val *DataCloudflareRegionalHostnamesResult)
 	RegionKey() *string
@@ -67,10 +68,10 @@ type DataCloudflareRegionalHostnamesResultOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Hostnam
 	_jsii_.Get(
 		j,
 		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -446,8 +457,8 @@ func (d *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -455,15 +466,15 @@ func (d *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Interpo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -471,7 +482,7 @@ func (d *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Resolve
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

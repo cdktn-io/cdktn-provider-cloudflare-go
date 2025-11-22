@@ -24,15 +24,15 @@ type DataCloudflarePagesDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Name of the project.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
-	ProjectName *string `field:"required" json:"projectName" yaml:"projectName"`
 	// Name of the domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
-	DomainName *string `field:"optional" json:"domainName" yaml:"domainName"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
+	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
+	// Name of the project.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
+	ProjectName *string `field:"required" json:"projectName" yaml:"projectName"`
 }
 

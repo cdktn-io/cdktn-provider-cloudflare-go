@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) va
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersScriptMigrationsStepsRenamedClassesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

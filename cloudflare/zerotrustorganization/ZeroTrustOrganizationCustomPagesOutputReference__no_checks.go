@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateGetS
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareWorkerVersionMigrationsStepsTransferredClassesL
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkerVersionMigrationsStepsTransferredClassesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWorkerVersionMigrationsStepsTransferredClassesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareNotificationPolicyMechanismsPagerdutyOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareNotificationPolicyMechanismsPagerdutyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareNotificationPolicyMechanismsPagerdutyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareNotificationPolicyMechanismsPagerdutyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareNotificationPolicyMechanismsPagerdutyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

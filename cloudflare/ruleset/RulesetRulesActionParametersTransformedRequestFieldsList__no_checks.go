@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersTransformedRequestFieldsList) val
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersTransformedRequestFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersTransformedRequestFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

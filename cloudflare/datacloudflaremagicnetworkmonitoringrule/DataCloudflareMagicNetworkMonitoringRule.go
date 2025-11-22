@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
 type DataCloudflareMagicNetworkMonitoringRule interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -98,7 +98,6 @@ type DataCloudflareMagicNetworkMonitoringRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRuleId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -409,7 +408,7 @@ func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) ZscoreTarget() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringRule(scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringRuleConfig) DataCloudflareMagicNetworkMonitoringRule {
 	_init_.Initialize()
 
@@ -427,7 +426,7 @@ func NewDataCloudflareMagicNetworkMonitoringRule(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.12.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringRule_Override(d DataCloudflareMagicNetworkMonitoringRule, scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringRuleConfig) {
 	_init_.Initialize()
 
@@ -795,14 +794,6 @@ func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) ResetRuleId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRuleId",
 		nil, // no parameters
 	)
 }

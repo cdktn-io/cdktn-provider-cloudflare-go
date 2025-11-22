@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareWorkerReferencesDurableObjectsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWorkerReferencesDurableObjectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWorkerReferencesDurableObjectsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

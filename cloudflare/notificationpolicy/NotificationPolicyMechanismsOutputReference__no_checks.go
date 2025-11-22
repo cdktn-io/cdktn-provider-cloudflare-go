@@ -43,7 +43,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateGetStrin
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutWebho
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

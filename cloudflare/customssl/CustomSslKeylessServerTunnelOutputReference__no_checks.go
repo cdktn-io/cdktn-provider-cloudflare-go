@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomSslKeylessServerTunnelOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CustomSslKeylessServerTunnelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomSslKeylessServerTunnelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomSslKeylessServerTunnelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomSslKeylessServerTunnelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

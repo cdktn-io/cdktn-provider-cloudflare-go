@@ -43,11 +43,11 @@ func (r *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditio
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

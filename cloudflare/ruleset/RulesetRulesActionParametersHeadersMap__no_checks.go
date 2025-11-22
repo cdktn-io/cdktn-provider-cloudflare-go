@@ -15,7 +15,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) validateInterpolation
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

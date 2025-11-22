@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

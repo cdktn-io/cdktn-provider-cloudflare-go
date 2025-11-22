@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTt
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

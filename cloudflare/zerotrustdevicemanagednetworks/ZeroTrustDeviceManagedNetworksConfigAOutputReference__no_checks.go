@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) validat
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

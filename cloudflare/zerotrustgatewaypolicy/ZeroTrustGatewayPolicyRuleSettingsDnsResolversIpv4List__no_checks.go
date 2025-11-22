@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4List) valid
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

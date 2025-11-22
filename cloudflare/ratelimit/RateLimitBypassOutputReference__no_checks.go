@@ -43,11 +43,11 @@ func (r *jsiiProxy_RateLimitBypassOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitBypassOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RateLimitBypassOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitBypassOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RateLimitBypassOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

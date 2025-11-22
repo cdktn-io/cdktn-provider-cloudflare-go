@@ -15,7 +15,7 @@ func (r *jsiiProxy_R2BucketLockRulesList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLockRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLockRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

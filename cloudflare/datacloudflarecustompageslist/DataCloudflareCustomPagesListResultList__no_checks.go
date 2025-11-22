@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareCustomPagesListResultList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareCustomPagesListResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareCustomPagesListResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

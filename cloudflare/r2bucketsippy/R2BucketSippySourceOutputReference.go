@@ -84,7 +84,7 @@ type R2BucketSippySourceOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAccessKeyId()
 	ResetBucket()
 	ResetClientEmail()
@@ -94,7 +94,7 @@ type R2BucketSippySourceOutputReference interface {
 	ResetSecretAccessKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -647,8 +647,8 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketSippySourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -656,7 +656,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -719,8 +719,8 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetSecretAccessKey() {
 	)
 }
 
-func (r *jsiiProxy_R2BucketSippySourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -728,7 +728,7 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

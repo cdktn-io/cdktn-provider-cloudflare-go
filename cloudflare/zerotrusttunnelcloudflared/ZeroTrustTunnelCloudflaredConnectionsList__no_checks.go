@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsList) validateGetParamet
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateGetStrin
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

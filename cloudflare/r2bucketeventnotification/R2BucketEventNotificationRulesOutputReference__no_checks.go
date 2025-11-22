@@ -43,11 +43,11 @@ func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateGetStr
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketEventNotificationRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedTransformsManagedRequestHeadersList) validateGetParame
 	return nil
 }
 
-func (m *jsiiProxy_ManagedTransformsManagedRequestHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedTransformsManagedRequestHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

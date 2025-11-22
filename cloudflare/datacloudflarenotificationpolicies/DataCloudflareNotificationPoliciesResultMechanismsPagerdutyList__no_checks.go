@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareNotificationPoliciesResultMechanismsPagerdutyLi
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareNotificationPoliciesResultMechanismsPagerdutyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareNotificationPoliciesResultMechanismsPagerdutyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetColumnsList) validateGetParameters(
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDlpDatasetDatasetColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

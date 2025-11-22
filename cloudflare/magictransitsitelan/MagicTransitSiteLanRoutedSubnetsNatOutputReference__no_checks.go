@@ -43,11 +43,11 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

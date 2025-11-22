@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflareRateLimitsResultMatchHeadersList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRateLimitsResultMatchHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRateLimitsResultMatchHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

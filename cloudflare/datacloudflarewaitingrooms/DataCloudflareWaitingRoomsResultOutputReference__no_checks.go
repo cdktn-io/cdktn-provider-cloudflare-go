@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

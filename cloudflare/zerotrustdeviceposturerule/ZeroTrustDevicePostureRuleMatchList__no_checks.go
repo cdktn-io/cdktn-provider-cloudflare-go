@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleMatchList) validateGetParameters(in
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureRuleMatchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleMatchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

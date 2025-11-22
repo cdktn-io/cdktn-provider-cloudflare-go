@@ -43,7 +43,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) validatePutOverridesParamet
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

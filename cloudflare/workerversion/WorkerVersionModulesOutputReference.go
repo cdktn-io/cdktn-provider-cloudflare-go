@@ -23,6 +23,9 @@ type WorkerVersionModulesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContentBase64() *string
+	SetContentBase64(val *string)
+	ContentBase64Input() *string
 	ContentFile() *string
 	SetContentFile(val *string)
 	ContentFileInput() *string
@@ -73,10 +76,12 @@ type WorkerVersionModulesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetContentBase64()
+	ResetContentFile()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,6 +109,26 @@ func (j *jsiiProxy_WorkerVersionModulesOutputReference) ComplexObjectIsFromSet()
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionModulesOutputReference) ContentBase64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionModulesOutputReference) ContentBase64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentBase64Input",
 		&returns,
 	)
 	return returns
@@ -275,6 +300,17 @@ func (j *jsiiProxy_WorkerVersionModulesOutputReference)SetComplexObjectIsFromSet
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionModulesOutputReference)SetContentBase64(val *string) {
+	if err := j.validateSetContentBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contentBase64",
 		val,
 	)
 }
@@ -515,8 +551,8 @@ func (w *jsiiProxy_WorkerVersionModulesOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (w *jsiiProxy_WorkerVersionModulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkerVersionModulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -524,15 +560,31 @@ func (w *jsiiProxy_WorkerVersionModulesOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkerVersionModulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkerVersionModulesOutputReference) ResetContentBase64() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetContentBase64",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionModulesOutputReference) ResetContentFile() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetContentFile",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionModulesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -540,7 +592,7 @@ func (w *jsiiProxy_WorkerVersionModulesOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

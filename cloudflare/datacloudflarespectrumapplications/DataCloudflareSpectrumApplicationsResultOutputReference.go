@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 	cdktf.ComplexObject
+	ArgoSmartRouting() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -23,15 +24,26 @@ type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CreatedOn() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Dns() DataCloudflareSpectrumApplicationsResultDnsOutputReference
+	EdgeIps() DataCloudflareSpectrumApplicationsResultEdgeIpsOutputReference
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareSpectrumApplicationsResult
 	SetInternalValue(val *DataCloudflareSpectrumApplicationsResult)
+	IpFirewall() cdktf.IResolvable
+	ModifiedOn() *string
+	OriginDirect() *[]*string
+	OriginDns() DataCloudflareSpectrumApplicationsResultOriginDnsOutputReference
+	OriginPort() cdktf.AnyMap
+	Protocol() *string
+	ProxyProtocol() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,6 +52,8 @@ type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Tls() *string
+	TrafficType() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -63,10 +77,10 @@ type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,6 +91,16 @@ type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareSpectrumApplicationsResultOutputReference
 type jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) ArgoSmartRouting() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"argoSmartRouting",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) ComplexObjectIndex() interface{} {
@@ -99,11 +123,41 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Comp
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Dns() DataCloudflareSpectrumApplicationsResultDnsOutputReference {
+	var returns DataCloudflareSpectrumApplicationsResultDnsOutputReference
+	_jsii_.Get(
+		j,
+		"dns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) EdgeIps() DataCloudflareSpectrumApplicationsResultEdgeIpsOutputReference {
+	var returns DataCloudflareSpectrumApplicationsResultEdgeIpsOutputReference
+	_jsii_.Get(
+		j,
+		"edgeIps",
 		&returns,
 	)
 	return returns
@@ -119,11 +173,91 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Fqn(
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) InternalValue() *DataCloudflareSpectrumApplicationsResult {
 	var returns *DataCloudflareSpectrumApplicationsResult
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) IpFirewall() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"ipFirewall",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) OriginDirect() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"originDirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) OriginDns() DataCloudflareSpectrumApplicationsResultOriginDnsOutputReference {
+	var returns DataCloudflareSpectrumApplicationsResultOriginDnsOutputReference
+	_jsii_.Get(
+		j,
+		"originDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) OriginPort() cdktf.AnyMap {
+	var returns cdktf.AnyMap
+	_jsii_.Get(
+		j,
+		"originPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) ProxyProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyProtocol",
 		&returns,
 	)
 	return returns
@@ -144,6 +278,26 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Terr
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Tls() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) TrafficType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trafficType",
 		&returns,
 	)
 	return returns
@@ -402,8 +556,8 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -411,15 +565,15 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Inte
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -427,7 +581,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Reso
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

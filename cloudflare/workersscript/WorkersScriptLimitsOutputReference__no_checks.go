@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkersScriptLimitsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkersScriptLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScriptLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkersScriptLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -156,6 +156,9 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	TotalScore() *float64
 	SetTotalScore(val *float64)
 	TotalScoreInput() *float64
+	UpdateWindowDays() *float64
+	SetUpdateWindowDays(val *float64)
+	UpdateWindowDaysInput() *float64
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -226,6 +229,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	ResetSubjectAlternativeNames()
 	ResetThumbprint()
 	ResetTotalScore()
+	ResetUpdateWindowDays()
 	ResetVersion()
 	ResetVersionOperator()
 	// Produce the Token's value at resolution time.
@@ -1093,6 +1097,26 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) TotalScoreInp
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) UpdateWindowDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updateWindowDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) UpdateWindowDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"updateWindowDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1634,6 +1658,17 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetTotalScore(
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetUpdateWindowDays(val *float64) {
+	if err := j.validateSetUpdateWindowDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updateWindowDays",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
@@ -2161,6 +2196,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetTotalSco
 	_jsii_.InvokeVoid(
 		z,
 		"resetTotalScore",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetUpdateWindowDays() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUpdateWindowDays",
 		nil, // no parameters
 	)
 }

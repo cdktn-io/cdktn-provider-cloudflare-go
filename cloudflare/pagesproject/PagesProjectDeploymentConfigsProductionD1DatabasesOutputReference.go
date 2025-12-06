@@ -67,7 +67,6 @@ type PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesOutputRefer
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

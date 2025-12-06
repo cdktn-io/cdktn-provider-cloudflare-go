@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector cloudflare_sso_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector cloudflare_sso_connector}.
 type SsoConnector interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_SsoConnector) Verification() SsoConnectorVerificationOutputRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
 func NewSsoConnector(scope constructs.Construct, id *string, config *SsoConnectorConfig) SsoConnector {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewSsoConnector(scope constructs.Construct, id *string, config *SsoConnecto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
 func NewSsoConnector_Override(s SsoConnector, scope constructs.Construct, id *string, config *SsoConnectorConfig) {
 	_init_.Initialize()
 

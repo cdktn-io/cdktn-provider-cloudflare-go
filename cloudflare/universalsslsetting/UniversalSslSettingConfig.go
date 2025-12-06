@@ -24,7 +24,7 @@ type UniversalSslSettingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting#zone_id UniversalSslSetting#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting#zone_id UniversalSslSetting#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Disabling Universal SSL removes any currently active Universal SSL certificates for your zone from the edge and prevents any future Universal SSL certificates from being ordered.
 	//
@@ -42,7 +42,7 @@ type UniversalSslSettingConfig struct {
 	//
 	// If you do not have a valid custom or advanced certificate at Cloudflare's edge and are unsure if any of the above Cloudflare settings are enabled, or if any HTTP redirects exist at your origin, we advise leaving Universal SSL enabled for your domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/universal_ssl_setting#enabled UniversalSslSetting#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting#enabled UniversalSslSetting#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

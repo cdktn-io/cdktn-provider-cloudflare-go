@@ -32,9 +32,6 @@ type DataCloudflareSchemaValidationSchemasFilterOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	OmitSource() interface{}
-	SetOmitSource(val interface{})
-	OmitSourceInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +67,6 @@ type DataCloudflareSchemaValidationSchemasFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetOmitSource()
 	ResetValidationEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -132,26 +128,6 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) OmitSource() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"omitSource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) OmitSourceInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"omitSourceInput",
 		&returns,
 	)
 	return returns
@@ -254,17 +230,6 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference)SetOmitSource(val interface{}) {
-	if err := j.validateSetOmitSourceParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"omitSource",
 		val,
 	)
 }
@@ -486,14 +451,6 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) I
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) ResetOmitSource() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOmitSource",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataCloudflareSchemaValidationSchemasFilterOutputReference) ResetValidationEnabled() {

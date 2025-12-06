@@ -71,7 +71,6 @@ type PagesProjectDeploymentConfigsProductionR2BucketsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetJurisdiction()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -492,14 +491,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsOutputReferen
 	_jsii_.InvokeVoid(
 		p,
 		"resetJurisdiction",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionR2BucketsOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetName",
 		nil, // no parameters
 	)
 }

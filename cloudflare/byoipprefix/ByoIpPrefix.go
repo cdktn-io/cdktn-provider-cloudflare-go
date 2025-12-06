@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 type ByoIpPrefix interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -65,6 +65,8 @@ type ByoIpPrefix interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoaDocumentId() *string
+	SetLoaDocumentId(val *string)
+	LoaDocumentIdInput() *string
 	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
@@ -134,6 +136,7 @@ type ByoIpPrefix interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDelegateLoaCreation()
 	ResetDescription()
+	ResetLoaDocumentId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -415,6 +418,16 @@ func (j *jsiiProxy_ByoIpPrefix) LoaDocumentId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ByoIpPrefix) LoaDocumentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loaDocumentIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ByoIpPrefix) ModifiedAt() *string {
 	var returns *string
 	_jsii_.Get(
@@ -546,7 +559,7 @@ func (j *jsiiProxy_ByoIpPrefix) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
 func NewByoIpPrefix(scope constructs.Construct, id *string, config *ByoIpPrefixConfig) ByoIpPrefix {
 	_init_.Initialize()
 
@@ -564,7 +577,7 @@ func NewByoIpPrefix(scope constructs.Construct, id *string, config *ByoIpPrefixC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
 func NewByoIpPrefix_Override(b ByoIpPrefix, scope constructs.Construct, id *string, config *ByoIpPrefixConfig) {
 	_init_.Initialize()
 
@@ -675,6 +688,17 @@ func (j *jsiiProxy_ByoIpPrefix)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ByoIpPrefix)SetLoaDocumentId(val *string) {
+	if err := j.validateSetLoaDocumentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loaDocumentId",
 		val,
 	)
 }
@@ -1063,6 +1087,14 @@ func (b *jsiiProxy_ByoIpPrefix) ResetDescription() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_ByoIpPrefix) ResetLoaDocumentId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLoaDocumentId",
 		nil, // no parameters
 	)
 }

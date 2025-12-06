@@ -67,7 +67,6 @@ type PagesProjectDeploymentConfigsProductionLimitsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetCpuMs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionLimitsOutputReference)
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionLimitsOutputReference) ResetCpuMs() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetCpuMs",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionLimitsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

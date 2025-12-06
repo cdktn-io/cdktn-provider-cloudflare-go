@@ -67,7 +67,6 @@ type PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetIndexName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionVectorizeBindingsOutpu
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference) ResetIndexName() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetIndexName",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

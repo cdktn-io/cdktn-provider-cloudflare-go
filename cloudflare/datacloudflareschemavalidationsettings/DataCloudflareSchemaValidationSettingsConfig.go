@@ -24,7 +24,7 @@ type DataCloudflareSchemaValidationSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/schema_validation_settings#zone_id DataCloudflareSchemaValidationSettings#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_settings#zone_id DataCloudflareSchemaValidationSettings#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

@@ -67,7 +67,6 @@ type PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetNamespaceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOu
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference) ResetNamespaceId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetNamespaceId",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

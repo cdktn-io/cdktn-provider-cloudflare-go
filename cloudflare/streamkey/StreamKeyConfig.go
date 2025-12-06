@@ -24,7 +24,7 @@ type StreamKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/stream_key#account_id StreamKey#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_key#account_id StreamKey#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 }
 

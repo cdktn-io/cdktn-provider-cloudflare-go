@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
 type DataCloudflareZeroTrustAccessAiControlsMcpPortal interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortal) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
 func NewDataCloudflareZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessAiControlsMcpPortalConfig) DataCloudflareZeroTrustAccessAiControlsMcpPortal {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDataCloudflareZeroTrustAccessAiControlsMcpPortal(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
 func NewDataCloudflareZeroTrustAccessAiControlsMcpPortal_Override(d DataCloudflareZeroTrustAccessAiControlsMcpPortal, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessAiControlsMcpPortalConfig) {
 	_init_.Initialize()
 

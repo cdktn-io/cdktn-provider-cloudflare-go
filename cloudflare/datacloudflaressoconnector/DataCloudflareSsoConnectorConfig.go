@@ -24,11 +24,11 @@ type DataCloudflareSsoConnectorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/sso_connector#account_id DataCloudflareSsoConnector#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/sso_connector#account_id DataCloudflareSsoConnector#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// SSO Connector identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/sso_connector#sso_connector_id DataCloudflareSsoConnector#sso_connector_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/sso_connector#sso_connector_id DataCloudflareSsoConnector#sso_connector_id}
 	SsoConnectorId *string `field:"required" json:"ssoConnectorId" yaml:"ssoConnectorId"`
 }
 

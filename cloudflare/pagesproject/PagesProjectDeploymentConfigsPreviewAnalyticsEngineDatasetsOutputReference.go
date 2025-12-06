@@ -67,7 +67,6 @@ type PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetDataset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOu
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference) ResetDataset() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetDataset",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

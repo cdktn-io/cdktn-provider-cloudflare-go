@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 type OriginCaCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -119,13 +119,10 @@ type OriginCaCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCsr()
-	ResetHostnames()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRequestedValidity()
-	ResetRequestType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -415,7 +412,7 @@ func (j *jsiiProxy_OriginCaCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate(scope constructs.Construct, id *string, config *OriginCaCertificateConfig) OriginCaCertificate {
 	_init_.Initialize()
 
@@ -433,7 +430,7 @@ func NewOriginCaCertificate(scope constructs.Construct, id *string, config *Orig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate_Override(o OriginCaCertificate, scope constructs.Construct, id *string, config *OriginCaCertificateConfig) {
 	_init_.Initialize()
 
@@ -909,22 +906,6 @@ func (o *jsiiProxy_OriginCaCertificate) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
-func (o *jsiiProxy_OriginCaCertificate) ResetCsr() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetCsr",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OriginCaCertificate) ResetHostnames() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetHostnames",
-		nil, // no parameters
-	)
-}
-
 func (o *jsiiProxy_OriginCaCertificate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
@@ -937,14 +918,6 @@ func (o *jsiiProxy_OriginCaCertificate) ResetRequestedValidity() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRequestedValidity",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OriginCaCertificate) ResetRequestType() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetRequestType",
 		nil, // no parameters
 	)
 }

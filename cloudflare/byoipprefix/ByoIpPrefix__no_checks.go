@@ -123,6 +123,10 @@ func (j *jsiiProxy_ByoIpPrefix) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_ByoIpPrefix) validateSetLoaDocumentIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ByoIpPrefix) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

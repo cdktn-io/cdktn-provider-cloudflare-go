@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_shield_policy cloudflare_page_shield_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_policy cloudflare_page_shield_policy}.
 type DataCloudflarePageShieldPolicy interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldPolicy) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_shield_policy cloudflare_page_shield_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_policy cloudflare_page_shield_policy} Data Source.
 func NewDataCloudflarePageShieldPolicy(scope constructs.Construct, id *string, config *DataCloudflarePageShieldPolicyConfig) DataCloudflarePageShieldPolicy {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDataCloudflarePageShieldPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/page_shield_policy cloudflare_page_shield_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_policy cloudflare_page_shield_policy} Data Source.
 func NewDataCloudflarePageShieldPolicy_Override(d DataCloudflarePageShieldPolicy, scope constructs.Construct, id *string, config *DataCloudflarePageShieldPolicyConfig) {
 	_init_.Initialize()
 

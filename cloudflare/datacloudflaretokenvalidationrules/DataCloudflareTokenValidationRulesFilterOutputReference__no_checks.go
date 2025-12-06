@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) validateSetRuleIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

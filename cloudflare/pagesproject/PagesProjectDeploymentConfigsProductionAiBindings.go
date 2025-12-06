@@ -5,7 +5,7 @@ package pagesproject
 
 
 type PagesProjectDeploymentConfigsProductionAiBindings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/pages_project#project_id PagesProject#project_id}.
-	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#project_id PagesProject#project_id}.
+	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

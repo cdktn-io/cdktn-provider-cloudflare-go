@@ -67,7 +67,6 @@ type PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	ResetCertificateId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionMtlsCertificatesOutput
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference) ResetCertificateId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetCertificateId",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

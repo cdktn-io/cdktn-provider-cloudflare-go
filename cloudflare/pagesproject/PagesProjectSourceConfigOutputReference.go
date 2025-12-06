@@ -37,6 +37,9 @@ type PagesProjectSourceConfigOutputReference interface {
 	SetInternalValue(val interface{})
 	Owner() *string
 	SetOwner(val *string)
+	OwnerId() *string
+	SetOwnerId(val *string)
+	OwnerIdInput() *string
 	OwnerInput() *string
 	PathExcludes() *[]*string
 	SetPathExcludes(val *[]*string)
@@ -62,6 +65,9 @@ type PagesProjectSourceConfigOutputReference interface {
 	ProductionDeploymentsEnabled() interface{}
 	SetProductionDeploymentsEnabled(val interface{})
 	ProductionDeploymentsEnabledInput() interface{}
+	RepoId() *string
+	SetRepoId(val *string)
+	RepoIdInput() *string
 	RepoName() *string
 	SetRepoName(val *string)
 	RepoNameInput() *string
@@ -99,6 +105,7 @@ type PagesProjectSourceConfigOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDeploymentsEnabled()
 	ResetOwner()
+	ResetOwnerId()
 	ResetPathExcludes()
 	ResetPathIncludes()
 	ResetPrCommentsEnabled()
@@ -107,6 +114,7 @@ type PagesProjectSourceConfigOutputReference interface {
 	ResetPreviewDeploymentSetting()
 	ResetProductionBranch()
 	ResetProductionDeploymentsEnabled()
+	ResetRepoId()
 	ResetRepoName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -198,6 +206,26 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) Owner() *string {
 	_jsii_.Get(
 		j,
 		"owner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) OwnerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) OwnerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerIdInput",
 		&returns,
 	)
 	return returns
@@ -373,6 +401,26 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) ProductionDeployment
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) RepoId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repoId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) RepoIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repoIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) RepoName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -496,6 +544,17 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetOwner(val *string)
 	)
 }
 
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetOwnerId(val *string) {
+	if err := j.validateSetOwnerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ownerId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetPathExcludes(val *[]*string) {
 	if err := j.validateSetPathExcludesParameters(val); err != nil {
 		panic(err)
@@ -580,6 +639,17 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetProductionDeployme
 	_jsii_.Set(
 		j,
 		"productionDeploymentsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetRepoId(val *string) {
+	if err := j.validateSetRepoIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"repoId",
 		val,
 	)
 }
@@ -819,6 +889,14 @@ func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetOwner() {
 	)
 }
 
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetOwnerId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOwnerId",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetPathExcludes() {
 	_jsii_.InvokeVoid(
 		p,
@@ -879,6 +957,14 @@ func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetProductionDeplo
 	_jsii_.InvokeVoid(
 		p,
 		"resetProductionDeploymentsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetRepoId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRepoId",
 		nil, // no parameters
 	)
 }

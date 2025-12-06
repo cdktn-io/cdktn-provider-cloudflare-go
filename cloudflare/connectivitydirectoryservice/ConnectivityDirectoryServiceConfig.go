@@ -24,19 +24,19 @@ type ConnectivityDirectoryServiceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/connectivity_directory_service#account_id ConnectivityDirectoryService#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/connectivity_directory_service#account_id ConnectivityDirectoryService#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/connectivity_directory_service#host ConnectivityDirectoryService#host}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/connectivity_directory_service#host ConnectivityDirectoryService#host}.
 	Host *ConnectivityDirectoryServiceHost `field:"required" json:"host" yaml:"host"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/connectivity_directory_service#name ConnectivityDirectoryService#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/connectivity_directory_service#name ConnectivityDirectoryService#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Available values: "http".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/connectivity_directory_service#type ConnectivityDirectoryService#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/connectivity_directory_service#type ConnectivityDirectoryService#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/connectivity_directory_service#http_port ConnectivityDirectoryService#http_port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/connectivity_directory_service#http_port ConnectivityDirectoryService#http_port}.
 	HttpPort *float64 `field:"optional" json:"httpPort" yaml:"httpPort"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/connectivity_directory_service#https_port ConnectivityDirectoryService#https_port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/connectivity_directory_service#https_port ConnectivityDirectoryService#https_port}.
 	HttpsPort *float64 `field:"optional" json:"httpsPort" yaml:"httpsPort"`
 }
 

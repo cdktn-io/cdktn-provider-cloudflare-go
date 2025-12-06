@@ -47,9 +47,6 @@ type DataCloudflareTokenValidationRulesFilterOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	RuleId() *string
-	SetRuleId(val *string)
-	RuleIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -90,7 +87,6 @@ type DataCloudflareTokenValidationRulesFilterOutputReference interface {
 	ResetHost()
 	ResetHostname()
 	ResetId()
-	ResetRuleId()
 	ResetTokenConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -257,26 +253,6 @@ func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) Inte
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) RuleId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ruleId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) RuleIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ruleIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -429,17 +405,6 @@ func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference)SetRuleId(val *string) {
-	if err := j.validateSetRuleIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ruleId",
 		val,
 	)
 }
@@ -699,14 +664,6 @@ func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) ResetRuleId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRuleId",
 		nil, // no parameters
 	)
 }

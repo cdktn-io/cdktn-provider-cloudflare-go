@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_config cloudflare_token_validation_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_config cloudflare_token_validation_config}.
 type DataCloudflareTokenValidationConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareTokenValidationConfig) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
 func NewDataCloudflareTokenValidationConfig(scope constructs.Construct, id *string, config *DataCloudflareTokenValidationConfigConfig) DataCloudflareTokenValidationConfig {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataCloudflareTokenValidationConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
 func NewDataCloudflareTokenValidationConfig_Override(d DataCloudflareTokenValidationConfig, scope constructs.Construct, id *string, config *DataCloudflareTokenValidationConfigConfig) {
 	_init_.Initialize()
 

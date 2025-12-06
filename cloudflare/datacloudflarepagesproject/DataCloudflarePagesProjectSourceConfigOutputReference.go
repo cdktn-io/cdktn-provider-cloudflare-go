@@ -34,6 +34,7 @@ type DataCloudflarePagesProjectSourceConfigOutputReference interface {
 	InternalValue() *DataCloudflarePagesProjectSourceConfig
 	SetInternalValue(val *DataCloudflarePagesProjectSourceConfig)
 	Owner() *string
+	OwnerId() *string
 	PathExcludes() *[]*string
 	PathIncludes() *[]*string
 	PrCommentsEnabled() cdktf.IResolvable
@@ -42,6 +43,7 @@ type DataCloudflarePagesProjectSourceConfigOutputReference interface {
 	PreviewDeploymentSetting() *string
 	ProductionBranch() *string
 	ProductionDeploymentsEnabled() cdktf.IResolvable
+	RepoId() *string
 	RepoName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -160,6 +162,16 @@ func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Owner(
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) OwnerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) PathExcludes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -235,6 +247,16 @@ func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Produc
 	_jsii_.Get(
 		j,
 		"productionDeploymentsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) RepoId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repoId",
 		&returns,
 	)
 	return returns

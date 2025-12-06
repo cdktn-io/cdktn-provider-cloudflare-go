@@ -34,6 +34,7 @@ type PagesProjectLatestDeploymentSourceConfigOutputReference interface {
 	InternalValue() *PagesProjectLatestDeploymentSourceConfig
 	SetInternalValue(val *PagesProjectLatestDeploymentSourceConfig)
 	Owner() *string
+	OwnerId() *string
 	PathExcludes() *[]*string
 	PathIncludes() *[]*string
 	PrCommentsEnabled() cdktf.IResolvable
@@ -42,6 +43,7 @@ type PagesProjectLatestDeploymentSourceConfigOutputReference interface {
 	PreviewDeploymentSetting() *string
 	ProductionBranch() *string
 	ProductionDeploymentsEnabled() cdktf.IResolvable
+	RepoId() *string
 	RepoName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -160,6 +162,16 @@ func (j *jsiiProxy_PagesProjectLatestDeploymentSourceConfigOutputReference) Owne
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectLatestDeploymentSourceConfigOutputReference) OwnerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectLatestDeploymentSourceConfigOutputReference) PathExcludes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -235,6 +247,16 @@ func (j *jsiiProxy_PagesProjectLatestDeploymentSourceConfigOutputReference) Prod
 	_jsii_.Get(
 		j,
 		"productionDeploymentsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectLatestDeploymentSourceConfigOutputReference) RepoId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repoId",
 		&returns,
 	)
 	return returns

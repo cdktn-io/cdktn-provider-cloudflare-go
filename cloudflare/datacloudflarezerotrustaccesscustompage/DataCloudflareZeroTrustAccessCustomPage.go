@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 type DataCloudflareZeroTrustAccessCustomPage interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
 func NewDataCloudflareZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessCustomPageConfig) DataCloudflareZeroTrustAccessCustomPage {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewDataCloudflareZeroTrustAccessCustomPage(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
 func NewDataCloudflareZeroTrustAccessCustomPage_Override(d DataCloudflareZeroTrustAccessCustomPage, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessCustomPageConfig) {
 	_init_.Initialize()
 

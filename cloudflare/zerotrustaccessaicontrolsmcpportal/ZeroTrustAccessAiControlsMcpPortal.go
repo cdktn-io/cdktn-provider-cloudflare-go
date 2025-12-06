@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
 type ZeroTrustAccessAiControlsMcpPortal interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -470,7 +470,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) ZeroTrustAccessAiControlsMcpPortal {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal_Override(z ZeroTrustAccessAiControlsMcpPortal, scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) {
 	_init_.Initialize()
 

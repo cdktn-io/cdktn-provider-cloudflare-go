@@ -24,11 +24,11 @@ type DataCloudflareWorkerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker#account_id DataCloudflareWorker#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/worker#account_id DataCloudflareWorker#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Identifier for the Worker, which can be ID or name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.13.0/docs/data-sources/worker#worker_id DataCloudflareWorker#worker_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/worker#worker_id DataCloudflareWorker#worker_id}
 	WorkerId *string `field:"required" json:"workerId" yaml:"workerId"`
 }
 

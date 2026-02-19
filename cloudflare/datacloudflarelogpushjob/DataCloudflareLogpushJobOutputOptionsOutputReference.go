@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarelogpushjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarelogpushjob/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarelogpushjob/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareLogpushJobOutputOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BatchPrefix() *string
 	BatchSuffix() *string
 	// the index of the complex object in a list.
@@ -30,7 +30,7 @@ type DataCloudflareLogpushJobOutputOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Cve202144228() cdktf.IResolvable
+	Cve202144228() cdktn.IResolvable
 	FieldDelimiter() *string
 	FieldNames() *[]*string
 	// Experimental.
@@ -48,16 +48,16 @@ type DataCloudflareLogpushJobOutputOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimestampFormat() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,12 +73,12 @@ type DataCloudflareLogpushJobOutputOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type DataCloudflareLogpushJobOutputOptionsOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareLogpushJobOutputOptionsOutputReference
 type jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) BatchPrefix() *string {
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Creatio
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Cve202144228() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Cve202144228() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"cve202144228",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -282,7 +282,7 @@ func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Timesta
 }
 
 
-func NewDataCloudflareLogpushJobOutputOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareLogpushJobOutputOptionsOutputReference {
+func NewDataCloudflareLogpushJobOutputOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareLogpushJobOutputOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareLogpushJobOutputOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -291,7 +291,7 @@ func NewDataCloudflareLogpushJobOutputOptionsOutputReference(terraformResource c
 	j := jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareLogpushJob.DataCloudflareLogpushJobOutputOptionsOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareLogpushJob.DataCloudflareLogpushJobOutputOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -299,11 +299,11 @@ func NewDataCloudflareLogpushJobOutputOptionsOutputReference(terraformResource c
 	return &j
 }
 
-func NewDataCloudflareLogpushJobOutputOptionsOutputReference_Override(d DataCloudflareLogpushJobOutputOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareLogpushJobOutputOptionsOutputReference_Override(d DataCloudflareLogpushJobOutputOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareLogpushJob.DataCloudflareLogpushJobOutputOptionsOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareLogpushJob.DataCloudflareLogpushJobOutputOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,11 +393,11 @@ func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -521,8 +521,8 @@ func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -534,11 +534,11 @@ func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -550,7 +550,7 @@ func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

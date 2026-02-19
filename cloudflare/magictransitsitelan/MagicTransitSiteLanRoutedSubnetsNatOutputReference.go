@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magictransitsitelan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitsitelan/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitsitelan/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MagicTransitSiteLanRoutedSubnetsNatOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type MagicTransitSiteLanRoutedSubnetsNatOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type MagicTransitSiteLanRoutedSubnetsNatOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetStaticPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type MagicTransitSiteLanRoutedSubnetsNatOutputReference interface {
 
 // The jsii proxy struct for MagicTransitSiteLanRoutedSubnetsNatOutputReference
 type jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) Terraform
 }
 
 
-func NewMagicTransitSiteLanRoutedSubnetsNatOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MagicTransitSiteLanRoutedSubnetsNatOutputReference {
+func NewMagicTransitSiteLanRoutedSubnetsNatOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MagicTransitSiteLanRoutedSubnetsNatOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMagicTransitSiteLanRoutedSubnetsNatOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -183,7 +183,7 @@ func NewMagicTransitSiteLanRoutedSubnetsNatOutputReference(terraformResource cdk
 	j := jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNatOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewMagicTransitSiteLanRoutedSubnetsNatOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewMagicTransitSiteLanRoutedSubnetsNatOutputReference_Override(m MagicTransitSiteLanRoutedSubnetsNatOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMagicTransitSiteLanRoutedSubnetsNatOutputReference_Override(m MagicTransitSiteLanRoutedSubnetsNatOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNatOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) GetAnyMap
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -424,8 +424,8 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) GetString
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -437,11 +437,11 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) Interpola
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -461,7 +461,7 @@ func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) ResetStat
 	)
 }
 
-func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

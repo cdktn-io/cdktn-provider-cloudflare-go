@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareloadbalancerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancerpool/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareloadbalancerpool/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,10 +28,10 @@ type DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Disable() cdktf.IResolvable
+	Disable() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
-	Healthy() cdktf.IResolvable
+	Healthy() cdktn.IResolvable
 	InternalValue() *DataCloudflareLoadBalancerPoolNotificationFilterOrigin
 	SetInternalValue(val *DataCloudflareLoadBalancerPoolNotificationFilterOrigin)
 	// Experimental.
@@ -39,15 +39,15 @@ type DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference inter
 
 // The jsii proxy struct for DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference
 type jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) ComplexObjectIndex() interface{} {
@@ -111,8 +111,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) Disable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) Disable() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disable",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) Healthy() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) Healthy() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"healthy",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -172,7 +172,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputR
 }
 
 
-func NewDataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference {
+func NewDataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -181,7 +181,7 @@ func NewDataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference(te
 	j := jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -189,11 +189,11 @@ func NewDataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference(te
 	return &j
 }
 
-func NewDataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference_Override(d DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference_Override(d DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancerPool.DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputR
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -283,11 +283,11 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -411,8 +411,8 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,11 +424,11 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -440,7 +440,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareLoadBalancerPoolNotificationFilterOriginOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

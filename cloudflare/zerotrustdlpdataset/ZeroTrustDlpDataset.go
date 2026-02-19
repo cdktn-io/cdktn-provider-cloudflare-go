@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdlpdataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpdataset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlpdataset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}.
 type ZeroTrustDlpDataset interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type ZeroTrustDlpDataset interface {
 	SetCaseSensitive(val interface{})
 	CaseSensitiveInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Columns() ZeroTrustDlpDatasetColumnsList
 	// Experimental.
 	Connection() interface{}
@@ -50,18 +50,18 @@ type ZeroTrustDlpDataset interface {
 	SetEncodingVersion(val *float64)
 	EncodingVersionInput() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxCells() *float64
 	Name() *string
 	SetName(val *string)
@@ -70,9 +70,9 @@ type ZeroTrustDlpDataset interface {
 	Node() constructs.Node
 	NumCells() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -84,7 +84,7 @@ type ZeroTrustDlpDataset interface {
 	SecretInput() interface{}
 	Status() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -100,7 +100,7 @@ type ZeroTrustDlpDataset interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -118,9 +118,9 @@ type ZeroTrustDlpDataset interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -158,7 +158,7 @@ type ZeroTrustDlpDataset interface {
 
 // The jsii proxy struct for ZeroTrustDlpDataset
 type jsiiProxy_ZeroTrustDlpDataset struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ZeroTrustDlpDataset) AccountId() *string {
@@ -201,8 +201,8 @@ func (j *jsiiProxy_ZeroTrustDlpDataset) CaseSensitiveInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDataset) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ZeroTrustDlpDataset) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_ZeroTrustDlpDataset) EncodingVersionInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDataset) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ZeroTrustDlpDataset) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_ZeroTrustDlpDataset) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDataset) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ZeroTrustDlpDataset) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_ZeroTrustDlpDataset) NumCells() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDataset) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ZeroTrustDlpDataset) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_ZeroTrustDlpDataset) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDataset) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ZeroTrustDlpDataset) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -562,7 +562,7 @@ func (j *jsiiProxy_ZeroTrustDlpDataset) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource.
 func NewZeroTrustDlpDataset(scope constructs.Construct, id *string, config *ZeroTrustDlpDatasetConfig) ZeroTrustDlpDataset {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewZeroTrustDlpDataset(scope constructs.Construct, id *string, config *Zero
 	j := jsiiProxy_ZeroTrustDlpDataset{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
+		"@cdktn/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -580,12 +580,12 @@ func NewZeroTrustDlpDataset(scope constructs.Construct, id *string, config *Zero
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource.
 func NewZeroTrustDlpDataset_Override(z ZeroTrustDlpDataset, scope constructs.Construct, id *string, config *ZeroTrustDlpDatasetConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
+		"@cdktn/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -676,7 +676,7 @@ func (j *jsiiProxy_ZeroTrustDlpDataset)SetEncodingVersion(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDataset)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustDlpDataset)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -684,7 +684,7 @@ func (j *jsiiProxy_ZeroTrustDlpDataset)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDataset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustDlpDataset)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +706,7 @@ func (j *jsiiProxy_ZeroTrustDlpDataset)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpDataset)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustDlpDataset)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -736,17 +736,17 @@ func (j *jsiiProxy_ZeroTrustDlpDataset)SetSecret(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a ZeroTrustDlpDataset resource upon running "cdktf plan <stack-name>".
-func ZeroTrustDlpDataset_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ZeroTrustDlpDataset resource upon running "cdktn plan <stack-name>".
+func ZeroTrustDlpDataset_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDlpDataset_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
+		"@cdktn/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -781,7 +781,7 @@ func ZeroTrustDlpDataset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
+		"@cdktn/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -800,7 +800,7 @@ func ZeroTrustDlpDataset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
+		"@cdktn/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func ZeroTrustDlpDataset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
+		"@cdktn/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -832,7 +832,7 @@ func ZeroTrustDlpDataset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
+		"@cdktn/provider-cloudflare.zeroTrustDlpDataset.ZeroTrustDlpDataset",
 		"tfResourceType",
 		&returns,
 	)
@@ -877,11 +877,11 @@ func (z *jsiiProxy_ZeroTrustDlpDataset) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpDataset) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDlpDataset) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -1018,7 +1018,7 @@ func (z *jsiiProxy_ZeroTrustDlpDataset) HasResourceMove() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpDataset) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (z *jsiiProxy_ZeroTrustDlpDataset) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1029,11 +1029,11 @@ func (z *jsiiProxy_ZeroTrustDlpDataset) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpDataset) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDlpDataset) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,

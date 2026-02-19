@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessgroup/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessgroup/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustAccessGroupExcludeAuthMethodOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthMethod() *string
 	SetAuthMethod(val *string)
 	AuthMethodInput() *string
@@ -40,15 +40,15 @@ type ZeroTrustAccessGroupExcludeAuthMethodOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ZeroTrustAccessGroupExcludeAuthMethodOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ZeroTrustAccessGroupExcludeAuthMethodOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustAccessGroupExcludeAuthMethodOutputReference
 type jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) AuthMethod() *string {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -173,7 +173,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Terrafo
 }
 
 
-func NewZeroTrustAccessGroupExcludeAuthMethodOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeAuthMethodOutputReference {
+func NewZeroTrustAccessGroupExcludeAuthMethodOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessGroupExcludeAuthMethodOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustAccessGroupExcludeAuthMethodOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -182,7 +182,7 @@ func NewZeroTrustAccessGroupExcludeAuthMethodOutputReference(terraformResource c
 	j := jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethodOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -190,11 +190,11 @@ func NewZeroTrustAccessGroupExcludeAuthMethodOutputReference(terraformResource c
 	return &j
 }
 
-func NewZeroTrustAccessGroupExcludeAuthMethodOutputReference_Override(z ZeroTrustAccessGroupExcludeAuthMethodOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustAccessGroupExcludeAuthMethodOutputReference_Override(z ZeroTrustAccessGroupExcludeAuthMethodOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethodOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupExcludeAuthMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -255,7 +255,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,11 +295,11 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetAnyM
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -423,8 +423,8 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) GetStri
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -436,11 +436,11 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Interpo
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -452,7 +452,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Interpo
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeAuthMethodOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

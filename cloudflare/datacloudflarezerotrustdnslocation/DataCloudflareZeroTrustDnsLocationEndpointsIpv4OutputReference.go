@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustdnslocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustdnslocation/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustdnslocation/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,7 +28,7 @@ type DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareZeroTrustDnsLocationEndpointsIpv4
@@ -38,15 +38,15 @@ type DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference interface {
 
 // The jsii proxy struct for DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference
 type jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) ComplexObjectIndex() interface{} {
@@ -110,8 +110,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -161,7 +161,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReferenc
 }
 
 
-func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference {
+func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -170,7 +170,7 @@ func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference(terraform
 	j := jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -178,11 +178,11 @@ func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference(terraform
 	return &j
 }
 
-func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference_Override(d DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference_Override(d DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -272,11 +272,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -400,8 +400,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -413,11 +413,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -429,7 +429,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv4OutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

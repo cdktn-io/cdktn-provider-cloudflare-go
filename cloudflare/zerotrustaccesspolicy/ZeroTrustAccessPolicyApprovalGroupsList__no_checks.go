@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsList) validateGetParameter
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyApprovalGroupsList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewZeroTrustAccessPolicyApprovalGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewZeroTrustAccessPolicyApprovalGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

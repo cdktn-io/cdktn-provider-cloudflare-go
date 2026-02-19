@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -93,7 +93,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateIn
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -184,7 +184,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSe
 
 func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *ZeroTrustAccessPolicyExcludeGsuite:
 		val := val.(*ZeroTrustAccessPolicyExcludeGsuite)
@@ -199,7 +199,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustAccessPolicyExcludeGsuite; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *ZeroTrustAccessPolicyExcludeGsuite; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -214,7 +214,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) validateSe
 	return nil
 }
 
-func validateNewZeroTrustAccessPolicyExcludeGsuiteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewZeroTrustAccessPolicyExcludeGsuiteOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareworkersroutes
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutes",
+		"@cdktn/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutes",
 		reflect.TypeOf((*DataCloudflareWorkersRoutes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,20 +56,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareWorkersRoutes{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutesConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutesConfig",
 		reflect.TypeOf((*DataCloudflareWorkersRoutesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutesResult",
+		"@cdktn/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutesResult",
 		reflect.TypeOf((*DataCloudflareWorkersRoutesResult)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutesResultList",
+		"@cdktn/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutesResultList",
 		reflect.TypeOf((*DataCloudflareWorkersRoutesResultList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -85,12 +85,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareWorkersRoutesResultList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutesResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareWorkersRoutes.DataCloudflareWorkersRoutesResultOutputReference",
 		reflect.TypeOf((*DataCloudflareWorkersRoutesResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,7 +120,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareWorkersRoutesResultOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

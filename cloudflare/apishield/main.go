@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package apishield
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.apiShield.ApiShield",
+		"@cdktn/provider-cloudflare.apiShield.ApiShield",
 		reflect.TypeOf((*ApiShield)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -64,16 +64,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiShield{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristics",
+		"@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristics",
 		reflect.TypeOf((*ApiShieldAuthIdCharacteristics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList",
+		"@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList",
 		reflect.TypeOf((*ApiShieldAuthIdCharacteristicsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -90,12 +90,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiShieldAuthIdCharacteristicsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference",
+		"@cdktn/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference",
 		reflect.TypeOf((*ApiShieldAuthIdCharacteristicsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,12 +126,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.apiShield.ApiShieldConfig",
+		"@cdktn/provider-cloudflare.apiShield.ApiShieldConfig",
 		reflect.TypeOf((*ApiShieldConfig)(nil)).Elem(),
 	)
 }

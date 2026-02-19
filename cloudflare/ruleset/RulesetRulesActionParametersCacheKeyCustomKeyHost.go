@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ruleset
@@ -7,7 +7,7 @@ package ruleset
 type RulesetRulesActionParametersCacheKeyCustomKeyHost struct {
 	// Whether to use the resolved host in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/ruleset#resolved Ruleset#resolved}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#resolved Ruleset#resolved}
 	Resolved interface{} `field:"optional" json:"resolved" yaml:"resolved"`
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ruleset
@@ -7,7 +7,7 @@ package ruleset
 type RulesetRulesActionParametersMatchedData struct {
 	// The public key to encrypt matched data logs with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/ruleset#public_key Ruleset#public_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#public_key Ruleset#public_key}
 	PublicKey *string `field:"required" json:"publicKey" yaml:"publicKey"`
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ruleset
@@ -7,11 +7,11 @@ package ruleset
 type RulesetRulesActionParametersCacheKeyCustomKeyQueryString struct {
 	// Which query string parameters to exclude from the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/ruleset#exclude Ruleset#exclude}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#exclude Ruleset#exclude}
 	Exclude *RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude `field:"optional" json:"exclude" yaml:"exclude"`
 	// Which query string parameters to include in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/ruleset#include Ruleset#include}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#include Ruleset#include}
 	Include *RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude `field:"optional" json:"include" yaml:"include"`
 }
 

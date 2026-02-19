@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package r2bucketsippy
@@ -13,11 +13,11 @@ type R2BucketSippyDestination struct {
 	// Sippy will use this token when writing objects to R2, so it is
 	// best to scope this token to the bucket you're enabling Sippy for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#access_key_id R2BucketSippy#access_key_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_sippy#access_key_id R2BucketSippy#access_key_id}
 	AccessKeyId *string `field:"optional" json:"accessKeyId" yaml:"accessKeyId"`
 	// Available values: "r2".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#cloud_provider R2BucketSippy#cloud_provider}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_sippy#cloud_provider R2BucketSippy#cloud_provider}
 	CloudProvider *string `field:"optional" json:"cloudProvider" yaml:"cloudProvider"`
 	// Value of a Cloudflare API token.
 	//
@@ -27,7 +27,7 @@ type R2BucketSippyDestination struct {
 	// Sippy will use this token when writing objects to R2, so it is
 	// best to scope this token to the bucket you're enabling Sippy for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy#secret_access_key R2BucketSippy#secret_access_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_sippy#secret_access_key R2BucketSippy#secret_access_key}
 	SecretAccessKey *string `field:"optional" json:"secretAccessKey" yaml:"secretAccessKey"`
 }
 

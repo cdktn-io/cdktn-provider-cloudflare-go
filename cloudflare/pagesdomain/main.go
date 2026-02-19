@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pagesdomain
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pagesDomain.PagesDomain",
+		"@cdktn/provider-cloudflare.pagesDomain.PagesDomain",
 		reflect.TypeOf((*PagesDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -72,20 +72,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PagesDomain{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainConfig",
+		"@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig",
 		reflect.TypeOf((*PagesDomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainValidationData",
+		"@cdktn/provider-cloudflare.pagesDomain.PagesDomainValidationData",
 		reflect.TypeOf((*PagesDomainValidationData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainValidationDataOutputReference",
+		"@cdktn/provider-cloudflare.pagesDomain.PagesDomainValidationDataOutputReference",
 		reflect.TypeOf((*PagesDomainValidationDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -117,16 +117,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PagesDomainValidationDataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainVerificationData",
+		"@cdktn/provider-cloudflare.pagesDomain.PagesDomainVerificationData",
 		reflect.TypeOf((*PagesDomainVerificationData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pagesDomain.PagesDomainVerificationDataOutputReference",
+		"@cdktn/provider-cloudflare.pagesDomain.PagesDomainVerificationDataOutputReference",
 		reflect.TypeOf((*PagesDomainVerificationDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,7 +155,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PagesDomainVerificationDataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

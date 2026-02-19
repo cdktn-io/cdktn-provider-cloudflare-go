@@ -1,25 +1,31 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magicwangretunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwangretunnel/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwangretunnel/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 type MagicWanGreTunnel interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AutomaticReturnRouting() interface{}
+	SetAutomaticReturnRouting(val interface{})
+	AutomaticReturnRoutingInput() interface{}
+	Bgp() MagicWanGreTunnelBgpOutputReference
+	BgpInput() interface{}
+	BgpStatus() MagicWanGreTunnelBgpStatusOutputReference
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CloudflareGreEndpoint() *string
 	SetCloudflareGreEndpoint(val *string)
 	CloudflareGreEndpointInput() *string
@@ -45,9 +51,9 @@ type MagicWanGreTunnel interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -62,9 +68,9 @@ type MagicWanGreTunnel interface {
 	InterfaceAddress6Input() *string
 	InterfaceAddressInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedOn() *string
 	Mtu() *float64
 	SetMtu(val *float64)
@@ -75,9 +81,9 @@ type MagicWanGreTunnel interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -85,7 +91,7 @@ type MagicWanGreTunnel interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -101,7 +107,7 @@ type MagicWanGreTunnel interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -119,9 +125,9 @@ type MagicWanGreTunnel interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -136,7 +142,10 @@ type MagicWanGreTunnel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBgp(value *MagicWanGreTunnelBgp)
 	PutHealthCheck(value *MagicWanGreTunnelHealthCheck)
+	ResetAutomaticReturnRouting()
+	ResetBgp()
 	ResetDescription()
 	ResetHealthCheck()
 	ResetInterfaceAddress6()
@@ -160,7 +169,7 @@ type MagicWanGreTunnel interface {
 
 // The jsii proxy struct for MagicWanGreTunnel
 type jsiiProxy_MagicWanGreTunnel struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MagicWanGreTunnel) AccountId() *string {
@@ -183,8 +192,58 @@ func (j *jsiiProxy_MagicWanGreTunnel) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MagicWanGreTunnel) AutomaticReturnRouting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticReturnRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) AutomaticReturnRoutingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticReturnRoutingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) Bgp() MagicWanGreTunnelBgpOutputReference {
+	var returns MagicWanGreTunnelBgpOutputReference
+	_jsii_.Get(
+		j,
+		"bgp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) BgpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) BgpStatus() MagicWanGreTunnelBgpStatusOutputReference {
+	var returns MagicWanGreTunnelBgpStatusOutputReference
+	_jsii_.Get(
+		j,
+		"bgpStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -303,8 +362,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MagicWanGreTunnel) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -403,8 +462,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) InterfaceAddressInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MagicWanGreTunnel) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -473,8 +532,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MagicWanGreTunnel) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -503,8 +562,8 @@ func (j *jsiiProxy_MagicWanGreTunnel) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MagicWanGreTunnel) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -554,7 +613,7 @@ func (j *jsiiProxy_MagicWanGreTunnel) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) MagicWanGreTunnel {
 	_init_.Initialize()
 
@@ -564,7 +623,7 @@ func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicW
 	j := jsiiProxy_MagicWanGreTunnel{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -572,12 +631,12 @@ func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel_Override(m MagicWanGreTunnel, scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -590,6 +649,17 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel)SetAutomaticReturnRouting(val interface{}) {
+	if err := j.validateSetAutomaticReturnRoutingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticReturnRouting",
 		val,
 	)
 }
@@ -657,7 +727,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MagicWanGreTunnel)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -687,7 +757,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetInterfaceAddress6(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MagicWanGreTunnel)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +790,7 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MagicWanGreTunnel)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -750,17 +820,17 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetTtl(val *float64) {
 	)
 }
 
-// Generates CDKTF code for importing a MagicWanGreTunnel resource upon running "cdktf plan <stack-name>".
-func MagicWanGreTunnel_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MagicWanGreTunnel resource upon running "cdktn plan <stack-name>".
+func MagicWanGreTunnel_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMagicWanGreTunnel_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -795,7 +865,7 @@ func MagicWanGreTunnel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -814,7 +884,7 @@ func MagicWanGreTunnel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -833,7 +903,7 @@ func MagicWanGreTunnel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -846,7 +916,7 @@ func MagicWanGreTunnel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		"tfResourceType",
 		&returns,
 	)
@@ -891,11 +961,11 @@ func (m *jsiiProxy_MagicWanGreTunnel) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicWanGreTunnel) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1032,7 +1102,7 @@ func (m *jsiiProxy_MagicWanGreTunnel) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MagicWanGreTunnel) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1043,11 +1113,11 @@ func (m *jsiiProxy_MagicWanGreTunnel) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicWanGreTunnel) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1103,6 +1173,17 @@ func (m *jsiiProxy_MagicWanGreTunnel) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MagicWanGreTunnel) PutBgp(value *MagicWanGreTunnelBgp) {
+	if err := m.validatePutBgpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putBgp",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MagicWanGreTunnel) PutHealthCheck(value *MagicWanGreTunnelHealthCheck) {
 	if err := m.validatePutHealthCheckParameters(value); err != nil {
 		panic(err)
@@ -1111,6 +1192,22 @@ func (m *jsiiProxy_MagicWanGreTunnel) PutHealthCheck(value *MagicWanGreTunnelHea
 		m,
 		"putHealthCheck",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) ResetAutomaticReturnRouting() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAutomaticReturnRouting",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) ResetBgp() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBgp",
+		nil, // no parameters
 	)
 }
 

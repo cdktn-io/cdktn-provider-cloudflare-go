@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -8,7 +8,7 @@ package datacloudflarepagesproject
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap) validateGetParameters(key *string) error {
@@ -27,7 +27,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespace
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -43,7 +43,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespace
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -51,7 +51,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespace
 	return nil
 }
 
-func validateNewDataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMapParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMapParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

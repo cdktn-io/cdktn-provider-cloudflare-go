@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarewaitingrooms
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarewaitingrooms/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarewaitingrooms/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareWaitingRoomsResultCookieAttributesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type DataCloudflareWaitingRoomsResultCookieAttributesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataCloudflareWaitingRoomsResultCookieAttributesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type DataCloudflareWaitingRoomsResultCookieAttributesOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareWaitingRoomsResultCookieAttributesOutputReference
 type jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) ComplexObjectIndex() interface{} {
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -172,7 +172,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReferen
 }
 
 
-func NewDataCloudflareWaitingRoomsResultCookieAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareWaitingRoomsResultCookieAttributesOutputReference {
+func NewDataCloudflareWaitingRoomsResultCookieAttributesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareWaitingRoomsResultCookieAttributesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareWaitingRoomsResultCookieAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -181,7 +181,7 @@ func NewDataCloudflareWaitingRoomsResultCookieAttributesOutputReference(terrafor
 	j := jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultCookieAttributesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultCookieAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -189,11 +189,11 @@ func NewDataCloudflareWaitingRoomsResultCookieAttributesOutputReference(terrafor
 	return &j
 }
 
-func NewDataCloudflareWaitingRoomsResultCookieAttributesOutputReference_Override(d DataCloudflareWaitingRoomsResultCookieAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareWaitingRoomsResultCookieAttributesOutputReference_Override(d DataCloudflareWaitingRoomsResultCookieAttributesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultCookieAttributesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultCookieAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -283,11 +283,11 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -411,8 +411,8 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,11 +424,11 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -440,7 +440,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultCookieAttributesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

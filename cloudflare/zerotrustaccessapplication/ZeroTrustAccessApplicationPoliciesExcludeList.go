@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessapplication/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustAccessApplicationPoliciesExcludeList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type ZeroTrustAccessApplicationPoliciesExcludeList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type ZeroTrustAccessApplicationPoliciesExcludeList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ZeroTrustAccessApplicationPoliciesExcludeOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type ZeroTrustAccessApplicationPoliciesExcludeList interface {
 
 // The jsii proxy struct for ZeroTrustAccessApplicationPoliciesExcludeList
 type jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) WrapsSet() *bo
 }
 
 
-func NewZeroTrustAccessApplicationPoliciesExcludeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationPoliciesExcludeList {
+func NewZeroTrustAccessApplicationPoliciesExcludeList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationPoliciesExcludeList {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustAccessApplicationPoliciesExcludeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewZeroTrustAccessApplicationPoliciesExcludeList(terraformResource cdktf.II
 	j := jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeList",
+		"@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewZeroTrustAccessApplicationPoliciesExcludeList(terraformResource cdktf.II
 	return &j
 }
 
-func NewZeroTrustAccessApplicationPoliciesExcludeList_Override(z ZeroTrustAccessApplicationPoliciesExcludeList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewZeroTrustAccessApplicationPoliciesExcludeList_Override(z ZeroTrustAccessApplicationPoliciesExcludeList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeList",
+		"@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList)SetWrapsSet(val
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := z.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		z,
@@ -231,7 +231,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) Get(index *flo
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

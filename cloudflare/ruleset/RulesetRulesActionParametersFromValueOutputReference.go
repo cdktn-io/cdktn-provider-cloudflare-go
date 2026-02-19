@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ruleset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ruleset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type RulesetRulesActionParametersFromValueOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type RulesetRulesActionParametersFromValueOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,15 +69,15 @@ type RulesetRulesActionParametersFromValueOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTargetUrl(value *RulesetRulesActionParametersFromValueTargetUrl)
 	ResetPreserveQueryString()
 	ResetStatusCode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type RulesetRulesActionParametersFromValueOutputReference interface {
 
 // The jsii proxy struct for RulesetRulesActionParametersFromValueOutputReference
 type jsiiProxy_RulesetRulesActionParametersFromValueOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) ComplexObjectIndex() interface{} {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) Terrafo
 }
 
 
-func NewRulesetRulesActionParametersFromValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersFromValueOutputReference {
+func NewRulesetRulesActionParametersFromValueOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersFromValueOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRulesetRulesActionParametersFromValueOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -230,7 +230,7 @@ func NewRulesetRulesActionParametersFromValueOutputReference(terraformResource c
 	j := jsiiProxy_RulesetRulesActionParametersFromValueOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewRulesetRulesActionParametersFromValueOutputReference(terraformResource c
 	return &j
 }
 
-func NewRulesetRulesActionParametersFromValueOutputReference_Override(r RulesetRulesActionParametersFromValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersFromValueOutputReference_Override(r RulesetRulesActionParametersFromValueOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -314,7 +314,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,11 +354,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) GetAnyM
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -482,8 +482,8 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) GetStri
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -495,11 +495,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) Interpo
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -538,7 +538,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) ResetSt
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

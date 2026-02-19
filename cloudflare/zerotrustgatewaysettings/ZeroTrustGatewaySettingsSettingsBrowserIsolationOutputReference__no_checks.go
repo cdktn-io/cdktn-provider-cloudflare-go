@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferen
 	return nil
 }
 
-func validateNewZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

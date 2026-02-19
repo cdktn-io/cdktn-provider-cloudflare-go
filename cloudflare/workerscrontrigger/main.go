@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workerscrontrigger
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workersCronTrigger.WorkersCronTrigger",
+		"@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger",
 		reflect.TypeOf((*WorkersCronTrigger)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -66,20 +66,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersCronTrigger{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig",
+		"@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig",
 		reflect.TypeOf((*WorkersCronTriggerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules",
+		"@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules",
 		reflect.TypeOf((*WorkersCronTriggerSchedules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedulesList",
+		"@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedulesList",
 		reflect.TypeOf((*WorkersCronTriggerSchedulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -96,12 +96,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersCronTriggerSchedulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedulesOutputReference",
+		"@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedulesOutputReference",
 		reflect.TypeOf((*WorkersCronTriggerSchedulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -132,7 +132,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersCronTriggerSchedulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

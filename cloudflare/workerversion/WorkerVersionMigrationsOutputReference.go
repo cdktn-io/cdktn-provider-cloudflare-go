@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workerversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workerversion/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workerversion/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WorkerVersionMigrationsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -56,9 +56,9 @@ type WorkerVersionMigrationsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TransferredClasses() WorkerVersionMigrationsTransferredClassesList
 	TransferredClassesInput() interface{}
 	// Experimental.
@@ -66,7 +66,7 @@ type WorkerVersionMigrationsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type WorkerVersionMigrationsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutRenamedClasses(value interface{})
 	PutSteps(value interface{})
 	PutTransferredClasses(value interface{})
@@ -98,7 +98,7 @@ type WorkerVersionMigrationsOutputReference interface {
 	ResetTransferredClasses()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type WorkerVersionMigrationsOutputReference interface {
 
 // The jsii proxy struct for WorkerVersionMigrationsOutputReference
 type jsiiProxy_WorkerVersionMigrationsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) ComplexObjectIndex() interface{} {
@@ -311,8 +311,8 @@ func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -342,7 +342,7 @@ func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) TransferredClassesInp
 }
 
 
-func NewWorkerVersionMigrationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkerVersionMigrationsOutputReference {
+func NewWorkerVersionMigrationsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkerVersionMigrationsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkerVersionMigrationsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -351,7 +351,7 @@ func NewWorkerVersionMigrationsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_WorkerVersionMigrationsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsOutputReference",
+		"@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -359,11 +359,11 @@ func NewWorkerVersionMigrationsOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewWorkerVersionMigrationsOutputReference_Override(w WorkerVersionMigrationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkerVersionMigrationsOutputReference_Override(w WorkerVersionMigrationsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workerVersion.WorkerVersionMigrationsOutputReference",
+		"@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -468,7 +468,7 @@ func (j *jsiiProxy_WorkerVersionMigrationsOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_WorkerVersionMigrationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkerVersionMigrationsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,11 +508,11 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -636,8 +636,8 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -649,11 +649,11 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -762,7 +762,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) ResetTransferredClass
 	)
 }
 
-func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

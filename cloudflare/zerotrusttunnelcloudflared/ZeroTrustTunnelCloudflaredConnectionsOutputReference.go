@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrusttunnelcloudflared
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrusttunnelcloudflared/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflared/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustTunnelCloudflaredConnectionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ClientId() *string
 	ClientVersion() *string
 	ColoName() *string
@@ -36,7 +36,7 @@ type ZeroTrustTunnelCloudflaredConnectionsOutputReference interface {
 	Id() *string
 	InternalValue() *ZeroTrustTunnelCloudflaredConnections
 	SetInternalValue(val *ZeroTrustTunnelCloudflaredConnections)
-	IsPendingReconnect() cdktf.IResolvable
+	IsPendingReconnect() cdktn.IResolvable
 	OpenedAt() *string
 	OriginIp() *string
 	// Experimental.
@@ -44,16 +44,16 @@ type ZeroTrustTunnelCloudflaredConnectionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uuid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,12 +69,12 @@ type ZeroTrustTunnelCloudflaredConnectionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ZeroTrustTunnelCloudflaredConnectionsOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustTunnelCloudflaredConnectionsOutputReference
 type jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) ClientId() *string {
@@ -177,8 +177,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) Interna
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) IsPendingReconnect() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) IsPendingReconnect() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isPendingReconnect",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -238,7 +238,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) Uuid() 
 }
 
 
-func NewZeroTrustTunnelCloudflaredConnectionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustTunnelCloudflaredConnectionsOutputReference {
+func NewZeroTrustTunnelCloudflaredConnectionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustTunnelCloudflaredConnectionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustTunnelCloudflaredConnectionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -247,7 +247,7 @@ func NewZeroTrustTunnelCloudflaredConnectionsOutputReference(terraformResource c
 	j := jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflaredConnectionsOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflaredConnectionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -255,11 +255,11 @@ func NewZeroTrustTunnelCloudflaredConnectionsOutputReference(terraformResource c
 	return &j
 }
 
-func NewZeroTrustTunnelCloudflaredConnectionsOutputReference_Override(z ZeroTrustTunnelCloudflaredConnectionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustTunnelCloudflaredConnectionsOutputReference_Override(z ZeroTrustTunnelCloudflaredConnectionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflaredConnectionsOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustTunnelCloudflared.ZeroTrustTunnelCloudflaredConnectionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,11 +349,11 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) GetAnyM
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -477,8 +477,8 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) GetStri
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -490,11 +490,11 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) Interpo
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -506,7 +506,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) Interpo
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConnectionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

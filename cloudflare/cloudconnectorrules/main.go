@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cloudconnectorrules
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRules",
+		"@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules",
 		reflect.TypeOf((*CloudConnectorRules)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -65,20 +65,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudConnectorRules{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig",
+		"@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig",
 		reflect.TypeOf((*CloudConnectorRulesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules",
+		"@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules",
 		reflect.TypeOf((*CloudConnectorRulesRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesList",
+		"@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesList",
 		reflect.TypeOf((*CloudConnectorRulesRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -95,12 +95,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudConnectorRulesRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesOutputReference",
+		"@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesOutputReference",
 		reflect.TypeOf((*CloudConnectorRulesRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,16 +144,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudConnectorRulesRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesParameters",
+		"@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesParameters",
 		reflect.TypeOf((*CloudConnectorRulesRulesParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesParametersOutputReference",
+		"@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesParametersOutputReference",
 		reflect.TypeOf((*CloudConnectorRulesRulesParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,7 +183,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudConnectorRulesRulesParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

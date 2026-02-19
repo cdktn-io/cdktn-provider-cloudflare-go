@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdevicemanagednetworks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicemanagednetworks/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdevicemanagednetworks/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
 type ZeroTrustDeviceManagedNetworks interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Config() ZeroTrustDeviceManagedNetworksConfigAOutputReference
 	ConfigInput() interface{}
 	// Experimental.
@@ -37,18 +37,18 @@ type ZeroTrustDeviceManagedNetworks interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -56,9 +56,9 @@ type ZeroTrustDeviceManagedNetworks interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -66,7 +66,7 @@ type ZeroTrustDeviceManagedNetworks interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -82,7 +82,7 @@ type ZeroTrustDeviceManagedNetworks interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -100,9 +100,9 @@ type ZeroTrustDeviceManagedNetworks interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -136,7 +136,7 @@ type ZeroTrustDeviceManagedNetworks interface {
 
 // The jsii proxy struct for ZeroTrustDeviceManagedNetworks
 type jsiiProxy_ZeroTrustDeviceManagedNetworks struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) AccountId() *string {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -400,7 +400,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
 func NewZeroTrustDeviceManagedNetworks(scope constructs.Construct, id *string, config *ZeroTrustDeviceManagedNetworksConfig) ZeroTrustDeviceManagedNetworks {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewZeroTrustDeviceManagedNetworks(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ZeroTrustDeviceManagedNetworks{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -418,12 +418,12 @@ func NewZeroTrustDeviceManagedNetworks(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
 func NewZeroTrustDeviceManagedNetworks_Override(z ZeroTrustDeviceManagedNetworks, scope constructs.Construct, id *string, config *ZeroTrustDeviceManagedNetworksConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -470,7 +470,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +478,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +500,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,17 +530,17 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ZeroTrustDeviceManagedNetworks resource upon running "cdktf plan <stack-name>".
-func ZeroTrustDeviceManagedNetworks_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ZeroTrustDeviceManagedNetworks resource upon running "cdktn plan <stack-name>".
+func ZeroTrustDeviceManagedNetworks_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDeviceManagedNetworks_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -575,7 +575,7 @@ func ZeroTrustDeviceManagedNetworks_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func ZeroTrustDeviceManagedNetworks_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func ZeroTrustDeviceManagedNetworks_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -626,7 +626,7 @@ func ZeroTrustDeviceManagedNetworks_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceManagedNetworks.ZeroTrustDeviceManagedNetworks",
 		"tfResourceType",
 		&returns,
 	)
@@ -671,11 +671,11 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -812,7 +812,7 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) HasResourceMove() interface{}
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -823,11 +823,11 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) ImportFrom(id *string, provid
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,

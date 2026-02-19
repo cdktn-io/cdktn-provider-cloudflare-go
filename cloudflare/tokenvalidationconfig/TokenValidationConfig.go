@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tokenvalidationconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/tokenvalidationconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config cloudflare_token_validation_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config cloudflare_token_validation_config}.
 type TokenValidationConfig interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,9 +38,9 @@ type TokenValidationConfig interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,15 +48,15 @@ type TokenValidationConfig interface {
 	Id() *string
 	LastUpdated() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -64,7 +64,7 @@ type TokenValidationConfig interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type TokenValidationConfig interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -107,9 +107,9 @@ type TokenValidationConfig interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -143,11 +143,11 @@ type TokenValidationConfig interface {
 
 // The jsii proxy struct for TokenValidationConfig
 type jsiiProxy_TokenValidationConfig struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_TokenValidationConfig) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_TokenValidationConfig) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_TokenValidationConfig) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TokenValidationConfig) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_TokenValidationConfig) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_TokenValidationConfig) LastUpdated() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TokenValidationConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_TokenValidationConfig) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_TokenValidationConfig) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_TokenValidationConfig) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_TokenValidationConfig) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_TokenValidationConfig) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TokenValidationConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_TokenValidationConfig) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -457,7 +457,7 @@ func (j *jsiiProxy_TokenValidationConfig) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config cloudflare_token_validation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config cloudflare_token_validation_config} Resource.
 func NewTokenValidationConfig(scope constructs.Construct, id *string, config *TokenValidationConfigConfig) TokenValidationConfig {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewTokenValidationConfig(scope constructs.Construct, id *string, config *To
 	j := jsiiProxy_TokenValidationConfig{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,12 +475,12 @@ func NewTokenValidationConfig(scope constructs.Construct, id *string, config *To
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config cloudflare_token_validation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config cloudflare_token_validation_config} Resource.
 func NewTokenValidationConfig_Override(t TokenValidationConfig, scope constructs.Construct, id *string, config *TokenValidationConfigConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -527,7 +527,7 @@ func (j *jsiiProxy_TokenValidationConfig)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TokenValidationConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TokenValidationConfig)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -535,7 +535,7 @@ func (j *jsiiProxy_TokenValidationConfig)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_TokenValidationConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TokenValidationConfig)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +546,7 @@ func (j *jsiiProxy_TokenValidationConfig)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_TokenValidationConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TokenValidationConfig)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -609,17 +609,17 @@ func (j *jsiiProxy_TokenValidationConfig)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a TokenValidationConfig resource upon running "cdktf plan <stack-name>".
-func TokenValidationConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a TokenValidationConfig resource upon running "cdktn plan <stack-name>".
+func TokenValidationConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateTokenValidationConfig_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -654,7 +654,7 @@ func TokenValidationConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func TokenValidationConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func TokenValidationConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func TokenValidationConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
 		"tfResourceType",
 		&returns,
 	)
@@ -750,11 +750,11 @@ func (t *jsiiProxy_TokenValidationConfig) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (t *jsiiProxy_TokenValidationConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TokenValidationConfig) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -891,7 +891,7 @@ func (t *jsiiProxy_TokenValidationConfig) HasResourceMove() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TokenValidationConfig) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (t *jsiiProxy_TokenValidationConfig) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -902,11 +902,11 @@ func (t *jsiiProxy_TokenValidationConfig) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (t *jsiiProxy_TokenValidationConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TokenValidationConfig) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,

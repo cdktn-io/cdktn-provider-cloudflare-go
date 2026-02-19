@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustaccessapplication/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccessapplication/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference interface {
-	cdktf.ComplexObject
-	AllowAllHeaders() cdktf.IResolvable
-	AllowAllMethods() cdktf.IResolvable
-	AllowAllOrigins() cdktf.IResolvable
-	AllowCredentials() cdktf.IResolvable
+	cdktn.ComplexObject
+	AllowAllHeaders() cdktn.IResolvable
+	AllowAllMethods() cdktn.IResolvable
+	AllowAllOrigins() cdktn.IResolvable
+	AllowCredentials() cdktn.IResolvable
 	AllowedHeaders() *[]*string
 	AllowedMethods() *[]*string
 	AllowedOrigins() *[]*string
@@ -45,15 +45,15 @@ type DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,12 +69,12 @@ type DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,11 +84,11 @@ type DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference interfac
 
 // The jsii proxy struct for DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference
 type jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllHeaders() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllHeaders() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowAllHeaders",
@@ -97,8 +97,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllMethods() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllMethods() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowAllMethods",
@@ -107,8 +107,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllOrigins() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) AllowAllOrigins() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowAllOrigins",
@@ -117,8 +117,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) AllowCredentials() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) AllowCredentials() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowCredentials",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -238,7 +238,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 }
 
 
-func NewDataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference {
+func NewDataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -247,7 +247,7 @@ func NewDataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference(terra
 	j := jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessApplication.DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessApplication.DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -255,11 +255,11 @@ func NewDataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference(terra
 	return &j
 }
 
-func NewDataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference_Override(d DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference_Override(d DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessApplication.DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessApplication.DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,11 +349,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -477,8 +477,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -490,11 +490,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -506,7 +506,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationCorsHeadersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

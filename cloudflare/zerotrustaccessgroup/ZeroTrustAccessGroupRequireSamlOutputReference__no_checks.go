@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (z *jsiiProxy_ZeroTrustAccessGroupRequireSamlOutputReference) validateInter
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupRequireSamlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupRequireSamlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -79,11 +79,11 @@ func (j *jsiiProxy_ZeroTrustAccessGroupRequireSamlOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupRequireSamlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireSamlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewZeroTrustAccessGroupRequireSamlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewZeroTrustAccessGroupRequireSamlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) validateInterpolation
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,11 +23,11 @@ func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PagesProjectLatestDeploymentEnvVarsMap) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPagesProjectLatestDeploymentEnvVarsMapParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPagesProjectLatestDeploymentEnvVarsMapParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

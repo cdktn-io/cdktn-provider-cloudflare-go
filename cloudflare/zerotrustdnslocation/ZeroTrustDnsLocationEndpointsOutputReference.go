@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdnslocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdnslocation/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdnslocation/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustDnsLocationEndpointsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type ZeroTrustDnsLocationEndpointsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,16 +69,16 @@ type ZeroTrustDnsLocationEndpointsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDoh(value *ZeroTrustDnsLocationEndpointsDoh)
 	PutDot(value *ZeroTrustDnsLocationEndpointsDot)
 	PutIpv4(value *ZeroTrustDnsLocationEndpointsIpv4)
 	PutIpv6(value *ZeroTrustDnsLocationEndpointsIpv6)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type ZeroTrustDnsLocationEndpointsOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustDnsLocationEndpointsOutputReference
 type jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) ComplexObjectIndex() interface{} {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) TerraformResour
 }
 
 
-func NewZeroTrustDnsLocationEndpointsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDnsLocationEndpointsOutputReference {
+func NewZeroTrustDnsLocationEndpointsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustDnsLocationEndpointsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustDnsLocationEndpointsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewZeroTrustDnsLocationEndpointsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewZeroTrustDnsLocationEndpointsOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewZeroTrustDnsLocationEndpointsOutputReference_Override(z ZeroTrustDnsLocationEndpointsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustDnsLocationEndpointsOutputReference_Override(z ZeroTrustDnsLocationEndpointsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDnsLocation.ZeroTrustDnsLocationEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,11 +353,11 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -481,8 +481,8 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -494,11 +494,11 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) InterpolationAs
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -554,7 +554,7 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) PutIpv6(value *
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

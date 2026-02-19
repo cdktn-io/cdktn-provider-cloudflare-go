@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package argotieredcaching
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/argotieredcaching/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/argotieredcaching/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 type ArgoTieredCaching interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -31,27 +31,27 @@ type ArgoTieredCaching interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Editable() cdktf.IResolvable
+	Editable() cdktn.IResolvable
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -59,7 +59,7 @@ type ArgoTieredCaching interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -78,7 +78,7 @@ type ArgoTieredCaching interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -96,9 +96,9 @@ type ArgoTieredCaching interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -131,11 +131,11 @@ type ArgoTieredCaching interface {
 
 // The jsii proxy struct for ArgoTieredCaching
 type jsiiProxy_ArgoTieredCaching struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ArgoTieredCaching) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ArgoTieredCaching) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) Editable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ArgoTieredCaching) Editable() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"editable",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ArgoTieredCaching) Editable() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ArgoTieredCaching) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_ArgoTieredCaching) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ArgoTieredCaching) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_ArgoTieredCaching) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ArgoTieredCaching) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_ArgoTieredCaching) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ArgoTieredCaching) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ArgoTieredCaching) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -365,7 +365,7 @@ func (j *jsiiProxy_ArgoTieredCaching) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
 func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTieredCachingConfig) ArgoTieredCaching {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTi
 	j := jsiiProxy_ArgoTieredCaching{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
+		"@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,12 +383,12 @@ func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
 func NewArgoTieredCaching_Override(a ArgoTieredCaching, scope constructs.Construct, id *string, config *ArgoTieredCachingConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
+		"@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ArgoTieredCaching)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +432,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ArgoTieredCaching)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +443,7 @@ func (j *jsiiProxy_ArgoTieredCaching)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ArgoTieredCaching)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ArgoTieredCaching)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -484,17 +484,17 @@ func (j *jsiiProxy_ArgoTieredCaching)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ArgoTieredCaching resource upon running "cdktf plan <stack-name>".
-func ArgoTieredCaching_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ArgoTieredCaching resource upon running "cdktn plan <stack-name>".
+func ArgoTieredCaching_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateArgoTieredCaching_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
+		"@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -529,7 +529,7 @@ func ArgoTieredCaching_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
+		"@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func ArgoTieredCaching_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
+		"@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func ArgoTieredCaching_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
+		"@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func ArgoTieredCaching_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
+		"@cdktn/provider-cloudflare.argoTieredCaching.ArgoTieredCaching",
 		"tfResourceType",
 		&returns,
 	)
@@ -625,11 +625,11 @@ func (a *jsiiProxy_ArgoTieredCaching) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ArgoTieredCaching) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -766,7 +766,7 @@ func (a *jsiiProxy_ArgoTieredCaching) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_ArgoTieredCaching) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -777,11 +777,11 @@ func (a *jsiiProxy_ArgoTieredCaching) ImportFrom(id *string, provider cdktf.Terr
 	)
 }
 
-func (a *jsiiProxy_ArgoTieredCaching) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ArgoTieredCaching) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zonednssettings
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
 		reflect.TypeOf((*ZoneDnsSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -90,20 +90,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneDnsSettings{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsConfig",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsConfig",
 		reflect.TypeOf((*ZoneDnsSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsInternalDns",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsInternalDns",
 		reflect.TypeOf((*ZoneDnsSettingsInternalDns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsInternalDnsOutputReference",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsInternalDnsOutputReference",
 		reflect.TypeOf((*ZoneDnsSettingsInternalDnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,16 +133,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneDnsSettingsInternalDnsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameservers",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameservers",
 		reflect.TypeOf((*ZoneDnsSettingsNameservers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameserversOutputReference",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsNameserversOutputReference",
 		reflect.TypeOf((*ZoneDnsSettingsNameserversOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,16 +175,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneDnsSettingsNameserversOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoa",
 		reflect.TypeOf((*ZoneDnsSettingsSoa)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettingsSoaOutputReference",
 		reflect.TypeOf((*ZoneDnsSettingsSoaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -232,7 +232,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneDnsSettingsSoaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

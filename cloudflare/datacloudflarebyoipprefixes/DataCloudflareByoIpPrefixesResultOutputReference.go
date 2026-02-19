@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarebyoipprefixes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarebyoipprefixes/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarebyoipprefixes/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareByoIpPrefixesResultOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccountId() *string
-	Advertised() cdktf.IResolvable
+	Advertised() cdktn.IResolvable
 	AdvertisedModifiedAt() *string
 	Approved() *string
 	Asn() *float64
@@ -35,7 +35,7 @@ type DataCloudflareByoIpPrefixesResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DelegateLoaCreation() cdktf.IResolvable
+	DelegateLoaCreation() cdktn.IResolvable
 	Description() *string
 	// Experimental.
 	Fqn() *string
@@ -45,8 +45,8 @@ type DataCloudflareByoIpPrefixesResultOutputReference interface {
 	IrrValidationState() *string
 	LoaDocumentId() *string
 	ModifiedAt() *string
-	OnDemandEnabled() cdktf.IResolvable
-	OnDemandLocked() cdktf.IResolvable
+	OnDemandEnabled() cdktn.IResolvable
+	OnDemandLocked() cdktn.IResolvable
 	OwnershipValidationState() *string
 	OwnershipValidationToken() *string
 	RpkiValidationState() *string
@@ -55,15 +55,15 @@ type DataCloudflareByoIpPrefixesResultOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,12 +79,12 @@ type DataCloudflareByoIpPrefixesResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +94,7 @@ type DataCloudflareByoIpPrefixesResultOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareByoIpPrefixesResultOutputReference
 type jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) AccountId() *string {
@@ -107,8 +107,8 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) AccountId()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Advertised() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Advertised() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"advertised",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) DelegateLoaCreation() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) DelegateLoaCreation() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"delegateLoaCreation",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) ModifiedAt(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OnDemandEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OnDemandEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"onDemandEnabled",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OnDemandEna
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OnDemandLocked() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) OnDemandLocked() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"onDemandLocked",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) TerraformRe
 }
 
 
-func NewDataCloudflareByoIpPrefixesResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareByoIpPrefixesResultOutputReference {
+func NewDataCloudflareByoIpPrefixesResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareByoIpPrefixesResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareByoIpPrefixesResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -357,7 +357,7 @@ func NewDataCloudflareByoIpPrefixesResultOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareByoIpPrefixes.DataCloudflareByoIpPrefixesResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareByoIpPrefixes.DataCloudflareByoIpPrefixesResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -365,11 +365,11 @@ func NewDataCloudflareByoIpPrefixesResultOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewDataCloudflareByoIpPrefixesResultOutputReference_Override(d DataCloudflareByoIpPrefixesResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareByoIpPrefixesResultOutputReference_Override(d DataCloudflareByoIpPrefixesResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareByoIpPrefixes.DataCloudflareByoIpPrefixesResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareByoIpPrefixes.DataCloudflareByoIpPrefixesResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -419,7 +419,7 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,11 +459,11 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -587,8 +587,8 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) GetStringMa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -600,11 +600,11 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -616,7 +616,7 @@ func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

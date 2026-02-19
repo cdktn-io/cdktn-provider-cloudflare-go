@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrusttunnelcloudflaredconfig
@@ -7,11 +7,11 @@ package zerotrusttunnelcloudflaredconfig
 type ZeroTrustTunnelCloudflaredConfigConfig struct {
 	// List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#ingress ZeroTrustTunnelCloudflaredConfigA#ingress}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#ingress ZeroTrustTunnelCloudflaredConfigA#ingress}
 	Ingress interface{} `field:"optional" json:"ingress" yaml:"ingress"`
 	// Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_request ZeroTrustTunnelCloudflaredConfigA#origin_request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_request ZeroTrustTunnelCloudflaredConfigA#origin_request}
 	OriginRequest *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest `field:"optional" json:"originRequest" yaml:"originRequest"`
 }
 

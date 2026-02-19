@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magicwanstaticroute
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute",
+		"@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute",
 		reflect.TypeOf((*MagicWanStaticRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -79,20 +79,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicWanStaticRoute{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig",
+		"@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig",
 		reflect.TypeOf((*MagicWanStaticRouteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope",
+		"@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope",
 		reflect.TypeOf((*MagicWanStaticRouteScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScopeOutputReference",
+		"@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScopeOutputReference",
 		reflect.TypeOf((*MagicWanStaticRouteScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "coloNames", GoGetter: "ColoNames"},
@@ -125,7 +125,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicWanStaticRouteScopeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

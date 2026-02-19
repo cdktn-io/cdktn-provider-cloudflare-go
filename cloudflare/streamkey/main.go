@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamkey
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamKey.StreamKey",
+		"@cdktn/provider-cloudflare.streamKey.StreamKey",
 		reflect.TypeOf((*StreamKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -64,12 +64,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamKey{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamKey.StreamKeyConfig",
+		"@cdktn/provider-cloudflare.streamKey.StreamKeyConfig",
 		reflect.TypeOf((*StreamKeyConfig)(nil)).Elem(),
 	)
 }

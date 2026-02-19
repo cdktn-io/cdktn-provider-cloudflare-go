@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOktaOutputReference) validateInte
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOktaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOktaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,11 +75,11 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeOktaOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeOktaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeOktaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewZeroTrustAccessPolicyIncludeOktaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewZeroTrustAccessPolicyIncludeOktaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

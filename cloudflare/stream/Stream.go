@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package stream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/stream/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream cloudflare_stream}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream cloudflare_stream}.
 type Stream interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type Stream interface {
 	SetAllowedOrigins(val *[]*string)
 	AllowedOriginsInput() *[]*string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -43,9 +43,9 @@ type Stream interface {
 	SetDependsOn(val *[]*string)
 	Duration() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -55,9 +55,9 @@ type Stream interface {
 	IdentifierInput() *string
 	Input() StreamInputOutputReference
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LiveInput() *string
 	MaxDurationSeconds() *float64
 	SetMaxDurationSeconds(val *float64)
@@ -71,16 +71,16 @@ type Stream interface {
 	Playback() StreamPlaybackOutputReference
 	Preview() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ReadyToStream() cdktf.IResolvable
+	ReadyToStream() cdktn.IResolvable
 	ReadyToStreamAt() *string
 	RequireSignedUrls() interface{}
 	SetRequireSignedUrls(val interface{})
@@ -91,7 +91,7 @@ type Stream interface {
 	Size() *float64
 	Status() StreamStatusOutputReference
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -114,7 +114,7 @@ type Stream interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -132,9 +132,9 @@ type Stream interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -176,7 +176,7 @@ type Stream interface {
 
 // The jsii proxy struct for Stream
 type jsiiProxy_Stream struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Stream) AccountId() *string {
@@ -219,8 +219,8 @@ func (j *jsiiProxy_Stream) AllowedOriginsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Stream) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Stream) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_Stream) Duration() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Stream) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Stream) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_Stream) Input() StreamInputOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Stream) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Stream) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_Stream) Preview() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Stream) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Stream) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_Stream) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Stream) ReadyToStream() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Stream) ReadyToStream() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"readyToStream",
@@ -579,8 +579,8 @@ func (j *jsiiProxy_Stream) Status() StreamStatusOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Stream) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Stream) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -690,7 +690,7 @@ func (j *jsiiProxy_Stream) Watermark() StreamWatermarkOutputReference {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream cloudflare_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream cloudflare_stream} Resource.
 func NewStream(scope constructs.Construct, id *string, config *StreamConfig) Stream {
 	_init_.Initialize()
 
@@ -700,7 +700,7 @@ func NewStream(scope constructs.Construct, id *string, config *StreamConfig) Str
 	j := jsiiProxy_Stream{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.stream.Stream",
+		"@cdktn/provider-cloudflare.stream.Stream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -708,12 +708,12 @@ func NewStream(scope constructs.Construct, id *string, config *StreamConfig) Str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream cloudflare_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream cloudflare_stream} Resource.
 func NewStream_Override(s Stream, scope constructs.Construct, id *string, config *StreamConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.stream.Stream",
+		"@cdktn/provider-cloudflare.stream.Stream",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -782,7 +782,7 @@ func (j *jsiiProxy_Stream)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Stream)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Stream)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -801,7 +801,7 @@ func (j *jsiiProxy_Stream)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Stream)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Stream)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +834,7 @@ func (j *jsiiProxy_Stream)SetMeta(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Stream)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Stream)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -897,17 +897,17 @@ func (j *jsiiProxy_Stream)SetUploadExpiry(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Stream resource upon running "cdktf plan <stack-name>".
-func Stream_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Stream resource upon running "cdktn plan <stack-name>".
+func Stream_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateStream_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.stream.Stream",
+		"@cdktn/provider-cloudflare.stream.Stream",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -942,7 +942,7 @@ func Stream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.stream.Stream",
+		"@cdktn/provider-cloudflare.stream.Stream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -961,7 +961,7 @@ func Stream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.stream.Stream",
+		"@cdktn/provider-cloudflare.stream.Stream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -980,7 +980,7 @@ func Stream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.stream.Stream",
+		"@cdktn/provider-cloudflare.stream.Stream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -993,7 +993,7 @@ func Stream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.stream.Stream",
+		"@cdktn/provider-cloudflare.stream.Stream",
 		"tfResourceType",
 		&returns,
 	)
@@ -1038,11 +1038,11 @@ func (s *jsiiProxy_Stream) GetAnyMapAttribute(terraformAttribute *string) *map[s
 	return returns
 }
 
-func (s *jsiiProxy_Stream) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_Stream) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1179,7 +1179,7 @@ func (s *jsiiProxy_Stream) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Stream) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_Stream) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1190,11 +1190,11 @@ func (s *jsiiProxy_Stream) ImportFrom(id *string, provider cdktf.TerraformProvid
 	)
 }
 
-func (s *jsiiProxy_Stream) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_Stream) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

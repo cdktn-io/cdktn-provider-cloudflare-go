@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarenotificationpolicywebhookslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarenotificationpolicywebhookslist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarenotificationpolicywebhookslist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list}.
 type DataCloudflareNotificationPolicyWebhooksList interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -31,31 +31,31 @@ type DataCloudflareNotificationPolicyWebhooksList interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflareNotificationPolicyWebhooksListResultList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type DataCloudflareNotificationPolicyWebhooksList interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,7 +81,7 @@ type DataCloudflareNotificationPolicyWebhooksList interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -105,7 +105,7 @@ type DataCloudflareNotificationPolicyWebhooksList interface {
 
 // The jsii proxy struct for DataCloudflareNotificationPolicyWebhooksList
 type jsiiProxy_DataCloudflareNotificationPolicyWebhooksList struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) AccountId() *string {
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) AccountIdInput(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) DependsOn() *[]
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) FriendlyUniqueI
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) Node() construc
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) Result() DataCl
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
 func NewDataCloudflareNotificationPolicyWebhooksList(scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyWebhooksListConfig) DataCloudflareNotificationPolicyWebhooksList {
 	_init_.Initialize()
 
@@ -309,7 +309,7 @@ func NewDataCloudflareNotificationPolicyWebhooksList(scope constructs.Construct,
 	j := jsiiProxy_DataCloudflareNotificationPolicyWebhooksList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
+		"@cdktn/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -317,12 +317,12 @@ func NewDataCloudflareNotificationPolicyWebhooksList(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
 func NewDataCloudflareNotificationPolicyWebhooksList_Override(d DataCloudflareNotificationPolicyWebhooksList, scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyWebhooksListConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
+		"@cdktn/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetDependsOn(val
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -366,7 +366,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetForEach(val c
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +388,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetMaxItems(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -396,17 +396,17 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList)SetProvider(val 
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareNotificationPolicyWebhooksList resource upon running "cdktf plan <stack-name>".
-func DataCloudflareNotificationPolicyWebhooksList_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareNotificationPolicyWebhooksList resource upon running "cdktn plan <stack-name>".
+func DataCloudflareNotificationPolicyWebhooksList_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareNotificationPolicyWebhooksList_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
+		"@cdktn/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -441,7 +441,7 @@ func DataCloudflareNotificationPolicyWebhooksList_IsConstruct(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
+		"@cdktn/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -460,7 +460,7 @@ func DataCloudflareNotificationPolicyWebhooksList_IsTerraformDataSource(x interf
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
+		"@cdktn/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataCloudflareNotificationPolicyWebhooksList_IsTerraformElement(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
+		"@cdktn/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func DataCloudflareNotificationPolicyWebhooksList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
+		"@cdktn/provider-cloudflare.dataCloudflareNotificationPolicyWebhooksList.DataCloudflareNotificationPolicyWebhooksList",
 		"tfResourceType",
 		&returns,
 	)
@@ -526,11 +526,11 @@ func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) GetAnyMapAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -654,11 +654,11 @@ func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) GetStringMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

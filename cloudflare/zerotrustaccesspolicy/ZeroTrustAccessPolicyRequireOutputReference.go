@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccesspolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccesspolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustAccessPolicyRequireOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AnyValidServiceToken() ZeroTrustAccessPolicyRequireAnyValidServiceTokenOutputReference
 	AnyValidServiceTokenInput() interface{}
 	AuthContext() ZeroTrustAccessPolicyRequireAuthContextOutputReference
@@ -85,15 +85,15 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -109,9 +109,9 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAnyValidServiceToken(value *ZeroTrustAccessPolicyRequireAnyValidServiceToken)
 	PutAuthContext(value *ZeroTrustAccessPolicyRequireAuthContext)
 	PutAuthMethod(value *ZeroTrustAccessPolicyRequireAuthMethod)
@@ -162,7 +162,7 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 	ResetServiceToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -172,7 +172,7 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustAccessPolicyRequireOutputReference
 type jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) AnyValidServiceToken() ZeroTrustAccessPolicyRequireAnyValidServiceTokenOutputReference {
@@ -715,8 +715,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -726,7 +726,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) TerraformResourc
 }
 
 
-func NewZeroTrustAccessPolicyRequireOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessPolicyRequireOutputReference {
+func NewZeroTrustAccessPolicyRequireOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessPolicyRequireOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustAccessPolicyRequireOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -735,7 +735,7 @@ func NewZeroTrustAccessPolicyRequireOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -743,11 +743,11 @@ func NewZeroTrustAccessPolicyRequireOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewZeroTrustAccessPolicyRequireOutputReference_Override(z ZeroTrustAccessPolicyRequireOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessPolicyRequireOutputReference_Override(z ZeroTrustAccessPolicyRequireOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)
@@ -797,7 +797,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,11 +837,11 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -965,8 +965,8 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -978,11 +978,11 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) InterpolationAsL
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -1450,7 +1450,7 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) ResetServiceToke
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

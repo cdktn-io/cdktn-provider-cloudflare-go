@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -98,7 +98,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionAiBindings:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionAiBindings)
@@ -117,7 +117,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionAiBindings; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionAiBindings; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets)
@@ -148,7 +148,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -160,7 +160,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionBrowsers:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionBrowsers)
@@ -179,7 +179,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionBrowsers; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionBrowsers; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -191,7 +191,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionD1Databases:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionD1Databases)
@@ -210,7 +210,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionD1Databases; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionD1Databases; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -222,7 +222,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionDurableObjectNamespaces:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionDurableObjectNamespaces)
@@ -241,7 +241,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionDurableObjectNamespaces; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionDurableObjectNamespaces; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -253,7 +253,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionEnvVars:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionEnvVars)
@@ -272,7 +272,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionEnvVars; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionEnvVars; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -284,7 +284,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionHyperdriveBindings:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionHyperdriveBindings)
@@ -303,7 +303,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionHyperdriveBindings; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionHyperdriveBindings; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -315,7 +315,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionKvNamespaces:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionKvNamespaces)
@@ -334,7 +334,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionKvNamespaces; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionKvNamespaces; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -357,7 +357,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionMtlsCertificates:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionMtlsCertificates)
@@ -376,7 +376,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionMtlsCertificates; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionMtlsCertificates; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -399,7 +399,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionQueueProducers:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionQueueProducers)
@@ -418,7 +418,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionQueueProducers; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionQueueProducers; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -430,7 +430,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionR2Buckets:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionR2Buckets)
@@ -449,7 +449,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionR2Buckets; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionR2Buckets; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -461,7 +461,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionServices:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionServices)
@@ -480,7 +480,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionServices; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionServices; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -492,7 +492,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *map[string]*PagesProjectDeploymentConfigsProductionVectorizeBindings:
 		value := value.(*map[string]*PagesProjectDeploymentConfigsProductionVectorizeBindings)
@@ -511,14 +511,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionVectorizeBindings; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*PagesProjectDeploymentConfigsProductionVectorizeBindings; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -535,11 +535,11 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -644,11 +644,11 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -657,7 +657,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *PagesProjectDeploymentConfigsProduction:
 		val := val.(*PagesProjectDeploymentConfigsProduction)
@@ -672,7 +672,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PagesProjectDeploymentConfigsProduction; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *PagesProjectDeploymentConfigsProduction; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -687,7 +687,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -711,7 +711,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
-func validateNewPagesProjectDeploymentConfigsProductionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPagesProjectDeploymentConfigsProductionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

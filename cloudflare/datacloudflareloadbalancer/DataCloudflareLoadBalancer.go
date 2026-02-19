@@ -1,30 +1,30 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareloadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancer/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareloadbalancer/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/load_balancer cloudflare_load_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer cloudflare_load_balancer}.
 type DataCloudflareLoadBalancer interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AdaptiveRouting() DataCloudflareLoadBalancerAdaptiveRoutingOutputReference
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CountryPools() cdktf.StringListMap
+	CountryPools() cdktn.StringListMap
 	CreatedOn() *string
 	DefaultPools() *[]*string
 	// Experimental.
@@ -32,21 +32,21 @@ type DataCloudflareLoadBalancer interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	FallbackPool() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LoadBalancerId() *string
 	SetLoadBalancerId(val *string)
 	LoadBalancerIdInput() *string
@@ -60,10 +60,10 @@ type DataCloudflareLoadBalancer interface {
 	SetPopPools(val interface{})
 	PopPoolsInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
-	Proxied() cdktf.IResolvable
+	SetProvider(val cdktn.TerraformProvider)
+	Proxied() cdktn.IResolvable
 	RandomSteering() DataCloudflareLoadBalancerRandomSteeringOutputReference
 	// Experimental.
 	RawOverrides() interface{}
@@ -76,7 +76,7 @@ type DataCloudflareLoadBalancer interface {
 	SessionAffinityTtl() *float64
 	SteeringPolicy() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -90,7 +90,7 @@ type DataCloudflareLoadBalancer interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -106,7 +106,7 @@ type DataCloudflareLoadBalancer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -131,7 +131,7 @@ type DataCloudflareLoadBalancer interface {
 
 // The jsii proxy struct for DataCloudflareLoadBalancer
 type jsiiProxy_DataCloudflareLoadBalancer struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareLoadBalancer) AdaptiveRouting() DataCloudflareLoadBalancerAdaptiveRoutingOutputReference {
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) AdaptiveRouting() DataCloudflareL
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareLoadBalancer) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) CountryPools() cdktf.StringListMap {
-	var returns cdktf.StringListMap
+func (j *jsiiProxy_DataCloudflareLoadBalancer) CountryPools() cdktn.StringListMap {
+	var returns cdktn.StringListMap
 	_jsii_.Get(
 		j,
 		"countryPools",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareLoadBalancer) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) FallbackPool() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareLoadBalancer) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareLoadBalancer) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) PopPoolsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareLoadBalancer) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) Proxied() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareLoadBalancer) Proxied() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"proxied",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) SteeringPolicy() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareLoadBalancer) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -555,7 +555,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
 func NewDataCloudflareLoadBalancer(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerConfig) DataCloudflareLoadBalancer {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewDataCloudflareLoadBalancer(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataCloudflareLoadBalancer{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -573,12 +573,12 @@ func NewDataCloudflareLoadBalancer(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
 func NewDataCloudflareLoadBalancer_Override(d DataCloudflareLoadBalancer, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -603,7 +603,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareLoadBalancer)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -611,7 +611,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareLoadBalancer)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +644,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer)SetPopPools(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareLoadBalancer)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -674,17 +674,17 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareLoadBalancer resource upon running "cdktf plan <stack-name>".
-func DataCloudflareLoadBalancer_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareLoadBalancer resource upon running "cdktn plan <stack-name>".
+func DataCloudflareLoadBalancer_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareLoadBalancer_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -719,7 +719,7 @@ func DataCloudflareLoadBalancer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func DataCloudflareLoadBalancer_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func DataCloudflareLoadBalancer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func DataCloudflareLoadBalancer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer",
 		"tfResourceType",
 		&returns,
 	)
@@ -804,11 +804,11 @@ func (d *jsiiProxy_DataCloudflareLoadBalancer) GetAnyMapAttribute(terraformAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancer) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareLoadBalancer) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -932,11 +932,11 @@ func (d *jsiiProxy_DataCloudflareLoadBalancer) GetStringMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancer) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareLoadBalancer) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

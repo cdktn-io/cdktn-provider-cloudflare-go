@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarecloudforceonerequestpriority
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarecloudforceonerequestpriority/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecloudforceonerequestpriority/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
 type DataCloudflareCloudforceOneRequestPriority interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Completed() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -34,18 +34,18 @@ type DataCloudflareCloudforceOneRequestPriority interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MessageTokens() *float64
 	// The tree node.
 	Node() constructs.Node
@@ -54,9 +54,9 @@ type DataCloudflareCloudforceOneRequestPriority interface {
 	SetPriorityId(val *string)
 	PriorityIdInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	ReadableId() *string
@@ -64,7 +64,7 @@ type DataCloudflareCloudforceOneRequestPriority interface {
 	Status() *string
 	Summary() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -77,7 +77,7 @@ type DataCloudflareCloudforceOneRequestPriority interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -93,7 +93,7 @@ type DataCloudflareCloudforceOneRequestPriority interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -116,7 +116,7 @@ type DataCloudflareCloudforceOneRequestPriority interface {
 
 // The jsii proxy struct for DataCloudflareCloudforceOneRequestPriority
 type jsiiProxy_DataCloudflareCloudforceOneRequestPriority struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) AccountId() *string {
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) AccountIdInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) DependsOn() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) PriorityIdInput()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Summary() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Updated() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
 func NewDataCloudflareCloudforceOneRequestPriority(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestPriorityConfig) DataCloudflareCloudforceOneRequestPriority {
 	_init_.Initialize()
 
@@ -440,7 +440,7 @@ func NewDataCloudflareCloudforceOneRequestPriority(scope constructs.Construct, i
 	j := jsiiProxy_DataCloudflareCloudforceOneRequestPriority{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
+		"@cdktn/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,12 +448,12 @@ func NewDataCloudflareCloudforceOneRequestPriority(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
 func NewDataCloudflareCloudforceOneRequestPriority_Override(d DataCloudflareCloudforceOneRequestPriority, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestPriorityConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
+		"@cdktn/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -489,7 +489,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -497,7 +497,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetPriorityId(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -527,17 +527,17 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetProvider(val cd
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareCloudforceOneRequestPriority resource upon running "cdktf plan <stack-name>".
-func DataCloudflareCloudforceOneRequestPriority_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareCloudforceOneRequestPriority resource upon running "cdktn plan <stack-name>".
+func DataCloudflareCloudforceOneRequestPriority_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareCloudforceOneRequestPriority_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
+		"@cdktn/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -572,7 +572,7 @@ func DataCloudflareCloudforceOneRequestPriority_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
+		"@cdktn/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -591,7 +591,7 @@ func DataCloudflareCloudforceOneRequestPriority_IsTerraformDataSource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
+		"@cdktn/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func DataCloudflareCloudforceOneRequestPriority_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
+		"@cdktn/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataCloudflareCloudforceOneRequestPriority_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
+		"@cdktn/provider-cloudflare.dataCloudflareCloudforceOneRequestPriority.DataCloudflareCloudforceOneRequestPriority",
 		"tfResourceType",
 		&returns,
 	)
@@ -657,11 +657,11 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) GetAnyMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -785,11 +785,11 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) GetStringMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

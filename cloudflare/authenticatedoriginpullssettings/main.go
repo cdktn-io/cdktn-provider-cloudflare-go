@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package authenticatedoriginpullssettings
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
+		"@cdktn/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
 		reflect.TypeOf((*AuthenticatedOriginPullsSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -36,6 +36,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
@@ -62,12 +63,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticatedOriginPullsSettings{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettingsConfig",
+		"@cdktn/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettingsConfig",
 		reflect.TypeOf((*AuthenticatedOriginPullsSettingsConfig)(nil)).Elem(),
 	)
 }

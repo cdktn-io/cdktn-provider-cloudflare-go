@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -119,7 +119,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
@@ -128,6 +128,10 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetNameParameters
 }
 
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetSecureWebGatewayParameters(val interface{}) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magicwangretunnel
@@ -11,13 +11,18 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnel",
 		reflect.TypeOf((*MagicWanGreTunnel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "automaticReturnRouting", GoGetter: "AutomaticReturnRouting"},
+			_jsii_.MemberProperty{JsiiProperty: "automaticReturnRoutingInput", GoGetter: "AutomaticReturnRoutingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bgp", GoGetter: "Bgp"},
+			_jsii_.MemberProperty{JsiiProperty: "bgpInput", GoGetter: "BgpInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bgpStatus", GoGetter: "BgpStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudflareGreEndpoint", GoGetter: "CloudflareGreEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudflareGreEndpointInput", GoGetter: "CloudflareGreEndpointInput"},
@@ -65,8 +70,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putBgp", GoMethod: "PutBgp"},
 			_jsii_.MemberMethod{JsiiMethod: "putHealthCheck", GoMethod: "PutHealthCheck"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticReturnRouting", GoMethod: "ResetAutomaticReturnRouting"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBgp", GoMethod: "ResetBgp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthCheck", GoMethod: "ResetHealthCheck"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInterfaceAddress6", GoMethod: "ResetInterfaceAddress6"},
@@ -87,20 +95,108 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicWanGreTunnel{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgp",
+		reflect.TypeOf((*MagicWanGreTunnelBgp)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpOutputReference",
+		reflect.TypeOf((*MagicWanGreTunnelBgpOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customerAsn", GoGetter: "CustomerAsn"},
+			_jsii_.MemberProperty{JsiiProperty: "customerAsnInput", GoGetter: "CustomerAsnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "extraPrefixes", GoGetter: "ExtraPrefixes"},
+			_jsii_.MemberProperty{JsiiProperty: "extraPrefixesInput", GoGetter: "ExtraPrefixesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "md5Key", GoGetter: "Md5Key"},
+			_jsii_.MemberProperty{JsiiProperty: "md5KeyInput", GoGetter: "Md5KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExtraPrefixes", GoMethod: "ResetExtraPrefixes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMd5Key", GoMethod: "ResetMd5Key"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MagicWanGreTunnelBgpOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpStatus",
+		reflect.TypeOf((*MagicWanGreTunnelBgpStatus)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelBgpStatusOutputReference",
+		reflect.TypeOf((*MagicWanGreTunnelBgpStatusOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bgpState", GoGetter: "BgpState"},
+			_jsii_.MemberProperty{JsiiProperty: "cfSpeakerIp", GoGetter: "CfSpeakerIp"},
+			_jsii_.MemberProperty{JsiiProperty: "cfSpeakerPort", GoGetter: "CfSpeakerPort"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customerSpeakerIp", GoGetter: "CustomerSpeakerIp"},
+			_jsii_.MemberProperty{JsiiProperty: "customerSpeakerPort", GoGetter: "CustomerSpeakerPort"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
+			_jsii_.MemberProperty{JsiiProperty: "tcpEstablished", GoGetter: "TcpEstablished"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MagicWanGreTunnelBgpStatusOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelConfig",
 		reflect.TypeOf((*MagicWanGreTunnelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheck",
 		reflect.TypeOf((*MagicWanGreTunnelHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckOutputReference",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckOutputReference",
 		reflect.TypeOf((*MagicWanGreTunnelHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,16 +239,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckTarget",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckTarget",
 		reflect.TypeOf((*MagicWanGreTunnelHealthCheckTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckTargetOutputReference",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckTargetOutputReference",
 		reflect.TypeOf((*MagicWanGreTunnelHealthCheckTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,7 +279,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicWanGreTunnelHealthCheckTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

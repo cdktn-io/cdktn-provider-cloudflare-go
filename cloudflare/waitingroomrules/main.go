@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package waitingroomrules
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
+		"@cdktn/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		reflect.TypeOf((*WaitingRoomRules)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -66,20 +66,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoomRules{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig",
+		"@cdktn/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig",
 		reflect.TypeOf((*WaitingRoomRulesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules",
+		"@cdktn/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules",
 		reflect.TypeOf((*WaitingRoomRulesRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesList",
+		"@cdktn/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesList",
 		reflect.TypeOf((*WaitingRoomRulesRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -96,12 +96,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoomRulesRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesOutputReference",
+		"@cdktn/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesOutputReference",
 		reflect.TypeOf((*WaitingRoomRulesRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -138,7 +138,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoomRulesRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

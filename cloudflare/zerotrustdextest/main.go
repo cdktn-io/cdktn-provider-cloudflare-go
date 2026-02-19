@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdextest
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest",
+		"@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest",
 		reflect.TypeOf((*ZeroTrustDexTest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -79,20 +79,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustDexTest{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig",
+		"@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig",
 		reflect.TypeOf((*ZeroTrustDexTestConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestData",
+		"@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestData",
 		reflect.TypeOf((*ZeroTrustDexTestData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestDataOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestDataOutputReference",
 		reflect.TypeOf((*ZeroTrustDexTestDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,16 +128,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustDexTestDataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPolicies",
+		"@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPolicies",
 		reflect.TypeOf((*ZeroTrustDexTestTargetPolicies)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPoliciesList",
+		"@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPoliciesList",
 		reflect.TypeOf((*ZeroTrustDexTestTargetPoliciesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -154,12 +154,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustDexTestTargetPoliciesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPoliciesOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPoliciesOutputReference",
 		reflect.TypeOf((*ZeroTrustDexTestTargetPoliciesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,7 +190,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustDexTestTargetPoliciesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

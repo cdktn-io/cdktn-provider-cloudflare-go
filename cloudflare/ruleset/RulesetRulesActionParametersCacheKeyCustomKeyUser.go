@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ruleset
@@ -7,15 +7,15 @@ package ruleset
 type RulesetRulesActionParametersCacheKeyCustomKeyUser struct {
 	// Whether to use the user agent's device type in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/ruleset#device_type Ruleset#device_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#device_type Ruleset#device_type}
 	DeviceType interface{} `field:"optional" json:"deviceType" yaml:"deviceType"`
 	// Whether to use the user agents's country in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/ruleset#geo Ruleset#geo}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#geo Ruleset#geo}
 	Geo interface{} `field:"optional" json:"geo" yaml:"geo"`
 	// Whether to use the user agent's language in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/ruleset#lang Ruleset#lang}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#lang Ruleset#lang}
 	Lang interface{} `field:"optional" json:"lang" yaml:"lang"`
 }
 

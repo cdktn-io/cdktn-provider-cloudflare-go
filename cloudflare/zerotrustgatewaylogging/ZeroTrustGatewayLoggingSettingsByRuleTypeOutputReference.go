@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustgatewaylogging
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustgatewaylogging/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustgatewaylogging/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,9 +67,9 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDns(value *ZeroTrustGatewayLoggingSettingsByRuleTypeDns)
 	PutHttp(value *ZeroTrustGatewayLoggingSettingsByRuleTypeHttp)
 	PutL4(value *ZeroTrustGatewayLoggingSettingsByRuleTypeL4)
@@ -78,7 +78,7 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference interface {
 	ResetL4()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference
 type jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Ter
 }
 
 
-func NewZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference {
+func NewZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustGatewayLoggingSettingsByRuleTypeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference(terraformResour
 	j := jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustGatewayLogging.ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustGatewayLogging.ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference(terraformResour
 	return &j
 }
 
-func NewZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference_Override(z ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference_Override(z ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustGatewayLogging.ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustGatewayLogging.ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,11 +333,11 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Get
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -461,8 +461,8 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Get
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -474,11 +474,11 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Int
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -547,7 +547,7 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Res
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pagesproject
@@ -7,11 +7,11 @@ package pagesproject
 type PagesProjectDeploymentConfigsPreviewEnvVars struct {
 	// Available values: "plain_text", "secret_text".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#type PagesProject#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#type PagesProject#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Environment variable value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#value PagesProject#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#value PagesProject#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

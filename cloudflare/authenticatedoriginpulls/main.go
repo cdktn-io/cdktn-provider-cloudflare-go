@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package authenticatedoriginpulls
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
+		"@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		reflect.TypeOf((*AuthenticatedOriginPulls)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,7 +45,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "hostname", GoGetter: "Hostname"},
-			_jsii_.MemberProperty{JsiiProperty: "hostnameInput", GoGetter: "HostnameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -61,7 +60,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfig", GoMethod: "PutConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetHostname", GoMethod: "ResetHostname"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "serialNumber", GoGetter: "SerialNumber"},
 			_jsii_.MemberProperty{JsiiProperty: "signature", GoGetter: "Signature"},
@@ -81,20 +79,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticatedOriginPulls{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig",
+		"@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig",
 		reflect.TypeOf((*AuthenticatedOriginPullsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigA",
+		"@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigA",
 		reflect.TypeOf((*AuthenticatedOriginPullsConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigAList",
+		"@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigAList",
 		reflect.TypeOf((*AuthenticatedOriginPullsConfigAList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -111,12 +109,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticatedOriginPullsConfigAList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigAOutputReference",
+		"@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigAOutputReference",
 		reflect.TypeOf((*AuthenticatedOriginPullsConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certId", GoGetter: "CertId"},
@@ -152,7 +150,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthenticatedOriginPullsConfigAOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

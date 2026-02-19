@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareemailsecuritytrusteddomainslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecuritytrusteddomainslist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareemailsecuritytrusteddomainslist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list}.
 type DataCloudflareEmailSecurityTrustedDomainsList interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -34,9 +34,9 @@ type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	SetDirection(val *string)
 	DirectionInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,9 +48,9 @@ type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	SetIsSimilarity(val interface{})
 	IsSimilarityInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
@@ -63,9 +63,9 @@ type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	SetPattern(val *string)
 	PatternInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflareEmailSecurityTrustedDomainsListResultList
@@ -73,7 +73,7 @@ type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	SetSearch(val *string)
 	SearchInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -83,7 +83,7 @@ type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -99,7 +99,7 @@ type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -129,7 +129,7 @@ type DataCloudflareEmailSecurityTrustedDomainsList interface {
 
 // The jsii proxy struct for DataCloudflareEmailSecurityTrustedDomainsList
 type jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) AccountId() *string {
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) AccountIdInput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) DirectionInput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) IsSimilarityIn
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) PatternInput()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) SearchInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -443,7 +443,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomainsList(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsListConfig) DataCloudflareEmailSecurityTrustedDomainsList {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewDataCloudflareEmailSecurityTrustedDomainsList(scope constructs.Construct
 	j := jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,12 +461,12 @@ func NewDataCloudflareEmailSecurityTrustedDomainsList(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomainsList_Override(d DataCloudflareEmailSecurityTrustedDomainsList, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsListConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -513,7 +513,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetDirection(va
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -543,7 +543,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetIsSimilarity
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +587,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetPattern(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -606,17 +606,17 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList)SetSearch(val *
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareEmailSecurityTrustedDomainsList resource upon running "cdktf plan <stack-name>".
-func DataCloudflareEmailSecurityTrustedDomainsList_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareEmailSecurityTrustedDomainsList resource upon running "cdktn plan <stack-name>".
+func DataCloudflareEmailSecurityTrustedDomainsList_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareEmailSecurityTrustedDomainsList_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -651,7 +651,7 @@ func DataCloudflareEmailSecurityTrustedDomainsList_IsConstruct(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func DataCloudflareEmailSecurityTrustedDomainsList_IsTerraformDataSource(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func DataCloudflareEmailSecurityTrustedDomainsList_IsTerraformElement(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func DataCloudflareEmailSecurityTrustedDomainsList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsList",
 		"tfResourceType",
 		&returns,
 	)
@@ -736,11 +736,11 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) GetAnyMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -864,11 +864,11 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) GetStringMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

@@ -1,23 +1,23 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezonednssec
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezonednssec/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezonednssec/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
 type DataCloudflareZoneDnssec interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	Algorithm() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -31,15 +31,15 @@ type DataCloudflareZoneDnssec interface {
 	Digest() *string
 	DigestAlgorithm() *string
 	DigestType() *string
-	DnssecMultiSigner() cdktf.IResolvable
-	DnssecPresigned() cdktf.IResolvable
-	DnssecUseNsec3() cdktf.IResolvable
+	DnssecMultiSigner() cdktn.IResolvable
+	DnssecPresigned() cdktn.IResolvable
+	DnssecUseNsec3() cdktn.IResolvable
 	Ds() *string
 	Flags() *float64
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,22 +48,22 @@ type DataCloudflareZoneDnssec interface {
 	KeyTag() *float64
 	KeyType() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	PublicKey() *string
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -76,7 +76,7 @@ type DataCloudflareZoneDnssec interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -92,7 +92,7 @@ type DataCloudflareZoneDnssec interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -115,7 +115,7 @@ type DataCloudflareZoneDnssec interface {
 
 // The jsii proxy struct for DataCloudflareZoneDnssec
 type jsiiProxy_DataCloudflareZoneDnssec struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareZoneDnssec) Algorithm() *string {
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) Algorithm() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareZoneDnssec) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) DigestType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecMultiSigner() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecMultiSigner() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"dnssecMultiSigner",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecMultiSigner() cdktf.IResolvab
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecPresigned() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecPresigned() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"dnssecPresigned",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecPresigned() cdktf.IResolvable
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecUseNsec3() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecUseNsec3() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"dnssecUseNsec3",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) Flags() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareZoneDnssec) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) KeyType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareZoneDnssec) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareZoneDnssec) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareZoneDnssec) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) DataCloudflareZoneDnssec {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataCloudflareZoneDnssec{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktn/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,12 +447,12 @@ func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec_Override(d DataCloudflareZoneDnssec, scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktn/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -477,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareZoneDnssec)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -485,7 +485,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareZoneDnssec)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +496,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareZoneDnssec)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -515,17 +515,17 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareZoneDnssec resource upon running "cdktf plan <stack-name>".
-func DataCloudflareZoneDnssec_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareZoneDnssec resource upon running "cdktn plan <stack-name>".
+func DataCloudflareZoneDnssec_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZoneDnssec_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktn/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -560,7 +560,7 @@ func DataCloudflareZoneDnssec_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktn/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func DataCloudflareZoneDnssec_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktn/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func DataCloudflareZoneDnssec_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktn/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func DataCloudflareZoneDnssec_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktn/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		"tfResourceType",
 		&returns,
 	)
@@ -645,11 +645,11 @@ func (d *jsiiProxy_DataCloudflareZoneDnssec) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZoneDnssec) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZoneDnssec) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -773,11 +773,11 @@ func (d *jsiiProxy_DataCloudflareZoneDnssec) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZoneDnssec) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZoneDnssec) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

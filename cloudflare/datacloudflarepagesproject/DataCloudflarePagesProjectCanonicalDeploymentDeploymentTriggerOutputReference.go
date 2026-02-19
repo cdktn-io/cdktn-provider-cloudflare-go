@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarepagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,16 +38,16 @@ type DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReferen
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReferen
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReferen
 
 // The jsii proxy struct for DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference
 type jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) ComplexObjectIndex() interface{} {
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigge
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -172,7 +172,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigge
 }
 
 
-func NewDataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference {
+func NewDataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -181,7 +181,7 @@ func NewDataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputRefe
 	j := jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -189,11 +189,11 @@ func NewDataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputRefe
 	return &j
 }
 
-func NewDataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference_Override(d DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference_Override(d DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigge
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -283,11 +283,11 @@ func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -411,8 +411,8 @@ func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,11 +424,11 @@ func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -440,7 +440,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

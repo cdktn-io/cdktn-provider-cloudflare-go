@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ruleset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ruleset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type RulesetRulesActionParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalCacheablePorts() *[]*float64
 	SetAdditionalCacheablePorts(val *[]*float64)
 	AdditionalCacheablePortsInput() *[]*float64
@@ -132,12 +132,18 @@ type RulesetRulesActionParametersOutputReference interface {
 	ReadTimeout() *float64
 	SetReadTimeout(val *float64)
 	ReadTimeoutInput() *float64
+	RequestBodyBuffering() *string
+	SetRequestBodyBuffering(val *string)
+	RequestBodyBufferingInput() *string
 	RequestFields() RulesetRulesActionParametersRequestFieldsList
 	RequestFieldsInput() interface{}
 	RespectStrongEtags() interface{}
 	SetRespectStrongEtags(val interface{})
 	RespectStrongEtagsInput() interface{}
 	Response() RulesetRulesActionParametersResponseOutputReference
+	ResponseBodyBuffering() *string
+	SetResponseBodyBuffering(val *string)
+	ResponseBodyBufferingInput() *string
 	ResponseFields() RulesetRulesActionParametersResponseFieldsList
 	ResponseFieldsInput() interface{}
 	ResponseInput() interface{}
@@ -177,9 +183,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TransformedRequestFields() RulesetRulesActionParametersTransformedRequestFieldsList
 	TransformedRequestFieldsInput() interface{}
 	Uri() RulesetRulesActionParametersUriOutputReference
@@ -189,7 +195,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -205,9 +211,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAlgorithms(value interface{})
 	PutAutominify(value *RulesetRulesActionParametersAutominify)
 	PutBrowserTtl(value *RulesetRulesActionParametersBrowserTtl)
@@ -267,9 +273,11 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetProducts()
 	ResetRawResponseFields()
 	ResetReadTimeout()
+	ResetRequestBodyBuffering()
 	ResetRequestFields()
 	ResetRespectStrongEtags()
 	ResetResponse()
+	ResetResponseBodyBuffering()
 	ResetResponseFields()
 	ResetRocketLoader()
 	ResetRules()
@@ -286,7 +294,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -296,7 +304,7 @@ type RulesetRulesActionParametersOutputReference interface {
 
 // The jsii proxy struct for RulesetRulesActionParametersOutputReference
 type jsiiProxy_RulesetRulesActionParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AdditionalCacheablePorts() *[]*float64 {
@@ -1109,6 +1117,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ReadTimeoutInput
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RequestBodyBuffering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyBuffering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RequestBodyBufferingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyBufferingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RequestFields() RulesetRulesActionParametersRequestFieldsList {
 	var returns RulesetRulesActionParametersRequestFieldsList
 	_jsii_.Get(
@@ -1154,6 +1182,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Response() Rules
 	_jsii_.Get(
 		j,
 		"response",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ResponseBodyBuffering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseBodyBuffering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ResponseBodyBufferingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseBodyBufferingInput",
 		&returns,
 	)
 	return returns
@@ -1419,8 +1467,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -1470,7 +1518,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) UriInput() inter
 }
 
 
-func NewRulesetRulesActionParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersOutputReference {
+func NewRulesetRulesActionParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRulesetRulesActionParametersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -1479,7 +1527,7 @@ func NewRulesetRulesActionParametersOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_RulesetRulesActionParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -1487,11 +1535,11 @@ func NewRulesetRulesActionParametersOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewRulesetRulesActionParametersOutputReference_Override(r RulesetRulesActionParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersOutputReference_Override(r RulesetRulesActionParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -1794,6 +1842,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetReadTimeout(va
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetRequestBodyBuffering(val *string) {
+	if err := j.validateSetRequestBodyBufferingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestBodyBuffering",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetRespectStrongEtags(val interface{}) {
 	if err := j.validateSetRespectStrongEtagsParameters(val); err != nil {
 		panic(err)
@@ -1801,6 +1860,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetRespectStrongE
 	_jsii_.Set(
 		j,
 		"respectStrongEtags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetResponseBodyBuffering(val *string) {
+	if err := j.validateSetResponseBodyBufferingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"responseBodyBuffering",
 		val,
 	)
 }
@@ -1915,7 +1985,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1955,11 +2025,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -2083,8 +2153,8 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -2096,11 +2166,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationAsL
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -2647,6 +2717,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetReadTimeout
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRequestBodyBuffering() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRequestBodyBuffering",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRequestFields() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2667,6 +2745,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetResponse() 
 	_jsii_.InvokeVoid(
 		r,
 		"resetResponse",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetResponseBodyBuffering() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetResponseBodyBuffering",
 		nil, // no parameters
 	)
 }
@@ -2783,7 +2869,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetUri() {
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

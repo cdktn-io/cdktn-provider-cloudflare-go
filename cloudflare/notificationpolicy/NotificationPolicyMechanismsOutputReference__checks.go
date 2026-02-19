@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutEmail
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*NotificationPolicyMechanismsEmail:
 		value := value.(*[]*NotificationPolicyMechanismsEmail)
@@ -117,7 +117,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutEmail
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationPolicyMechanismsEmail; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*NotificationPolicyMechanismsEmail; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutPager
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*NotificationPolicyMechanismsPagerduty:
 		value := value.(*[]*NotificationPolicyMechanismsPagerduty)
@@ -148,7 +148,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutPager
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationPolicyMechanismsPagerduty; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*NotificationPolicyMechanismsPagerduty; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -160,7 +160,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutWebho
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*NotificationPolicyMechanismsWebhooks:
 		value := value.(*[]*NotificationPolicyMechanismsWebhooks)
@@ -179,14 +179,14 @@ func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validatePutWebho
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationPolicyMechanismsWebhooks; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*NotificationPolicyMechanismsWebhooks; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetCompl
 
 func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *NotificationPolicyMechanisms:
 		val := val.(*NotificationPolicyMechanisms)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetInter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NotificationPolicyMechanisms; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *NotificationPolicyMechanisms; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -291,7 +291,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsOutputReference) validateSetTerra
 	return nil
 }
 
-func validateNewNotificationPolicyMechanismsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNotificationPolicyMechanismsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflared1database
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database",
+		"@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database",
 		reflect.TypeOf((*DataCloudflareD1Database)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -67,20 +67,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareD1Database{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig",
 		reflect.TypeOf((*DataCloudflareD1DatabaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter",
+		"@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter",
 		reflect.TypeOf((*DataCloudflareD1DatabaseFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilterOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilterOutputReference",
 		reflect.TypeOf((*DataCloudflareD1DatabaseFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,16 +110,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareD1DatabaseFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseReadReplication",
+		"@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseReadReplication",
 		reflect.TypeOf((*DataCloudflareD1DatabaseReadReplication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseReadReplicationOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseReadReplicationOutputReference",
 		reflect.TypeOf((*DataCloudflareD1DatabaseReadReplicationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -147,7 +147,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareD1DatabaseReadReplicationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

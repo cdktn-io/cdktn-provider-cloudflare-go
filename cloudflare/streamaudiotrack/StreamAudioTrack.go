@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamaudiotrack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/streamaudiotrack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
 type StreamAudioTrack interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type StreamAudioTrack interface {
 	SetAudioIdentifier(val *string)
 	AudioIdentifierInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -41,9 +41,9 @@ type StreamAudioTrack interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -55,15 +55,15 @@ type StreamAudioTrack interface {
 	SetLabel(val *string)
 	LabelInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -72,7 +72,7 @@ type StreamAudioTrack interface {
 	RawOverrides() interface{}
 	Status() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -86,7 +86,7 @@ type StreamAudioTrack interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -104,9 +104,9 @@ type StreamAudioTrack interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -142,7 +142,7 @@ type StreamAudioTrack interface {
 
 // The jsii proxy struct for StreamAudioTrack
 type jsiiProxy_StreamAudioTrack struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_StreamAudioTrack) AccountId() *string {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_StreamAudioTrack) AudioIdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamAudioTrack) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_StreamAudioTrack) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_StreamAudioTrack) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamAudioTrack) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_StreamAudioTrack) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_StreamAudioTrack) LabelInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamAudioTrack) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_StreamAudioTrack) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_StreamAudioTrack) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_StreamAudioTrack) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_StreamAudioTrack) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_StreamAudioTrack) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamAudioTrack) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_StreamAudioTrack) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_StreamAudioTrack) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
 func NewStreamAudioTrack(scope constructs.Construct, id *string, config *StreamAudioTrackConfig) StreamAudioTrack {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewStreamAudioTrack(scope constructs.Construct, id *string, config *StreamA
 	j := jsiiProxy_StreamAudioTrack{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
+		"@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -444,12 +444,12 @@ func NewStreamAudioTrack(scope constructs.Construct, id *string, config *StreamA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
 func NewStreamAudioTrack_Override(s StreamAudioTrack, scope constructs.Construct, id *string, config *StreamAudioTrackConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
+		"@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -518,7 +518,7 @@ func (j *jsiiProxy_StreamAudioTrack)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StreamAudioTrack)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StreamAudioTrack)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -548,7 +548,7 @@ func (j *jsiiProxy_StreamAudioTrack)SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamAudioTrack)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StreamAudioTrack)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +559,7 @@ func (j *jsiiProxy_StreamAudioTrack)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_StreamAudioTrack)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StreamAudioTrack)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -578,17 +578,17 @@ func (j *jsiiProxy_StreamAudioTrack)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a StreamAudioTrack resource upon running "cdktf plan <stack-name>".
-func StreamAudioTrack_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a StreamAudioTrack resource upon running "cdktn plan <stack-name>".
+func StreamAudioTrack_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateStreamAudioTrack_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
+		"@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -623,7 +623,7 @@ func StreamAudioTrack_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
+		"@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func StreamAudioTrack_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
+		"@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -661,7 +661,7 @@ func StreamAudioTrack_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
+		"@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -674,7 +674,7 @@ func StreamAudioTrack_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
+		"@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack",
 		"tfResourceType",
 		&returns,
 	)
@@ -719,11 +719,11 @@ func (s *jsiiProxy_StreamAudioTrack) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (s *jsiiProxy_StreamAudioTrack) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamAudioTrack) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -860,7 +860,7 @@ func (s *jsiiProxy_StreamAudioTrack) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StreamAudioTrack) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_StreamAudioTrack) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -871,11 +871,11 @@ func (s *jsiiProxy_StreamAudioTrack) ImportFrom(id *string, provider cdktf.Terra
 	)
 }
 
-func (s *jsiiProxy_StreamAudioTrack) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamAudioTrack) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

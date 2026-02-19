@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package notificationpolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicy",
 		reflect.TypeOf((*NotificationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -83,20 +83,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotificationPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyConfig",
 		reflect.TypeOf((*NotificationPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyFilters",
 		reflect.TypeOf((*NotificationPolicyFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
 		reflect.TypeOf((*NotificationPolicyFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
@@ -252,20 +252,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotificationPolicyFiltersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanisms",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanisms",
 		reflect.TypeOf((*NotificationPolicyMechanisms)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmail",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmail",
 		reflect.TypeOf((*NotificationPolicyMechanismsEmail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmailList",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmailList",
 		reflect.TypeOf((*NotificationPolicyMechanismsEmailList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -282,12 +282,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotificationPolicyMechanismsEmailList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmailOutputReference",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsEmailOutputReference",
 		reflect.TypeOf((*NotificationPolicyMechanismsEmailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -317,12 +317,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotificationPolicyMechanismsEmailOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsOutputReference",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsOutputReference",
 		reflect.TypeOf((*NotificationPolicyMechanismsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -361,16 +361,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotificationPolicyMechanismsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerduty",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerduty",
 		reflect.TypeOf((*NotificationPolicyMechanismsPagerduty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyList",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyList",
 		reflect.TypeOf((*NotificationPolicyMechanismsPagerdutyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -387,12 +387,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotificationPolicyMechanismsPagerdutyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyOutputReference",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyOutputReference",
 		reflect.TypeOf((*NotificationPolicyMechanismsPagerdutyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -422,16 +422,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooks",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooks",
 		reflect.TypeOf((*NotificationPolicyMechanismsWebhooks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooksList",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooksList",
 		reflect.TypeOf((*NotificationPolicyMechanismsWebhooksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -448,12 +448,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotificationPolicyMechanismsWebhooksList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooksOutputReference",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsWebhooksOutputReference",
 		reflect.TypeOf((*NotificationPolicyMechanismsWebhooksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -483,7 +483,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NotificationPolicyMechanismsWebhooksOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

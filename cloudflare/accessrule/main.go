@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accessrule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessRule.AccessRule",
+		"@cdktn/provider-cloudflare.accessRule.AccessRule",
 		reflect.TypeOf((*AccessRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -77,20 +77,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfig",
+		"@cdktn/provider-cloudflare.accessRule.AccessRuleConfig",
 		reflect.TypeOf((*AccessRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration",
+		"@cdktn/provider-cloudflare.accessRule.AccessRuleConfiguration",
 		reflect.TypeOf((*AccessRuleConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference",
+		"@cdktn/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference",
 		reflect.TypeOf((*AccessRuleConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,16 +123,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessRuleConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessRule.AccessRuleScope",
+		"@cdktn/provider-cloudflare.accessRule.AccessRuleScope",
 		reflect.TypeOf((*AccessRuleScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessRule.AccessRuleScopeOutputReference",
+		"@cdktn/provider-cloudflare.accessRule.AccessRuleScopeOutputReference",
 		reflect.TypeOf((*AccessRuleScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -162,7 +162,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessRuleScopeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package authenticatedoriginpullssettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/authenticatedoriginpullssettings/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpullssettings/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings}.
 type AuthenticatedOriginPullsSettings interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,23 +35,24 @@ type AuthenticatedOriginPullsSettings interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -59,7 +60,7 @@ type AuthenticatedOriginPullsSettings interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -75,7 +76,7 @@ type AuthenticatedOriginPullsSettings interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -93,9 +94,9 @@ type AuthenticatedOriginPullsSettings interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -128,11 +129,11 @@ type AuthenticatedOriginPullsSettings interface {
 
 // The jsii proxy struct for AuthenticatedOriginPullsSettings
 type jsiiProxy_AuthenticatedOriginPullsSettings struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsSettings) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AuthenticatedOriginPullsSettings) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -201,8 +202,8 @@ func (j *jsiiProxy_AuthenticatedOriginPullsSettings) EnabledInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsSettings) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AuthenticatedOriginPullsSettings) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -231,8 +232,18 @@ func (j *jsiiProxy_AuthenticatedOriginPullsSettings) FriendlyUniqueId() *string 
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsSettings) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AuthenticatedOriginPullsSettings) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPullsSettings) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -251,8 +262,8 @@ func (j *jsiiProxy_AuthenticatedOriginPullsSettings) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsSettings) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AuthenticatedOriginPullsSettings) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -281,8 +292,8 @@ func (j *jsiiProxy_AuthenticatedOriginPullsSettings) RawOverrides() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsSettings) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AuthenticatedOriginPullsSettings) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -332,7 +343,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings} Resource.
 func NewAuthenticatedOriginPullsSettings(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsSettingsConfig) AuthenticatedOriginPullsSettings {
 	_init_.Initialize()
 
@@ -342,7 +353,7 @@ func NewAuthenticatedOriginPullsSettings(scope constructs.Construct, id *string,
 	j := jsiiProxy_AuthenticatedOriginPullsSettings{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
+		"@cdktn/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,12 +361,12 @@ func NewAuthenticatedOriginPullsSettings(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings} Resource.
 func NewAuthenticatedOriginPullsSettings_Override(a AuthenticatedOriginPullsSettings, scope constructs.Construct, id *string, config *AuthenticatedOriginPullsSettingsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
+		"@cdktn/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -402,7 +413,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetEnabled(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -410,7 +421,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +432,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -451,17 +462,17 @@ func (j *jsiiProxy_AuthenticatedOriginPullsSettings)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a AuthenticatedOriginPullsSettings resource upon running "cdktf plan <stack-name>".
-func AuthenticatedOriginPullsSettings_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AuthenticatedOriginPullsSettings resource upon running "cdktn plan <stack-name>".
+func AuthenticatedOriginPullsSettings_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAuthenticatedOriginPullsSettings_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
+		"@cdktn/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -496,7 +507,7 @@ func AuthenticatedOriginPullsSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
+		"@cdktn/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +526,7 @@ func AuthenticatedOriginPullsSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
+		"@cdktn/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +545,7 @@ func AuthenticatedOriginPullsSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
+		"@cdktn/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +558,7 @@ func AuthenticatedOriginPullsSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
+		"@cdktn/provider-cloudflare.authenticatedOriginPullsSettings.AuthenticatedOriginPullsSettings",
 		"tfResourceType",
 		&returns,
 	)
@@ -592,11 +603,11 @@ func (a *jsiiProxy_AuthenticatedOriginPullsSettings) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsSettings) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AuthenticatedOriginPullsSettings) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -733,7 +744,7 @@ func (a *jsiiProxy_AuthenticatedOriginPullsSettings) HasResourceMove() interface
 	return returns
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsSettings) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AuthenticatedOriginPullsSettings) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -744,11 +755,11 @@ func (a *jsiiProxy_AuthenticatedOriginPullsSettings) ImportFrom(id *string, prov
 	)
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsSettings) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AuthenticatedOriginPullsSettings) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

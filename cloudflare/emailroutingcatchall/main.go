@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package emailroutingcatchall
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
+		"@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
 		reflect.TypeOf((*EmailRoutingCatchAll)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
@@ -74,16 +74,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingCatchAll{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActions",
+		"@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActions",
 		reflect.TypeOf((*EmailRoutingCatchAllActions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionsList",
+		"@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionsList",
 		reflect.TypeOf((*EmailRoutingCatchAllActionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -100,12 +100,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingCatchAllActionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionsOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionsOutputReference",
 		reflect.TypeOf((*EmailRoutingCatchAllActionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,20 +137,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingCatchAllActionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig",
+		"@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig",
 		reflect.TypeOf((*EmailRoutingCatchAllConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchers",
+		"@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchers",
 		reflect.TypeOf((*EmailRoutingCatchAllMatchers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchersList",
+		"@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchersList",
 		reflect.TypeOf((*EmailRoutingCatchAllMatchersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -167,12 +167,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingCatchAllMatchersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchersOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatchersOutputReference",
 		reflect.TypeOf((*EmailRoutingCatchAllMatchersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -201,7 +201,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingCatchAllMatchersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -29,7 +29,7 @@ func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -39,7 +39,7 @@ func (a *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateResolvePar
 
 func (j *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AccountMemberPoliciesPermissionGroups:
 		val := val.(*[]*AccountMemberPoliciesPermissionGroups)
@@ -58,7 +58,7 @@ func (j *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateSetInterna
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*AccountMemberPoliciesPermissionGroups; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*AccountMemberPoliciesPermissionGroups; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -73,7 +73,7 @@ func (j *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -89,7 +89,7 @@ func (j *jsiiProxy_AccountMemberPoliciesPermissionGroupsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewAccountMemberPoliciesPermissionGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAccountMemberPoliciesPermissionGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

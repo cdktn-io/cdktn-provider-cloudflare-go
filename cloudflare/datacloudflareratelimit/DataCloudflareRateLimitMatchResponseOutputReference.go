@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareratelimit/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareratelimit/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareRateLimitMatchResponseOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,21 +32,21 @@ type DataCloudflareRateLimitMatchResponseOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareRateLimitMatchResponse
 	SetInternalValue(val *DataCloudflareRateLimitMatchResponse)
-	OriginTraffic() cdktf.IResolvable
+	OriginTraffic() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DataCloudflareRateLimitMatchResponseOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DataCloudflareRateLimitMatchResponseOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareRateLimitMatchResponseOutputReference
 type jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) ComplexObjectIndex() interface{} {
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) OriginTraffic() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) OriginTraffic() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"originTraffic",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -161,7 +161,7 @@ func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) Terrafor
 }
 
 
-func NewDataCloudflareRateLimitMatchResponseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareRateLimitMatchResponseOutputReference {
+func NewDataCloudflareRateLimitMatchResponseOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareRateLimitMatchResponseOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareRateLimitMatchResponseOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -170,7 +170,7 @@ func NewDataCloudflareRateLimitMatchResponseOutputReference(terraformResource cd
 	j := jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimitMatchResponseOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimitMatchResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -178,11 +178,11 @@ func NewDataCloudflareRateLimitMatchResponseOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataCloudflareRateLimitMatchResponseOutputReference_Override(d DataCloudflareRateLimitMatchResponseOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareRateLimitMatchResponseOutputReference_Override(d DataCloudflareRateLimitMatchResponseOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimitMatchResponseOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimitMatchResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -272,11 +272,11 @@ func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -400,8 +400,8 @@ func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -413,11 +413,11 @@ func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -429,7 +429,7 @@ func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareRateLimitMatchResponseOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

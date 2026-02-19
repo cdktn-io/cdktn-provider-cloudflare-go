@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workflow/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WorkflowInstancesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Complete() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -43,9 +43,9 @@ type WorkflowInstancesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Waiting() *float64
 	WaitingForPause() *float64
 	// Experimental.
@@ -53,7 +53,7 @@ type WorkflowInstancesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,12 +69,12 @@ type WorkflowInstancesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type WorkflowInstancesOutputReference interface {
 
 // The jsii proxy struct for WorkflowInstancesOutputReference
 type jsiiProxy_WorkflowInstancesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkflowInstancesOutputReference) Complete() *float64 {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_WorkflowInstancesOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_WorkflowInstancesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkflowInstancesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -238,7 +238,7 @@ func (j *jsiiProxy_WorkflowInstancesOutputReference) WaitingForPause() *float64 
 }
 
 
-func NewWorkflowInstancesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkflowInstancesOutputReference {
+func NewWorkflowInstancesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkflowInstancesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkflowInstancesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -247,7 +247,7 @@ func NewWorkflowInstancesOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_WorkflowInstancesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workflow.WorkflowInstancesOutputReference",
+		"@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -255,11 +255,11 @@ func NewWorkflowInstancesOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewWorkflowInstancesOutputReference_Override(w WorkflowInstancesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkflowInstancesOutputReference_Override(w WorkflowInstancesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workflow.WorkflowInstancesOutputReference",
+		"@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_WorkflowInstancesOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_WorkflowInstancesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkflowInstancesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,11 +349,11 @@ func (w *jsiiProxy_WorkflowInstancesOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowInstancesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkflowInstancesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -477,8 +477,8 @@ func (w *jsiiProxy_WorkflowInstancesOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowInstancesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkflowInstancesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -490,11 +490,11 @@ func (w *jsiiProxy_WorkflowInstancesOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowInstancesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkflowInstancesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -506,7 +506,7 @@ func (w *jsiiProxy_WorkflowInstancesOutputReference) InterpolationForAttribute(t
 	return returns
 }
 
-func (w *jsiiProxy_WorkflowInstancesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkflowInstancesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

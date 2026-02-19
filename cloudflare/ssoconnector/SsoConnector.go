@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ssoconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ssoconnector/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconnector/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector cloudflare_sso_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector}.
 type SsoConnector interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type SsoConnector interface {
 	SetBeginVerification(val interface{})
 	BeginVerificationInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -45,24 +45,24 @@ type SsoConnector interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -70,7 +70,7 @@ type SsoConnector interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -88,7 +88,7 @@ type SsoConnector interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -106,9 +106,9 @@ type SsoConnector interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -144,7 +144,7 @@ type SsoConnector interface {
 
 // The jsii proxy struct for SsoConnector
 type jsiiProxy_SsoConnector struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_SsoConnector) AccountId() *string {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_SsoConnector) BeginVerificationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsoConnector) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_SsoConnector) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_SsoConnector) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsoConnector) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_SsoConnector) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_SsoConnector) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SsoConnector) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_SsoConnector) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_SsoConnector) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SsoConnector) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_SsoConnector) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_SsoConnector) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SsoConnector) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_SsoConnector) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -448,7 +448,7 @@ func (j *jsiiProxy_SsoConnector) Verification() SsoConnectorVerificationOutputRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
 func NewSsoConnector(scope constructs.Construct, id *string, config *SsoConnectorConfig) SsoConnector {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewSsoConnector(scope constructs.Construct, id *string, config *SsoConnecto
 	j := jsiiProxy_SsoConnector{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnector",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -466,12 +466,12 @@ func NewSsoConnector(scope constructs.Construct, id *string, config *SsoConnecto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
 func NewSsoConnector_Override(s SsoConnector, scope constructs.Construct, id *string, config *SsoConnectorConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnector",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnector",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -551,7 +551,7 @@ func (j *jsiiProxy_SsoConnector)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsoConnector)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SsoConnector)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -559,7 +559,7 @@ func (j *jsiiProxy_SsoConnector)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SsoConnector)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SsoConnector)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +570,7 @@ func (j *jsiiProxy_SsoConnector)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_SsoConnector)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SsoConnector)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,17 +600,17 @@ func (j *jsiiProxy_SsoConnector)SetUseFedrampLanguage(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a SsoConnector resource upon running "cdktf plan <stack-name>".
-func SsoConnector_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a SsoConnector resource upon running "cdktn plan <stack-name>".
+func SsoConnector_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateSsoConnector_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnector",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnector",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -645,7 +645,7 @@ func SsoConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnector",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func SsoConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnector",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func SsoConnector_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnector",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnector",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -696,7 +696,7 @@ func SsoConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnector",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnector",
 		"tfResourceType",
 		&returns,
 	)
@@ -741,11 +741,11 @@ func (s *jsiiProxy_SsoConnector) GetAnyMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (s *jsiiProxy_SsoConnector) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SsoConnector) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -882,7 +882,7 @@ func (s *jsiiProxy_SsoConnector) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SsoConnector) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_SsoConnector) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -893,11 +893,11 @@ func (s *jsiiProxy_SsoConnector) ImportFrom(id *string, provider cdktf.Terraform
 	)
 }
 
-func (s *jsiiProxy_SsoConnector) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SsoConnector) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

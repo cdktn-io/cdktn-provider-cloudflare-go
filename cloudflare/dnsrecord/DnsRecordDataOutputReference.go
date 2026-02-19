@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dnsrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DnsRecordDataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Algorithm() *float64
 	SetAlgorithm(val *float64)
 	AlgorithmInput() *float64
@@ -133,9 +133,9 @@ type DnsRecordDataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *float64
 	SetType(val *float64)
 	TypeInput() *float64
@@ -153,7 +153,7 @@ type DnsRecordDataOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -169,9 +169,9 @@ type DnsRecordDataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAlgorithm()
 	ResetAltitude()
 	ResetCertificate()
@@ -210,7 +210,7 @@ type DnsRecordDataOutputReference interface {
 	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -220,7 +220,7 @@ type DnsRecordDataOutputReference interface {
 
 // The jsii proxy struct for DnsRecordDataOutputReference
 type jsiiProxy_DnsRecordDataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DnsRecordDataOutputReference) Algorithm() *float64 {
@@ -923,8 +923,8 @@ func (j *jsiiProxy_DnsRecordDataOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordDataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DnsRecordDataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -1014,7 +1014,7 @@ func (j *jsiiProxy_DnsRecordDataOutputReference) WeightInput() *float64 {
 }
 
 
-func NewDnsRecordDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DnsRecordDataOutputReference {
+func NewDnsRecordDataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DnsRecordDataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDnsRecordDataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -1023,7 +1023,7 @@ func NewDnsRecordDataOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DnsRecordDataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference",
+		"@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -1031,11 +1031,11 @@ func NewDnsRecordDataOutputReference(terraformResource cdktf.IInterpolatingParen
 	return &j
 }
 
-func NewDnsRecordDataOutputReference_Override(d DnsRecordDataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDnsRecordDataOutputReference_Override(d DnsRecordDataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference",
+		"@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -1437,7 +1437,7 @@ func (j *jsiiProxy_DnsRecordDataOutputReference)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_DnsRecordDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsRecordDataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1521,11 +1521,11 @@ func (d *jsiiProxy_DnsRecordDataOutputReference) GetAnyMapAttribute(terraformAtt
 	return returns
 }
 
-func (d *jsiiProxy_DnsRecordDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DnsRecordDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1649,8 +1649,8 @@ func (d *jsiiProxy_DnsRecordDataOutputReference) GetStringMapAttribute(terraform
 	return returns
 }
 
-func (d *jsiiProxy_DnsRecordDataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DnsRecordDataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1662,11 +1662,11 @@ func (d *jsiiProxy_DnsRecordDataOutputReference) InterpolationAsList() cdktf.IRe
 	return returns
 }
 
-func (d *jsiiProxy_DnsRecordDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DnsRecordDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1966,7 +1966,7 @@ func (d *jsiiProxy_DnsRecordDataOutputReference) ResetWeight() {
 	)
 }
 
-func (d *jsiiProxy_DnsRecordDataOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DnsRecordDataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarehealthcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarehealthcheck/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarehealthcheck/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareHealthcheckHttpConfigOutputReference interface {
-	cdktf.ComplexObject
-	AllowInsecure() cdktf.IResolvable
+	cdktn.ComplexObject
+	AllowInsecure() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,10 +31,10 @@ type DataCloudflareHealthcheckHttpConfigOutputReference interface {
 	CreationStack() *[]*string
 	ExpectedBody() *string
 	ExpectedCodes() *[]*string
-	FollowRedirects() cdktf.IResolvable
+	FollowRedirects() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
-	Header() cdktf.StringListMap
+	Header() cdktn.StringListMap
 	InternalValue() *DataCloudflareHealthcheckHttpConfig
 	SetInternalValue(val *DataCloudflareHealthcheckHttpConfig)
 	Method() *string
@@ -45,15 +45,15 @@ type DataCloudflareHealthcheckHttpConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,12 +69,12 @@ type DataCloudflareHealthcheckHttpConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,11 +84,11 @@ type DataCloudflareHealthcheckHttpConfigOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareHealthcheckHttpConfigOutputReference
 type jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) AllowInsecure() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) AllowInsecure() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowInsecure",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) ExpectedC
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) FollowRedirects() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) FollowRedirects() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"followRedirects",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) Header() cdktf.StringListMap {
-	var returns cdktf.StringListMap
+func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) Header() cdktn.StringListMap {
+	var returns cdktn.StringListMap
 	_jsii_.Get(
 		j,
 		"header",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -238,7 +238,7 @@ func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) Terraform
 }
 
 
-func NewDataCloudflareHealthcheckHttpConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareHealthcheckHttpConfigOutputReference {
+func NewDataCloudflareHealthcheckHttpConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareHealthcheckHttpConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareHealthcheckHttpConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -247,7 +247,7 @@ func NewDataCloudflareHealthcheckHttpConfigOutputReference(terraformResource cdk
 	j := jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheckHttpConfigOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheckHttpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -255,11 +255,11 @@ func NewDataCloudflareHealthcheckHttpConfigOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewDataCloudflareHealthcheckHttpConfigOutputReference_Override(d DataCloudflareHealthcheckHttpConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareHealthcheckHttpConfigOutputReference_Override(d DataCloudflareHealthcheckHttpConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheckHttpConfigOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareHealthcheck.DataCloudflareHealthcheckHttpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,11 +349,11 @@ func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) GetAnyMap
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -477,8 +477,8 @@ func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) GetString
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -490,11 +490,11 @@ func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -506,7 +506,7 @@ func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareHealthcheckHttpConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

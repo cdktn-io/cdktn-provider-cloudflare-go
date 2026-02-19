@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustgatewaypolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustgatewaypolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustGatewayPolicyExpirationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,7 +31,7 @@ type ZeroTrustGatewayPolicyExpirationOutputReference interface {
 	Duration() *float64
 	SetDuration(val *float64)
 	DurationInput() *float64
-	Expired() cdktf.IResolvable
+	Expired() cdktn.IResolvable
 	ExpiresAt() *string
 	SetExpiresAt(val *string)
 	ExpiresAtInput() *string
@@ -44,15 +44,15 @@ type ZeroTrustGatewayPolicyExpirationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,13 +68,13 @@ type ZeroTrustGatewayPolicyExpirationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ZeroTrustGatewayPolicyExpirationOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustGatewayPolicyExpirationOutputReference
 type jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) ComplexObjectIndex() interface{} {
@@ -137,8 +137,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) DurationInpu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) Expired() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) Expired() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"expired",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -208,7 +208,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) TerraformRes
 }
 
 
-func NewZeroTrustGatewayPolicyExpirationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyExpirationOutputReference {
+func NewZeroTrustGatewayPolicyExpirationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyExpirationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustGatewayPolicyExpirationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -217,7 +217,7 @@ func NewZeroTrustGatewayPolicyExpirationOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyExpirationOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyExpirationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -225,11 +225,11 @@ func NewZeroTrustGatewayPolicyExpirationOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewZeroTrustGatewayPolicyExpirationOutputReference_Override(z ZeroTrustGatewayPolicyExpirationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustGatewayPolicyExpirationOutputReference_Override(z ZeroTrustGatewayPolicyExpirationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyExpirationOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyExpirationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,11 +341,11 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -469,8 +469,8 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) GetStringMap
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -482,11 +482,11 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) Interpolatio
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -506,7 +506,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) ResetDuratio
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

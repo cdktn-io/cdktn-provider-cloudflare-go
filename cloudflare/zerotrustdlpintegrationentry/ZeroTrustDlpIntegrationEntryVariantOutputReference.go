@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdlpintegrationentry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpintegrationentry/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlpintegrationentry/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustDlpIntegrationEntryVariantOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,9 +38,9 @@ type ZeroTrustDlpIntegrationEntryVariantOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TopicType() *string
 	Type() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type ZeroTrustDlpIntegrationEntryVariantOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ZeroTrustDlpIntegrationEntryVariantOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ZeroTrustDlpIntegrationEntryVariantOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustDlpIntegrationEntryVariantOutputReference
 type jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) ComplexObjectIndex() interface{} {
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) Type() *s
 }
 
 
-func NewZeroTrustDlpIntegrationEntryVariantOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpIntegrationEntryVariantOutputReference {
+func NewZeroTrustDlpIntegrationEntryVariantOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpIntegrationEntryVariantOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustDlpIntegrationEntryVariantOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -192,7 +192,7 @@ func NewZeroTrustDlpIntegrationEntryVariantOutputReference(terraformResource cdk
 	j := jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDlpIntegrationEntry.ZeroTrustDlpIntegrationEntryVariantOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDlpIntegrationEntry.ZeroTrustDlpIntegrationEntryVariantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -200,11 +200,11 @@ func NewZeroTrustDlpIntegrationEntryVariantOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewZeroTrustDlpIntegrationEntryVariantOutputReference_Override(z ZeroTrustDlpIntegrationEntryVariantOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustDlpIntegrationEntryVariantOutputReference_Override(z ZeroTrustDlpIntegrationEntryVariantOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDlpIntegrationEntry.ZeroTrustDlpIntegrationEntryVariantOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDlpIntegrationEntry.ZeroTrustDlpIntegrationEntryVariantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -254,7 +254,7 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +294,11 @@ func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) GetAnyMap
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -422,8 +422,8 @@ func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) GetString
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -435,11 +435,11 @@ func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) Interpola
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -451,7 +451,7 @@ func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) Interpola
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDlpIntegrationEntryVariantOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

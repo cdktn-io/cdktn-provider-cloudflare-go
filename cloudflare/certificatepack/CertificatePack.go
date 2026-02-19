@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package certificatepack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/certificatepack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/certificatepack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
 type CertificatePack interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CertificateAuthority() *string
 	SetCertificateAuthority(val *string)
 	CertificateAuthorityInput() *string
@@ -39,9 +39,9 @@ type CertificatePack interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -51,16 +51,16 @@ type CertificatePack interface {
 	HostsInput() *[]*string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	PrimaryCertificate() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -69,7 +69,7 @@ type CertificatePack interface {
 	RawOverrides() interface{}
 	Status() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -96,7 +96,7 @@ type CertificatePack interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -114,9 +114,9 @@ type CertificatePack interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -132,6 +132,7 @@ type CertificatePack interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCloudflareBranding()
+	ResetHosts()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -150,11 +151,11 @@ type CertificatePack interface {
 
 // The jsii proxy struct for CertificatePack
 type jsiiProxy_CertificatePack struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_CertificatePack) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CertificatePack) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -253,8 +254,8 @@ func (j *jsiiProxy_CertificatePack) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CertificatePack) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -313,8 +314,8 @@ func (j *jsiiProxy_CertificatePack) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CertificatePack) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -343,8 +344,8 @@ func (j *jsiiProxy_CertificatePack) PrimaryCertificate() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CertificatePack) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -383,8 +384,8 @@ func (j *jsiiProxy_CertificatePack) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePack) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CertificatePack) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -514,7 +515,7 @@ func (j *jsiiProxy_CertificatePack) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack(scope constructs.Construct, id *string, config *CertificatePackConfig) CertificatePack {
 	_init_.Initialize()
 
@@ -524,7 +525,7 @@ func NewCertificatePack(scope constructs.Construct, id *string, config *Certific
 	j := jsiiProxy_CertificatePack{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePack",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -532,12 +533,12 @@ func NewCertificatePack(scope constructs.Construct, id *string, config *Certific
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack_Override(c CertificatePack, scope constructs.Construct, id *string, config *CertificatePackConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePack",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -595,7 +596,7 @@ func (j *jsiiProxy_CertificatePack)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CertificatePack)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -614,7 +615,7 @@ func (j *jsiiProxy_CertificatePack)SetHosts(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CertificatePack)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +626,7 @@ func (j *jsiiProxy_CertificatePack)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_CertificatePack)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CertificatePack)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -688,17 +689,17 @@ func (j *jsiiProxy_CertificatePack)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a CertificatePack resource upon running "cdktf plan <stack-name>".
-func CertificatePack_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a CertificatePack resource upon running "cdktn plan <stack-name>".
+func CertificatePack_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCertificatePack_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePack",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -733,7 +734,7 @@ func CertificatePack_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePack",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +753,7 @@ func CertificatePack_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePack",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +772,7 @@ func CertificatePack_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePack",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +785,7 @@ func CertificatePack_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePack",
 		"tfResourceType",
 		&returns,
 	)
@@ -829,11 +830,11 @@ func (c *jsiiProxy_CertificatePack) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePack) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CertificatePack) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -970,7 +971,7 @@ func (c *jsiiProxy_CertificatePack) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePack) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CertificatePack) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -981,11 +982,11 @@ func (c *jsiiProxy_CertificatePack) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (c *jsiiProxy_CertificatePack) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CertificatePack) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1045,6 +1046,14 @@ func (c *jsiiProxy_CertificatePack) ResetCloudflareBranding() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudflareBranding",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificatePack) ResetHosts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHosts",
 		nil, // no parameters
 	)
 }

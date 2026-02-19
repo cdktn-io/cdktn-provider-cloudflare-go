@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package r2bucketcors
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCors",
+		"@cdktn/provider-cloudflare.r2BucketCors.R2BucketCors",
 		reflect.TypeOf((*R2BucketCors)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,24 +69,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketCors{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsConfig",
+		"@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsConfig",
 		reflect.TypeOf((*R2BucketCorsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRules",
+		"@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRules",
 		reflect.TypeOf((*R2BucketCorsRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowed",
+		"@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowed",
 		reflect.TypeOf((*R2BucketCorsRulesAllowed)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowedOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRulesAllowedOutputReference",
 		reflect.TypeOf((*R2BucketCorsRulesAllowedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,12 +120,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketCorsRulesAllowedOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesList",
+		"@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRulesList",
 		reflect.TypeOf((*R2BucketCorsRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -142,12 +142,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketCorsRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketCors.R2BucketCorsRulesOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketCors.R2BucketCorsRulesOutputReference",
 		reflect.TypeOf((*R2BucketCorsRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowed", GoGetter: "Allowed"},
@@ -186,7 +186,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketCorsRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

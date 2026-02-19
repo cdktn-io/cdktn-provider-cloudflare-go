@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package emailroutingdns
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
 		reflect.TypeOf((*EmailRoutingDns)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -75,20 +75,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDns{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsConfig",
 		reflect.TypeOf((*EmailRoutingDnsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrors",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrors",
 		reflect.TypeOf((*EmailRoutingDnsErrors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrorsList",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrorsList",
 		reflect.TypeOf((*EmailRoutingDnsErrorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -104,12 +104,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsErrorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrorsOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrorsOutputReference",
 		reflect.TypeOf((*EmailRoutingDnsErrorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -140,16 +140,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsErrorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrorsSource",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrorsSource",
 		reflect.TypeOf((*EmailRoutingDnsErrorsSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrorsSourceOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsErrorsSourceOutputReference",
 		reflect.TypeOf((*EmailRoutingDnsErrorsSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -177,16 +177,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsErrorsSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessages",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessages",
 		reflect.TypeOf((*EmailRoutingDnsMessages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessagesList",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessagesList",
 		reflect.TypeOf((*EmailRoutingDnsMessagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -202,12 +202,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsMessagesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessagesOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessagesOutputReference",
 		reflect.TypeOf((*EmailRoutingDnsMessagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -238,16 +238,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsMessagesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessagesSource",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessagesSource",
 		reflect.TypeOf((*EmailRoutingDnsMessagesSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessagesSourceOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsMessagesSourceOutputReference",
 		reflect.TypeOf((*EmailRoutingDnsMessagesSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -275,20 +275,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsMessagesSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResult",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResult",
 		reflect.TypeOf((*EmailRoutingDnsResult)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrors",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrors",
 		reflect.TypeOf((*EmailRoutingDnsResultErrors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrorsList",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrorsList",
 		reflect.TypeOf((*EmailRoutingDnsResultErrorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -304,16 +304,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsResultErrorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrorsMissing",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrorsMissing",
 		reflect.TypeOf((*EmailRoutingDnsResultErrorsMissing)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrorsMissingOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrorsMissingOutputReference",
 		reflect.TypeOf((*EmailRoutingDnsResultErrorsMissingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,12 +345,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsResultErrorsMissingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrorsOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultErrorsOutputReference",
 		reflect.TypeOf((*EmailRoutingDnsResultErrorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -379,16 +379,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsResultErrorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfo",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfo",
 		reflect.TypeOf((*EmailRoutingDnsResultInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfoOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfoOutputReference",
 		reflect.TypeOf((*EmailRoutingDnsResultInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -419,12 +419,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsResultInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultOutputReference",
 		reflect.TypeOf((*EmailRoutingDnsResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -458,16 +458,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsResultOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultRecord",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultRecord",
 		reflect.TypeOf((*EmailRoutingDnsResultRecord)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultRecordList",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultRecordList",
 		reflect.TypeOf((*EmailRoutingDnsResultRecordList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -483,12 +483,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsResultRecordList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultRecordOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultRecordOutputReference",
 		reflect.TypeOf((*EmailRoutingDnsResultRecordOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -520,7 +520,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingDnsResultRecordOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

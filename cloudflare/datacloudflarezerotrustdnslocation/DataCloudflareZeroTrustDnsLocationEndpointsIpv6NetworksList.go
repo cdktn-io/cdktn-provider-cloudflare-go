@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustdnslocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustdnslocation/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustdnslocation/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,8 +24,8 @@ type DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -33,13 +33,13 @@ type DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -49,7 +49,7 @@ type DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList interface {
 
 // The jsii proxy struct for DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList
 type jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) CreationStack() *[]*string {
@@ -82,8 +82,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -103,7 +103,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) 
 }
 
 
-func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList {
+func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -112,7 +112,7 @@ func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList(terraformRes
 	j := jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,11 +120,11 @@ func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList(terraformRes
 	return &j
 }
 
-func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList_Override(d DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList_Override(d DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustDnsLocation.DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -141,7 +141,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList)S
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,11 +163,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList)S
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -208,7 +208,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

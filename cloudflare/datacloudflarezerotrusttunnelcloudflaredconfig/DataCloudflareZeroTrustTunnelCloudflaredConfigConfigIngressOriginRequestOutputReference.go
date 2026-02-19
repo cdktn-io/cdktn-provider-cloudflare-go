@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrusttunnelcloudflaredconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrusttunnelcloudflaredconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Access() DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference
 	CaPool() *string
 	// the index of the complex object in a list.
@@ -31,18 +31,18 @@ type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableChunkedEncoding() cdktf.IResolvable
+	DisableChunkedEncoding() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
-	Http2Origin() cdktf.IResolvable
+	Http2Origin() cdktn.IResolvable
 	HttpHostHeader() *string
 	InternalValue() *DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest
 	SetInternalValue(val *DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest)
 	KeepAliveConnections() *float64
 	KeepAliveTimeout() *float64
-	MatchSnItoHost() cdktf.IResolvable
-	NoHappyEyeballs() cdktf.IResolvable
-	NoTlsVerify() cdktf.IResolvable
+	MatchSnItoHost() cdktn.IResolvable
+	NoHappyEyeballs() cdktn.IResolvable
+	NoTlsVerify() cdktn.IResolvable
 	OriginServerName() *string
 	ProxyType() *string
 	TcpKeepAlive() *float64
@@ -51,16 +51,16 @@ type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TlsTimeout() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,12 +76,12 @@ type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOut
 
 // The jsii proxy struct for DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference
 type jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) Access() DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference {
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) DisableChunkedEncoding() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) DisableChunkedEncoding() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disableChunkedEncoding",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) Http2Origin() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) Http2Origin() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"http2Origin",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) MatchSnItoHost() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) MatchSnItoHost() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"matchSnItoHost",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) NoHappyEyeballs() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) NoHappyEyeballs() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"noHappyEyeballs",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) NoTlsVerify() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) NoTlsVerify() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"noTlsVerify",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 }
 
 
-func NewDataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference {
+func NewDataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest
 	j := jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredConfig.DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredConfig.DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest
 	return &j
 }
 
-func NewDataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference_Override(d DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference_Override(d DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredConfig.DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredConfig.DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -386,7 +386,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,11 +426,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -554,8 +554,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -567,11 +567,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -583,7 +583,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

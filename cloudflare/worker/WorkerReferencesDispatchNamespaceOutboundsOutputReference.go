@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package worker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/worker/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/worker/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WorkerReferencesDispatchNamespaceOutboundsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,9 +39,9 @@ type WorkerReferencesDispatchNamespaceOutboundsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkerId() *string
 	WorkerName() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type WorkerReferencesDispatchNamespaceOutboundsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type WorkerReferencesDispatchNamespaceOutboundsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type WorkerReferencesDispatchNamespaceOutboundsOutputReference interface {
 
 // The jsii proxy struct for WorkerReferencesDispatchNamespaceOutboundsOutputReference
 type jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) Wo
 }
 
 
-func NewWorkerReferencesDispatchNamespaceOutboundsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkerReferencesDispatchNamespaceOutboundsOutputReference {
+func NewWorkerReferencesDispatchNamespaceOutboundsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkerReferencesDispatchNamespaceOutboundsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkerReferencesDispatchNamespaceOutboundsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewWorkerReferencesDispatchNamespaceOutboundsOutputReference(terraformResou
 	j := jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutboundsOutputReference",
+		"@cdktn/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutboundsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewWorkerReferencesDispatchNamespaceOutboundsOutputReference(terraformResou
 	return &j
 }
 
-func NewWorkerReferencesDispatchNamespaceOutboundsOutputReference_Override(w WorkerReferencesDispatchNamespaceOutboundsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWorkerReferencesDispatchNamespaceOutboundsOutputReference_Override(w WorkerReferencesDispatchNamespaceOutboundsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutboundsOutputReference",
+		"@cdktn/provider-cloudflare.worker.WorkerReferencesDispatchNamespaceOutboundsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +305,11 @@ func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) Ge
 	return returns
 }
 
-func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -433,8 +433,8 @@ func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) Ge
 	return returns
 }
 
-func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -446,11 +446,11 @@ func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) In
 	return returns
 }
 
-func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -462,7 +462,7 @@ func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) In
 	return returns
 }
 
-func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

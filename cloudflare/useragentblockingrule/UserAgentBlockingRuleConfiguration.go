@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package useragentblockingrule
@@ -10,11 +10,11 @@ type UserAgentBlockingRuleConfiguration struct {
 	// You must set the target to `ua` when specifying a user agent in the rule.
 	// Available values: "ua".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
 	Target *string `field:"optional" json:"target" yaml:"target"`
 	// the user agent to exactly match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

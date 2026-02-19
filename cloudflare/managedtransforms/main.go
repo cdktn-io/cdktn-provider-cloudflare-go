@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package managedtransforms
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransforms",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms",
 		reflect.TypeOf((*ManagedTransforms)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -67,20 +67,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedTransforms{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsConfig",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig",
 		reflect.TypeOf((*ManagedTransformsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeaders",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeaders",
 		reflect.TypeOf((*ManagedTransformsManagedRequestHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeadersList",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeadersList",
 		reflect.TypeOf((*ManagedTransformsManagedRequestHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -97,12 +97,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedTransformsManagedRequestHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeadersOutputReference",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeadersOutputReference",
 		reflect.TypeOf((*ManagedTransformsManagedRequestHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,16 +133,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeaders",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeaders",
 		reflect.TypeOf((*ManagedTransformsManagedResponseHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersList",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersList",
 		reflect.TypeOf((*ManagedTransformsManagedResponseHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -159,12 +159,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedTransformsManagedResponseHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersOutputReference",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersOutputReference",
 		reflect.TypeOf((*ManagedTransformsManagedResponseHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,7 +195,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedTransformsManagedResponseHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

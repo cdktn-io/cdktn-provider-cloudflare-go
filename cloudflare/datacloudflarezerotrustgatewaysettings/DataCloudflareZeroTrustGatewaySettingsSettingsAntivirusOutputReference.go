@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustgatewaysettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewaysettings/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustgatewaysettings/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,9 +28,9 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnabledDownloadPhase() cdktf.IResolvable
-	EnabledUploadPhase() cdktf.IResolvable
-	FailClosed() cdktf.IResolvable
+	EnabledDownloadPhase() cdktn.IResolvable
+	EnabledUploadPhase() cdktn.IResolvable
+	FailClosed() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareZeroTrustGatewaySettingsSettingsAntivirus
@@ -41,15 +41,15 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference inte
 
 // The jsii proxy struct for DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference
 type jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) ComplexObjectIndex() interface{} {
@@ -113,8 +113,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledDownloadPhase() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledDownloadPhase() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabledDownloadPhase",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledUploadPhase() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) EnabledUploadPhase() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabledUploadPhase",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) FailClosed() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) FailClosed() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"failClosed",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 }
 
 
-func NewDataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference {
+func NewDataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewDataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference(t
 	j := jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewaySettings.DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewaySettings.DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewDataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference(t
 	return &j
 }
 
-func NewDataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference_Override(d DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference_Override(d DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewaySettings.DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewaySettings.DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +305,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -433,8 +433,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -446,11 +446,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -462,7 +462,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutput
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

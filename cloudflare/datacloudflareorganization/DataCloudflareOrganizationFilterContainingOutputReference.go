@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareorganization/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareorganization/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareOrganizationFilterContainingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Account() *string
 	SetAccount(val *string)
 	AccountInput() *string
@@ -43,9 +43,9 @@ type DataCloudflareOrganizationFilterContainingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	User() *string
 	SetUser(val *string)
 	UserInput() *string
@@ -54,7 +54,7 @@ type DataCloudflareOrganizationFilterContainingOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type DataCloudflareOrganizationFilterContainingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccount()
 	ResetOrganization()
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type DataCloudflareOrganizationFilterContainingOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareOrganizationFilterContainingOutputReference
 type jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) Account() *string {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) Us
 }
 
 
-func NewDataCloudflareOrganizationFilterContainingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationFilterContainingOutputReference {
+func NewDataCloudflareOrganizationFilterContainingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareOrganizationFilterContainingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareOrganizationFilterContainingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewDataCloudflareOrganizationFilterContainingOutputReference(terraformResou
 	j := jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContainingOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContainingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewDataCloudflareOrganizationFilterContainingOutputReference(terraformResou
 	return &j
 }
 
-func NewDataCloudflareOrganizationFilterContainingOutputReference_Override(d DataCloudflareOrganizationFilterContainingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareOrganizationFilterContainingOutputReference_Override(d DataCloudflareOrganizationFilterContainingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContainingOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareOrganization.DataCloudflareOrganizationFilterContainingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -494,8 +494,8 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -507,11 +507,11 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -547,7 +547,7 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) Re
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareOrganizationFilterContainingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

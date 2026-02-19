@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package emailsecuritytrusteddomains
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
 		reflect.TypeOf((*EmailSecurityTrustedDomains)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -82,16 +82,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailSecurityTrustedDomains{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBody",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBody",
 		reflect.TypeOf((*EmailSecurityTrustedDomainsBody)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBodyList",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBodyList",
 		reflect.TypeOf((*EmailSecurityTrustedDomainsBodyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -108,12 +108,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailSecurityTrustedDomainsBodyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBodyOutputReference",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsBodyOutputReference",
 		reflect.TypeOf((*EmailSecurityTrustedDomainsBodyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comments", GoGetter: "Comments"},
@@ -151,12 +151,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailSecurityTrustedDomainsBodyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig",
 		reflect.TypeOf((*EmailSecurityTrustedDomainsConfig)(nil)).Elem(),
 	)
 }

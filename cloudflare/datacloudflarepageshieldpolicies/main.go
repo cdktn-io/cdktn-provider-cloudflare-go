@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepageshieldpolicies
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPolicies",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPolicies",
 		reflect.TypeOf((*DataCloudflarePageShieldPolicies)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,20 +56,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflarePageShieldPolicies{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesConfig",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesConfig",
 		reflect.TypeOf((*DataCloudflarePageShieldPoliciesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesResult",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesResult",
 		reflect.TypeOf((*DataCloudflarePageShieldPoliciesResult)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesResultList",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesResultList",
 		reflect.TypeOf((*DataCloudflarePageShieldPoliciesResultList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -85,12 +85,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflarePageShieldPoliciesResultList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldPolicies.DataCloudflarePageShieldPoliciesResultOutputReference",
 		reflect.TypeOf((*DataCloudflarePageShieldPoliciesResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -123,7 +123,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflarePageShieldPoliciesResultOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

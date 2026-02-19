@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package waitingroom
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoom",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoom",
 		reflect.TypeOf((*WaitingRoom)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalRoutes", GoGetter: "AdditionalRoutes"},
@@ -126,16 +126,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoom{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutes",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutes",
 		reflect.TypeOf((*WaitingRoomAdditionalRoutes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesList",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesList",
 		reflect.TypeOf((*WaitingRoomAdditionalRoutesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -152,12 +152,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoomAdditionalRoutesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesOutputReference",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoomAdditionalRoutesOutputReference",
 		reflect.TypeOf((*WaitingRoomAdditionalRoutesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,20 +190,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoomAdditionalRoutesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoomConfig",
 		reflect.TypeOf((*WaitingRoomConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributes",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributes",
 		reflect.TypeOf((*WaitingRoomCookieAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributesOutputReference",
+		"@cdktn/provider-cloudflare.waitingRoom.WaitingRoomCookieAttributesOutputReference",
 		reflect.TypeOf((*WaitingRoomCookieAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -236,7 +236,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoomCookieAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

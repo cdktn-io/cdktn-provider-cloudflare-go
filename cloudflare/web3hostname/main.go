@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package web3hostname
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.web3Hostname.Web3Hostname",
+		"@cdktn/provider-cloudflare.web3Hostname.Web3Hostname",
 		reflect.TypeOf((*Web3Hostname)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,12 +74,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Web3Hostname{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig",
+		"@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig",
 		reflect.TypeOf((*Web3HostnameConfig)(nil)).Elem(),
 	)
 }

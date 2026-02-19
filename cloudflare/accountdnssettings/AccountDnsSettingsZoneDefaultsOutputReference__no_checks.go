@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -59,7 +59,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validatePutSoa
 	return nil
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -99,7 +99,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -107,7 +107,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetZon
 	return nil
 }
 
-func validateNewAccountDnsSettingsZoneDefaultsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccountDnsSettingsZoneDefaultsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

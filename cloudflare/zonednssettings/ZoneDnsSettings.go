@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zonednssettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zonednssettings/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonednssettings/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings}.
 type ZoneDnsSettings interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type ZoneDnsSettings interface {
 	SetFlattenAllCnames(val interface{})
 	FlattenAllCnamesInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	FoundationDns() interface{}
 	SetFoundationDns(val interface{})
 	FoundationDnsInput() interface{}
@@ -48,9 +48,9 @@ type ZoneDnsSettings interface {
 	InternalDns() ZoneDnsSettingsInternalDnsOutputReference
 	InternalDnsInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MultiProvider() interface{}
 	SetMultiProvider(val interface{})
 	MultiProviderInput() interface{}
@@ -62,9 +62,9 @@ type ZoneDnsSettings interface {
 	SetNsTtl(val *float64)
 	NsTtlInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -77,7 +77,7 @@ type ZoneDnsSettings interface {
 	Soa() ZoneDnsSettingsSoaOutputReference
 	SoaInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -96,7 +96,7 @@ type ZoneDnsSettings interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -114,9 +114,9 @@ type ZoneDnsSettings interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -161,11 +161,11 @@ type ZoneDnsSettings interface {
 
 // The jsii proxy struct for ZoneDnsSettings
 type jsiiProxy_ZoneDnsSettings struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_ZoneDnsSettings) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ZoneDnsSettings) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_ZoneDnsSettings) FlattenAllCnamesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneDnsSettings) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ZoneDnsSettings) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_ZoneDnsSettings) InternalDnsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneDnsSettings) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ZoneDnsSettings) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_ZoneDnsSettings) NsTtlInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneDnsSettings) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ZoneDnsSettings) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_ZoneDnsSettings) SoaInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneDnsSettings) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ZoneDnsSettings) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -525,7 +525,7 @@ func (j *jsiiProxy_ZoneDnsSettings) ZoneModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
 func NewZoneDnsSettings(scope constructs.Construct, id *string, config *ZoneDnsSettingsConfig) ZoneDnsSettings {
 	_init_.Initialize()
 
@@ -535,7 +535,7 @@ func NewZoneDnsSettings(scope constructs.Construct, id *string, config *ZoneDnsS
 	j := jsiiProxy_ZoneDnsSettings{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,12 +543,12 @@ func NewZoneDnsSettings(scope constructs.Construct, id *string, config *ZoneDnsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
 func NewZoneDnsSettings_Override(z ZoneDnsSettings, scope constructs.Construct, id *string, config *ZoneDnsSettingsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -595,7 +595,7 @@ func (j *jsiiProxy_ZoneDnsSettings)SetFlattenAllCnames(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnsSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZoneDnsSettings)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -614,7 +614,7 @@ func (j *jsiiProxy_ZoneDnsSettings)SetFoundationDns(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnsSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZoneDnsSettings)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +647,7 @@ func (j *jsiiProxy_ZoneDnsSettings)SetNsTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnsSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZoneDnsSettings)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -699,17 +699,17 @@ func (j *jsiiProxy_ZoneDnsSettings)SetZoneMode(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ZoneDnsSettings resource upon running "cdktf plan <stack-name>".
-func ZoneDnsSettings_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ZoneDnsSettings resource upon running "cdktn plan <stack-name>".
+func ZoneDnsSettings_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateZoneDnsSettings_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -744,7 +744,7 @@ func ZoneDnsSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func ZoneDnsSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func ZoneDnsSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func ZoneDnsSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
+		"@cdktn/provider-cloudflare.zoneDnsSettings.ZoneDnsSettings",
 		"tfResourceType",
 		&returns,
 	)
@@ -840,11 +840,11 @@ func (z *jsiiProxy_ZoneDnsSettings) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (z *jsiiProxy_ZoneDnsSettings) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZoneDnsSettings) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -981,7 +981,7 @@ func (z *jsiiProxy_ZoneDnsSettings) HasResourceMove() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZoneDnsSettings) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (z *jsiiProxy_ZoneDnsSettings) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -992,11 +992,11 @@ func (z *jsiiProxy_ZoneDnsSettings) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (z *jsiiProxy_ZoneDnsSettings) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZoneDnsSettings) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,

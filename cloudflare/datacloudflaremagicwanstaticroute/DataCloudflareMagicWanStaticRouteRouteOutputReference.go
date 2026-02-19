@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflaremagicwanstaticroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicwanstaticroute/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwanstaticroute/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareMagicWanStaticRouteRouteOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,16 +45,16 @@ type DataCloudflareMagicWanStaticRouteRouteOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Weight() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type DataCloudflareMagicWanStaticRouteRouteOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type DataCloudflareMagicWanStaticRouteRouteOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareMagicWanStaticRouteRouteOutputReference
 type jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) ComplexObjectIndex() interface{} {
@@ -228,8 +228,8 @@ func (j *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -249,7 +249,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) Weight
 }
 
 
-func NewDataCloudflareMagicWanStaticRouteRouteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanStaticRouteRouteOutputReference {
+func NewDataCloudflareMagicWanStaticRouteRouteOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanStaticRouteRouteOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareMagicWanStaticRouteRouteOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -258,7 +258,7 @@ func NewDataCloudflareMagicWanStaticRouteRouteOutputReference(terraformResource 
 	j := jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteRouteOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -266,11 +266,11 @@ func NewDataCloudflareMagicWanStaticRouteRouteOutputReference(terraformResource 
 	return &j
 }
 
-func NewDataCloudflareMagicWanStaticRouteRouteOutputReference_Override(d DataCloudflareMagicWanStaticRouteRouteOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareMagicWanStaticRouteRouteOutputReference_Override(d DataCloudflareMagicWanStaticRouteRouteOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteRouteOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) GetAny
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -488,8 +488,8 @@ func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) GetStr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -501,11 +501,11 @@ func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -517,7 +517,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareMagicWanStaticRouteRouteOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (s *jsiiProxy_SnippetFilesList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (s *jsiiProxy_SnippetFilesList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SnippetFilesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_SnippetFilesList) validateSetTerraformAttributeParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_SnippetFilesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SnippetFilesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_SnippetFilesList) validateSetWrapsSetParameters(val *bool) er
 	return nil
 }
 
-func validateNewSnippetFilesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSnippetFilesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

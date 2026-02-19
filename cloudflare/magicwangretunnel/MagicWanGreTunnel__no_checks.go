@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,10 @@ func (m *jsiiProxy_MagicWanGreTunnel) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanGreTunnel) validatePutBgpParameters(value *MagicWanGreTunnelBgp) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicWanGreTunnel) validatePutHealthCheckParameters(value *MagicWanGreTunnelHealthCheck) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func validateMagicWanGreTunnel_IsTerraformResourceParameters(x interface{}) erro
 }
 
 func (j *jsiiProxy_MagicWanGreTunnel) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) validateSetAutomaticReturnRoutingParameters(val interface{}) error {
 	return nil
 }
 
@@ -127,7 +135,7 @@ func (j *jsiiProxy_MagicWanGreTunnel) validateSetInterfaceAddress6Parameters(val
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MagicWanGreTunnel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

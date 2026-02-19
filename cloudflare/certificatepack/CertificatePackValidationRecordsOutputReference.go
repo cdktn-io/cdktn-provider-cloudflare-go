@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package certificatepack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/certificatepack/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/certificatepack/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CertificatePackValidationRecordsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type CertificatePackValidationRecordsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TxtName() *string
 	TxtValue() *string
 	// Experimental.
@@ -50,7 +50,7 @@ type CertificatePackValidationRecordsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type CertificatePackValidationRecordsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type CertificatePackValidationRecordsOutputReference interface {
 
 // The jsii proxy struct for CertificatePackValidationRecordsOutputReference
 type jsiiProxy_CertificatePackValidationRecordsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) ComplexObjectIndex() interface{} {
@@ -174,8 +174,8 @@ func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) TxtValue() *
 }
 
 
-func NewCertificatePackValidationRecordsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CertificatePackValidationRecordsOutputReference {
+func NewCertificatePackValidationRecordsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CertificatePackValidationRecordsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCertificatePackValidationRecordsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewCertificatePackValidationRecordsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CertificatePackValidationRecordsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewCertificatePackValidationRecordsOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewCertificatePackValidationRecordsOutputReference_Override(c CertificatePackValidationRecordsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCertificatePackValidationRecordsOutputReference_Override(c CertificatePackValidationRecordsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -444,8 +444,8 @@ func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) GetStringMap
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -457,11 +457,11 @@ func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) Interpolatio
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -473,7 +473,7 @@ func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) Interpolatio
 	return returns
 }
 
-func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CertificatePackValidationRecordsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

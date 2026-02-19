@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package apitoken
@@ -7,11 +7,11 @@ package apitoken
 type ApiTokenConditionRequestIp struct {
 	// List of IPv4/IPv6 CIDR addresses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#in ApiToken#in}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#in ApiToken#in}
 	In *[]*string `field:"optional" json:"in" yaml:"in"`
 	// List of IPv4/IPv6 CIDR addresses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#not_in ApiToken#not_in}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#not_in ApiToken#not_in}
 	NotIn *[]*string `field:"optional" json:"notIn" yaml:"notIn"`
 }
 

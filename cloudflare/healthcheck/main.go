@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package healthcheck
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
+		"@cdktn/provider-cloudflare.healthcheck.Healthcheck",
 		reflect.TypeOf((*Healthcheck)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -104,20 +104,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Healthcheck{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig",
+		"@cdktn/provider-cloudflare.healthcheck.HealthcheckConfig",
 		reflect.TypeOf((*HealthcheckConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfig",
+		"@cdktn/provider-cloudflare.healthcheck.HealthcheckHttpConfig",
 		reflect.TypeOf((*HealthcheckHttpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHttpConfigOutputReference",
+		"@cdktn/provider-cloudflare.healthcheck.HealthcheckHttpConfigOutputReference",
 		reflect.TypeOf((*HealthcheckHttpConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowInsecure", GoGetter: "AllowInsecure"},
@@ -168,16 +168,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_HealthcheckHttpConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfig",
+		"@cdktn/provider-cloudflare.healthcheck.HealthcheckTcpConfig",
 		reflect.TypeOf((*HealthcheckTcpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference",
+		"@cdktn/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference",
 		reflect.TypeOf((*HealthcheckTcpConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -210,7 +210,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_HealthcheckTcpConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

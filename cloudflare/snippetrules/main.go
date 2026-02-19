@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package snippetrules
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.snippetRules.SnippetRules",
+		"@cdktn/provider-cloudflare.snippetRules.SnippetRules",
 		reflect.TypeOf((*SnippetRules)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -63,20 +63,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SnippetRules{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.snippetRules.SnippetRulesConfig",
+		"@cdktn/provider-cloudflare.snippetRules.SnippetRulesConfig",
 		reflect.TypeOf((*SnippetRulesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.snippetRules.SnippetRulesRules",
+		"@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules",
 		reflect.TypeOf((*SnippetRulesRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesList",
+		"@cdktn/provider-cloudflare.snippetRules.SnippetRulesRulesList",
 		reflect.TypeOf((*SnippetRulesRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -93,12 +93,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SnippetRulesRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference",
+		"@cdktn/provider-cloudflare.snippetRules.SnippetRulesRulesOutputReference",
 		reflect.TypeOf((*SnippetRulesRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,7 +137,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SnippetRulesRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

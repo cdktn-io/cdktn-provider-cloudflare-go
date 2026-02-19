@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarer2bucket
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket",
+		"@cdktn/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2Bucket",
 		reflect.TypeOf((*DataCloudflareR2Bucket)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -60,12 +60,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareR2Bucket{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2BucketConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareR2Bucket.DataCloudflareR2BucketConfig",
 		reflect.TypeOf((*DataCloudflareR2BucketConfig)(nil)).Elem(),
 	)
 }

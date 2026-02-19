@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/pagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap interface {
-	cdktf.ComplexMap
+	cdktn.ComplexMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,16 +26,16 @@ type PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	Get(key *string) PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(property *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -45,7 +45,7 @@ type PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap interface {
 
 // The jsii proxy struct for PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap
 type jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap struct {
-	internal.Type__cdktfComplexMap
+	internal.Type__cdktnComplexMap
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) CreationStack() *[]*string {
@@ -88,8 +88,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) Te
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -99,7 +99,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) Te
 }
 
 
-func NewPagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap {
+func NewPagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap {
 	_init_.Initialize()
 
 	if err := validateNewPagesProjectDeploymentConfigsPreviewHyperdriveBindingsMapParameters(terraformResource, terraformAttribute); err != nil {
@@ -108,7 +108,7 @@ func NewPagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap(terraformResou
 	j := jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -116,11 +116,11 @@ func NewPagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap(terraformResou
 	return &j
 }
 
-func NewPagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap_Override(p PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap_Override(p PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -148,7 +148,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap)Set
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -188,11 +188,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) Ge
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) InterpolationForAttribute(property *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -204,7 +204,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) In
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

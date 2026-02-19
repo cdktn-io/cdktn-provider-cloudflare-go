@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package apishieldschema
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchema",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema",
 		reflect.TypeOf((*ApiShieldSchema)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -77,20 +77,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiShieldSchema{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig",
 		reflect.TypeOf((*ApiShieldSchemaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchema",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchema",
 		reflect.TypeOf((*ApiShieldSchemaSchema)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchemaOutputReference",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaSchemaOutputReference",
 		reflect.TypeOf((*ApiShieldSchemaSchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,16 +123,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiShieldSchemaSchemaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetails",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetails",
 		reflect.TypeOf((*ApiShieldSchemaUploadDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsOutputReference",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsOutputReference",
 		reflect.TypeOf((*ApiShieldSchemaUploadDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,16 +160,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiShieldSchemaUploadDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarnings",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarnings",
 		reflect.TypeOf((*ApiShieldSchemaUploadDetailsWarnings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsList",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsList",
 		reflect.TypeOf((*ApiShieldSchemaUploadDetailsWarningsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -185,12 +185,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiShieldSchemaUploadDetailsWarningsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsOutputReference",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsOutputReference",
 		reflect.TypeOf((*ApiShieldSchemaUploadDetailsWarningsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -220,7 +220,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

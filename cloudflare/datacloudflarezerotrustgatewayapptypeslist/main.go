@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustgatewayapptypeslist
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesList",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesList",
 		reflect.TypeOf((*DataCloudflareZeroTrustGatewayAppTypesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -56,20 +56,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustGatewayAppTypesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListConfig",
 		reflect.TypeOf((*DataCloudflareZeroTrustGatewayAppTypesListConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListResult",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListResult",
 		reflect.TypeOf((*DataCloudflareZeroTrustGatewayAppTypesListResult)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListResultList",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListResultList",
 		reflect.TypeOf((*DataCloudflareZeroTrustGatewayAppTypesListResultList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -85,12 +85,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustGatewayAppTypesListResultList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayAppTypesList.DataCloudflareZeroTrustGatewayAppTypesListResultOutputReference",
 		reflect.TypeOf((*DataCloudflareZeroTrustGatewayAppTypesListResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationTypeId", GoGetter: "ApplicationTypeId"},
@@ -122,7 +122,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustGatewayAppTypesListResultOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

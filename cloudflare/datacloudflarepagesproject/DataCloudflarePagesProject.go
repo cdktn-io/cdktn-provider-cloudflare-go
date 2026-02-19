@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarepagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_project cloudflare_pages_project}.
 type DataCloudflarePagesProject interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	BuildConfig() DataCloudflarePagesProjectBuildConfigOutputReference
 	CanonicalDeployment() DataCloudflarePagesProjectCanonicalDeploymentOutputReference
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -36,9 +36,9 @@ type DataCloudflarePagesProject interface {
 	DeploymentConfigs() DataCloudflarePagesProjectDeploymentConfigsOutputReference
 	Domains() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	Framework() *string
@@ -48,9 +48,9 @@ type DataCloudflarePagesProject interface {
 	Id() *string
 	LatestDeployment() DataCloudflarePagesProjectLatestDeploymentOutputReference
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -61,26 +61,26 @@ type DataCloudflarePagesProject interface {
 	SetProjectName(val *string)
 	ProjectNameInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Source() DataCloudflarePagesProjectSourceOutputReference
 	Subdomain() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UsesFunctions() cdktf.IResolvable
+	UsesFunctions() cdktn.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -96,7 +96,7 @@ type DataCloudflarePagesProject interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -119,7 +119,7 @@ type DataCloudflarePagesProject interface {
 
 // The jsii proxy struct for DataCloudflarePagesProject
 type jsiiProxy_DataCloudflarePagesProject struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflarePagesProject) AccountId() *string {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataCloudflarePagesProject) CanonicalDeployment() DataCloudfl
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProject) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflarePagesProject) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DataCloudflarePagesProject) Domains() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProject) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflarePagesProject) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_DataCloudflarePagesProject) LatestDeployment() DataCloudflare
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProject) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflarePagesProject) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_DataCloudflarePagesProject) ProjectNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProject) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflarePagesProject) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_DataCloudflarePagesProject) Subdomain() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProject) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflarePagesProject) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_DataCloudflarePagesProject) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProject) UsesFunctions() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePagesProject) UsesFunctions() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"usesFunctions",
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DataCloudflarePagesProject) UsesFunctions() cdktf.IResolvable
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source.
 func NewDataCloudflarePagesProject(scope constructs.Construct, id *string, config *DataCloudflarePagesProjectConfig) DataCloudflarePagesProject {
 	_init_.Initialize()
 
@@ -473,7 +473,7 @@ func NewDataCloudflarePagesProject(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataCloudflarePagesProject{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -481,12 +481,12 @@ func NewDataCloudflarePagesProject(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source.
 func NewDataCloudflarePagesProject_Override(d DataCloudflarePagesProject, scope constructs.Construct, id *string, config *DataCloudflarePagesProjectConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -522,7 +522,7 @@ func (j *jsiiProxy_DataCloudflarePagesProject)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProject)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflarePagesProject)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -530,7 +530,7 @@ func (j *jsiiProxy_DataCloudflarePagesProject)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProject)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflarePagesProject)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +552,7 @@ func (j *jsiiProxy_DataCloudflarePagesProject)SetProjectName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProject)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflarePagesProject)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -560,17 +560,17 @@ func (j *jsiiProxy_DataCloudflarePagesProject)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflarePagesProject resource upon running "cdktf plan <stack-name>".
-func DataCloudflarePagesProject_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflarePagesProject resource upon running "cdktn plan <stack-name>".
+func DataCloudflarePagesProject_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflarePagesProject_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -605,7 +605,7 @@ func DataCloudflarePagesProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func DataCloudflarePagesProject_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func DataCloudflarePagesProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func DataCloudflarePagesProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject",
 		"tfResourceType",
 		&returns,
 	)
@@ -690,11 +690,11 @@ func (d *jsiiProxy_DataCloudflarePagesProject) GetAnyMapAttribute(terraformAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProject) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePagesProject) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -818,11 +818,11 @@ func (d *jsiiProxy_DataCloudflarePagesProject) GetStringMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProject) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePagesProject) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

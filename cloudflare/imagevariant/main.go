@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package imagevariant
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.imageVariant.ImageVariant",
+		"@cdktn/provider-cloudflare.imageVariant.ImageVariant",
 		reflect.TypeOf((*ImageVariant)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,20 +69,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ImageVariant{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.imageVariant.ImageVariantConfig",
+		"@cdktn/provider-cloudflare.imageVariant.ImageVariantConfig",
 		reflect.TypeOf((*ImageVariantConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.imageVariant.ImageVariantOptions",
+		"@cdktn/provider-cloudflare.imageVariant.ImageVariantOptions",
 		reflect.TypeOf((*ImageVariantOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.imageVariant.ImageVariantOptionsOutputReference",
+		"@cdktn/provider-cloudflare.imageVariant.ImageVariantOptionsOutputReference",
 		reflect.TypeOf((*ImageVariantOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -117,20 +117,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ImageVariantOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.imageVariant.ImageVariantVariant",
+		"@cdktn/provider-cloudflare.imageVariant.ImageVariantVariant",
 		reflect.TypeOf((*ImageVariantVariant)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.imageVariant.ImageVariantVariantOptions",
+		"@cdktn/provider-cloudflare.imageVariant.ImageVariantVariantOptions",
 		reflect.TypeOf((*ImageVariantVariantOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.imageVariant.ImageVariantVariantOptionsOutputReference",
+		"@cdktn/provider-cloudflare.imageVariant.ImageVariantVariantOptionsOutputReference",
 		reflect.TypeOf((*ImageVariantVariantOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,12 +161,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ImageVariantVariantOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.imageVariant.ImageVariantVariantOutputReference",
+		"@cdktn/provider-cloudflare.imageVariant.ImageVariantVariantOutputReference",
 		reflect.TypeOf((*ImageVariantVariantOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,7 +196,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ImageVariantVariantOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

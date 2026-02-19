@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package hostnametlssetting
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting",
+		"@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting",
 		reflect.TypeOf((*HostnameTlsSetting)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -70,12 +70,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_HostnameTlsSetting{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig",
+		"@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig",
 		reflect.TypeOf((*HostnameTlsSettingConfig)(nil)).Elem(),
 	)
 }

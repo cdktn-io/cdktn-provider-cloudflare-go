@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateGetPa
 	return nil
 }
 
-func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,7 +23,7 @@ func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -31,7 +31,7 @@ func (j *jsiiProxy_WorkerReferencesDispatchNamespaceOutboundsList) validateSetWr
 	return nil
 }
 
-func validateNewWorkerReferencesDispatchNamespaceOutboundsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkerReferencesDispatchNamespaceOutboundsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

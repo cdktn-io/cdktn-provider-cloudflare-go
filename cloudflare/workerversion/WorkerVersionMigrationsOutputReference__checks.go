@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -10,7 +10,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) validatePutRenamedCla
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*WorkerVersionMigrationsRenamedClasses:
 		value := value.(*[]*WorkerVersionMigrationsRenamedClasses)
@@ -117,7 +117,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) validatePutRenamedCla
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkerVersionMigrationsRenamedClasses; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*WorkerVersionMigrationsRenamedClasses; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -129,7 +129,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) validatePutStepsParam
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*WorkerVersionMigrationsSteps:
 		value := value.(*[]*WorkerVersionMigrationsSteps)
@@ -148,7 +148,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) validatePutStepsParam
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkerVersionMigrationsSteps; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*WorkerVersionMigrationsSteps; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -160,7 +160,7 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) validatePutTransferre
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*WorkerVersionMigrationsTransferredClasses:
 		value := value.(*[]*WorkerVersionMigrationsTransferredClasses)
@@ -179,14 +179,14 @@ func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) validatePutTransferre
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkerVersionMigrationsTransferredClasses; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*WorkerVersionMigrationsTransferredClasses; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerVersionMigrationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) validateSetDeletedCla
 
 func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *WorkerVersionMigrations:
 		val := val.(*WorkerVersionMigrations)
@@ -284,7 +284,7 @@ func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) validateSetInternalVa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WorkerVersionMigrations; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *WorkerVersionMigrations; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -331,7 +331,7 @@ func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -339,7 +339,7 @@ func (j *jsiiProxy_WorkerVersionMigrationsOutputReference) validateSetTerraformR
 	return nil
 }
 
-func validateNewWorkerVersionMigrationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkerVersionMigrationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

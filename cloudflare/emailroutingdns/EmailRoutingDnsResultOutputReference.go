@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package emailroutingdns
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailroutingdns/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/emailroutingdns/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type EmailRoutingDnsResultOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,9 +42,9 @@ type EmailRoutingDnsResultOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ttl() *float64
 	Type() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type EmailRoutingDnsResultOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,12 +68,12 @@ type EmailRoutingDnsResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type EmailRoutingDnsResultOutputReference interface {
 
 // The jsii proxy struct for EmailRoutingDnsResultOutputReference
 type jsiiProxy_EmailRoutingDnsResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EmailRoutingDnsResultOutputReference) ComplexObjectIndex() interface{} {
@@ -196,8 +196,8 @@ func (j *jsiiProxy_EmailRoutingDnsResultOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDnsResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EmailRoutingDnsResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -227,7 +227,7 @@ func (j *jsiiProxy_EmailRoutingDnsResultOutputReference) Type() *string {
 }
 
 
-func NewEmailRoutingDnsResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EmailRoutingDnsResultOutputReference {
+func NewEmailRoutingDnsResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EmailRoutingDnsResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEmailRoutingDnsResultOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -236,7 +236,7 @@ func NewEmailRoutingDnsResultOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_EmailRoutingDnsResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -244,11 +244,11 @@ func NewEmailRoutingDnsResultOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewEmailRoutingDnsResultOutputReference_Override(e EmailRoutingDnsResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEmailRoutingDnsResultOutputReference_Override(e EmailRoutingDnsResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -298,7 +298,7 @@ func (j *jsiiProxy_EmailRoutingDnsResultOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingDnsResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmailRoutingDnsResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,11 +338,11 @@ func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -466,8 +466,8 @@ func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -479,11 +479,11 @@ func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -495,7 +495,7 @@ func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) InterpolationForAttribu
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EmailRoutingDnsResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

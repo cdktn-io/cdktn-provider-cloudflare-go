@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdevicesettings
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettings",
 		reflect.TypeOf((*ZeroTrustDeviceSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -87,12 +87,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustDeviceSettings{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceSettings.ZeroTrustDeviceSettingsConfig",
 		reflect.TypeOf((*ZeroTrustDeviceSettingsConfig)(nil)).Elem(),
 	)
 }

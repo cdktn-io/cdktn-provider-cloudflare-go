@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magictransitconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitconnector/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
 type MagicTransitConnector interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type MagicTransitConnector interface {
 	SetActivated(val interface{})
 	ActivatedInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -40,9 +40,9 @@ type MagicTransitConnector interface {
 	Device() MagicTransitConnectorDeviceOutputReference
 	DeviceInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -56,18 +56,18 @@ type MagicTransitConnector interface {
 	InterruptWindowHourOfDayInput() *float64
 	LicenseKey() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	Notes() *string
 	SetNotes(val *string)
 	NotesInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type MagicTransitConnector interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -91,7 +91,7 @@ type MagicTransitConnector interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -109,9 +109,9 @@ type MagicTransitConnector interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -150,7 +150,7 @@ type MagicTransitConnector interface {
 
 // The jsii proxy struct for MagicTransitConnector
 type jsiiProxy_MagicTransitConnector struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MagicTransitConnector) AccountId() *string {
@@ -193,8 +193,8 @@ func (j *jsiiProxy_MagicTransitConnector) ActivatedInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitConnector) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MagicTransitConnector) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_MagicTransitConnector) DeviceInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitConnector) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MagicTransitConnector) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_MagicTransitConnector) LicenseKey() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitConnector) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MagicTransitConnector) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_MagicTransitConnector) NotesInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitConnector) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MagicTransitConnector) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_MagicTransitConnector) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitConnector) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MagicTransitConnector) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -474,7 +474,7 @@ func (j *jsiiProxy_MagicTransitConnector) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
 func NewMagicTransitConnector(scope constructs.Construct, id *string, config *MagicTransitConnectorConfig) MagicTransitConnector {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewMagicTransitConnector(scope constructs.Construct, id *string, config *Ma
 	j := jsiiProxy_MagicTransitConnector{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
+		"@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -492,12 +492,12 @@ func NewMagicTransitConnector(scope constructs.Construct, id *string, config *Ma
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
 func NewMagicTransitConnector_Override(m MagicTransitConnector, scope constructs.Construct, id *string, config *MagicTransitConnectorConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
+		"@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -555,7 +555,7 @@ func (j *jsiiProxy_MagicTransitConnector)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitConnector)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MagicTransitConnector)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -585,7 +585,7 @@ func (j *jsiiProxy_MagicTransitConnector)SetInterruptWindowHourOfDay(val *float6
 	)
 }
 
-func (j *jsiiProxy_MagicTransitConnector)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MagicTransitConnector)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +607,7 @@ func (j *jsiiProxy_MagicTransitConnector)SetNotes(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicTransitConnector)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MagicTransitConnector)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -637,17 +637,17 @@ func (j *jsiiProxy_MagicTransitConnector)SetTimezone(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a MagicTransitConnector resource upon running "cdktf plan <stack-name>".
-func MagicTransitConnector_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MagicTransitConnector resource upon running "cdktn plan <stack-name>".
+func MagicTransitConnector_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMagicTransitConnector_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
+		"@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -682,7 +682,7 @@ func MagicTransitConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
+		"@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func MagicTransitConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
+		"@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -720,7 +720,7 @@ func MagicTransitConnector_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
+		"@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func MagicTransitConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
+		"@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector",
 		"tfResourceType",
 		&returns,
 	)
@@ -778,11 +778,11 @@ func (m *jsiiProxy_MagicTransitConnector) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitConnector) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicTransitConnector) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -919,7 +919,7 @@ func (m *jsiiProxy_MagicTransitConnector) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitConnector) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MagicTransitConnector) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -930,11 +930,11 @@ func (m *jsiiProxy_MagicTransitConnector) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (m *jsiiProxy_MagicTransitConnector) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicTransitConnector) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,

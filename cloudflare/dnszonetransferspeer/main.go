@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dnszonetransferspeer
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeer",
+		"@cdktn/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeer",
 		reflect.TypeOf((*DnsZoneTransfersPeer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -75,12 +75,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DnsZoneTransfersPeer{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeerConfig",
+		"@cdktn/provider-cloudflare.dnsZoneTransfersPeer.DnsZoneTransfersPeerConfig",
 		reflect.TypeOf((*DnsZoneTransfersPeerConfig)(nil)).Elem(),
 	)
 }

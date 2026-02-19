@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workersforplatformsdispatchnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersforplatformsdispatchnamespace/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersforplatformsdispatchnamespace/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
 type WorkersForPlatformsDispatchNamespace interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,18 +37,18 @@ type WorkersForPlatformsDispatchNamespace interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedBy() *string
 	ModifiedOn() *string
 	Name() *string
@@ -59,9 +59,9 @@ type WorkersForPlatformsDispatchNamespace interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -70,12 +70,12 @@ type WorkersForPlatformsDispatchNamespace interface {
 	RawOverrides() interface{}
 	ScriptCount() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TrustedWorkers() cdktf.IResolvable
+	TrustedWorkers() cdktn.IResolvable
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -84,7 +84,7 @@ type WorkersForPlatformsDispatchNamespace interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,9 +102,9 @@ type WorkersForPlatformsDispatchNamespace interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -138,7 +138,7 @@ type WorkersForPlatformsDispatchNamespace interface {
 
 // The jsii proxy struct for WorkersForPlatformsDispatchNamespace
 type jsiiProxy_WorkersForPlatformsDispatchNamespace struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) AccountId() *string {
@@ -161,8 +161,8 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) AccountIdInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) DependsOn() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) Node() constructs.Node 
 	return returns
 }
 
-func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) ScriptCount() *float64 
 	return returns
 }
 
-func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TerraformResourceType()
 	return returns
 }
 
-func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TrustedWorkers() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TrustedWorkers() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"trustedWorkers",
@@ -432,7 +432,7 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TrustedWorkers() cdktf.
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
 func NewWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *string, config *WorkersForPlatformsDispatchNamespaceConfig) WorkersForPlatformsDispatchNamespace {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *str
 	j := jsiiProxy_WorkersForPlatformsDispatchNamespace{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
+		"@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,12 +450,12 @@ func NewWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
 func NewWorkersForPlatformsDispatchNamespace_Override(w WorkersForPlatformsDispatchNamespace, scope constructs.Construct, id *string, config *WorkersForPlatformsDispatchNamespaceConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
+		"@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -502,7 +502,7 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -510,7 +510,7 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +532,7 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -551,17 +551,17 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace)SetProvisioners(val *[]i
 	)
 }
 
-// Generates CDKTF code for importing a WorkersForPlatformsDispatchNamespace resource upon running "cdktf plan <stack-name>".
-func WorkersForPlatformsDispatchNamespace_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a WorkersForPlatformsDispatchNamespace resource upon running "cdktn plan <stack-name>".
+func WorkersForPlatformsDispatchNamespace_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateWorkersForPlatformsDispatchNamespace_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
+		"@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -596,7 +596,7 @@ func WorkersForPlatformsDispatchNamespace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
+		"@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func WorkersForPlatformsDispatchNamespace_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
+		"@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func WorkersForPlatformsDispatchNamespace_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
+		"@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func WorkersForPlatformsDispatchNamespace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
+		"@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace",
 		"tfResourceType",
 		&returns,
 	)
@@ -692,11 +692,11 @@ func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -833,7 +833,7 @@ func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) HasResourceMove() inter
 	return returns
 }
 
-func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := w.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -844,11 +844,11 @@ func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) ImportFrom(id *string, 
 	)
 }
 
-func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareemailsecurityblocksender
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecurityblocksender/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareemailsecurityblocksender/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareEmailSecurityBlockSenderFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,15 +52,15 @@ type DataCloudflareEmailSecurityBlockSenderFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type DataCloudflareEmailSecurityBlockSenderFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDirection()
 	ResetOrder()
 	ResetPattern()
@@ -86,7 +86,7 @@ type DataCloudflareEmailSecurityBlockSenderFilterOutputReference interface {
 	ResetSearch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type DataCloudflareEmailSecurityBlockSenderFilterOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareEmailSecurityBlockSenderFilterOutputReference
 type jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 }
 
 
-func NewDataCloudflareEmailSecurityBlockSenderFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareEmailSecurityBlockSenderFilterOutputReference {
+func NewDataCloudflareEmailSecurityBlockSenderFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareEmailSecurityBlockSenderFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareEmailSecurityBlockSenderFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -279,7 +279,7 @@ func NewDataCloudflareEmailSecurityBlockSenderFilterOutputReference(terraformRes
 	j := jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSender.DataCloudflareEmailSecurityBlockSenderFilterOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityBlockSender.DataCloudflareEmailSecurityBlockSenderFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewDataCloudflareEmailSecurityBlockSenderFilterOutputReference(terraformRes
 	return &j
 }
 
-func NewDataCloudflareEmailSecurityBlockSenderFilterOutputReference_Override(d DataCloudflareEmailSecurityBlockSenderFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareEmailSecurityBlockSenderFilterOutputReference_Override(d DataCloudflareEmailSecurityBlockSenderFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityBlockSender.DataCloudflareEmailSecurityBlockSenderFilterOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityBlockSender.DataCloudflareEmailSecurityBlockSenderFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,11 +436,11 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -564,8 +564,8 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -577,11 +577,11 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -633,7 +633,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

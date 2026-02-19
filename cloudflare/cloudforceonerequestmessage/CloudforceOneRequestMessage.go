@@ -1,26 +1,26 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cloudforceonerequestmessage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/cloudforceonerequestmessage/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudforceonerequestmessage/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
 type CloudforceOneRequestMessage interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	Author() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -40,25 +40,25 @@ type CloudforceOneRequestMessage interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *float64
-	IsFollowOnRequest() cdktf.IResolvable
+	IsFollowOnRequest() cdktn.IResolvable
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -69,7 +69,7 @@ type CloudforceOneRequestMessage interface {
 	SetRequestId(val *string)
 	RequestIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -83,7 +83,7 @@ type CloudforceOneRequestMessage interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -101,9 +101,9 @@ type CloudforceOneRequestMessage interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -137,7 +137,7 @@ type CloudforceOneRequestMessage interface {
 
 // The jsii proxy struct for CloudforceOneRequestMessage
 type jsiiProxy_CloudforceOneRequestMessage struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_CloudforceOneRequestMessage) AccountId() *string {
@@ -170,8 +170,8 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) Author() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CloudforceOneRequestMessage) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CloudforceOneRequestMessage) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) Id() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) IsFollowOnRequest() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_CloudforceOneRequestMessage) IsFollowOnRequest() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isFollowOnRequest",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) IsFollowOnRequest() cdktf.IResol
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CloudforceOneRequestMessage) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CloudforceOneRequestMessage) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) RequestIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CloudforceOneRequestMessage) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -411,7 +411,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource.
 func NewCloudforceOneRequestMessage(scope constructs.Construct, id *string, config *CloudforceOneRequestMessageConfig) CloudforceOneRequestMessage {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewCloudforceOneRequestMessage(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_CloudforceOneRequestMessage{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -429,12 +429,12 @@ func NewCloudforceOneRequestMessage(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource.
 func NewCloudforceOneRequestMessage_Override(c CloudforceOneRequestMessage, scope constructs.Construct, id *string, config *CloudforceOneRequestMessageConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -492,7 +492,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudforceOneRequestMessage)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -500,7 +500,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudforceOneRequestMessage)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +511,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudforceOneRequestMessage)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -541,17 +541,17 @@ func (j *jsiiProxy_CloudforceOneRequestMessage)SetRequestId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a CloudforceOneRequestMessage resource upon running "cdktf plan <stack-name>".
-func CloudforceOneRequestMessage_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a CloudforceOneRequestMessage resource upon running "cdktn plan <stack-name>".
+func CloudforceOneRequestMessage_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCloudforceOneRequestMessage_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -586,7 +586,7 @@ func CloudforceOneRequestMessage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -605,7 +605,7 @@ func CloudforceOneRequestMessage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func CloudforceOneRequestMessage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -637,7 +637,7 @@ func CloudforceOneRequestMessage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestMessage.CloudforceOneRequestMessage",
 		"tfResourceType",
 		&returns,
 	)
@@ -682,11 +682,11 @@ func (c *jsiiProxy_CloudforceOneRequestMessage) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (c *jsiiProxy_CloudforceOneRequestMessage) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudforceOneRequestMessage) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -823,7 +823,7 @@ func (c *jsiiProxy_CloudforceOneRequestMessage) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudforceOneRequestMessage) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CloudforceOneRequestMessage) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -834,11 +834,11 @@ func (c *jsiiProxy_CloudforceOneRequestMessage) ImportFrom(id *string, provider 
 	)
 }
 
-func (c *jsiiProxy_CloudforceOneRequestMessage) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudforceOneRequestMessage) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,

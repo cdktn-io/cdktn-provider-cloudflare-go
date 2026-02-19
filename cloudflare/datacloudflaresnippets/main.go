@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflaresnippets
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets",
+		"@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets",
 		reflect.TypeOf((*DataCloudflareSnippets)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,12 +56,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareSnippets{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippetsConfig",
 		reflect.TypeOf((*DataCloudflareSnippetsConfig)(nil)).Elem(),
 	)
 }

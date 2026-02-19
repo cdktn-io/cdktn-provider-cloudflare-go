@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamcaptionlanguage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/streamcaptionlanguage/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamcaptionlanguage/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
 type StreamCaptionLanguage interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,14 +38,14 @@ type StreamCaptionLanguage interface {
 	SetFile(val *string)
 	FileInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Generated() cdktf.IResolvable
+	Generated() cdktn.IResolvable
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
@@ -54,15 +54,15 @@ type StreamCaptionLanguage interface {
 	SetLanguage(val *string)
 	LanguageInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -71,7 +71,7 @@ type StreamCaptionLanguage interface {
 	RawOverrides() interface{}
 	Status() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -84,7 +84,7 @@ type StreamCaptionLanguage interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,9 +102,9 @@ type StreamCaptionLanguage interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -138,7 +138,7 @@ type StreamCaptionLanguage interface {
 
 // The jsii proxy struct for StreamCaptionLanguage
 type jsiiProxy_StreamCaptionLanguage struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_StreamCaptionLanguage) AccountId() *string {
@@ -161,8 +161,8 @@ func (j *jsiiProxy_StreamCaptionLanguage) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamCaptionLanguage) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_StreamCaptionLanguage) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_StreamCaptionLanguage) FileInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamCaptionLanguage) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_StreamCaptionLanguage) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_StreamCaptionLanguage) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamCaptionLanguage) Generated() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_StreamCaptionLanguage) Generated() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"generated",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_StreamCaptionLanguage) LanguageInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamCaptionLanguage) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_StreamCaptionLanguage) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_StreamCaptionLanguage) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_StreamCaptionLanguage) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_StreamCaptionLanguage) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_StreamCaptionLanguage) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StreamCaptionLanguage) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_StreamCaptionLanguage) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -412,7 +412,7 @@ func (j *jsiiProxy_StreamCaptionLanguage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
 func NewStreamCaptionLanguage(scope constructs.Construct, id *string, config *StreamCaptionLanguageConfig) StreamCaptionLanguage {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewStreamCaptionLanguage(scope constructs.Construct, id *string, config *St
 	j := jsiiProxy_StreamCaptionLanguage{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
+		"@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,12 +430,12 @@ func NewStreamCaptionLanguage(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
 func NewStreamCaptionLanguage_Override(s StreamCaptionLanguage, scope constructs.Construct, id *string, config *StreamCaptionLanguageConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
+		"@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -493,7 +493,7 @@ func (j *jsiiProxy_StreamCaptionLanguage)SetFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamCaptionLanguage)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StreamCaptionLanguage)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -523,7 +523,7 @@ func (j *jsiiProxy_StreamCaptionLanguage)SetLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StreamCaptionLanguage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StreamCaptionLanguage)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +534,7 @@ func (j *jsiiProxy_StreamCaptionLanguage)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_StreamCaptionLanguage)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StreamCaptionLanguage)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,17 +553,17 @@ func (j *jsiiProxy_StreamCaptionLanguage)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a StreamCaptionLanguage resource upon running "cdktf plan <stack-name>".
-func StreamCaptionLanguage_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a StreamCaptionLanguage resource upon running "cdktn plan <stack-name>".
+func StreamCaptionLanguage_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateStreamCaptionLanguage_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
+		"@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -598,7 +598,7 @@ func StreamCaptionLanguage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
+		"@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func StreamCaptionLanguage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
+		"@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func StreamCaptionLanguage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
+		"@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -649,7 +649,7 @@ func StreamCaptionLanguage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
+		"@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage",
 		"tfResourceType",
 		&returns,
 	)
@@ -694,11 +694,11 @@ func (s *jsiiProxy_StreamCaptionLanguage) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (s *jsiiProxy_StreamCaptionLanguage) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamCaptionLanguage) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -835,7 +835,7 @@ func (s *jsiiProxy_StreamCaptionLanguage) HasResourceMove() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StreamCaptionLanguage) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (s *jsiiProxy_StreamCaptionLanguage) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -846,11 +846,11 @@ func (s *jsiiProxy_StreamCaptionLanguage) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (s *jsiiProxy_StreamCaptionLanguage) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamCaptionLanguage) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package contentscanningexpression
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpression",
+		"@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression",
 		reflect.TypeOf((*ContentScanningExpression)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -64,16 +64,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContentScanningExpression{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody",
+		"@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody",
 		reflect.TypeOf((*ContentScanningExpressionBody)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyList",
+		"@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyList",
 		reflect.TypeOf((*ContentScanningExpressionBodyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -90,12 +90,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContentScanningExpressionBodyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyOutputReference",
+		"@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBodyOutputReference",
 		reflect.TypeOf((*ContentScanningExpressionBodyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,12 +124,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContentScanningExpressionBodyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig",
+		"@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig",
 		reflect.TypeOf((*ContentScanningExpressionConfig)(nil)).Elem(),
 	)
 }

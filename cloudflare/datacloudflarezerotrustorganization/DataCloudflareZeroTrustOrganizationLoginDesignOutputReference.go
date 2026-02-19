@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustorganization/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustorganization/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustOrganizationLoginDesignOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BackgroundColor() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -41,16 +41,16 @@ type DataCloudflareZeroTrustOrganizationLoginDesignOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TextColor() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type DataCloudflareZeroTrustOrganizationLoginDesignOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type DataCloudflareZeroTrustOrganizationLoginDesignOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareZeroTrustOrganizationLoginDesignOutputReference
 type jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) BackgroundColor() *string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference
 }
 
 
-func NewDataCloudflareZeroTrustOrganizationLoginDesignOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustOrganizationLoginDesignOutputReference {
+func NewDataCloudflareZeroTrustOrganizationLoginDesignOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustOrganizationLoginDesignOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustOrganizationLoginDesignOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -214,7 +214,7 @@ func NewDataCloudflareZeroTrustOrganizationLoginDesignOutputReference(terraformR
 	j := jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustOrganization.DataCloudflareZeroTrustOrganizationLoginDesignOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustOrganization.DataCloudflareZeroTrustOrganizationLoginDesignOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewDataCloudflareZeroTrustOrganizationLoginDesignOutputReference(terraformR
 	return &j
 }
 
-func NewDataCloudflareZeroTrustOrganizationLoginDesignOutputReference_Override(d DataCloudflareZeroTrustOrganizationLoginDesignOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareZeroTrustOrganizationLoginDesignOutputReference_Override(d DataCloudflareZeroTrustOrganizationLoginDesignOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustOrganization.DataCloudflareZeroTrustOrganizationLoginDesignOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustOrganization.DataCloudflareZeroTrustOrganizationLoginDesignOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -444,8 +444,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -457,11 +457,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -473,7 +473,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustOrganizationLoginDesignOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

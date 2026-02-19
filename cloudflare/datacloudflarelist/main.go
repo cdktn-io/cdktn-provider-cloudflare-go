@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarelist
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareList",
+		"@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList",
 		reflect.TypeOf((*DataCloudflareList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -66,24 +66,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig",
 		reflect.TypeOf((*DataCloudflareListConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListItems",
+		"@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListItems",
 		reflect.TypeOf((*DataCloudflareListItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsHostname",
+		"@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsHostname",
 		reflect.TypeOf((*DataCloudflareListItemsHostname)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsHostnameOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsHostnameOutputReference",
 		reflect.TypeOf((*DataCloudflareListItemsHostnameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,12 +112,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareListItemsHostnameOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsList",
+		"@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsList",
 		reflect.TypeOf((*DataCloudflareListItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -133,12 +133,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareListItemsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsOutputReference",
 		reflect.TypeOf((*DataCloudflareListItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "asn", GoGetter: "Asn"},
@@ -170,16 +170,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareListItemsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsRedirect",
+		"@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsRedirect",
 		reflect.TypeOf((*DataCloudflareListItemsRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsRedirectOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListItemsRedirectOutputReference",
 		reflect.TypeOf((*DataCloudflareListItemsRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,7 +213,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareListItemsRedirectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

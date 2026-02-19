@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessinfrastructuretarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessinfrastructuretarget/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VirtualNetworkId() *string
 	SetVirtualNetworkId(val *string)
 	VirtualNetworkIdInput() *string
@@ -51,7 +51,7 @@ type ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetIpAddr()
 	ResetVirtualNetworkId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference interface {
 
 // The jsii proxy struct for ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference
 type jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) ComplexObjectIndex() interface{} {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) Vir
 }
 
 
-func NewZeroTrustAccessInfrastructureTargetIpIpv4OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference {
+func NewZeroTrustAccessInfrastructureTargetIpIpv4OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustAccessInfrastructureTargetIpIpv4OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewZeroTrustAccessInfrastructureTargetIpIpv4OutputReference(terraformResour
 	j := jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewZeroTrustAccessInfrastructureTargetIpIpv4OutputReference(terraformResour
 	return &j
 }
 
-func NewZeroTrustAccessInfrastructureTargetIpIpv4OutputReference_Override(z ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustAccessInfrastructureTargetIpIpv4OutputReference_Override(z ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -280,7 +280,7 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) Get
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -459,8 +459,8 @@ func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) Get
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -472,11 +472,11 @@ func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) Int
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -504,7 +504,7 @@ func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) Res
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

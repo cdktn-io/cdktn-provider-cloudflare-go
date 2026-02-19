@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package list
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/list/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/list/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ListItemsHostnameOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ListItemsHostnameOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UrlHostname() *string
 	SetUrlHostname(val *string)
 	UrlHostnameInput() *string
@@ -51,7 +51,7 @@ type ListItemsHostnameOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type ListItemsHostnameOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetExcludeExactHostname()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ListItemsHostnameOutputReference interface {
 
 // The jsii proxy struct for ListItemsHostnameOutputReference
 type jsiiProxy_ListItemsHostnameOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ListItemsHostnameOutputReference) ComplexObjectIndex() interface{} {
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ListItemsHostnameOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ListItemsHostnameOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ListItemsHostnameOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_ListItemsHostnameOutputReference) UrlHostnameInput() *string 
 }
 
 
-func NewListItemsHostnameOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ListItemsHostnameOutputReference {
+func NewListItemsHostnameOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ListItemsHostnameOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewListItemsHostnameOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -206,7 +206,7 @@ func NewListItemsHostnameOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_ListItemsHostnameOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.list.ListItemsHostnameOutputReference",
+		"@cdktn/provider-cloudflare.list.ListItemsHostnameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewListItemsHostnameOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewListItemsHostnameOutputReference_Override(l ListItemsHostnameOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewListItemsHostnameOutputReference_Override(l ListItemsHostnameOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.list.ListItemsHostnameOutputReference",
+		"@cdktn/provider-cloudflare.list.ListItemsHostnameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -279,7 +279,7 @@ func (j *jsiiProxy_ListItemsHostnameOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_ListItemsHostnameOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ListItemsHostnameOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (l *jsiiProxy_ListItemsHostnameOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (l *jsiiProxy_ListItemsHostnameOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_ListItemsHostnameOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -458,8 +458,8 @@ func (l *jsiiProxy_ListItemsHostnameOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (l *jsiiProxy_ListItemsHostnameOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_ListItemsHostnameOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -471,11 +471,11 @@ func (l *jsiiProxy_ListItemsHostnameOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (l *jsiiProxy_ListItemsHostnameOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_ListItemsHostnameOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -495,7 +495,7 @@ func (l *jsiiProxy_ListItemsHostnameOutputReference) ResetExcludeExactHostname()
 	)
 }
 
-func (l *jsiiProxy_ListItemsHostnameOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_ListItemsHostnameOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

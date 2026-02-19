@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezonesetting
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting",
+		"@cdktn/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSetting",
 		reflect.TypeOf((*DataCloudflareZoneSetting)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,12 +60,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZoneSetting{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSettingConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareZoneSetting.DataCloudflareZoneSettingConfig",
 		reflect.TypeOf((*DataCloudflareZoneSettingConfig)(nil)).Elem(),
 	)
 }

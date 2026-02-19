@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (r *jsiiProxy_R2BucketCorsRulesList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketCorsRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketCorsRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_R2BucketCorsRulesList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_R2BucketCorsRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_R2BucketCorsRulesList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewR2BucketCorsRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewR2BucketCorsRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

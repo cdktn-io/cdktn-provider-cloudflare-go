@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package apishieldschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/apishieldschema/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/apishieldschema/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ApiShieldSchemaUploadDetailsWarningsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -40,15 +40,15 @@ type ApiShieldSchemaUploadDetailsWarningsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ApiShieldSchemaUploadDetailsWarningsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ApiShieldSchemaUploadDetailsWarningsOutputReference interface {
 
 // The jsii proxy struct for ApiShieldSchemaUploadDetailsWarningsOutputReference
 type jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) Code() *float64 {
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) Terrafor
 }
 
 
-func NewApiShieldSchemaUploadDetailsWarningsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApiShieldSchemaUploadDetailsWarningsOutputReference {
+func NewApiShieldSchemaUploadDetailsWarningsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApiShieldSchemaUploadDetailsWarningsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApiShieldSchemaUploadDetailsWarningsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -192,7 +192,7 @@ func NewApiShieldSchemaUploadDetailsWarningsOutputReference(terraformResource cd
 	j := jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsOutputReference",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -200,11 +200,11 @@ func NewApiShieldSchemaUploadDetailsWarningsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewApiShieldSchemaUploadDetailsWarningsOutputReference_Override(a ApiShieldSchemaUploadDetailsWarningsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewApiShieldSchemaUploadDetailsWarningsOutputReference_Override(a ApiShieldSchemaUploadDetailsWarningsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsOutputReference",
+		"@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaUploadDetailsWarningsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -254,7 +254,7 @@ func (j *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +294,11 @@ func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) GetAnyMa
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -422,8 +422,8 @@ func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) GetStrin
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -435,11 +435,11 @@ func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) Interpol
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -451,7 +451,7 @@ func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) Interpol
 	return returns
 }
 
-func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApiShieldSchemaUploadDetailsWarningsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

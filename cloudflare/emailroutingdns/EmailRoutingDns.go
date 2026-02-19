@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package emailroutingdns
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailroutingdns/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/emailroutingdns/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
 type EmailRoutingDns interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,21 +32,21 @@ type EmailRoutingDns interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	Errors() EmailRoutingDnsErrorsList
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Messages() EmailRoutingDnsMessagesList
 	Modified() *string
 	Name() *string
@@ -55,9 +55,9 @@ type EmailRoutingDns interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -66,12 +66,12 @@ type EmailRoutingDns interface {
 	RawOverrides() interface{}
 	Result() EmailRoutingDnsResultOutputReference
 	ResultInfo() EmailRoutingDnsResultInfoOutputReference
-	SkipWizard() cdktf.IResolvable
+	SkipWizard() cdktn.IResolvable
 	Status() *string
-	Success() cdktf.IResolvable
+	Success() cdktn.IResolvable
 	Tag() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -87,7 +87,7 @@ type EmailRoutingDns interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -105,9 +105,9 @@ type EmailRoutingDns interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -141,11 +141,11 @@ type EmailRoutingDns interface {
 
 // The jsii proxy struct for EmailRoutingDns
 type jsiiProxy_EmailRoutingDns struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_EmailRoutingDns) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_EmailRoutingDns) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_EmailRoutingDns) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_EmailRoutingDns) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_EmailRoutingDns) Errors() EmailRoutingDnsErrorsList {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_EmailRoutingDns) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_EmailRoutingDns) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_EmailRoutingDns) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_EmailRoutingDns) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_EmailRoutingDns) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_EmailRoutingDns) ResultInfo() EmailRoutingDnsResultInfoOutput
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) SkipWizard() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_EmailRoutingDns) SkipWizard() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"skipWizard",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_EmailRoutingDns) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) Success() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_EmailRoutingDns) Success() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"success",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_EmailRoutingDns) Tag() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_EmailRoutingDns) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -465,7 +465,7 @@ func (j *jsiiProxy_EmailRoutingDns) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
 func NewEmailRoutingDns(scope constructs.Construct, id *string, config *EmailRoutingDnsConfig) EmailRoutingDns {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewEmailRoutingDns(scope constructs.Construct, id *string, config *EmailRou
 	j := jsiiProxy_EmailRoutingDns{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,12 +483,12 @@ func NewEmailRoutingDns(scope constructs.Construct, id *string, config *EmailRou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
 func NewEmailRoutingDns_Override(e EmailRoutingDns, scope constructs.Construct, id *string, config *EmailRoutingDnsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -524,7 +524,7 @@ func (j *jsiiProxy_EmailRoutingDns)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingDns)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EmailRoutingDns)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -532,7 +532,7 @@ func (j *jsiiProxy_EmailRoutingDns)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingDns)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EmailRoutingDns)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +554,7 @@ func (j *jsiiProxy_EmailRoutingDns)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingDns)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EmailRoutingDns)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -584,17 +584,17 @@ func (j *jsiiProxy_EmailRoutingDns)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a EmailRoutingDns resource upon running "cdktf plan <stack-name>".
-func EmailRoutingDns_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a EmailRoutingDns resource upon running "cdktn plan <stack-name>".
+func EmailRoutingDns_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateEmailRoutingDns_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -629,7 +629,7 @@ func EmailRoutingDns_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func EmailRoutingDns_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func EmailRoutingDns_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func EmailRoutingDns_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
+		"@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns",
 		"tfResourceType",
 		&returns,
 	)
@@ -725,11 +725,11 @@ func (e *jsiiProxy_EmailRoutingDns) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingDns) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmailRoutingDns) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -866,7 +866,7 @@ func (e *jsiiProxy_EmailRoutingDns) HasResourceMove() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EmailRoutingDns) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (e *jsiiProxy_EmailRoutingDns) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -877,11 +877,11 @@ func (e *jsiiProxy_EmailRoutingDns) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingDns) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmailRoutingDns) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,

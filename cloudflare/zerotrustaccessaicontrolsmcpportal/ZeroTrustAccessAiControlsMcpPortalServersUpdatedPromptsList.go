@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessaicontrolsmcpportal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessaicontrolsmcpportal/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessaicontrolsmcpportal/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList interface {
 
 // The jsii proxy struct for ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList
 type jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) 
 }
 
 
-func NewZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList {
+func NewZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList(terraformRes
 	j := jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpPortal.ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList",
+		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpPortal.ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList(terraformRes
 	return &j
 }
 
-func NewZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList_Override(z ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList_Override(z ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpPortal.ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList",
+		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpPortal.ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList)S
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList)S
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := z.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		z,
@@ -231,7 +231,7 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

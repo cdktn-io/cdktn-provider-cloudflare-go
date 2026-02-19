@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflaremagictransitconnectors
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagictransitconnectors/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagictransitconnectors/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareMagicTransitConnectorsResultOutputReference interface {
-	cdktf.ComplexObject
-	Activated() cdktf.IResolvable
+	cdktn.ComplexObject
+	Activated() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,16 +47,16 @@ type DataCloudflareMagicTransitConnectorsResultOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timezone() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,12 +72,12 @@ type DataCloudflareMagicTransitConnectorsResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,11 +87,11 @@ type DataCloudflareMagicTransitConnectorsResultOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareMagicTransitConnectorsResultOutputReference
 type jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) Activated() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) Activated() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"activated",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -271,7 +271,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) Ti
 }
 
 
-func NewDataCloudflareMagicTransitConnectorsResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareMagicTransitConnectorsResultOutputReference {
+func NewDataCloudflareMagicTransitConnectorsResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareMagicTransitConnectorsResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareMagicTransitConnectorsResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -280,7 +280,7 @@ func NewDataCloudflareMagicTransitConnectorsResultOutputReference(terraformResou
 	j := jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitConnectors.DataCloudflareMagicTransitConnectorsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareMagicTransitConnectors.DataCloudflareMagicTransitConnectorsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,11 +288,11 @@ func NewDataCloudflareMagicTransitConnectorsResultOutputReference(terraformResou
 	return &j
 }
 
-func NewDataCloudflareMagicTransitConnectorsResultOutputReference_Override(d DataCloudflareMagicTransitConnectorsResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareMagicTransitConnectorsResultOutputReference_Override(d DataCloudflareMagicTransitConnectorsResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareMagicTransitConnectors.DataCloudflareMagicTransitConnectorsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareMagicTransitConnectors.DataCloudflareMagicTransitConnectorsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,11 +382,11 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -510,8 +510,8 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -523,11 +523,11 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -539,7 +539,7 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

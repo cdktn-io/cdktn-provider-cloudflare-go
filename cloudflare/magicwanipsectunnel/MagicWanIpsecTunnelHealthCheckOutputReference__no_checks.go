@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validatePutTar
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelHealthCheckOutputReference) validateSetTyp
 	return nil
 }
 
-func validateNewMagicWanIpsecTunnelHealthCheckOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMagicWanIpsecTunnelHealthCheckOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

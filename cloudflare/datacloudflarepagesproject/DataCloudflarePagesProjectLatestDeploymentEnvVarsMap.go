@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarepagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflarePagesProjectLatestDeploymentEnvVarsMap interface {
-	cdktf.ComplexMap
+	cdktn.ComplexMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,16 +24,16 @@ type DataCloudflarePagesProjectLatestDeploymentEnvVarsMap interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	Get(key *string) DataCloudflarePagesProjectLatestDeploymentEnvVarsOutputReference
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(property *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -43,7 +43,7 @@ type DataCloudflarePagesProjectLatestDeploymentEnvVarsMap interface {
 
 // The jsii proxy struct for DataCloudflarePagesProjectLatestDeploymentEnvVarsMap
 type jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap struct {
-	internal.Type__cdktfComplexMap
+	internal.Type__cdktnComplexMap
 }
 
 func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) CreationStack() *[]*string {
@@ -76,8 +76,8 @@ func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -87,7 +87,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) Terrafo
 }
 
 
-func NewDataCloudflarePagesProjectLatestDeploymentEnvVarsMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentEnvVarsMap {
+func NewDataCloudflarePagesProjectLatestDeploymentEnvVarsMap(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectLatestDeploymentEnvVarsMap {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflarePagesProjectLatestDeploymentEnvVarsMapParameters(terraformResource, terraformAttribute); err != nil {
@@ -96,7 +96,7 @@ func NewDataCloudflarePagesProjectLatestDeploymentEnvVarsMap(terraformResource c
 	j := jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentEnvVarsMap",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentEnvVarsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -104,11 +104,11 @@ func NewDataCloudflarePagesProjectLatestDeploymentEnvVarsMap(terraformResource c
 	return &j
 }
 
-func NewDataCloudflarePagesProjectLatestDeploymentEnvVarsMap_Override(d DataCloudflarePagesProjectLatestDeploymentEnvVarsMap, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflarePagesProjectLatestDeploymentEnvVarsMap_Override(d DataCloudflarePagesProjectLatestDeploymentEnvVarsMap, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentEnvVarsMap",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectLatestDeploymentEnvVarsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -125,7 +125,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -165,11 +165,11 @@ func (d *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) Get(key
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) InterpolationForAttribute(property *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -181,7 +181,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflarePagesProjectLatestDeploymentEnvVarsMap) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

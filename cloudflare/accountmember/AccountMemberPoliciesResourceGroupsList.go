@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accountmember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accountmember/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountmember/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AccountMemberPoliciesResourceGroupsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type AccountMemberPoliciesResourceGroupsList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type AccountMemberPoliciesResourceGroupsList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) AccountMemberPoliciesResourceGroupsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type AccountMemberPoliciesResourceGroupsList interface {
 
 // The jsii proxy struct for AccountMemberPoliciesResourceGroupsList
 type jsiiProxy_AccountMemberPoliciesResourceGroupsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList) WrapsSet() *bool {
 }
 
 
-func NewAccountMemberPoliciesResourceGroupsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountMemberPoliciesResourceGroupsList {
+func NewAccountMemberPoliciesResourceGroupsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountMemberPoliciesResourceGroupsList {
 	_init_.Initialize()
 
 	if err := validateNewAccountMemberPoliciesResourceGroupsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewAccountMemberPoliciesResourceGroupsList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AccountMemberPoliciesResourceGroupsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesResourceGroupsList",
+		"@cdktn/provider-cloudflare.accountMember.AccountMemberPoliciesResourceGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewAccountMemberPoliciesResourceGroupsList(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewAccountMemberPoliciesResourceGroupsList_Override(a AccountMemberPoliciesResourceGroupsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewAccountMemberPoliciesResourceGroupsList_Override(a AccountMemberPoliciesResourceGroupsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accountMember.AccountMemberPoliciesResourceGroupsList",
+		"@cdktn/provider-cloudflare.accountMember.AccountMemberPoliciesResourceGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_AccountMemberPoliciesResourceGroupsList)SetWrapsSet(val *bool
 	)
 }
 
-func (a *jsiiProxy_AccountMemberPoliciesResourceGroupsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (a *jsiiProxy_AccountMemberPoliciesResourceGroupsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := a.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		a,
@@ -231,7 +231,7 @@ func (a *jsiiProxy_AccountMemberPoliciesResourceGroupsList) Get(index *float64) 
 	return returns
 }
 
-func (a *jsiiProxy_AccountMemberPoliciesResourceGroupsList) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccountMemberPoliciesResourceGroupsList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

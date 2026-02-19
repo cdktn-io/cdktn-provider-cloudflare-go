@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accounttoken
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accountToken.AccountToken",
+		"@cdktn/provider-cloudflare.accountToken.AccountToken",
 		reflect.TypeOf((*AccountToken)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -83,16 +83,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountToken{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenCondition",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenCondition",
 		reflect.TypeOf((*AccountTokenCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenConditionOutputReference",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenConditionOutputReference",
 		reflect.TypeOf((*AccountTokenConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,16 +123,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountTokenConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIp",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenConditionRequestIp",
 		reflect.TypeOf((*AccountTokenConditionRequestIp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenConditionRequestIpOutputReference",
 		reflect.TypeOf((*AccountTokenConditionRequestIpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -165,20 +165,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountTokenConditionRequestIpOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenConfig",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenConfig",
 		reflect.TypeOf((*AccountTokenConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenPolicies",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenPolicies",
 		reflect.TypeOf((*AccountTokenPolicies)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesList",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenPoliciesList",
 		reflect.TypeOf((*AccountTokenPoliciesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -195,12 +195,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountTokenPoliciesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenPoliciesOutputReference",
 		reflect.TypeOf((*AccountTokenPoliciesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -234,16 +234,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountTokenPoliciesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroups",
 		reflect.TypeOf((*AccountTokenPoliciesPermissionGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsList",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsList",
 		reflect.TypeOf((*AccountTokenPoliciesPermissionGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -260,12 +260,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountTokenPoliciesPermissionGroupsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference",
+		"@cdktn/provider-cloudflare.accountToken.AccountTokenPoliciesPermissionGroupsOutputReference",
 		reflect.TypeOf((*AccountTokenPoliciesPermissionGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,7 +294,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

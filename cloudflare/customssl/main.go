@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customssl
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
+		"@cdktn/provider-cloudflare.customSsl.CustomSsl",
 		reflect.TypeOf((*CustomSsl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -87,20 +87,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomSsl{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslConfig",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslConfig",
 		reflect.TypeOf((*CustomSslConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslGeoRestrictions",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslGeoRestrictions",
 		reflect.TypeOf((*CustomSslGeoRestrictions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslGeoRestrictionsOutputReference",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslGeoRestrictionsOutputReference",
 		reflect.TypeOf((*CustomSslGeoRestrictionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,16 +130,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomSslGeoRestrictionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServer",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslKeylessServer",
 		reflect.TypeOf((*CustomSslKeylessServer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServerOutputReference",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslKeylessServerOutputReference",
 		reflect.TypeOf((*CustomSslKeylessServerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,16 +176,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomSslKeylessServerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServerTunnel",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslKeylessServerTunnel",
 		reflect.TypeOf((*CustomSslKeylessServerTunnel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServerTunnelOutputReference",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslKeylessServerTunnelOutputReference",
 		reflect.TypeOf((*CustomSslKeylessServerTunnelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -214,7 +214,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomSslKeylessServerTunnelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

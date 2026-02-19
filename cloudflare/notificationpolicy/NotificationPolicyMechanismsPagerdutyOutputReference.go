@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package notificationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/notificationpolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/notificationpolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type NotificationPolicyMechanismsPagerdutyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type NotificationPolicyMechanismsPagerdutyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type NotificationPolicyMechanismsPagerdutyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type NotificationPolicyMechanismsPagerdutyOutputReference interface {
 
 // The jsii proxy struct for NotificationPolicyMechanismsPagerdutyOutputReference
 type jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) Terrafo
 }
 
 
-func NewNotificationPolicyMechanismsPagerdutyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationPolicyMechanismsPagerdutyOutputReference {
+func NewNotificationPolicyMechanismsPagerdutyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationPolicyMechanismsPagerdutyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNotificationPolicyMechanismsPagerdutyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -183,7 +183,7 @@ func NewNotificationPolicyMechanismsPagerdutyOutputReference(terraformResource c
 	j := jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyOutputReference",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewNotificationPolicyMechanismsPagerdutyOutputReference(terraformResource c
 	return &j
 }
 
-func NewNotificationPolicyMechanismsPagerdutyOutputReference_Override(n NotificationPolicyMechanismsPagerdutyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewNotificationPolicyMechanismsPagerdutyOutputReference_Override(n NotificationPolicyMechanismsPagerdutyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyOutputReference",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyMechanismsPagerdutyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) GetAnyM
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -424,8 +424,8 @@ func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) GetStri
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -437,11 +437,11 @@ func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) Interpo
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -461,7 +461,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) ResetId
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

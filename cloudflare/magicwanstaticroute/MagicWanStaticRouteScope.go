@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magicwanstaticroute
@@ -7,11 +7,11 @@ package magicwanstaticroute
 type MagicWanStaticRouteScope struct {
 	// List of colo names for the ECMP scope.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
 	ColoNames *[]*string `field:"optional" json:"coloNames" yaml:"coloNames"`
 	// List of colo regions for the ECMP scope.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
 	ColoRegions *[]*string `field:"optional" json:"coloRegions" yaml:"coloRegions"`
 }
 

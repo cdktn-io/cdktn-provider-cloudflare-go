@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ruleset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ruleset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type RulesetRulesActionParametersResponseFieldsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type RulesetRulesActionParametersResponseFieldsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type RulesetRulesActionParametersResponseFieldsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPreserveDuplicates()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type RulesetRulesActionParametersResponseFieldsOutputReference interface {
 
 // The jsii proxy struct for RulesetRulesActionParametersResponseFieldsOutputReference
 type jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) Te
 }
 
 
-func NewRulesetRulesActionParametersResponseFieldsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersResponseFieldsOutputReference {
+func NewRulesetRulesActionParametersResponseFieldsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersResponseFieldsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRulesetRulesActionParametersResponseFieldsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -206,7 +206,7 @@ func NewRulesetRulesActionParametersResponseFieldsOutputReference(terraformResou
 	j := jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewRulesetRulesActionParametersResponseFieldsOutputReference(terraformResou
 	return &j
 }
 
-func NewRulesetRulesActionParametersResponseFieldsOutputReference_Override(r RulesetRulesActionParametersResponseFieldsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersResponseFieldsOutputReference_Override(r RulesetRulesActionParametersResponseFieldsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
@@ -290,7 +290,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) Ge
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -458,8 +458,8 @@ func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) Ge
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -471,11 +471,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) In
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -495,7 +495,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) Re
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

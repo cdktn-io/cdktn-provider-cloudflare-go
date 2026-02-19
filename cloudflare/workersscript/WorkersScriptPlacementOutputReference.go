@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersscript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersscript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WorkersScriptPlacementOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,27 +30,31 @@ type WorkersScriptPlacementOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Host() *string
+	Hostname() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LastAnalyzedAt() *string
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	Region() *string
 	Status() *string
+	Target() WorkersScriptPlacementTargetList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,13 +70,13 @@ type WorkersScriptPlacementOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +86,7 @@ type WorkersScriptPlacementOutputReference interface {
 
 // The jsii proxy struct for WorkersScriptPlacementOutputReference
 type jsiiProxy_WorkersScriptPlacementOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkersScriptPlacementOutputReference) ComplexObjectIndex() interface{} {
@@ -120,6 +124,26 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Host() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"host",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
 		&returns,
 	)
 	return returns
@@ -165,11 +189,31 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) ModeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Target() WorkersScriptPlacementTargetList {
+	var returns WorkersScriptPlacementTargetList
+	_jsii_.Get(
+		j,
+		"target",
 		&returns,
 	)
 	return returns
@@ -185,8 +229,8 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptPlacementOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +240,7 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) TerraformResource() cd
 }
 
 
-func NewWorkersScriptPlacementOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkersScriptPlacementOutputReference {
+func NewWorkersScriptPlacementOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkersScriptPlacementOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkersScriptPlacementOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -205,7 +249,7 @@ func NewWorkersScriptPlacementOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_WorkersScriptPlacementOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,11 +257,11 @@ func NewWorkersScriptPlacementOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewWorkersScriptPlacementOutputReference_Override(w WorkersScriptPlacementOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkersScriptPlacementOutputReference_Override(w WorkersScriptPlacementOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -278,7 +322,7 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptPlacementOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -318,11 +362,11 @@ func (w *jsiiProxy_WorkersScriptPlacementOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptPlacementOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersScriptPlacementOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -446,8 +490,8 @@ func (w *jsiiProxy_WorkersScriptPlacementOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptPlacementOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkersScriptPlacementOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -459,11 +503,11 @@ func (w *jsiiProxy_WorkersScriptPlacementOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptPlacementOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersScriptPlacementOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -483,7 +527,7 @@ func (w *jsiiProxy_WorkersScriptPlacementOutputReference) ResetMode() {
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptPlacementOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersScriptPlacementOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

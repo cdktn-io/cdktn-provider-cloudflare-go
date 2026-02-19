@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/customhostname/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customhostname/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CustomHostnameSslCustomCertBundleList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type CustomHostnameSslCustomCertBundleList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type CustomHostnameSslCustomCertBundleList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) CustomHostnameSslCustomCertBundleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type CustomHostnameSslCustomCertBundleList interface {
 
 // The jsii proxy struct for CustomHostnameSslCustomCertBundleList
 type jsiiProxy_CustomHostnameSslCustomCertBundleList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList) WrapsSet() *bool {
 }
 
 
-func NewCustomHostnameSslCustomCertBundleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomHostnameSslCustomCertBundleList {
+func NewCustomHostnameSslCustomCertBundleList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomHostnameSslCustomCertBundleList {
 	_init_.Initialize()
 
 	if err := validateNewCustomHostnameSslCustomCertBundleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewCustomHostnameSslCustomCertBundleList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_CustomHostnameSslCustomCertBundleList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleList",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewCustomHostnameSslCustomCertBundleList(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewCustomHostnameSslCustomCertBundleList_Override(c CustomHostnameSslCustomCertBundleList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewCustomHostnameSslCustomCertBundleList_Override(c CustomHostnameSslCustomCertBundleList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleList",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_CustomHostnameSslCustomCertBundleList)SetWrapsSet(val *bool) 
 	)
 }
 
-func (c *jsiiProxy_CustomHostnameSslCustomCertBundleList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_CustomHostnameSslCustomCertBundleList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -231,7 +231,7 @@ func (c *jsiiProxy_CustomHostnameSslCustomCertBundleList) Get(index *float64) Cu
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostnameSslCustomCertBundleList) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CustomHostnameSslCustomCertBundleList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

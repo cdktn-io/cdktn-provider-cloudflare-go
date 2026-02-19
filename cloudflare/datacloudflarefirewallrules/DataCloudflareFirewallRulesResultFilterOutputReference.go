@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarefirewallrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarefirewallrules/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarefirewallrules/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareFirewallRulesResultFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,7 +28,7 @@ type DataCloudflareFirewallRulesResultFilterOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Deleted() cdktf.IResolvable
+	Deleted() cdktn.IResolvable
 	Description() *string
 	Expression() *string
 	// Experimental.
@@ -36,22 +36,22 @@ type DataCloudflareFirewallRulesResultFilterOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareFirewallRulesResultFilter
 	SetInternalValue(val *DataCloudflareFirewallRulesResultFilter)
-	Paused() cdktf.IResolvable
+	Paused() cdktn.IResolvable
 	Ref() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DataCloudflareFirewallRulesResultFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DataCloudflareFirewallRulesResultFilterOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareFirewallRulesResultFilterOutputReference
 type jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -115,8 +115,8 @@ func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Creat
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Deleted() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Deleted() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"deleted",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Paused() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Paused() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"paused",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Terra
 }
 
 
-func NewDataCloudflareFirewallRulesResultFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareFirewallRulesResultFilterOutputReference {
+func NewDataCloudflareFirewallRulesResultFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareFirewallRulesResultFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareFirewallRulesResultFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewDataCloudflareFirewallRulesResultFilterOutputReference(terraformResource
 	j := jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesResultFilterOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesResultFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewDataCloudflareFirewallRulesResultFilterOutputReference(terraformResource
 	return &j
 }
 
-func NewDataCloudflareFirewallRulesResultFilterOutputReference_Override(d DataCloudflareFirewallRulesResultFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareFirewallRulesResultFilterOutputReference_Override(d DataCloudflareFirewallRulesResultFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesResultFilterOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesResultFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) GetAn
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -455,8 +455,8 @@ func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) GetSt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -468,11 +468,11 @@ func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -484,7 +484,7 @@ func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareFirewallRulesResultFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

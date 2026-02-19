@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustdeviceposturerules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustdeviceposturerules/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustdeviceposturerules/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ActiveThreats() *float64
 	CertificateId() *string
 	CheckDisks() *[]*string
-	CheckPrivateKey() cdktf.IResolvable
+	CheckPrivateKey() cdktn.IResolvable
 	Cn() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -38,16 +38,16 @@ type DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference interfa
 	CreationStack() *[]*string
 	Domain() *string
 	EidLastSeen() *string
-	Enabled() cdktf.IResolvable
-	Exists() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
+	Exists() cdktn.IResolvable
 	ExtendedKeyUsage() *[]*string
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	Infected() cdktf.IResolvable
+	Infected() cdktn.IResolvable
 	InternalValue() *DataCloudflareZeroTrustDevicePostureRulesResultInput
 	SetInternalValue(val *DataCloudflareZeroTrustDevicePostureRulesResultInput)
-	IsActive() cdktf.IResolvable
+	IsActive() cdktn.IResolvable
 	IssueCount() *string
 	LastSeen() *string
 	Locations() DataCloudflareZeroTrustDevicePostureRulesResultInputLocationsOutputReference
@@ -61,7 +61,7 @@ type DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference interfa
 	OsVersionExtra() *string
 	Overall() *string
 	Path() *string
-	RequireAll() cdktf.IResolvable
+	RequireAll() cdktn.IResolvable
 	RiskLevel() *string
 	Score() *float64
 	ScoreOperator() *string
@@ -74,9 +74,9 @@ type DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Thumbprint() *string
 	TotalScore() *float64
 	UpdateWindowDays() *float64
@@ -87,7 +87,7 @@ type DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference interfa
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -103,12 +103,12 @@ type DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -118,7 +118,7 @@ type DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference interfa
 
 // The jsii proxy struct for DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference
 type jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) ActiveThreats() *float64 {
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) CheckPrivateKey() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) CheckPrivateKey() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"checkPrivateKey",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) Exists() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) Exists() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"exists",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) Infected() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) Infected() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"infected",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) IsActive() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) IsActive() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isActive",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) RequireAll() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) RequireAll() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"requireAll",
@@ -551,8 +551,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -612,7 +612,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 }
 
 
-func NewDataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference {
+func NewDataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustDevicePostureRulesResultInputOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -621,7 +621,7 @@ func NewDataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference(terr
 	j := jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRules.DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRules.DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -629,11 +629,11 @@ func NewDataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference(terr
 	return &j
 }
 
-func NewDataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference_Override(d DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference_Override(d DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRules.DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureRules.DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -683,7 +683,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,11 +723,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -851,8 +851,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -864,11 +864,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -880,7 +880,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

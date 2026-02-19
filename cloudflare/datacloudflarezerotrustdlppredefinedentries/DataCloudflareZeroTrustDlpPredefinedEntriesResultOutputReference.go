@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustdlppredefinedentries
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustdlppredefinedentries/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustdlppredefinedentries/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference interface {
-	cdktf.ComplexObject
-	CaseSensitive() cdktf.IResolvable
+	cdktn.ComplexObject
+	CaseSensitive() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,7 +31,7 @@ type DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -40,17 +40,18 @@ type DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference interface 
 	Name() *string
 	Pattern() DataCloudflareZeroTrustDlpPredefinedEntriesResultPatternOutputReference
 	ProfileId() *string
-	Secret() cdktf.IResolvable
+	Secret() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	UpdatedAt() *string
+	UploadStatus() *string
 	Variant() DataCloudflareZeroTrustDlpPredefinedEntriesResultVariantOutputReference
 	WordList() *string
 	// Experimental.
@@ -58,7 +59,7 @@ type DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,12 +75,12 @@ type DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,11 +90,11 @@ type DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference interface 
 
 // The jsii proxy struct for DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference
 type jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) CaseSensitive() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) CaseSensitive() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"caseSensitive",
@@ -152,8 +153,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -222,8 +223,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) Secret() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) Secret() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"secret",
@@ -242,8 +243,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -272,6 +273,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) UploadStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uploadStatus",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) Variant() DataCloudflareZeroTrustDlpPredefinedEntriesResultVariantOutputReference {
 	var returns DataCloudflareZeroTrustDlpPredefinedEntriesResultVariantOutputReference
 	_jsii_.Get(
@@ -293,7 +304,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 }
 
 
-func NewDataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference {
+func NewDataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -302,7 +313,7 @@ func NewDataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference(terrafo
 	j := jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -310,11 +321,11 @@ func NewDataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference(terrafo
 	return &j
 }
 
-func NewDataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference_Override(d DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference_Override(d DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -364,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,11 +415,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -532,8 +543,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -545,11 +556,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -561,7 +572,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package listitem
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.listItem.ListItem",
+		"@cdktn/provider-cloudflare.listItem.ListItem",
 		reflect.TypeOf((*ListItem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -83,20 +83,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ListItem{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.listItem.ListItemConfig",
+		"@cdktn/provider-cloudflare.listItem.ListItemConfig",
 		reflect.TypeOf((*ListItemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.listItem.ListItemHostname",
+		"@cdktn/provider-cloudflare.listItem.ListItemHostname",
 		reflect.TypeOf((*ListItemHostname)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.listItem.ListItemHostnameOutputReference",
+		"@cdktn/provider-cloudflare.listItem.ListItemHostnameOutputReference",
 		reflect.TypeOf((*ListItemHostnameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,16 +128,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ListItemHostnameOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.listItem.ListItemRedirect",
+		"@cdktn/provider-cloudflare.listItem.ListItemRedirect",
 		reflect.TypeOf((*ListItemRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference",
+		"@cdktn/provider-cloudflare.listItem.ListItemRedirectOutputReference",
 		reflect.TypeOf((*ListItemRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,7 +183,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ListItemRedirectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

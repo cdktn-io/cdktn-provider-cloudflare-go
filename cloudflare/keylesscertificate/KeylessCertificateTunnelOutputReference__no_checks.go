@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (k *jsiiProxy_KeylessCertificateTunnelOutputReference) validateInterpolatio
 	return nil
 }
 
-func (k *jsiiProxy_KeylessCertificateTunnelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeylessCertificateTunnelOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (j *jsiiProxy_KeylessCertificateTunnelOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_KeylessCertificateTunnelOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KeylessCertificateTunnelOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_KeylessCertificateTunnelOutputReference) validateSetVnetIdPar
 	return nil
 }
 
-func validateNewKeylessCertificateTunnelOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKeylessCertificateTunnelOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

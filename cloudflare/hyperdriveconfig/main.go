@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package hyperdriveconfig
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
 		reflect.TypeOf((*HyperdriveConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -79,16 +79,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_HyperdriveConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching",
 		reflect.TypeOf((*HyperdriveConfigCaching)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference",
 		reflect.TypeOf((*HyperdriveConfigCachingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,20 +124,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_HyperdriveConfigCachingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig",
 		reflect.TypeOf((*HyperdriveConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls",
 		reflect.TypeOf((*HyperdriveConfigMtls)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtlsOutputReference",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtlsOutputReference",
 		reflect.TypeOf((*HyperdriveConfigMtlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateId", GoGetter: "CaCertificateId"},
@@ -173,16 +173,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_HyperdriveConfigMtlsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin",
 		reflect.TypeOf((*HyperdriveConfigOrigin)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
 		reflect.TypeOf((*HyperdriveConfigOriginOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessClientId", GoGetter: "AccessClientId"},
@@ -228,7 +228,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_HyperdriveConfigOriginOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

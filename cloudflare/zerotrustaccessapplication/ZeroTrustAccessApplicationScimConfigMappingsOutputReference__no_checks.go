@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -95,7 +95,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) 
 	return nil
 }
 
-func validateNewZeroTrustAccessApplicationScimConfigMappingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessApplicationScimConfigMappingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamwatermark
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkA",
+		"@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA",
 		reflect.TypeOf((*StreamWatermarkA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -86,12 +86,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamWatermarkA{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamWatermark.StreamWatermarkAConfig",
+		"@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig",
 		reflect.TypeOf((*StreamWatermarkAConfig)(nil)).Elem(),
 	)
 }

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customssl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/customssl/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customssl/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CustomSslKeylessServerOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,7 +29,7 @@ type CustomSslKeylessServerOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	Host() *string
@@ -46,16 +46,16 @@ type CustomSslKeylessServerOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tunnel() CustomSslKeylessServerTunnelOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,12 +71,12 @@ type CustomSslKeylessServerOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type CustomSslKeylessServerOutputReference interface {
 
 // The jsii proxy struct for CustomSslKeylessServerOutputReference
 type jsiiProxy_CustomSslKeylessServerOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CustomSslKeylessServerOutputReference) ComplexObjectIndex() interface{} {
@@ -129,8 +129,8 @@ func (j *jsiiProxy_CustomSslKeylessServerOutputReference) CreationStack() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_CustomSslKeylessServerOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_CustomSslKeylessServerOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_CustomSslKeylessServerOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_CustomSslKeylessServerOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CustomSslKeylessServerOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -260,7 +260,7 @@ func (j *jsiiProxy_CustomSslKeylessServerOutputReference) Tunnel() CustomSslKeyl
 }
 
 
-func NewCustomSslKeylessServerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CustomSslKeylessServerOutputReference {
+func NewCustomSslKeylessServerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CustomSslKeylessServerOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCustomSslKeylessServerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -269,7 +269,7 @@ func NewCustomSslKeylessServerOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_CustomSslKeylessServerOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServerOutputReference",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslKeylessServerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -277,11 +277,11 @@ func NewCustomSslKeylessServerOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewCustomSslKeylessServerOutputReference_Override(c CustomSslKeylessServerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCustomSslKeylessServerOutputReference_Override(c CustomSslKeylessServerOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslKeylessServerOutputReference",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslKeylessServerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -331,7 +331,7 @@ func (j *jsiiProxy_CustomSslKeylessServerOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_CustomSslKeylessServerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomSslKeylessServerOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,11 +371,11 @@ func (c *jsiiProxy_CustomSslKeylessServerOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (c *jsiiProxy_CustomSslKeylessServerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomSslKeylessServerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -499,8 +499,8 @@ func (c *jsiiProxy_CustomSslKeylessServerOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (c *jsiiProxy_CustomSslKeylessServerOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CustomSslKeylessServerOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -512,11 +512,11 @@ func (c *jsiiProxy_CustomSslKeylessServerOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (c *jsiiProxy_CustomSslKeylessServerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomSslKeylessServerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -528,7 +528,7 @@ func (c *jsiiProxy_CustomSslKeylessServerOutputReference) InterpolationForAttrib
 	return returns
 }
 
-func (c *jsiiProxy_CustomSslKeylessServerOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CustomSslKeylessServerOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

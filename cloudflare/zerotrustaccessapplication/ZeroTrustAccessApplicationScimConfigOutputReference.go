@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessapplication/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustAccessApplicationScimConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference
 	AuthenticationInput() interface{}
 	// the index of the complex object in a list.
@@ -53,15 +53,15 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -77,9 +77,9 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthentication(value *ZeroTrustAccessApplicationScimConfigAuthentication)
 	PutMappings(value interface{})
 	ResetAuthentication()
@@ -88,7 +88,7 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	ResetMappings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,7 +98,7 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustAccessApplicationScimConfigOutputReference
 type jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference {
@@ -281,8 +281,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Terrafor
 }
 
 
-func NewZeroTrustAccessApplicationScimConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationScimConfigOutputReference {
+func NewZeroTrustAccessApplicationScimConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationScimConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustAccessApplicationScimConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -301,7 +301,7 @@ func NewZeroTrustAccessApplicationScimConfigOutputReference(terraformResource cd
 	j := jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,11 +309,11 @@ func NewZeroTrustAccessApplicationScimConfigOutputReference(terraformResource cd
 	return &j
 }
 
-func NewZeroTrustAccessApplicationScimConfigOutputReference_Override(z ZeroTrustAccessApplicationScimConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustAccessApplicationScimConfigOutputReference_Override(z ZeroTrustAccessApplicationScimConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -407,7 +407,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,11 +447,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetAnyMa
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -575,8 +575,8 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) GetStrin
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -588,11 +588,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Interpol
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -658,7 +658,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) ResetMap
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

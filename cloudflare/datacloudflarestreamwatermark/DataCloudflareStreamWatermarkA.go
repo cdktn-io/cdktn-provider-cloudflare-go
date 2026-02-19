@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarestreamwatermark
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarestreamwatermark/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamwatermark/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream_watermark cloudflare_stream_watermark}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_watermark cloudflare_stream_watermark}.
 type DataCloudflareStreamWatermarkA interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -33,9 +33,9 @@ type DataCloudflareStreamWatermarkA interface {
 	SetDependsOn(val *[]*string)
 	DownloadedFrom() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -45,9 +45,9 @@ type DataCloudflareStreamWatermarkA interface {
 	SetIdentifier(val *string)
 	IdentifierInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -55,15 +55,15 @@ type DataCloudflareStreamWatermarkA interface {
 	Padding() *float64
 	Position() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Scale() *float64
 	Size() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type DataCloudflareStreamWatermarkA interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,7 +91,7 @@ type DataCloudflareStreamWatermarkA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -114,7 +114,7 @@ type DataCloudflareStreamWatermarkA interface {
 
 // The jsii proxy struct for DataCloudflareStreamWatermarkA
 type jsiiProxy_DataCloudflareStreamWatermarkA struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareStreamWatermarkA) AccountId() *string {
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWatermarkA) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareStreamWatermarkA) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA) DownloadedFrom() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWatermarkA) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareStreamWatermarkA) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA) IdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWatermarkA) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareStreamWatermarkA) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA) Position() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWatermarkA) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareStreamWatermarkA) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA) Size() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWatermarkA) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareStreamWatermarkA) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA) Width() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream_watermark cloudflare_stream_watermark} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_watermark cloudflare_stream_watermark} Data Source.
 func NewDataCloudflareStreamWatermarkA(scope constructs.Construct, id *string, config *DataCloudflareStreamWatermarkAConfig) DataCloudflareStreamWatermarkA {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDataCloudflareStreamWatermarkA(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataCloudflareStreamWatermarkA{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
+		"@cdktn/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,12 +426,12 @@ func NewDataCloudflareStreamWatermarkA(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream_watermark cloudflare_stream_watermark} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_watermark cloudflare_stream_watermark} Data Source.
 func NewDataCloudflareStreamWatermarkA_Override(d DataCloudflareStreamWatermarkA, scope constructs.Construct, id *string, config *DataCloudflareStreamWatermarkAConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
+		"@cdktn/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -467,7 +467,7 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -486,7 +486,7 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +497,7 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -505,17 +505,17 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA)SetProvider(val cdktf.Terrafor
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareStreamWatermarkA resource upon running "cdktf plan <stack-name>".
-func DataCloudflareStreamWatermarkA_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareStreamWatermarkA resource upon running "cdktn plan <stack-name>".
+func DataCloudflareStreamWatermarkA_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareStreamWatermarkA_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
+		"@cdktn/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -550,7 +550,7 @@ func DataCloudflareStreamWatermarkA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
+		"@cdktn/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataCloudflareStreamWatermarkA_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
+		"@cdktn/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataCloudflareStreamWatermarkA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
+		"@cdktn/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DataCloudflareStreamWatermarkA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
+		"@cdktn/provider-cloudflare.dataCloudflareStreamWatermark.DataCloudflareStreamWatermarkA",
 		"tfResourceType",
 		&returns,
 	)
@@ -635,11 +635,11 @@ func (d *jsiiProxy_DataCloudflareStreamWatermarkA) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamWatermarkA) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareStreamWatermarkA) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -763,11 +763,11 @@ func (d *jsiiProxy_DataCloudflareStreamWatermarkA) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareStreamWatermarkA) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareStreamWatermarkA) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

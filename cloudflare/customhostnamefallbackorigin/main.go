@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customhostnamefallbackorigin
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
+		"@cdktn/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
 		reflect.TypeOf((*CustomHostnameFallbackOrigin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -67,12 +67,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameFallbackOrigin{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOriginConfig",
+		"@cdktn/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOriginConfig",
 		reflect.TypeOf((*CustomHostnameFallbackOriginConfig)(nil)).Elem(),
 	)
 }

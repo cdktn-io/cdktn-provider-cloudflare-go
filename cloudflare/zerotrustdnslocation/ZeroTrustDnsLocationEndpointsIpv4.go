@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdnslocation
@@ -7,7 +7,7 @@ package zerotrustdnslocation
 type ZeroTrustDnsLocationEndpointsIpv4 struct {
 	// Indicate whether the IPv4 endpoint is enabled for this location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

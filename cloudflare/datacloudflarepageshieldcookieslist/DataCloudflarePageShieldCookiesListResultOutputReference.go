@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepageshieldcookieslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldcookieslist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarepageshieldcookieslist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflarePageShieldCookiesListResultOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,7 +34,7 @@ type DataCloudflarePageShieldCookiesListResultOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Host() *string
-	HttpOnlyAttribute() cdktf.IResolvable
+	HttpOnlyAttribute() cdktn.IResolvable
 	Id() *string
 	InternalValue() *DataCloudflarePageShieldCookiesListResult
 	SetInternalValue(val *DataCloudflarePageShieldCookiesListResult)
@@ -44,22 +44,22 @@ type DataCloudflarePageShieldCookiesListResultOutputReference interface {
 	PageUrls() *[]*string
 	PathAttribute() *string
 	SameSiteAttribute() *string
-	SecureAttribute() cdktf.IResolvable
+	SecureAttribute() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,12 +75,12 @@ type DataCloudflarePageShieldCookiesListResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +90,7 @@ type DataCloudflarePageShieldCookiesListResultOutputReference interface {
 
 // The jsii proxy struct for DataCloudflarePageShieldCookiesListResultOutputReference
 type jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) ComplexObjectIndex() interface{} {
@@ -173,8 +173,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Hos
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) HttpOnlyAttribute() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) HttpOnlyAttribute() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"httpOnlyAttribute",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Sam
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) SecureAttribute() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) SecureAttribute() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"secureAttribute",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Typ
 }
 
 
-func NewDataCloudflarePageShieldCookiesListResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflarePageShieldCookiesListResultOutputReference {
+func NewDataCloudflarePageShieldCookiesListResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflarePageShieldCookiesListResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflarePageShieldCookiesListResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -313,7 +313,7 @@ func NewDataCloudflarePageShieldCookiesListResultOutputReference(terraformResour
 	j := jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -321,11 +321,11 @@ func NewDataCloudflarePageShieldCookiesListResultOutputReference(terraformResour
 	return &j
 }
 
-func NewDataCloudflarePageShieldCookiesListResultOutputReference_Override(d DataCloudflarePageShieldCookiesListResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflarePageShieldCookiesListResultOutputReference_Override(d DataCloudflarePageShieldCookiesListResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,11 +415,11 @@ func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -543,8 +543,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -556,11 +556,11 @@ func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -572,7 +572,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflarePageShieldCookiesListResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

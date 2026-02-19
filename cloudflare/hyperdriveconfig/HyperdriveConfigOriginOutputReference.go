@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package hyperdriveconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/hyperdriveconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type HyperdriveConfigOriginOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessClientId() *string
 	SetAccessClientId(val *string)
 	AccessClientIdInput() *string
@@ -58,9 +58,9 @@ type HyperdriveConfigOriginOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	User() *string
 	SetUser(val *string)
 	UserInput() *string
@@ -69,7 +69,7 @@ type HyperdriveConfigOriginOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,15 +85,15 @@ type HyperdriveConfigOriginOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccessClientId()
 	ResetAccessClientSecret()
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,7 +103,7 @@ type HyperdriveConfigOriginOutputReference interface {
 
 // The jsii proxy struct for HyperdriveConfigOriginOutputReference
 type jsiiProxy_HyperdriveConfigOriginOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) AccessClientId() *string {
@@ -306,8 +306,8 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -337,7 +337,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) UserInput() *string {
 }
 
 
-func NewHyperdriveConfigOriginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HyperdriveConfigOriginOutputReference {
+func NewHyperdriveConfigOriginOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) HyperdriveConfigOriginOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHyperdriveConfigOriginOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -346,7 +346,7 @@ func NewHyperdriveConfigOriginOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_HyperdriveConfigOriginOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -354,11 +354,11 @@ func NewHyperdriveConfigOriginOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewHyperdriveConfigOriginOutputReference_Override(h HyperdriveConfigOriginOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewHyperdriveConfigOriginOutputReference_Override(h HyperdriveConfigOriginOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)
@@ -485,7 +485,7 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,11 +536,11 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -664,8 +664,8 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -677,11 +677,11 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -717,7 +717,7 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ResetPort() {
 	)
 }
 
-func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

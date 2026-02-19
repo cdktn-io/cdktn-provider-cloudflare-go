@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateInterpolationForAt
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateResolveParameters(context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,11 +27,11 @@ func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewZeroTrustRiskBehaviorBehaviorsMapParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewZeroTrustRiskBehaviorBehaviorsMapParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

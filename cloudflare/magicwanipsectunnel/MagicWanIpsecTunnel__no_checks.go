@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -75,6 +75,14 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanIpsecTunnel) validatePutBgpParameters(value *MagicWanIpsecTunnelBgp) error {
+	return nil
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnel) validatePutCustomRemoteIdentitiesParameters(value *MagicWanIpsecTunnelCustomRemoteIdentities) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicWanIpsecTunnel) validatePutHealthCheckParameters(value *MagicWanIpsecTunnelHealthCheck) error {
 	return nil
 }
@@ -96,6 +104,10 @@ func validateMagicWanIpsecTunnel_IsTerraformResourceParameters(x interface{}) er
 }
 
 func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetAutomaticReturnRoutingParameters(val interface{}) error {
 	return nil
 }
 
@@ -127,7 +139,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetInterfaceAddress6Parameters(v
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

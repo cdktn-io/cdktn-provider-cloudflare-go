@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustgatewaycategorieslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewaycategorieslist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustgatewaycategorieslist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference interface {
-	cdktf.ComplexObject
-	Beta() cdktf.IResolvable
+	cdktn.ComplexObject
+	Beta() cdktn.IResolvable
 	Class() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -42,15 +42,15 @@ type DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,11 +81,11 @@ type DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputRefere
 
 // The jsii proxy struct for DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference
 type jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) Beta() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) Beta() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"beta",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategori
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategori
 }
 
 
-func NewDataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference {
+func NewDataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -214,7 +214,7 @@ func NewDataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputRef
 	j := jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayCategoriesList.DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayCategoriesList.DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewDataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputRef
 	return &j
 }
 
-func NewDataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference_Override(d DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference_Override(d DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayCategoriesList.DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayCategoriesList.DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategori
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategori
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -444,8 +444,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategori
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -457,11 +457,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategori
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -473,7 +473,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategori
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayCategoriesListResultSubcategoriesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

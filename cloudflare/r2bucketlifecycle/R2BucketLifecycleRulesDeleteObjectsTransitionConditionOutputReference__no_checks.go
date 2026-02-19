@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return nil
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return nil
 }
 
-func validateNewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

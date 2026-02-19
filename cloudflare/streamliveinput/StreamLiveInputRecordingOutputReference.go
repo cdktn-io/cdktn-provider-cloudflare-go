@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamliveinput
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/streamliveinput/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamliveinput/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type StreamLiveInputRecordingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedOrigins() *[]*string
 	SetAllowedOrigins(val *[]*string)
 	AllowedOriginsInput() *[]*string
@@ -49,9 +49,9 @@ type StreamLiveInputRecordingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
@@ -60,7 +60,7 @@ type StreamLiveInputRecordingOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type StreamLiveInputRecordingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedOrigins()
 	ResetHideLiveViewerCount()
 	ResetMode()
@@ -86,7 +86,7 @@ type StreamLiveInputRecordingOutputReference interface {
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type StreamLiveInputRecordingOutputReference interface {
 
 // The jsii proxy struct for StreamLiveInputRecordingOutputReference
 type jsiiProxy_StreamLiveInputRecordingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) AllowedOrigins() *[]*string {
@@ -239,8 +239,8 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference) TimeoutSecondsInput(
 }
 
 
-func NewStreamLiveInputRecordingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StreamLiveInputRecordingOutputReference {
+func NewStreamLiveInputRecordingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StreamLiveInputRecordingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStreamLiveInputRecordingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -279,7 +279,7 @@ func NewStreamLiveInputRecordingOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_StreamLiveInputRecordingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewStreamLiveInputRecordingOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewStreamLiveInputRecordingOutputReference_Override(s StreamLiveInputRecordingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStreamLiveInputRecordingOutputReference_Override(s StreamLiveInputRecordingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -385,7 +385,7 @@ func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StreamLiveInputRecordingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,11 +436,11 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -564,8 +564,8 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -577,11 +577,11 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -633,7 +633,7 @@ func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) ResetTimeoutSeconds(
 	)
 }
 
-func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StreamLiveInputRecordingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

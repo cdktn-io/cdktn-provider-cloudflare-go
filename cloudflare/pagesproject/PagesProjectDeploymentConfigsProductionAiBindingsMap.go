@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/pagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PagesProjectDeploymentConfigsProductionAiBindingsMap interface {
-	cdktf.ComplexMap
+	cdktn.ComplexMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,16 +26,16 @@ type PagesProjectDeploymentConfigsProductionAiBindingsMap interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	Get(key *string) PagesProjectDeploymentConfigsProductionAiBindingsOutputReference
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(property *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -45,7 +45,7 @@ type PagesProjectDeploymentConfigsProductionAiBindingsMap interface {
 
 // The jsii proxy struct for PagesProjectDeploymentConfigsProductionAiBindingsMap
 type jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap struct {
-	internal.Type__cdktfComplexMap
+	internal.Type__cdktnComplexMap
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) CreationStack() *[]*string {
@@ -88,8 +88,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -99,7 +99,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) Terrafo
 }
 
 
-func NewPagesProjectDeploymentConfigsProductionAiBindingsMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsProductionAiBindingsMap {
+func NewPagesProjectDeploymentConfigsProductionAiBindingsMap(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsProductionAiBindingsMap {
 	_init_.Initialize()
 
 	if err := validateNewPagesProjectDeploymentConfigsProductionAiBindingsMapParameters(terraformResource, terraformAttribute); err != nil {
@@ -108,7 +108,7 @@ func NewPagesProjectDeploymentConfigsProductionAiBindingsMap(terraformResource c
 	j := jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -116,11 +116,11 @@ func NewPagesProjectDeploymentConfigsProductionAiBindingsMap(terraformResource c
 	return &j
 }
 
-func NewPagesProjectDeploymentConfigsProductionAiBindingsMap_Override(p PagesProjectDeploymentConfigsProductionAiBindingsMap, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPagesProjectDeploymentConfigsProductionAiBindingsMap_Override(p PagesProjectDeploymentConfigsProductionAiBindingsMap, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionAiBindingsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -148,7 +148,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap)SetTerra
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -188,11 +188,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) Get(key
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) InterpolationForAttribute(property *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -204,7 +204,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) Interpo
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionAiBindingsMap) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

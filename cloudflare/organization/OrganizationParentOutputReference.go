@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package organization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/organization/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/organization/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type OrganizationParentOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type OrganizationParentOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type OrganizationParentOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type OrganizationParentOutputReference interface {
 
 // The jsii proxy struct for OrganizationParentOutputReference
 type jsiiProxy_OrganizationParentOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OrganizationParentOutputReference) ComplexObjectIndex() interface{} {
@@ -173,8 +173,8 @@ func (j *jsiiProxy_OrganizationParentOutputReference) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationParentOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OrganizationParentOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -184,7 +184,7 @@ func (j *jsiiProxy_OrganizationParentOutputReference) TerraformResource() cdktf.
 }
 
 
-func NewOrganizationParentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OrganizationParentOutputReference {
+func NewOrganizationParentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OrganizationParentOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOrganizationParentOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -193,7 +193,7 @@ func NewOrganizationParentOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_OrganizationParentOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.organization.OrganizationParentOutputReference",
+		"@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -201,11 +201,11 @@ func NewOrganizationParentOutputReference(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewOrganizationParentOutputReference_Override(o OrganizationParentOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOrganizationParentOutputReference_Override(o OrganizationParentOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.organization.OrganizationParentOutputReference",
+		"@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_OrganizationParentOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_OrganizationParentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrganizationParentOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (o *jsiiProxy_OrganizationParentOutputReference) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationParentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OrganizationParentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -434,8 +434,8 @@ func (o *jsiiProxy_OrganizationParentOutputReference) GetStringMapAttribute(terr
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationParentOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OrganizationParentOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -447,11 +447,11 @@ func (o *jsiiProxy_OrganizationParentOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationParentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OrganizationParentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -463,7 +463,7 @@ func (o *jsiiProxy_OrganizationParentOutputReference) InterpolationForAttribute(
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationParentOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OrganizationParentOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

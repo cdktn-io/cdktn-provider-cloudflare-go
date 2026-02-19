@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zonelockdown
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
+		"@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		reflect.TypeOf((*ZoneLockdown)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -77,20 +77,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneLockdown{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig",
+		"@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfig",
 		reflect.TypeOf((*ZoneLockdownConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurations",
+		"@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurations",
 		reflect.TypeOf((*ZoneLockdownConfigurations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
+		"@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
 		reflect.TypeOf((*ZoneLockdownConfigurationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -107,12 +107,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneLockdownConfigurationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference",
+		"@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference",
 		reflect.TypeOf((*ZoneLockdownConfigurationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,7 +145,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneLockdownConfigurationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

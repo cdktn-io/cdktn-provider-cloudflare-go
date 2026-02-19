@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccesspolicy
@@ -7,7 +7,7 @@ package zerotrustaccesspolicy
 type ZeroTrustAccessPolicyIncludeEmailDomain struct {
 	// The email domain to match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_policy#domain ZeroTrustAccessPolicy#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_policy#domain ZeroTrustAccessPolicy#domain}
 	Domain *string `field:"required" json:"domain" yaml:"domain"`
 }
 

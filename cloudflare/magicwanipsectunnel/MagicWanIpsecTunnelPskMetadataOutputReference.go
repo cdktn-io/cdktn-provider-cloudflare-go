@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magicwanipsectunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanipsectunnel/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MagicWanIpsecTunnelPskMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type MagicWanIpsecTunnelPskMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type MagicWanIpsecTunnelPskMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type MagicWanIpsecTunnelPskMetadataOutputReference interface {
 
 // The jsii proxy struct for MagicWanIpsecTunnelPskMetadataOutputReference
 type jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) ComplexObjectIndex() interface{} {
@@ -150,8 +150,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -161,7 +161,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) TerraformResou
 }
 
 
-func NewMagicWanIpsecTunnelPskMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MagicWanIpsecTunnelPskMetadataOutputReference {
+func NewMagicWanIpsecTunnelPskMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MagicWanIpsecTunnelPskMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMagicWanIpsecTunnelPskMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -170,7 +170,7 @@ func NewMagicWanIpsecTunnelPskMetadataOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadataOutputReference",
+		"@cdktn/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -178,11 +178,11 @@ func NewMagicWanIpsecTunnelPskMetadataOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewMagicWanIpsecTunnelPskMetadataOutputReference_Override(m MagicWanIpsecTunnelPskMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMagicWanIpsecTunnelPskMetadataOutputReference_Override(m MagicWanIpsecTunnelPskMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadataOutputReference",
+		"@cdktn/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -232,7 +232,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -272,11 +272,11 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -400,8 +400,8 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) GetStringMapAt
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -413,11 +413,11 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) InterpolationA
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -429,7 +429,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) InterpolationF
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

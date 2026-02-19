@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustaccessservicetokens
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustaccessservicetokens/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccessservicetokens/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_service_tokens cloudflare_zero_trust_access_service_tokens}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_service_tokens cloudflare_zero_trust_access_service_tokens}.
 type DataCloudflareZeroTrustAccessServiceTokens interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -31,17 +31,17 @@ type DataCloudflareZeroTrustAccessServiceTokens interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
@@ -51,9 +51,9 @@ type DataCloudflareZeroTrustAccessServiceTokens interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflareZeroTrustAccessServiceTokensResultList
@@ -61,7 +61,7 @@ type DataCloudflareZeroTrustAccessServiceTokens interface {
 	SetSearch(val *string)
 	SearchInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -74,7 +74,7 @@ type DataCloudflareZeroTrustAccessServiceTokens interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -90,7 +90,7 @@ type DataCloudflareZeroTrustAccessServiceTokens interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -118,7 +118,7 @@ type DataCloudflareZeroTrustAccessServiceTokens interface {
 
 // The jsii proxy struct for DataCloudflareZeroTrustAccessServiceTokens
 type jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) AccountId() *string {
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) AccountIdInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) DependsOn() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) FriendlyUniqueId(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) Node() constructs
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) SearchInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) ZoneIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_service_tokens cloudflare_zero_trust_access_service_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_service_tokens cloudflare_zero_trust_access_service_tokens} Data Source.
 func NewDataCloudflareZeroTrustAccessServiceTokens(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessServiceTokensConfig) DataCloudflareZeroTrustAccessServiceTokens {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataCloudflareZeroTrustAccessServiceTokens(scope constructs.Construct, i
 	j := jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,12 +390,12 @@ func NewDataCloudflareZeroTrustAccessServiceTokens(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_service_tokens cloudflare_zero_trust_access_service_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_service_tokens cloudflare_zero_trust_access_service_tokens} Data Source.
 func NewDataCloudflareZeroTrustAccessServiceTokens_Override(d DataCloudflareZeroTrustAccessServiceTokens, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessServiceTokensConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -439,7 +439,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +472,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -502,17 +502,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens)SetZoneId(val *str
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareZeroTrustAccessServiceTokens resource upon running "cdktf plan <stack-name>".
-func DataCloudflareZeroTrustAccessServiceTokens_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareZeroTrustAccessServiceTokens resource upon running "cdktn plan <stack-name>".
+func DataCloudflareZeroTrustAccessServiceTokens_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareZeroTrustAccessServiceTokens_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -547,7 +547,7 @@ func DataCloudflareZeroTrustAccessServiceTokens_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func DataCloudflareZeroTrustAccessServiceTokens_IsTerraformDataSource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func DataCloudflareZeroTrustAccessServiceTokens_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func DataCloudflareZeroTrustAccessServiceTokens_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessServiceTokens.DataCloudflareZeroTrustAccessServiceTokens",
 		"tfResourceType",
 		&returns,
 	)
@@ -632,11 +632,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) GetAnyMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -760,11 +760,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) GetStringMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokens) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

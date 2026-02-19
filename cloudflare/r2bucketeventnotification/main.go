@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package r2bucketeventnotification
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification",
+		"@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotification",
 		reflect.TypeOf((*R2BucketEventNotification)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -71,20 +71,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketEventNotification{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig",
+		"@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationConfig",
 		reflect.TypeOf((*R2BucketEventNotificationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRules",
+		"@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRules",
 		reflect.TypeOf((*R2BucketEventNotificationRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesList",
+		"@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesList",
 		reflect.TypeOf((*R2BucketEventNotificationRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -101,12 +101,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketEventNotificationRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketEventNotification.R2BucketEventNotificationRulesOutputReference",
 		reflect.TypeOf((*R2BucketEventNotificationRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
@@ -144,7 +144,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketEventNotificationRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

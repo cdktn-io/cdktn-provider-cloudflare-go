@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareloadbalancerpool
@@ -7,7 +7,7 @@ package datacloudflareloadbalancerpool
 type DataCloudflareLoadBalancerPoolFilter struct {
 	// The ID of the Monitor to use for checking the health of origins within this pool.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/load_balancer_pool#monitor DataCloudflareLoadBalancerPool#monitor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/load_balancer_pool#monitor DataCloudflareLoadBalancerPool#monitor}
 	Monitor *string `field:"optional" json:"monitor" yaml:"monitor"`
 }
 

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zonecachevariants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zonecachevariants/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonecachevariants/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZoneCacheVariantsValueOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Avif() *[]*string
 	SetAvif(val *[]*string)
 	AvifInput() *[]*string
@@ -61,9 +61,9 @@ type ZoneCacheVariantsValueOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tif() *[]*string
 	SetTif(val *[]*string)
 	Tiff() *[]*string
@@ -78,7 +78,7 @@ type ZoneCacheVariantsValueOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,9 +94,9 @@ type ZoneCacheVariantsValueOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAvif()
 	ResetBmp()
 	ResetGif()
@@ -110,7 +110,7 @@ type ZoneCacheVariantsValueOutputReference interface {
 	ResetWebp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,7 +120,7 @@ type ZoneCacheVariantsValueOutputReference interface {
 
 // The jsii proxy struct for ZoneCacheVariantsValueOutputReference
 type jsiiProxy_ZoneCacheVariantsValueOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) Avif() *[]*string {
@@ -343,8 +343,8 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference) WebpInput() *[]*string
 }
 
 
-func NewZoneCacheVariantsValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneCacheVariantsValueOutputReference {
+func NewZoneCacheVariantsValueOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZoneCacheVariantsValueOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZoneCacheVariantsValueOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -423,7 +423,7 @@ func NewZoneCacheVariantsValueOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ZoneCacheVariantsValueOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsValueOutputReference",
+		"@cdktn/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -431,11 +431,11 @@ func NewZoneCacheVariantsValueOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewZoneCacheVariantsValueOutputReference_Override(z ZoneCacheVariantsValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZoneCacheVariantsValueOutputReference_Override(z ZoneCacheVariantsValueOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsValueOutputReference",
+		"@cdktn/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -573,7 +573,7 @@ func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneCacheVariantsValueOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,11 +646,11 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -774,8 +774,8 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -787,11 +787,11 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -891,7 +891,7 @@ func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) ResetWebp() {
 	)
 }
 
-func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZoneCacheVariantsValueOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

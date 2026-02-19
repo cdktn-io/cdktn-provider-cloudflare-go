@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionAnalytic
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -23,11 +23,11 @@ func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionAnalytic
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMapParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMapParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

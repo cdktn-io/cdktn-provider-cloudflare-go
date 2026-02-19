@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package botmanagement
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.botManagement.BotManagement",
+		"@cdktn/provider-cloudflare.botManagement.BotManagement",
 		reflect.TypeOf((*BotManagement)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -105,20 +105,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BotManagement{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.botManagement.BotManagementConfig",
+		"@cdktn/provider-cloudflare.botManagement.BotManagementConfig",
 		reflect.TypeOf((*BotManagementConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.botManagement.BotManagementStaleZoneConfiguration",
+		"@cdktn/provider-cloudflare.botManagement.BotManagementStaleZoneConfiguration",
 		reflect.TypeOf((*BotManagementStaleZoneConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.botManagement.BotManagementStaleZoneConfigurationOutputReference",
+		"@cdktn/provider-cloudflare.botManagement.BotManagementStaleZoneConfigurationOutputReference",
 		reflect.TypeOf((*BotManagementStaleZoneConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -152,7 +152,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BotManagementStaleZoneConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

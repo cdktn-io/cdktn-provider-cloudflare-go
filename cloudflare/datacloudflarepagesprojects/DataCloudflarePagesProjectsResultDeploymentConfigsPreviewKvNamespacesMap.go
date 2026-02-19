@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepagesprojects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesprojects/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarepagesprojects/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap interface {
-	cdktf.ComplexMap
+	cdktn.ComplexMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,16 +24,16 @@ type DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap in
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	Get(key *string) DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesOutputReference
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(property *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -43,7 +43,7 @@ type DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap in
 
 // The jsii proxy struct for DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap
 type jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap struct {
-	internal.Type__cdktfComplexMap
+	internal.Type__cdktnComplexMap
 }
 
 func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap) CreationStack() *[]*string {
@@ -76,8 +76,8 @@ func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNa
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -87,7 +87,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNa
 }
 
 
-func NewDataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap {
+func NewDataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMapParameters(terraformResource, terraformAttribute); err != nil {
@@ -96,7 +96,7 @@ func NewDataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap
 	j := jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -104,11 +104,11 @@ func NewDataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap
 	return &j
 }
 
-func NewDataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap_Override(d DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap_Override(d DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProjects.DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -125,7 +125,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNa
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -165,11 +165,11 @@ func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap) InterpolationForAttribute(property *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -181,7 +181,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

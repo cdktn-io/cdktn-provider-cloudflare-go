@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ssoconnector
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnector",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnector",
 		reflect.TypeOf((*SsoConnector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -75,20 +75,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SsoConnector{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnectorConfig",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig",
 		reflect.TypeOf((*SsoConnectorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnectorVerification",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnectorVerification",
 		reflect.TypeOf((*SsoConnectorVerification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ssoConnector.SsoConnectorVerificationOutputReference",
+		"@cdktn/provider-cloudflare.ssoConnector.SsoConnectorVerificationOutputReference",
 		reflect.TypeOf((*SsoConnectorVerificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -117,7 +117,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SsoConnectorVerificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

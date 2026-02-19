@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accountsubscription
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscription",
+		"@cdktn/provider-cloudflare.accountSubscription.AccountSubscription",
 		reflect.TypeOf((*AccountSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -73,20 +73,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountSubscription{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionConfig",
+		"@cdktn/provider-cloudflare.accountSubscription.AccountSubscriptionConfig",
 		reflect.TypeOf((*AccountSubscriptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlan",
+		"@cdktn/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlan",
 		reflect.TypeOf((*AccountSubscriptionRatePlan)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlanOutputReference",
+		"@cdktn/provider-cloudflare.accountSubscription.AccountSubscriptionRatePlanOutputReference",
 		reflect.TypeOf((*AccountSubscriptionRatePlanOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,7 +124,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccountSubscriptionRatePlanOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

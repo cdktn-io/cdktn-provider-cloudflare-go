@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamliveinput
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/streamliveinput/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamliveinput/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type StreamLiveInputSrtOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,16 +39,16 @@ type StreamLiveInputSrtOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type StreamLiveInputSrtOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type StreamLiveInputSrtOutputReference interface {
 
 // The jsii proxy struct for StreamLiveInputSrtOutputReference
 type jsiiProxy_StreamLiveInputSrtOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StreamLiveInputSrtOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_StreamLiveInputSrtOutputReference) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_StreamLiveInputSrtOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StreamLiveInputSrtOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +183,7 @@ func (j *jsiiProxy_StreamLiveInputSrtOutputReference) Url() *string {
 }
 
 
-func NewStreamLiveInputSrtOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StreamLiveInputSrtOutputReference {
+func NewStreamLiveInputSrtOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StreamLiveInputSrtOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStreamLiveInputSrtOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -192,7 +192,7 @@ func NewStreamLiveInputSrtOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_StreamLiveInputSrtOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputSrtOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -200,11 +200,11 @@ func NewStreamLiveInputSrtOutputReference(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewStreamLiveInputSrtOutputReference_Override(s StreamLiveInputSrtOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStreamLiveInputSrtOutputReference_Override(s StreamLiveInputSrtOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputSrtOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -254,7 +254,7 @@ func (j *jsiiProxy_StreamLiveInputSrtOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_StreamLiveInputSrtOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StreamLiveInputSrtOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +294,11 @@ func (s *jsiiProxy_StreamLiveInputSrtOutputReference) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (s *jsiiProxy_StreamLiveInputSrtOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamLiveInputSrtOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -422,8 +422,8 @@ func (s *jsiiProxy_StreamLiveInputSrtOutputReference) GetStringMapAttribute(terr
 	return returns
 }
 
-func (s *jsiiProxy_StreamLiveInputSrtOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StreamLiveInputSrtOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -435,11 +435,11 @@ func (s *jsiiProxy_StreamLiveInputSrtOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (s *jsiiProxy_StreamLiveInputSrtOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StreamLiveInputSrtOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -451,7 +451,7 @@ func (s *jsiiProxy_StreamLiveInputSrtOutputReference) InterpolationForAttribute(
 	return returns
 }
 
-func (s *jsiiProxy_StreamLiveInputSrtOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StreamLiveInputSrtOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

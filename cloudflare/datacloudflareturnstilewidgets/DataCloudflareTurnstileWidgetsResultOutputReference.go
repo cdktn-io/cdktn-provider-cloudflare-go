@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareturnstilewidgets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareturnstilewidgets/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareturnstilewidgets/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareTurnstileWidgetsResultOutputReference interface {
-	cdktf.ComplexObject
-	BotFightMode() cdktf.IResolvable
+	cdktn.ComplexObject
+	BotFightMode() cdktn.IResolvable
 	ClearanceLevel() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -32,7 +32,7 @@ type DataCloudflareTurnstileWidgetsResultOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Domains() *[]*string
-	EphemeralId() cdktf.IResolvable
+	EphemeralId() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -41,7 +41,7 @@ type DataCloudflareTurnstileWidgetsResultOutputReference interface {
 	Mode() *string
 	ModifiedOn() *string
 	Name() *string
-	Offlabel() cdktf.IResolvable
+	Offlabel() cdktn.IResolvable
 	Region() *string
 	Sitekey() *string
 	// Experimental.
@@ -49,15 +49,15 @@ type DataCloudflareTurnstileWidgetsResultOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,12 +73,12 @@ type DataCloudflareTurnstileWidgetsResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,11 +88,11 @@ type DataCloudflareTurnstileWidgetsResultOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareTurnstileWidgetsResultOutputReference
 type jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) BotFightMode() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) BotFightMode() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"botFightMode",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Domains(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) EphemeralId() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) EphemeralId() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"ephemeralId",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Name() *
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Offlabel() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Offlabel() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"offlabel",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -282,7 +282,7 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Terrafor
 }
 
 
-func NewDataCloudflareTurnstileWidgetsResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareTurnstileWidgetsResultOutputReference {
+func NewDataCloudflareTurnstileWidgetsResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareTurnstileWidgetsResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareTurnstileWidgetsResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -291,7 +291,7 @@ func NewDataCloudflareTurnstileWidgetsResultOutputReference(terraformResource cd
 	j := jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgetsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgetsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -299,11 +299,11 @@ func NewDataCloudflareTurnstileWidgetsResultOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataCloudflareTurnstileWidgetsResultOutputReference_Override(d DataCloudflareTurnstileWidgetsResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareTurnstileWidgetsResultOutputReference_Override(d DataCloudflareTurnstileWidgetsResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgetsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareTurnstileWidgets.DataCloudflareTurnstileWidgetsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,11 +393,11 @@ func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -521,8 +521,8 @@ func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -534,11 +534,11 @@ func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -550,7 +550,7 @@ func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

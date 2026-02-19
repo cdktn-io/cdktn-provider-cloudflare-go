@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdextest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdextest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdextest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustDexTestDataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type ZeroTrustDexTestDataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type ZeroTrustDexTestDataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetHost()
 	ResetKind()
 	ResetMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type ZeroTrustDexTestDataOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustDexTestDataOutputReference
 type jsiiProxy_ZeroTrustDexTestDataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) TerraformResource() cdkt
 }
 
 
-func NewZeroTrustDexTestDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDexTestDataOutputReference {
+func NewZeroTrustDexTestDataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustDexTestDataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustDexTestDataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewZeroTrustDexTestDataOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ZeroTrustDexTestDataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestDataOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewZeroTrustDexTestDataOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewZeroTrustDexTestDataOutputReference_Override(z ZeroTrustDexTestDataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustDexTestDataOutputReference_Override(z ZeroTrustDexTestDataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestDataOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -494,8 +494,8 @@ func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -507,11 +507,11 @@ func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -547,7 +547,7 @@ func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) ResetMethod() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

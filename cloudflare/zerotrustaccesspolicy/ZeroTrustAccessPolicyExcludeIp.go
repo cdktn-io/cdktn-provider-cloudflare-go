@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccesspolicy
@@ -7,7 +7,7 @@ package zerotrustaccesspolicy
 type ZeroTrustAccessPolicyExcludeIp struct {
 	// An IPv4 or IPv6 CIDR block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_policy#ip ZeroTrustAccessPolicy#ip}
 	Ip *string `field:"required" json:"ip" yaml:"ip"`
 }
 

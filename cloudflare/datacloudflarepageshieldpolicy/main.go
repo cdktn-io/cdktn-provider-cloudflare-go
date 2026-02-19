@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepageshieldpolicy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicy",
 		reflect.TypeOf((*DataCloudflarePageShieldPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -60,12 +60,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflarePageShieldPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldPolicy.DataCloudflarePageShieldPolicyConfig",
 		reflect.TypeOf((*DataCloudflarePageShieldPolicyConfig)(nil)).Elem(),
 	)
 }

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareworkersscript
@@ -7,7 +7,7 @@ package datacloudflareworkersscript
 type DataCloudflareWorkersScriptFilter struct {
 	// Filter scripts by tags. Format: comma-separated list of tag:allowed pairs where allowed is 'yes' or 'no'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/workers_script#tags DataCloudflareWorkersScript#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_script#tags DataCloudflareWorkersScript#tags}
 	Tags *string `field:"optional" json:"tags" yaml:"tags"`
 }
 

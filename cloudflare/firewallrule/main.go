@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package firewallrule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
+		"@cdktn/provider-cloudflare.firewallRule.FirewallRule",
 		reflect.TypeOf((*FirewallRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -72,16 +72,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirewallRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleAction",
+		"@cdktn/provider-cloudflare.firewallRule.FirewallRuleAction",
 		reflect.TypeOf((*FirewallRuleAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionOutputReference",
+		"@cdktn/provider-cloudflare.firewallRule.FirewallRuleActionOutputReference",
 		reflect.TypeOf((*FirewallRuleActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,16 +118,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirewallRuleActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionResponse",
+		"@cdktn/provider-cloudflare.firewallRule.FirewallRuleActionResponse",
 		reflect.TypeOf((*FirewallRuleActionResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleActionResponseOutputReference",
+		"@cdktn/provider-cloudflare.firewallRule.FirewallRuleActionResponseOutputReference",
 		reflect.TypeOf((*FirewallRuleActionResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -160,20 +160,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirewallRuleActionResponseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig",
+		"@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig",
 		reflect.TypeOf((*FirewallRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleFilter",
+		"@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter",
 		reflect.TypeOf((*FirewallRuleFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleFilterOutputReference",
+		"@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilterOutputReference",
 		reflect.TypeOf((*FirewallRuleFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,7 +213,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirewallRuleFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

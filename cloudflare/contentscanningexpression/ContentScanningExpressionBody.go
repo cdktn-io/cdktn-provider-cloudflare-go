@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package contentscanningexpression
@@ -7,7 +7,7 @@ package contentscanningexpression
 type ContentScanningExpressionBody struct {
 	// Defines the ruleset expression to use in matching content objects.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
 	Payload *string `field:"required" json:"payload" yaml:"payload"`
 }
 

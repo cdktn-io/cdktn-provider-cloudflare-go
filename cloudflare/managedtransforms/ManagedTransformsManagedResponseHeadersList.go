@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package managedtransforms
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/managedtransforms/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ManagedTransformsManagedResponseHeadersList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type ManagedTransformsManagedResponseHeadersList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type ManagedTransformsManagedResponseHeadersList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ManagedTransformsManagedResponseHeadersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type ManagedTransformsManagedResponseHeadersList interface {
 
 // The jsii proxy struct for ManagedTransformsManagedResponseHeadersList
 type jsiiProxy_ManagedTransformsManagedResponseHeadersList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList) WrapsSet() *bool
 }
 
 
-func NewManagedTransformsManagedResponseHeadersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedTransformsManagedResponseHeadersList {
+func NewManagedTransformsManagedResponseHeadersList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedTransformsManagedResponseHeadersList {
 	_init_.Initialize()
 
 	if err := validateNewManagedTransformsManagedResponseHeadersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewManagedTransformsManagedResponseHeadersList(terraformResource cdktf.IInt
 	j := jsiiProxy_ManagedTransformsManagedResponseHeadersList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersList",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewManagedTransformsManagedResponseHeadersList(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewManagedTransformsManagedResponseHeadersList_Override(m ManagedTransformsManagedResponseHeadersList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewManagedTransformsManagedResponseHeadersList_Override(m ManagedTransformsManagedResponseHeadersList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersList",
+		"@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_ManagedTransformsManagedResponseHeadersList)SetWrapsSet(val *
 	)
 }
 
-func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := m.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		m,
@@ -231,7 +231,7 @@ func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) Get(index *float
 	return returns
 }
 
-func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ManagedTransformsManagedResponseHeadersList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package queueconsumer
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumer",
+		"@cdktn/provider-cloudflare.queueConsumer.QueueConsumer",
 		reflect.TypeOf((*QueueConsumer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -78,20 +78,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueueConsumer{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumerConfig",
+		"@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig",
 		reflect.TypeOf((*QueueConsumerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettings",
+		"@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings",
 		reflect.TypeOf((*QueueConsumerSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference",
+		"@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference",
 		reflect.TypeOf((*QueueConsumerSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchSize", GoGetter: "BatchSize"},
@@ -136,7 +136,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_QueueConsumerSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

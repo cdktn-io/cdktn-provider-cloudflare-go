@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package keylesscertificate
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		reflect.TypeOf((*KeylessCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -85,20 +85,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeylessCertificate{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateConfig",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig",
 		reflect.TypeOf((*KeylessCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateTunnel",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateTunnel",
 		reflect.TypeOf((*KeylessCertificateTunnel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificateTunnelOutputReference",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateTunnelOutputReference",
 		reflect.TypeOf((*KeylessCertificateTunnelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,7 +129,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeylessCertificateTunnelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package waitingroomsettings
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings",
+		"@cdktn/provider-cloudflare.waitingRoomSettings.WaitingRoomSettings",
 		reflect.TypeOf((*WaitingRoomSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -64,12 +64,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaitingRoomSettings{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig",
+		"@cdktn/provider-cloudflare.waitingRoomSettings.WaitingRoomSettingsConfig",
 		reflect.TypeOf((*WaitingRoomSettingsConfig)(nil)).Elem(),
 	)
 }

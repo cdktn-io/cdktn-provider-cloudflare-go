@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package r2bucketsippy
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy",
 		reflect.TypeOf((*R2BucketSippy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -74,20 +74,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketSippy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippyConfig",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippyConfig",
 		reflect.TypeOf((*R2BucketSippyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippyDestination",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippyDestination",
 		reflect.TypeOf((*R2BucketSippyDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippyDestinationOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippyDestinationOutputReference",
 		reflect.TypeOf((*R2BucketSippyDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -123,16 +123,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketSippyDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySource",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippySource",
 		reflect.TypeOf((*R2BucketSippySource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference",
 		reflect.TypeOf((*R2BucketSippySourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -183,7 +183,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketSippySourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

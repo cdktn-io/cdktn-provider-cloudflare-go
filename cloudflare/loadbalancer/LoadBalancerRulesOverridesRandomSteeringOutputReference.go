@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package loadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/loadbalancer/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/loadbalancer/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LoadBalancerRulesOverridesRandomSteeringOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type LoadBalancerRulesOverridesRandomSteeringOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type LoadBalancerRulesOverridesRandomSteeringOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDefaultWeight()
 	ResetPoolWeights()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type LoadBalancerRulesOverridesRandomSteeringOutputReference interface {
 
 // The jsii proxy struct for LoadBalancerRulesOverridesRandomSteeringOutputReference
 type jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) Terr
 }
 
 
-func NewLoadBalancerRulesOverridesRandomSteeringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerRulesOverridesRandomSteeringOutputReference {
+func NewLoadBalancerRulesOverridesRandomSteeringOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LoadBalancerRulesOverridesRandomSteeringOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLoadBalancerRulesOverridesRandomSteeringOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewLoadBalancerRulesOverridesRandomSteeringOutputReference(terraformResourc
 	j := jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewLoadBalancerRulesOverridesRandomSteeringOutputReference(terraformResourc
 	return &j
 }
 
-func NewLoadBalancerRulesOverridesRandomSteeringOutputReference_Override(l LoadBalancerRulesOverridesRandomSteeringOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLoadBalancerRulesOverridesRandomSteeringOutputReference_Override(l LoadBalancerRulesOverridesRandomSteeringOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRandomSteeringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -291,7 +291,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) GetA
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -459,8 +459,8 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) GetS
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -472,11 +472,11 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) Inte
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -504,7 +504,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) Rese
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

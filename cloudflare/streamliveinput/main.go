@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package streamliveinput
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInput",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput",
 		reflect.TypeOf((*StreamLiveInput)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -86,20 +86,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamLiveInput{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputConfig",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig",
 		reflect.TypeOf((*StreamLiveInputConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecording",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecording",
 		reflect.TypeOf((*StreamLiveInputRecording)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecordingOutputReference",
 		reflect.TypeOf((*StreamLiveInputRecordingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedOrigins", GoGetter: "AllowedOrigins"},
@@ -141,16 +141,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamLiveInputRecordingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmps",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRtmps",
 		reflect.TypeOf((*StreamLiveInputRtmps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsOutputReference",
 		reflect.TypeOf((*StreamLiveInputRtmpsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -179,16 +179,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamLiveInputRtmpsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsPlayback",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsPlayback",
 		reflect.TypeOf((*StreamLiveInputRtmpsPlayback)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsPlaybackOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRtmpsPlaybackOutputReference",
 		reflect.TypeOf((*StreamLiveInputRtmpsPlaybackOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -217,16 +217,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamLiveInputRtmpsPlaybackOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrt",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputSrt",
 		reflect.TypeOf((*StreamLiveInputSrt)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputSrtOutputReference",
 		reflect.TypeOf((*StreamLiveInputSrtOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -256,16 +256,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamLiveInputSrtOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtPlayback",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputSrtPlayback",
 		reflect.TypeOf((*StreamLiveInputSrtPlayback)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputSrtPlaybackOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputSrtPlaybackOutputReference",
 		reflect.TypeOf((*StreamLiveInputSrtPlaybackOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,16 +295,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamLiveInputSrtPlaybackOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtc",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtc",
 		reflect.TypeOf((*StreamLiveInputWebRtc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcOutputReference",
 		reflect.TypeOf((*StreamLiveInputWebRtcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -332,16 +332,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamLiveInputWebRtcOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcPlayback",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcPlayback",
 		reflect.TypeOf((*StreamLiveInputWebRtcPlayback)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcPlaybackOutputReference",
+		"@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputWebRtcPlaybackOutputReference",
 		reflect.TypeOf((*StreamLiveInputWebRtcPlaybackOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -369,7 +369,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamLiveInputWebRtcPlaybackOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

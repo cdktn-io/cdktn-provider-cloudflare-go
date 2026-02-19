@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessapplication
@@ -7,11 +7,11 @@ package zerotrustaccessapplication
 type ZeroTrustAccessApplicationFooterLinks struct {
 	// The hypertext in the footer link.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// the hyperlink in the footer link.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_application#url ZeroTrustAccessApplication#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_application#url ZeroTrustAccessApplication#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 }
 

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workerskv
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workersKv.WorkersKv",
+		"@cdktn/provider-cloudflare.workersKv.WorkersKv",
 		reflect.TypeOf((*WorkersKv)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -70,12 +70,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersKv{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workersKv.WorkersKvConfig",
+		"@cdktn/provider-cloudflare.workersKv.WorkersKvConfig",
 		reflect.TypeOf((*WorkersKvConfig)(nil)).Elem(),
 	)
 }

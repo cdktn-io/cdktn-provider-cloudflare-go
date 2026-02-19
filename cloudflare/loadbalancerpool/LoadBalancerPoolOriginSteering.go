@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package loadbalancerpool
@@ -13,7 +13,7 @@ type LoadBalancerPoolOriginSteering struct {
 	// - `"least_connections"`: Select an origin by taking into consideration origin weights, as well as each origin's number of open connections. Origins with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
 	// Available values: "random", "hash", "least_outstanding_requests", "least_connections".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_pool#policy LoadBalancerPool#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_pool#policy LoadBalancerPool#policy}
 	Policy *string `field:"optional" json:"policy" yaml:"policy"`
 }
 

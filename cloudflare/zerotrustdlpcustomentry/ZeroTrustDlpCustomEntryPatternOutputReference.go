@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdlpcustomentry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdlpcustomentry/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlpcustomentry/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustDlpCustomEntryPatternOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ZeroTrustDlpCustomEntryPatternOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Validation() *string
 	SetValidation(val *string)
 	ValidationInput() *string
@@ -51,7 +51,7 @@ type ZeroTrustDlpCustomEntryPatternOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type ZeroTrustDlpCustomEntryPatternOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetValidation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ZeroTrustDlpCustomEntryPatternOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustDlpCustomEntryPatternOutputReference
 type jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) ComplexObjectIndex() interface{} {
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) ValidationInpu
 }
 
 
-func NewZeroTrustDlpCustomEntryPatternOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpCustomEntryPatternOutputReference {
+func NewZeroTrustDlpCustomEntryPatternOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpCustomEntryPatternOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustDlpCustomEntryPatternOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -206,7 +206,7 @@ func NewZeroTrustDlpCustomEntryPatternOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryPatternOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewZeroTrustDlpCustomEntryPatternOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewZeroTrustDlpCustomEntryPatternOutputReference_Override(z ZeroTrustDlpCustomEntryPatternOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustDlpCustomEntryPatternOutputReference_Override(z ZeroTrustDlpCustomEntryPatternOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryPatternOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDlpCustomEntry.ZeroTrustDlpCustomEntryPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -279,7 +279,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -458,8 +458,8 @@ func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) GetStringMapAt
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -471,11 +471,11 @@ func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) InterpolationA
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -495,7 +495,7 @@ func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) ResetValidatio
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDlpCustomEntryPatternOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

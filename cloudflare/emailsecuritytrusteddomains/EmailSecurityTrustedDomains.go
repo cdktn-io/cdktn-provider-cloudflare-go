@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package emailsecuritytrusteddomains
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/emailsecuritytrusteddomains/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/emailsecuritytrusteddomains/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
 type EmailSecurityTrustedDomains interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	Body() EmailSecurityTrustedDomainsBodyList
 	BodyInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Comments() *string
 	SetComments(val *string)
 	CommentsInput() *string
@@ -41,9 +41,9 @@ type EmailSecurityTrustedDomains interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -60,18 +60,18 @@ type EmailSecurityTrustedDomains interface {
 	IsSimilarityInput() interface{}
 	LastModified() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	Pattern() *string
 	SetPattern(val *string)
 	PatternInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -79,7 +79,7 @@ type EmailSecurityTrustedDomains interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -92,7 +92,7 @@ type EmailSecurityTrustedDomains interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -110,9 +110,9 @@ type EmailSecurityTrustedDomains interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -152,7 +152,7 @@ type EmailSecurityTrustedDomains interface {
 
 // The jsii proxy struct for EmailSecurityTrustedDomains
 type jsiiProxy_EmailSecurityTrustedDomains struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_EmailSecurityTrustedDomains) AccountId() *string {
@@ -195,8 +195,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) BodyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_EmailSecurityTrustedDomains) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_EmailSecurityTrustedDomains) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) LastModified() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_EmailSecurityTrustedDomains) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) PatternInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_EmailSecurityTrustedDomains) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_EmailSecurityTrustedDomains) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -486,7 +486,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) EmailSecurityTrustedDomains {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_EmailSecurityTrustedDomains{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -504,12 +504,12 @@ func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains_Override(e EmailSecurityTrustedDomains, scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -567,7 +567,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EmailSecurityTrustedDomains)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -608,7 +608,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains)SetIsSimilarity(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EmailSecurityTrustedDomains)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +630,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains)SetPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EmailSecurityTrustedDomains)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -649,17 +649,17 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains)SetProvisioners(val *[]interface{
 	)
 }
 
-// Generates CDKTF code for importing a EmailSecurityTrustedDomains resource upon running "cdktf plan <stack-name>".
-func EmailSecurityTrustedDomains_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a EmailSecurityTrustedDomains resource upon running "cdktn plan <stack-name>".
+func EmailSecurityTrustedDomains_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateEmailSecurityTrustedDomains_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -694,7 +694,7 @@ func EmailSecurityTrustedDomains_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func EmailSecurityTrustedDomains_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -732,7 +732,7 @@ func EmailSecurityTrustedDomains_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +745,7 @@ func EmailSecurityTrustedDomains_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
+		"@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains",
 		"tfResourceType",
 		&returns,
 	)
@@ -790,11 +790,11 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomains) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmailSecurityTrustedDomains) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -931,7 +931,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) HasResourceMove() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomains) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (e *jsiiProxy_EmailSecurityTrustedDomains) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -942,11 +942,11 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) ImportFrom(id *string, provider 
 	)
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomains) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmailSecurityTrustedDomains) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,

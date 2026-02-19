@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarequeue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarequeue/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarequeue/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/queue cloudflare_queue}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue cloudflare_queue}.
 type DataCloudflareQueue interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	Consumers() DataCloudflareQueueConsumersList
@@ -34,27 +34,27 @@ type DataCloudflareQueue interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	Producers() DataCloudflareQueueProducersList
 	ProducersTotalCount() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	QueueId() *string
 	SetQueueId(val *string)
 	QueueIdInput() *string
@@ -63,7 +63,7 @@ type DataCloudflareQueue interface {
 	RawOverrides() interface{}
 	Settings() DataCloudflareQueueSettingsOutputReference
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -73,7 +73,7 @@ type DataCloudflareQueue interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -89,7 +89,7 @@ type DataCloudflareQueue interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -112,7 +112,7 @@ type DataCloudflareQueue interface {
 
 // The jsii proxy struct for DataCloudflareQueue
 type jsiiProxy_DataCloudflareQueue struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareQueue) AccountId() *string {
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataCloudflareQueue) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueue) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareQueue) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataCloudflareQueue) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueue) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareQueue) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_DataCloudflareQueue) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueue) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareQueue) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_DataCloudflareQueue) ProducersTotalCount() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueue) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareQueue) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_DataCloudflareQueue) Settings() DataCloudflareQueueSettingsOu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueue) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareQueue) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -386,7 +386,7 @@ func (j *jsiiProxy_DataCloudflareQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/queue cloudflare_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue cloudflare_queue} Data Source.
 func NewDataCloudflareQueue(scope constructs.Construct, id *string, config *DataCloudflareQueueConfig) DataCloudflareQueue {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataCloudflareQueue(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataCloudflareQueue{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
+		"@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,12 +404,12 @@ func NewDataCloudflareQueue(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/queue cloudflare_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue cloudflare_queue} Data Source.
 func NewDataCloudflareQueue_Override(d DataCloudflareQueue, scope constructs.Construct, id *string, config *DataCloudflareQueueConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
+		"@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -445,7 +445,7 @@ func (j *jsiiProxy_DataCloudflareQueue)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueue)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareQueue)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataCloudflareQueue)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueue)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareQueue)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +464,7 @@ func (j *jsiiProxy_DataCloudflareQueue)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareQueue)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareQueue)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -483,17 +483,17 @@ func (j *jsiiProxy_DataCloudflareQueue)SetQueueId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareQueue resource upon running "cdktf plan <stack-name>".
-func DataCloudflareQueue_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareQueue resource upon running "cdktn plan <stack-name>".
+func DataCloudflareQueue_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareQueue_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
+		"@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -528,7 +528,7 @@ func DataCloudflareQueue_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
+		"@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataCloudflareQueue_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
+		"@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func DataCloudflareQueue_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
+		"@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func DataCloudflareQueue_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
+		"@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue",
 		"tfResourceType",
 		&returns,
 	)
@@ -613,11 +613,11 @@ func (d *jsiiProxy_DataCloudflareQueue) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareQueue) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareQueue) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -741,11 +741,11 @@ func (d *jsiiProxy_DataCloudflareQueue) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareQueue) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareQueue) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

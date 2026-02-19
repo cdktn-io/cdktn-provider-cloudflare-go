@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zone/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zone/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZoneMetaOutputReference interface {
-	cdktf.ComplexObject
-	CdnOnly() cdktf.IResolvable
+	cdktn.ComplexObject
+	CdnOnly() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,29 +30,29 @@ type ZoneMetaOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomCertificateQuota() *float64
-	DnsOnly() cdktf.IResolvable
-	FoundationDns() cdktf.IResolvable
+	DnsOnly() cdktn.IResolvable
+	FoundationDns() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ZoneMeta
 	SetInternalValue(val *ZoneMeta)
 	PageRuleQuota() *float64
-	PhishingDetected() cdktf.IResolvable
+	PhishingDetected() cdktn.IResolvable
 	Step() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,12 +68,12 @@ type ZoneMetaOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,11 +83,11 @@ type ZoneMetaOutputReference interface {
 
 // The jsii proxy struct for ZoneMetaOutputReference
 type jsiiProxy_ZoneMetaOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference) CdnOnly() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZoneMetaOutputReference) CdnOnly() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"cdnOnly",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_ZoneMetaOutputReference) CustomCertificateQuota() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference) DnsOnly() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZoneMetaOutputReference) DnsOnly() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"dnsOnly",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ZoneMetaOutputReference) DnsOnly() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference) FoundationDns() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZoneMetaOutputReference) FoundationDns() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"foundationDns",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ZoneMetaOutputReference) PageRuleQuota() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference) PhishingDetected() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZoneMetaOutputReference) PhishingDetected() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"phishingDetected",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_ZoneMetaOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZoneMetaOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -227,7 +227,7 @@ func (j *jsiiProxy_ZoneMetaOutputReference) TerraformResource() cdktf.IInterpola
 }
 
 
-func NewZoneMetaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneMetaOutputReference {
+func NewZoneMetaOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZoneMetaOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZoneMetaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -236,7 +236,7 @@ func NewZoneMetaOutputReference(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_ZoneMetaOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zone.ZoneMetaOutputReference",
+		"@cdktn/provider-cloudflare.zone.ZoneMetaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -244,11 +244,11 @@ func NewZoneMetaOutputReference(terraformResource cdktf.IInterpolatingParent, te
 	return &j
 }
 
-func NewZoneMetaOutputReference_Override(z ZoneMetaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZoneMetaOutputReference_Override(z ZoneMetaOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zone.ZoneMetaOutputReference",
+		"@cdktn/provider-cloudflare.zone.ZoneMetaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -298,7 +298,7 @@ func (j *jsiiProxy_ZoneMetaOutputReference)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneMetaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneMetaOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,11 +338,11 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (z *jsiiProxy_ZoneMetaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZoneMetaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -466,8 +466,8 @@ func (z *jsiiProxy_ZoneMetaOutputReference) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
-func (z *jsiiProxy_ZoneMetaOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZoneMetaOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -479,11 +479,11 @@ func (z *jsiiProxy_ZoneMetaOutputReference) InterpolationAsList() cdktf.IResolva
 	return returns
 }
 
-func (z *jsiiProxy_ZoneMetaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZoneMetaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -495,7 +495,7 @@ func (z *jsiiProxy_ZoneMetaOutputReference) InterpolationForAttribute(terraformA
 	return returns
 }
 
-func (z *jsiiProxy_ZoneMetaOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZoneMetaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

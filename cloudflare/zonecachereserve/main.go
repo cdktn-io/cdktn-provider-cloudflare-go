@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zonecachereserve
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve",
+		"@cdktn/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve",
 		reflect.TypeOf((*ZoneCacheReserve)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -66,12 +66,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneCacheReserve{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig",
+		"@cdktn/provider-cloudflare.zoneCacheReserve.ZoneCacheReserveConfig",
 		reflect.TypeOf((*ZoneCacheReserveConfig)(nil)).Elem(),
 	)
 }

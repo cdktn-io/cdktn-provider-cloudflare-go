@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package cloudforceonerequestasset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/cloudforceonerequestasset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudforceonerequestasset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 type CloudforceOneRequestAsset interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,18 +38,18 @@ type CloudforceOneRequestAsset interface {
 	Description() *string
 	FileType() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -60,9 +60,9 @@ type CloudforceOneRequestAsset interface {
 	SetPerPage(val *float64)
 	PerPageInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -76,7 +76,7 @@ type CloudforceOneRequestAsset interface {
 	SetSource(val *string)
 	SourceInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type CloudforceOneRequestAsset interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -107,9 +107,9 @@ type CloudforceOneRequestAsset interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -143,7 +143,7 @@ type CloudforceOneRequestAsset interface {
 
 // The jsii proxy struct for CloudforceOneRequestAsset
 type jsiiProxy_CloudforceOneRequestAsset struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_CloudforceOneRequestAsset) AccountId() *string {
@@ -166,8 +166,8 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestAsset) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CloudforceOneRequestAsset) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) FileType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestAsset) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CloudforceOneRequestAsset) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) Id() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestAsset) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CloudforceOneRequestAsset) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) PerPageInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestAsset) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CloudforceOneRequestAsset) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) SourceInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestAsset) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CloudforceOneRequestAsset) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -457,7 +457,7 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
 func NewCloudforceOneRequestAsset(scope constructs.Construct, id *string, config *CloudforceOneRequestAssetConfig) CloudforceOneRequestAsset {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewCloudforceOneRequestAsset(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CloudforceOneRequestAsset{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,12 +475,12 @@ func NewCloudforceOneRequestAsset(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
 func NewCloudforceOneRequestAsset_Override(c CloudforceOneRequestAsset, scope constructs.Construct, id *string, config *CloudforceOneRequestAssetConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -527,7 +527,7 @@ func (j *jsiiProxy_CloudforceOneRequestAsset)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestAsset)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudforceOneRequestAsset)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -535,7 +535,7 @@ func (j *jsiiProxy_CloudforceOneRequestAsset)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestAsset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudforceOneRequestAsset)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +568,7 @@ func (j *jsiiProxy_CloudforceOneRequestAsset)SetPerPage(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestAsset)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudforceOneRequestAsset)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -609,17 +609,17 @@ func (j *jsiiProxy_CloudforceOneRequestAsset)SetSource(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a CloudforceOneRequestAsset resource upon running "cdktf plan <stack-name>".
-func CloudforceOneRequestAsset_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a CloudforceOneRequestAsset resource upon running "cdktn plan <stack-name>".
+func CloudforceOneRequestAsset_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCloudforceOneRequestAsset_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -654,7 +654,7 @@ func CloudforceOneRequestAsset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func CloudforceOneRequestAsset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func CloudforceOneRequestAsset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func CloudforceOneRequestAsset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
+		"@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset",
 		"tfResourceType",
 		&returns,
 	)
@@ -750,11 +750,11 @@ func (c *jsiiProxy_CloudforceOneRequestAsset) GetAnyMapAttribute(terraformAttrib
 	return returns
 }
 
-func (c *jsiiProxy_CloudforceOneRequestAsset) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudforceOneRequestAsset) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -891,7 +891,7 @@ func (c *jsiiProxy_CloudforceOneRequestAsset) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudforceOneRequestAsset) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CloudforceOneRequestAsset) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -902,11 +902,11 @@ func (c *jsiiProxy_CloudforceOneRequestAsset) ImportFrom(id *string, provider cd
 	)
 }
 
-func (c *jsiiProxy_CloudforceOneRequestAsset) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudforceOneRequestAsset) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,

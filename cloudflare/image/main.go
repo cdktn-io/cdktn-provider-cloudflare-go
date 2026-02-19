@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package image
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.image.Image",
+		"@cdktn/provider-cloudflare.image.Image",
 		reflect.TypeOf((*Image)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -81,12 +81,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Image{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.image.ImageConfig",
+		"@cdktn/provider-cloudflare.image.ImageConfig",
 		reflect.TypeOf((*ImageConfig)(nil)).Elem(),
 	)
 }

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateGetParamet
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewNotificationPolicyMechanismsPagerdutyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNotificationPolicyMechanismsPagerdutyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

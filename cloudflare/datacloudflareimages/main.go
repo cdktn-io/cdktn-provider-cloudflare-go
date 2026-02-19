@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareimages
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImages",
+		"@cdktn/provider-cloudflare.dataCloudflareImages.DataCloudflareImages",
 		reflect.TypeOf((*DataCloudflareImages)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -59,24 +59,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareImages{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesConfig",
 		reflect.TypeOf((*DataCloudflareImagesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResult",
+		"@cdktn/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResult",
 		reflect.TypeOf((*DataCloudflareImagesResult)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImages",
+		"@cdktn/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImages",
 		reflect.TypeOf((*DataCloudflareImagesResultImages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesList",
+		"@cdktn/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesList",
 		reflect.TypeOf((*DataCloudflareImagesResultImagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -92,12 +92,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareImagesResultImagesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultImagesOutputReference",
 		reflect.TypeOf((*DataCloudflareImagesResultImagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,12 +131,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareImagesResultImagesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultList",
+		"@cdktn/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultList",
 		reflect.TypeOf((*DataCloudflareImagesResultList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -152,12 +152,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareImagesResultList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareImages.DataCloudflareImagesResultOutputReference",
 		reflect.TypeOf((*DataCloudflareImagesResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -185,7 +185,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareImagesResultOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

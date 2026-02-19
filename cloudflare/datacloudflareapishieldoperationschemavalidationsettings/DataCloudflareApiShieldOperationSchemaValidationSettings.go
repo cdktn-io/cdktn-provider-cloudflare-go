@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareapishieldoperationschemavalidationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapishieldoperationschemavalidationsettings/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareapishieldoperationschemavalidationsettings/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
 type DataCloudflareApiShieldOperationSchemaValidationSettings interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,17 +28,17 @@ type DataCloudflareApiShieldOperationSchemaValidationSettings interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MitigationAction() *string
 	// The tree node.
 	Node() constructs.Node
@@ -46,13 +46,13 @@ type DataCloudflareApiShieldOperationSchemaValidationSettings interface {
 	SetOperationId(val *string)
 	OperationIdInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type DataCloudflareApiShieldOperationSchemaValidationSettings interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,7 +81,7 @@ type DataCloudflareApiShieldOperationSchemaValidationSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -104,11 +104,11 @@ type DataCloudflareApiShieldOperationSchemaValidationSettings interface {
 
 // The jsii proxy struct for DataCloudflareApiShieldOperationSchemaValidationSettings
 type jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Dep
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Fri
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Ope
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Raw
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Zon
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldOperationSchemaValidationSettings(scope constructs.Construct, id *string, config *DataCloudflareApiShieldOperationSchemaValidationSettingsConfig) DataCloudflareApiShieldOperationSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -308,7 +308,7 @@ func NewDataCloudflareApiShieldOperationSchemaValidationSettings(scope construct
 	j := jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,12 +316,12 @@ func NewDataCloudflareApiShieldOperationSchemaValidationSettings(scope construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldOperationSchemaValidationSettings_Override(d DataCloudflareApiShieldOperationSchemaValidationSettings, scope constructs.Construct, id *string, config *DataCloudflareApiShieldOperationSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetD
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetF
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetO
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -395,17 +395,17 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings)SetZ
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareApiShieldOperationSchemaValidationSettings resource upon running "cdktf plan <stack-name>".
-func DataCloudflareApiShieldOperationSchemaValidationSettings_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareApiShieldOperationSchemaValidationSettings resource upon running "cdktn plan <stack-name>".
+func DataCloudflareApiShieldOperationSchemaValidationSettings_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareApiShieldOperationSchemaValidationSettings_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -440,7 +440,7 @@ func DataCloudflareApiShieldOperationSchemaValidationSettings_IsConstruct(x inte
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -459,7 +459,7 @@ func DataCloudflareApiShieldOperationSchemaValidationSettings_IsTerraformDataSou
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataCloudflareApiShieldOperationSchemaValidationSettings_IsTerraformElement
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataCloudflareApiShieldOperationSchemaValidationSettings_TfResourceType() *
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldOperationSchemaValidationSettings.DataCloudflareApiShieldOperationSchemaValidationSettings",
 		"tfResourceType",
 		&returns,
 	)
@@ -525,11 +525,11 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -653,11 +653,11 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

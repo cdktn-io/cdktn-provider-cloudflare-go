@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/pagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PagesProjectCanonicalDeploymentEnvVarsMap interface {
-	cdktf.ComplexMap
+	cdktn.ComplexMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -24,16 +24,16 @@ type PagesProjectCanonicalDeploymentEnvVarsMap interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	Get(key *string) PagesProjectCanonicalDeploymentEnvVarsOutputReference
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(property *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -43,7 +43,7 @@ type PagesProjectCanonicalDeploymentEnvVarsMap interface {
 
 // The jsii proxy struct for PagesProjectCanonicalDeploymentEnvVarsMap
 type jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap struct {
-	internal.Type__cdktfComplexMap
+	internal.Type__cdktnComplexMap
 }
 
 func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) CreationStack() *[]*string {
@@ -76,8 +76,8 @@ func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -87,7 +87,7 @@ func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) TerraformResource(
 }
 
 
-func NewPagesProjectCanonicalDeploymentEnvVarsMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectCanonicalDeploymentEnvVarsMap {
+func NewPagesProjectCanonicalDeploymentEnvVarsMap(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PagesProjectCanonicalDeploymentEnvVarsMap {
 	_init_.Initialize()
 
 	if err := validateNewPagesProjectCanonicalDeploymentEnvVarsMapParameters(terraformResource, terraformAttribute); err != nil {
@@ -96,7 +96,7 @@ func NewPagesProjectCanonicalDeploymentEnvVarsMap(terraformResource cdktf.IInter
 	j := jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentEnvVarsMap",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentEnvVarsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -104,11 +104,11 @@ func NewPagesProjectCanonicalDeploymentEnvVarsMap(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewPagesProjectCanonicalDeploymentEnvVarsMap_Override(p PagesProjectCanonicalDeploymentEnvVarsMap, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPagesProjectCanonicalDeploymentEnvVarsMap_Override(p PagesProjectCanonicalDeploymentEnvVarsMap, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentEnvVarsMap",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectCanonicalDeploymentEnvVarsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -125,7 +125,7 @@ func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -165,11 +165,11 @@ func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) Get(key *string) P
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) InterpolationForAttribute(property *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -181,7 +181,7 @@ func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) InterpolationForAt
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectCanonicalDeploymentEnvVarsMap) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

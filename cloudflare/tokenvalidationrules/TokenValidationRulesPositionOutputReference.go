@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tokenvalidationrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/tokenvalidationrules/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationrules/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type TokenValidationRulesPositionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	After() *string
 	SetAfter(val *string)
 	AfterInput() *string
@@ -46,15 +46,15 @@ type TokenValidationRulesPositionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type TokenValidationRulesPositionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAfter()
 	ResetBefore()
 	ResetIndex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type TokenValidationRulesPositionOutputReference interface {
 
 // The jsii proxy struct for TokenValidationRulesPositionOutputReference
 type jsiiProxy_TokenValidationRulesPositionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TokenValidationRulesPositionOutputReference) After() *string {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_TokenValidationRulesPositionOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_TokenValidationRulesPositionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TokenValidationRulesPositionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_TokenValidationRulesPositionOutputReference) TerraformResourc
 }
 
 
-func NewTokenValidationRulesPositionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TokenValidationRulesPositionOutputReference {
+func NewTokenValidationRulesPositionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) TokenValidationRulesPositionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTokenValidationRulesPositionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewTokenValidationRulesPositionOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_TokenValidationRulesPositionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesPositionOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesPositionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewTokenValidationRulesPositionOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewTokenValidationRulesPositionOutputReference_Override(t TokenValidationRulesPositionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewTokenValidationRulesPositionOutputReference_Override(t TokenValidationRulesPositionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesPositionOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesPositionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_TokenValidationRulesPositionOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_TokenValidationRulesPositionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TokenValidationRulesPositionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -494,8 +494,8 @@ func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -507,11 +507,11 @@ func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) InterpolationAsL
 	return returns
 }
 
-func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -547,7 +547,7 @@ func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) ResetIndex() {
 	)
 }
 
-func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TokenValidationRulesPositionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

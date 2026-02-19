@@ -1,26 +1,26 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareruleset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareruleset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareRulesetRulesActionParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalCacheablePorts() *[]*float64
 	Algorithms() DataCloudflareRulesetRulesActionParametersAlgorithmsList
 	AssetName() *string
-	AutomaticHttpsRewrites() cdktf.IResolvable
+	AutomaticHttpsRewrites() cdktn.IResolvable
 	Autominify() DataCloudflareRulesetRulesActionParametersAutominifyOutputReference
-	Bic() cdktf.IResolvable
+	Bic() cdktn.IResolvable
 	BrowserTtl() DataCloudflareRulesetRulesActionParametersBrowserTtlOutputReference
-	Cache() cdktf.IResolvable
+	Cache() cdktn.IResolvable
 	CacheKey() DataCloudflareRulesetRulesActionParametersCacheKeyOutputReference
 	CacheReserve() DataCloudflareRulesetRulesActionParametersCacheReserveOutputReference
 	// the index of the complex object in a list.
@@ -41,58 +41,60 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableApps() cdktf.IResolvable
-	DisableRum() cdktf.IResolvable
-	DisableZaraz() cdktf.IResolvable
+	DisableApps() cdktn.IResolvable
+	DisableRum() cdktn.IResolvable
+	DisableZaraz() cdktn.IResolvable
 	EdgeTtl() DataCloudflareRulesetRulesActionParametersEdgeTtlOutputReference
-	EmailObfuscation() cdktf.IResolvable
-	Fonts() cdktf.IResolvable
+	EmailObfuscation() cdktn.IResolvable
+	Fonts() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	FromList() DataCloudflareRulesetRulesActionParametersFromListStructOutputReference
 	FromValue() DataCloudflareRulesetRulesActionParametersFromValueOutputReference
 	Headers() DataCloudflareRulesetRulesActionParametersHeadersMap
 	HostHeader() *string
-	HotlinkProtection() cdktf.IResolvable
+	HotlinkProtection() cdktn.IResolvable
 	Id() *string
 	Increment() *float64
 	InternalValue() *DataCloudflareRulesetRulesActionParameters
 	SetInternalValue(val *DataCloudflareRulesetRulesActionParameters)
 	MatchedData() DataCloudflareRulesetRulesActionParametersMatchedDataOutputReference
-	Mirage() cdktf.IResolvable
-	OpportunisticEncryption() cdktf.IResolvable
+	Mirage() cdktn.IResolvable
+	OpportunisticEncryption() cdktn.IResolvable
 	Origin() DataCloudflareRulesetRulesActionParametersOriginOutputReference
-	OriginCacheControl() cdktf.IResolvable
-	OriginErrorPagePassthru() cdktf.IResolvable
+	OriginCacheControl() cdktn.IResolvable
+	OriginErrorPagePassthru() cdktn.IResolvable
 	Overrides() DataCloudflareRulesetRulesActionParametersOverridesOutputReference
 	Phases() *[]*string
 	Polish() *string
 	Products() *[]*string
 	RawResponseFields() DataCloudflareRulesetRulesActionParametersRawResponseFieldsList
 	ReadTimeout() *float64
+	RequestBodyBuffering() *string
 	RequestFields() DataCloudflareRulesetRulesActionParametersRequestFieldsList
-	RespectStrongEtags() cdktf.IResolvable
+	RespectStrongEtags() cdktn.IResolvable
 	Response() DataCloudflareRulesetRulesActionParametersResponseOutputReference
+	ResponseBodyBuffering() *string
 	ResponseFields() DataCloudflareRulesetRulesActionParametersResponseFieldsList
-	RocketLoader() cdktf.IResolvable
-	Rules() cdktf.StringListMap
+	RocketLoader() cdktn.IResolvable
+	Rules() cdktn.StringListMap
 	Ruleset() *string
 	Rulesets() *[]*string
 	SecurityLevel() *string
-	ServerSideExcludes() cdktf.IResolvable
+	ServerSideExcludes() cdktn.IResolvable
 	ServeStale() DataCloudflareRulesetRulesActionParametersServeStaleOutputReference
 	Sni() DataCloudflareRulesetRulesActionParametersSniOutputReference
 	Ssl() *string
 	StatusCode() *float64
-	Sxg() cdktf.IResolvable
+	Sxg() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TransformedRequestFields() DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList
 	Uri() DataCloudflareRulesetRulesActionParametersUriOutputReference
 	// Experimental.
@@ -100,7 +102,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -116,12 +118,12 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -131,7 +133,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareRulesetRulesActionParametersOutputReference
 type jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) AdditionalCacheablePorts() *[]*float64 {
@@ -164,8 +166,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) As
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) AutomaticHttpsRewrites() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) AutomaticHttpsRewrites() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"automaticHttpsRewrites",
@@ -184,8 +186,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Au
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Bic() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Bic() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"bic",
@@ -204,8 +206,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Br
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Cache() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Cache() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"cache",
@@ -294,8 +296,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Cr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) DisableApps() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) DisableApps() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disableApps",
@@ -304,8 +306,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Di
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) DisableRum() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) DisableRum() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disableRum",
@@ -314,8 +316,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Di
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) DisableZaraz() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) DisableZaraz() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disableZaraz",
@@ -334,8 +336,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ed
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) EmailObfuscation() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) EmailObfuscation() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"emailObfuscation",
@@ -344,8 +346,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Em
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Fonts() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Fonts() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"fonts",
@@ -404,8 +406,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ho
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) HotlinkProtection() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) HotlinkProtection() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"hotlinkProtection",
@@ -454,8 +456,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ma
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Mirage() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Mirage() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"mirage",
@@ -464,8 +466,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Mi
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) OpportunisticEncryption() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) OpportunisticEncryption() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"opportunisticEncryption",
@@ -484,8 +486,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Or
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) OriginCacheControl() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) OriginCacheControl() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"originCacheControl",
@@ -494,8 +496,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Or
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) OriginErrorPagePassthru() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) OriginErrorPagePassthru() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"originErrorPagePassthru",
@@ -564,6 +566,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Re
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RequestBodyBuffering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyBuffering",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RequestFields() DataCloudflareRulesetRulesActionParametersRequestFieldsList {
 	var returns DataCloudflareRulesetRulesActionParametersRequestFieldsList
 	_jsii_.Get(
@@ -574,8 +586,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Re
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RespectStrongEtags() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RespectStrongEtags() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"respectStrongEtags",
@@ -594,6 +606,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Re
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ResponseBodyBuffering() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseBodyBuffering",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ResponseFields() DataCloudflareRulesetRulesActionParametersResponseFieldsList {
 	var returns DataCloudflareRulesetRulesActionParametersResponseFieldsList
 	_jsii_.Get(
@@ -604,8 +626,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Re
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RocketLoader() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RocketLoader() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"rocketLoader",
@@ -614,8 +636,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ro
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Rules() cdktf.StringListMap {
-	var returns cdktf.StringListMap
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Rules() cdktn.StringListMap {
+	var returns cdktn.StringListMap
 	_jsii_.Get(
 		j,
 		"rules",
@@ -654,8 +676,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Se
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ServerSideExcludes() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ServerSideExcludes() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"serverSideExcludes",
@@ -704,8 +726,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) St
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Sxg() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Sxg() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"sxg",
@@ -724,8 +746,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -755,7 +777,7 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ur
 }
 
 
-func NewDataCloudflareRulesetRulesActionParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareRulesetRulesActionParametersOutputReference {
+func NewDataCloudflareRulesetRulesActionParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareRulesetRulesActionParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareRulesetRulesActionParametersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -764,7 +786,7 @@ func NewDataCloudflareRulesetRulesActionParametersOutputReference(terraformResou
 	j := jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -772,11 +794,11 @@ func NewDataCloudflareRulesetRulesActionParametersOutputReference(terraformResou
 	return &j
 }
 
-func NewDataCloudflareRulesetRulesActionParametersOutputReference_Override(d DataCloudflareRulesetRulesActionParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareRulesetRulesActionParametersOutputReference_Override(d DataCloudflareRulesetRulesActionParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -826,7 +848,7 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,11 +888,11 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -994,8 +1016,8 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1007,11 +1029,11 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1023,7 +1045,7 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

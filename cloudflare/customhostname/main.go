@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customhostname
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostname",
 		reflect.TypeOf((*CustomHostname)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -80,24 +80,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostname{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameConfig",
 		reflect.TypeOf((*CustomHostnameConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameOwnershipVerification",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameOwnershipVerification",
 		reflect.TypeOf((*CustomHostnameOwnershipVerification)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameOwnershipVerificationHttp",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameOwnershipVerificationHttp",
 		reflect.TypeOf((*CustomHostnameOwnershipVerificationHttp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameOwnershipVerificationHttpOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameOwnershipVerificationHttpOutputReference",
 		reflect.TypeOf((*CustomHostnameOwnershipVerificationHttpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,12 +126,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameOwnershipVerificationHttpOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameOwnershipVerificationOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameOwnershipVerificationOutputReference",
 		reflect.TypeOf((*CustomHostnameOwnershipVerificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,20 +161,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameOwnershipVerificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSsl",
 		reflect.TypeOf((*CustomHostnameSsl)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundle",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundle",
 		reflect.TypeOf((*CustomHostnameSslCustomCertBundle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleList",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleList",
 		reflect.TypeOf((*CustomHostnameSslCustomCertBundleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -191,12 +191,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslCustomCertBundleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslCustomCertBundleOutputReference",
 		reflect.TypeOf((*CustomHostnameSslCustomCertBundleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,12 +227,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslCustomCertBundleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
 		reflect.TypeOf((*CustomHostnameSslOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bundleMethod", GoGetter: "BundleMethod"},
@@ -291,16 +291,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslSettings",
 		reflect.TypeOf((*CustomHostnameSslSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference",
 		reflect.TypeOf((*CustomHostnameSslSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ciphers", GoGetter: "Ciphers"},
@@ -342,7 +342,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustgatewaypolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustgatewaypolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustGatewayPolicyScheduleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,9 +49,9 @@ type ZeroTrustGatewayPolicyScheduleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Thu() *string
 	SetThu(val *string)
 	ThuInput() *string
@@ -69,7 +69,7 @@ type ZeroTrustGatewayPolicyScheduleOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type ZeroTrustGatewayPolicyScheduleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFri()
 	ResetMon()
 	ResetSat()
@@ -98,7 +98,7 @@ type ZeroTrustGatewayPolicyScheduleOutputReference interface {
 	ResetWed()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type ZeroTrustGatewayPolicyScheduleOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustGatewayPolicyScheduleOutputReference
 type jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) ComplexObjectIndex() interface{} {
@@ -251,8 +251,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -342,7 +342,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) WedInput() *st
 }
 
 
-func NewZeroTrustGatewayPolicyScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyScheduleOutputReference {
+func NewZeroTrustGatewayPolicyScheduleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyScheduleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustGatewayPolicyScheduleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -351,7 +351,7 @@ func NewZeroTrustGatewayPolicyScheduleOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyScheduleOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -359,11 +359,11 @@ func NewZeroTrustGatewayPolicyScheduleOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewZeroTrustGatewayPolicyScheduleOutputReference_Override(z ZeroTrustGatewayPolicyScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustGatewayPolicyScheduleOutputReference_Override(z ZeroTrustGatewayPolicyScheduleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyScheduleOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -457,7 +457,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,11 +541,11 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -669,8 +669,8 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) GetStringMapAt
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -682,11 +682,11 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) InterpolationA
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -762,7 +762,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) ResetWed() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyScheduleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

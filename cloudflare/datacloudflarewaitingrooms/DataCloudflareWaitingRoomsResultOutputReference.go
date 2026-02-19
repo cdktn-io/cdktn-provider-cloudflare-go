@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarewaitingrooms
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarewaitingrooms/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarewaitingrooms/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareWaitingRoomsResultOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalRoutes() DataCloudflareWaitingRoomsResultAdditionalRoutesList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -35,7 +35,7 @@ type DataCloudflareWaitingRoomsResultOutputReference interface {
 	CustomPageHtml() *string
 	DefaultTemplateLanguage() *string
 	Description() *string
-	DisableSessionRenewal() cdktf.IResolvable
+	DisableSessionRenewal() cdktn.IResolvable
 	EnabledOriginCommands() *[]*string
 	// Experimental.
 	Fqn() *string
@@ -43,26 +43,26 @@ type DataCloudflareWaitingRoomsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareWaitingRoomsResult
 	SetInternalValue(val *DataCloudflareWaitingRoomsResult)
-	JsonResponseEnabled() cdktf.IResolvable
+	JsonResponseEnabled() cdktn.IResolvable
 	ModifiedOn() *string
 	Name() *string
 	NewUsersPerMinute() *float64
 	NextEventPrequeueStartTime() *string
 	NextEventStartTime() *string
 	Path() *string
-	QueueAll() cdktf.IResolvable
+	QueueAll() cdktn.IResolvable
 	QueueingMethod() *string
 	QueueingStatusCode() *float64
 	SessionDuration() *float64
-	Suspended() cdktf.IResolvable
+	Suspended() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TotalActiveUsers() *float64
 	TurnstileAction() *string
 	TurnstileMode() *string
@@ -71,7 +71,7 @@ type DataCloudflareWaitingRoomsResultOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -87,12 +87,12 @@ type DataCloudflareWaitingRoomsResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,7 +102,7 @@ type DataCloudflareWaitingRoomsResultOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareWaitingRoomsResultOutputReference
 type jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) AdditionalRoutes() DataCloudflareWaitingRoomsResultAdditionalRoutesList {
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) Description(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) DisableSessionRenewal() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) DisableSessionRenewal() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disableSessionRenewal",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) InternalValu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) JsonResponseEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) JsonResponseEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"jsonResponseEnabled",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) Path() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) QueueAll() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) QueueAll() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"queueAll",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) SessionDurat
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) Suspended() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) Suspended() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"suspended",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) TurnstileMod
 }
 
 
-func NewDataCloudflareWaitingRoomsResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareWaitingRoomsResultOutputReference {
+func NewDataCloudflareWaitingRoomsResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareWaitingRoomsResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareWaitingRoomsResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -445,7 +445,7 @@ func NewDataCloudflareWaitingRoomsResultOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -453,11 +453,11 @@ func NewDataCloudflareWaitingRoomsResultOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewDataCloudflareWaitingRoomsResultOutputReference_Override(d DataCloudflareWaitingRoomsResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareWaitingRoomsResultOutputReference_Override(d DataCloudflareWaitingRoomsResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRoomsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -507,7 +507,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,11 +547,11 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -675,8 +675,8 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) GetStringMap
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -688,11 +688,11 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) Interpolatio
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -704,7 +704,7 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) Interpolatio
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareWaitingRoomsResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

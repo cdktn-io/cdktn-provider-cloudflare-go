@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package observatoryscheduledtest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/observatoryscheduledtest/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/observatoryscheduledtest/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ObservatoryScheduledTestTestOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,16 +43,16 @@ type ObservatoryScheduledTestTestOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,12 +68,12 @@ type ObservatoryScheduledTestTestOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ObservatoryScheduledTestTestOutputReference interface {
 
 // The jsii proxy struct for ObservatoryScheduledTestTestOutputReference
 type jsiiProxy_ObservatoryScheduledTestTestOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference) ComplexObjectIndex() interface{} {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -227,7 +227,7 @@ func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference) Url() *string {
 }
 
 
-func NewObservatoryScheduledTestTestOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestTestOutputReference {
+func NewObservatoryScheduledTestTestOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ObservatoryScheduledTestTestOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewObservatoryScheduledTestTestOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -236,7 +236,7 @@ func NewObservatoryScheduledTestTestOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ObservatoryScheduledTestTestOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestOutputReference",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -244,11 +244,11 @@ func NewObservatoryScheduledTestTestOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewObservatoryScheduledTestTestOutputReference_Override(o ObservatoryScheduledTestTestOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewObservatoryScheduledTestTestOutputReference_Override(o ObservatoryScheduledTestTestOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestOutputReference",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -298,7 +298,7 @@ func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ObservatoryScheduledTestTestOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,11 +338,11 @@ func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -466,8 +466,8 @@ func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -479,11 +479,11 @@ func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) InterpolationAsL
 	return returns
 }
 
-func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -495,7 +495,7 @@ func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) InterpolationFor
 	return returns
 }
 
-func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_ObservatoryScheduledTestTestOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

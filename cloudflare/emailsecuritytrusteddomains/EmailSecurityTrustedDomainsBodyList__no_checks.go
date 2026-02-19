@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateGetParameters(in
 	return nil
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomainsBodyList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewEmailSecurityTrustedDomainsBodyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEmailSecurityTrustedDomainsBodyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

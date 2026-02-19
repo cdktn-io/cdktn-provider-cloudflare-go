@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package waitingroomrules
@@ -7,19 +7,19 @@ package waitingroomrules
 type WaitingRoomRulesRules struct {
 	// The action to take when the expression matches. Available values: "bypass_waiting_room".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
 	// Criteria defining when there is a match for the current rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 	// The description of the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// When set to true, the rule is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

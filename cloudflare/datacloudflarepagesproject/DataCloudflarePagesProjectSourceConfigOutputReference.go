@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarepagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflarePagesProjectSourceConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,7 +28,7 @@ type DataCloudflarePagesProjectSourceConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeploymentsEnabled() cdktf.IResolvable
+	DeploymentsEnabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflarePagesProjectSourceConfig
@@ -37,12 +37,12 @@ type DataCloudflarePagesProjectSourceConfigOutputReference interface {
 	OwnerId() *string
 	PathExcludes() *[]*string
 	PathIncludes() *[]*string
-	PrCommentsEnabled() cdktf.IResolvable
+	PrCommentsEnabled() cdktn.IResolvable
 	PreviewBranchExcludes() *[]*string
 	PreviewBranchIncludes() *[]*string
 	PreviewDeploymentSetting() *string
 	ProductionBranch() *string
-	ProductionDeploymentsEnabled() cdktf.IResolvable
+	ProductionDeploymentsEnabled() cdktn.IResolvable
 	RepoId() *string
 	RepoName() *string
 	// Experimental.
@@ -50,15 +50,15 @@ type DataCloudflarePagesProjectSourceConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,12 +74,12 @@ type DataCloudflarePagesProjectSourceConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type DataCloudflarePagesProjectSourceConfigOutputReference interface {
 
 // The jsii proxy struct for DataCloudflarePagesProjectSourceConfigOutputReference
 type jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) DeploymentsEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) DeploymentsEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"deploymentsEnabled",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) PathIn
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) PrCommentsEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) PrCommentsEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"prCommentsEnabled",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Produc
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) ProductionDeploymentsEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) ProductionDeploymentsEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"productionDeploymentsEnabled",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Terraf
 }
 
 
-func NewDataCloudflarePagesProjectSourceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectSourceConfigOutputReference {
+func NewDataCloudflarePagesProjectSourceConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflarePagesProjectSourceConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflarePagesProjectSourceConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -302,7 +302,7 @@ func NewDataCloudflarePagesProjectSourceConfigOutputReference(terraformResource 
 	j := jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -310,11 +310,11 @@ func NewDataCloudflarePagesProjectSourceConfigOutputReference(terraformResource 
 	return &j
 }
 
-func NewDataCloudflarePagesProjectSourceConfigOutputReference_Override(d DataCloudflarePagesProjectSourceConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflarePagesProjectSourceConfigOutputReference_Override(d DataCloudflarePagesProjectSourceConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,11 +404,11 @@ func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) GetAny
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -532,8 +532,8 @@ func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) GetStr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -545,11 +545,11 @@ func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -561,7 +561,7 @@ func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflarePagesProjectSourceConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

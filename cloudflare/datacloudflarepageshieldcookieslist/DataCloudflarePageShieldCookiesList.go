@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepageshieldcookieslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldcookieslist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarepageshieldcookieslist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}.
 type DataCloudflarePageShieldCookiesList interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type DataCloudflarePageShieldCookiesList interface {
 	SetExport(val *string)
 	ExportInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -51,9 +51,9 @@ type DataCloudflarePageShieldCookiesList interface {
 	SetHttpOnly(val interface{})
 	HttpOnlyInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
@@ -78,9 +78,9 @@ type DataCloudflarePageShieldCookiesList interface {
 	SetPerPage(val *float64)
 	PerPageInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflarePageShieldCookiesListResultList
@@ -91,7 +91,7 @@ type DataCloudflarePageShieldCookiesList interface {
 	SetSecure(val interface{})
 	SecureInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,7 +107,7 @@ type DataCloudflarePageShieldCookiesList interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -123,7 +123,7 @@ type DataCloudflarePageShieldCookiesList interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -161,11 +161,11 @@ type DataCloudflarePageShieldCookiesList interface {
 
 // The jsii proxy struct for DataCloudflarePageShieldCookiesList
 type jsiiProxy_DataCloudflarePageShieldCookiesList struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) ExportInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) HttpOnlyInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) PerPageInput() *float64 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -564,8 +564,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) SecureInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -635,7 +635,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
 func NewDataCloudflarePageShieldCookiesList(scope constructs.Construct, id *string, config *DataCloudflarePageShieldCookiesListConfig) DataCloudflarePageShieldCookiesList {
 	_init_.Initialize()
 
@@ -645,7 +645,7 @@ func NewDataCloudflarePageShieldCookiesList(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataCloudflarePageShieldCookiesList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -653,12 +653,12 @@ func NewDataCloudflarePageShieldCookiesList(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
 func NewDataCloudflarePageShieldCookiesList_Override(d DataCloudflarePageShieldCookiesList, scope constructs.Construct, id *string, config *DataCloudflarePageShieldCookiesListConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -716,7 +716,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetExport(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -746,7 +746,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetHttpOnly(val interface
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +834,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetPerPage(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -886,17 +886,17 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflarePageShieldCookiesList resource upon running "cdktf plan <stack-name>".
-func DataCloudflarePageShieldCookiesList_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflarePageShieldCookiesList resource upon running "cdktn plan <stack-name>".
+func DataCloudflarePageShieldCookiesList_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflarePageShieldCookiesList_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -931,7 +931,7 @@ func DataCloudflarePageShieldCookiesList_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -950,7 +950,7 @@ func DataCloudflarePageShieldCookiesList_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -969,7 +969,7 @@ func DataCloudflarePageShieldCookiesList_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -982,7 +982,7 @@ func DataCloudflarePageShieldCookiesList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList",
 		"tfResourceType",
 		&returns,
 	)
@@ -1016,11 +1016,11 @@ func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1144,11 +1144,11 @@ func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) GetStringMapAttribute(te
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

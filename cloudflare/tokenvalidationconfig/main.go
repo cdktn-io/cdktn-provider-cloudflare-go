@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tokenvalidationconfig
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig",
 		reflect.TypeOf((*TokenValidationConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,24 +74,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig",
 		reflect.TypeOf((*TokenValidationConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials",
 		reflect.TypeOf((*TokenValidationConfigCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeys",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeys",
 		reflect.TypeOf((*TokenValidationConfigCredentialsKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysList",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysList",
 		reflect.TypeOf((*TokenValidationConfigCredentialsKeysList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -108,12 +108,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationConfigCredentialsKeysList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysOutputReference",
 		reflect.TypeOf((*TokenValidationConfigCredentialsKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alg", GoGetter: "Alg"},
@@ -161,12 +161,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsOutputReference",
 		reflect.TypeOf((*TokenValidationConfigCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,7 +196,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationConfigCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

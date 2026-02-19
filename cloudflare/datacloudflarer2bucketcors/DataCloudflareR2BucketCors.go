@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarer2bucketcors
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketcors/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarer2bucketcors/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors}.
 type DataCloudflareR2BucketCors interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type DataCloudflareR2BucketCors interface {
 	SetBucketName(val *string)
 	BucketNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -34,28 +34,28 @@ type DataCloudflareR2BucketCors interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Rules() DataCloudflareR2BucketCorsRulesList
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type DataCloudflareR2BucketCors interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,7 +81,7 @@ type DataCloudflareR2BucketCors interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -104,7 +104,7 @@ type DataCloudflareR2BucketCors interface {
 
 // The jsii proxy struct for DataCloudflareR2BucketCors
 type jsiiProxy_DataCloudflareR2BucketCors struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareR2BucketCors) AccountId() *string {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors) BucketNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketCors) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareR2BucketCors) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketCors) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareR2BucketCors) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketCors) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareR2BucketCors) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketCors) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareR2BucketCors) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors) Rules() DataCloudflareR2BucketCor
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketCors) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareR2BucketCors) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
 func NewDataCloudflareR2BucketCors(scope constructs.Construct, id *string, config *DataCloudflareR2BucketCorsConfig) DataCloudflareR2BucketCors {
 	_init_.Initialize()
 
@@ -308,7 +308,7 @@ func NewDataCloudflareR2BucketCors(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataCloudflareR2BucketCors{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
+		"@cdktn/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,12 +316,12 @@ func NewDataCloudflareR2BucketCors(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
 func NewDataCloudflareR2BucketCors_Override(d DataCloudflareR2BucketCors, scope constructs.Construct, id *string, config *DataCloudflareR2BucketCorsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
+		"@cdktn/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketCors)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareR2BucketCors)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketCors)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareR2BucketCors)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +387,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketCors)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareR2BucketCors)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -395,17 +395,17 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareR2BucketCors resource upon running "cdktf plan <stack-name>".
-func DataCloudflareR2BucketCors_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareR2BucketCors resource upon running "cdktn plan <stack-name>".
+func DataCloudflareR2BucketCors_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareR2BucketCors_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
+		"@cdktn/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -440,7 +440,7 @@ func DataCloudflareR2BucketCors_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
+		"@cdktn/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -459,7 +459,7 @@ func DataCloudflareR2BucketCors_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
+		"@cdktn/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataCloudflareR2BucketCors_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
+		"@cdktn/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataCloudflareR2BucketCors_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
+		"@cdktn/provider-cloudflare.dataCloudflareR2BucketCors.DataCloudflareR2BucketCors",
 		"tfResourceType",
 		&returns,
 	)
@@ -525,11 +525,11 @@ func (d *jsiiProxy_DataCloudflareR2BucketCors) GetAnyMapAttribute(terraformAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketCors) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareR2BucketCors) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -653,11 +653,11 @@ func (d *jsiiProxy_DataCloudflareR2BucketCors) GetStringMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketCors) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareR2BucketCors) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustriskbehavior
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustriskbehavior/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustriskbehavior/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
 type ZeroTrustRiskBehavior interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	Behaviors() ZeroTrustRiskBehaviorBehaviorsMap
 	BehaviorsInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,23 +37,23 @@ type ZeroTrustRiskBehavior interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -61,7 +61,7 @@ type ZeroTrustRiskBehavior interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -74,7 +74,7 @@ type ZeroTrustRiskBehavior interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -92,9 +92,9 @@ type ZeroTrustRiskBehavior interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -128,7 +128,7 @@ type ZeroTrustRiskBehavior interface {
 
 // The jsii proxy struct for ZeroTrustRiskBehavior
 type jsiiProxy_ZeroTrustRiskBehavior struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ZeroTrustRiskBehavior) AccountId() *string {
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) BehaviorsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ZeroTrustRiskBehavior) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ZeroTrustRiskBehavior) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ZeroTrustRiskBehavior) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ZeroTrustRiskBehavior) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ZeroTrustRiskBehavior) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
 func NewZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *ZeroTrustRiskBehaviorConfig) ZeroTrustRiskBehavior {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *Ze
 	j := jsiiProxy_ZeroTrustRiskBehavior{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
+		"@cdktn/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,12 +350,12 @@ func NewZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
 func NewZeroTrustRiskBehavior_Override(z ZeroTrustRiskBehavior, scope constructs.Construct, id *string, config *ZeroTrustRiskBehaviorConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
+		"@cdktn/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustRiskBehavior)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -410,7 +410,7 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustRiskBehavior)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehavior)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustRiskBehavior)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -440,17 +440,17 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a ZeroTrustRiskBehavior resource upon running "cdktf plan <stack-name>".
-func ZeroTrustRiskBehavior_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ZeroTrustRiskBehavior resource upon running "cdktn plan <stack-name>".
+func ZeroTrustRiskBehavior_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateZeroTrustRiskBehavior_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
+		"@cdktn/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -485,7 +485,7 @@ func ZeroTrustRiskBehavior_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
+		"@cdktn/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func ZeroTrustRiskBehavior_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
+		"@cdktn/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func ZeroTrustRiskBehavior_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
+		"@cdktn/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func ZeroTrustRiskBehavior_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
+		"@cdktn/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehavior",
 		"tfResourceType",
 		&returns,
 	)
@@ -581,11 +581,11 @@ func (z *jsiiProxy_ZeroTrustRiskBehavior) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehavior) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustRiskBehavior) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -722,7 +722,7 @@ func (z *jsiiProxy_ZeroTrustRiskBehavior) HasResourceMove() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehavior) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (z *jsiiProxy_ZeroTrustRiskBehavior) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -733,11 +733,11 @@ func (z *jsiiProxy_ZeroTrustRiskBehavior) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehavior) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustRiskBehavior) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdevicepostureintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicepostureintegration/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdevicepostureintegration/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustDevicePostureIntegrationConfigAOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessClientId() *string
 	SetAccessClientId(val *string)
 	AccessClientIdInput() *string
@@ -61,15 +61,15 @@ type ZeroTrustDevicePostureIntegrationConfigAOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type ZeroTrustDevicePostureIntegrationConfigAOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccessClientId()
 	ResetAccessClientSecret()
 	ResetApiUrl()
@@ -98,7 +98,7 @@ type ZeroTrustDevicePostureIntegrationConfigAOutputReference interface {
 	ResetCustomerId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type ZeroTrustDevicePostureIntegrationConfigAOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustDevicePostureIntegrationConfigAOutputReference
 type jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) AccessClientId() *string {
@@ -331,8 +331,8 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -342,7 +342,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Terr
 }
 
 
-func NewZeroTrustDevicePostureIntegrationConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustDevicePostureIntegrationConfigAOutputReference {
+func NewZeroTrustDevicePostureIntegrationConfigAOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustDevicePostureIntegrationConfigAOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustDevicePostureIntegrationConfigAOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -351,7 +351,7 @@ func NewZeroTrustDevicePostureIntegrationConfigAOutputReference(terraformResourc
 	j := jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigAOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -359,11 +359,11 @@ func NewZeroTrustDevicePostureIntegrationConfigAOutputReference(terraformResourc
 	return &j
 }
 
-func NewZeroTrustDevicePostureIntegrationConfigAOutputReference_Override(z ZeroTrustDevicePostureIntegrationConfigAOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustDevicePostureIntegrationConfigAOutputReference_Override(z ZeroTrustDevicePostureIntegrationConfigAOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigAOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustDevicePostureIntegration.ZeroTrustDevicePostureIntegrationConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -501,7 +501,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,11 +541,11 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetA
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -669,8 +669,8 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) GetS
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -682,11 +682,11 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Inte
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -762,7 +762,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Rese
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

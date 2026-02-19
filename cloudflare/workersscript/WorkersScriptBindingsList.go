@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersscript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersscript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WorkersScriptBindingsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type WorkersScriptBindingsList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type WorkersScriptBindingsList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) WorkersScriptBindingsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type WorkersScriptBindingsList interface {
 
 // The jsii proxy struct for WorkersScriptBindingsList
 type jsiiProxy_WorkersScriptBindingsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_WorkersScriptBindingsList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkersScriptBindingsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_WorkersScriptBindingsList) WrapsSet() *bool {
 }
 
 
-func NewWorkersScriptBindingsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkersScriptBindingsList {
+func NewWorkersScriptBindingsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkersScriptBindingsList {
 	_init_.Initialize()
 
 	if err := validateNewWorkersScriptBindingsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewWorkersScriptBindingsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_WorkersScriptBindingsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsList",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewWorkersScriptBindingsList(terraformResource cdktf.IInterpolatingParent, 
 	return &j
 }
 
-func NewWorkersScriptBindingsList_Override(w WorkersScriptBindingsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewWorkersScriptBindingsList_Override(w WorkersScriptBindingsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsList",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_WorkersScriptBindingsList)SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersScriptBindingsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_WorkersScriptBindingsList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (w *jsiiProxy_WorkersScriptBindingsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := w.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		w,
@@ -231,7 +231,7 @@ func (w *jsiiProxy_WorkersScriptBindingsList) Get(index *float64) WorkersScriptB
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsList) Resolve(context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersScriptBindingsList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

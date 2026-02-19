@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareruleset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareruleset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareRulesetRulesActionParametersAutominifyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,27 +28,27 @@ type DataCloudflareRulesetRulesActionParametersAutominifyOutputReference interfa
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Css() cdktf.IResolvable
+	Css() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
-	Html() cdktf.IResolvable
+	Html() cdktn.IResolvable
 	InternalValue() *DataCloudflareRulesetRulesActionParametersAutominify
 	SetInternalValue(val *DataCloudflareRulesetRulesActionParametersAutominify)
-	Js() cdktf.IResolvable
+	Js() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DataCloudflareRulesetRulesActionParametersAutominifyOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DataCloudflareRulesetRulesActionParametersAutominifyOutputReference interfa
 
 // The jsii proxy struct for DataCloudflareRulesetRulesActionParametersAutominifyOutputReference
 type jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) ComplexObjectIndex() interface{} {
@@ -112,8 +112,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) Css() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) Css() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"css",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) Html() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) Html() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"html",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) Js() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) Js() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"js",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 }
 
 
-func NewDataCloudflareRulesetRulesActionParametersAutominifyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareRulesetRulesActionParametersAutominifyOutputReference {
+func NewDataCloudflareRulesetRulesActionParametersAutominifyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareRulesetRulesActionParametersAutominifyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareRulesetRulesActionParametersAutominifyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -192,7 +192,7 @@ func NewDataCloudflareRulesetRulesActionParametersAutominifyOutputReference(terr
 	j := jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersAutominifyOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersAutominifyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -200,11 +200,11 @@ func NewDataCloudflareRulesetRulesActionParametersAutominifyOutputReference(terr
 	return &j
 }
 
-func NewDataCloudflareRulesetRulesActionParametersAutominifyOutputReference_Override(d DataCloudflareRulesetRulesActionParametersAutominifyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareRulesetRulesActionParametersAutominifyOutputReference_Override(d DataCloudflareRulesetRulesActionParametersAutominifyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersAutominifyOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersAutominifyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -254,7 +254,7 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -294,11 +294,11 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -422,8 +422,8 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -435,11 +435,11 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -451,7 +451,7 @@ func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareRulesetRulesActionParametersAutominifyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

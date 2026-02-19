@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareaccountrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareaccountrole/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaccountrole/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareAccountRolePermissionsWafOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,22 +32,22 @@ type DataCloudflareAccountRolePermissionsWafOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareAccountRolePermissionsWaf
 	SetInternalValue(val *DataCloudflareAccountRolePermissionsWaf)
-	Read() cdktf.IResolvable
+	Read() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Write() cdktf.IResolvable
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Write() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataCloudflareAccountRolePermissionsWafOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type DataCloudflareAccountRolePermissionsWafOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareAccountRolePermissionsWafOutputReference
 type jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) ComplexObjectIndex() interface{} {
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Read() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Read() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"read",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Write() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Write() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"write",
@@ -172,7 +172,7 @@ func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Write
 }
 
 
-func NewDataCloudflareAccountRolePermissionsWafOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolePermissionsWafOutputReference {
+func NewDataCloudflareAccountRolePermissionsWafOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareAccountRolePermissionsWafOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareAccountRolePermissionsWafOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -181,7 +181,7 @@ func NewDataCloudflareAccountRolePermissionsWafOutputReference(terraformResource
 	j := jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareAccountRole.DataCloudflareAccountRolePermissionsWafOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareAccountRole.DataCloudflareAccountRolePermissionsWafOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -189,11 +189,11 @@ func NewDataCloudflareAccountRolePermissionsWafOutputReference(terraformResource
 	return &j
 }
 
-func NewDataCloudflareAccountRolePermissionsWafOutputReference_Override(d DataCloudflareAccountRolePermissionsWafOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareAccountRolePermissionsWafOutputReference_Override(d DataCloudflareAccountRolePermissionsWafOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareAccountRole.DataCloudflareAccountRolePermissionsWafOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareAccountRole.DataCloudflareAccountRolePermissionsWafOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -283,11 +283,11 @@ func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) GetAn
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -411,8 +411,8 @@ func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) GetSt
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -424,11 +424,11 @@ func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -440,7 +440,7 @@ func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareAccountRolePermissionsWafOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pagesproject
@@ -7,15 +7,15 @@ package pagesproject
 type PagesProjectDeploymentConfigsPreviewServices struct {
 	// The Service name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#service PagesProject#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#service PagesProject#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// The entrypoint to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
 	Entrypoint *string `field:"optional" json:"entrypoint" yaml:"entrypoint"`
 	// The Service environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#environment PagesProject#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#environment PagesProject#environment}
 	Environment *string `field:"optional" json:"environment" yaml:"environment"`
 }
 

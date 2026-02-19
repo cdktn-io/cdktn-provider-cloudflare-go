@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessapplication
@@ -7,11 +7,11 @@ package zerotrustaccessapplication
 type ZeroTrustAccessApplicationSaasAppCustomAttributesSource struct {
 	// The name of the IdP attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// A mapping from IdP ID to attribute name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_application#name_by_idp ZeroTrustAccessApplication#name_by_idp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_application#name_by_idp ZeroTrustAccessApplication#name_by_idp}
 	NameByIdp interface{} `field:"optional" json:"nameByIdp" yaml:"nameByIdp"`
 }
 

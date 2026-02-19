@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package leakedcredentialcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/leakedcredentialcheck/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/leakedcredentialcheck/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
 type LeakedCredentialCheck interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,23 +35,23 @@ type LeakedCredentialCheck interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -59,7 +59,7 @@ type LeakedCredentialCheck interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type LeakedCredentialCheck interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -93,9 +93,9 @@ type LeakedCredentialCheck interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -129,11 +129,11 @@ type LeakedCredentialCheck interface {
 
 // The jsii proxy struct for LeakedCredentialCheck
 type jsiiProxy_LeakedCredentialCheck struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_LeakedCredentialCheck) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_LeakedCredentialCheck) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_LeakedCredentialCheck) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LeakedCredentialCheck) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_LeakedCredentialCheck) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_LeakedCredentialCheck) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LeakedCredentialCheck) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_LeakedCredentialCheck) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_LeakedCredentialCheck) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_LeakedCredentialCheck) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_LeakedCredentialCheck) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_LeakedCredentialCheck) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LeakedCredentialCheck) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_LeakedCredentialCheck) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_LeakedCredentialCheck) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
 func NewLeakedCredentialCheck(scope constructs.Construct, id *string, config *LeakedCredentialCheckConfig) LeakedCredentialCheck {
 	_init_.Initialize()
 
@@ -343,7 +343,7 @@ func NewLeakedCredentialCheck(scope constructs.Construct, id *string, config *Le
 	j := jsiiProxy_LeakedCredentialCheck{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
+		"@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,12 +351,12 @@ func NewLeakedCredentialCheck(scope constructs.Construct, id *string, config *Le
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
 func NewLeakedCredentialCheck_Override(l LeakedCredentialCheck, scope constructs.Construct, id *string, config *LeakedCredentialCheckConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
+		"@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -403,7 +403,7 @@ func (j *jsiiProxy_LeakedCredentialCheck)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LeakedCredentialCheck)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LeakedCredentialCheck)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +411,7 @@ func (j *jsiiProxy_LeakedCredentialCheck)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_LeakedCredentialCheck)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LeakedCredentialCheck)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +422,7 @@ func (j *jsiiProxy_LeakedCredentialCheck)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_LeakedCredentialCheck)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LeakedCredentialCheck)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -452,17 +452,17 @@ func (j *jsiiProxy_LeakedCredentialCheck)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a LeakedCredentialCheck resource upon running "cdktf plan <stack-name>".
-func LeakedCredentialCheck_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a LeakedCredentialCheck resource upon running "cdktn plan <stack-name>".
+func LeakedCredentialCheck_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateLeakedCredentialCheck_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
+		"@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -497,7 +497,7 @@ func LeakedCredentialCheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
+		"@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func LeakedCredentialCheck_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
+		"@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func LeakedCredentialCheck_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
+		"@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func LeakedCredentialCheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
+		"@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck",
 		"tfResourceType",
 		&returns,
 	)
@@ -593,11 +593,11 @@ func (l *jsiiProxy_LeakedCredentialCheck) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (l *jsiiProxy_LeakedCredentialCheck) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LeakedCredentialCheck) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -734,7 +734,7 @@ func (l *jsiiProxy_LeakedCredentialCheck) HasResourceMove() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LeakedCredentialCheck) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (l *jsiiProxy_LeakedCredentialCheck) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -745,11 +745,11 @@ func (l *jsiiProxy_LeakedCredentialCheck) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (l *jsiiProxy_LeakedCredentialCheck) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LeakedCredentialCheck) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,

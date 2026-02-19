@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package organization
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.organization.Organization",
+		"@cdktn/provider-cloudflare.organization.Organization",
 		reflect.TypeOf((*Organization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -71,24 +71,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Organization{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.organization.OrganizationConfig",
+		"@cdktn/provider-cloudflare.organization.OrganizationConfig",
 		reflect.TypeOf((*OrganizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.organization.OrganizationMeta",
+		"@cdktn/provider-cloudflare.organization.OrganizationMeta",
 		reflect.TypeOf((*OrganizationMeta)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.organization.OrganizationMetaFlags",
+		"@cdktn/provider-cloudflare.organization.OrganizationMetaFlags",
 		reflect.TypeOf((*OrganizationMetaFlags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.organization.OrganizationMetaFlagsOutputReference",
+		"@cdktn/provider-cloudflare.organization.OrganizationMetaFlagsOutputReference",
 		reflect.TypeOf((*OrganizationMetaFlagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountCreation", GoGetter: "AccountCreation"},
@@ -120,12 +120,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationMetaFlagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.organization.OrganizationMetaOutputReference",
+		"@cdktn/provider-cloudflare.organization.OrganizationMetaOutputReference",
 		reflect.TypeOf((*OrganizationMetaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,16 +154,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationMetaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.organization.OrganizationParent",
+		"@cdktn/provider-cloudflare.organization.OrganizationParent",
 		reflect.TypeOf((*OrganizationParent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.organization.OrganizationParentOutputReference",
+		"@cdktn/provider-cloudflare.organization.OrganizationParentOutputReference",
 		reflect.TypeOf((*OrganizationParentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,16 +193,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationParentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.organization.OrganizationProfile",
+		"@cdktn/provider-cloudflare.organization.OrganizationProfile",
 		reflect.TypeOf((*OrganizationProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.organization.OrganizationProfileOutputReference",
+		"@cdktn/provider-cloudflare.organization.OrganizationProfileOutputReference",
 		reflect.TypeOf((*OrganizationProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "businessAddress", GoGetter: "BusinessAddress"},
@@ -239,7 +239,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationProfileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

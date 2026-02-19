@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package r2bucketlifecycle
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycle",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycle",
 		reflect.TypeOf((*R2BucketLifecycle)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,28 +69,28 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycle{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleConfig",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleConfig",
 		reflect.TypeOf((*R2BucketLifecycleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRules",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRules",
 		reflect.TypeOf((*R2BucketLifecycleRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransition",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransition",
 		reflect.TypeOf((*R2BucketLifecycleRulesAbortMultipartUploadsTransition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition",
 		reflect.TypeOf((*R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference",
 		reflect.TypeOf((*R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference",
 		reflect.TypeOf((*R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,16 +157,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesConditions",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesConditions",
 		reflect.TypeOf((*R2BucketLifecycleRulesConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesConditionsOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesConditionsOutputReference",
 		reflect.TypeOf((*R2BucketLifecycleRulesConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,20 +195,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransition",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransition",
 		reflect.TypeOf((*R2BucketLifecycleRulesDeleteObjectsTransition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionCondition",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionCondition",
 		reflect.TypeOf((*R2BucketLifecycleRulesDeleteObjectsTransitionCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference",
 		reflect.TypeOf((*R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -243,12 +243,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference",
 		reflect.TypeOf((*R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -279,12 +279,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesList",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesList",
 		reflect.TypeOf((*R2BucketLifecycleRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -301,12 +301,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesOutputReference",
 		reflect.TypeOf((*R2BucketLifecycleRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abortMultipartUploadsTransition", GoGetter: "AbortMultipartUploadsTransition"},
@@ -352,20 +352,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitions",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitions",
 		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsCondition",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsCondition",
 		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitionsCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference",
 		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -400,12 +400,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsList",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsList",
 		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -422,12 +422,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsOutputReference",
 		reflect.TypeOf((*R2BucketLifecycleRulesStorageClassTransitionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -459,7 +459,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

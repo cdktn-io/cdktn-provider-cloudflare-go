@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarebotmanagement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarebotmanagement/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarebotmanagement/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/bot_management cloudflare_bot_management}.
 type DataCloudflareBotManagement interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AiBotsProtection() *string
-	AutoUpdateModel() cdktf.IResolvable
-	BmCookieEnabled() cdktf.IResolvable
+	AutoUpdateModel() cdktn.IResolvable
+	BmCookieEnabled() cdktn.IResolvable
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CfRobotsVariant() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -32,44 +32,44 @@ type DataCloudflareBotManagement interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableJs() cdktf.IResolvable
-	FightMode() cdktf.IResolvable
+	EnableJs() cdktn.IResolvable
+	FightMode() cdktn.IResolvable
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	IsRobotsTxtManaged() cdktf.IResolvable
+	IsRobotsTxtManaged() cdktn.IResolvable
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	OptimizeWordpress() cdktf.IResolvable
+	OptimizeWordpress() cdktn.IResolvable
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	SbfmDefinitelyAutomated() *string
 	SbfmLikelyAutomated() *string
-	SbfmStaticResourceProtection() cdktf.IResolvable
+	SbfmStaticResourceProtection() cdktn.IResolvable
 	SbfmVerifiedBots() *string
 	StaleZoneConfiguration() DataCloudflareBotManagementStaleZoneConfigurationOutputReference
-	SuppressSessionScore() cdktf.IResolvable
+	SuppressSessionScore() cdktn.IResolvable
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UsingLatestModel() cdktf.IResolvable
+	UsingLatestModel() cdktn.IResolvable
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -78,7 +78,7 @@ type DataCloudflareBotManagement interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,7 +94,7 @@ type DataCloudflareBotManagement interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -117,7 +117,7 @@ type DataCloudflareBotManagement interface {
 
 // The jsii proxy struct for DataCloudflareBotManagement
 type jsiiProxy_DataCloudflareBotManagement struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareBotManagement) AiBotsProtection() *string {
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) AiBotsProtection() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) AutoUpdateModel() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareBotManagement) AutoUpdateModel() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"autoUpdateModel",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) AutoUpdateModel() cdktf.IResolva
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) BmCookieEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareBotManagement) BmCookieEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"bmCookieEnabled",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) BmCookieEnabled() cdktf.IResolva
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareBotManagement) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) EnableJs() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareBotManagement) EnableJs() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableJs",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) EnableJs() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) FightMode() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareBotManagement) FightMode() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"fightMode",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) FightMode() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareBotManagement) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) IsRobotsTxtManaged() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareBotManagement) IsRobotsTxtManaged() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isRobotsTxtManaged",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) IsRobotsTxtManaged() cdktf.IReso
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareBotManagement) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) OptimizeWordpress() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareBotManagement) OptimizeWordpress() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"optimizeWordpress",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) OptimizeWordpress() cdktf.IResol
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareBotManagement) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) SbfmLikelyAutomated() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) SbfmStaticResourceProtection() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareBotManagement) SbfmStaticResourceProtection() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"sbfmStaticResourceProtection",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) StaleZoneConfiguration() DataClo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) SuppressSessionScore() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareBotManagement) SuppressSessionScore() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"suppressSessionScore",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) SuppressSessionScore() cdktf.IRe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareBotManagement) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_DataCloudflareBotManagement) TerraformResourceType() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement) UsingLatestModel() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareBotManagement) UsingLatestModel() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"usingLatestModel",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DataCloudflareBotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) DataCloudflareBotManagement {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataCloudflareBotManagement{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
+		"@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -469,12 +469,12 @@ func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement_Override(d DataCloudflareBotManagement, scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
+		"@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -499,7 +499,7 @@ func (j *jsiiProxy_DataCloudflareBotManagement)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareBotManagement)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -507,7 +507,7 @@ func (j *jsiiProxy_DataCloudflareBotManagement)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareBotManagement)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +518,7 @@ func (j *jsiiProxy_DataCloudflareBotManagement)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareBotManagement)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareBotManagement)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -537,17 +537,17 @@ func (j *jsiiProxy_DataCloudflareBotManagement)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareBotManagement resource upon running "cdktf plan <stack-name>".
-func DataCloudflareBotManagement_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareBotManagement resource upon running "cdktn plan <stack-name>".
+func DataCloudflareBotManagement_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareBotManagement_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
+		"@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -582,7 +582,7 @@ func DataCloudflareBotManagement_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
+		"@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DataCloudflareBotManagement_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
+		"@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataCloudflareBotManagement_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
+		"@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func DataCloudflareBotManagement_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
+		"@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement",
 		"tfResourceType",
 		&returns,
 	)
@@ -667,11 +667,11 @@ func (d *jsiiProxy_DataCloudflareBotManagement) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareBotManagement) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareBotManagement) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -795,11 +795,11 @@ func (d *jsiiProxy_DataCloudflareBotManagement) GetStringMapAttribute(terraformA
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareBotManagement) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareBotManagement) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

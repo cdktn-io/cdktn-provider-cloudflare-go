@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezone/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezone/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZonePlanOutputReference interface {
-	cdktf.ComplexObject
-	CanSubscribe() cdktf.IResolvable
+	cdktn.ComplexObject
+	CanSubscribe() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,15 +30,15 @@ type DataCloudflareZonePlanOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Currency() *string
-	ExternallyManaged() cdktf.IResolvable
+	ExternallyManaged() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	Frequency() *string
 	Id() *string
 	InternalValue() *DataCloudflareZonePlan
 	SetInternalValue(val *DataCloudflareZonePlan)
-	IsSubscribed() cdktf.IResolvable
-	LegacyDiscount() cdktf.IResolvable
+	IsSubscribed() cdktn.IResolvable
+	LegacyDiscount() cdktn.IResolvable
 	LegacyId() *string
 	Name() *string
 	Price() *float64
@@ -47,15 +47,15 @@ type DataCloudflareZonePlanOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,12 +71,12 @@ type DataCloudflareZonePlanOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,11 +86,11 @@ type DataCloudflareZonePlanOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareZonePlanOutputReference
 type jsiiProxy_DataCloudflareZonePlanOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) CanSubscribe() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) CanSubscribe() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"canSubscribe",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) Currency() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) ExternallyManaged() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) ExternallyManaged() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"externallyManaged",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) InternalValue() *DataC
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) IsSubscribed() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) IsSubscribed() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isSubscribed",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) IsSubscribed() cdktf.I
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) LegacyDiscount() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) LegacyDiscount() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"legacyDiscount",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -260,7 +260,7 @@ func (j *jsiiProxy_DataCloudflareZonePlanOutputReference) TerraformResource() cd
 }
 
 
-func NewDataCloudflareZonePlanOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZonePlanOutputReference {
+func NewDataCloudflareZonePlanOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareZonePlanOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZonePlanOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -269,7 +269,7 @@ func NewDataCloudflareZonePlanOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataCloudflareZonePlanOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZonePlanOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZone.DataCloudflareZonePlanOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -277,11 +277,11 @@ func NewDataCloudflareZonePlanOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewDataCloudflareZonePlanOutputReference_Override(d DataCloudflareZonePlanOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareZonePlanOutputReference_Override(d DataCloudflareZonePlanOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZone.DataCloudflareZonePlanOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZone.DataCloudflareZonePlanOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareZonePlanOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZonePlanOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZonePlanOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,11 +371,11 @@ func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -499,8 +499,8 @@ func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -512,11 +512,11 @@ func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -528,7 +528,7 @@ func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) InterpolationForAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZonePlanOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

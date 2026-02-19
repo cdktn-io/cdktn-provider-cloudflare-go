@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarelistitems
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarelistitems/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarelistitems/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareListItemsResultRedirectOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,29 +30,29 @@ type DataCloudflareListItemsResultRedirectOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeSubdomains() cdktf.IResolvable
+	IncludeSubdomains() cdktn.IResolvable
 	InternalValue() *DataCloudflareListItemsResultRedirect
 	SetInternalValue(val *DataCloudflareListItemsResultRedirect)
-	PreservePathSuffix() cdktf.IResolvable
-	PreserveQueryString() cdktf.IResolvable
+	PreservePathSuffix() cdktn.IResolvable
+	PreserveQueryString() cdktn.IResolvable
 	SourceUrl() *string
 	StatusCode() *float64
-	SubpathMatching() cdktf.IResolvable
+	SubpathMatching() cdktn.IResolvable
 	TargetUrl() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,12 +68,12 @@ type DataCloudflareListItemsResultRedirectOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type DataCloudflareListItemsResultRedirectOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareListItemsResultRedirectOutputReference
 type jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) ComplexObjectIndex() interface{} {
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) IncludeSubdomains() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) IncludeSubdomains() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"includeSubdomains",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) Interna
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) PreservePathSuffix() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) PreservePathSuffix() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"preservePathSuffix",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) Preserv
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) PreserveQueryString() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) PreserveQueryString() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"preserveQueryString",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) StatusC
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) SubpathMatching() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) SubpathMatching() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"subpathMatching",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -227,7 +227,7 @@ func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) Terrafo
 }
 
 
-func NewDataCloudflareListItemsResultRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareListItemsResultRedirectOutputReference {
+func NewDataCloudflareListItemsResultRedirectOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareListItemsResultRedirectOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareListItemsResultRedirectOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -236,7 +236,7 @@ func NewDataCloudflareListItemsResultRedirectOutputReference(terraformResource c
 	j := jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultRedirectOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -244,11 +244,11 @@ func NewDataCloudflareListItemsResultRedirectOutputReference(terraformResource c
 	return &j
 }
 
-func NewDataCloudflareListItemsResultRedirectOutputReference_Override(d DataCloudflareListItemsResultRedirectOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareListItemsResultRedirectOutputReference_Override(d DataCloudflareListItemsResultRedirectOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultRedirectOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResultRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,11 +338,11 @@ func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -466,8 +466,8 @@ func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -479,11 +479,11 @@ func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -495,7 +495,7 @@ func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareListItemsResultRedirectOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

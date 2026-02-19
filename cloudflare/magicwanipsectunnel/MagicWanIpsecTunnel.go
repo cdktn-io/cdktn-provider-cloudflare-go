@@ -1,26 +1,32 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magicwanipsectunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwanipsectunnel/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanipsectunnel/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}.
 type MagicWanIpsecTunnel interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AllowNullCipher() cdktf.IResolvable
+	AllowNullCipher() cdktn.IResolvable
+	AutomaticReturnRouting() interface{}
+	SetAutomaticReturnRouting(val interface{})
+	AutomaticReturnRoutingInput() interface{}
+	Bgp() MagicWanIpsecTunnelBgpOutputReference
+	BgpInput() interface{}
+	BgpStatus() MagicWanIpsecTunnelBgpStatusOutputReference
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CloudflareEndpoint() *string
 	SetCloudflareEndpoint(val *string)
 	CloudflareEndpointInput() *string
@@ -38,6 +44,8 @@ type MagicWanIpsecTunnel interface {
 	CustomerEndpoint() *string
 	SetCustomerEndpoint(val *string)
 	CustomerEndpointInput() *string
+	CustomRemoteIdentities() MagicWanIpsecTunnelCustomRemoteIdentitiesOutputReference
+	CustomRemoteIdentitiesInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,9 +54,9 @@ type MagicWanIpsecTunnel interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -63,9 +71,9 @@ type MagicWanIpsecTunnel interface {
 	InterfaceAddress6Input() *string
 	InterfaceAddressInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedOn() *string
 	Name() *string
 	SetName(val *string)
@@ -73,9 +81,9 @@ type MagicWanIpsecTunnel interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -90,7 +98,7 @@ type MagicWanIpsecTunnel interface {
 	SetReplayProtection(val interface{})
 	ReplayProtectionInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -103,7 +111,7 @@ type MagicWanIpsecTunnel interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -121,9 +129,9 @@ type MagicWanIpsecTunnel interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -138,8 +146,13 @@ type MagicWanIpsecTunnel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBgp(value *MagicWanIpsecTunnelBgp)
+	PutCustomRemoteIdentities(value *MagicWanIpsecTunnelCustomRemoteIdentities)
 	PutHealthCheck(value *MagicWanIpsecTunnelHealthCheck)
+	ResetAutomaticReturnRouting()
+	ResetBgp()
 	ResetCustomerEndpoint()
+	ResetCustomRemoteIdentities()
 	ResetDescription()
 	ResetHealthCheck()
 	ResetInterfaceAddress6()
@@ -163,7 +176,7 @@ type MagicWanIpsecTunnel interface {
 
 // The jsii proxy struct for MagicWanIpsecTunnel
 type jsiiProxy_MagicWanIpsecTunnel struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MagicWanIpsecTunnel) AccountId() *string {
@@ -186,8 +199,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) AllowNullCipher() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_MagicWanIpsecTunnel) AllowNullCipher() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowNullCipher",
@@ -196,8 +209,58 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) AllowNullCipher() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MagicWanIpsecTunnel) AutomaticReturnRouting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticReturnRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) AutomaticReturnRoutingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticReturnRoutingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) Bgp() MagicWanIpsecTunnelBgpOutputReference {
+	var returns MagicWanIpsecTunnelBgpOutputReference
+	_jsii_.Get(
+		j,
+		"bgp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) BgpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) BgpStatus() MagicWanIpsecTunnelBgpStatusOutputReference {
+	var returns MagicWanIpsecTunnelBgpStatusOutputReference
+	_jsii_.Get(
+		j,
+		"bgpStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -286,6 +349,26 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) CustomerEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanIpsecTunnel) CustomRemoteIdentities() MagicWanIpsecTunnelCustomRemoteIdentitiesOutputReference {
+	var returns MagicWanIpsecTunnelCustomRemoteIdentitiesOutputReference
+	_jsii_.Get(
+		j,
+		"customRemoteIdentities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) CustomRemoteIdentitiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customRemoteIdentitiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanIpsecTunnel) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -316,8 +399,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MagicWanIpsecTunnel) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -416,8 +499,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) InterfaceAddressInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MagicWanIpsecTunnel) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -466,8 +549,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MagicWanIpsecTunnel) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -546,8 +629,8 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) ReplayProtectionInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MagicWanIpsecTunnel) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -577,7 +660,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
 func NewMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *MagicWanIpsecTunnelConfig) MagicWanIpsecTunnel {
 	_init_.Initialize()
 
@@ -587,7 +670,7 @@ func NewMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *Magi
 	j := jsiiProxy_MagicWanIpsecTunnel{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
+		"@cdktn/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -595,12 +678,12 @@ func NewMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
 func NewMagicWanIpsecTunnel_Override(m MagicWanIpsecTunnel, scope constructs.Construct, id *string, config *MagicWanIpsecTunnelConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
+		"@cdktn/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -613,6 +696,17 @@ func (j *jsiiProxy_MagicWanIpsecTunnel)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel)SetAutomaticReturnRouting(val interface{}) {
+	if err := j.validateSetAutomaticReturnRoutingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticReturnRouting",
 		val,
 	)
 }
@@ -680,7 +774,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnel)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MagicWanIpsecTunnel)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -710,7 +804,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnel)SetInterfaceAddress6(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MagicWanIpsecTunnel)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +826,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnel)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MagicWanIpsecTunnel)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -773,17 +867,17 @@ func (j *jsiiProxy_MagicWanIpsecTunnel)SetReplayProtection(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a MagicWanIpsecTunnel resource upon running "cdktf plan <stack-name>".
-func MagicWanIpsecTunnel_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MagicWanIpsecTunnel resource upon running "cdktn plan <stack-name>".
+func MagicWanIpsecTunnel_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMagicWanIpsecTunnel_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
+		"@cdktn/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -818,7 +912,7 @@ func MagicWanIpsecTunnel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
+		"@cdktn/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -837,7 +931,7 @@ func MagicWanIpsecTunnel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
+		"@cdktn/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -856,7 +950,7 @@ func MagicWanIpsecTunnel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
+		"@cdktn/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -869,7 +963,7 @@ func MagicWanIpsecTunnel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
+		"@cdktn/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnel",
 		"tfResourceType",
 		&returns,
 	)
@@ -914,11 +1008,11 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicWanIpsecTunnel) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1055,7 +1149,7 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnel) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MagicWanIpsecTunnel) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1066,11 +1160,11 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (m *jsiiProxy_MagicWanIpsecTunnel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicWanIpsecTunnel) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -1126,6 +1220,28 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (m *jsiiProxy_MagicWanIpsecTunnel) PutBgp(value *MagicWanIpsecTunnelBgp) {
+	if err := m.validatePutBgpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putBgp",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnel) PutCustomRemoteIdentities(value *MagicWanIpsecTunnelCustomRemoteIdentities) {
+	if err := m.validatePutCustomRemoteIdentitiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putCustomRemoteIdentities",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MagicWanIpsecTunnel) PutHealthCheck(value *MagicWanIpsecTunnelHealthCheck) {
 	if err := m.validatePutHealthCheckParameters(value); err != nil {
 		panic(err)
@@ -1137,10 +1253,34 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) PutHealthCheck(value *MagicWanIpsecTunne
 	)
 }
 
+func (m *jsiiProxy_MagicWanIpsecTunnel) ResetAutomaticReturnRouting() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAutomaticReturnRouting",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnel) ResetBgp() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBgp",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MagicWanIpsecTunnel) ResetCustomerEndpoint() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetCustomerEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnel) ResetCustomRemoteIdentities() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCustomRemoteIdentities",
 		nil, // no parameters
 	)
 }

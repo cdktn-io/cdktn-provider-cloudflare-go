@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareemailsecuritytrusteddomainslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareemailsecuritytrusteddomainslist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareemailsecuritytrusteddomainslist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Comments() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -35,9 +35,9 @@ type DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference interfac
 	Id() *float64
 	InternalValue() *DataCloudflareEmailSecurityTrustedDomainsListResult
 	SetInternalValue(val *DataCloudflareEmailSecurityTrustedDomainsListResult)
-	IsRecent() cdktf.IResolvable
-	IsRegex() cdktf.IResolvable
-	IsSimilarity() cdktf.IResolvable
+	IsRecent() cdktn.IResolvable
+	IsRegex() cdktn.IResolvable
+	IsSimilarity() cdktn.IResolvable
 	LastModified() *string
 	Pattern() *string
 	// Experimental.
@@ -45,15 +45,15 @@ type DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,12 +69,12 @@ type DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference interfac
 
 // The jsii proxy struct for DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference
 type jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) Comments() *string {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) IsRecent() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) IsRecent() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isRecent",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) IsRegex() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) IsRegex() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isRegex",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) IsSimilarity() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) IsSimilarity() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isSimilarity",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -238,7 +238,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 }
 
 
-func NewDataCloudflareEmailSecurityTrustedDomainsListResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference {
+func NewDataCloudflareEmailSecurityTrustedDomainsListResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareEmailSecurityTrustedDomainsListResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -247,7 +247,7 @@ func NewDataCloudflareEmailSecurityTrustedDomainsListResultOutputReference(terra
 	j := jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -255,11 +255,11 @@ func NewDataCloudflareEmailSecurityTrustedDomainsListResultOutputReference(terra
 	return &j
 }
 
-func NewDataCloudflareEmailSecurityTrustedDomainsListResultOutputReference_Override(d DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareEmailSecurityTrustedDomainsListResultOutputReference_Override(d DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareEmailSecurityTrustedDomainsList.DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,11 +349,11 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -477,8 +477,8 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -490,11 +490,11 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -506,7 +506,7 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

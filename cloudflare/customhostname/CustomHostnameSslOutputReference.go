@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package customhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/customhostname/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customhostname/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type CustomHostnameSslOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BundleMethod() *string
 	SetBundleMethod(val *string)
 	BundleMethodInput() *string
@@ -59,9 +59,9 @@ type CustomHostnameSslOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -73,7 +73,7 @@ type CustomHostnameSslOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -89,9 +89,9 @@ type CustomHostnameSslOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomCertBundle(value interface{})
 	PutSettings(value *CustomHostnameSslSettings)
 	ResetBundleMethod()
@@ -106,7 +106,7 @@ type CustomHostnameSslOutputReference interface {
 	ResetWildcard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,7 +116,7 @@ type CustomHostnameSslOutputReference interface {
 
 // The jsii proxy struct for CustomHostnameSslOutputReference
 type jsiiProxy_CustomHostnameSslOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CustomHostnameSslOutputReference) BundleMethod() *string {
@@ -339,8 +339,8 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CustomHostnameSslOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) WildcardInput() interface{}
 }
 
 
-func NewCustomHostnameSslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CustomHostnameSslOutputReference {
+func NewCustomHostnameSslOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CustomHostnameSslOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCustomHostnameSslOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -399,7 +399,7 @@ func NewCustomHostnameSslOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_CustomHostnameSslOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -407,11 +407,11 @@ func NewCustomHostnameSslOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewCustomHostnameSslOutputReference_Override(c CustomHostnameSslOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCustomHostnameSslOutputReference_Override(c CustomHostnameSslOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -527,7 +527,7 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,11 +589,11 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -717,8 +717,8 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -730,11 +730,11 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -848,7 +848,7 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) ResetWildcard() {
 	)
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

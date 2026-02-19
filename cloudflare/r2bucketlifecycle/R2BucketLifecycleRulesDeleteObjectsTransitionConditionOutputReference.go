@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package r2bucketlifecycle
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketlifecycle/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketlifecycle/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -54,7 +54,7 @@ type R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference inter
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,14 +70,14 @@ type R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDate()
 	ResetMaxAge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference inter
 
 // The jsii proxy struct for R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference
 type jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -190,8 +190,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 }
 
 
-func NewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference {
+func NewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -230,7 +230,7 @@ func NewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference(te
 	j := jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,11 +238,11 @@ func NewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference(te
 	return &j
 }
 
-func NewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference_Override(r R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewR2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference_Override(r R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -314,7 +314,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -493,8 +493,8 @@ func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -506,11 +506,11 @@ func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -538,7 +538,7 @@ func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputR
 	)
 }
 
-func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_R2BucketLifecycleRulesDeleteObjectsTransitionConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

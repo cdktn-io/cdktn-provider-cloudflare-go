@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package dnszonetransfersincoming
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnszonetransfersincoming/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnszonetransfersincoming/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
 type DnsZoneTransfersIncoming interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AutoRefreshSeconds() *float64
 	SetAutoRefreshSeconds(val *float64)
 	AutoRefreshSecondsInput() *float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CheckedTime() *string
 	// Experimental.
 	Connection() interface{}
@@ -37,18 +37,18 @@ type DnsZoneTransfersIncoming interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedTime() *string
 	Name() *string
 	SetName(val *string)
@@ -59,9 +59,9 @@ type DnsZoneTransfersIncoming interface {
 	SetPeers(val *[]*string)
 	PeersInput() *[]*string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -70,7 +70,7 @@ type DnsZoneTransfersIncoming interface {
 	RawOverrides() interface{}
 	SoaSerial() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -86,7 +86,7 @@ type DnsZoneTransfersIncoming interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -104,9 +104,9 @@ type DnsZoneTransfersIncoming interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -140,7 +140,7 @@ type DnsZoneTransfersIncoming interface {
 
 // The jsii proxy struct for DnsZoneTransfersIncoming
 type jsiiProxy_DnsZoneTransfersIncoming struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_DnsZoneTransfersIncoming) AutoRefreshSeconds() *float64 {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming) AutoRefreshSecondsInput() *float64 
 	return returns
 }
 
-func (j *jsiiProxy_DnsZoneTransfersIncoming) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DnsZoneTransfersIncoming) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsZoneTransfersIncoming) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DnsZoneTransfersIncoming) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsZoneTransfersIncoming) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DnsZoneTransfersIncoming) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming) PeersInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsZoneTransfersIncoming) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DnsZoneTransfersIncoming) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming) SoaSerial() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DnsZoneTransfersIncoming) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DnsZoneTransfersIncoming) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -434,7 +434,7 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
 func NewDnsZoneTransfersIncoming(scope constructs.Construct, id *string, config *DnsZoneTransfersIncomingConfig) DnsZoneTransfersIncoming {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDnsZoneTransfersIncoming(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DnsZoneTransfersIncoming{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
+		"@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,12 +452,12 @@ func NewDnsZoneTransfersIncoming(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
 func NewDnsZoneTransfersIncoming_Override(d DnsZoneTransfersIncoming, scope constructs.Construct, id *string, config *DnsZoneTransfersIncomingConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
+		"@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -504,7 +504,7 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DnsZoneTransfersIncoming)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DnsZoneTransfersIncoming)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -512,7 +512,7 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DnsZoneTransfersIncoming)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DnsZoneTransfersIncoming)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +545,7 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming)SetPeers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DnsZoneTransfersIncoming)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DnsZoneTransfersIncoming)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -575,17 +575,17 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DnsZoneTransfersIncoming resource upon running "cdktf plan <stack-name>".
-func DnsZoneTransfersIncoming_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DnsZoneTransfersIncoming resource upon running "cdktn plan <stack-name>".
+func DnsZoneTransfersIncoming_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDnsZoneTransfersIncoming_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
+		"@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -620,7 +620,7 @@ func DnsZoneTransfersIncoming_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
+		"@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -639,7 +639,7 @@ func DnsZoneTransfersIncoming_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
+		"@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func DnsZoneTransfersIncoming_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
+		"@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func DnsZoneTransfersIncoming_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
+		"@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming",
 		"tfResourceType",
 		&returns,
 	)
@@ -716,11 +716,11 @@ func (d *jsiiProxy_DnsZoneTransfersIncoming) GetAnyMapAttribute(terraformAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DnsZoneTransfersIncoming) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DnsZoneTransfersIncoming) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -857,7 +857,7 @@ func (d *jsiiProxy_DnsZoneTransfersIncoming) HasResourceMove() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DnsZoneTransfersIncoming) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (d *jsiiProxy_DnsZoneTransfersIncoming) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -868,11 +868,11 @@ func (d *jsiiProxy_DnsZoneTransfersIncoming) ImportFrom(id *string, provider cdk
 	)
 }
 
-func (d *jsiiProxy_DnsZoneTransfersIncoming) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DnsZoneTransfersIncoming) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

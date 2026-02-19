@@ -1,24 +1,24 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareratelimit/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareratelimit/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/rate_limit cloudflare_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rate_limit cloudflare_rate_limit}.
 type DataCloudflareRateLimit interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	Action() DataCloudflareRateLimitActionOutputReference
 	Bypass() DataCloudflareRateLimitBypassList
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -30,35 +30,35 @@ type DataCloudflareRateLimit interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	Disabled() cdktf.IResolvable
+	Disabled() cdktn.IResolvable
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Match() DataCloudflareRateLimitMatchOutputReference
 	// The tree node.
 	Node() constructs.Node
 	Period() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	RateLimitId() *string
 	SetRateLimitId(val *string)
 	RateLimitIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -72,7 +72,7 @@ type DataCloudflareRateLimit interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,7 +88,7 @@ type DataCloudflareRateLimit interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -111,7 +111,7 @@ type DataCloudflareRateLimit interface {
 
 // The jsii proxy struct for DataCloudflareRateLimit
 type jsiiProxy_DataCloudflareRateLimit struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareRateLimit) Action() DataCloudflareRateLimitActionOutputReference {
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataCloudflareRateLimit) Bypass() DataCloudflareRateLimitBypa
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimit) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareRateLimit) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataCloudflareRateLimit) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimit) Disabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRateLimit) Disabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_DataCloudflareRateLimit) Disabled() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimit) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareRateLimit) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_DataCloudflareRateLimit) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimit) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareRateLimit) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DataCloudflareRateLimit) Period() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimit) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareRateLimit) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_DataCloudflareRateLimit) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimit) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareRateLimit) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareRateLimit) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
 func NewDataCloudflareRateLimit(scope constructs.Construct, id *string, config *DataCloudflareRateLimitConfig) DataCloudflareRateLimit {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDataCloudflareRateLimit(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataCloudflareRateLimit{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
+		"@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -393,12 +393,12 @@ func NewDataCloudflareRateLimit(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
 func NewDataCloudflareRateLimit_Override(d DataCloudflareRateLimit, scope constructs.Construct, id *string, config *DataCloudflareRateLimitConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
+		"@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataCloudflareRateLimit)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimit)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareRateLimit)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DataCloudflareRateLimit)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimit)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareRateLimit)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataCloudflareRateLimit)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRateLimit)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareRateLimit)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -472,17 +472,17 @@ func (j *jsiiProxy_DataCloudflareRateLimit)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareRateLimit resource upon running "cdktf plan <stack-name>".
-func DataCloudflareRateLimit_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareRateLimit resource upon running "cdktn plan <stack-name>".
+func DataCloudflareRateLimit_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareRateLimit_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
+		"@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -517,7 +517,7 @@ func DataCloudflareRateLimit_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
+		"@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataCloudflareRateLimit_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
+		"@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func DataCloudflareRateLimit_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
+		"@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataCloudflareRateLimit_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
+		"@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit",
 		"tfResourceType",
 		&returns,
 	)
@@ -602,11 +602,11 @@ func (d *jsiiProxy_DataCloudflareRateLimit) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRateLimit) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRateLimit) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -730,11 +730,11 @@ func (d *jsiiProxy_DataCloudflareRateLimit) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRateLimit) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRateLimit) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareapishielddiscoveryoperations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapishielddiscoveryoperations/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareapishielddiscoveryoperations/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations}.
 type DataCloudflareApiShieldDiscoveryOperations interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -37,9 +37,9 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	SetEndpoint(val *string)
 	EndpointInput() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,9 +48,9 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	SetHost(val *[]*string)
 	HostInput() *[]*string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
@@ -66,9 +66,9 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	SetOrigin(val *string)
 	OriginInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflareApiShieldDiscoveryOperationsResultList
@@ -76,7 +76,7 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	SetState(val *string)
 	StateInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -89,7 +89,7 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -105,7 +105,7 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -137,11 +137,11 @@ type DataCloudflareApiShieldDiscoveryOperations interface {
 
 // The jsii proxy struct for DataCloudflareApiShieldDiscoveryOperations
 type jsiiProxy_DataCloudflareApiShieldDiscoveryOperations struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) EndpointInput() *
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) HostInput() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) OriginInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) StateInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -491,7 +491,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) ZoneIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source.
 func NewDataCloudflareApiShieldDiscoveryOperations(scope constructs.Construct, id *string, config *DataCloudflareApiShieldDiscoveryOperationsConfig) DataCloudflareApiShieldDiscoveryOperations {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewDataCloudflareApiShieldDiscoveryOperations(scope constructs.Construct, i
 	j := jsiiProxy_DataCloudflareApiShieldDiscoveryOperations{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,12 +509,12 @@ func NewDataCloudflareApiShieldDiscoveryOperations(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source.
 func NewDataCloudflareApiShieldDiscoveryOperations_Override(d DataCloudflareApiShieldDiscoveryOperations, scope constructs.Construct, id *string, config *DataCloudflareApiShieldDiscoveryOperationsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -572,7 +572,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetEndpoint(val *s
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -591,7 +591,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetHost(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +646,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetOrigin(val *str
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -676,17 +676,17 @@ func (j *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations)SetZoneId(val *str
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareApiShieldDiscoveryOperations resource upon running "cdktf plan <stack-name>".
-func DataCloudflareApiShieldDiscoveryOperations_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareApiShieldDiscoveryOperations resource upon running "cdktn plan <stack-name>".
+func DataCloudflareApiShieldDiscoveryOperations_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareApiShieldDiscoveryOperations_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -721,7 +721,7 @@ func DataCloudflareApiShieldDiscoveryOperations_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func DataCloudflareApiShieldDiscoveryOperations_IsTerraformDataSource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func DataCloudflareApiShieldDiscoveryOperations_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func DataCloudflareApiShieldDiscoveryOperations_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldDiscoveryOperations.DataCloudflareApiShieldDiscoveryOperations",
 		"tfResourceType",
 		&returns,
 	)
@@ -806,11 +806,11 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetAnyMapAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -934,11 +934,11 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) GetStringMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

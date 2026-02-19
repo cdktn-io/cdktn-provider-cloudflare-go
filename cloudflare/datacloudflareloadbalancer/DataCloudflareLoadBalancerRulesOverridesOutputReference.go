@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareloadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareloadbalancer/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareloadbalancer/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdaptiveRouting() DataCloudflareLoadBalancerRulesOverridesAdaptiveRoutingOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
@@ -24,7 +24,7 @@ type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CountryPools() cdktf.StringListMap
+	CountryPools() cdktn.StringListMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -41,7 +41,7 @@ type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
 	SetPopPools(val interface{})
 	PopPoolsInput() interface{}
 	RandomSteering() DataCloudflareLoadBalancerRulesOverridesRandomSteeringOutputReference
-	RegionPools() cdktf.StringListMap
+	RegionPools() cdktn.StringListMap
 	SessionAffinity() *string
 	SessionAffinityAttributes() DataCloudflareLoadBalancerRulesOverridesSessionAffinityAttributesOutputReference
 	SessionAffinityTtl() *float64
@@ -51,16 +51,16 @@ type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ttl() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,13 +76,13 @@ type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPopPools()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareLoadBalancerRulesOverridesOutputReference
 type jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) AdaptiveRouting() DataCloudflareLoadBalancerRulesOverridesAdaptiveRoutingOutputReference {
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Comp
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) CountryPools() cdktf.StringListMap {
-	var returns cdktf.StringListMap
+func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) CountryPools() cdktn.StringListMap {
+	var returns cdktn.StringListMap
 	_jsii_.Get(
 		j,
 		"countryPools",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Rand
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) RegionPools() cdktf.StringListMap {
-	var returns cdktf.StringListMap
+func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) RegionPools() cdktn.StringListMap {
+	var returns cdktn.StringListMap
 	_jsii_.Get(
 		j,
 		"regionPools",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Ttl(
 }
 
 
-func NewDataCloudflareLoadBalancerRulesOverridesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareLoadBalancerRulesOverridesOutputReference {
+func NewDataCloudflareLoadBalancerRulesOverridesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareLoadBalancerRulesOverridesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareLoadBalancerRulesOverridesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -315,7 +315,7 @@ func NewDataCloudflareLoadBalancerRulesOverridesOutputReference(terraformResourc
 	j := jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerRulesOverridesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerRulesOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -323,11 +323,11 @@ func NewDataCloudflareLoadBalancerRulesOverridesOutputReference(terraformResourc
 	return &j
 }
 
-func NewDataCloudflareLoadBalancerRulesOverridesOutputReference_Override(d DataCloudflareLoadBalancerRulesOverridesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareLoadBalancerRulesOverridesOutputReference_Override(d DataCloudflareLoadBalancerRulesOverridesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerRulesOverridesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerRulesOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -388,7 +388,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,11 +428,11 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) GetA
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -556,8 +556,8 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) GetS
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -569,11 +569,11 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -593,7 +593,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ruleset
@@ -7,11 +7,11 @@ package ruleset
 type RulesetRulesActionParametersUri struct {
 	// A URI path rewrite.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/ruleset#path Ruleset#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#path Ruleset#path}
 	Path *RulesetRulesActionParametersUriPath `field:"optional" json:"path" yaml:"path"`
 	// A URI query rewrite.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/ruleset#query Ruleset#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#query Ruleset#query}
 	Query *RulesetRulesActionParametersUriQuery `field:"optional" json:"query" yaml:"query"`
 }
 

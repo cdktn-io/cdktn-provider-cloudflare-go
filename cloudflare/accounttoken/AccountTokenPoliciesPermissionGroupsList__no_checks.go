@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateGetParamete
 	return nil
 }
 
-func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -27,7 +27,7 @@ func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -35,7 +35,7 @@ func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewAccountTokenPoliciesPermissionGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAccountTokenPoliciesPermissionGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package keylesscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/keylesscertificate/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/keylesscertificate/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
 type KeylessCertificate interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	BundleMethod() *string
 	SetBundleMethod(val *string)
 	BundleMethodInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Certificate() *string
 	SetCertificate(val *string)
 	CertificateInput() *string
@@ -42,9 +42,9 @@ type KeylessCertificate interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -54,9 +54,9 @@ type KeylessCertificate interface {
 	HostInput() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedOn() *string
 	Name() *string
 	SetName(val *string)
@@ -68,9 +68,9 @@ type KeylessCertificate interface {
 	SetPort(val *float64)
 	PortInput() *float64
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -79,7 +79,7 @@ type KeylessCertificate interface {
 	RawOverrides() interface{}
 	Status() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -97,7 +97,7 @@ type KeylessCertificate interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -115,9 +115,9 @@ type KeylessCertificate interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -156,7 +156,7 @@ type KeylessCertificate interface {
 
 // The jsii proxy struct for KeylessCertificate
 type jsiiProxy_KeylessCertificate struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_KeylessCertificate) BundleMethod() *string {
@@ -179,8 +179,8 @@ func (j *jsiiProxy_KeylessCertificate) BundleMethodInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_KeylessCertificate) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_KeylessCertificate) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_KeylessCertificate) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_KeylessCertificate) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_KeylessCertificate) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_KeylessCertificate) PortInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_KeylessCertificate) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_KeylessCertificate) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KeylessCertificate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_KeylessCertificate) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -530,7 +530,7 @@ func (j *jsiiProxy_KeylessCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
 func NewKeylessCertificate(scope constructs.Construct, id *string, config *KeylessCertificateConfig) KeylessCertificate {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewKeylessCertificate(scope constructs.Construct, id *string, config *Keyle
 	j := jsiiProxy_KeylessCertificate{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -548,12 +548,12 @@ func NewKeylessCertificate(scope constructs.Construct, id *string, config *Keyle
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
 func NewKeylessCertificate_Override(k KeylessCertificate, scope constructs.Construct, id *string, config *KeylessCertificateConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -622,7 +622,7 @@ func (j *jsiiProxy_KeylessCertificate)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KeylessCertificate)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -641,7 +641,7 @@ func (j *jsiiProxy_KeylessCertificate)SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KeylessCertificate)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +674,7 @@ func (j *jsiiProxy_KeylessCertificate)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KeylessCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KeylessCertificate)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -704,17 +704,17 @@ func (j *jsiiProxy_KeylessCertificate)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a KeylessCertificate resource upon running "cdktf plan <stack-name>".
-func KeylessCertificate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a KeylessCertificate resource upon running "cdktn plan <stack-name>".
+func KeylessCertificate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateKeylessCertificate_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -749,7 +749,7 @@ func KeylessCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -768,7 +768,7 @@ func KeylessCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -787,7 +787,7 @@ func KeylessCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -800,7 +800,7 @@ func KeylessCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.keylessCertificate.KeylessCertificate",
+		"@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate",
 		"tfResourceType",
 		&returns,
 	)
@@ -845,11 +845,11 @@ func (k *jsiiProxy_KeylessCertificate) GetAnyMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (k *jsiiProxy_KeylessCertificate) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KeylessCertificate) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -986,7 +986,7 @@ func (k *jsiiProxy_KeylessCertificate) HasResourceMove() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KeylessCertificate) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (k *jsiiProxy_KeylessCertificate) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := k.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -997,11 +997,11 @@ func (k *jsiiProxy_KeylessCertificate) ImportFrom(id *string, provider cdktf.Ter
 	)
 }
 
-func (k *jsiiProxy_KeylessCertificate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KeylessCertificate) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,

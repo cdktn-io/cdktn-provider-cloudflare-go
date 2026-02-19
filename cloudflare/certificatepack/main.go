@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package certificatepack
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePack",
 		reflect.TypeOf((*CertificatePack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudflareBranding", GoMethod: "ResetCloudflareBranding"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHosts", GoMethod: "ResetHosts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -79,20 +80,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificatePack{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackCertificates",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificates",
 		reflect.TypeOf((*CertificatePackCertificates)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackCertificatesGeoRestrictions",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificatesGeoRestrictions",
 		reflect.TypeOf((*CertificatePackCertificatesGeoRestrictions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackCertificatesGeoRestrictionsOutputReference",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificatesGeoRestrictionsOutputReference",
 		reflect.TypeOf((*CertificatePackCertificatesGeoRestrictionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificatePackCertificatesGeoRestrictionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackCertificatesList",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificatesList",
 		reflect.TypeOf((*CertificatePackCertificatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -141,12 +142,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificatePackCertificatesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackCertificatesOutputReference",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackCertificatesOutputReference",
 		reflect.TypeOf((*CertificatePackCertificatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bundleMethod", GoGetter: "BundleMethod"},
@@ -185,20 +186,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificatePackCertificatesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackConfig",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig",
 		reflect.TypeOf((*CertificatePackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrors",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationErrors",
 		reflect.TypeOf((*CertificatePackValidationErrors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrorsList",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationErrorsList",
 		reflect.TypeOf((*CertificatePackValidationErrorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -214,12 +215,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificatePackValidationErrorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrorsOutputReference",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationErrorsOutputReference",
 		reflect.TypeOf((*CertificatePackValidationErrorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -247,16 +248,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificatePackValidationErrorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecords",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationRecords",
 		reflect.TypeOf((*CertificatePackValidationRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsList",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationRecordsList",
 		reflect.TypeOf((*CertificatePackValidationRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -272,12 +273,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificatePackValidationRecordsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
+		"@cdktn/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
 		reflect.TypeOf((*CertificatePackValidationRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,7 +310,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificatePackValidationRecordsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

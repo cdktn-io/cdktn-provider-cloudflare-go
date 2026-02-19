@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessgroup
@@ -7,7 +7,7 @@ package zerotrustaccessgroup
 type ZeroTrustAccessGroupRequireGeo struct {
 	// The country code that should be matched.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
 	CountryCode *string `field:"required" json:"countryCode" yaml:"countryCode"`
 }
 

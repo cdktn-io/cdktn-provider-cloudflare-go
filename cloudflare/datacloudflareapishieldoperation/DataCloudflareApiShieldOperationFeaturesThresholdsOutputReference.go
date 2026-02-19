@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareapishieldoperation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareapishieldoperation/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareapishieldoperation/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthIdTokens() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -46,15 +46,15 @@ type DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference interface
 
 // The jsii proxy struct for DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference
 type jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) AuthIdTokens() *float64 {
@@ -238,8 +238,8 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -249,7 +249,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputRefer
 }
 
 
-func NewDataCloudflareApiShieldOperationFeaturesThresholdsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference {
+func NewDataCloudflareApiShieldOperationFeaturesThresholdsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareApiShieldOperationFeaturesThresholdsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -258,7 +258,7 @@ func NewDataCloudflareApiShieldOperationFeaturesThresholdsOutputReference(terraf
 	j := jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -266,11 +266,11 @@ func NewDataCloudflareApiShieldOperationFeaturesThresholdsOutputReference(terraf
 	return &j
 }
 
-func NewDataCloudflareApiShieldOperationFeaturesThresholdsOutputReference_Override(d DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareApiShieldOperationFeaturesThresholdsOutputReference_Override(d DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -488,8 +488,8 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -501,11 +501,11 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -517,7 +517,7 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareApiShieldOperationFeaturesThresholdsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

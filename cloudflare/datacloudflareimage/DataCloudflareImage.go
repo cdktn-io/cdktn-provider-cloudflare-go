@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareimage/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareimage/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/image cloudflare_image}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/image cloudflare_image}.
 type DataCloudflareImage interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -33,9 +33,9 @@ type DataCloudflareImage interface {
 	SetDependsOn(val *[]*string)
 	Filename() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -45,21 +45,21 @@ type DataCloudflareImage interface {
 	SetImageId(val *string)
 	ImageIdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Meta() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	RequireSignedUrls() cdktf.IResolvable
+	RequireSignedUrls() cdktn.IResolvable
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -71,7 +71,7 @@ type DataCloudflareImage interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -87,7 +87,7 @@ type DataCloudflareImage interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -110,7 +110,7 @@ type DataCloudflareImage interface {
 
 // The jsii proxy struct for DataCloudflareImage
 type jsiiProxy_DataCloudflareImage struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataCloudflareImage) AccountId() *string {
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataCloudflareImage) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImage) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareImage) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_DataCloudflareImage) Filename() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImage) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareImage) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_DataCloudflareImage) ImageIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImage) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareImage) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_DataCloudflareImage) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImage) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareImage) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataCloudflareImage) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImage) RequireSignedUrls() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareImage) RequireSignedUrls() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"requireSignedUrls",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_DataCloudflareImage) RequireSignedUrls() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareImage) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareImage) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataCloudflareImage) Variants() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/image cloudflare_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/image cloudflare_image} Data Source.
 func NewDataCloudflareImage(scope constructs.Construct, id *string, config *DataCloudflareImageConfig) DataCloudflareImage {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataCloudflareImage(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataCloudflareImage{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
+		"@cdktn/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -382,12 +382,12 @@ func NewDataCloudflareImage(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/image cloudflare_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/image cloudflare_image} Data Source.
 func NewDataCloudflareImage_Override(d DataCloudflareImage, scope constructs.Construct, id *string, config *DataCloudflareImageConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
+		"@cdktn/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataCloudflareImage)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImage)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareImage)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataCloudflareImage)SetImageId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareImage)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataCloudflareImage)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareImage)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareImage)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,17 +461,17 @@ func (j *jsiiProxy_DataCloudflareImage)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareImage resource upon running "cdktf plan <stack-name>".
-func DataCloudflareImage_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareImage resource upon running "cdktn plan <stack-name>".
+func DataCloudflareImage_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareImage_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
+		"@cdktn/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -506,7 +506,7 @@ func DataCloudflareImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
+		"@cdktn/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -525,7 +525,7 @@ func DataCloudflareImage_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
+		"@cdktn/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func DataCloudflareImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
+		"@cdktn/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func DataCloudflareImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
+		"@cdktn/provider-cloudflare.dataCloudflareImage.DataCloudflareImage",
 		"tfResourceType",
 		&returns,
 	)
@@ -591,11 +591,11 @@ func (d *jsiiProxy_DataCloudflareImage) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareImage) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareImage) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -719,11 +719,11 @@ func (d *jsiiProxy_DataCloudflareImage) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareImage) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareImage) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

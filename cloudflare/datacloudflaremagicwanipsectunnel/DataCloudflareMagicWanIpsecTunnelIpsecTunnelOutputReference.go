@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflaremagicwanipsectunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremagicwanipsectunnel/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwanipsectunnel/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
-	cdktf.ComplexObject
-	AllowNullCipher() cdktf.IResolvable
-	AutomaticReturnRouting() cdktf.IResolvable
+	cdktn.ComplexObject
+	AllowNullCipher() cdktn.IResolvable
+	AutomaticReturnRouting() cdktn.IResolvable
 	Bgp() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference
 	BgpStatus() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpStatusOutputReference
 	CloudflareEndpoint() *string
@@ -48,21 +48,21 @@ type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
 	ModifiedOn() *string
 	Name() *string
 	PskMetadata() DataCloudflareMagicWanIpsecTunnelIpsecTunnelPskMetadataOutputReference
-	ReplayProtection() cdktf.IResolvable
+	ReplayProtection() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,12 +78,12 @@ type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,11 +93,11 @@ type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference
 type jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) AllowNullCipher() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) AllowNullCipher() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowNullCipher",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) AutomaticReturnRouting() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) AutomaticReturnRouting() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"automaticReturnRouting",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) ReplayProtection() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) ReplayProtection() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"replayProtection",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 }
 
 
-func NewDataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference {
+func NewDataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -346,7 +346,7 @@ func NewDataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference(terraformRes
 	j := jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -354,11 +354,11 @@ func NewDataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference(terraformRes
 	return &j
 }
 
-func NewDataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference_Override(d DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference_Override(d DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareMagicWanIpsecTunnel.DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,11 +448,11 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -576,8 +576,8 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -589,11 +589,11 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -605,7 +605,7 @@ func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

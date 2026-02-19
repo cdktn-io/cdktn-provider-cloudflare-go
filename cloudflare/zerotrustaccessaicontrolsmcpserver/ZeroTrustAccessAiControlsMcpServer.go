@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessaicontrolsmcpserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessaicontrolsmcpserver/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessaicontrolsmcpserver/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
 type ZeroTrustAccessAiControlsMcpServer interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -25,7 +25,7 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	SetAuthType(val *string)
 	AuthTypeInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -47,9 +47,9 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	DescriptionInput() *string
 	Error() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -60,11 +60,12 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LastSuccessfulSync() *string
 	LastSynced() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedAt() *string
 	ModifiedBy() *string
 	Name() *string
@@ -72,11 +73,11 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Prompts() cdktf.StringMapList
+	Prompts() cdktn.StringMapList
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -85,12 +86,12 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	RawOverrides() interface{}
 	Status() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Tools() cdktf.StringMapList
+	Tools() cdktn.StringMapList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -99,7 +100,7 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -117,9 +118,9 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -154,7 +155,7 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 
 // The jsii proxy struct for ZeroTrustAccessAiControlsMcpServer
 type jsiiProxy_ZeroTrustAccessAiControlsMcpServer struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) AccountId() *string {
@@ -217,8 +218,8 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) AuthTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -317,8 +318,8 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Error() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -387,6 +388,16 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) LastSuccessfulSync() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastSuccessfulSync",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) LastSynced() *string {
 	var returns *string
 	_jsii_.Get(
@@ -397,8 +408,8 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) LastSynced() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -457,8 +468,8 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Prompts() cdktf.StringMapList {
-	var returns cdktf.StringMapList
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Prompts() cdktn.StringMapList {
+	var returns cdktn.StringMapList
 	_jsii_.Get(
 		j,
 		"prompts",
@@ -467,8 +478,8 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Prompts() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -507,8 +518,8 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -537,8 +548,8 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) TerraformResourceType() *
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Tools() cdktf.StringMapList {
-	var returns cdktf.StringMapList
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Tools() cdktn.StringMapList {
+	var returns cdktn.StringMapList
 	_jsii_.Get(
 		j,
 		"tools",
@@ -548,7 +559,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Tools() cdktf.StringMapLi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
 func NewZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpServerConfig) ZeroTrustAccessAiControlsMcpServer {
 	_init_.Initialize()
 
@@ -558,7 +569,7 @@ func NewZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *strin
 	j := jsiiProxy_ZeroTrustAccessAiControlsMcpServer{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
+		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -566,12 +577,12 @@ func NewZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
 func NewZeroTrustAccessAiControlsMcpServer_Override(z ZeroTrustAccessAiControlsMcpServer, scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpServerConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
+		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -651,7 +662,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetDescription(val *string
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -681,7 +692,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +714,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -722,17 +733,17 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetProvisioners(val *[]int
 	)
 }
 
-// Generates CDKTF code for importing a ZeroTrustAccessAiControlsMcpServer resource upon running "cdktf plan <stack-name>".
-func ZeroTrustAccessAiControlsMcpServer_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ZeroTrustAccessAiControlsMcpServer resource upon running "cdktn plan <stack-name>".
+func ZeroTrustAccessAiControlsMcpServer_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateZeroTrustAccessAiControlsMcpServer_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
+		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -767,7 +778,7 @@ func ZeroTrustAccessAiControlsMcpServer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
+		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -786,7 +797,7 @@ func ZeroTrustAccessAiControlsMcpServer_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
+		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -805,7 +816,7 @@ func ZeroTrustAccessAiControlsMcpServer_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
+		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -818,7 +829,7 @@ func ZeroTrustAccessAiControlsMcpServer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
+		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpServer.ZeroTrustAccessAiControlsMcpServer",
 		"tfResourceType",
 		&returns,
 	)
@@ -863,11 +874,11 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -1004,7 +1015,7 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) HasResourceMove() interfa
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1015,11 +1026,11 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ImportFrom(id *string, pr
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,

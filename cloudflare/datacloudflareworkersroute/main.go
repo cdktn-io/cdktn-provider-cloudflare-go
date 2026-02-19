@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareworkersroute
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute",
+		"@cdktn/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRoute",
 		reflect.TypeOf((*DataCloudflareWorkersRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,12 +57,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareWorkersRoute{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareWorkersRoute.DataCloudflareWorkersRouteConfig",
 		reflect.TypeOf((*DataCloudflareWorkersRouteConfig)(nil)).Elem(),
 	)
 }

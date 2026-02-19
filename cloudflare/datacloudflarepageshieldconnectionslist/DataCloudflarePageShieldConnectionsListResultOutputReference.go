@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepageshieldconnectionslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldconnectionslist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarepageshieldconnectionslist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflarePageShieldConnectionsListResultOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AddedAt() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -29,7 +29,7 @@ type DataCloudflarePageShieldConnectionsListResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DomainReportedMalicious() cdktf.IResolvable
+	DomainReportedMalicious() cdktn.IResolvable
 	FirstPageUrl() *string
 	FirstSeenAt() *string
 	// Experimental.
@@ -47,18 +47,18 @@ type DataCloudflarePageShieldConnectionsListResultOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
-	UrlContainsCdnCgiPath() cdktf.IResolvable
-	UrlReportedMalicious() cdktf.IResolvable
+	UrlContainsCdnCgiPath() cdktn.IResolvable
+	UrlReportedMalicious() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,12 +74,12 @@ type DataCloudflarePageShieldConnectionsListResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type DataCloudflarePageShieldConnectionsListResultOutputReference interface {
 
 // The jsii proxy struct for DataCloudflarePageShieldConnectionsListResultOutputReference
 type jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) AddedAt() *string {
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) DomainReportedMalicious() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) DomainReportedMalicious() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"domainReportedMalicious",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) UrlContainsCdnCgiPath() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) UrlContainsCdnCgiPath() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"urlContainsCdnCgiPath",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) UrlReportedMalicious() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) UrlReportedMalicious() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"urlReportedMalicious",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 }
 
 
-func NewDataCloudflarePageShieldConnectionsListResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflarePageShieldConnectionsListResultOutputReference {
+func NewDataCloudflarePageShieldConnectionsListResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflarePageShieldConnectionsListResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflarePageShieldConnectionsListResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -302,7 +302,7 @@ func NewDataCloudflarePageShieldConnectionsListResultOutputReference(terraformRe
 	j := jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldConnectionsList.DataCloudflarePageShieldConnectionsListResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldConnectionsList.DataCloudflarePageShieldConnectionsListResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -310,11 +310,11 @@ func NewDataCloudflarePageShieldConnectionsListResultOutputReference(terraformRe
 	return &j
 }
 
-func NewDataCloudflarePageShieldConnectionsListResultOutputReference_Override(d DataCloudflarePageShieldConnectionsListResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflarePageShieldConnectionsListResultOutputReference_Override(d DataCloudflarePageShieldConnectionsListResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldConnectionsList.DataCloudflarePageShieldConnectionsListResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldConnectionsList.DataCloudflarePageShieldConnectionsListResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,11 +404,11 @@ func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -532,8 +532,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -545,11 +545,11 @@ func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -561,7 +561,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflarePageShieldConnectionsListResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

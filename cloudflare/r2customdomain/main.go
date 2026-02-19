@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package r2customdomain
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomain",
+		"@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain",
 		reflect.TypeOf((*R2CustomDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -79,20 +79,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2CustomDomain{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig",
+		"@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig",
 		reflect.TypeOf((*R2CustomDomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomainStatus",
+		"@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainStatus",
 		reflect.TypeOf((*R2CustomDomainStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2CustomDomain.R2CustomDomainStatusOutputReference",
+		"@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainStatusOutputReference",
 		reflect.TypeOf((*R2CustomDomainStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,7 +121,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2CustomDomainStatusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

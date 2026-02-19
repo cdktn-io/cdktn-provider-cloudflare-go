@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflaremanagedtransforms
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaremanagedtransforms/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremanagedtransforms/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/managed_transforms cloudflare_managed_transforms}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/managed_transforms cloudflare_managed_transforms}.
 type DataCloudflareManagedTransforms interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,30 +28,30 @@ type DataCloudflareManagedTransforms interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ManagedRequestHeaders() DataCloudflareManagedTransformsManagedRequestHeadersList
 	ManagedResponseHeaders() DataCloudflareManagedTransformsManagedResponseHeadersList
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -64,7 +64,7 @@ type DataCloudflareManagedTransforms interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -80,7 +80,7 @@ type DataCloudflareManagedTransforms interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -103,11 +103,11 @@ type DataCloudflareManagedTransforms interface {
 
 // The jsii proxy struct for DataCloudflareManagedTransforms
 type jsiiProxy_DataCloudflareManagedTransforms struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflareManagedTransforms) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataCloudflareManagedTransforms) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareManagedTransforms) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataCloudflareManagedTransforms) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareManagedTransforms) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataCloudflareManagedTransforms) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareManagedTransforms) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataCloudflareManagedTransforms) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareManagedTransforms) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataCloudflareManagedTransforms) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -297,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
 func NewDataCloudflareManagedTransforms(scope constructs.Construct, id *string, config *DataCloudflareManagedTransformsConfig) DataCloudflareManagedTransforms {
 	_init_.Initialize()
 
@@ -307,7 +307,7 @@ func NewDataCloudflareManagedTransforms(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataCloudflareManagedTransforms{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
+		"@cdktn/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,12 +315,12 @@ func NewDataCloudflareManagedTransforms(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
 func NewDataCloudflareManagedTransforms_Override(d DataCloudflareManagedTransforms, scope constructs.Construct, id *string, config *DataCloudflareManagedTransformsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
+		"@cdktn/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareManagedTransforms)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCloudflareManagedTransforms)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareManagedTransforms)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCloudflareManagedTransforms)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareManagedTransforms)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCloudflareManagedTransforms)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -383,17 +383,17 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataCloudflareManagedTransforms resource upon running "cdktf plan <stack-name>".
-func DataCloudflareManagedTransforms_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataCloudflareManagedTransforms resource upon running "cdktn plan <stack-name>".
+func DataCloudflareManagedTransforms_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataCloudflareManagedTransforms_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
+		"@cdktn/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -428,7 +428,7 @@ func DataCloudflareManagedTransforms_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
+		"@cdktn/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -447,7 +447,7 @@ func DataCloudflareManagedTransforms_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
+		"@cdktn/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataCloudflareManagedTransforms_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
+		"@cdktn/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataCloudflareManagedTransforms_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
+		"@cdktn/provider-cloudflare.dataCloudflareManagedTransforms.DataCloudflareManagedTransforms",
 		"tfResourceType",
 		&returns,
 	)
@@ -513,11 +513,11 @@ func (d *jsiiProxy_DataCloudflareManagedTransforms) GetAnyMapAttribute(terraform
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareManagedTransforms) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareManagedTransforms) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -641,11 +641,11 @@ func (d *jsiiProxy_DataCloudflareManagedTransforms) GetStringMapAttribute(terraf
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareManagedTransforms) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareManagedTransforms) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,

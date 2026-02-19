@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package addressmap
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/addressmap/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/addressmap/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/address_map cloudflare_address_map}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map}.
 type AddressMap interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	CanDelete() cdktf.IResolvable
-	CanModifyIps() cdktf.IResolvable
+	CanDelete() cdktn.IResolvable
+	CanModifyIps() cdktn.IResolvable
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -47,9 +47,9 @@ type AddressMap interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -59,18 +59,18 @@ type AddressMap interface {
 	SetIps(val *[]*string)
 	IpsInput() *[]*string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Memberships() AddressMapMembershipsList
 	MembershipsInput() interface{}
 	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -78,7 +78,7 @@ type AddressMap interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -91,7 +91,7 @@ type AddressMap interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -109,9 +109,9 @@ type AddressMap interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -150,7 +150,7 @@ type AddressMap interface {
 
 // The jsii proxy struct for AddressMap
 type jsiiProxy_AddressMap struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AddressMap) AccountId() *string {
@@ -173,8 +173,8 @@ func (j *jsiiProxy_AddressMap) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) CanDelete() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_AddressMap) CanDelete() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"canDelete",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_AddressMap) CanDelete() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) CanModifyIps() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_AddressMap) CanModifyIps() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"canModifyIps",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_AddressMap) CanModifyIps() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AddressMap) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_AddressMap) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AddressMap) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_AddressMap) IpsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AddressMap) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_AddressMap) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AddressMap) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_AddressMap) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AddressMap) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AddressMap) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -484,7 +484,7 @@ func (j *jsiiProxy_AddressMap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapConfig) AddressMap {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapCon
 	j := jsiiProxy_AddressMap{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.addressMap.AddressMap",
+		"@cdktn/provider-cloudflare.addressMap.AddressMap",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -502,12 +502,12 @@ func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap_Override(a AddressMap, scope constructs.Construct, id *string, config *AddressMapConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.addressMap.AddressMap",
+		"@cdktn/provider-cloudflare.addressMap.AddressMap",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -587,7 +587,7 @@ func (j *jsiiProxy_AddressMap)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AddressMap)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -606,7 +606,7 @@ func (j *jsiiProxy_AddressMap)SetIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AddressMap)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +617,7 @@ func (j *jsiiProxy_AddressMap)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_AddressMap)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AddressMap)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -636,17 +636,17 @@ func (j *jsiiProxy_AddressMap)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a AddressMap resource upon running "cdktf plan <stack-name>".
-func AddressMap_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AddressMap resource upon running "cdktn plan <stack-name>".
+func AddressMap_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAddressMap_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.addressMap.AddressMap",
+		"@cdktn/provider-cloudflare.addressMap.AddressMap",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -681,7 +681,7 @@ func AddressMap_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.addressMap.AddressMap",
+		"@cdktn/provider-cloudflare.addressMap.AddressMap",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func AddressMap_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.addressMap.AddressMap",
+		"@cdktn/provider-cloudflare.addressMap.AddressMap",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -719,7 +719,7 @@ func AddressMap_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.addressMap.AddressMap",
+		"@cdktn/provider-cloudflare.addressMap.AddressMap",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -732,7 +732,7 @@ func AddressMap_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.addressMap.AddressMap",
+		"@cdktn/provider-cloudflare.addressMap.AddressMap",
 		"tfResourceType",
 		&returns,
 	)
@@ -777,11 +777,11 @@ func (a *jsiiProxy_AddressMap) GetAnyMapAttribute(terraformAttribute *string) *m
 	return returns
 }
 
-func (a *jsiiProxy_AddressMap) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AddressMap) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -918,7 +918,7 @@ func (a *jsiiProxy_AddressMap) HasResourceMove() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AddressMap) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AddressMap) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -929,11 +929,11 @@ func (a *jsiiProxy_AddressMap) ImportFrom(id *string, provider cdktf.TerraformPr
 	)
 }
 
-func (a *jsiiProxy_AddressMap) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AddressMap) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

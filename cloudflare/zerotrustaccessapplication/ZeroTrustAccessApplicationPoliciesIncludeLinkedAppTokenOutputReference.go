@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessapplication/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AppUid() *string
 	SetAppUid(val *string)
 	AppUidInput() *string
@@ -40,15 +40,15 @@ type ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference inte
 
 // The jsii proxy struct for ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference
 type jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) AppUid() *string {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutput
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -173,7 +173,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutput
 }
 
 
-func NewZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference {
+func NewZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -182,7 +182,7 @@ func NewZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference(t
 	j := jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -190,11 +190,11 @@ func NewZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference(t
 	return &j
 }
 
-func NewZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference_Override(z ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference_Override(z ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -255,7 +255,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutput
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,11 +295,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutput
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -423,8 +423,8 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutput
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -436,11 +436,11 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutput
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -452,7 +452,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutput
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

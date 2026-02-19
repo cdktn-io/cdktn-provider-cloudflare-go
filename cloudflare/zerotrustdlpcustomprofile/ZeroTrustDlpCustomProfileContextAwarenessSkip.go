@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdlpcustomprofile
@@ -7,7 +7,7 @@ package zerotrustdlpcustomprofile
 type ZeroTrustDlpCustomProfileContextAwarenessSkip struct {
 	// If the content type is a file, skip context analysis and return all matches.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#files ZeroTrustDlpCustomProfile#files}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#files ZeroTrustDlpCustomProfile#files}
 	Files interface{} `field:"required" json:"files" yaml:"files"`
 }
 

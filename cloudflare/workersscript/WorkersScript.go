@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersscript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersscript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -26,7 +26,7 @@ type WorkersScript interface {
 	SetBodyPart(val *string)
 	BodyPartInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CompatibilityDate() *string
 	SetCompatibilityDate(val *string)
 	CompatibilityDateInput() *string
@@ -62,16 +62,16 @@ type WorkersScript interface {
 	SetDependsOn(val *[]*string)
 	Etag() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Handlers() *[]*string
-	HasAssets() cdktf.IResolvable
-	HasModules() cdktf.IResolvable
+	HasAssets() cdktn.IResolvable
+	HasModules() cdktn.IResolvable
 	Id() *string
 	KeepAssets() interface{}
 	SetKeepAssets(val interface{})
@@ -81,9 +81,9 @@ type WorkersScript interface {
 	KeepBindingsInput() *[]*string
 	LastDeployedFrom() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Limits() WorkersScriptLimitsOutputReference
 	LimitsInput() interface{}
 	Logpush() interface{}
@@ -103,10 +103,12 @@ type WorkersScript interface {
 	ObservabilityInput() interface{}
 	Placement() WorkersScriptPlacementOutputReference
 	PlacementInput() interface{}
+	PlacementMode() *string
+	PlacementStatus() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -120,7 +122,7 @@ type WorkersScript interface {
 	TailConsumers() WorkersScriptTailConsumersList
 	TailConsumersInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -136,7 +138,7 @@ type WorkersScript interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -154,9 +156,9 @@ type WorkersScript interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -215,7 +217,7 @@ type WorkersScript interface {
 
 // The jsii proxy struct for WorkersScript
 type jsiiProxy_WorkersScript struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_WorkersScript) AccountId() *string {
@@ -298,8 +300,8 @@ func (j *jsiiProxy_WorkersScript) BodyPartInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_WorkersScript) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -488,8 +490,8 @@ func (j *jsiiProxy_WorkersScript) Etag() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_WorkersScript) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -528,8 +530,8 @@ func (j *jsiiProxy_WorkersScript) Handlers() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) HasAssets() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_WorkersScript) HasAssets() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"hasAssets",
@@ -538,8 +540,8 @@ func (j *jsiiProxy_WorkersScript) HasAssets() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) HasModules() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_WorkersScript) HasModules() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"hasModules",
@@ -608,8 +610,8 @@ func (j *jsiiProxy_WorkersScript) LastDeployedFrom() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_WorkersScript) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -778,8 +780,28 @@ func (j *jsiiProxy_WorkersScript) PlacementInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_WorkersScript) PlacementMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) PlacementStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -858,8 +880,8 @@ func (j *jsiiProxy_WorkersScript) TailConsumersInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_WorkersScript) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -909,7 +931,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -919,7 +941,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	j := jsiiProxy_WorkersScript{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScript",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -927,12 +949,12 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScript",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -1056,7 +1078,7 @@ func (j *jsiiProxy_WorkersScript)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkersScript)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1086,7 +1108,7 @@ func (j *jsiiProxy_WorkersScript)SetKeepBindings(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkersScript)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1119,7 +1141,7 @@ func (j *jsiiProxy_WorkersScript)SetMainModule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkersScript)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1160,17 +1182,17 @@ func (j *jsiiProxy_WorkersScript)SetUsageModel(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a WorkersScript resource upon running "cdktf plan <stack-name>".
-func WorkersScript_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a WorkersScript resource upon running "cdktn plan <stack-name>".
+func WorkersScript_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateWorkersScript_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScript",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1205,7 +1227,7 @@ func WorkersScript_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScript",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1224,7 +1246,7 @@ func WorkersScript_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScript",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1243,7 +1265,7 @@ func WorkersScript_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScript",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1256,7 +1278,7 @@ func WorkersScript_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScript",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScript",
 		"tfResourceType",
 		&returns,
 	)
@@ -1301,11 +1323,11 @@ func (w *jsiiProxy_WorkersScript) GetAnyMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScript) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersScript) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -1442,7 +1464,7 @@ func (w *jsiiProxy_WorkersScript) HasResourceMove() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScript) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (w *jsiiProxy_WorkersScript) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := w.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1453,11 +1475,11 @@ func (w *jsiiProxy_WorkersScript) ImportFrom(id *string, provider cdktf.Terrafor
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersScript) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,

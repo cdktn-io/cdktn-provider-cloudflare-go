@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,11 @@ func (w *jsiiProxy_WorkerVersionPlacementOutputReference) validateInterpolationF
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionPlacementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerVersionPlacementOutputReference) validatePutTargetParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerVersionPlacementOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -59,6 +63,14 @@ func (j *jsiiProxy_WorkerVersionPlacementOutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersionPlacementOutputReference) validateSetHostParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerVersionPlacementOutputReference) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersionPlacementOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -67,15 +79,19 @@ func (j *jsiiProxy_WorkerVersionPlacementOutputReference) validateSetModeParamet
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersionPlacementOutputReference) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersionPlacementOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_WorkerVersionPlacementOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerVersionPlacementOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkerVersionPlacementOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkerVersionPlacementOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

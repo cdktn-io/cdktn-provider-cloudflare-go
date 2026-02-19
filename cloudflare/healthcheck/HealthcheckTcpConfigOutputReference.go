@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package healthcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/healthcheck/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type HealthcheckTcpConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type HealthcheckTcpConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type HealthcheckTcpConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMethod()
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type HealthcheckTcpConfigOutputReference interface {
 
 // The jsii proxy struct for HealthcheckTcpConfigOutputReference
 type jsiiProxy_HealthcheckTcpConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference) TerraformResource() cdkt
 }
 
 
-func NewHealthcheckTcpConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcheckTcpConfigOutputReference {
+func NewHealthcheckTcpConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) HealthcheckTcpConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHealthcheckTcpConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewHealthcheckTcpConfigOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_HealthcheckTcpConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference",
+		"@cdktn/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewHealthcheckTcpConfigOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewHealthcheckTcpConfigOutputReference_Override(h HealthcheckTcpConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewHealthcheckTcpConfigOutputReference_Override(h HealthcheckTcpConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference",
+		"@cdktn/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)
@@ -291,7 +291,7 @@ func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcheckTcpConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,11 +331,11 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -459,8 +459,8 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -472,11 +472,11 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -504,7 +504,7 @@ func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) ResetPort() {
 	)
 }
 
-func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcheckTcpConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

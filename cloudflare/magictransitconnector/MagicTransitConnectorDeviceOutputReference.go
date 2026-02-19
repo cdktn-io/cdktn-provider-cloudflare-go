@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magictransitconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magictransitconnector/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MagicTransitConnectorDeviceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type MagicTransitConnectorDeviceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type MagicTransitConnectorDeviceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetId()
 	ResetProvisionLicense()
 	ResetSerialNumber()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type MagicTransitConnectorDeviceOutputReference interface {
 
 // The jsii proxy struct for MagicTransitConnectorDeviceOutputReference
 type jsiiProxy_MagicTransitConnectorDeviceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) TerraformResource
 }
 
 
-func NewMagicTransitConnectorDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MagicTransitConnectorDeviceOutputReference {
+func NewMagicTransitConnectorDeviceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MagicTransitConnectorDeviceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMagicTransitConnectorDeviceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -231,7 +231,7 @@ func NewMagicTransitConnectorDeviceOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_MagicTransitConnectorDeviceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,11 +239,11 @@ func NewMagicTransitConnectorDeviceOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewMagicTransitConnectorDeviceOutputReference_Override(m MagicTransitConnectorDeviceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMagicTransitConnectorDeviceOutputReference_Override(m MagicTransitConnectorDeviceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,11 +366,11 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -494,8 +494,8 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -507,11 +507,11 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -547,7 +547,7 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ResetSerialNumber
 	)
 }
 
-func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

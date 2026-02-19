@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accountdnssettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accountdnssettings/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -55,9 +55,9 @@ type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ttl() *float64
 	SetTtl(val *float64)
 	TtlInput() *float64
@@ -66,7 +66,7 @@ type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetExpire()
 	ResetMinTtl()
 	ResetMname()
@@ -94,7 +94,7 @@ type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
 	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,7 +104,7 @@ type AccountDnsSettingsZoneDefaultsSoaOutputReference interface {
 
 // The jsii proxy struct for AccountDnsSettingsZoneDefaultsSoaOutputReference
 type jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) ComplexObjectIndex() interface{} {
@@ -287,8 +287,8 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -318,7 +318,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) TtlInput() 
 }
 
 
-func NewAccountDnsSettingsZoneDefaultsSoaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccountDnsSettingsZoneDefaultsSoaOutputReference {
+func NewAccountDnsSettingsZoneDefaultsSoaOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AccountDnsSettingsZoneDefaultsSoaOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAccountDnsSettingsZoneDefaultsSoaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -327,7 +327,7 @@ func NewAccountDnsSettingsZoneDefaultsSoaOutputReference(terraformResource cdktf
 	j := jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoaOutputReference",
+		"@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -335,11 +335,11 @@ func NewAccountDnsSettingsZoneDefaultsSoaOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewAccountDnsSettingsZoneDefaultsSoaOutputReference_Override(a AccountDnsSettingsZoneDefaultsSoaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAccountDnsSettingsZoneDefaultsSoaOutputReference_Override(a AccountDnsSettingsZoneDefaultsSoaOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoaOutputReference",
+		"@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -455,7 +455,7 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,11 +506,11 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -634,8 +634,8 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) GetStringMa
 	return returns
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -647,11 +647,11 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) Interpolati
 	return returns
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -719,7 +719,7 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) ResetTtl() 
 	)
 }
 
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsSoaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

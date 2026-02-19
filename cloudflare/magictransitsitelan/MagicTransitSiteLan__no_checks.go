@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -107,6 +107,10 @@ func (j *jsiiProxy_MagicTransitSiteLan) validateSetAccountIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_MagicTransitSiteLan) validateSetBondIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicTransitSiteLan) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -119,7 +123,7 @@ func (j *jsiiProxy_MagicTransitSiteLan) validateSetHaLinkParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteLan) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MagicTransitSiteLan) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

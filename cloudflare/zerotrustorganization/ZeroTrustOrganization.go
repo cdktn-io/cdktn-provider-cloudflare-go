@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustorganization/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -28,7 +28,7 @@ type ZeroTrustOrganization interface {
 	SetAutoRedirectToIdentity(val interface{})
 	AutoRedirectToIdentityInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -41,14 +41,20 @@ type ZeroTrustOrganization interface {
 	SetCount(val interface{})
 	CustomPages() ZeroTrustOrganizationCustomPagesOutputReference
 	CustomPagesInput() interface{}
+	DenyUnmatchedRequests() interface{}
+	SetDenyUnmatchedRequests(val interface{})
+	DenyUnmatchedRequestsExemptedZoneNames() *[]*string
+	SetDenyUnmatchedRequestsExemptedZoneNames(val *[]*string)
+	DenyUnmatchedRequestsExemptedZoneNamesInput() *[]*string
+	DenyUnmatchedRequestsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -57,9 +63,9 @@ type ZeroTrustOrganization interface {
 	SetIsUiReadOnly(val interface{})
 	IsUiReadOnlyInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LoginDesign() ZeroTrustOrganizationLoginDesignOutputReference
 	LoginDesignInput() interface{}
 	Name() *string
@@ -68,9 +74,9 @@ type ZeroTrustOrganization interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -81,7 +87,7 @@ type ZeroTrustOrganization interface {
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -106,7 +112,7 @@ type ZeroTrustOrganization interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -124,9 +130,9 @@ type ZeroTrustOrganization interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -148,6 +154,8 @@ type ZeroTrustOrganization interface {
 	ResetAuthDomain()
 	ResetAutoRedirectToIdentity()
 	ResetCustomPages()
+	ResetDenyUnmatchedRequests()
+	ResetDenyUnmatchedRequestsExemptedZoneNames()
 	ResetIsUiReadOnly()
 	ResetLoginDesign()
 	ResetName()
@@ -174,7 +182,7 @@ type ZeroTrustOrganization interface {
 
 // The jsii proxy struct for ZeroTrustOrganization
 type jsiiProxy_ZeroTrustOrganization struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ZeroTrustOrganization) AccountId() *string {
@@ -257,8 +265,8 @@ func (j *jsiiProxy_ZeroTrustOrganization) AutoRedirectToIdentityInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ZeroTrustOrganization) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -317,6 +325,46 @@ func (j *jsiiProxy_ZeroTrustOrganization) CustomPagesInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) DenyUnmatchedRequests() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) DenyUnmatchedRequestsExemptedZoneNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequestsExemptedZoneNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) DenyUnmatchedRequestsExemptedZoneNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequestsExemptedZoneNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) DenyUnmatchedRequestsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"denyUnmatchedRequestsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -327,8 +375,8 @@ func (j *jsiiProxy_ZeroTrustOrganization) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ZeroTrustOrganization) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -377,8 +425,8 @@ func (j *jsiiProxy_ZeroTrustOrganization) IsUiReadOnlyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ZeroTrustOrganization) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -437,8 +485,8 @@ func (j *jsiiProxy_ZeroTrustOrganization) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ZeroTrustOrganization) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -487,8 +535,8 @@ func (j *jsiiProxy_ZeroTrustOrganization) SessionDurationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ZeroTrustOrganization) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -598,7 +646,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -608,7 +656,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	j := jsiiProxy_ZeroTrustOrganization{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -616,12 +664,12 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -693,6 +741,28 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization)SetDenyUnmatchedRequests(val interface{}) {
+	if err := j.validateSetDenyUnmatchedRequestsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"denyUnmatchedRequests",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization)SetDenyUnmatchedRequestsExemptedZoneNames(val *[]*string) {
+	if err := j.validateSetDenyUnmatchedRequestsExemptedZoneNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"denyUnmatchedRequestsExemptedZoneNames",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -701,7 +771,7 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustOrganization)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -720,7 +790,7 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetIsUiReadOnly(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustOrganization)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +812,7 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustOrganization)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -816,17 +886,17 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ZeroTrustOrganization resource upon running "cdktf plan <stack-name>".
-func ZeroTrustOrganization_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ZeroTrustOrganization resource upon running "cdktn plan <stack-name>".
+func ZeroTrustOrganization_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateZeroTrustOrganization_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -861,7 +931,7 @@ func ZeroTrustOrganization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -880,7 +950,7 @@ func ZeroTrustOrganization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -899,7 +969,7 @@ func ZeroTrustOrganization_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -912,7 +982,7 @@ func ZeroTrustOrganization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
 		"tfResourceType",
 		&returns,
 	)
@@ -957,11 +1027,11 @@ func (z *jsiiProxy_ZeroTrustOrganization) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustOrganization) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustOrganization) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -1098,7 +1168,7 @@ func (z *jsiiProxy_ZeroTrustOrganization) HasResourceMove() interface{} {
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustOrganization) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (z *jsiiProxy_ZeroTrustOrganization) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1109,11 +1179,11 @@ func (z *jsiiProxy_ZeroTrustOrganization) ImportFrom(id *string, provider cdktf.
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustOrganization) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustOrganization) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -1227,6 +1297,22 @@ func (z *jsiiProxy_ZeroTrustOrganization) ResetCustomPages() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetCustomPages",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetDenyUnmatchedRequests() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDenyUnmatchedRequests",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetDenyUnmatchedRequestsExemptedZoneNames() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDenyUnmatchedRequestsExemptedZoneNames",
 		nil, // no parameters
 	)
 }

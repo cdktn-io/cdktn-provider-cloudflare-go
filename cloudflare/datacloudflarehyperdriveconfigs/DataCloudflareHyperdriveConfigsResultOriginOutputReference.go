@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarehyperdriveconfigs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarehyperdriveconfigs/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarehyperdriveconfigs/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareHyperdriveConfigsResultOriginOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessClientId() *string
 	AccessClientSecret() *string
 	// the index of the complex object in a list.
@@ -44,16 +44,16 @@ type DataCloudflareHyperdriveConfigsResultOriginOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	User() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,12 +69,12 @@ type DataCloudflareHyperdriveConfigsResultOriginOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type DataCloudflareHyperdriveConfigsResultOriginOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareHyperdriveConfigsResultOriginOutputReference
 type jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) AccessClientId() *string {
@@ -217,8 +217,8 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -238,7 +238,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) U
 }
 
 
-func NewDataCloudflareHyperdriveConfigsResultOriginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareHyperdriveConfigsResultOriginOutputReference {
+func NewDataCloudflareHyperdriveConfigsResultOriginOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareHyperdriveConfigsResultOriginOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareHyperdriveConfigsResultOriginOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -247,7 +247,7 @@ func NewDataCloudflareHyperdriveConfigsResultOriginOutputReference(terraformReso
 	j := jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfigs.DataCloudflareHyperdriveConfigsResultOriginOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareHyperdriveConfigs.DataCloudflareHyperdriveConfigsResultOriginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -255,11 +255,11 @@ func NewDataCloudflareHyperdriveConfigsResultOriginOutputReference(terraformReso
 	return &j
 }
 
-func NewDataCloudflareHyperdriveConfigsResultOriginOutputReference_Override(d DataCloudflareHyperdriveConfigsResultOriginOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareHyperdriveConfigsResultOriginOutputReference_Override(d DataCloudflareHyperdriveConfigsResultOriginOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareHyperdriveConfigs.DataCloudflareHyperdriveConfigsResultOriginOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareHyperdriveConfigs.DataCloudflareHyperdriveConfigsResultOriginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,11 +349,11 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -477,8 +477,8 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -490,11 +490,11 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -506,7 +506,7 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

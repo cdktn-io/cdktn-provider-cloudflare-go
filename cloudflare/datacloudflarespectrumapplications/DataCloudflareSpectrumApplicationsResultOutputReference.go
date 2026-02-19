@@ -1,19 +1,19 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarespectrumapplications
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarespectrumapplications/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarespectrumapplications/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareSpectrumApplicationsResultOutputReference interface {
-	cdktf.ComplexObject
-	ArgoSmartRouting() cdktf.IResolvable
+	cdktn.ComplexObject
+	ArgoSmartRouting() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,11 +37,11 @@ type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareSpectrumApplicationsResult
 	SetInternalValue(val *DataCloudflareSpectrumApplicationsResult)
-	IpFirewall() cdktf.IResolvable
+	IpFirewall() cdktn.IResolvable
 	ModifiedOn() *string
 	OriginDirect() *[]*string
 	OriginDns() DataCloudflareSpectrumApplicationsResultOriginDnsOutputReference
-	OriginPort() cdktf.AnyMap
+	OriginPort() cdktn.AnyMap
 	Protocol() *string
 	ProxyProtocol() *string
 	// Experimental.
@@ -49,9 +49,9 @@ type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tls() *string
 	TrafficType() *string
 	// Experimental.
@@ -59,7 +59,7 @@ type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,12 +75,12 @@ type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,11 +90,11 @@ type DataCloudflareSpectrumApplicationsResultOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareSpectrumApplicationsResultOutputReference
 type jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) ArgoSmartRouting() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) ArgoSmartRouting() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"argoSmartRouting",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Inte
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) IpFirewall() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) IpFirewall() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"ipFirewall",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Orig
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) OriginPort() cdktf.AnyMap {
-	var returns cdktf.AnyMap
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) OriginPort() cdktn.AnyMap {
+	var returns cdktn.AnyMap
 	_jsii_.Get(
 		j,
 		"originPort",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Traf
 }
 
 
-func NewDataCloudflareSpectrumApplicationsResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareSpectrumApplicationsResultOutputReference {
+func NewDataCloudflareSpectrumApplicationsResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareSpectrumApplicationsResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareSpectrumApplicationsResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -313,7 +313,7 @@ func NewDataCloudflareSpectrumApplicationsResultOutputReference(terraformResourc
 	j := jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -321,11 +321,11 @@ func NewDataCloudflareSpectrumApplicationsResultOutputReference(terraformResourc
 	return &j
 }
 
-func NewDataCloudflareSpectrumApplicationsResultOutputReference_Override(d DataCloudflareSpectrumApplicationsResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareSpectrumApplicationsResultOutputReference_Override(d DataCloudflareSpectrumApplicationsResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,11 +415,11 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) GetA
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -543,8 +543,8 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) GetS
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -556,11 +556,11 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -572,7 +572,7 @@ func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareSpectrumApplicationsResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

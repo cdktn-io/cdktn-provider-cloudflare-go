@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezones
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
 		reflect.TypeOf((*DataCloudflareZones)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
@@ -73,16 +73,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZones{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesAccount",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesAccount",
 		reflect.TypeOf((*DataCloudflareZonesAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesAccountOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesAccountOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,24 +115,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesAccountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesConfig",
 		reflect.TypeOf((*DataCloudflareZonesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResult",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResult",
 		reflect.TypeOf((*DataCloudflareZonesResult)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultAccount",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultAccount",
 		reflect.TypeOf((*DataCloudflareZonesResultAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultAccountOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultAccountOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesResultAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,12 +161,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesResultAccountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultList",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultList",
 		reflect.TypeOf((*DataCloudflareZonesResultList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -182,16 +182,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesResultList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultMeta",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultMeta",
 		reflect.TypeOf((*DataCloudflareZonesResultMeta)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultMetaOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultMetaOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesResultMetaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cdnOnly", GoGetter: "CdnOnly"},
@@ -225,12 +225,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesResultMetaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
@@ -280,16 +280,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesResultOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultOwner",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultOwner",
 		reflect.TypeOf((*DataCloudflareZonesResultOwner)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultOwnerOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultOwnerOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesResultOwnerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -319,16 +319,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesResultOwnerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultPlan",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultPlan",
 		reflect.TypeOf((*DataCloudflareZonesResultPlan)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultPlanOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultPlanOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesResultPlanOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canSubscribe", GoGetter: "CanSubscribe"},
@@ -365,16 +365,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesResultPlanOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultTenant",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultTenant",
 		reflect.TypeOf((*DataCloudflareZonesResultTenant)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultTenantOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultTenantOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesResultTenantOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -403,16 +403,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesResultTenantOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultTenantUnit",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultTenantUnit",
 		reflect.TypeOf((*DataCloudflareZonesResultTenantUnit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultTenantUnitOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesResultTenantUnitOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesResultTenantUnitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -440,7 +440,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesResultTenantUnitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

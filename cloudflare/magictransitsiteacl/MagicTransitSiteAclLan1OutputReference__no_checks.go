@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateInterpolation
 	return nil
 }
 
-func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -87,11 +87,11 @@ func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MagicTransitSiteAclLan1OutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMagicTransitSiteAclLan1OutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMagicTransitSiteAclLan1OutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

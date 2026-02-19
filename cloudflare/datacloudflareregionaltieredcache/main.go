@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareregionaltieredcache
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareRegionalTieredCache.DataCloudflareRegionalTieredCache",
+		"@cdktn/provider-cloudflare.dataCloudflareRegionalTieredCache.DataCloudflareRegionalTieredCache",
 		reflect.TypeOf((*DataCloudflareRegionalTieredCache)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,12 +56,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareRegionalTieredCache{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareRegionalTieredCache.DataCloudflareRegionalTieredCacheConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareRegionalTieredCache.DataCloudflareRegionalTieredCacheConfig",
 		reflect.TypeOf((*DataCloudflareRegionalTieredCacheConfig)(nil)).Elem(),
 	)
 }

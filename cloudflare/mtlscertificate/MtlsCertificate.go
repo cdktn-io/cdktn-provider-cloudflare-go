@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package mtlscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/mtlscertificate/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/mtlscertificate/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
 type MtlsCertificate interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type MtlsCertificate interface {
 	SetCa(val interface{})
 	CaInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Certificates() *string
 	SetCertificates(val *string)
 	CertificatesInput() *string
@@ -42,9 +42,9 @@ type MtlsCertificate interface {
 	SetDependsOn(val *[]*string)
 	ExpiresOn() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,9 +52,9 @@ type MtlsCertificate interface {
 	Id() *string
 	Issuer() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -64,9 +64,9 @@ type MtlsCertificate interface {
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -76,7 +76,7 @@ type MtlsCertificate interface {
 	SerialNumber() *string
 	Signature() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -91,7 +91,7 @@ type MtlsCertificate interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -109,9 +109,9 @@ type MtlsCertificate interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -146,7 +146,7 @@ type MtlsCertificate interface {
 
 // The jsii proxy struct for MtlsCertificate
 type jsiiProxy_MtlsCertificate struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_MtlsCertificate) AccountId() *string {
@@ -189,8 +189,8 @@ func (j *jsiiProxy_MtlsCertificate) CaInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MtlsCertificate) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_MtlsCertificate) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_MtlsCertificate) ExpiresOn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MtlsCertificate) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_MtlsCertificate) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_MtlsCertificate) Issuer() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MtlsCertificate) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_MtlsCertificate) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_MtlsCertificate) PrivateKeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MtlsCertificate) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_MtlsCertificate) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_MtlsCertificate) Signature() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MtlsCertificate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_MtlsCertificate) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -480,7 +480,7 @@ func (j *jsiiProxy_MtlsCertificate) UploadedOn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
 func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCertificateConfig) MtlsCertificate {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCert
 	j := jsiiProxy_MtlsCertificate{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktn/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,12 +498,12 @@ func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
 func NewMtlsCertificate_Override(m MtlsCertificate, scope constructs.Construct, id *string, config *MtlsCertificateConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktn/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -572,7 +572,7 @@ func (j *jsiiProxy_MtlsCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MtlsCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MtlsCertificate)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -580,7 +580,7 @@ func (j *jsiiProxy_MtlsCertificate)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MtlsCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MtlsCertificate)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +613,7 @@ func (j *jsiiProxy_MtlsCertificate)SetPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MtlsCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MtlsCertificate)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -632,17 +632,17 @@ func (j *jsiiProxy_MtlsCertificate)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a MtlsCertificate resource upon running "cdktf plan <stack-name>".
-func MtlsCertificate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a MtlsCertificate resource upon running "cdktn plan <stack-name>".
+func MtlsCertificate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateMtlsCertificate_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktn/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -677,7 +677,7 @@ func MtlsCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktn/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -696,7 +696,7 @@ func MtlsCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktn/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func MtlsCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktn/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func MtlsCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktn/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		"tfResourceType",
 		&returns,
 	)
@@ -773,11 +773,11 @@ func (m *jsiiProxy_MtlsCertificate) GetAnyMapAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (m *jsiiProxy_MtlsCertificate) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MtlsCertificate) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -914,7 +914,7 @@ func (m *jsiiProxy_MtlsCertificate) HasResourceMove() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MtlsCertificate) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (m *jsiiProxy_MtlsCertificate) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -925,11 +925,11 @@ func (m *jsiiProxy_MtlsCertificate) ImportFrom(id *string, provider cdktf.Terraf
 	)
 }
 
-func (m *jsiiProxy_MtlsCertificate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MtlsCertificate) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,

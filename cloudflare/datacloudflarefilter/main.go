@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarefilter
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareFilter.DataCloudflareFilter",
+		"@cdktn/provider-cloudflare.dataCloudflareFilter.DataCloudflareFilter",
 		reflect.TypeOf((*DataCloudflareFilter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,20 +64,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareFilter{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareFilter.DataCloudflareFilterConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareFilter.DataCloudflareFilterConfig",
 		reflect.TypeOf((*DataCloudflareFilterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareFilter.DataCloudflareFilterFilter",
+		"@cdktn/provider-cloudflare.dataCloudflareFilter.DataCloudflareFilterFilter",
 		reflect.TypeOf((*DataCloudflareFilterFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareFilter.DataCloudflareFilterFilterOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareFilter.DataCloudflareFilterFilterOutputReference",
 		reflect.TypeOf((*DataCloudflareFilterFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,7 +119,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareFilterFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

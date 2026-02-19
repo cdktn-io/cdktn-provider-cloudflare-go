@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package observatoryscheduledtest
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest",
 		reflect.TypeOf((*ObservatoryScheduledTest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -67,20 +67,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ObservatoryScheduledTest{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig",
 		reflect.TypeOf((*ObservatoryScheduledTestConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestSchedule",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestSchedule",
 		reflect.TypeOf((*ObservatoryScheduledTestSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestScheduleOutputReference",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestScheduleOutputReference",
 		reflect.TypeOf((*ObservatoryScheduledTestScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,24 +110,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ObservatoryScheduledTestScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTest",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTest",
 		reflect.TypeOf((*ObservatoryScheduledTestTest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReport",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReport",
 		reflect.TypeOf((*ObservatoryScheduledTestTestDesktopReport)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportError",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportError",
 		reflect.TypeOf((*ObservatoryScheduledTestTestDesktopReportError)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportErrorOutputReference",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportErrorOutputReference",
 		reflect.TypeOf((*ObservatoryScheduledTestTestDesktopReportErrorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -157,12 +157,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ObservatoryScheduledTestTestDesktopReportErrorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportOutputReference",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestDesktopReportOutputReference",
 		reflect.TypeOf((*ObservatoryScheduledTestTestDesktopReportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cls", GoGetter: "Cls"},
@@ -201,20 +201,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ObservatoryScheduledTestTestDesktopReportOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReport",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReport",
 		reflect.TypeOf((*ObservatoryScheduledTestTestMobileReport)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportError",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportError",
 		reflect.TypeOf((*ObservatoryScheduledTestTestMobileReportError)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportErrorOutputReference",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportErrorOutputReference",
 		reflect.TypeOf((*ObservatoryScheduledTestTestMobileReportErrorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -244,12 +244,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ObservatoryScheduledTestTestMobileReportErrorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportOutputReference",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestMobileReportOutputReference",
 		reflect.TypeOf((*ObservatoryScheduledTestTestMobileReportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cls", GoGetter: "Cls"},
@@ -288,12 +288,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ObservatoryScheduledTestTestMobileReportOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestOutputReference",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestOutputReference",
 		reflect.TypeOf((*ObservatoryScheduledTestTestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -327,16 +327,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ObservatoryScheduledTestTestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestRegion",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestRegion",
 		reflect.TypeOf((*ObservatoryScheduledTestTestRegion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestRegionOutputReference",
+		"@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestRegionOutputReference",
 		reflect.TypeOf((*ObservatoryScheduledTestTestRegionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -365,7 +365,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ObservatoryScheduledTestTestRegionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

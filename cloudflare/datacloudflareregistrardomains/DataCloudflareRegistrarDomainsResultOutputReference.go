@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflareregistrardomains
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflareregistrardomains/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareregistrardomains/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareRegistrarDomainsResultOutputReference interface {
-	cdktf.ComplexObject
-	Available() cdktf.IResolvable
-	CanRegister() cdktf.IResolvable
+	cdktn.ComplexObject
+	Available() cdktn.IResolvable
+	CanRegister() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,18 +38,18 @@ type DataCloudflareRegistrarDomainsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareRegistrarDomainsResult
 	SetInternalValue(val *DataCloudflareRegistrarDomainsResult)
-	Locked() cdktf.IResolvable
+	Locked() cdktn.IResolvable
 	RegistrantContact() DataCloudflareRegistrarDomainsResultRegistrantContactOutputReference
 	RegistryStatuses() *string
-	SupportedTld() cdktf.IResolvable
+	SupportedTld() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TransferIn() DataCloudflareRegistrarDomainsResultTransferInOutputReference
 	UpdatedAt() *string
 	// Experimental.
@@ -57,7 +57,7 @@ type DataCloudflareRegistrarDomainsResultOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,12 +73,12 @@ type DataCloudflareRegistrarDomainsResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,11 +88,11 @@ type DataCloudflareRegistrarDomainsResultOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareRegistrarDomainsResultOutputReference
 type jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Available() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Available() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"available",
@@ -101,8 +101,8 @@ func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Availabl
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) CanRegister() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) CanRegister() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"canRegister",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Locked() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Locked() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"locked",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Registry
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) SupportedTld() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) SupportedTld() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"supportedTld",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -282,7 +282,7 @@ func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) UpdatedA
 }
 
 
-func NewDataCloudflareRegistrarDomainsResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareRegistrarDomainsResultOutputReference {
+func NewDataCloudflareRegistrarDomainsResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareRegistrarDomainsResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareRegistrarDomainsResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -291,7 +291,7 @@ func NewDataCloudflareRegistrarDomainsResultOutputReference(terraformResource cd
 	j := jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -299,11 +299,11 @@ func NewDataCloudflareRegistrarDomainsResultOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataCloudflareRegistrarDomainsResultOutputReference_Override(d DataCloudflareRegistrarDomainsResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareRegistrarDomainsResultOutputReference_Override(d DataCloudflareRegistrarDomainsResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareRegistrarDomains.DataCloudflareRegistrarDomainsResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,11 +393,11 @@ func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -521,8 +521,8 @@ func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -534,11 +534,11 @@ func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -550,7 +550,7 @@ func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareRegistrarDomainsResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

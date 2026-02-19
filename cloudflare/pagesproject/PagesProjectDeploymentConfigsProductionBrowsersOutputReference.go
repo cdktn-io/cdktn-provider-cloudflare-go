@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/pagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PagesProjectDeploymentConfigsProductionBrowsersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type PagesProjectDeploymentConfigsProductionBrowsersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type PagesProjectDeploymentConfigsProductionBrowsersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type PagesProjectDeploymentConfigsProductionBrowsersOutputReference interface {
 
 // The jsii proxy struct for PagesProjectDeploymentConfigsProductionBrowsersOutputReference
 type jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) ComplexObjectIndex() interface{} {
@@ -139,8 +139,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -150,7 +150,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReferenc
 }
 
 
-func NewPagesProjectDeploymentConfigsProductionBrowsersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) PagesProjectDeploymentConfigsProductionBrowsersOutputReference {
+func NewPagesProjectDeploymentConfigsProductionBrowsersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) PagesProjectDeploymentConfigsProductionBrowsersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPagesProjectDeploymentConfigsProductionBrowsersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectKey); err != nil {
@@ -159,7 +159,7 @@ func NewPagesProjectDeploymentConfigsProductionBrowsersOutputReference(terraform
 	j := jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
 		&j,
 	)
@@ -167,11 +167,11 @@ func NewPagesProjectDeploymentConfigsProductionBrowsersOutputReference(terraform
 	return &j
 }
 
-func NewPagesProjectDeploymentConfigsProductionBrowsersOutputReference_Override(p PagesProjectDeploymentConfigsProductionBrowsersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) {
+func NewPagesProjectDeploymentConfigsProductionBrowsersOutputReference_Override(p PagesProjectDeploymentConfigsProductionBrowsersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionBrowsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
 		p,
 	)
@@ -221,7 +221,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -261,11 +261,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -389,8 +389,8 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -402,11 +402,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -418,7 +418,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionBrowsersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

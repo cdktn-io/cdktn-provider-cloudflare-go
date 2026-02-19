@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magicwangretunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/magicwangretunnel/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwangretunnel/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type MagicWanGreTunnelHealthCheckOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,9 +48,9 @@ type MagicWanGreTunnelHealthCheckOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -59,7 +59,7 @@ type MagicWanGreTunnelHealthCheckOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type MagicWanGreTunnelHealthCheckOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTarget(value *MagicWanGreTunnelHealthCheckTarget)
 	ResetDirection()
 	ResetEnabled()
@@ -86,7 +86,7 @@ type MagicWanGreTunnelHealthCheckOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type MagicWanGreTunnelHealthCheckOutputReference interface {
 
 // The jsii proxy struct for MagicWanGreTunnelHealthCheckOutputReference
 type jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) ComplexObjectIndex() interface{} {
@@ -239,8 +239,8 @@ func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) TypeInput() *str
 }
 
 
-func NewMagicWanGreTunnelHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MagicWanGreTunnelHealthCheckOutputReference {
+func NewMagicWanGreTunnelHealthCheckOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MagicWanGreTunnelHealthCheckOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMagicWanGreTunnelHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -279,7 +279,7 @@ func NewMagicWanGreTunnelHealthCheckOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckOutputReference",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewMagicWanGreTunnelHealthCheckOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewMagicWanGreTunnelHealthCheckOutputReference_Override(m MagicWanGreTunnelHealthCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMagicWanGreTunnelHealthCheckOutputReference_Override(m MagicWanGreTunnelHealthCheckOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckOutputReference",
+		"@cdktn/provider-cloudflare.magicWanGreTunnel.MagicWanGreTunnelHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -374,7 +374,7 @@ func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,11 +425,11 @@ func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -553,8 +553,8 @@ func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -566,11 +566,11 @@ func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) InterpolationAsL
 	return returns
 }
 
-func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -633,7 +633,7 @@ func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) ResetType() {
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

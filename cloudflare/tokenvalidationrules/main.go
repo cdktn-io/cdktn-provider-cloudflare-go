@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tokenvalidationrules
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRules",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules",
 		reflect.TypeOf((*TokenValidationRules)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -80,20 +80,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationRules{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig",
 		reflect.TypeOf((*TokenValidationRulesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesPosition",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesPosition",
 		reflect.TypeOf((*TokenValidationRulesPosition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesPositionOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesPositionOutputReference",
 		reflect.TypeOf((*TokenValidationRulesPositionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "after", GoGetter: "After"},
@@ -129,20 +129,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationRulesPositionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelector",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelector",
 		reflect.TypeOf((*TokenValidationRulesSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExclude",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExclude",
 		reflect.TypeOf((*TokenValidationRulesSelectorExclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExcludeList",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExcludeList",
 		reflect.TypeOf((*TokenValidationRulesSelectorExcludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -159,12 +159,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationRulesSelectorExcludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExcludeOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExcludeOutputReference",
 		reflect.TypeOf((*TokenValidationRulesSelectorExcludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,16 +194,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorInclude",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorInclude",
 		reflect.TypeOf((*TokenValidationRulesSelectorInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorIncludeList",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorIncludeList",
 		reflect.TypeOf((*TokenValidationRulesSelectorIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -220,12 +220,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationRulesSelectorIncludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorIncludeOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorIncludeOutputReference",
 		reflect.TypeOf((*TokenValidationRulesSelectorIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -255,12 +255,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationRulesSelectorIncludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorOutputReference",
 		reflect.TypeOf((*TokenValidationRulesSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,7 +295,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TokenValidationRulesSelectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

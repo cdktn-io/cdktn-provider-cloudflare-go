@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package callssfuapp
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.callsSfuApp.CallsSfuApp",
+		"@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp",
 		reflect.TypeOf((*CallsSfuApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -70,12 +70,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CallsSfuApp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.callsSfuApp.CallsSfuAppConfig",
+		"@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig",
 		reflect.TypeOf((*CallsSfuAppConfig)(nil)).Elem(),
 	)
 }

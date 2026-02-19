@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustdevicedefaultprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustdevicedefaultprofile/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdevicedefaultprofile/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
 type ZeroTrustDeviceDefaultProfile interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -34,7 +34,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	SetCaptivePortal(val *float64)
 	CaptivePortalInput() *float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -45,7 +45,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Default() cdktf.IResolvable
+	Default() cdktn.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,7 +53,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	DisableAutoFallback() interface{}
 	SetDisableAutoFallback(val interface{})
 	DisableAutoFallbackInput() interface{}
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	Exclude() ZeroTrustDeviceDefaultProfileExcludeList
 	ExcludeInput() interface{}
 	ExcludeOfficeIps() interface{}
@@ -61,9 +61,9 @@ type ZeroTrustDeviceDefaultProfile interface {
 	ExcludeOfficeIpsInput() interface{}
 	FallbackDomains() ZeroTrustDeviceDefaultProfileFallbackDomainsList
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -79,15 +79,15 @@ type ZeroTrustDeviceDefaultProfile interface {
 	SetLanAllowSubnetSize(val *float64)
 	LanAllowSubnetSizeInput() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -109,7 +109,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	SetSwitchLocked(val interface{})
 	SwitchLockedInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -125,7 +125,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -143,9 +143,9 @@ type ZeroTrustDeviceDefaultProfile interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -198,7 +198,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 
 // The jsii proxy struct for ZeroTrustDeviceDefaultProfile
 type jsiiProxy_ZeroTrustDeviceDefaultProfile struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) AccountId() *string {
@@ -321,8 +321,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) CaptivePortalInput() *float64 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Default() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Default() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"default",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) DisableAutoFallbackInput() int
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) FallbackDomains() ZeroTrustDev
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) LanAllowSubnetSizeInput() *flo
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -721,8 +721,8 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SwitchLockedInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -772,7 +772,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TunnelProtocolInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) ZeroTrustDeviceDefaultProfile {
 	_init_.Initialize()
 
@@ -782,7 +782,7 @@ func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ZeroTrustDeviceDefaultProfile{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -790,12 +790,12 @@ func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile_Override(z ZeroTrustDeviceDefaultProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -919,7 +919,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetExcludeOfficeIps(val interfa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -949,7 +949,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLanAllowSubnetSize(val *floa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -960,7 +960,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1034,17 +1034,17 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetTunnelProtocol(val *string) 
 	)
 }
 
-// Generates CDKTF code for importing a ZeroTrustDeviceDefaultProfile resource upon running "cdktf plan <stack-name>".
-func ZeroTrustDeviceDefaultProfile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ZeroTrustDeviceDefaultProfile resource upon running "cdktn plan <stack-name>".
+func ZeroTrustDeviceDefaultProfile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateZeroTrustDeviceDefaultProfile_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1079,7 +1079,7 @@ func ZeroTrustDeviceDefaultProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1098,7 +1098,7 @@ func ZeroTrustDeviceDefaultProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1117,7 +1117,7 @@ func ZeroTrustDeviceDefaultProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1130,7 +1130,7 @@ func ZeroTrustDeviceDefaultProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
+		"@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfile",
 		"tfResourceType",
 		&returns,
 	)
@@ -1175,11 +1175,11 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -1316,7 +1316,7 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) HasResourceMove() interface{} 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1327,11 +1327,11 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ImportFrom(id *string, provide
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,

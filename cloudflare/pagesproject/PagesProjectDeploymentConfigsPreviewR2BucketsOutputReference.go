@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/pagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetJurisdiction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference interface {
 
 // The jsii proxy struct for PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference
 type jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -197,7 +197,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 }
 
 
-func NewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference {
+func NewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectKey); err != nil {
@@ -206,7 +206,7 @@ func NewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReference(terraformRe
 	j := jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
 		&j,
 	)
@@ -214,11 +214,11 @@ func NewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReference(terraformRe
 	return &j
 }
 
-func NewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReference_Override(p PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) {
+func NewPagesProjectDeploymentConfigsPreviewR2BucketsOutputReference_Override(p PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
 		p,
 	)
@@ -290,7 +290,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -458,8 +458,8 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -471,11 +471,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -495,7 +495,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference)
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

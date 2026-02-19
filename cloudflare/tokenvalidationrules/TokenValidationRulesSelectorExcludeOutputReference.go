@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tokenvalidationrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/tokenvalidationrules/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationrules/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type TokenValidationRulesSelectorExcludeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type TokenValidationRulesSelectorExcludeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type TokenValidationRulesSelectorExcludeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetOperationIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type TokenValidationRulesSelectorExcludeOutputReference interface {
 
 // The jsii proxy struct for TokenValidationRulesSelectorExcludeOutputReference
 type jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -174,7 +174,7 @@ func (j *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) Terraform
 }
 
 
-func NewTokenValidationRulesSelectorExcludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TokenValidationRulesSelectorExcludeOutputReference {
+func NewTokenValidationRulesSelectorExcludeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TokenValidationRulesSelectorExcludeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTokenValidationRulesSelectorExcludeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -183,7 +183,7 @@ func NewTokenValidationRulesSelectorExcludeOutputReference(terraformResource cdk
 	j := jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExcludeOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExcludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,11 +191,11 @@ func NewTokenValidationRulesSelectorExcludeOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewTokenValidationRulesSelectorExcludeOutputReference_Override(t TokenValidationRulesSelectorExcludeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewTokenValidationRulesSelectorExcludeOutputReference_Override(t TokenValidationRulesSelectorExcludeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExcludeOutputReference",
+		"@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelectorExcludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)
@@ -256,7 +256,7 @@ func (j *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -296,11 +296,11 @@ func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) GetAnyMap
 	return returns
 }
 
-func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -424,8 +424,8 @@ func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) GetString
 	return returns
 }
 
-func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -437,11 +437,11 @@ func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) Interpola
 	return returns
 }
 
-func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -461,7 +461,7 @@ func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) ResetOper
 	)
 }
 
-func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TokenValidationRulesSelectorExcludeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

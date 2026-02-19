@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package r2bucketsippy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/r2bucketsippy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
 type R2BucketSippy interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type R2BucketSippy interface {
 	SetBucketName(val *string)
 	BucketNameInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -39,11 +39,11 @@ type R2BucketSippy interface {
 	SetDependsOn(val *[]*string)
 	Destination() R2BucketSippyDestinationOutputReference
 	DestinationInput() interface{}
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -52,15 +52,15 @@ type R2BucketSippy interface {
 	SetJurisdiction(val *string)
 	JurisdictionInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -70,7 +70,7 @@ type R2BucketSippy interface {
 	Source() R2BucketSippySourceOutputReference
 	SourceInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -83,7 +83,7 @@ type R2BucketSippy interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -101,9 +101,9 @@ type R2BucketSippy interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -141,7 +141,7 @@ type R2BucketSippy interface {
 
 // The jsii proxy struct for R2BucketSippy
 type jsiiProxy_R2BucketSippy struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_R2BucketSippy) AccountId() *string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_R2BucketSippy) BucketNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketSippy) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_R2BucketSippy) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_R2BucketSippy) DestinationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketSippy) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_R2BucketSippy) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_R2BucketSippy) Enabled() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketSippy) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_R2BucketSippy) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_R2BucketSippy) JurisdictionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketSippy) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_R2BucketSippy) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_R2BucketSippy) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketSippy) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_R2BucketSippy) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_R2BucketSippy) SourceInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketSippy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_R2BucketSippy) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_R2BucketSippy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSippyConfig) R2BucketSippy {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSi
 	j := jsiiProxy_R2BucketSippy{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -433,12 +433,12 @@ func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy_Override(r R2BucketSippy, scope constructs.Construct, id *string, config *R2BucketSippyConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -496,7 +496,7 @@ func (j *jsiiProxy_R2BucketSippy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_R2BucketSippy)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -515,7 +515,7 @@ func (j *jsiiProxy_R2BucketSippy)SetJurisdiction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_R2BucketSippy)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +526,7 @@ func (j *jsiiProxy_R2BucketSippy)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_R2BucketSippy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_R2BucketSippy)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -545,17 +545,17 @@ func (j *jsiiProxy_R2BucketSippy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a R2BucketSippy resource upon running "cdktf plan <stack-name>".
-func R2BucketSippy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a R2BucketSippy resource upon running "cdktn plan <stack-name>".
+func R2BucketSippy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateR2BucketSippy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -590,7 +590,7 @@ func R2BucketSippy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func R2BucketSippy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -628,7 +628,7 @@ func R2BucketSippy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func R2BucketSippy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.r2BucketSippy.R2BucketSippy",
+		"@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy",
 		"tfResourceType",
 		&returns,
 	)
@@ -686,11 +686,11 @@ func (r *jsiiProxy_R2BucketSippy) GetAnyMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketSippy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_R2BucketSippy) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -827,7 +827,7 @@ func (r *jsiiProxy_R2BucketSippy) HasResourceMove() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_R2BucketSippy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_R2BucketSippy) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -838,11 +838,11 @@ func (r *jsiiProxy_R2BucketSippy) ImportFrom(id *string, provider cdktf.Terrafor
 	)
 }
 
-func (r *jsiiProxy_R2BucketSippy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_R2BucketSippy) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,

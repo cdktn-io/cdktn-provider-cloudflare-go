@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustaccessapplication/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustAccessApplicationSaasAppCustomClaimsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type ZeroTrustAccessApplicationSaasAppCustomClaimsList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type ZeroTrustAccessApplicationSaasAppCustomClaimsList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type ZeroTrustAccessApplicationSaasAppCustomClaimsList interface {
 
 // The jsii proxy struct for ZeroTrustAccessApplicationSaasAppCustomClaimsList
 type jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) WrapsSet()
 }
 
 
-func NewZeroTrustAccessApplicationSaasAppCustomClaimsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationSaasAppCustomClaimsList {
+func NewZeroTrustAccessApplicationSaasAppCustomClaimsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationSaasAppCustomClaimsList {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustAccessApplicationSaasAppCustomClaimsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewZeroTrustAccessApplicationSaasAppCustomClaimsList(terraformResource cdkt
 	j := jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsList",
+		"@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewZeroTrustAccessApplicationSaasAppCustomClaimsList(terraformResource cdkt
 	return &j
 }
 
-func NewZeroTrustAccessApplicationSaasAppCustomClaimsList_Override(z ZeroTrustAccessApplicationSaasAppCustomClaimsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewZeroTrustAccessApplicationSaasAppCustomClaimsList_Override(z ZeroTrustAccessApplicationSaasAppCustomClaimsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsList",
+		"@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList)SetWrapsSet
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := z.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		z,
@@ -231,7 +231,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) Get(index 
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomClaimsList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

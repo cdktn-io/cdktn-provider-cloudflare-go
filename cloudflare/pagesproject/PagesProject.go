@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/pagesproject/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagesproject/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project cloudflare_pages_project}.
 type PagesProject interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type PagesProject interface {
 	BuildConfigInput() interface{}
 	CanonicalDeployment() PagesProjectCanonicalDeploymentOutputReference
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -42,9 +42,9 @@ type PagesProject interface {
 	DeploymentConfigsInput() interface{}
 	Domains() *[]*string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	Framework() *string
@@ -54,9 +54,9 @@ type PagesProject interface {
 	Id() *string
 	LatestDeployment() PagesProjectLatestDeploymentOutputReference
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -68,9 +68,9 @@ type PagesProject interface {
 	ProductionBranchInput() *string
 	ProductionScriptName() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -81,12 +81,12 @@ type PagesProject interface {
 	SourceInput() interface{}
 	Subdomain() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UsesFunctions() cdktf.IResolvable
+	UsesFunctions() cdktn.IResolvable
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -95,7 +95,7 @@ type PagesProject interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -113,9 +113,9 @@ type PagesProject interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -154,7 +154,7 @@ type PagesProject interface {
 
 // The jsii proxy struct for PagesProject
 type jsiiProxy_PagesProject struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_PagesProject) AccountId() *string {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_PagesProject) CanonicalDeployment() PagesProjectCanonicalDepl
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_PagesProject) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_PagesProject) Domains() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_PagesProject) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_PagesProject) LatestDeployment() PagesProjectLatestDeployment
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_PagesProject) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_PagesProject) ProductionScriptName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_PagesProject) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_PagesProject) Subdomain() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_PagesProject) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_PagesProject) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProject) UsesFunctions() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_PagesProject) UsesFunctions() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"usesFunctions",
@@ -548,7 +548,7 @@ func (j *jsiiProxy_PagesProject) UsesFunctions() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjectConfig) PagesProject {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	j := jsiiProxy_PagesProject{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -566,12 +566,12 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject_Override(p PagesProject, scope constructs.Construct, id *string, config *PagesProjectConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProject",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -618,7 +618,7 @@ func (j *jsiiProxy_PagesProject)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PagesProject)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PagesProject)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -626,7 +626,7 @@ func (j *jsiiProxy_PagesProject)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PagesProject)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PagesProject)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +659,7 @@ func (j *jsiiProxy_PagesProject)SetProductionBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PagesProject)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PagesProject)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -678,17 +678,17 @@ func (j *jsiiProxy_PagesProject)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a PagesProject resource upon running "cdktf plan <stack-name>".
-func PagesProject_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a PagesProject resource upon running "cdktn plan <stack-name>".
+func PagesProject_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validatePagesProject_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProject",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -723,7 +723,7 @@ func PagesProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -742,7 +742,7 @@ func PagesProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func PagesProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func PagesProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProject",
 		"tfResourceType",
 		&returns,
 	)
@@ -819,11 +819,11 @@ func (p *jsiiProxy_PagesProject) GetAnyMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (p *jsiiProxy_PagesProject) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProject) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -960,7 +960,7 @@ func (p *jsiiProxy_PagesProject) HasResourceMove() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PagesProject) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (p *jsiiProxy_PagesProject) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -971,11 +971,11 @@ func (p *jsiiProxy_PagesProject) ImportFrom(id *string, provider cdktf.Terraform
 	)
 }
 
-func (p *jsiiProxy_PagesProject) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProject) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,

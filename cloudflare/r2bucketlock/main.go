@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package r2bucketlock
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLock.R2BucketLock",
+		"@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock",
 		reflect.TypeOf((*R2BucketLock)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,24 +69,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLock{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockConfig",
+		"@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig",
 		reflect.TypeOf((*R2BucketLockConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRules",
+		"@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRules",
 		reflect.TypeOf((*R2BucketLockRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition",
+		"@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition",
 		reflect.TypeOf((*R2BucketLockRulesCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesConditionOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesConditionOutputReference",
 		reflect.TypeOf((*R2BucketLockRulesConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLockRulesConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesList",
+		"@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesList",
 		reflect.TypeOf((*R2BucketLockRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -143,12 +143,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLockRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.r2BucketLock.R2BucketLockRulesOutputReference",
+		"@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesOutputReference",
 		reflect.TypeOf((*R2BucketLockRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -185,7 +185,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_R2BucketLockRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

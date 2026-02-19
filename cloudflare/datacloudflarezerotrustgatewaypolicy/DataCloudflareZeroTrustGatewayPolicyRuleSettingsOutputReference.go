@@ -1,26 +1,26 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarezerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarezerotrustgatewaypolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustgatewaypolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
-	cdktf.ComplexObject
-	AddHeaders() cdktf.StringListMap
-	AllowChildBypass() cdktf.IResolvable
+	cdktn.ComplexObject
+	AddHeaders() cdktn.StringListMap
+	AllowChildBypass() cdktn.IResolvable
 	AuditSsh() DataCloudflareZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference
 	BisoAdminControls() DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference
 	BlockPage() DataCloudflareZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
-	BlockPageEnabled() cdktf.IResolvable
+	BlockPageEnabled() cdktn.IResolvable
 	BlockReason() *string
-	BypassParentRule() cdktf.IResolvable
+	BypassParentRule() cdktn.IResolvable
 	CheckSession() DataCloudflareZeroTrustGatewayPolicyRuleSettingsCheckSessionOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
@@ -39,14 +39,15 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DnsResolvers() DataCloudflareZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	Egress() DataCloudflareZeroTrustGatewayPolicyRuleSettingsEgressOutputReference
+	ForensicCopy() DataCloudflareZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
 	// Experimental.
 	Fqn() *string
-	IgnoreCnameCategoryMatches() cdktf.IResolvable
-	InsecureDisableDnssecValidation() cdktf.IResolvable
+	IgnoreCnameCategoryMatches() cdktn.IResolvable
+	InsecureDisableDnssecValidation() cdktn.IResolvable
 	InternalValue() *DataCloudflareZeroTrustGatewayPolicyRuleSettings
 	SetInternalValue(val *DataCloudflareZeroTrustGatewayPolicyRuleSettings)
-	IpCategories() cdktf.IResolvable
-	IpIndicatorFeeds() cdktf.IResolvable
+	IpCategories() cdktn.IResolvable
+	IpIndicatorFeeds() cdktn.IResolvable
 	L4Override() DataCloudflareZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference
 	NotificationSettings() DataCloudflareZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference
 	OverrideHost() *string
@@ -55,22 +56,22 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	Quarantine() DataCloudflareZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference
 	Redirect() DataCloudflareZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference
 	ResolveDnsInternally() DataCloudflareZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference
-	ResolveDnsThroughCloudflare() cdktf.IResolvable
+	ResolveDnsThroughCloudflare() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UntrustedCert() DataCloudflareZeroTrustGatewayPolicyRuleSettingsUntrustedCertOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -86,12 +87,12 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,11 +102,11 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference
 type jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders() cdktf.StringListMap {
-	var returns cdktf.StringListMap
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders() cdktn.StringListMap {
+	var returns cdktn.StringListMap
 	_jsii_.Get(
 		j,
 		"addHeaders",
@@ -114,8 +115,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) AllowChildBypass() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) AllowChildBypass() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowChildBypass",
@@ -154,8 +155,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"blockPageEnabled",
@@ -174,8 +175,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) BypassParentRule() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) BypassParentRule() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"bypassParentRule",
@@ -244,6 +245,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) ForensicCopy() DataCloudflareZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference {
+	var returns DataCloudflareZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
+	_jsii_.Get(
+		j,
+		"forensicCopy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -254,8 +265,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) IgnoreCnameCategoryMatches() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) IgnoreCnameCategoryMatches() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"ignoreCnameCategoryMatches",
@@ -264,8 +275,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) InsecureDisableDnssecValidation() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) InsecureDisableDnssecValidation() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"insecureDisableDnssecValidation",
@@ -284,8 +295,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) IpCategories() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) IpCategories() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"ipCategories",
@@ -294,8 +305,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) IpIndicatorFeeds() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) IpIndicatorFeeds() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"ipIndicatorFeeds",
@@ -384,8 +395,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsThroughCloudflare() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsThroughCloudflare() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"resolveDnsThroughCloudflare",
@@ -404,8 +415,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -425,7 +436,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 }
 
 
-func NewDataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference {
+func NewDataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -434,7 +445,7 @@ func NewDataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference(terrafor
 	j := jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayPolicy.DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPolicy.DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -442,11 +453,11 @@ func NewDataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference(terrafor
 	return &j
 }
 
-func NewDataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference_Override(d DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference_Override(d DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustGatewayPolicy.DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPolicy.DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -496,7 +507,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,11 +547,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -664,8 +675,8 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -677,11 +688,11 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -693,7 +704,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

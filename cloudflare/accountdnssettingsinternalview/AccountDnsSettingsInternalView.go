@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package accountdnssettingsinternalview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/accountdnssettingsinternalview/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettingsinternalview/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
 type AccountDnsSettingsInternalView interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -36,18 +36,18 @@ type AccountDnsSettingsInternalView interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedTime() *string
 	Name() *string
 	SetName(val *string)
@@ -55,9 +55,9 @@ type AccountDnsSettingsInternalView interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type AccountDnsSettingsInternalView interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -81,7 +81,7 @@ type AccountDnsSettingsInternalView interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -99,9 +99,9 @@ type AccountDnsSettingsInternalView interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -134,7 +134,7 @@ type AccountDnsSettingsInternalView interface {
 
 // The jsii proxy struct for AccountDnsSettingsInternalView
 type jsiiProxy_AccountDnsSettingsInternalView struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_AccountDnsSettingsInternalView) AccountId() *string {
@@ -157,8 +157,8 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsInternalView) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AccountDnsSettingsInternalView) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsInternalView) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_AccountDnsSettingsInternalView) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsInternalView) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_AccountDnsSettingsInternalView) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsInternalView) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_AccountDnsSettingsInternalView) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccountDnsSettingsInternalView) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AccountDnsSettingsInternalView) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -388,7 +388,7 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
 func NewAccountDnsSettingsInternalView(scope constructs.Construct, id *string, config *AccountDnsSettingsInternalViewConfig) AccountDnsSettingsInternalView {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewAccountDnsSettingsInternalView(scope constructs.Construct, id *string, c
 	j := jsiiProxy_AccountDnsSettingsInternalView{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
+		"@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -406,12 +406,12 @@ func NewAccountDnsSettingsInternalView(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
 func NewAccountDnsSettingsInternalView_Override(a AccountDnsSettingsInternalView, scope constructs.Construct, id *string, config *AccountDnsSettingsInternalViewConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
+		"@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -458,7 +458,7 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsInternalView)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccountDnsSettingsInternalView)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -466,7 +466,7 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsInternalView)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccountDnsSettingsInternalView)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +488,7 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccountDnsSettingsInternalView)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccountDnsSettingsInternalView)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,17 +518,17 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView)SetZones(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a AccountDnsSettingsInternalView resource upon running "cdktf plan <stack-name>".
-func AccountDnsSettingsInternalView_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AccountDnsSettingsInternalView resource upon running "cdktn plan <stack-name>".
+func AccountDnsSettingsInternalView_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAccountDnsSettingsInternalView_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
+		"@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -563,7 +563,7 @@ func AccountDnsSettingsInternalView_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
+		"@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func AccountDnsSettingsInternalView_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
+		"@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func AccountDnsSettingsInternalView_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
+		"@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func AccountDnsSettingsInternalView_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
+		"@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView",
 		"tfResourceType",
 		&returns,
 	)
@@ -659,11 +659,11 @@ func (a *jsiiProxy_AccountDnsSettingsInternalView) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (a *jsiiProxy_AccountDnsSettingsInternalView) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountDnsSettingsInternalView) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -800,7 +800,7 @@ func (a *jsiiProxy_AccountDnsSettingsInternalView) HasResourceMove() interface{}
 	return returns
 }
 
-func (a *jsiiProxy_AccountDnsSettingsInternalView) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (a *jsiiProxy_AccountDnsSettingsInternalView) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -811,11 +811,11 @@ func (a *jsiiProxy_AccountDnsSettingsInternalView) ImportFrom(id *string, provid
 	)
 }
 
-func (a *jsiiProxy_AccountDnsSettingsInternalView) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccountDnsSettingsInternalView) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,

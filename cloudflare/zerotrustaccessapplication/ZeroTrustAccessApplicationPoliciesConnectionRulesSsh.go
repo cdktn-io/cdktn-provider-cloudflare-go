@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustaccessapplication
@@ -7,11 +7,11 @@ package zerotrustaccessapplication
 type ZeroTrustAccessApplicationPoliciesConnectionRulesSsh struct {
 	// Contains the Unix usernames that may be used when connecting over SSH.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_application#usernames ZeroTrustAccessApplication#usernames}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_application#usernames ZeroTrustAccessApplication#usernames}
 	Usernames *[]*string `field:"required" json:"usernames" yaml:"usernames"`
 	// Enables using Identity Provider email alias as SSH username.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_application#allow_email_alias ZeroTrustAccessApplication#allow_email_alias}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_application#allow_email_alias ZeroTrustAccessApplication#allow_email_alias}
 	AllowEmailAlias interface{} `field:"optional" json:"allowEmailAlias" yaml:"allowEmailAlias"`
 }
 

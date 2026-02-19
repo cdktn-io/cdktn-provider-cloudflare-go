@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workersdeployment
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeployment",
+		"@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment",
 		reflect.TypeOf((*WorkersDeployment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -75,16 +75,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersDeployment{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations",
+		"@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations",
 		reflect.TypeOf((*WorkersDeploymentAnnotations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference",
+		"@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotationsOutputReference",
 		reflect.TypeOf((*WorkersDeploymentAnnotationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,20 +115,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersDeploymentAnnotationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentConfig",
+		"@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig",
 		reflect.TypeOf((*WorkersDeploymentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersions",
+		"@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions",
 		reflect.TypeOf((*WorkersDeploymentVersions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsList",
+		"@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsList",
 		reflect.TypeOf((*WorkersDeploymentVersionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -145,12 +145,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersDeploymentVersionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsOutputReference",
+		"@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersionsOutputReference",
 		reflect.TypeOf((*WorkersDeploymentVersionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,7 +181,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersDeploymentVersionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

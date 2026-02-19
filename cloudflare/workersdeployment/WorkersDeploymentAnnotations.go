@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workersdeployment
@@ -7,7 +7,7 @@ package workersdeployment
 type WorkersDeploymentAnnotations struct {
 	// Human-readable message about the deployment. Truncated to 100 bytes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
 	WorkersMessage *string `field:"optional" json:"workersMessage" yaml:"workersMessage"`
 }
 

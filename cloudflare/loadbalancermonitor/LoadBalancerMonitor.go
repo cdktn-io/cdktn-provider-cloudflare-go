@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package loadbalancermonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/loadbalancermonitor/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/loadbalancermonitor/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
 type LoadBalancerMonitor interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -22,7 +22,7 @@ type LoadBalancerMonitor interface {
 	SetAllowInsecure(val interface{})
 	AllowInsecureInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -57,9 +57,9 @@ type LoadBalancerMonitor interface {
 	SetFollowRedirects(val interface{})
 	FollowRedirectsInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -72,9 +72,9 @@ type LoadBalancerMonitor interface {
 	SetInterval(val *float64)
 	IntervalInput() *float64
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Method() *string
 	SetMethod(val *string)
 	MethodInput() *string
@@ -91,9 +91,9 @@ type LoadBalancerMonitor interface {
 	SetProbeZone(val *string)
 	ProbeZoneInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -104,7 +104,7 @@ type LoadBalancerMonitor interface {
 	SetRetries(val *float64)
 	RetriesInput() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -123,7 +123,7 @@ type LoadBalancerMonitor interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -141,9 +141,9 @@ type LoadBalancerMonitor interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -192,7 +192,7 @@ type LoadBalancerMonitor interface {
 
 // The jsii proxy struct for LoadBalancerMonitor
 type jsiiProxy_LoadBalancerMonitor struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_LoadBalancerMonitor) AccountId() *string {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_LoadBalancerMonitor) AllowInsecureInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_LoadBalancerMonitor) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_LoadBalancerMonitor) FollowRedirectsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_LoadBalancerMonitor) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_LoadBalancerMonitor) IntervalInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_LoadBalancerMonitor) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -605,8 +605,8 @@ func (j *jsiiProxy_LoadBalancerMonitor) ProbeZoneInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_LoadBalancerMonitor) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -655,8 +655,8 @@ func (j *jsiiProxy_LoadBalancerMonitor) RetriesInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_LoadBalancerMonitor) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -726,7 +726,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) LoadBalancerMonitor {
 	_init_.Initialize()
 
@@ -736,7 +736,7 @@ func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *Load
 	j := jsiiProxy_LoadBalancerMonitor{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktn/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -744,12 +744,12 @@ func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *Load
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor_Override(l LoadBalancerMonitor, scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktn/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -873,7 +873,7 @@ func (j *jsiiProxy_LoadBalancerMonitor)SetFollowRedirects(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LoadBalancerMonitor)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -903,7 +903,7 @@ func (j *jsiiProxy_LoadBalancerMonitor)SetInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LoadBalancerMonitor)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -958,7 +958,7 @@ func (j *jsiiProxy_LoadBalancerMonitor)SetProbeZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LoadBalancerMonitor)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1010,17 +1010,17 @@ func (j *jsiiProxy_LoadBalancerMonitor)SetType(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a LoadBalancerMonitor resource upon running "cdktf plan <stack-name>".
-func LoadBalancerMonitor_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a LoadBalancerMonitor resource upon running "cdktn plan <stack-name>".
+func LoadBalancerMonitor_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateLoadBalancerMonitor_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktn/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1055,7 +1055,7 @@ func LoadBalancerMonitor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktn/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1074,7 +1074,7 @@ func LoadBalancerMonitor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktn/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1093,7 +1093,7 @@ func LoadBalancerMonitor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktn/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1106,7 +1106,7 @@ func LoadBalancerMonitor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktn/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		"tfResourceType",
 		&returns,
 	)
@@ -1151,11 +1151,11 @@ func (l *jsiiProxy_LoadBalancerMonitor) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerMonitor) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoadBalancerMonitor) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -1292,7 +1292,7 @@ func (l *jsiiProxy_LoadBalancerMonitor) HasResourceMove() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerMonitor) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (l *jsiiProxy_LoadBalancerMonitor) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -1303,11 +1303,11 @@ func (l *jsiiProxy_LoadBalancerMonitor) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerMonitor) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoadBalancerMonitor) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,

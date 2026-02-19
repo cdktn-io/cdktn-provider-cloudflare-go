@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -47,7 +47,7 @@ func (d *jsiiProxy_DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -67,11 +67,11 @@ func (j *jsiiProxy_DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataCloudflareAccountTokenPoliciesPermissionGroupsMetaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

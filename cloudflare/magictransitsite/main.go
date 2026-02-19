@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magictransitsite
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSite",
+		"@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite",
 		reflect.TypeOf((*MagicTransitSite)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -79,20 +79,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSite{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig",
+		"@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig",
 		reflect.TypeOf((*MagicTransitSiteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteLocation",
+		"@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteLocation",
 		reflect.TypeOf((*MagicTransitSiteLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSite.MagicTransitSiteLocationOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteLocationOutputReference",
 		reflect.TypeOf((*MagicTransitSiteLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,7 +125,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLocationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

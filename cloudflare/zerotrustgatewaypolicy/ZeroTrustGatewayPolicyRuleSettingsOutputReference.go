@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustgatewaypolicy/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustgatewaypolicy/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AddHeaders() interface{}
 	SetAddHeaders(val interface{})
 	AddHeadersInput() interface{}
@@ -55,6 +55,8 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	DnsResolversInput() interface{}
 	Egress() ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference
 	EgressInput() interface{}
+	ForensicCopy() ZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
+	ForensicCopyInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IgnoreCnameCategoryMatches() interface{}
@@ -97,9 +99,9 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UntrustedCert() ZeroTrustGatewayPolicyRuleSettingsUntrustedCertOutputReference
 	UntrustedCertInput() interface{}
 	// Experimental.
@@ -107,7 +109,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -123,15 +125,16 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuditSsh(value *ZeroTrustGatewayPolicyRuleSettingsAuditSsh)
 	PutBisoAdminControls(value *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls)
 	PutBlockPage(value *ZeroTrustGatewayPolicyRuleSettingsBlockPage)
 	PutCheckSession(value *ZeroTrustGatewayPolicyRuleSettingsCheckSession)
 	PutDnsResolvers(value *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers)
 	PutEgress(value *ZeroTrustGatewayPolicyRuleSettingsEgress)
+	PutForensicCopy(value *ZeroTrustGatewayPolicyRuleSettingsForensicCopy)
 	PutL4Override(value *ZeroTrustGatewayPolicyRuleSettingsL4Override)
 	PutNotificationSettings(value *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
 	PutPayloadLog(value *ZeroTrustGatewayPolicyRuleSettingsPayloadLog)
@@ -150,6 +153,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetCheckSession()
 	ResetDnsResolvers()
 	ResetEgress()
+	ResetForensicCopy()
 	ResetIgnoreCnameCategoryMatches()
 	ResetInsecureDisableDnssecValidation()
 	ResetIpCategories()
@@ -166,7 +170,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetUntrustedCert()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -176,7 +180,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 
 // The jsii proxy struct for ZeroTrustGatewayPolicyRuleSettingsOutputReference
 type jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders() interface{} {
@@ -424,6 +428,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) EgressInpu
 	_jsii_.Get(
 		j,
 		"egressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ForensicCopy() ZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference {
+	var returns ZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
+	_jsii_.Get(
+		j,
+		"forensicCopy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ForensicCopyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forensicCopyInput",
 		&returns,
 	)
 	return returns
@@ -719,8 +743,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -750,7 +774,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) UntrustedC
 }
 
 
-func NewZeroTrustGatewayPolicyRuleSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyRuleSettingsOutputReference {
+func NewZeroTrustGatewayPolicyRuleSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyRuleSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustGatewayPolicyRuleSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -759,7 +783,7 @@ func NewZeroTrustGatewayPolicyRuleSettingsOutputReference(terraformResource cdkt
 	j := jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -767,11 +791,11 @@ func NewZeroTrustGatewayPolicyRuleSettingsOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewZeroTrustGatewayPolicyRuleSettingsOutputReference_Override(z ZeroTrustGatewayPolicyRuleSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustGatewayPolicyRuleSettingsOutputReference_Override(z ZeroTrustGatewayPolicyRuleSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -953,7 +977,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -993,11 +1017,11 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetAnyMapA
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -1121,8 +1145,8 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) GetStringM
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -1134,11 +1158,11 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Interpolat
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -1212,6 +1236,17 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutEgress(
 	_jsii_.InvokeVoid(
 		z,
 		"putEgress",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutForensicCopy(value *ZeroTrustGatewayPolicyRuleSettingsForensicCopy) {
+	if err := z.validatePutForensicCopyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putForensicCopy",
 		[]interface{}{value},
 	)
 }
@@ -1381,6 +1416,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetEgres
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetForensicCopy() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetForensicCopy",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetIgnoreCnameCategoryMatches() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1493,7 +1536,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetUntru
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

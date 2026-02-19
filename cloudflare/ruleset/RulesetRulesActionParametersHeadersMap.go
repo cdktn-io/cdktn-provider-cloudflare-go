@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/ruleset/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ruleset/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type RulesetRulesActionParametersHeadersMap interface {
-	cdktf.ComplexMap
+	cdktn.ComplexMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,16 +26,16 @@ type RulesetRulesActionParametersHeadersMap interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	Get(key *string) RulesetRulesActionParametersHeadersOutputReference
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(property *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -45,7 +45,7 @@ type RulesetRulesActionParametersHeadersMap interface {
 
 // The jsii proxy struct for RulesetRulesActionParametersHeadersMap
 type jsiiProxy_RulesetRulesActionParametersHeadersMap struct {
-	internal.Type__cdktfComplexMap
+	internal.Type__cdktnComplexMap
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) CreationStack() *[]*string {
@@ -88,8 +88,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -99,7 +99,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap) TerraformResource() c
 }
 
 
-func NewRulesetRulesActionParametersHeadersMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersHeadersMap {
+func NewRulesetRulesActionParametersHeadersMap(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersHeadersMap {
 	_init_.Initialize()
 
 	if err := validateNewRulesetRulesActionParametersHeadersMapParameters(terraformResource, terraformAttribute); err != nil {
@@ -108,7 +108,7 @@ func NewRulesetRulesActionParametersHeadersMap(terraformResource cdktf.IInterpol
 	j := jsiiProxy_RulesetRulesActionParametersHeadersMap{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -116,11 +116,11 @@ func NewRulesetRulesActionParametersHeadersMap(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewRulesetRulesActionParametersHeadersMap_Override(r RulesetRulesActionParametersHeadersMap, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersHeadersMap_Override(r RulesetRulesActionParametersHeadersMap, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap",
+		"@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -148,7 +148,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersHeadersMap)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -188,11 +188,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) Get(key *string) Rule
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) InterpolationForAttribute(property *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -204,7 +204,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) InterpolationForAttri
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersHeadersMap) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

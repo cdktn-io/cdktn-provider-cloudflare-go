@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package emailroutingrule
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
+		"@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		reflect.TypeOf((*EmailRoutingRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
@@ -77,16 +77,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActions",
+		"@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActions",
 		reflect.TypeOf((*EmailRoutingRuleActions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionsList",
+		"@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionsList",
 		reflect.TypeOf((*EmailRoutingRuleActionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -103,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingRuleActionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionsOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionsOutputReference",
 		reflect.TypeOf((*EmailRoutingRuleActionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,20 +140,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingRuleActionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig",
+		"@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig",
 		reflect.TypeOf((*EmailRoutingRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatchers",
+		"@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatchers",
 		reflect.TypeOf((*EmailRoutingRuleMatchers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatchersList",
+		"@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatchersList",
 		reflect.TypeOf((*EmailRoutingRuleMatchersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -170,12 +170,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingRuleMatchersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatchersOutputReference",
+		"@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatchersOutputReference",
 		reflect.TypeOf((*EmailRoutingRuleMatchersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -210,7 +210,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmailRoutingRuleMatchersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

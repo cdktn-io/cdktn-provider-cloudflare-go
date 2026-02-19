@@ -1,22 +1,22 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package universalsslsetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/universalsslsetting/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/universalsslsetting/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}.
 type UniversalSslSetting interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,24 +35,24 @@ type UniversalSslSetting interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -60,7 +60,7 @@ type UniversalSslSetting interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -76,7 +76,7 @@ type UniversalSslSetting interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -94,9 +94,9 @@ type UniversalSslSetting interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -130,11 +130,11 @@ type UniversalSslSetting interface {
 
 // The jsii proxy struct for UniversalSslSetting
 type jsiiProxy_UniversalSslSetting struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_UniversalSslSetting) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_UniversalSslSetting) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_UniversalSslSetting) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UniversalSslSetting) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_UniversalSslSetting) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_UniversalSslSetting) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UniversalSslSetting) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_UniversalSslSetting) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_UniversalSslSetting) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_UniversalSslSetting) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_UniversalSslSetting) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_UniversalSslSetting) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UniversalSslSetting) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_UniversalSslSetting) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -344,7 +344,7 @@ func (j *jsiiProxy_UniversalSslSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource.
 func NewUniversalSslSetting(scope constructs.Construct, id *string, config *UniversalSslSettingConfig) UniversalSslSetting {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewUniversalSslSetting(scope constructs.Construct, id *string, config *Univ
 	j := jsiiProxy_UniversalSslSetting{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting",
+		"@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -362,12 +362,12 @@ func NewUniversalSslSetting(scope constructs.Construct, id *string, config *Univ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource.
 func NewUniversalSslSetting_Override(u UniversalSslSetting, scope constructs.Construct, id *string, config *UniversalSslSettingConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting",
+		"@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -414,7 +414,7 @@ func (j *jsiiProxy_UniversalSslSetting)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UniversalSslSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UniversalSslSetting)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +422,7 @@ func (j *jsiiProxy_UniversalSslSetting)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_UniversalSslSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UniversalSslSetting)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_UniversalSslSetting)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_UniversalSslSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UniversalSslSetting)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -463,17 +463,17 @@ func (j *jsiiProxy_UniversalSslSetting)SetZoneId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a UniversalSslSetting resource upon running "cdktf plan <stack-name>".
-func UniversalSslSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a UniversalSslSetting resource upon running "cdktn plan <stack-name>".
+func UniversalSslSetting_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateUniversalSslSetting_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting",
+		"@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -508,7 +508,7 @@ func UniversalSslSetting_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting",
+		"@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func UniversalSslSetting_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting",
+		"@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func UniversalSslSetting_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting",
+		"@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func UniversalSslSetting_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.universalSslSetting.UniversalSslSetting",
+		"@cdktn/provider-cloudflare.universalSslSetting.UniversalSslSetting",
 		"tfResourceType",
 		&returns,
 	)
@@ -604,11 +604,11 @@ func (u *jsiiProxy_UniversalSslSetting) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (u *jsiiProxy_UniversalSslSetting) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UniversalSslSetting) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -745,7 +745,7 @@ func (u *jsiiProxy_UniversalSslSetting) HasResourceMove() interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_UniversalSslSetting) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (u *jsiiProxy_UniversalSslSetting) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -756,11 +756,11 @@ func (u *jsiiProxy_UniversalSslSetting) ImportFrom(id *string, provider cdktf.Te
 	)
 }
 
-func (u *jsiiProxy_UniversalSslSetting) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_UniversalSslSetting) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,

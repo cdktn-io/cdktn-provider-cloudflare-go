@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustriskbehavior
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zerotrustriskbehavior/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustriskbehavior/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustRiskBehaviorBehaviorsMap interface {
-	cdktf.ComplexMap
+	cdktn.ComplexMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,16 +26,16 @@ type ZeroTrustRiskBehaviorBehaviorsMap interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	Get(key *string) ZeroTrustRiskBehaviorBehaviorsOutputReference
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(property *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -45,7 +45,7 @@ type ZeroTrustRiskBehaviorBehaviorsMap interface {
 
 // The jsii proxy struct for ZeroTrustRiskBehaviorBehaviorsMap
 type jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap struct {
-	internal.Type__cdktfComplexMap
+	internal.Type__cdktnComplexMap
 }
 
 func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) CreationStack() *[]*string {
@@ -88,8 +88,8 @@ func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -99,7 +99,7 @@ func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) TerraformResource() cdktf.
 }
 
 
-func NewZeroTrustRiskBehaviorBehaviorsMap(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustRiskBehaviorBehaviorsMap {
+func NewZeroTrustRiskBehaviorBehaviorsMap(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustRiskBehaviorBehaviorsMap {
 	_init_.Initialize()
 
 	if err := validateNewZeroTrustRiskBehaviorBehaviorsMapParameters(terraformResource, terraformAttribute); err != nil {
@@ -108,7 +108,7 @@ func NewZeroTrustRiskBehaviorBehaviorsMap(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehaviorBehaviorsMap",
+		"@cdktn/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehaviorBehaviorsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -116,11 +116,11 @@ func NewZeroTrustRiskBehaviorBehaviorsMap(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewZeroTrustRiskBehaviorBehaviorsMap_Override(z ZeroTrustRiskBehaviorBehaviorsMap, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewZeroTrustRiskBehaviorBehaviorsMap_Override(z ZeroTrustRiskBehaviorBehaviorsMap, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehaviorBehaviorsMap",
+		"@cdktn/provider-cloudflare.zeroTrustRiskBehavior.ZeroTrustRiskBehaviorBehaviorsMap",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
@@ -148,7 +148,7 @@ func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -188,11 +188,11 @@ func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) Get(key *string) ZeroTrust
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) InterpolationForAttribute(property *string) cdktn.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		z,
@@ -204,7 +204,7 @@ func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) InterpolationForAttribute(
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZeroTrustRiskBehaviorBehaviorsMap) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

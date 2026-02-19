@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package loadbalancerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/loadbalancerpool/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/loadbalancerpool/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type LoadBalancerPoolNotificationFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type LoadBalancerPoolNotificationFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,16 +65,16 @@ type LoadBalancerPoolNotificationFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOrigin(value *LoadBalancerPoolNotificationFilterOrigin)
 	PutPool(value *LoadBalancerPoolNotificationFilterPool)
 	ResetOrigin()
 	ResetPool()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type LoadBalancerPoolNotificationFilterOutputReference interface {
 
 // The jsii proxy struct for LoadBalancerPoolNotificationFilterOutputReference
 type jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -198,7 +198,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) TerraformR
 }
 
 
-func NewLoadBalancerPoolNotificationFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerPoolNotificationFilterOutputReference {
+func NewLoadBalancerPoolNotificationFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LoadBalancerPoolNotificationFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLoadBalancerPoolNotificationFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -207,7 +207,7 @@ func NewLoadBalancerPoolNotificationFilterOutputReference(terraformResource cdkt
 	j := jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,11 +215,11 @@ func NewLoadBalancerPoolNotificationFilterOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewLoadBalancerPoolNotificationFilterOutputReference_Override(l LoadBalancerPoolNotificationFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLoadBalancerPoolNotificationFilterOutputReference_Override(l LoadBalancerPoolNotificationFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolNotificationFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -269,7 +269,7 @@ func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,11 +309,11 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) GetAnyMapA
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -437,8 +437,8 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) GetStringM
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -450,11 +450,11 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) Interpolat
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -504,7 +504,7 @@ func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) ResetPool(
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerPoolNotificationFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

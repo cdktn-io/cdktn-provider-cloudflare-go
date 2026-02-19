@@ -1,27 +1,27 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package hyperdriveconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/hyperdriveconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
 type HyperdriveConfig interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	Caching() HyperdriveConfigCachingOutputReference
 	CachingInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -38,18 +38,18 @@ type HyperdriveConfig interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModifiedOn() *string
 	Mtls() HyperdriveConfigMtlsOutputReference
 	MtlsInput() interface{}
@@ -64,9 +64,9 @@ type HyperdriveConfig interface {
 	OriginConnectionLimitInput() *float64
 	OriginInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -74,7 +74,7 @@ type HyperdriveConfig interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -87,7 +87,7 @@ type HyperdriveConfig interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -105,9 +105,9 @@ type HyperdriveConfig interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -146,7 +146,7 @@ type HyperdriveConfig interface {
 
 // The jsii proxy struct for HyperdriveConfig
 type jsiiProxy_HyperdriveConfig struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_HyperdriveConfig) AccountId() *string {
@@ -189,8 +189,8 @@ func (j *jsiiProxy_HyperdriveConfig) CachingInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HyperdriveConfig) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_HyperdriveConfig) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_HyperdriveConfig) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_HyperdriveConfig) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_HyperdriveConfig) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_HyperdriveConfig) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HyperdriveConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_HyperdriveConfig) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_HyperdriveConfig) OriginInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HyperdriveConfig) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_HyperdriveConfig) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_HyperdriveConfig) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HyperdriveConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_HyperdriveConfig) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -460,7 +460,7 @@ func (j *jsiiProxy_HyperdriveConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
 func NewHyperdriveConfig(scope constructs.Construct, id *string, config *HyperdriveConfigConfig) HyperdriveConfig {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewHyperdriveConfig(scope constructs.Construct, id *string, config *Hyperdr
 	j := jsiiProxy_HyperdriveConfig{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -478,12 +478,12 @@ func NewHyperdriveConfig(scope constructs.Construct, id *string, config *Hyperdr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
 func NewHyperdriveConfig_Override(h HyperdriveConfig, scope constructs.Construct, id *string, config *HyperdriveConfigConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -530,7 +530,7 @@ func (j *jsiiProxy_HyperdriveConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_HyperdriveConfig)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -538,7 +538,7 @@ func (j *jsiiProxy_HyperdriveConfig)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_HyperdriveConfig)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +571,7 @@ func (j *jsiiProxy_HyperdriveConfig)SetOriginConnectionLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_HyperdriveConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_HyperdriveConfig)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,17 +590,17 @@ func (j *jsiiProxy_HyperdriveConfig)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a HyperdriveConfig resource upon running "cdktf plan <stack-name>".
-func HyperdriveConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a HyperdriveConfig resource upon running "cdktn plan <stack-name>".
+func HyperdriveConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateHyperdriveConfig_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -635,7 +635,7 @@ func HyperdriveConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func HyperdriveConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func HyperdriveConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func HyperdriveConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
+		"@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig",
 		"tfResourceType",
 		&returns,
 	)
@@ -731,11 +731,11 @@ func (h *jsiiProxy_HyperdriveConfig) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (h *jsiiProxy_HyperdriveConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HyperdriveConfig) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -872,7 +872,7 @@ func (h *jsiiProxy_HyperdriveConfig) HasResourceMove() interface{} {
 	return returns
 }
 
-func (h *jsiiProxy_HyperdriveConfig) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (h *jsiiProxy_HyperdriveConfig) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := h.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -883,11 +883,11 @@ func (h *jsiiProxy_HyperdriveConfig) ImportFrom(id *string, provider cdktf.Terra
 	)
 }
 
-func (h *jsiiProxy_HyperdriveConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HyperdriveConfig) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,

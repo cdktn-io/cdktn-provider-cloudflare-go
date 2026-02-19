@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflaretokenvalidationrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflaretokenvalidationrules/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationrules/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareTokenValidationRulesFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Action() *string
 	SetAction(val *string)
 	ActionInput() *string
@@ -52,9 +52,9 @@ type DataCloudflareTokenValidationRulesFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenConfiguration() *[]*string
 	SetTokenConfiguration(val *[]*string)
 	TokenConfigurationInput() *[]*string
@@ -63,7 +63,7 @@ type DataCloudflareTokenValidationRulesFilterOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type DataCloudflareTokenValidationRulesFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAction()
 	ResetEnabled()
 	ResetHost()
@@ -90,7 +90,7 @@ type DataCloudflareTokenValidationRulesFilterOutputReference interface {
 	ResetTokenConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,7 +100,7 @@ type DataCloudflareTokenValidationRulesFilterOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareTokenValidationRulesFilterOutputReference
 type jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) Action() *string {
@@ -263,8 +263,8 @@ func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -294,7 +294,7 @@ func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) Toke
 }
 
 
-func NewDataCloudflareTokenValidationRulesFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareTokenValidationRulesFilterOutputReference {
+func NewDataCloudflareTokenValidationRulesFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareTokenValidationRulesFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareTokenValidationRulesFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -303,7 +303,7 @@ func NewDataCloudflareTokenValidationRulesFilterOutputReference(terraformResourc
 	j := jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareTokenValidationRules.DataCloudflareTokenValidationRulesFilterOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareTokenValidationRules.DataCloudflareTokenValidationRulesFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,11 +311,11 @@ func NewDataCloudflareTokenValidationRulesFilterOutputReference(terraformResourc
 	return &j
 }
 
-func NewDataCloudflareTokenValidationRulesFilterOutputReference_Override(d DataCloudflareTokenValidationRulesFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareTokenValidationRulesFilterOutputReference_Override(d DataCloudflareTokenValidationRulesFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareTokenValidationRules.DataCloudflareTokenValidationRulesFilterOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareTokenValidationRules.DataCloudflareTokenValidationRulesFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,11 +471,11 @@ func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) GetA
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -599,8 +599,8 @@ func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) GetS
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -612,11 +612,11 @@ func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -676,7 +676,7 @@ func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareTokenValidationRulesFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

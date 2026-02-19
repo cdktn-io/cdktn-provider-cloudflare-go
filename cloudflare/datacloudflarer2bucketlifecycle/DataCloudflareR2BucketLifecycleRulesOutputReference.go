@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarer2bucketlifecycle
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarer2bucketlifecycle/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarer2bucketlifecycle/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareR2BucketLifecycleRulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AbortMultipartUploadsTransition() DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
@@ -31,7 +31,7 @@ type DataCloudflareR2BucketLifecycleRulesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DeleteObjectsTransition() DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionOutputReference
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -43,15 +43,15 @@ type DataCloudflareR2BucketLifecycleRulesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DataCloudflareR2BucketLifecycleRulesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DataCloudflareR2BucketLifecycleRulesOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareR2BucketLifecycleRulesOutputReference
 type jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) AbortMultipartUploadsTransition() DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionOutputReference {
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) DeleteOb
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) Terrafor
 }
 
 
-func NewDataCloudflareR2BucketLifecycleRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareR2BucketLifecycleRulesOutputReference {
+func NewDataCloudflareR2BucketLifecycleRulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareR2BucketLifecycleRulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareR2BucketLifecycleRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -225,7 +225,7 @@ func NewDataCloudflareR2BucketLifecycleRulesOutputReference(terraformResource cd
 	j := jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewDataCloudflareR2BucketLifecycleRulesOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataCloudflareR2BucketLifecycleRulesOutputReference_Override(d DataCloudflareR2BucketLifecycleRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareR2BucketLifecycleRulesOutputReference_Override(d DataCloudflareR2BucketLifecycleRulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareR2BucketLifecycle.DataCloudflareR2BucketLifecycleRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -455,8 +455,8 @@ func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -468,11 +468,11 @@ func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -484,7 +484,7 @@ func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycleRulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

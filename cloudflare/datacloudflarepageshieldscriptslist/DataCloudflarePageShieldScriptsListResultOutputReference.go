@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarepageshieldscriptslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldscriptslist/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarepageshieldscriptslist/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflarePageShieldScriptsListResultOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AddedAt() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -31,7 +31,7 @@ type DataCloudflarePageShieldScriptsListResultOutputReference interface {
 	CreationStack() *[]*string
 	CryptominingScore() *float64
 	DataflowScore() *float64
-	DomainReportedMalicious() cdktf.IResolvable
+	DomainReportedMalicious() cdktn.IResolvable
 	FetchedAt() *string
 	FirstPageUrl() *string
 	FirstSeenAt() *string
@@ -55,18 +55,18 @@ type DataCloudflarePageShieldScriptsListResultOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
-	UrlContainsCdnCgiPath() cdktf.IResolvable
-	UrlReportedMalicious() cdktf.IResolvable
+	UrlContainsCdnCgiPath() cdktn.IResolvable
+	UrlReportedMalicious() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,12 +82,12 @@ type DataCloudflarePageShieldScriptsListResultOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type DataCloudflarePageShieldScriptsListResultOutputReference interface {
 
 // The jsii proxy struct for DataCloudflarePageShieldScriptsListResultOutputReference
 type jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) AddedAt() *string {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Dat
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) DomainReportedMalicious() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) DomainReportedMalicious() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"domainReportedMalicious",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Url
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) UrlContainsCdnCgiPath() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) UrlContainsCdnCgiPath() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"urlContainsCdnCgiPath",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Url
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) UrlReportedMalicious() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) UrlReportedMalicious() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"urlReportedMalicious",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Url
 }
 
 
-func NewDataCloudflarePageShieldScriptsListResultOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflarePageShieldScriptsListResultOutputReference {
+func NewDataCloudflarePageShieldScriptsListResultOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflarePageShieldScriptsListResultOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflarePageShieldScriptsListResultOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -390,7 +390,7 @@ func NewDataCloudflarePageShieldScriptsListResultOutputReference(terraformResour
 	j := jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -398,11 +398,11 @@ func NewDataCloudflarePageShieldScriptsListResultOutputReference(terraformResour
 	return &j
 }
 
-func NewDataCloudflarePageShieldScriptsListResultOutputReference_Override(d DataCloudflarePageShieldScriptsListResultOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflarePageShieldScriptsListResultOutputReference_Override(d DataCloudflarePageShieldScriptsListResultOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListResultOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -452,7 +452,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,11 +492,11 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -620,8 +620,8 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -633,11 +633,11 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -649,7 +649,7 @@ func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflarePageShieldScriptsListResultOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

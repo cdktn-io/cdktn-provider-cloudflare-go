@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validatePutTarge
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_MagicWanGreTunnelHealthCheckOutputReference) validateSetTypeP
 	return nil
 }
 
-func validateNewMagicWanGreTunnelHealthCheckOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMagicWanGreTunnelHealthCheckOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

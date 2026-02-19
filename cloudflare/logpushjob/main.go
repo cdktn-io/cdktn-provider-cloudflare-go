@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package logpushjob
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.logpushJob.LogpushJob",
+		"@cdktn/provider-cloudflare.logpushJob.LogpushJob",
 		reflect.TypeOf((*LogpushJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -107,20 +107,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogpushJob{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig",
+		"@cdktn/provider-cloudflare.logpushJob.LogpushJobConfig",
 		reflect.TypeOf((*LogpushJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptions",
+		"@cdktn/provider-cloudflare.logpushJob.LogpushJobOutputOptions",
 		reflect.TypeOf((*LogpushJobOutputOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference",
+		"@cdktn/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference",
 		reflect.TypeOf((*LogpushJobOutputOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchPrefix", GoGetter: "BatchPrefix"},
@@ -183,7 +183,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LogpushJobOutputOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

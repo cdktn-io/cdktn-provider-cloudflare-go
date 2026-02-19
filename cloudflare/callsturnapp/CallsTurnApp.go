@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package callsturnapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/callsturnapp/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/callsturnapp/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
 type CallsTurnApp interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -36,9 +36,9 @@ type CallsTurnApp interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -48,9 +48,9 @@ type CallsTurnApp interface {
 	SetKeyId(val *string)
 	KeyIdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Modified() *string
 	Name() *string
 	SetName(val *string)
@@ -58,9 +58,9 @@ type CallsTurnApp interface {
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type CallsTurnApp interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -82,7 +82,7 @@ type CallsTurnApp interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -100,9 +100,9 @@ type CallsTurnApp interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -137,7 +137,7 @@ type CallsTurnApp interface {
 
 // The jsii proxy struct for CallsTurnApp
 type jsiiProxy_CallsTurnApp struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_CallsTurnApp) AccountId() *string {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_CallsTurnApp) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CallsTurnApp) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_CallsTurnApp) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_CallsTurnApp) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CallsTurnApp) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_CallsTurnApp) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_CallsTurnApp) KeyIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CallsTurnApp) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_CallsTurnApp) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_CallsTurnApp) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CallsTurnApp) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_CallsTurnApp) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_CallsTurnApp) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CallsTurnApp) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_CallsTurnApp) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -401,7 +401,7 @@ func (j *jsiiProxy_CallsTurnApp) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
 func NewCallsTurnApp(scope constructs.Construct, id *string, config *CallsTurnAppConfig) CallsTurnApp {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewCallsTurnApp(scope constructs.Construct, id *string, config *CallsTurnAp
 	j := jsiiProxy_CallsTurnApp{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp",
+		"@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -419,12 +419,12 @@ func NewCallsTurnApp(scope constructs.Construct, id *string, config *CallsTurnAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
 func NewCallsTurnApp_Override(c CallsTurnApp, scope constructs.Construct, id *string, config *CallsTurnAppConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp",
+		"@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -471,7 +471,7 @@ func (j *jsiiProxy_CallsTurnApp)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CallsTurnApp)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CallsTurnApp)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -490,7 +490,7 @@ func (j *jsiiProxy_CallsTurnApp)SetKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CallsTurnApp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CallsTurnApp)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +512,7 @@ func (j *jsiiProxy_CallsTurnApp)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CallsTurnApp)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CallsTurnApp)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,17 +531,17 @@ func (j *jsiiProxy_CallsTurnApp)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a CallsTurnApp resource upon running "cdktf plan <stack-name>".
-func CallsTurnApp_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a CallsTurnApp resource upon running "cdktn plan <stack-name>".
+func CallsTurnApp_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateCallsTurnApp_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp",
+		"@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -576,7 +576,7 @@ func CallsTurnApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp",
+		"@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func CallsTurnApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp",
+		"@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func CallsTurnApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp",
+		"@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -627,7 +627,7 @@ func CallsTurnApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.callsTurnApp.CallsTurnApp",
+		"@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp",
 		"tfResourceType",
 		&returns,
 	)
@@ -672,11 +672,11 @@ func (c *jsiiProxy_CallsTurnApp) GetAnyMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (c *jsiiProxy_CallsTurnApp) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CallsTurnApp) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -813,7 +813,7 @@ func (c *jsiiProxy_CallsTurnApp) HasResourceMove() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CallsTurnApp) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (c *jsiiProxy_CallsTurnApp) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -824,11 +824,11 @@ func (c *jsiiProxy_CallsTurnApp) ImportFrom(id *string, provider cdktf.Terraform
 	)
 }
 
-func (c *jsiiProxy_CallsTurnApp) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CallsTurnApp) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,

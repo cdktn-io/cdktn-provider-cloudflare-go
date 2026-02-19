@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package tokenvalidationconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/tokenvalidationconfig/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type TokenValidationConfigCredentialsKeysList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type TokenValidationConfigCredentialsKeysList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type TokenValidationConfigCredentialsKeysList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) TokenValidationConfigCredentialsKeysOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type TokenValidationConfigCredentialsKeysList interface {
 
 // The jsii proxy struct for TokenValidationConfigCredentialsKeysList
 type jsiiProxy_TokenValidationConfigCredentialsKeysList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_TokenValidationConfigCredentialsKeysList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_TokenValidationConfigCredentialsKeysList) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_TokenValidationConfigCredentialsKeysList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TokenValidationConfigCredentialsKeysList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_TokenValidationConfigCredentialsKeysList) WrapsSet() *bool {
 }
 
 
-func NewTokenValidationConfigCredentialsKeysList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TokenValidationConfigCredentialsKeysList {
+func NewTokenValidationConfigCredentialsKeysList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TokenValidationConfigCredentialsKeysList {
 	_init_.Initialize()
 
 	if err := validateNewTokenValidationConfigCredentialsKeysListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewTokenValidationConfigCredentialsKeysList(terraformResource cdktf.IInterp
 	j := jsiiProxy_TokenValidationConfigCredentialsKeysList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysList",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewTokenValidationConfigCredentialsKeysList(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewTokenValidationConfigCredentialsKeysList_Override(t TokenValidationConfigCredentialsKeysList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewTokenValidationConfigCredentialsKeysList_Override(t TokenValidationConfigCredentialsKeysList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysList",
+		"@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_TokenValidationConfigCredentialsKeysList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_TokenValidationConfigCredentialsKeysList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TokenValidationConfigCredentialsKeysList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_TokenValidationConfigCredentialsKeysList)SetWrapsSet(val *boo
 	)
 }
 
-func (t *jsiiProxy_TokenValidationConfigCredentialsKeysList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (t *jsiiProxy_TokenValidationConfigCredentialsKeysList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := t.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		t,
@@ -231,7 +231,7 @@ func (t *jsiiProxy_TokenValidationConfigCredentialsKeysList) Get(index *float64)
 	return returns
 }
 
-func (t *jsiiProxy_TokenValidationConfigCredentialsKeysList) Resolve(context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TokenValidationConfigCredentialsKeysList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

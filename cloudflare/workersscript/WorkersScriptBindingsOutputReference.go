@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersscript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersscript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WorkersScriptBindingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Algorithm() *string
 	SetAlgorithm(val *string)
 	AlgorithmInput() *string
@@ -112,6 +112,8 @@ type WorkersScriptBindingsOutputReference interface {
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
+	Simple() WorkersScriptBindingsSimpleOutputReference
+	SimpleInput() interface{}
 	StoreId() *string
 	SetStoreId(val *string)
 	StoreIdInput() *string
@@ -120,9 +122,9 @@ type WorkersScriptBindingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Text() *string
 	SetText(val *string)
 	TextInput() *string
@@ -143,7 +145,7 @@ type WorkersScriptBindingsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -159,10 +161,11 @@ type WorkersScriptBindingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOutbound(value *WorkersScriptBindingsOutbound)
+	PutSimple(value *WorkersScriptBindingsSimple)
 	ResetAlgorithm()
 	ResetAllowedDestinationAddresses()
 	ResetAllowedSenderAddresses()
@@ -189,6 +192,7 @@ type WorkersScriptBindingsOutputReference interface {
 	ResetScriptName()
 	ResetSecretName()
 	ResetService()
+	ResetSimple()
 	ResetStoreId()
 	ResetText()
 	ResetUsages()
@@ -196,7 +200,7 @@ type WorkersScriptBindingsOutputReference interface {
 	ResetWorkflowName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -206,7 +210,7 @@ type WorkersScriptBindingsOutputReference interface {
 
 // The jsii proxy struct for WorkersScriptBindingsOutputReference
 type jsiiProxy_WorkersScriptBindingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Algorithm() *string {
@@ -799,6 +803,26 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) ServiceInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Simple() WorkersScriptBindingsSimpleOutputReference {
+	var returns WorkersScriptBindingsSimpleOutputReference
+	_jsii_.Get(
+		j,
+		"simple",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) SimpleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"simpleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) StoreId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -829,8 +853,8 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -940,7 +964,7 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) WorkflowNameInput() *st
 }
 
 
-func NewWorkersScriptBindingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkersScriptBindingsOutputReference {
+func NewWorkersScriptBindingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkersScriptBindingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkersScriptBindingsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -949,7 +973,7 @@ func NewWorkersScriptBindingsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_WorkersScriptBindingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -957,11 +981,11 @@ func NewWorkersScriptBindingsOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewWorkersScriptBindingsOutputReference_Override(w WorkersScriptBindingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWorkersScriptBindingsOutputReference_Override(w WorkersScriptBindingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
@@ -1308,7 +1332,7 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1403,11 +1427,11 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -1531,8 +1555,8 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -1544,11 +1568,11 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -1567,6 +1591,17 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) PutOutbound(value *Work
 	_jsii_.InvokeVoid(
 		w,
 		"putOutbound",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) PutSimple(value *WorkersScriptBindingsSimple) {
+	if err := w.validatePutSimpleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putSimple",
 		[]interface{}{value},
 	)
 }
@@ -1779,6 +1814,14 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetService() {
 	)
 }
 
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetSimple() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSimple",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetStoreId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1819,7 +1862,7 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetWorkflowName() {
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptBindingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

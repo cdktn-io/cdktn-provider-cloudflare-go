@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package emailroutingrule
@@ -7,15 +7,15 @@ package emailroutingrule
 type EmailRoutingRuleMatchers struct {
 	// Type of matcher. Available values: "all", "literal".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Field for type matcher. Available values: "to".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
 	Field *string `field:"optional" json:"field" yaml:"field"`
 	// Value for matcher.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

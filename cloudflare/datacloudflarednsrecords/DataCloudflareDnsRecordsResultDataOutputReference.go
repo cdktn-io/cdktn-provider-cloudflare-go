@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datacloudflarednsrecords
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarednsrecords/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarednsrecords/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareDnsRecordsResultDataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Algorithm() *float64
 	Altitude() *float64
 	Certificate() *string
@@ -34,7 +34,7 @@ type DataCloudflareDnsRecordsResultDataOutputReference interface {
 	Digest() *string
 	DigestType() *float64
 	Fingerprint() *string
-	Flags() cdktf.AnyMap
+	Flags() cdktn.AnyMap
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareDnsRecordsResultData
@@ -69,9 +69,9 @@ type DataCloudflareDnsRecordsResultDataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *float64
 	Usage() *float64
 	Value() *string
@@ -81,7 +81,7 @@ type DataCloudflareDnsRecordsResultDataOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -97,12 +97,12 @@ type DataCloudflareDnsRecordsResultDataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,7 +112,7 @@ type DataCloudflareDnsRecordsResultDataOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareDnsRecordsResultDataOutputReference
 type jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) Algorithm() *float64 {
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) Fingerprin
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) Flags() cdktf.AnyMap {
-	var returns cdktf.AnyMap
+func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) Flags() cdktn.AnyMap {
+	var returns cdktn.AnyMap
 	_jsii_.Get(
 		j,
 		"flags",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -546,7 +546,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) Weight() *
 }
 
 
-func NewDataCloudflareDnsRecordsResultDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordsResultDataOutputReference {
+func NewDataCloudflareDnsRecordsResultDataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareDnsRecordsResultDataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareDnsRecordsResultDataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -555,7 +555,7 @@ func NewDataCloudflareDnsRecordsResultDataOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareDnsRecords.DataCloudflareDnsRecordsResultDataOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareDnsRecords.DataCloudflareDnsRecordsResultDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -563,11 +563,11 @@ func NewDataCloudflareDnsRecordsResultDataOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewDataCloudflareDnsRecordsResultDataOutputReference_Override(d DataCloudflareDnsRecordsResultDataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataCloudflareDnsRecordsResultDataOutputReference_Override(d DataCloudflareDnsRecordsResultDataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareDnsRecords.DataCloudflareDnsRecordsResultDataOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareDnsRecords.DataCloudflareDnsRecordsResultDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -617,7 +617,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,11 +657,11 @@ func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) GetAnyMapA
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -785,8 +785,8 @@ func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) GetStringM
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -798,11 +798,11 @@ func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) Interpolat
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -814,7 +814,7 @@ func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) Interpolat
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareDnsRecordsResultDataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

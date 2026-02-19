@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zonelockdown
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/zonelockdown/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonelockdown/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZoneLockdownConfigurationsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type ZoneLockdownConfigurationsList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type ZoneLockdownConfigurationsList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ZoneLockdownConfigurationsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type ZoneLockdownConfigurationsList interface {
 
 // The jsii proxy struct for ZoneLockdownConfigurationsList
 type jsiiProxy_ZoneLockdownConfigurationsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ZoneLockdownConfigurationsList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_ZoneLockdownConfigurationsList) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdownConfigurationsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ZoneLockdownConfigurationsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_ZoneLockdownConfigurationsList) WrapsSet() *bool {
 }
 
 
-func NewZoneLockdownConfigurationsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneLockdownConfigurationsList {
+func NewZoneLockdownConfigurationsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneLockdownConfigurationsList {
 	_init_.Initialize()
 
 	if err := validateNewZoneLockdownConfigurationsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewZoneLockdownConfigurationsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_ZoneLockdownConfigurationsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
+		"@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewZoneLockdownConfigurationsList(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewZoneLockdownConfigurationsList_Override(z ZoneLockdownConfigurationsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewZoneLockdownConfigurationsList_Override(z ZoneLockdownConfigurationsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
+		"@cdktn/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_ZoneLockdownConfigurationsList)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdownConfigurationsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneLockdownConfigurationsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_ZoneLockdownConfigurationsList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (z *jsiiProxy_ZoneLockdownConfigurationsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (z *jsiiProxy_ZoneLockdownConfigurationsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := z.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		z,
@@ -231,7 +231,7 @@ func (z *jsiiProxy_ZoneLockdownConfigurationsList) Get(index *float64) ZoneLockd
 	return returns
 }
 
-func (z *jsiiProxy_ZoneLockdownConfigurationsList) Resolve(context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZoneLockdownConfigurationsList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := z.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

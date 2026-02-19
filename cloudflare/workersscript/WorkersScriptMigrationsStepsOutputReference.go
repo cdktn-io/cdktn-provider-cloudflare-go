@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/workersscript/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersscript/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type WorkersScriptMigrationsStepsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,9 +48,9 @@ type WorkersScriptMigrationsStepsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TransferredClasses() WorkersScriptMigrationsStepsTransferredClassesList
 	TransferredClassesInput() interface{}
 	// Experimental.
@@ -58,7 +58,7 @@ type WorkersScriptMigrationsStepsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,9 +74,9 @@ type WorkersScriptMigrationsStepsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutRenamedClasses(value interface{})
 	PutTransferredClasses(value interface{})
 	ResetDeletedClasses()
@@ -86,7 +86,7 @@ type WorkersScriptMigrationsStepsOutputReference interface {
 	ResetTransferredClasses()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type WorkersScriptMigrationsStepsOutputReference interface {
 
 // The jsii proxy struct for WorkersScriptMigrationsStepsOutputReference
 type jsiiProxy_WorkersScriptMigrationsStepsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) ComplexObjectIndex() interface{} {
@@ -239,8 +239,8 @@ func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -270,7 +270,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) TransferredClass
 }
 
 
-func NewWorkersScriptMigrationsStepsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkersScriptMigrationsStepsOutputReference {
+func NewWorkersScriptMigrationsStepsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkersScriptMigrationsStepsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkersScriptMigrationsStepsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -279,7 +279,7 @@ func NewWorkersScriptMigrationsStepsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_WorkersScriptMigrationsStepsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,11 +287,11 @@ func NewWorkersScriptMigrationsStepsOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewWorkersScriptMigrationsStepsOutputReference_Override(w WorkersScriptMigrationsStepsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWorkersScriptMigrationsStepsOutputReference_Override(w WorkersScriptMigrationsStepsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference",
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
@@ -374,7 +374,7 @@ func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkersScriptMigrationsStepsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,11 +414,11 @@ func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -542,8 +542,8 @@ func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -555,11 +555,11 @@ func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) InterpolationAsL
 	return returns
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -633,7 +633,7 @@ func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) ResetTransferred
 	)
 }
 
-func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkersScriptMigrationsStepsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package zerotrustorganization
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization",
 		reflect.TypeOf((*ZeroTrustOrganization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -30,6 +30,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "customPages", GoGetter: "CustomPages"},
 			_jsii_.MemberProperty{JsiiProperty: "customPagesInput", GoGetter: "CustomPagesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "denyUnmatchedRequests", GoGetter: "DenyUnmatchedRequests"},
+			_jsii_.MemberProperty{JsiiProperty: "denyUnmatchedRequestsExemptedZoneNames", GoGetter: "DenyUnmatchedRequestsExemptedZoneNames"},
+			_jsii_.MemberProperty{JsiiProperty: "denyUnmatchedRequestsExemptedZoneNamesInput", GoGetter: "DenyUnmatchedRequestsExemptedZoneNamesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "denyUnmatchedRequestsInput", GoGetter: "DenyUnmatchedRequestsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -68,6 +72,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthDomain", GoMethod: "ResetAuthDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoRedirectToIdentity", GoMethod: "ResetAutoRedirectToIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomPages", GoMethod: "ResetCustomPages"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDenyUnmatchedRequests", GoMethod: "ResetDenyUnmatchedRequests"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDenyUnmatchedRequestsExemptedZoneNames", GoMethod: "ResetDenyUnmatchedRequestsExemptedZoneNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsUiReadOnly", GoMethod: "ResetIsUiReadOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoginDesign", GoMethod: "ResetLoginDesign"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
@@ -99,20 +105,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustOrganization{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig",
 		reflect.TypeOf((*ZeroTrustOrganizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages",
 		reflect.TypeOf((*ZeroTrustOrganizationCustomPages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPagesOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPagesOutputReference",
 		reflect.TypeOf((*ZeroTrustOrganizationCustomPagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,16 +151,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustOrganizationCustomPagesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign",
 		reflect.TypeOf((*ZeroTrustOrganizationLoginDesign)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesignOutputReference",
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesignOutputReference",
 		reflect.TypeOf((*ZeroTrustOrganizationLoginDesignOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColor", GoGetter: "BackgroundColor"},
@@ -196,7 +202,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build no_runtime_type_checking
@@ -51,7 +51,11 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) validatePutOutboundPara
 	return nil
 }
 
-func (w *jsiiProxy_WorkerVersionBindingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) validatePutSimpleParameters(value *WorkerVersionBindingsSimple) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -179,7 +183,7 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -203,7 +207,7 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetWorkflowName
 	return nil
 }
 
-func validateNewWorkerVersionBindingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWorkerVersionBindingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

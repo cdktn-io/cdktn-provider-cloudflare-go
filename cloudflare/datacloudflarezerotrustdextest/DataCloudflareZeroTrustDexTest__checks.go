@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 //go:build !no_runtime_type_checking
@@ -11,7 +11,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -114,12 +114,23 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) validatePutFilterParameters(value *DataCloudflareZeroTrustDexTestFilter) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) validatePutTargetPoliciesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataCloudflareZeroTrustDexTestTargetPolicies:
 		value := value.(*[]*DataCloudflareZeroTrustDexTestTargetPolicies)
@@ -138,7 +149,7 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) validatePutTargetPoliciesPara
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataCloudflareZeroTrustDexTestTargetPolicies; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataCloudflareZeroTrustDexTestTargetPolicies; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -239,11 +250,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) validateSetCountParameters(va
 		// ok
 	case uint64:
 		// ok
-	case cdktf.TerraformCount:
+	case cdktn.TerraformCount:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktn.TerraformCount; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -258,7 +269,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) validateSetDexTestIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTest) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}

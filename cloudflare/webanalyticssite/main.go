@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package webanalyticssite
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite",
+		"@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite",
 		reflect.TypeOf((*WebAnalyticsSite)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -82,20 +82,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WebAnalyticsSite{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig",
+		"@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig",
 		reflect.TypeOf((*WebAnalyticsSiteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRules",
+		"@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRules",
 		reflect.TypeOf((*WebAnalyticsSiteRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesList",
+		"@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesList",
 		reflect.TypeOf((*WebAnalyticsSiteRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -111,12 +111,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WebAnalyticsSiteRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesOutputReference",
+		"@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesOutputReference",
 		reflect.TypeOf((*WebAnalyticsSiteRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,16 +150,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WebAnalyticsSiteRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRuleset",
+		"@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRuleset",
 		reflect.TypeOf((*WebAnalyticsSiteRuleset)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesetOutputReference",
+		"@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteRulesetOutputReference",
 		reflect.TypeOf((*WebAnalyticsSiteRulesetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,7 +190,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WebAnalyticsSiteRulesetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

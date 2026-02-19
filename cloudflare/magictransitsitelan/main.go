@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package magictransitsitelan
@@ -11,13 +11,15 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan",
 		reflect.TypeOf((*MagicTransitSiteLan)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "bondId", GoGetter: "BondId"},
+			_jsii_.MemberProperty{JsiiProperty: "bondIdInput", GoGetter: "BondIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -59,10 +61,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRoutedSubnets", GoMethod: "PutRoutedSubnets"},
 			_jsii_.MemberMethod{JsiiMethod: "putStaticAddressing", GoMethod: "PutStaticAddressing"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBondId", GoMethod: "ResetBondId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHaLink", GoMethod: "ResetHaLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNat", GoMethod: "ResetNat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPhysport", GoMethod: "ResetPhysport"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoutedSubnets", GoMethod: "ResetRoutedSubnets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStaticAddressing", GoMethod: "ResetStaticAddressing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVlanTag", GoMethod: "ResetVlanTag"},
@@ -86,20 +90,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLan{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig",
 		reflect.TypeOf((*MagicTransitSiteLanConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat",
 		reflect.TypeOf((*MagicTransitSiteLanNat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNatOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNatOutputReference",
 		reflect.TypeOf((*MagicTransitSiteLanNatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,16 +133,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLanNatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets",
 		reflect.TypeOf((*MagicTransitSiteLanRoutedSubnets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsList",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsList",
 		reflect.TypeOf((*MagicTransitSiteLanRoutedSubnetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -155,16 +159,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLanRoutedSubnetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNat",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNat",
 		reflect.TypeOf((*MagicTransitSiteLanRoutedSubnetsNat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNatOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNatOutputReference",
 		reflect.TypeOf((*MagicTransitSiteLanRoutedSubnetsNatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,12 +198,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLanRoutedSubnetsNatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsOutputReference",
 		reflect.TypeOf((*MagicTransitSiteLanRoutedSubnetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -234,20 +238,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLanRoutedSubnetsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing",
 		reflect.TypeOf((*MagicTransitSiteLanStaticAddressing)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelay",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelay",
 		reflect.TypeOf((*MagicTransitSiteLanStaticAddressingDhcpRelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelayOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelayOutputReference",
 		reflect.TypeOf((*MagicTransitSiteLanStaticAddressingDhcpRelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -277,16 +281,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpRelayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer",
 		reflect.TypeOf((*MagicTransitSiteLanStaticAddressingDhcpServer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServerOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServerOutputReference",
 		reflect.TypeOf((*MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -328,12 +332,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingOutputReference",
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingOutputReference",
 		reflect.TypeOf((*MagicTransitSiteLanStaticAddressingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -376,7 +380,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLanStaticAddressingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

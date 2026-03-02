@@ -87,6 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vanityNameServers", GoGetter: "VanityNameServers"},
 			_jsii_.MemberProperty{JsiiProperty: "vanityNameServersInput", GoGetter: "VanityNameServersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationKey", GoGetter: "VerificationKey"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Zone{}

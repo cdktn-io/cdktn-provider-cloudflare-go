@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
 type ZeroTrustAccessPolicy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -29,6 +29,8 @@ type ZeroTrustAccessPolicy interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionRules() ZeroTrustAccessPolicyConnectionRulesOutputReference
+	ConnectionRulesInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -62,6 +64,8 @@ type ZeroTrustAccessPolicy interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	MfaConfig() ZeroTrustAccessPolicyMfaConfigOutputReference
+	MfaConfigInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -138,14 +142,18 @@ type ZeroTrustAccessPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApprovalGroups(value interface{})
+	PutConnectionRules(value *ZeroTrustAccessPolicyConnectionRules)
 	PutExclude(value interface{})
 	PutInclude(value interface{})
+	PutMfaConfig(value *ZeroTrustAccessPolicyMfaConfig)
 	PutRequire(value interface{})
 	ResetApprovalGroups()
 	ResetApprovalRequired()
+	ResetConnectionRules()
 	ResetExclude()
 	ResetInclude()
 	ResetIsolationRequired()
+	ResetMfaConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -164,6 +172,15 @@ type ZeroTrustAccessPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ZeroTrustAccessPolicy
@@ -246,6 +263,26 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ConnectionRules() ZeroTrustAccessPolicyConnectionRulesOutputReference {
+	var returns ZeroTrustAccessPolicyConnectionRulesOutputReference
+	_jsii_.Get(
+		j,
+		"connectionRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ConnectionRulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionRulesInput",
 		&returns,
 	)
 	return returns
@@ -406,6 +443,26 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Lifecycle() *cdktn.TerraformResourceLi
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) MfaConfig() ZeroTrustAccessPolicyMfaConfigOutputReference {
+	var returns ZeroTrustAccessPolicyMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) MfaConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaConfigInput",
 		&returns,
 	)
 	return returns
@@ -582,7 +639,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) ZeroTrustAccessPolicy {
 	_init_.Initialize()
 
@@ -600,7 +657,7 @@ func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy_Override(z ZeroTrustAccessPolicy, scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -1131,6 +1188,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) PutApprovalGroups(value interface{}) {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutConnectionRules(value *ZeroTrustAccessPolicyConnectionRules) {
+	if err := z.validatePutConnectionRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putConnectionRules",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicy) PutExclude(value interface{}) {
 	if err := z.validatePutExcludeParameters(value); err != nil {
 		panic(err)
@@ -1149,6 +1217,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) PutInclude(value interface{}) {
 	_jsii_.InvokeVoid(
 		z,
 		"putInclude",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutMfaConfig(value *ZeroTrustAccessPolicyMfaConfig) {
+	if err := z.validatePutMfaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putMfaConfig",
 		[]interface{}{value},
 	)
 }
@@ -1180,6 +1259,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetApprovalRequired() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetConnectionRules() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetConnectionRules",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetExclude() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1200,6 +1287,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetIsolationRequired() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetIsolationRequired",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetMfaConfig() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMfaConfig",
 		nil, // no parameters
 	)
 }
@@ -1316,6 +1411,24 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ToTerraform() interface{} {
 		z,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		z,
+		"with",
+		args,
 		&returns,
 	)
 

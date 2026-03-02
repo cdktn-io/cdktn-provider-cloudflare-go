@@ -28,6 +28,7 @@ type DataCloudflareAiSearchInstancesResultPublicEndpointParamsMcpOutputReference
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
 	Disabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -105,6 +106,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultPublicEndpointParamsMcpO
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultPublicEndpointParamsMcpOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns

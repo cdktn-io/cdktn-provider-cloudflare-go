@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 type HostnameTlsSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -134,6 +134,15 @@ type HostnameTlsSetting interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for HostnameTlsSetting
@@ -422,7 +431,7 @@ func (j *jsiiProxy_HostnameTlsSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) HostnameTlsSetting {
 	_init_.Initialize()
 
@@ -440,7 +449,7 @@ func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *Hostn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting_Override(h HostnameTlsSetting, scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) {
 	_init_.Initialize()
 
@@ -996,6 +1005,24 @@ func (h *jsiiProxy_HostnameTlsSetting) ToTerraform() interface{} {
 		h,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HostnameTlsSetting) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		h,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
 type ApiShieldOperationSchemaValidationSettings interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -129,6 +129,15 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ApiShieldOperationSchemaValidationSettings
@@ -367,7 +376,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ZoneIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
 func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, id *string, config *ApiShieldOperationSchemaValidationSettingsConfig) ApiShieldOperationSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -385,7 +394,7 @@ func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
 func NewApiShieldOperationSchemaValidationSettings_Override(a ApiShieldOperationSchemaValidationSettings, scope constructs.Construct, id *string, config *ApiShieldOperationSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 
@@ -938,6 +947,24 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ToTerraform() int
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

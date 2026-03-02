@@ -136,6 +136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "usageModel", GoGetter: "UsageModel"},
 			_jsii_.MemberProperty{JsiiProperty: "usageModelInput", GoGetter: "UsageModelInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersScript{}

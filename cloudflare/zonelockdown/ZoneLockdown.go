@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
 type ZoneLockdown interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -142,6 +142,15 @@ type ZoneLockdown interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ZoneLockdown
@@ -460,7 +469,7 @@ func (j *jsiiProxy_ZoneLockdown) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdownConfig) ZoneLockdown {
 	_init_.Initialize()
 
@@ -478,7 +487,7 @@ func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown_Override(z ZoneLockdown, scope constructs.Construct, id *string, config *ZoneLockdownConfig) {
 	_init_.Initialize()
 
@@ -1080,6 +1089,24 @@ func (z *jsiiProxy_ZoneLockdown) ToTerraform() interface{} {
 		z,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneLockdown) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		z,
+		"with",
+		args,
 		&returns,
 	)
 

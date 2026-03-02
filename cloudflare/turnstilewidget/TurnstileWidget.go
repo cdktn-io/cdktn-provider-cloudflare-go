@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 type TurnstileWidget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -155,6 +155,15 @@ type TurnstileWidget interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for TurnstileWidget
@@ -553,7 +562,7 @@ func (j *jsiiProxy_TurnstileWidget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget(scope constructs.Construct, id *string, config *TurnstileWidgetConfig) TurnstileWidget {
 	_init_.Initialize()
 
@@ -571,7 +580,7 @@ func NewTurnstileWidget(scope constructs.Construct, id *string, config *Turnstil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget_Override(t TurnstileWidget, scope constructs.Construct, id *string, config *TurnstileWidgetConfig) {
 	_init_.Initialize()
 
@@ -1222,6 +1231,24 @@ func (t *jsiiProxy_TurnstileWidget) ToTerraform() interface{} {
 		t,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TurnstileWidget) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		t,
+		"with",
+		args,
 		&returns,
 	)
 

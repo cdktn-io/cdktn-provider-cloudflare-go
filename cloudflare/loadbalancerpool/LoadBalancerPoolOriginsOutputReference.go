@@ -32,6 +32,8 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DisabledAt() *string
+	SetDisabledAt(val *string)
+	DisabledAtInput() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -87,6 +89,7 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutHeader(value *LoadBalancerPoolOriginsHeader)
 	ResetAddress()
+	ResetDisabledAt()
 	ResetEnabled()
 	ResetHeader()
 	ResetName()
@@ -163,6 +166,16 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) DisabledAt() *string 
 	_jsii_.Get(
 		j,
 		"disabledAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) DisabledAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"disabledAtInput",
 		&returns,
 	)
 	return returns
@@ -385,6 +398,17 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetComplexObjectIsFrom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetDisabledAt(val *string) {
+	if err := j.validateSetDisabledAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabledAt",
 		val,
 	)
 }
@@ -678,6 +702,14 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetAddress() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAddress",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetDisabledAt() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDisabledAt",
 		nil, // no parameters
 	)
 }

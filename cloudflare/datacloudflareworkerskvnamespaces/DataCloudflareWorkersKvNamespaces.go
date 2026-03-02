@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces}.
 type DataCloudflareWorkersKvNamespaces interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -109,6 +109,15 @@ type DataCloudflareWorkersKvNamespaces interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareWorkersKvNamespaces
@@ -347,7 +356,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespaces) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
 func NewDataCloudflareWorkersKvNamespaces(scope constructs.Construct, id *string, config *DataCloudflareWorkersKvNamespacesConfig) DataCloudflareWorkersKvNamespaces {
 	_init_.Initialize()
 
@@ -365,7 +374,7 @@ func NewDataCloudflareWorkersKvNamespaces(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
 func NewDataCloudflareWorkersKvNamespaces_Override(d DataCloudflareWorkersKvNamespaces, scope constructs.Construct, id *string, config *DataCloudflareWorkersKvNamespacesConfig) {
 	_init_.Initialize()
 
@@ -855,6 +864,24 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespaces) ToTerraform() interface{} 
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespaces) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

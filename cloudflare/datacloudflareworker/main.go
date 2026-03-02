@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedOn", GoGetter: "UpdatedOn"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workerId", GoGetter: "WorkerId"},
 			_jsii_.MemberProperty{JsiiProperty: "workerIdInput", GoGetter: "WorkerIdInput"},
 		},

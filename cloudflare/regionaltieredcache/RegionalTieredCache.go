@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
 type RegionalTieredCache interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -128,6 +128,15 @@ type RegionalTieredCache interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for RegionalTieredCache
@@ -366,7 +375,7 @@ func (j *jsiiProxy_RegionalTieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache(scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) RegionalTieredCache {
 	_init_.Initialize()
 
@@ -384,7 +393,7 @@ func NewRegionalTieredCache(scope constructs.Construct, id *string, config *Regi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache_Override(r RegionalTieredCache, scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) {
 	_init_.Initialize()
 
@@ -926,6 +935,24 @@ func (r *jsiiProxy_RegionalTieredCache) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RegionalTieredCache) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

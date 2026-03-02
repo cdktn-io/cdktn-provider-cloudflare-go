@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/d1_databases cloudflare_d1_databases}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_databases cloudflare_d1_databases}.
 type DataCloudflareD1Databases interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -105,6 +105,15 @@ type DataCloudflareD1Databases interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareD1Databases
@@ -323,7 +332,7 @@ func (j *jsiiProxy_DataCloudflareD1Databases) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/d1_databases cloudflare_d1_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_databases cloudflare_d1_databases} Data Source.
 func NewDataCloudflareD1Databases(scope constructs.Construct, id *string, config *DataCloudflareD1DatabasesConfig) DataCloudflareD1Databases {
 	_init_.Initialize()
 
@@ -341,7 +350,7 @@ func NewDataCloudflareD1Databases(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/d1_databases cloudflare_d1_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_databases cloudflare_d1_databases} Data Source.
 func NewDataCloudflareD1Databases_Override(d DataCloudflareD1Databases, scope constructs.Construct, id *string, config *DataCloudflareD1DatabasesConfig) {
 	_init_.Initialize()
 
@@ -812,6 +821,24 @@ func (d *jsiiProxy_DataCloudflareD1Databases) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareD1Databases) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

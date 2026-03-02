@@ -121,6 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "turnstileActionInput", GoGetter: "TurnstileActionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "turnstileMode", GoGetter: "TurnstileMode"},
 			_jsii_.MemberProperty{JsiiProperty: "turnstileModeInput", GoGetter: "TurnstileModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},

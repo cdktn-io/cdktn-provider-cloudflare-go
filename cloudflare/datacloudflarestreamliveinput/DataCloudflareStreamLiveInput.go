@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_live_input cloudflare_stream_live_input}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_live_input cloudflare_stream_live_input}.
 type DataCloudflareStreamLiveInput interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -32,6 +32,7 @@ type DataCloudflareStreamLiveInput interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enabled() cdktn.IResolvable
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -112,6 +113,15 @@ type DataCloudflareStreamLiveInput interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareStreamLiveInput
@@ -194,6 +204,16 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreamLiveInput) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
 		&returns,
 	)
 	return returns
@@ -430,7 +450,7 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput) WebRtcPlayback() DataCloudflar
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source.
 func NewDataCloudflareStreamLiveInput(scope constructs.Construct, id *string, config *DataCloudflareStreamLiveInputConfig) DataCloudflareStreamLiveInput {
 	_init_.Initialize()
 
@@ -448,7 +468,7 @@ func NewDataCloudflareStreamLiveInput(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source.
 func NewDataCloudflareStreamLiveInput_Override(d DataCloudflareStreamLiveInput, scope constructs.Construct, id *string, config *DataCloudflareStreamLiveInputConfig) {
 	_init_.Initialize()
 
@@ -892,6 +912,24 @@ func (d *jsiiProxy_DataCloudflareStreamLiveInput) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareStreamLiveInput) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

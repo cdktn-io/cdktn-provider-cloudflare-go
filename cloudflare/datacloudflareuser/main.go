@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "twoFactorAuthenticationEnabled", GoGetter: "TwoFactorAuthenticationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "twoFactorAuthenticationLocked", GoGetter: "TwoFactorAuthenticationLocked"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zipcode", GoGetter: "Zipcode"},
 		},
 		func() interface{} {

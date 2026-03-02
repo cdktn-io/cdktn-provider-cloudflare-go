@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
 type ZeroTrustGatewayCertificate interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -141,6 +141,15 @@ type ZeroTrustGatewayCertificate interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ZeroTrustGatewayCertificate
@@ -489,7 +498,7 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) ValidityPeriodDaysInput() *float
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
 func NewZeroTrustGatewayCertificate(scope constructs.Construct, id *string, config *ZeroTrustGatewayCertificateConfig) ZeroTrustGatewayCertificate {
 	_init_.Initialize()
 
@@ -507,7 +516,7 @@ func NewZeroTrustGatewayCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
 func NewZeroTrustGatewayCertificate_Override(z ZeroTrustGatewayCertificate, scope constructs.Construct, id *string, config *ZeroTrustGatewayCertificateConfig) {
 	_init_.Initialize()
 
@@ -1068,6 +1077,24 @@ func (z *jsiiProxy_ZeroTrustGatewayCertificate) ToTerraform() interface{} {
 		z,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayCertificate) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		z,
+		"with",
+		args,
 		&returns,
 	)
 

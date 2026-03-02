@@ -1,6 +1,6 @@
-# CDKTN Go bindings for cloudflare/cloudflare provider version 5.17.0
+# CDKTN Go bindings for cloudflare/cloudflare provider version 5.18.0
 
-This repo builds and publishes the [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs) bindings for [CDK Terrain](https://cdktn.io).
+This repo builds and publishes the [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs) bindings for [CDK Terrain](https://cdktn.io).
 
 ## Go Package
 
@@ -23,7 +23,7 @@ This project is explicitly not tracking the Terraform cloudflare provider versio
 These are the upstream dependencies:
 
 * [CDK Terrain](https://cdktn.io) - Last official release
-* [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0)
+* [Terraform cloudflare provider](https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

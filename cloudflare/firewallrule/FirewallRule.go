@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
 type FirewallRule interface {
 	cdktn.TerraformResource
 	Action() FirewallRuleActionOutputReference
@@ -133,6 +133,15 @@ type FirewallRule interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for FirewallRule
@@ -421,7 +430,7 @@ func (j *jsiiProxy_FirewallRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRuleConfig) FirewallRule {
 	_init_.Initialize()
 
@@ -439,7 +448,7 @@ func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule_Override(f FirewallRule, scope constructs.Construct, id *string, config *FirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -984,6 +993,24 @@ func (f *jsiiProxy_FirewallRule) ToTerraform() interface{} {
 		f,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FirewallRule) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		f,
+		"with",
+		args,
 		&returns,
 	)
 

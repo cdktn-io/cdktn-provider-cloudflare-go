@@ -80,6 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wasActiveAtInput", GoGetter: "WasActiveAtInput"},
 			_jsii_.MemberProperty{JsiiProperty: "wasInactiveAt", GoGetter: "WasInactiveAt"},
 			_jsii_.MemberProperty{JsiiProperty: "wasInactiveAtInput", GoGetter: "WasInactiveAtInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectors{}

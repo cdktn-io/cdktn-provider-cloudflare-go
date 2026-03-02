@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers}.
 type DataCloudflareDnsZoneTransfersPeers interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -101,6 +101,15 @@ type DataCloudflareDnsZoneTransfersPeers interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareDnsZoneTransfersPeers
@@ -299,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareDnsZoneTransfersPeers) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source.
 func NewDataCloudflareDnsZoneTransfersPeers(scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersPeersConfig) DataCloudflareDnsZoneTransfersPeers {
 	_init_.Initialize()
 
@@ -317,7 +326,7 @@ func NewDataCloudflareDnsZoneTransfersPeers(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_zone_transfers_peers cloudflare_dns_zone_transfers_peers} Data Source.
 func NewDataCloudflareDnsZoneTransfersPeers_Override(d DataCloudflareDnsZoneTransfersPeers, scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersPeersConfig) {
 	_init_.Initialize()
 
@@ -769,6 +778,24 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeers) ToTerraform() interface{
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersPeers) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

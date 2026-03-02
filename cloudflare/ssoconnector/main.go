@@ -72,6 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useFedrampLanguage", GoGetter: "UseFedrampLanguage"},
 			_jsii_.MemberProperty{JsiiProperty: "useFedrampLanguageInput", GoGetter: "UseFedrampLanguageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verification", GoGetter: "Verification"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SsoConnector{}

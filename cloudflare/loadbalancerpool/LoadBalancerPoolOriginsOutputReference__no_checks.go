@@ -67,6 +67,10 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetDisabledAtParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

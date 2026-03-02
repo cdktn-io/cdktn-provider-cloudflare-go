@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck cloudflare_healthcheck}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/healthcheck cloudflare_healthcheck}.
 type Healthcheck interface {
 	cdktn.TerraformResource
 	Address() *string
@@ -176,6 +176,15 @@ type Healthcheck interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Healthcheck
@@ -674,7 +683,7 @@ func (j *jsiiProxy_Healthcheck) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
 func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckConfig) Healthcheck {
 	_init_.Initialize()
 
@@ -692,7 +701,7 @@ func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
 func NewHealthcheck_Override(h Healthcheck, scope constructs.Construct, id *string, config *HealthcheckConfig) {
 	_init_.Initialize()
 
@@ -1446,6 +1455,24 @@ func (h *jsiiProxy_Healthcheck) ToTerraform() interface{} {
 		h,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_Healthcheck) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		h,
+		"with",
+		args,
 		&returns,
 	)
 

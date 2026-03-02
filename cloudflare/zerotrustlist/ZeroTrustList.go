@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
 type ZeroTrustList interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -139,6 +139,15 @@ type ZeroTrustList interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ZeroTrustList
@@ -447,7 +456,7 @@ func (j *jsiiProxy_ZeroTrustList) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_list cloudflare_zero_trust_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_list cloudflare_zero_trust_list} Resource.
 func NewZeroTrustList(scope constructs.Construct, id *string, config *ZeroTrustListConfig) ZeroTrustList {
 	_init_.Initialize()
 
@@ -465,7 +474,7 @@ func NewZeroTrustList(scope constructs.Construct, id *string, config *ZeroTrustL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_list cloudflare_zero_trust_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_list cloudflare_zero_trust_list} Resource.
 func NewZeroTrustList_Override(z ZeroTrustList, scope constructs.Construct, id *string, config *ZeroTrustListConfig) {
 	_init_.Initialize()
 
@@ -1048,6 +1057,24 @@ func (z *jsiiProxy_ZeroTrustList) ToTerraform() interface{} {
 		z,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustList) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		z,
+		"with",
+		args,
 		&returns,
 	)
 

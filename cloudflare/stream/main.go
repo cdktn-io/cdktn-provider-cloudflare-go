@@ -99,6 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadExpiry", GoGetter: "UploadExpiry"},
 			_jsii_.MemberProperty{JsiiProperty: "uploadExpiryInput", GoGetter: "UploadExpiryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "watermark", GoGetter: "Watermark"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Stream{}

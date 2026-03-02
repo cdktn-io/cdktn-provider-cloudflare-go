@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_pack cloudflare_certificate_pack}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_pack cloudflare_certificate_pack}.
 type DataCloudflareCertificatePack interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -29,6 +29,7 @@ type DataCloudflareCertificatePack interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DcvDelegationRecords() DataCloudflareCertificatePackDcvDelegationRecordsList
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -116,6 +117,15 @@ type DataCloudflareCertificatePack interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareCertificatePack
@@ -198,6 +208,16 @@ func (j *jsiiProxy_DataCloudflareCertificatePack) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePack) DcvDelegationRecords() DataCloudflareCertificatePackDcvDelegationRecordsList {
+	var returns DataCloudflareCertificatePackDcvDelegationRecordsList
+	_jsii_.Get(
+		j,
+		"dcvDelegationRecords",
 		&returns,
 	)
 	return returns
@@ -444,7 +464,7 @@ func (j *jsiiProxy_DataCloudflareCertificatePack) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_pack cloudflare_certificate_pack} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_pack cloudflare_certificate_pack} Data Source.
 func NewDataCloudflareCertificatePack(scope constructs.Construct, id *string, config *DataCloudflareCertificatePackConfig) DataCloudflareCertificatePack {
 	_init_.Initialize()
 
@@ -462,7 +482,7 @@ func NewDataCloudflareCertificatePack(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_pack cloudflare_certificate_pack} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_pack cloudflare_certificate_pack} Data Source.
 func NewDataCloudflareCertificatePack_Override(d DataCloudflareCertificatePack, scope constructs.Construct, id *string, config *DataCloudflareCertificatePackConfig) {
 	_init_.Initialize()
 
@@ -933,6 +953,24 @@ func (d *jsiiProxy_DataCloudflareCertificatePack) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareCertificatePack) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

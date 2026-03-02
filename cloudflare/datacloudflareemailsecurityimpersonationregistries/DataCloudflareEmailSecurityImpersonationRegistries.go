@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries}.
 type DataCloudflareEmailSecurityImpersonationRegistries interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -117,6 +117,15 @@ type DataCloudflareEmailSecurityImpersonationRegistries interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareEmailSecurityImpersonationRegistries
@@ -395,7 +404,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistries) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries} Data Source.
 func NewDataCloudflareEmailSecurityImpersonationRegistries(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityImpersonationRegistriesConfig) DataCloudflareEmailSecurityImpersonationRegistries {
 	_init_.Initialize()
 
@@ -413,7 +422,7 @@ func NewDataCloudflareEmailSecurityImpersonationRegistries(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries} Data Source.
 func NewDataCloudflareEmailSecurityImpersonationRegistries_Override(d DataCloudflareEmailSecurityImpersonationRegistries, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityImpersonationRegistriesConfig) {
 	_init_.Initialize()
 
@@ -941,6 +950,24 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistries) ToTerrafo
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistries) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

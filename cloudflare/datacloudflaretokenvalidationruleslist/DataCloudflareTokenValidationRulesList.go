@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list}.
 type DataCloudflareTokenValidationRulesList interface {
 	cdktn.TerraformDataSource
 	Action() *string
@@ -129,6 +129,15 @@ type DataCloudflareTokenValidationRulesList interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareTokenValidationRulesList
@@ -467,7 +476,7 @@ func (j *jsiiProxy_DataCloudflareTokenValidationRulesList) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list} Data Source.
 func NewDataCloudflareTokenValidationRulesList(scope constructs.Construct, id *string, config *DataCloudflareTokenValidationRulesListConfig) DataCloudflareTokenValidationRulesList {
 	_init_.Initialize()
 
@@ -485,7 +494,7 @@ func NewDataCloudflareTokenValidationRulesList(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/token_validation_rules_list cloudflare_token_validation_rules_list} Data Source.
 func NewDataCloudflareTokenValidationRulesList_Override(d DataCloudflareTokenValidationRulesList, scope constructs.Construct, id *string, config *DataCloudflareTokenValidationRulesListConfig) {
 	_init_.Initialize()
 
@@ -1070,6 +1079,24 @@ func (d *jsiiProxy_DataCloudflareTokenValidationRulesList) ToTerraform() interfa
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareTokenValidationRulesList) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

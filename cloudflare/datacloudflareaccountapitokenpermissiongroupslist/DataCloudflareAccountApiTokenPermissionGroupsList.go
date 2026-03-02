@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list}.
 type DataCloudflareAccountApiTokenPermissionGroupsList interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -109,6 +109,15 @@ type DataCloudflareAccountApiTokenPermissionGroupsList interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareAccountApiTokenPermissionGroupsList
@@ -347,7 +356,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsList) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroupsList(scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsListConfig) DataCloudflareAccountApiTokenPermissionGroupsList {
 	_init_.Initialize()
 
@@ -365,7 +374,7 @@ func NewDataCloudflareAccountApiTokenPermissionGroupsList(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_api_token_permission_groups_list cloudflare_account_api_token_permission_groups_list} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroupsList_Override(d DataCloudflareAccountApiTokenPermissionGroupsList, scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsListConfig) {
 	_init_.Initialize()
 
@@ -855,6 +864,24 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsList) ToTerrafor
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsList) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

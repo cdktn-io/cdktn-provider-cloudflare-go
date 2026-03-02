@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
 type MagicNetworkMonitoringRule interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -150,6 +150,15 @@ type MagicNetworkMonitoringRule interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MagicNetworkMonitoringRule
@@ -518,7 +527,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) ZscoreTarget() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) MagicNetworkMonitoringRule {
 	_init_.Initialize()
 
@@ -536,7 +545,7 @@ func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule_Override(m MagicNetworkMonitoringRule, scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) {
 	_init_.Initialize()
 
@@ -1165,6 +1174,24 @@ func (m *jsiiProxy_MagicNetworkMonitoringRule) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MagicNetworkMonitoringRule) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

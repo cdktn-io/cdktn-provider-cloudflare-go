@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
 type WorkersDeployment interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -138,6 +138,15 @@ type WorkersDeployment interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for WorkersDeployment
@@ -446,7 +455,7 @@ func (j *jsiiProxy_WorkersDeployment) VersionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment(scope constructs.Construct, id *string, config *WorkersDeploymentConfig) WorkersDeployment {
 	_init_.Initialize()
 
@@ -464,7 +473,7 @@ func NewWorkersDeployment(scope constructs.Construct, id *string, config *Worker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment_Override(w WorkersDeployment, scope constructs.Construct, id *string, config *WorkersDeploymentConfig) {
 	_init_.Initialize()
 
@@ -1039,6 +1048,24 @@ func (w *jsiiProxy_WorkersDeployment) ToTerraform() interface{} {
 		w,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkersDeployment) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		w,
+		"with",
+		args,
 		&returns,
 	)
 

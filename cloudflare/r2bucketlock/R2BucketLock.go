@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
 type R2BucketLock interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -132,6 +132,15 @@ type R2BucketLock interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for R2BucketLock
@@ -380,7 +389,7 @@ func (j *jsiiProxy_R2BucketLock) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
 func NewR2BucketLock(scope constructs.Construct, id *string, config *R2BucketLockConfig) R2BucketLock {
 	_init_.Initialize()
 
@@ -398,7 +407,7 @@ func NewR2BucketLock(scope constructs.Construct, id *string, config *R2BucketLoc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
 func NewR2BucketLock_Override(r R2BucketLock, scope constructs.Construct, id *string, config *R2BucketLockConfig) {
 	_init_.Initialize()
 
@@ -970,6 +979,24 @@ func (r *jsiiProxy_R2BucketLock) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_R2BucketLock) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

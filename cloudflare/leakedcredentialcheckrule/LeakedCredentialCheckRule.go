@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
 type LeakedCredentialCheckRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -130,6 +130,15 @@ type LeakedCredentialCheckRule interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for LeakedCredentialCheckRule
@@ -368,7 +377,7 @@ func (j *jsiiProxy_LeakedCredentialCheckRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
 func NewLeakedCredentialCheckRule(scope constructs.Construct, id *string, config *LeakedCredentialCheckRuleConfig) LeakedCredentialCheckRule {
 	_init_.Initialize()
 
@@ -386,7 +395,7 @@ func NewLeakedCredentialCheckRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
 func NewLeakedCredentialCheckRule_Override(l LeakedCredentialCheckRule, scope constructs.Construct, id *string, config *LeakedCredentialCheckRuleConfig) {
 	_init_.Initialize()
 
@@ -947,6 +956,24 @@ func (l *jsiiProxy_LeakedCredentialCheckRule) ToTerraform() interface{} {
 		l,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LeakedCredentialCheckRule) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		l,
+		"with",
+		args,
 		&returns,
 	)
 

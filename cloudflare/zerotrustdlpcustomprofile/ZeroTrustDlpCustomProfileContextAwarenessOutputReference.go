@@ -70,6 +70,8 @@ type ZeroTrustDlpCustomProfileContextAwarenessOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSkip(value *ZeroTrustDlpCustomProfileContextAwarenessSkip)
+	ResetEnabled()
+	ResetSkip()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -483,6 +485,22 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) Put
 		z,
 		"putSkip",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) ResetSkip() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSkip",
+		nil, // no parameters
 	)
 }
 

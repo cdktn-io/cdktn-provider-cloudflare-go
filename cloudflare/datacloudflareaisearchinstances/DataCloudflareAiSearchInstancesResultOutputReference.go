@@ -13,13 +13,10 @@ import (
 
 type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	cdktn.ComplexObject
-	AccountId() *string
-	AccountTag() *string
 	AiGatewayId() *string
 	AisearchModel() *string
 	Cache() cdktn.IResolvable
 	CacheThreshold() *string
-	Chunk() cdktn.IResolvable
 	ChunkOverlap() *float64
 	ChunkSize() *float64
 	// the index of the complex object in a list.
@@ -42,12 +39,11 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	CustomMetadata() DataCloudflareAiSearchInstancesResultCustomMetadataList
 	EmbeddingModel() *string
 	Enable() cdktn.IResolvable
-	EngineVersion() *float64
 	// Experimental.
 	Fqn() *string
+	FusionMethod() *string
 	HybridSearchEnabled() cdktn.IResolvable
 	Id() *string
-	InternalId() *string
 	InternalValue() *DataCloudflareAiSearchInstancesResult
 	SetInternalValue(val *DataCloudflareAiSearchInstancesResult)
 	LastActivity() *string
@@ -60,17 +56,13 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	PublicEndpointParams() DataCloudflareAiSearchInstancesResultPublicEndpointParamsOutputReference
 	Reranking() cdktn.IResolvable
 	RerankingModel() *string
+	RetrievalOptions() DataCloudflareAiSearchInstancesResultRetrievalOptionsOutputReference
 	RewriteModel() *string
 	RewriteQuery() cdktn.IResolvable
 	ScoreThreshold() *float64
 	Source() *string
 	SourceParams() DataCloudflareAiSearchInstancesResultSourceParamsOutputReference
 	Status() *string
-	Summarization() cdktn.IResolvable
-	SummarizationModel() *string
-	SystemPromptAisearch() *string
-	SystemPromptIndexSummarization() *string
-	SystemPromptRewriteQuery() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -81,7 +73,6 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenId() *string
 	Type() *string
-	VectorizeActiveNamespace() *string
 	VectorizeName() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -122,26 +113,6 @@ type jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference struct {
 	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) AccountId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) AccountTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountTag",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) AiGatewayId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -177,16 +148,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) CacheTh
 	_jsii_.Get(
 		j,
 		"cacheThreshold",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Chunk() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"chunk",
 		&returns,
 	)
 	return returns
@@ -292,21 +253,21 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Enable(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) EngineVersion() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"engineVersion",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) FusionMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fusionMethod",
 		&returns,
 	)
 	return returns
@@ -327,16 +288,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Id() *s
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) InternalId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"internalId",
 		&returns,
 	)
 	return returns
@@ -452,6 +403,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Reranki
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) RetrievalOptions() DataCloudflareAiSearchInstancesResultRetrievalOptionsOutputReference {
+	var returns DataCloudflareAiSearchInstancesResultRetrievalOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"retrievalOptions",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) RewriteModel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -512,56 +473,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Status(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Summarization() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"summarization",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SummarizationModel() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"summarizationModel",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SystemPromptAisearch() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"systemPromptAisearch",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SystemPromptIndexSummarization() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"systemPromptIndexSummarization",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SystemPromptRewriteQuery() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"systemPromptRewriteQuery",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -597,16 +508,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Type() 
 	_jsii_.Get(
 		j,
 		"type",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) VectorizeActiveNamespace() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vectorizeActiveNamespace",
 		&returns,
 	)
 	return returns

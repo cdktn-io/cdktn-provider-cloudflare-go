@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
 type DataCloudflareZeroTrustDlpPredefinedEntry interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -33,6 +33,7 @@ type DataCloudflareZeroTrustDlpPredefinedEntry interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	Enabled() cdktn.IResolvable
 	EntryId() *string
 	SetEntryId(val *string)
@@ -114,6 +115,15 @@ type DataCloudflareZeroTrustDlpPredefinedEntry interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustDlpPredefinedEntry
@@ -206,6 +216,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) DependsOn() *[]*st
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -452,7 +472,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) WordList() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
 func NewDataCloudflareZeroTrustDlpPredefinedEntry(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpPredefinedEntryConfig) DataCloudflareZeroTrustDlpPredefinedEntry {
 	_init_.Initialize()
 
@@ -470,7 +490,7 @@ func NewDataCloudflareZeroTrustDlpPredefinedEntry(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
 func NewDataCloudflareZeroTrustDlpPredefinedEntry_Override(d DataCloudflareZeroTrustDlpPredefinedEntry, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpPredefinedEntryConfig) {
 	_init_.Initialize()
 
@@ -914,6 +934,24 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) ToTerraform() inte
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

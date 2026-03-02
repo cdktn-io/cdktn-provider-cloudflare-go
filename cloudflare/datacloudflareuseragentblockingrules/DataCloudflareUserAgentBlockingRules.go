@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
 type DataCloudflareUserAgentBlockingRules interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -113,6 +113,15 @@ type DataCloudflareUserAgentBlockingRules interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareUserAgentBlockingRules
@@ -371,7 +380,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
 func NewDataCloudflareUserAgentBlockingRules(scope constructs.Construct, id *string, config *DataCloudflareUserAgentBlockingRulesConfig) DataCloudflareUserAgentBlockingRules {
 	_init_.Initialize()
 
@@ -389,7 +398,7 @@ func NewDataCloudflareUserAgentBlockingRules(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
 func NewDataCloudflareUserAgentBlockingRules_Override(d DataCloudflareUserAgentBlockingRules, scope constructs.Construct, id *string, config *DataCloudflareUserAgentBlockingRulesConfig) {
 	_init_.Initialize()
 
@@ -898,6 +907,24 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ToTerraform() interface
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

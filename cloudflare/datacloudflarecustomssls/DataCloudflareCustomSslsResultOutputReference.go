@@ -40,7 +40,7 @@ type DataCloudflareCustomSslsResultOutputReference interface {
 	Issuer() *string
 	KeylessServer() DataCloudflareCustomSslsResultKeylessServerOutputReference
 	ModifiedOn() *string
-	Policy() *string
+	PolicyRestrictions() *string
 	Priority() *float64
 	Signature() *string
 	Status() *string
@@ -223,11 +223,11 @@ func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) ModifiedOn() *
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) Policy() *string {
+func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) PolicyRestrictions() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"policy",
+		"policyRestrictions",
 		&returns,
 	)
 	return returns

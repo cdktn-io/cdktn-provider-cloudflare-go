@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
 type StreamLiveInput interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -41,6 +41,9 @@ type StreamLiveInput interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -134,6 +137,7 @@ type StreamLiveInput interface {
 	PutRecording(value *StreamLiveInputRecording)
 	ResetDefaultCreator()
 	ResetDeleteRecordingAfterDays()
+	ResetEnabled()
 	ResetLiveInputIdentifier()
 	ResetMeta()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -151,6 +155,15 @@ type StreamLiveInput interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for StreamLiveInput
@@ -273,6 +286,26 @@ func (j *jsiiProxy_StreamLiveInput) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamLiveInput) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamLiveInput) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -539,7 +572,7 @@ func (j *jsiiProxy_StreamLiveInput) WebRtcPlayback() StreamLiveInputWebRtcPlayba
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLiveInputConfig) StreamLiveInput {
 	_init_.Initialize()
 
@@ -557,7 +590,7 @@ func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput_Override(s StreamLiveInput, scope constructs.Construct, id *string, config *StreamLiveInputConfig) {
 	_init_.Initialize()
 
@@ -627,6 +660,17 @@ func (j *jsiiProxy_StreamLiveInput)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StreamLiveInput)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -1071,6 +1115,14 @@ func (s *jsiiProxy_StreamLiveInput) ResetDeleteRecordingAfterDays() {
 	)
 }
 
+func (s *jsiiProxy_StreamLiveInput) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StreamLiveInput) ResetLiveInputIdentifier() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1175,6 +1227,24 @@ func (s *jsiiProxy_StreamLiveInput) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StreamLiveInput) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

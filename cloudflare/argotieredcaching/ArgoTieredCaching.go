@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 type ArgoTieredCaching interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -127,6 +127,15 @@ type ArgoTieredCaching interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ArgoTieredCaching
@@ -365,7 +374,7 @@ func (j *jsiiProxy_ArgoTieredCaching) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
 func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTieredCachingConfig) ArgoTieredCaching {
 	_init_.Initialize()
 
@@ -383,7 +392,7 @@ func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
 func NewArgoTieredCaching_Override(a ArgoTieredCaching, scope constructs.Construct, id *string, config *ArgoTieredCachingConfig) {
 	_init_.Initialize()
 
@@ -917,6 +926,24 @@ func (a *jsiiProxy_ArgoTieredCaching) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ArgoTieredCaching) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

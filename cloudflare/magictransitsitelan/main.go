@@ -87,6 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanTag", GoGetter: "VlanTag"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanTagInput", GoGetter: "VlanTagInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLan{}

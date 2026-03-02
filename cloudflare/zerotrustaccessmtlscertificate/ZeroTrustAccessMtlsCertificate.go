@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
 type ZeroTrustAccessMtlsCertificate interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -139,6 +139,15 @@ type ZeroTrustAccessMtlsCertificate interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ZeroTrustAccessMtlsCertificate
@@ -437,7 +446,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
 func NewZeroTrustAccessMtlsCertificate(scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsCertificateConfig) ZeroTrustAccessMtlsCertificate {
 	_init_.Initialize()
 
@@ -455,7 +464,7 @@ func NewZeroTrustAccessMtlsCertificate(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
 func NewZeroTrustAccessMtlsCertificate_Override(z ZeroTrustAccessMtlsCertificate, scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsCertificateConfig) {
 	_init_.Initialize()
 
@@ -1046,6 +1055,24 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsCertificate) ToTerraform() interface{} {
 		z,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustAccessMtlsCertificate) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		z,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -28,6 +28,9 @@ type AiSearchInstancePublicEndpointParamsMcpOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Disabled() interface{}
 	SetDisabled(val interface{})
 	DisabledInput() interface{}
@@ -67,6 +70,7 @@ type AiSearchInstancePublicEndpointParamsMcpOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDescription()
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (a *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDescription",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference) ResetDisabled() {

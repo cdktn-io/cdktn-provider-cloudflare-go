@@ -72,6 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadDetails", GoGetter: "UploadDetails"},
 			_jsii_.MemberProperty{JsiiProperty: "validationEnabled", GoGetter: "ValidationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "validationEnabledInput", GoGetter: "ValidationEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},

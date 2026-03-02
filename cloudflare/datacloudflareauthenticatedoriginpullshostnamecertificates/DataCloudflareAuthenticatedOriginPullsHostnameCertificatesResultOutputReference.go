@@ -13,11 +13,7 @@ import (
 
 type DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference interface {
 	cdktn.ComplexObject
-	CertId() *string
 	Certificate() *string
-	CertStatus() *string
-	CertUpdatedAt() *string
-	CertUploadedOn() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,22 +24,18 @@ type DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputRefer
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() cdktn.IResolvable
 	ExpiresOn() *string
 	// Experimental.
 	Fqn() *string
-	Hostname() *string
 	Id() *string
 	InternalValue() *DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResult
 	SetInternalValue(val *DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResult)
 	Issuer() *string
-	PrivateKey() *string
 	SerialNumber() *string
 	Signature() *string
 	Status() *string
@@ -55,7 +47,7 @@ type DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputRefer
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
-	UpdatedAt() *string
+	UploadedOn() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -95,51 +87,11 @@ type jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultO
 	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) CertId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"certId",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) Certificate() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"certificate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) CertStatus() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"certStatus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) CertUpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"certUpdatedAt",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) CertUploadedOn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"certUploadedOn",
 		&returns,
 	)
 	return returns
@@ -165,31 +117,11 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesRes
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) Enabled() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"enabled",
 		&returns,
 	)
 	return returns
@@ -210,16 +142,6 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesRes
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) Hostname() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"hostname",
 		&returns,
 	)
 	return returns
@@ -250,16 +172,6 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesRes
 	_jsii_.Get(
 		j,
 		"issuer",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) PrivateKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"privateKey",
 		&returns,
 	)
 	return returns
@@ -315,11 +227,11 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesRes
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) UpdatedAt() *string {
+func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference) UploadedOn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"updatedAt",
+		"uploadedOn",
 		&returns,
 	)
 	return returns

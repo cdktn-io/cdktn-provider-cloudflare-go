@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
 type KeylessCertificate interface {
 	cdktn.TerraformResource
 	BundleMethod() *string
@@ -152,6 +152,15 @@ type KeylessCertificate interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for KeylessCertificate
@@ -530,7 +539,7 @@ func (j *jsiiProxy_KeylessCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
 func NewKeylessCertificate(scope constructs.Construct, id *string, config *KeylessCertificateConfig) KeylessCertificate {
 	_init_.Initialize()
 
@@ -548,7 +557,7 @@ func NewKeylessCertificate(scope constructs.Construct, id *string, config *Keyle
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
 func NewKeylessCertificate_Override(k KeylessCertificate, scope constructs.Construct, id *string, config *KeylessCertificateConfig) {
 	_init_.Initialize()
 
@@ -1188,6 +1197,24 @@ func (k *jsiiProxy_KeylessCertificate) ToTerraform() interface{} {
 		k,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KeylessCertificate) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		k,
+		"with",
+		args,
 		&returns,
 	)
 

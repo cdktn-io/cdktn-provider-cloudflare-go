@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
 type DataCloudflareZeroTrustAccessPolicy interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -23,6 +23,7 @@ type DataCloudflareZeroTrustAccessPolicy interface {
 	ApprovalRequired() cdktn.IResolvable
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	ConnectionRules() DataCloudflareZeroTrustAccessPolicyConnectionRulesOutputReference
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -51,6 +52,7 @@ type DataCloudflareZeroTrustAccessPolicy interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	MfaConfig() DataCloudflareZeroTrustAccessPolicyMfaConfigOutputReference
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -115,6 +117,15 @@ type DataCloudflareZeroTrustAccessPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustAccessPolicy
@@ -177,6 +188,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicy) CdktfStack() cdktn.Terra
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicy) ConnectionRules() DataCloudflareZeroTrustAccessPolicyConnectionRulesOutputReference {
+	var returns DataCloudflareZeroTrustAccessPolicyConnectionRulesOutputReference
+	_jsii_.Get(
+		j,
+		"connectionRules",
 		&returns,
 	)
 	return returns
@@ -307,6 +328,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicy) Lifecycle() *cdktn.Terra
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicy) MfaConfig() DataCloudflareZeroTrustAccessPolicyMfaConfigOutputReference {
+	var returns DataCloudflareZeroTrustAccessPolicyMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
 		&returns,
 	)
 	return returns
@@ -463,7 +494,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicy) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Data Source.
 func NewDataCloudflareZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessPolicyConfig) DataCloudflareZeroTrustAccessPolicy {
 	_init_.Initialize()
 
@@ -481,7 +512,7 @@ func NewDataCloudflareZeroTrustAccessPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Data Source.
 func NewDataCloudflareZeroTrustAccessPolicy_Override(d DataCloudflareZeroTrustAccessPolicy, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -925,6 +956,24 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessPolicy) ToTerraform() interface{
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

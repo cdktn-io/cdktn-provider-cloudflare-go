@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}.
 type R2ManagedDomain interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -133,6 +133,15 @@ type R2ManagedDomain interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for R2ManagedDomain
@@ -401,7 +410,7 @@ func (j *jsiiProxy_R2ManagedDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource.
 func NewR2ManagedDomain(scope constructs.Construct, id *string, config *R2ManagedDomainConfig) R2ManagedDomain {
 	_init_.Initialize()
 
@@ -419,7 +428,7 @@ func NewR2ManagedDomain(scope constructs.Construct, id *string, config *R2Manage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource.
 func NewR2ManagedDomain_Override(r R2ManagedDomain, scope constructs.Construct, id *string, config *R2ManagedDomainConfig) {
 	_init_.Initialize()
 
@@ -983,6 +992,24 @@ func (r *jsiiProxy_R2ManagedDomain) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_R2ManagedDomain) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

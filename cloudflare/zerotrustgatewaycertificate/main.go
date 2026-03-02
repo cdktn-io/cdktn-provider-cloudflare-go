@@ -75,6 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadedOn", GoGetter: "UploadedOn"},
 			_jsii_.MemberProperty{JsiiProperty: "validityPeriodDays", GoGetter: "ValidityPeriodDays"},
 			_jsii_.MemberProperty{JsiiProperty: "validityPeriodDaysInput", GoGetter: "ValidityPeriodDaysInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustGatewayCertificate{}

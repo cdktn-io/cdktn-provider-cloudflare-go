@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
 type LeakedCredentialCheck interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -125,6 +125,15 @@ type LeakedCredentialCheck interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for LeakedCredentialCheck
@@ -333,7 +342,7 @@ func (j *jsiiProxy_LeakedCredentialCheck) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
 func NewLeakedCredentialCheck(scope constructs.Construct, id *string, config *LeakedCredentialCheckConfig) LeakedCredentialCheck {
 	_init_.Initialize()
 
@@ -351,7 +360,7 @@ func NewLeakedCredentialCheck(scope constructs.Construct, id *string, config *Le
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
 func NewLeakedCredentialCheck_Override(l LeakedCredentialCheck, scope constructs.Construct, id *string, config *LeakedCredentialCheckConfig) {
 	_init_.Initialize()
 
@@ -893,6 +902,24 @@ func (l *jsiiProxy_LeakedCredentialCheck) ToTerraform() interface{} {
 		l,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LeakedCredentialCheck) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		l,
+		"with",
+		args,
 		&returns,
 	)
 

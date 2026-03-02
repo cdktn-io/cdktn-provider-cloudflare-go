@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
 type WorkersScriptSubdomain interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -132,6 +132,15 @@ type WorkersScriptSubdomain interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for WorkersScriptSubdomain
@@ -390,7 +399,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
 func NewWorkersScriptSubdomain(scope constructs.Construct, id *string, config *WorkersScriptSubdomainConfig) WorkersScriptSubdomain {
 	_init_.Initialize()
 
@@ -408,7 +417,7 @@ func NewWorkersScriptSubdomain(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
 func NewWorkersScriptSubdomain_Override(w WorkersScriptSubdomain, scope constructs.Construct, id *string, config *WorkersScriptSubdomainConfig) {
 	_init_.Initialize()
 
@@ -972,6 +981,24 @@ func (w *jsiiProxy_WorkersScriptSubdomain) ToTerraform() interface{} {
 		w,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkersScriptSubdomain) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		w,
+		"with",
+		args,
 		&returns,
 	)
 

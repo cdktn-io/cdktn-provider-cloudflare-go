@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_subscription cloudflare_zone_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_subscription cloudflare_zone_subscription}.
 type DataCloudflareZoneSubscription interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -104,6 +104,15 @@ type DataCloudflareZoneSubscription interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareZoneSubscription
@@ -352,7 +361,7 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_subscription cloudflare_zone_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_subscription cloudflare_zone_subscription} Data Source.
 func NewDataCloudflareZoneSubscription(scope constructs.Construct, id *string, config *DataCloudflareZoneSubscriptionConfig) DataCloudflareZoneSubscription {
 	_init_.Initialize()
 
@@ -370,7 +379,7 @@ func NewDataCloudflareZoneSubscription(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_subscription cloudflare_zone_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_subscription cloudflare_zone_subscription} Data Source.
 func NewDataCloudflareZoneSubscription_Override(d DataCloudflareZoneSubscription, scope constructs.Construct, id *string, config *DataCloudflareZoneSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -803,6 +812,24 @@ func (d *jsiiProxy_DataCloudflareZoneSubscription) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareZoneSubscription) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

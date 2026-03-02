@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/worker_version cloudflare_worker_version}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version cloudflare_worker_version}.
 type WorkerVersion interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -174,6 +174,15 @@ type WorkerVersion interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for WorkerVersion
@@ -662,7 +671,7 @@ func (j *jsiiProxy_WorkerVersion) WorkerIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVersionConfig) WorkerVersion {
 	_init_.Initialize()
 
@@ -680,7 +689,7 @@ func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVers
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion_Override(w WorkerVersion, scope constructs.Construct, id *string, config *WorkerVersionConfig) {
 	_init_.Initialize()
 
@@ -1423,6 +1432,24 @@ func (w *jsiiProxy_WorkerVersion) ToTerraform() interface{} {
 		w,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WorkerVersion) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		w,
+		"with",
+		args,
 		&returns,
 	)
 

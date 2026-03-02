@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms cloudflare_managed_transforms}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/managed_transforms cloudflare_managed_transforms}.
 type ManagedTransforms interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -128,6 +128,15 @@ type ManagedTransforms interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ManagedTransforms
@@ -366,7 +375,7 @@ func (j *jsiiProxy_ManagedTransforms) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
 func NewManagedTransforms(scope constructs.Construct, id *string, config *ManagedTransformsConfig) ManagedTransforms {
 	_init_.Initialize()
 
@@ -384,7 +393,7 @@ func NewManagedTransforms(scope constructs.Construct, id *string, config *Manage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
 func NewManagedTransforms_Override(m ManagedTransforms, scope constructs.Construct, id *string, config *ManagedTransformsConfig) {
 	_init_.Initialize()
 
@@ -929,6 +938,24 @@ func (m *jsiiProxy_ManagedTransforms) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_ManagedTransforms) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

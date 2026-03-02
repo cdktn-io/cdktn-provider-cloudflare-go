@@ -61,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validationData", GoGetter: "ValidationData"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationData", GoGetter: "VerificationData"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneTag", GoGetter: "ZoneTag"},
 		},
 		func() interface{} {

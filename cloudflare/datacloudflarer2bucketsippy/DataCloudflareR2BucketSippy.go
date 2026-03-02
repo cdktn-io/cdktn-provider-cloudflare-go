@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
 type DataCloudflareR2BucketSippy interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -102,6 +102,15 @@ type DataCloudflareR2BucketSippy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareR2BucketSippy
@@ -320,7 +329,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketSippy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Data Source.
 func NewDataCloudflareR2BucketSippy(scope constructs.Construct, id *string, config *DataCloudflareR2BucketSippyConfig) DataCloudflareR2BucketSippy {
 	_init_.Initialize()
 
@@ -338,7 +347,7 @@ func NewDataCloudflareR2BucketSippy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Data Source.
 func NewDataCloudflareR2BucketSippy_Override(d DataCloudflareR2BucketSippy, scope constructs.Construct, id *string, config *DataCloudflareR2BucketSippyConfig) {
 	_init_.Initialize()
 
@@ -782,6 +791,24 @@ func (d *jsiiProxy_DataCloudflareR2BucketSippy) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareR2BucketSippy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

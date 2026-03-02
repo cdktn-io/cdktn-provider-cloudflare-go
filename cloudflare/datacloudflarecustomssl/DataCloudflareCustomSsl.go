@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
 type DataCloudflareCustomSsl interface {
 	cdktn.TerraformDataSource
 	BundleMethod() *string
@@ -54,7 +54,7 @@ type DataCloudflareCustomSsl interface {
 	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
-	Policy() *string
+	PolicyRestrictions() *string
 	Priority() *float64
 	// Experimental.
 	Provider() cdktn.TerraformProvider
@@ -117,6 +117,15 @@ type DataCloudflareCustomSsl interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareCustomSsl
@@ -334,11 +343,11 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCustomSsl) Policy() *string {
+func (j *jsiiProxy_DataCloudflareCustomSsl) PolicyRestrictions() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"policy",
+		"policyRestrictions",
 		&returns,
 	)
 	return returns
@@ -455,7 +464,7 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) DataCloudflareCustomSsl {
 	_init_.Initialize()
 
@@ -473,7 +482,7 @@ func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl_Override(d DataCloudflareCustomSsl, scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) {
 	_init_.Initialize()
 
@@ -944,6 +953,24 @@ func (d *jsiiProxy_DataCloudflareCustomSsl) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareCustomSsl) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

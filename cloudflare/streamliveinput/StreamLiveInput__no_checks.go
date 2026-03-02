@@ -115,6 +115,10 @@ func (j *jsiiProxy_StreamLiveInput) validateSetDeleteRecordingAfterDaysParameter
 	return nil
 }
 
+func (j *jsiiProxy_StreamLiveInput) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamLiveInput) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

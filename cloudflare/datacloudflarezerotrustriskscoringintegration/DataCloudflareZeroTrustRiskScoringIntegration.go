@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration}.
 type DataCloudflareZeroTrustRiskScoringIntegration interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -107,6 +107,15 @@ type DataCloudflareZeroTrustRiskScoringIntegration interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustRiskScoringIntegration
@@ -375,7 +384,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegration) WellKnownUrl()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Data Source.
 func NewDataCloudflareZeroTrustRiskScoringIntegration(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustRiskScoringIntegrationConfig) DataCloudflareZeroTrustRiskScoringIntegration {
 	_init_.Initialize()
 
@@ -393,7 +402,7 @@ func NewDataCloudflareZeroTrustRiskScoringIntegration(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Data Source.
 func NewDataCloudflareZeroTrustRiskScoringIntegration_Override(d DataCloudflareZeroTrustRiskScoringIntegration, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustRiskScoringIntegrationConfig) {
 	_init_.Initialize()
 
@@ -837,6 +846,24 @@ func (d *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegration) ToTerraform() 
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegration) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

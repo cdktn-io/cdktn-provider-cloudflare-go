@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 type R2Bucket interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -138,6 +138,15 @@ type R2Bucket interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for R2Bucket
@@ -426,7 +435,7 @@ func (j *jsiiProxy_R2Bucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
 func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig) R2Bucket {
 	_init_.Initialize()
 
@@ -444,7 +453,7 @@ func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
 func NewR2Bucket_Override(r R2Bucket, scope constructs.Construct, id *string, config *R2BucketConfig) {
 	_init_.Initialize()
 
@@ -1035,6 +1044,24 @@ func (r *jsiiProxy_R2Bucket) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_R2Bucket) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

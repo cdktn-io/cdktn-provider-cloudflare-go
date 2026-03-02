@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates}.
 type DataCloudflareAuthenticatedOriginPullsCertificates interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -101,6 +101,15 @@ type DataCloudflareAuthenticatedOriginPullsCertificates interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareAuthenticatedOriginPullsCertificates
@@ -299,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificates) ZoneIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsCertificates(scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsCertificatesConfig) DataCloudflareAuthenticatedOriginPullsCertificates {
 	_init_.Initialize()
 
@@ -317,7 +326,7 @@ func NewDataCloudflareAuthenticatedOriginPullsCertificates(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsCertificates_Override(d DataCloudflareAuthenticatedOriginPullsCertificates, scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsCertificatesConfig) {
 	_init_.Initialize()
 
@@ -769,6 +778,24 @@ func (d *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificates) ToTerrafo
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificates) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

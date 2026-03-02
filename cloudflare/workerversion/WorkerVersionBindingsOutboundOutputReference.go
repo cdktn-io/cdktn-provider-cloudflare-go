@@ -32,9 +32,8 @@ type WorkerVersionBindingsOutboundOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Params() *[]*string
-	SetParams(val *[]*string)
-	ParamsInput() *[]*string
+	Params() WorkerVersionBindingsOutboundParamsList
+	ParamsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +68,7 @@ type WorkerVersionBindingsOutboundOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutParams(value interface{})
 	PutWorker(value *WorkerVersionBindingsOutboundWorker)
 	ResetParams()
 	ResetWorker()
@@ -137,8 +137,8 @@ func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) InternalValue()
 	return returns
 }
 
-func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) Params() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) Params() WorkerVersionBindingsOutboundParamsList {
+	var returns WorkerVersionBindingsOutboundParamsList
 	_jsii_.Get(
 		j,
 		"params",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) Params() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) ParamsInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) ParamsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"paramsInput",
@@ -254,17 +254,6 @@ func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference)SetParams(val *[]*string) {
-	if err := j.validateSetParamsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"params",
 		val,
 	)
 }
@@ -475,6 +464,17 @@ func (w *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) PutParams(value interface{}) {
+	if err := w.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putParams",
+		[]interface{}{value},
+	)
 }
 
 func (w *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) PutWorker(value *WorkerVersionBindingsOutboundWorker) {

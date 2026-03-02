@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv cloudflare_workers_kv}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/workers_kv cloudflare_workers_kv}.
 type DataCloudflareWorkersKv interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -104,6 +104,15 @@ type DataCloudflareWorkersKv interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareWorkersKv
@@ -332,7 +341,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKv) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv cloudflare_workers_kv} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/workers_kv cloudflare_workers_kv} Data Source.
 func NewDataCloudflareWorkersKv(scope constructs.Construct, id *string, config *DataCloudflareWorkersKvConfig) DataCloudflareWorkersKv {
 	_init_.Initialize()
 
@@ -350,7 +359,7 @@ func NewDataCloudflareWorkersKv(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/workers_kv cloudflare_workers_kv} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/workers_kv cloudflare_workers_kv} Data Source.
 func NewDataCloudflareWorkersKv_Override(d DataCloudflareWorkersKv, scope constructs.Construct, id *string, config *DataCloudflareWorkersKvConfig) {
 	_init_.Initialize()
 
@@ -805,6 +814,24 @@ func (d *jsiiProxy_DataCloudflareWorkersKv) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersKv) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

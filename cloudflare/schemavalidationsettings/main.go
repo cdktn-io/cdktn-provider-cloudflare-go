@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validationDefaultMitigationActionInput", GoGetter: "ValidationDefaultMitigationActionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "validationOverrideMitigationAction", GoGetter: "ValidationOverrideMitigationAction"},
 			_jsii_.MemberProperty{JsiiProperty: "validationOverrideMitigationActionInput", GoGetter: "ValidationOverrideMitigationActionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},

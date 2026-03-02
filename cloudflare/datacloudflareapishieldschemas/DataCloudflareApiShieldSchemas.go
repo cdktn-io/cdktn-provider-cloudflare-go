@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas}.
 type DataCloudflareApiShieldSchemas interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -109,6 +109,15 @@ type DataCloudflareApiShieldSchemas interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareApiShieldSchemas
@@ -347,7 +356,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchemas) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas} Data Source.
 func NewDataCloudflareApiShieldSchemas(scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemasConfig) DataCloudflareApiShieldSchemas {
 	_init_.Initialize()
 
@@ -365,7 +374,7 @@ func NewDataCloudflareApiShieldSchemas(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas} Data Source.
 func NewDataCloudflareApiShieldSchemas_Override(d DataCloudflareApiShieldSchemas, scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemasConfig) {
 	_init_.Initialize()
 
@@ -855,6 +864,24 @@ func (d *jsiiProxy_DataCloudflareApiShieldSchemas) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareApiShieldSchemas) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

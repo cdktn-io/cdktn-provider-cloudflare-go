@@ -12,17 +12,15 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token cloudflare_ai_search_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token cloudflare_ai_search_token}.
 type DataCloudflareAiSearchToken interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AccountTag() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	CfApiId() *string
-	CfApiKey() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -63,7 +61,6 @@ type DataCloudflareAiSearchToken interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	SyncedAt() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -110,6 +107,15 @@ type DataCloudflareAiSearchToken interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareAiSearchToken
@@ -137,16 +143,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAiSearchToken) AccountTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountTag",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAiSearchToken) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
@@ -162,16 +158,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) CfApiId() *string {
 	_jsii_.Get(
 		j,
 		"cfApiId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchToken) CfApiKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cfApiKey",
 		&returns,
 	)
 	return returns
@@ -367,16 +353,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAiSearchToken) SyncedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"syncedAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAiSearchToken) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -408,7 +384,7 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
 func NewDataCloudflareAiSearchToken(scope constructs.Construct, id *string, config *DataCloudflareAiSearchTokenConfig) DataCloudflareAiSearchToken {
 	_init_.Initialize()
 
@@ -426,7 +402,7 @@ func NewDataCloudflareAiSearchToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
 func NewDataCloudflareAiSearchToken_Override(d DataCloudflareAiSearchToken, scope constructs.Construct, id *string, config *DataCloudflareAiSearchTokenConfig) {
 	_init_.Initialize()
 
@@ -870,6 +846,24 @@ func (d *jsiiProxy_DataCloudflareAiSearchToken) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchToken) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

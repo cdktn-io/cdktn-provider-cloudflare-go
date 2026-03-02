@@ -28,6 +28,9 @@ type DataCloudflareCertificatePackFilterOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Deploy() *string
+	SetDeploy(val *string)
+	DeployInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,6 +70,7 @@ type DataCloudflareCertificatePackFilterOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDeploy()
 	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_DataCloudflareCertificatePackFilterOutputReference) CreationS
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePackFilterOutputReference) Deploy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePackFilterOutputReference) DeployInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deployInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_DataCloudflareCertificatePackFilterOutputReference)SetComplex
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCertificatePackFilterOutputReference)SetDeploy(val *string) {
+	if err := j.validateSetDeployParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploy",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (d *jsiiProxy_DataCloudflareCertificatePackFilterOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareCertificatePackFilterOutputReference) ResetDeploy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDeploy",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataCloudflareCertificatePackFilterOutputReference) ResetStatus() {

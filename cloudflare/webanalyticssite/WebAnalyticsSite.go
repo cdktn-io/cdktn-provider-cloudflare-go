@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
 type WebAnalyticsSite interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -148,6 +148,15 @@ type WebAnalyticsSite interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for WebAnalyticsSite
@@ -506,7 +515,7 @@ func (j *jsiiProxy_WebAnalyticsSite) ZoneTagInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
 func NewWebAnalyticsSite(scope constructs.Construct, id *string, config *WebAnalyticsSiteConfig) WebAnalyticsSite {
 	_init_.Initialize()
 
@@ -524,7 +533,7 @@ func NewWebAnalyticsSite(scope constructs.Construct, id *string, config *WebAnal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
 func NewWebAnalyticsSite_Override(w WebAnalyticsSite, scope constructs.Construct, id *string, config *WebAnalyticsSiteConfig) {
 	_init_.Initialize()
 
@@ -1142,6 +1151,24 @@ func (w *jsiiProxy_WebAnalyticsSite) ToTerraform() interface{} {
 		w,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WebAnalyticsSite) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		w,
+		"with",
+		args,
 		&returns,
 	)
 

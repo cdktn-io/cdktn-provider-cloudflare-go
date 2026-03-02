@@ -47,6 +47,10 @@ func (w *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) validateInterpo
 	return nil
 }
 
+func (w *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) validatePutParamsParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) validatePutWorkerParameters(value *WorkerVersionBindingsOutboundWorker) error {
 	return nil
 }
@@ -64,10 +68,6 @@ func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) validateSetComp
 }
 
 func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_WorkerVersionBindingsOutboundOutputReference) validateSetParamsParameters(val *[]*string) error {
 	return nil
 }
 

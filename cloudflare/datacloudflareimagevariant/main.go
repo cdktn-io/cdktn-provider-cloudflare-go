@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "variant", GoGetter: "Variant"},
 			_jsii_.MemberProperty{JsiiProperty: "variantId", GoGetter: "VariantId"},
 			_jsii_.MemberProperty{JsiiProperty: "variantIdInput", GoGetter: "VariantIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareImageVariant{}

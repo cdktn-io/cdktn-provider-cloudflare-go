@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "verified", GoGetter: "Verified"},
 			_jsii_.MemberProperty{JsiiProperty: "verifiedInput", GoGetter: "VerifiedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareEmailRoutingAddresses{}

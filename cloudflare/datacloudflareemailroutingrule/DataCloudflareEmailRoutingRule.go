@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule}.
 type DataCloudflareEmailRoutingRule interface {
 	cdktn.TerraformDataSource
 	Actions() DataCloudflareEmailRoutingRuleActionsList
@@ -111,6 +111,15 @@ type DataCloudflareEmailRoutingRule interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareEmailRoutingRule
@@ -389,7 +398,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule} Data Source.
 func NewDataCloudflareEmailRoutingRule(scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingRuleConfig) DataCloudflareEmailRoutingRule {
 	_init_.Initialize()
 
@@ -407,7 +416,7 @@ func NewDataCloudflareEmailRoutingRule(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule} Data Source.
 func NewDataCloudflareEmailRoutingRule_Override(d DataCloudflareEmailRoutingRule, scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingRuleConfig) {
 	_init_.Initialize()
 
@@ -878,6 +887,24 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingRule) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareEmailRoutingRule) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

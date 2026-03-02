@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service}.
 type DataCloudflareConnectivityDirectoryService interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -112,6 +112,15 @@ type DataCloudflareConnectivityDirectoryService interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareConnectivityDirectoryService
@@ -400,7 +409,7 @@ func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) UpdatedAt() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
 func NewDataCloudflareConnectivityDirectoryService(scope constructs.Construct, id *string, config *DataCloudflareConnectivityDirectoryServiceConfig) DataCloudflareConnectivityDirectoryService {
 	_init_.Initialize()
 
@@ -418,7 +427,7 @@ func NewDataCloudflareConnectivityDirectoryService(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
 func NewDataCloudflareConnectivityDirectoryService_Override(d DataCloudflareConnectivityDirectoryService, scope constructs.Construct, id *string, config *DataCloudflareConnectivityDirectoryServiceConfig) {
 	_init_.Initialize()
 
@@ -889,6 +898,24 @@ func (d *jsiiProxy_DataCloudflareConnectivityDirectoryService) ToTerraform() int
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareConnectivityDirectoryService) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

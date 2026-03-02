@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member cloudflare_account_member}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member cloudflare_account_member}.
 type AccountMember interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -138,6 +138,15 @@ type AccountMember interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AccountMember
@@ -426,7 +435,7 @@ func (j *jsiiProxy_AccountMember) User() AccountMemberUserOutputReference {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member cloudflare_account_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember(scope constructs.Construct, id *string, config *AccountMemberConfig) AccountMember {
 	_init_.Initialize()
 
@@ -444,7 +453,7 @@ func NewAccountMember(scope constructs.Construct, id *string, config *AccountMem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member cloudflare_account_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember_Override(a AccountMember, scope constructs.Construct, id *string, config *AccountMemberConfig) {
 	_init_.Initialize()
 
@@ -1035,6 +1044,24 @@ func (a *jsiiProxy_AccountMember) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AccountMember) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

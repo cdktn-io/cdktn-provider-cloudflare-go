@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules}.
 type DataCloudflareCloudConnectorRules interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -98,6 +98,15 @@ type DataCloudflareCloudConnectorRules interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareCloudConnectorRules
@@ -286,7 +295,7 @@ func (j *jsiiProxy_DataCloudflareCloudConnectorRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
 func NewDataCloudflareCloudConnectorRules(scope constructs.Construct, id *string, config *DataCloudflareCloudConnectorRulesConfig) DataCloudflareCloudConnectorRules {
 	_init_.Initialize()
 
@@ -304,7 +313,7 @@ func NewDataCloudflareCloudConnectorRules(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
 func NewDataCloudflareCloudConnectorRules_Override(d DataCloudflareCloudConnectorRules, scope constructs.Construct, id *string, config *DataCloudflareCloudConnectorRulesConfig) {
 	_init_.Initialize()
 
@@ -737,6 +746,24 @@ func (d *jsiiProxy_DataCloudflareCloudConnectorRules) ToTerraform() interface{} 
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareCloudConnectorRules) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

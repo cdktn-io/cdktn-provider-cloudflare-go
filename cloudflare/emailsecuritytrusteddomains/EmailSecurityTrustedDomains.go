@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
 type EmailSecurityTrustedDomains interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -148,6 +148,15 @@ type EmailSecurityTrustedDomains interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for EmailSecurityTrustedDomains
@@ -486,7 +495,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) EmailSecurityTrustedDomains {
 	_init_.Initialize()
 
@@ -504,7 +513,7 @@ func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains_Override(e EmailSecurityTrustedDomains, scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) {
 	_init_.Initialize()
 
@@ -1141,6 +1150,24 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) ToTerraform() interface{} {
 		e,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmailSecurityTrustedDomains) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		e,
+		"with",
+		args,
 		&returns,
 	)
 

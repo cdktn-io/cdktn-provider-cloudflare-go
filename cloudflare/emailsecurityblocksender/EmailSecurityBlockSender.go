@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
 type EmailSecurityBlockSender interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -137,6 +137,15 @@ type EmailSecurityBlockSender interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for EmailSecurityBlockSender
@@ -435,7 +444,7 @@ func (j *jsiiProxy_EmailSecurityBlockSender) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
 func NewEmailSecurityBlockSender(scope constructs.Construct, id *string, config *EmailSecurityBlockSenderConfig) EmailSecurityBlockSender {
 	_init_.Initialize()
 
@@ -453,7 +462,7 @@ func NewEmailSecurityBlockSender(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
 func NewEmailSecurityBlockSender_Override(e EmailSecurityBlockSender, scope constructs.Construct, id *string, config *EmailSecurityBlockSenderConfig) {
 	_init_.Initialize()
 
@@ -1028,6 +1037,24 @@ func (e *jsiiProxy_EmailSecurityBlockSender) ToTerraform() interface{} {
 		e,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EmailSecurityBlockSender) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		e,
+		"with",
+		args,
 		&returns,
 	)
 

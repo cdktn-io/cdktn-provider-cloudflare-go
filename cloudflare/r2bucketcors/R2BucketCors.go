@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors}.
 type R2BucketCors interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -132,6 +132,15 @@ type R2BucketCors interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for R2BucketCors
@@ -380,7 +389,7 @@ func (j *jsiiProxy_R2BucketCors) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource.
 func NewR2BucketCors(scope constructs.Construct, id *string, config *R2BucketCorsConfig) R2BucketCors {
 	_init_.Initialize()
 
@@ -398,7 +407,7 @@ func NewR2BucketCors(scope constructs.Construct, id *string, config *R2BucketCor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource.
 func NewR2BucketCors_Override(r R2BucketCors, scope constructs.Construct, id *string, config *R2BucketCorsConfig) {
 	_init_.Initialize()
 
@@ -970,6 +979,24 @@ func (r *jsiiProxy_R2BucketCors) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_R2BucketCors) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

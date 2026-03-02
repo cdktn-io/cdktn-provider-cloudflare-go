@@ -13,6 +13,8 @@ import (
 
 type DataCloudflareCustomHostnameSslValidationRecordsOutputReference interface {
 	cdktn.ComplexObject
+	Cname() *string
+	CnameTarget() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +37,7 @@ type DataCloudflareCustomHostnameSslValidationRecordsOutputReference interface {
 	HttpUrl() *string
 	InternalValue() *DataCloudflareCustomHostnameSslValidationRecords
 	SetInternalValue(val *DataCloudflareCustomHostnameSslValidationRecords)
+	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,6 +85,26 @@ type DataCloudflareCustomHostnameSslValidationRecordsOutputReference interface {
 // The jsii proxy struct for DataCloudflareCustomHostnameSslValidationRecordsOutputReference
 type jsiiProxy_DataCloudflareCustomHostnameSslValidationRecordsOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameSslValidationRecordsOutputReference) Cname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameSslValidationRecordsOutputReference) CnameTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cnameTarget",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareCustomHostnameSslValidationRecordsOutputReference) ComplexObjectIndex() interface{} {
@@ -159,6 +182,16 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameSslValidationRecordsOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameSslValidationRecordsOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns

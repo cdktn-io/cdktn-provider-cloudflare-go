@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
 type ArgoSmartRouting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -127,6 +127,15 @@ type ArgoSmartRouting interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ArgoSmartRouting
@@ -365,7 +374,7 @@ func (j *jsiiProxy_ArgoSmartRouting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource.
 func NewArgoSmartRouting(scope constructs.Construct, id *string, config *ArgoSmartRoutingConfig) ArgoSmartRouting {
 	_init_.Initialize()
 
@@ -383,7 +392,7 @@ func NewArgoSmartRouting(scope constructs.Construct, id *string, config *ArgoSma
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource.
 func NewArgoSmartRouting_Override(a ArgoSmartRouting, scope constructs.Construct, id *string, config *ArgoSmartRoutingConfig) {
 	_init_.Initialize()
 
@@ -917,6 +926,24 @@ func (a *jsiiProxy_ArgoSmartRouting) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_ArgoSmartRouting) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

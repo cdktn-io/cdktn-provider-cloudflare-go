@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_short_lived_certificates cloudflare_zero_trust_access_short_lived_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_short_lived_certificates cloudflare_zero_trust_access_short_lived_certificates}.
 type DataCloudflareZeroTrustAccessShortLivedCertificates interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -106,6 +106,15 @@ type DataCloudflareZeroTrustAccessShortLivedCertificates interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustAccessShortLivedCertificates
@@ -324,7 +333,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificates) ZoneIdIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_short_lived_certificates cloudflare_zero_trust_access_short_lived_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_short_lived_certificates cloudflare_zero_trust_access_short_lived_certificates} Data Source.
 func NewDataCloudflareZeroTrustAccessShortLivedCertificates(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessShortLivedCertificatesConfig) DataCloudflareZeroTrustAccessShortLivedCertificates {
 	_init_.Initialize()
 
@@ -342,7 +351,7 @@ func NewDataCloudflareZeroTrustAccessShortLivedCertificates(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_short_lived_certificates cloudflare_zero_trust_access_short_lived_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_short_lived_certificates cloudflare_zero_trust_access_short_lived_certificates} Data Source.
 func NewDataCloudflareZeroTrustAccessShortLivedCertificates_Override(d DataCloudflareZeroTrustAccessShortLivedCertificates, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessShortLivedCertificatesConfig) {
 	_init_.Initialize()
 
@@ -821,6 +830,24 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificates) ToTerraf
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificates) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -28,6 +28,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "deleteRecordingAfterDays", GoGetter: "DeleteRecordingAfterDays"},
 			_jsii_.MemberProperty{JsiiProperty: "deleteRecordingAfterDaysInput", GoGetter: "DeleteRecordingAfterDaysInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -62,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "recordingInput", GoGetter: "RecordingInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultCreator", GoMethod: "ResetDefaultCreator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteRecordingAfterDays", GoMethod: "ResetDeleteRecordingAfterDays"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLiveInputIdentifier", GoMethod: "ResetLiveInputIdentifier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMeta", GoMethod: "ResetMeta"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -83,6 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "webRtc", GoGetter: "WebRtc"},
 			_jsii_.MemberProperty{JsiiProperty: "webRtcPlayback", GoGetter: "WebRtcPlayback"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_StreamLiveInput{}

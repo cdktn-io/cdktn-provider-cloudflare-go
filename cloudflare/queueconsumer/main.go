@@ -53,13 +53,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSettings", GoMethod: "PutSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "queueId", GoGetter: "QueueId"},
 			_jsii_.MemberProperty{JsiiProperty: "queueIdInput", GoGetter: "QueueIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "queueName", GoGetter: "QueueName"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeadLetterQueue", GoMethod: "ResetDeadLetterQueue"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScriptName", GoMethod: "ResetScriptName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSettings", GoMethod: "ResetSettings"},
-			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
-			_jsii_.MemberProperty{JsiiProperty: "script", GoGetter: "Script"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptName", GoGetter: "ScriptName"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptNameInput", GoGetter: "ScriptNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "settings", GoGetter: "Settings"},
@@ -75,6 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_QueueConsumer{}

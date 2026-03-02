@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map cloudflare_address_map}.
 type AddressMap interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -146,6 +146,15 @@ type AddressMap interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AddressMap
@@ -484,7 +493,7 @@ func (j *jsiiProxy_AddressMap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapConfig) AddressMap {
 	_init_.Initialize()
 
@@ -502,7 +511,7 @@ func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap_Override(a AddressMap, scope constructs.Construct, id *string, config *AddressMapConfig) {
 	_init_.Initialize()
 
@@ -1120,6 +1129,24 @@ func (a *jsiiProxy_AddressMap) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AddressMap) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

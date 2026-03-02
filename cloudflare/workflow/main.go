@@ -70,6 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "triggeredOn", GoGetter: "TriggeredOn"},
 			_jsii_.MemberProperty{JsiiProperty: "versionId", GoGetter: "VersionId"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowName", GoGetter: "WorkflowName"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowNameInput", GoGetter: "WorkflowNameInput"},
 		},

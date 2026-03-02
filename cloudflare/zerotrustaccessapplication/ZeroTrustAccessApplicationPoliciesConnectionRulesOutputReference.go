@@ -32,6 +32,8 @@ type ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference interface 
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Rdp() ZeroTrustAccessApplicationPoliciesConnectionRulesRdpOutputReference
+	RdpInput() interface{}
 	Ssh() ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference
 	SshInput() interface{}
 	// Experimental.
@@ -66,7 +68,9 @@ type ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference interface 
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutRdp(value *ZeroTrustAccessApplicationPoliciesConnectionRulesRdp)
 	PutSsh(value *ZeroTrustAccessApplicationPoliciesConnectionRulesSsh)
+	ResetRdp()
 	ResetSsh()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference) Rdp() ZeroTrustAccessApplicationPoliciesConnectionRulesRdpOutputReference {
+	var returns ZeroTrustAccessApplicationPoliciesConnectionRulesRdpOutputReference
+	_jsii_.Get(
+		j,
+		"rdp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference) RdpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rdpInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +466,17 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputRefere
 	return returns
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference) PutRdp(value *ZeroTrustAccessApplicationPoliciesConnectionRulesRdp) {
+	if err := z.validatePutRdpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putRdp",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference) PutSsh(value *ZeroTrustAccessApplicationPoliciesConnectionRulesSsh) {
 	if err := z.validatePutSshParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputRefere
 		z,
 		"putSsh",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference) ResetRdp() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRdp",
+		nil, // no parameters
 	)
 }
 

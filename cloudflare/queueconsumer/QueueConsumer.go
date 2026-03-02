@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
 type QueueConsumer interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -64,9 +64,9 @@ type QueueConsumer interface {
 	QueueId() *string
 	SetQueueId(val *string)
 	QueueIdInput() *string
+	QueueName() *string
 	// Experimental.
 	RawOverrides() interface{}
-	Script() *string
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
@@ -131,7 +131,6 @@ type QueueConsumer interface {
 	ResetOverrideLogicalId()
 	ResetScriptName()
 	ResetSettings()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -143,6 +142,15 @@ type QueueConsumer interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for QueueConsumer
@@ -350,21 +358,21 @@ func (j *jsiiProxy_QueueConsumer) QueueIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_QueueConsumer) QueueName() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"rawOverrides",
+		"queueName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_QueueConsumer) Script() *string {
-	var returns *string
+func (j *jsiiProxy_QueueConsumer) RawOverrides() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"script",
+		"rawOverrides",
 		&returns,
 	)
 	return returns
@@ -461,7 +469,7 @@ func (j *jsiiProxy_QueueConsumer) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
 func NewQueueConsumer(scope constructs.Construct, id *string, config *QueueConsumerConfig) QueueConsumer {
 	_init_.Initialize()
 
@@ -479,7 +487,7 @@ func NewQueueConsumer(scope constructs.Construct, id *string, config *QueueConsu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
 func NewQueueConsumer_Override(q QueueConsumer, scope constructs.Construct, id *string, config *QueueConsumerConfig) {
 	_init_.Initialize()
 
@@ -1009,14 +1017,6 @@ func (q *jsiiProxy_QueueConsumer) ResetSettings() {
 	)
 }
 
-func (q *jsiiProxy_QueueConsumer) ResetType() {
-	_jsii_.InvokeVoid(
-		q,
-		"resetType",
-		nil, // no parameters
-	)
-}
-
 func (q *jsiiProxy_QueueConsumer) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
@@ -1089,6 +1089,24 @@ func (q *jsiiProxy_QueueConsumer) ToTerraform() interface{} {
 		q,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (q *jsiiProxy_QueueConsumer) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		q,
+		"with",
+		args,
 		&returns,
 	)
 

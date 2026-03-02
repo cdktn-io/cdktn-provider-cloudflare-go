@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list}.
 type DataCloudflarePageShieldConnectionsList interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -149,6 +149,15 @@ type DataCloudflarePageShieldConnectionsList interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflarePageShieldConnectionsList
@@ -587,7 +596,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnectionsList) ZoneIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source.
 func NewDataCloudflarePageShieldConnectionsList(scope constructs.Construct, id *string, config *DataCloudflarePageShieldConnectionsListConfig) DataCloudflarePageShieldConnectionsList {
 	_init_.Initialize()
 
@@ -605,7 +614,7 @@ func NewDataCloudflarePageShieldConnectionsList(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source.
 func NewDataCloudflarePageShieldConnectionsList_Override(d DataCloudflarePageShieldConnectionsList, scope constructs.Construct, id *string, config *DataCloudflarePageShieldConnectionsListConfig) {
 	_init_.Initialize()
 
@@ -1285,6 +1294,24 @@ func (d *jsiiProxy_DataCloudflarePageShieldConnectionsList) ToTerraform() interf
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflarePageShieldConnectionsList) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

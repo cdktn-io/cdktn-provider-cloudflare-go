@@ -69,6 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "turnstileMode", GoGetter: "TurnstileMode"},
 			_jsii_.MemberProperty{JsiiProperty: "waitingRoomId", GoGetter: "WaitingRoomId"},
 			_jsii_.MemberProperty{JsiiProperty: "waitingRoomIdInput", GoGetter: "WaitingRoomIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},

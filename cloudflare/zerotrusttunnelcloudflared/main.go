@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tunnelSecret", GoGetter: "TunnelSecret"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelSecretInput", GoGetter: "TunnelSecretInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tunType", GoGetter: "TunType"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustTunnelCloudflared{}

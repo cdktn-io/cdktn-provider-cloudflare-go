@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookId", GoGetter: "WebhookId"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookIdInput", GoGetter: "WebhookIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareNotificationPolicyWebhooks{}

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
 type CustomSsl interface {
 	cdktn.TerraformResource
 	BundleMethod() *string
@@ -37,6 +37,9 @@ type CustomSsl interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Deploy() *string
+	SetDeploy(val *string)
+	DeployInput() *string
 	ExpiresOn() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
@@ -62,6 +65,7 @@ type CustomSsl interface {
 	Policy() *string
 	SetPolicy(val *string)
 	PolicyInput() *string
+	PolicyRestrictions() *string
 	Priority() *float64
 	PrivateKey() *string
 	SetPrivateKey(val *string)
@@ -136,6 +140,7 @@ type CustomSsl interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutGeoRestrictions(value *CustomSslGeoRestrictions)
 	ResetBundleMethod()
+	ResetDeploy()
 	ResetGeoRestrictions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -153,6 +158,15 @@ type CustomSsl interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for CustomSsl
@@ -245,6 +259,26 @@ func (j *jsiiProxy_CustomSsl) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) Deploy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) DeployInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deployInput",
 		&returns,
 	)
 	return returns
@@ -395,6 +429,16 @@ func (j *jsiiProxy_CustomSsl) PolicyInput() *string {
 	_jsii_.Get(
 		j,
 		"policyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) PolicyRestrictions() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyRestrictions",
 		&returns,
 	)
 	return returns
@@ -561,7 +605,7 @@ func (j *jsiiProxy_CustomSsl) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfig) CustomSsl {
 	_init_.Initialize()
 
@@ -579,7 +623,7 @@ func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl_Override(c CustomSsl, scope constructs.Construct, id *string, config *CustomSslConfig) {
 	_init_.Initialize()
 
@@ -638,6 +682,17 @@ func (j *jsiiProxy_CustomSsl)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomSsl)SetDeploy(val *string) {
+	if err := j.validateSetDeployParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploy",
 		val,
 	)
 }
@@ -1096,6 +1151,14 @@ func (c *jsiiProxy_CustomSsl) ResetBundleMethod() {
 	)
 }
 
+func (c *jsiiProxy_CustomSsl) ResetDeploy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeploy",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CustomSsl) ResetGeoRestrictions() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1200,6 +1263,24 @@ func (c *jsiiProxy_CustomSsl) ToTerraform() interface{} {
 		c,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CustomSsl) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		c,
+		"with",
+		args,
 		&returns,
 	)
 

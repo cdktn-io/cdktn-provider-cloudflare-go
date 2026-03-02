@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
 type R2BucketSippy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -137,6 +137,15 @@ type R2BucketSippy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for R2BucketSippy
@@ -415,7 +424,7 @@ func (j *jsiiProxy_R2BucketSippy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSippyConfig) R2BucketSippy {
 	_init_.Initialize()
 
@@ -433,7 +442,7 @@ func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy_Override(r R2BucketSippy, scope constructs.Construct, id *string, config *R2BucketSippyConfig) {
 	_init_.Initialize()
 
@@ -1024,6 +1033,24 @@ func (r *jsiiProxy_R2BucketSippy) ToTerraform() interface{} {
 		r,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_R2BucketSippy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		r,
+		"with",
+		args,
 		&returns,
 	)
 

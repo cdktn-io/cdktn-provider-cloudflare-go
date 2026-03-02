@@ -87,6 +87,10 @@ func (a *jsiiProxy_AiSearchInstance) validatePutPublicEndpointParamsParameters(v
 	return nil
 }
 
+func (a *jsiiProxy_AiSearchInstance) validatePutRetrievalOptionsParameters(value *AiSearchInstanceRetrievalOptions) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiSearchInstance) validatePutSourceParamsParameters(value *AiSearchInstanceSourceParams) error {
 	return nil
 }
@@ -148,6 +152,10 @@ func (j *jsiiProxy_AiSearchInstance) validateSetCountParameters(val interface{})
 }
 
 func (j *jsiiProxy_AiSearchInstance) validateSetEmbeddingModelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AiSearchInstance) validateSetFusionMethodParameters(val *string) error {
 	return nil
 }
 

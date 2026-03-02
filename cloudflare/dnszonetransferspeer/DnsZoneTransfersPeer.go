@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer}.
 type DnsZoneTransfersPeer interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -141,6 +141,15 @@ type DnsZoneTransfersPeer interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DnsZoneTransfersPeer
@@ -439,7 +448,7 @@ func (j *jsiiProxy_DnsZoneTransfersPeer) TsigIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource.
 func NewDnsZoneTransfersPeer(scope constructs.Construct, id *string, config *DnsZoneTransfersPeerConfig) DnsZoneTransfersPeer {
 	_init_.Initialize()
 
@@ -457,7 +466,7 @@ func NewDnsZoneTransfersPeer(scope constructs.Construct, id *string, config *Dns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource.
 func NewDnsZoneTransfersPeer_Override(d DnsZoneTransfersPeer, scope constructs.Construct, id *string, config *DnsZoneTransfersPeerConfig) {
 	_init_.Initialize()
 
@@ -1067,6 +1076,24 @@ func (d *jsiiProxy_DnsZoneTransfersPeer) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DnsZoneTransfersPeer) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

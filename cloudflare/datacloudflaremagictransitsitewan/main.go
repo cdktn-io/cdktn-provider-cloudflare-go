@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vlanTag", GoGetter: "VlanTag"},
 			_jsii_.MemberProperty{JsiiProperty: "wanId", GoGetter: "WanId"},
 			_jsii_.MemberProperty{JsiiProperty: "wanIdInput", GoGetter: "WanIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareMagicTransitSiteWan{}

@@ -12,13 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
 type AiSearchInstance interface {
 	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AccountTag() *string
 	AiGatewayId() *string
 	SetAiGatewayId(val *string)
 	AiGatewayIdInput() *string
@@ -64,7 +63,6 @@ type AiSearchInstance interface {
 	SetEmbeddingModel(val *string)
 	EmbeddingModelInput() *string
 	Enable() cdktn.IResolvable
-	EngineVersion() *float64
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -73,13 +71,15 @@ type AiSearchInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FusionMethod() *string
+	SetFusionMethod(val *string)
+	FusionMethodInput() *string
 	HybridSearchEnabled() interface{}
 	SetHybridSearchEnabled(val interface{})
 	HybridSearchEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalId() *string
 	LastActivity() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -116,6 +116,8 @@ type AiSearchInstance interface {
 	RerankingModel() *string
 	SetRerankingModel(val *string)
 	RerankingModelInput() *string
+	RetrievalOptions() AiSearchInstanceRetrievalOptionsOutputReference
+	RetrievalOptionsInput() interface{}
 	RewriteModel() *string
 	SetRewriteModel(val *string)
 	RewriteModelInput() *string
@@ -158,7 +160,6 @@ type AiSearchInstance interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	VectorizeActiveNamespace() *string
 	VectorizeName() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -206,6 +207,7 @@ type AiSearchInstance interface {
 	PutCustomMetadata(value interface{})
 	PutMetadata(value *AiSearchInstanceMetadata)
 	PutPublicEndpointParams(value *AiSearchInstancePublicEndpointParams)
+	PutRetrievalOptions(value *AiSearchInstanceRetrievalOptions)
 	PutSourceParams(value *AiSearchInstanceSourceParams)
 	ResetAiGatewayId()
 	ResetAisearchModel()
@@ -216,6 +218,7 @@ type AiSearchInstance interface {
 	ResetChunkSize()
 	ResetCustomMetadata()
 	ResetEmbeddingModel()
+	ResetFusionMethod()
 	ResetHybridSearchEnabled()
 	ResetMaxNumResults()
 	ResetMetadata()
@@ -226,6 +229,7 @@ type AiSearchInstance interface {
 	ResetPublicEndpointParams()
 	ResetReranking()
 	ResetRerankingModel()
+	ResetRetrievalOptions()
 	ResetRewriteModel()
 	ResetRewriteQuery()
 	ResetScoreThreshold()
@@ -247,6 +251,15 @@ type AiSearchInstance interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AiSearchInstance
@@ -269,16 +282,6 @@ func (j *jsiiProxy_AiSearchInstance) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiSearchInstance) AccountTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountTag",
 		&returns,
 	)
 	return returns
@@ -544,16 +547,6 @@ func (j *jsiiProxy_AiSearchInstance) Enable() cdktn.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_AiSearchInstance) EngineVersion() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"engineVersion",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AiSearchInstance) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -579,6 +572,26 @@ func (j *jsiiProxy_AiSearchInstance) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) FusionMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fusionMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) FusionMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fusionMethodInput",
 		&returns,
 	)
 	return returns
@@ -619,16 +632,6 @@ func (j *jsiiProxy_AiSearchInstance) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiSearchInstance) InternalId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"internalId",
 		&returns,
 	)
 	return returns
@@ -839,6 +842,26 @@ func (j *jsiiProxy_AiSearchInstance) RerankingModelInput() *string {
 	_jsii_.Get(
 		j,
 		"rerankingModelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) RetrievalOptions() AiSearchInstanceRetrievalOptionsOutputReference {
+	var returns AiSearchInstanceRetrievalOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"retrievalOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) RetrievalOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retrievalOptionsInput",
 		&returns,
 	)
 	return returns
@@ -1124,16 +1147,6 @@ func (j *jsiiProxy_AiSearchInstance) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AiSearchInstance) VectorizeActiveNamespace() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vectorizeActiveNamespace",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AiSearchInstance) VectorizeName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1145,7 +1158,7 @@ func (j *jsiiProxy_AiSearchInstance) VectorizeName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearchInstanceConfig) AiSearchInstance {
 	_init_.Initialize()
 
@@ -1163,7 +1176,7 @@ func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance_Override(a AiSearchInstance, scope constructs.Construct, id *string, config *AiSearchInstanceConfig) {
 	_init_.Initialize()
 
@@ -1307,6 +1320,17 @@ func (j *jsiiProxy_AiSearchInstance)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchInstance)SetFusionMethod(val *string) {
+	if err := j.validateSetFusionMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fusionMethod",
 		val,
 	)
 }
@@ -1914,6 +1938,17 @@ func (a *jsiiProxy_AiSearchInstance) PutPublicEndpointParams(value *AiSearchInst
 	)
 }
 
+func (a *jsiiProxy_AiSearchInstance) PutRetrievalOptions(value *AiSearchInstanceRetrievalOptions) {
+	if err := a.validatePutRetrievalOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRetrievalOptions",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiSearchInstance) PutSourceParams(value *AiSearchInstanceSourceParams) {
 	if err := a.validatePutSourceParamsParameters(value); err != nil {
 		panic(err)
@@ -1997,6 +2032,14 @@ func (a *jsiiProxy_AiSearchInstance) ResetEmbeddingModel() {
 	)
 }
 
+func (a *jsiiProxy_AiSearchInstance) ResetFusionMethod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFusionMethod",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AiSearchInstance) ResetHybridSearchEnabled() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2057,6 +2100,14 @@ func (a *jsiiProxy_AiSearchInstance) ResetRerankingModel() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRerankingModel",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstance) ResetRetrievalOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRetrievalOptions",
 		nil, // no parameters
 	)
 }
@@ -2213,6 +2264,24 @@ func (a *jsiiProxy_AiSearchInstance) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AiSearchInstance) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

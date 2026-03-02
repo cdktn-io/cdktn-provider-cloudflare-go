@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting}.
 type DataCloudflareUniversalSslSetting interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -98,6 +98,15 @@ type DataCloudflareUniversalSslSetting interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareUniversalSslSetting
@@ -286,7 +295,7 @@ func (j *jsiiProxy_DataCloudflareUniversalSslSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting} Data Source.
 func NewDataCloudflareUniversalSslSetting(scope constructs.Construct, id *string, config *DataCloudflareUniversalSslSettingConfig) DataCloudflareUniversalSslSetting {
 	_init_.Initialize()
 
@@ -304,7 +313,7 @@ func NewDataCloudflareUniversalSslSetting(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/universal_ssl_setting cloudflare_universal_ssl_setting} Data Source.
 func NewDataCloudflareUniversalSslSetting_Override(d DataCloudflareUniversalSslSetting, scope constructs.Construct, id *string, config *DataCloudflareUniversalSslSettingConfig) {
 	_init_.Initialize()
 
@@ -737,6 +746,24 @@ func (d *jsiiProxy_DataCloudflareUniversalSslSetting) ToTerraform() interface{} 
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareUniversalSslSetting) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

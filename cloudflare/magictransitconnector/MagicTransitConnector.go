@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
 type MagicTransitConnector interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -146,6 +146,15 @@ type MagicTransitConnector interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for MagicTransitConnector
@@ -474,7 +483,7 @@ func (j *jsiiProxy_MagicTransitConnector) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
 func NewMagicTransitConnector(scope constructs.Construct, id *string, config *MagicTransitConnectorConfig) MagicTransitConnector {
 	_init_.Initialize()
 
@@ -492,7 +501,7 @@ func NewMagicTransitConnector(scope constructs.Construct, id *string, config *Ma
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
 func NewMagicTransitConnector_Override(m MagicTransitConnector, scope constructs.Construct, id *string, config *MagicTransitConnectorConfig) {
 	_init_.Initialize()
 
@@ -1121,6 +1130,24 @@ func (m *jsiiProxy_MagicTransitConnector) ToTerraform() interface{} {
 		m,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MagicTransitConnector) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		m,
+		"with",
+		args,
 		&returns,
 	)
 

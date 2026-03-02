@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
 type StreamCaptionLanguage interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -134,6 +134,15 @@ type StreamCaptionLanguage interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for StreamCaptionLanguage
@@ -412,7 +421,7 @@ func (j *jsiiProxy_StreamCaptionLanguage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
 func NewStreamCaptionLanguage(scope constructs.Construct, id *string, config *StreamCaptionLanguageConfig) StreamCaptionLanguage {
 	_init_.Initialize()
 
@@ -430,7 +439,7 @@ func NewStreamCaptionLanguage(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_caption_language cloudflare_stream_caption_language} Resource.
 func NewStreamCaptionLanguage_Override(s StreamCaptionLanguage, scope constructs.Construct, id *string, config *StreamCaptionLanguageConfig) {
 	_init_.Initialize()
 
@@ -994,6 +1003,24 @@ func (s *jsiiProxy_StreamCaptionLanguage) ToTerraform() interface{} {
 		s,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_StreamCaptionLanguage) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		s,
+		"with",
+		args,
 		&returns,
 	)
 

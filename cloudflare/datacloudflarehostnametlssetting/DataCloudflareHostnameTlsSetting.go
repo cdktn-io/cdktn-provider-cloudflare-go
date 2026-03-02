@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 type DataCloudflareHostnameTlsSetting interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -61,7 +61,7 @@ type DataCloudflareHostnameTlsSetting interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
-	Value() *float64
+	Value() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -105,6 +105,15 @@ type DataCloudflareHostnameTlsSetting interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareHostnameTlsSetting
@@ -322,8 +331,8 @@ func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) UpdatedAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) Value() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) Value() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"value",
@@ -353,7 +362,7 @@ func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source.
 func NewDataCloudflareHostnameTlsSetting(scope constructs.Construct, id *string, config *DataCloudflareHostnameTlsSettingConfig) DataCloudflareHostnameTlsSetting {
 	_init_.Initialize()
 
@@ -371,7 +380,7 @@ func NewDataCloudflareHostnameTlsSetting(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source.
 func NewDataCloudflareHostnameTlsSetting_Override(d DataCloudflareHostnameTlsSetting, scope constructs.Construct, id *string, config *DataCloudflareHostnameTlsSettingConfig) {
 	_init_.Initialize()
 
@@ -815,6 +824,24 @@ func (d *jsiiProxy_DataCloudflareHostnameTlsSetting) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareHostnameTlsSetting) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

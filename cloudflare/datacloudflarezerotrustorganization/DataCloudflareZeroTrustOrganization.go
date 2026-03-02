@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}.
 type DataCloudflareZeroTrustOrganization interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -50,6 +50,9 @@ type DataCloudflareZeroTrustOrganization interface {
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LoginDesign() DataCloudflareZeroTrustOrganizationLoginDesignOutputReference
+	MfaConfig() DataCloudflareZeroTrustOrganizationMfaConfigOutputReference
+	MfaConfigurationAllowed() cdktn.IResolvable
+	MfaRequiredForAllApps() cdktn.IResolvable
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -114,6 +117,15 @@ type DataCloudflareZeroTrustOrganization interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustOrganization
@@ -301,6 +313,36 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) LoginDesign() DataCloudf
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) MfaConfig() DataCloudflareZeroTrustOrganizationMfaConfigOutputReference {
+	var returns DataCloudflareZeroTrustOrganizationMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) MfaConfigurationAllowed() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"mfaConfigurationAllowed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) MfaRequiredForAllApps() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"mfaRequiredForAllApps",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -432,7 +474,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
 func NewDataCloudflareZeroTrustOrganization(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustOrganizationConfig) DataCloudflareZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -450,7 +492,7 @@ func NewDataCloudflareZeroTrustOrganization(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
 func NewDataCloudflareZeroTrustOrganization_Override(d DataCloudflareZeroTrustOrganization, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 
@@ -910,6 +952,24 @@ func (d *jsiiProxy_DataCloudflareZeroTrustOrganization) ToTerraform() interface{
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustOrganization) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

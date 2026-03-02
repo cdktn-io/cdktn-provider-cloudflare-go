@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/leaked_credential_check_rules cloudflare_leaked_credential_check_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/leaked_credential_check_rules cloudflare_leaked_credential_check_rules}.
 type DataCloudflareLeakedCredentialCheckRules interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -101,6 +101,15 @@ type DataCloudflareLeakedCredentialCheckRules interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareLeakedCredentialCheckRules
@@ -299,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ZoneIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/leaked_credential_check_rules cloudflare_leaked_credential_check_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/leaked_credential_check_rules cloudflare_leaked_credential_check_rules} Data Source.
 func NewDataCloudflareLeakedCredentialCheckRules(scope constructs.Construct, id *string, config *DataCloudflareLeakedCredentialCheckRulesConfig) DataCloudflareLeakedCredentialCheckRules {
 	_init_.Initialize()
 
@@ -317,7 +326,7 @@ func NewDataCloudflareLeakedCredentialCheckRules(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/leaked_credential_check_rules cloudflare_leaked_credential_check_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/leaked_credential_check_rules cloudflare_leaked_credential_check_rules} Data Source.
 func NewDataCloudflareLeakedCredentialCheckRules_Override(d DataCloudflareLeakedCredentialCheckRules, scope constructs.Construct, id *string, config *DataCloudflareLeakedCredentialCheckRulesConfig) {
 	_init_.Initialize()
 
@@ -769,6 +778,24 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) ToTerraform() inter
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheckRules) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

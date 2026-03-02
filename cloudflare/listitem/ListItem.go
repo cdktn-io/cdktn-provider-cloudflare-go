@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item cloudflare_list_item}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/list_item cloudflare_list_item}.
 type ListItem interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -148,6 +148,15 @@ type ListItem interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ListItem
@@ -496,7 +505,7 @@ func (j *jsiiProxy_ListItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItem(scope constructs.Construct, id *string, config *ListItemConfig) ListItem {
 	_init_.Initialize()
 
@@ -514,7 +523,7 @@ func NewListItem(scope constructs.Construct, id *string, config *ListItemConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItem_Override(l ListItem, scope constructs.Construct, id *string, config *ListItemConfig) {
 	_init_.Initialize()
 
@@ -1143,6 +1152,24 @@ func (l *jsiiProxy_ListItem) ToTerraform() interface{} {
 		l,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_ListItem) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		l,
+		"with",
+		args,
 		&returns,
 	)
 

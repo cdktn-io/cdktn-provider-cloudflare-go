@@ -16,7 +16,6 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "accountTag", GoGetter: "AccountTag"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "aiGatewayId", GoGetter: "AiGatewayId"},
@@ -45,10 +44,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "embeddingModel", GoGetter: "EmbeddingModel"},
 			_jsii_.MemberProperty{JsiiProperty: "embeddingModelInput", GoGetter: "EmbeddingModelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enable", GoGetter: "Enable"},
-			_jsii_.MemberProperty{JsiiProperty: "engineVersion", GoGetter: "EngineVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
+			_jsii_.MemberProperty{JsiiProperty: "fusionMethod", GoGetter: "FusionMethod"},
+			_jsii_.MemberProperty{JsiiProperty: "fusionMethodInput", GoGetter: "FusionMethodInput"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
@@ -64,7 +64,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
-			_jsii_.MemberProperty{JsiiProperty: "internalId", GoGetter: "InternalId"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lastActivity", GoGetter: "LastActivity"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
@@ -89,6 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCustomMetadata", GoMethod: "PutCustomMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetadata", GoMethod: "PutMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "putPublicEndpointParams", GoMethod: "PutPublicEndpointParams"},
+			_jsii_.MemberMethod{JsiiMethod: "putRetrievalOptions", GoMethod: "PutRetrievalOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSourceParams", GoMethod: "PutSourceParams"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "reranking", GoGetter: "Reranking"},
@@ -104,6 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetChunkSize", GoMethod: "ResetChunkSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomMetadata", GoMethod: "ResetCustomMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmbeddingModel", GoMethod: "ResetEmbeddingModel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFusionMethod", GoMethod: "ResetFusionMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHybridSearchEnabled", GoMethod: "ResetHybridSearchEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxNumResults", GoMethod: "ResetMaxNumResults"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetadata", GoMethod: "ResetMetadata"},
@@ -112,6 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicEndpointParams", GoMethod: "ResetPublicEndpointParams"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReranking", GoMethod: "ResetReranking"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRerankingModel", GoMethod: "ResetRerankingModel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRetrievalOptions", GoMethod: "ResetRetrievalOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRewriteModel", GoMethod: "ResetRewriteModel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRewriteQuery", GoMethod: "ResetRewriteQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScoreThreshold", GoMethod: "ResetScoreThreshold"},
@@ -122,6 +124,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSystemPromptIndexSummarization", GoMethod: "ResetSystemPromptIndexSummarization"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSystemPromptRewriteQuery", GoMethod: "ResetSystemPromptRewriteQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenId", GoMethod: "ResetTokenId"},
+			_jsii_.MemberProperty{JsiiProperty: "retrievalOptions", GoGetter: "RetrievalOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "retrievalOptionsInput", GoGetter: "RetrievalOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rewriteModel", GoGetter: "RewriteModel"},
 			_jsii_.MemberProperty{JsiiProperty: "rewriteModelInput", GoGetter: "RewriteModelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rewriteQuery", GoGetter: "RewriteQuery"},
@@ -156,8 +160,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "vectorizeActiveNamespace", GoGetter: "VectorizeActiveNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorizeName", GoGetter: "VectorizeName"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AiSearchInstance{}
@@ -328,6 +332,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
+			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "disabled", GoGetter: "Disabled"},
 			_jsii_.MemberProperty{JsiiProperty: "disabledInput", GoGetter: "DisabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -343,6 +349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisabled", GoMethod: "ResetDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -489,6 +496,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AiSearchInstancePublicEndpointParamsSearchEndpointOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.aiSearchInstance.AiSearchInstanceRetrievalOptions",
+		reflect.TypeOf((*AiSearchInstanceRetrievalOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.aiSearchInstance.AiSearchInstanceRetrievalOptionsOutputReference",
+		reflect.TypeOf((*AiSearchInstanceRetrievalOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keywordMatchMode", GoGetter: "KeywordMatchMode"},
+			_jsii_.MemberProperty{JsiiProperty: "keywordMatchModeInput", GoGetter: "KeywordMatchModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeywordMatchMode", GoMethod: "ResetKeywordMatchMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

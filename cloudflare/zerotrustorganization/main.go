@@ -55,6 +55,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loginDesign", GoGetter: "LoginDesign"},
 			_jsii_.MemberProperty{JsiiProperty: "loginDesignInput", GoGetter: "LoginDesignInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaConfig", GoGetter: "MfaConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaConfigInput", GoGetter: "MfaConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaConfigurationAllowed", GoGetter: "MfaConfigurationAllowed"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaConfigurationAllowedInput", GoGetter: "MfaConfigurationAllowedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaRequiredForAllApps", GoGetter: "MfaRequiredForAllApps"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaRequiredForAllAppsInput", GoGetter: "MfaRequiredForAllAppsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomPages", GoMethod: "PutCustomPages"},
 			_jsii_.MemberMethod{JsiiMethod: "putLoginDesign", GoMethod: "PutLoginDesign"},
+			_jsii_.MemberMethod{JsiiMethod: "putMfaConfig", GoMethod: "PutMfaConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowAuthenticateViaWarp", GoMethod: "ResetAllowAuthenticateViaWarp"},
@@ -76,6 +83,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDenyUnmatchedRequestsExemptedZoneNames", GoMethod: "ResetDenyUnmatchedRequestsExemptedZoneNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsUiReadOnly", GoMethod: "ResetIsUiReadOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoginDesign", GoMethod: "ResetLoginDesign"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMfaConfig", GoMethod: "ResetMfaConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMfaConfigurationAllowed", GoMethod: "ResetMfaConfigurationAllowed"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMfaRequiredForAllApps", GoMethod: "ResetMfaRequiredForAllApps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionDuration", GoMethod: "ResetSessionDuration"},
@@ -100,6 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userSeatExpirationInactiveTimeInput", GoGetter: "UserSeatExpirationInactiveTimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "warpAuthSessionDuration", GoGetter: "WarpAuthSessionDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "warpAuthSessionDurationInput", GoGetter: "WarpAuthSessionDurationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
@@ -202,6 +213,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustOrganizationLoginDesignOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig",
+		reflect.TypeOf((*ZeroTrustOrganizationMfaConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference",
+		reflect.TypeOf((*ZeroTrustOrganizationMfaConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedAuthenticators", GoGetter: "AllowedAuthenticators"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedAuthenticatorsInput", GoGetter: "AllowedAuthenticatorsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedAuthenticators", GoMethod: "ResetAllowedAuthenticators"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSessionDuration", GoMethod: "ResetSessionDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sessionDuration", GoGetter: "SessionDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "sessionDurationInput", GoGetter: "SessionDurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

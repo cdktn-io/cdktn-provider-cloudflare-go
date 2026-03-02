@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests}.
 type DataCloudflareCloudforceOneRequests interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -139,6 +139,15 @@ type DataCloudflareCloudforceOneRequests interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareCloudforceOneRequests
@@ -537,7 +546,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests} Data Source.
 func NewDataCloudflareCloudforceOneRequests(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestsConfig) DataCloudflareCloudforceOneRequests {
 	_init_.Initialize()
 
@@ -555,7 +564,7 @@ func NewDataCloudflareCloudforceOneRequests(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests} Data Source.
 func NewDataCloudflareCloudforceOneRequests_Override(d DataCloudflareCloudforceOneRequests, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestsConfig) {
 	_init_.Initialize()
 
@@ -1181,6 +1190,24 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequests) ToTerraform() interface{
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequests) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

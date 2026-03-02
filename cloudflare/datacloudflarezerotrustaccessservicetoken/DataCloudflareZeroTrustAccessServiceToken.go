@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
 type DataCloudflareZeroTrustAccessServiceToken interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -114,6 +114,15 @@ type DataCloudflareZeroTrustAccessServiceToken interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareZeroTrustAccessServiceToken
@@ -392,7 +401,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) ZoneIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Data Source.
 func NewDataCloudflareZeroTrustAccessServiceToken(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessServiceTokenConfig) DataCloudflareZeroTrustAccessServiceToken {
 	_init_.Initialize()
 
@@ -410,7 +419,7 @@ func NewDataCloudflareZeroTrustAccessServiceToken(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Data Source.
 func NewDataCloudflareZeroTrustAccessServiceToken_Override(d DataCloudflareZeroTrustAccessServiceToken, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessServiceTokenConfig) {
 	_init_.Initialize()
 
@@ -908,6 +917,24 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) ToTerraform() inte
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

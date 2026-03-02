@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_firewall cloudflare_dns_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_firewall cloudflare_dns_firewall}.
 type DataCloudflareDnsFirewall interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -112,6 +112,15 @@ type DataCloudflareDnsFirewall interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareDnsFirewall
@@ -430,7 +439,7 @@ func (j *jsiiProxy_DataCloudflareDnsFirewall) UpstreamIps() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
 func NewDataCloudflareDnsFirewall(scope constructs.Construct, id *string, config *DataCloudflareDnsFirewallConfig) DataCloudflareDnsFirewall {
 	_init_.Initialize()
 
@@ -448,7 +457,7 @@ func NewDataCloudflareDnsFirewall(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
 func NewDataCloudflareDnsFirewall_Override(d DataCloudflareDnsFirewall, scope constructs.Construct, id *string, config *DataCloudflareDnsFirewallConfig) {
 	_init_.Initialize()
 
@@ -892,6 +901,24 @@ func (d *jsiiProxy_DataCloudflareDnsFirewall) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareDnsFirewall) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

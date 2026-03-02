@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}.
 type ZoneCacheVariants interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -127,6 +127,15 @@ type ZoneCacheVariants interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ZoneCacheVariants
@@ -365,7 +374,7 @@ func (j *jsiiProxy_ZoneCacheVariants) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
 func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCacheVariantsConfig) ZoneCacheVariants {
 	_init_.Initialize()
 
@@ -383,7 +392,7 @@ func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
 func NewZoneCacheVariants_Override(z ZoneCacheVariants, scope constructs.Construct, id *string, config *ZoneCacheVariantsConfig) {
 	_init_.Initialize()
 
@@ -917,6 +926,24 @@ func (z *jsiiProxy_ZoneCacheVariants) ToTerraform() interface{} {
 		z,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneCacheVariants) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		z,
+		"with",
+		args,
 		&returns,
 	)
 

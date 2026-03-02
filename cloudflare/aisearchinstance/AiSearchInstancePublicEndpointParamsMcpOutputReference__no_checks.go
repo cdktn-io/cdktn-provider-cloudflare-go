@@ -59,6 +59,10 @@ func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsMcpOutputReference) validateSetDisabledParameters(val interface{}) error {
 	return nil
 }

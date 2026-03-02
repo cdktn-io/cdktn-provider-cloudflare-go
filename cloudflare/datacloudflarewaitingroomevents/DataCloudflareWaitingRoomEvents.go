@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/waiting_room_events cloudflare_waiting_room_events}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/waiting_room_events cloudflare_waiting_room_events}.
 type DataCloudflareWaitingRoomEvents interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -104,6 +104,15 @@ type DataCloudflareWaitingRoomEvents interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareWaitingRoomEvents
@@ -322,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomEvents) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
 func NewDataCloudflareWaitingRoomEvents(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomEventsConfig) DataCloudflareWaitingRoomEvents {
 	_init_.Initialize()
 
@@ -340,7 +349,7 @@ func NewDataCloudflareWaitingRoomEvents(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
 func NewDataCloudflareWaitingRoomEvents_Override(d DataCloudflareWaitingRoomEvents, scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomEventsConfig) {
 	_init_.Initialize()
 
@@ -803,6 +812,24 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomEvents) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareWaitingRoomEvents) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

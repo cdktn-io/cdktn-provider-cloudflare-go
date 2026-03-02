@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataCloudflareCertificatePacks) validateSetCountParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareCertificatePacks) validateSetDeployParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareCertificatePacks) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

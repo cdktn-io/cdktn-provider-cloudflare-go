@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/logpush_jobs cloudflare_logpush_jobs}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/logpush_jobs cloudflare_logpush_jobs}.
 type DataCloudflareLogpushJobs interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -106,6 +106,15 @@ type DataCloudflareLogpushJobs interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareLogpushJobs
@@ -324,7 +333,7 @@ func (j *jsiiProxy_DataCloudflareLogpushJobs) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/logpush_jobs cloudflare_logpush_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/logpush_jobs cloudflare_logpush_jobs} Data Source.
 func NewDataCloudflareLogpushJobs(scope constructs.Construct, id *string, config *DataCloudflareLogpushJobsConfig) DataCloudflareLogpushJobs {
 	_init_.Initialize()
 
@@ -342,7 +351,7 @@ func NewDataCloudflareLogpushJobs(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/logpush_jobs cloudflare_logpush_jobs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/logpush_jobs cloudflare_logpush_jobs} Data Source.
 func NewDataCloudflareLogpushJobs_Override(d DataCloudflareLogpushJobs, scope constructs.Construct, id *string, config *DataCloudflareLogpushJobsConfig) {
 	_init_.Initialize()
 
@@ -821,6 +830,24 @@ func (d *jsiiProxy_DataCloudflareLogpushJobs) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareLogpushJobs) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

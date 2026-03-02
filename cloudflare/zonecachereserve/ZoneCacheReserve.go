@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 type ZoneCacheReserve interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -128,6 +128,15 @@ type ZoneCacheReserve interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ZoneCacheReserve
@@ -366,7 +375,7 @@ func (j *jsiiProxy_ZoneCacheReserve) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
 func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCacheReserveConfig) ZoneCacheReserve {
 	_init_.Initialize()
 
@@ -384,7 +393,7 @@ func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
 func NewZoneCacheReserve_Override(z ZoneCacheReserve, scope constructs.Construct, id *string, config *ZoneCacheReserveConfig) {
 	_init_.Initialize()
 
@@ -926,6 +935,24 @@ func (z *jsiiProxy_ZoneCacheReserve) ToTerraform() interface{} {
 		z,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneCacheReserve) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		z,
+		"with",
+		args,
 		&returns,
 	)
 

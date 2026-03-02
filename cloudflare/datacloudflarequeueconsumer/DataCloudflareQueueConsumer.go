@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumer cloudflare_queue_consumer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumer cloudflare_queue_consumer}.
 type DataCloudflareQueueConsumer interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -28,6 +28,7 @@ type DataCloudflareQueueConsumer interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedOn() *string
+	DeadLetterQueue() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,9 +54,9 @@ type DataCloudflareQueueConsumer interface {
 	QueueId() *string
 	SetQueueId(val *string)
 	QueueIdInput() *string
+	QueueName() *string
 	// Experimental.
 	RawOverrides() interface{}
-	Script() *string
 	ScriptName() *string
 	Settings() DataCloudflareQueueConsumerSettingsOutputReference
 	// Experimental.
@@ -105,6 +106,15 @@ type DataCloudflareQueueConsumer interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataCloudflareQueueConsumer
@@ -177,6 +187,16 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) CreatedOn() *string {
 	_jsii_.Get(
 		j,
 		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueueConsumer) DeadLetterQueue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deadLetterQueue",
 		&returns,
 	)
 	return returns
@@ -272,21 +292,21 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) QueueIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareQueueConsumer) QueueName() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"rawOverrides",
+		"queueName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer) Script() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareQueueConsumer) RawOverrides() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"script",
+		"rawOverrides",
 		&returns,
 	)
 	return returns
@@ -353,7 +373,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumer cloudflare_queue_consumer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumer cloudflare_queue_consumer} Data Source.
 func NewDataCloudflareQueueConsumer(scope constructs.Construct, id *string, config *DataCloudflareQueueConsumerConfig) DataCloudflareQueueConsumer {
 	_init_.Initialize()
 
@@ -371,7 +391,7 @@ func NewDataCloudflareQueueConsumer(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumer cloudflare_queue_consumer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumer cloudflare_queue_consumer} Data Source.
 func NewDataCloudflareQueueConsumer_Override(d DataCloudflareQueueConsumer, scope constructs.Construct, id *string, config *DataCloudflareQueueConsumerConfig) {
 	_init_.Initialize()
 
@@ -815,6 +835,24 @@ func (d *jsiiProxy_DataCloudflareQueueConsumer) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareQueueConsumer) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

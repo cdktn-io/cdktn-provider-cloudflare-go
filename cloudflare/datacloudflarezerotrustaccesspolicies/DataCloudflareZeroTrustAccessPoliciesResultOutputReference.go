@@ -26,6 +26,7 @@ type DataCloudflareZeroTrustAccessPoliciesResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionRules() DataCloudflareZeroTrustAccessPoliciesResultConnectionRulesOutputReference
 	CreatedAt() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -41,6 +42,7 @@ type DataCloudflareZeroTrustAccessPoliciesResultOutputReference interface {
 	InternalValue() *DataCloudflareZeroTrustAccessPoliciesResult
 	SetInternalValue(val *DataCloudflareZeroTrustAccessPoliciesResult)
 	IsolationRequired() cdktn.IResolvable
+	MfaConfig() DataCloudflareZeroTrustAccessPoliciesResultMfaConfigOutputReference
 	Name() *string
 	PurposeJustificationPrompt() *string
 	PurposeJustificationRequired() cdktn.IResolvable
@@ -145,6 +147,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference) C
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference) ConnectionRules() DataCloudflareZeroTrustAccessPoliciesResultConnectionRulesOutputReference {
+	var returns DataCloudflareZeroTrustAccessPoliciesResultConnectionRulesOutputReference
+	_jsii_.Get(
+		j,
+		"connectionRules",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference) CreatedAt() *string {
 	var returns *string
 	_jsii_.Get(
@@ -230,6 +242,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference) I
 	_jsii_.Get(
 		j,
 		"isolationRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference) MfaConfig() DataCloudflareZeroTrustAccessPoliciesResultMfaConfigOutputReference {
+	var returns DataCloudflareZeroTrustAccessPoliciesResultMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
 		&returns,
 	)
 	return returns

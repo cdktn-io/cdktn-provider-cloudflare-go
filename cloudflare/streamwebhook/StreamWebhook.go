@@ -5,14 +5,14 @@ package streamwebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamwebhook/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamwebhook/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_webhook cloudflare_stream_webhook}.
 type StreamWebhook interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -46,6 +46,7 @@ type StreamWebhook interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Modified() *string
 	// The tree node.
 	Node() constructs.Node
 	NotificationUrl() *string
@@ -61,6 +62,7 @@ type StreamWebhook interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Secret() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -110,6 +112,8 @@ type StreamWebhook interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
+	ResetNotificationUrl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -250,6 +254,16 @@ func (j *jsiiProxy_StreamWebhook) Lifecycle() *cdktn.TerraformResourceLifecycle 
 	return returns
 }
 
+func (j *jsiiProxy_StreamWebhook) Modified() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modified",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamWebhook) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -310,6 +324,16 @@ func (j *jsiiProxy_StreamWebhook) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StreamWebhook) Secret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secret",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamWebhook) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -341,7 +365,7 @@ func (j *jsiiProxy_StreamWebhook) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
 func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebhookConfig) StreamWebhook {
 	_init_.Initialize()
 
@@ -359,7 +383,7 @@ func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
 func NewStreamWebhook_Override(s StreamWebhook, scope constructs.Construct, id *string, config *StreamWebhookConfig) {
 	_init_.Initialize()
 
@@ -810,6 +834,22 @@ func (s *jsiiProxy_StreamWebhook) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StreamWebhook) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamWebhook) ResetNotificationUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNotificationUrl",
+		nil, // no parameters
 	)
 }
 

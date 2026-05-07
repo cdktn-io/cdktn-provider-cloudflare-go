@@ -5,14 +5,14 @@ package datacloudflarewebanalyticssite
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarewebanalyticssite/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarewebanalyticssite/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_site cloudflare_web_analytics_site}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/web_analytics_site cloudflare_web_analytics_site}.
 type DataCloudflareWebAnalyticsSite interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -95,6 +95,7 @@ type DataCloudflareWebAnalyticsSite interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareWebAnalyticsSiteFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -409,7 +410,7 @@ func (j *jsiiProxy_DataCloudflareWebAnalyticsSite) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_site cloudflare_web_analytics_site} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/web_analytics_site cloudflare_web_analytics_site} Data Source.
 func NewDataCloudflareWebAnalyticsSite(scope constructs.Construct, id *string, config *DataCloudflareWebAnalyticsSiteConfig) DataCloudflareWebAnalyticsSite {
 	_init_.Initialize()
 
@@ -427,7 +428,7 @@ func NewDataCloudflareWebAnalyticsSite(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_site cloudflare_web_analytics_site} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/web_analytics_site cloudflare_web_analytics_site} Data Source.
 func NewDataCloudflareWebAnalyticsSite_Override(d DataCloudflareWebAnalyticsSite, scope constructs.Construct, id *string, config *DataCloudflareWebAnalyticsSiteConfig) {
 	_init_.Initialize()
 
@@ -799,6 +800,14 @@ func (d *jsiiProxy_DataCloudflareWebAnalyticsSite) PutFilter(value *DataCloudfla
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWebAnalyticsSite) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

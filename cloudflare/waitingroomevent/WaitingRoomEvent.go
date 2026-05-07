@@ -5,14 +5,14 @@ package waitingroomevent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/waitingroomevent/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/waitingroomevent/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
 type WaitingRoomEvent interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -173,6 +173,7 @@ type WaitingRoomEvent interface {
 	ResetTotalActiveUsers()
 	ResetTurnstileAction()
 	ResetTurnstileMode()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -731,7 +732,7 @@ func (j *jsiiProxy_WaitingRoomEvent) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *WaitingRoomEventConfig) WaitingRoomEvent {
 	_init_.Initialize()
 
@@ -749,7 +750,7 @@ func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *Waiting
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent_Override(w WaitingRoomEvent, scope constructs.Construct, id *string, config *WaitingRoomEventConfig) {
 	_init_.Initialize()
 
@@ -1468,6 +1469,14 @@ func (w *jsiiProxy_WaitingRoomEvent) ResetTurnstileMode() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTurnstileMode",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoomEvent) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

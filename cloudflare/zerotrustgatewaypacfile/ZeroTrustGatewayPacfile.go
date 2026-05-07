@@ -5,14 +5,14 @@ package zerotrustgatewaypacfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustgatewaypacfile/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaypacfile/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
 type ZeroTrustGatewayPacfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -123,6 +123,7 @@ type ZeroTrustGatewayPacfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -456,7 +457,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPacfile) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
 func NewZeroTrustGatewayPacfile(scope constructs.Construct, id *string, config *ZeroTrustGatewayPacfileConfig) ZeroTrustGatewayPacfile {
 	_init_.Initialize()
 
@@ -474,7 +475,7 @@ func NewZeroTrustGatewayPacfile(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
 func NewZeroTrustGatewayPacfile_Override(z ZeroTrustGatewayPacfile, scope constructs.Construct, id *string, config *ZeroTrustGatewayPacfileConfig) {
 	_init_.Initialize()
 
@@ -958,6 +959,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPacfile) OverrideLogicalId(newLogicalId *stri
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPacfile) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

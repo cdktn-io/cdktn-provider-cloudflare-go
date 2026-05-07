@@ -67,23 +67,11 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) validateSetReadOnlyParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) validateSetSourceAccountParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) validateSetVersionParameters(val *float64) error {
 	return nil
 }
 

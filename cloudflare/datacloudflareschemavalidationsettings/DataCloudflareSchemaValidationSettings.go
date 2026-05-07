@@ -5,14 +5,14 @@ package datacloudflareschemavalidationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareschemavalidationsettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareschemavalidationsettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings}.
 type DataCloudflareSchemaValidationSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -86,6 +86,7 @@ type DataCloudflareSchemaValidationSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -295,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationSettings) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings} Data Source.
 func NewDataCloudflareSchemaValidationSettings(scope constructs.Construct, id *string, config *DataCloudflareSchemaValidationSettingsConfig) DataCloudflareSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -313,7 +314,7 @@ func NewDataCloudflareSchemaValidationSettings(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/schema_validation_settings cloudflare_schema_validation_settings} Data Source.
 func NewDataCloudflareSchemaValidationSettings_Override(d DataCloudflareSchemaValidationSettings, scope constructs.Construct, id *string, config *DataCloudflareSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 
@@ -670,6 +671,14 @@ func (d *jsiiProxy_DataCloudflareSchemaValidationSettings) ResetOverrideLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareSchemaValidationSettings) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

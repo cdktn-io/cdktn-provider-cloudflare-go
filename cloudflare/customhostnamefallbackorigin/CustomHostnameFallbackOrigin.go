@@ -5,14 +5,14 @@ package customhostnamefallbackorigin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customhostnamefallbackorigin/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customhostnamefallbackorigin/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
 type CustomHostnameFallbackOrigin interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
 func NewCustomHostnameFallbackOrigin(scope constructs.Construct, id *string, config *CustomHostnameFallbackOriginConfig) CustomHostnameFallbackOrigin {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewCustomHostnameFallbackOrigin(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
 func NewCustomHostnameFallbackOrigin_Override(c CustomHostnameFallbackOrigin, scope constructs.Construct, id *string, config *CustomHostnameFallbackOriginConfig) {
 	_init_.Initialize()
 

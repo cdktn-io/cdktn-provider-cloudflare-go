@@ -5,14 +5,14 @@ package workflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow cloudflare_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow cloudflare_workflow}.
 type Workflow interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -53,6 +53,8 @@ type Workflow interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Limits() WorkflowLimitsOutputReference
+	LimitsInput() interface{}
 	ModifiedOn() *string
 	Name() *string
 	// The tree node.
@@ -125,6 +127,9 @@ type Workflow interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLimits(value *WorkflowLimits)
+	ResetAccountId()
+	ResetLimits()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -325,6 +330,26 @@ func (j *jsiiProxy_Workflow) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Workflow) Limits() WorkflowLimitsOutputReference {
+	var returns WorkflowLimitsOutputReference
+	_jsii_.Get(
+		j,
+		"limits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) LimitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"limitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Workflow) ModifiedOn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -486,7 +511,7 @@ func (j *jsiiProxy_Workflow) WorkflowNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig) Workflow {
 	_init_.Initialize()
 
@@ -504,7 +529,7 @@ func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow_Override(w Workflow, scope constructs.Construct, id *string, config *WorkflowConfig) {
 	_init_.Initialize()
 
@@ -977,6 +1002,33 @@ func (w *jsiiProxy_Workflow) OverrideLogicalId(newLogicalId *string) {
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (w *jsiiProxy_Workflow) PutLimits(value *WorkflowLimits) {
+	if err := w.validatePutLimitsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putLimits",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Workflow) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workflow) ResetLimits() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetLimits",
+		nil, // no parameters
 	)
 }
 

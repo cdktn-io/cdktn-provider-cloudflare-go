@@ -5,9 +5,9 @@ package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersscript/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workersscript/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -35,6 +35,9 @@ type WorkersScriptLimitsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Subrequests() *float64
+	SetSubrequests(val *float64)
+	SubrequestsInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type WorkersScriptLimitsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCpuMs()
+	ResetSubrequests()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_WorkersScriptLimitsOutputReference) InternalValue() interface
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptLimitsOutputReference) Subrequests() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subrequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptLimitsOutputReference) SubrequestsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subrequestsInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_WorkersScriptLimitsOutputReference)SetInternalValue(val inter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptLimitsOutputReference)SetSubrequests(val *float64) {
+	if err := j.validateSetSubrequestsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subrequests",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (w *jsiiProxy_WorkersScriptLimitsOutputReference) ResetCpuMs() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCpuMs",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptLimitsOutputReference) ResetSubrequests() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSubrequests",
 		nil, // no parameters
 	)
 }

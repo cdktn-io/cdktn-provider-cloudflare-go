@@ -5,9 +5,9 @@ package datacloudflaremagictransitsitelans
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagictransitsitelans/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitsitelans/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -35,6 +35,8 @@ type DataCloudflareMagicTransitSiteLansResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareMagicTransitSiteLansResult
 	SetInternalValue(val *DataCloudflareMagicTransitSiteLansResult)
+	IsBreakout() cdktn.IResolvable
+	IsPrioritized() cdktn.IResolvable
 	Name() *string
 	Nat() DataCloudflareMagicTransitSiteLansResultNatOutputReference
 	Physport() *float64
@@ -164,6 +166,26 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) IsBreakout() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isBreakout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) IsPrioritized() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isPrioritized",
 		&returns,
 	)
 	return returns

@@ -47,6 +47,10 @@ func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) validateInterpolatio
 	return nil
 }
 
+func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) validatePutSearchForAgentsParameters(value *AiSearchInstanceMetadataSearchForAgents) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

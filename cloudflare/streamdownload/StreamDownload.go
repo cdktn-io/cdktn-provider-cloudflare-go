@@ -5,19 +5,20 @@ package streamdownload
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamdownload/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamdownload/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_download cloudflare_stream_download}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_download cloudflare_stream_download}.
 type StreamDownload interface {
 	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	Audio() StreamDownloadAudioOutputReference
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -30,6 +31,7 @@ type StreamDownload interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Default() StreamDownloadDefaultOutputReference
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -110,6 +112,7 @@ type StreamDownload interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -160,6 +163,16 @@ func (j *jsiiProxy_StreamDownload) AccountIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StreamDownload) Audio() StreamDownloadAudioOutputReference {
+	var returns StreamDownloadAudioOutputReference
+	_jsii_.Get(
+		j,
+		"audio",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamDownload) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
@@ -195,6 +208,16 @@ func (j *jsiiProxy_StreamDownload) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamDownload) Default() StreamDownloadDefaultOutputReference {
+	var returns StreamDownloadDefaultOutputReference
+	_jsii_.Get(
+		j,
+		"default",
 		&returns,
 	)
 	return returns
@@ -341,7 +364,7 @@ func (j *jsiiProxy_StreamDownload) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_download cloudflare_stream_download} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_download cloudflare_stream_download} Resource.
 func NewStreamDownload(scope constructs.Construct, id *string, config *StreamDownloadConfig) StreamDownload {
 	_init_.Initialize()
 
@@ -359,7 +382,7 @@ func NewStreamDownload(scope constructs.Construct, id *string, config *StreamDow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_download cloudflare_stream_download} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_download cloudflare_stream_download} Resource.
 func NewStreamDownload_Override(s StreamDownload, scope constructs.Construct, id *string, config *StreamDownloadConfig) {
 	_init_.Initialize()
 
@@ -810,6 +833,14 @@ func (s *jsiiProxy_StreamDownload) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StreamDownload) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

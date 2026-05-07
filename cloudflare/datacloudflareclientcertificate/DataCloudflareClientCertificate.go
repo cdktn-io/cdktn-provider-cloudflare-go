@@ -5,14 +5,14 @@ package datacloudflareclientcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/client_certificate cloudflare_client_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificate cloudflare_client_certificate}.
 type DataCloudflareClientCertificate interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -110,6 +110,7 @@ type DataCloudflareClientCertificate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -519,7 +520,7 @@ func (j *jsiiProxy_DataCloudflareClientCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/client_certificate cloudflare_client_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificate cloudflare_client_certificate} Data Source.
 func NewDataCloudflareClientCertificate(scope constructs.Construct, id *string, config *DataCloudflareClientCertificateConfig) DataCloudflareClientCertificate {
 	_init_.Initialize()
 
@@ -537,7 +538,7 @@ func NewDataCloudflareClientCertificate(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/client_certificate cloudflare_client_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificate cloudflare_client_certificate} Data Source.
 func NewDataCloudflareClientCertificate_Override(d DataCloudflareClientCertificate, scope constructs.Construct, id *string, config *DataCloudflareClientCertificateConfig) {
 	_init_.Initialize()
 
@@ -932,6 +933,14 @@ func (d *jsiiProxy_DataCloudflareClientCertificate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareClientCertificate) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

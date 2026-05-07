@@ -5,9 +5,9 @@ package datacloudflared1databases
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflared1databases/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflared1databases/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -34,6 +34,7 @@ type DataCloudflareD1DatabasesResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareD1DatabasesResult
 	SetInternalValue(val *DataCloudflareD1DatabasesResult)
+	Jurisdiction() *string
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataCloudflareD1DatabasesResultOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareD1DatabasesResultOutputReference) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
 		&returns,
 	)
 	return returns

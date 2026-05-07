@@ -5,14 +5,14 @@ package r2bucketsippy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
 type R2BucketSippy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -120,6 +120,7 @@ type R2BucketSippy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDestination(value *R2BucketSippyDestination)
 	PutSource(value *R2BucketSippySource)
+	ResetAccountId()
 	ResetDestination()
 	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -424,7 +425,7 @@ func (j *jsiiProxy_R2BucketSippy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSippyConfig) R2BucketSippy {
 	_init_.Initialize()
 
@@ -442,7 +443,7 @@ func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy_Override(r R2BucketSippy, scope constructs.Construct, id *string, config *R2BucketSippyConfig) {
 	_init_.Initialize()
 
@@ -926,6 +927,14 @@ func (r *jsiiProxy_R2BucketSippy) PutSource(value *R2BucketSippySource) {
 		r,
 		"putSource",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_R2BucketSippy) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

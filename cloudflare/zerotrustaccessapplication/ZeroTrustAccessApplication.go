@@ -5,14 +5,14 @@ package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
 type ZeroTrustAccessApplication interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -104,11 +104,15 @@ type ZeroTrustAccessApplication interface {
 	LogoUrl() *string
 	SetLogoUrl(val *string)
 	LogoUrlInput() *string
+	MfaConfig() ZeroTrustAccessApplicationMfaConfigOutputReference
+	MfaConfigInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OauthConfiguration() ZeroTrustAccessApplicationOauthConfigurationOutputReference
+	OauthConfigurationInput() interface{}
 	OptionsPreflightBypass() interface{}
 	SetOptionsPreflightBypass(val interface{})
 	OptionsPreflightBypassInput() interface{}
@@ -216,6 +220,8 @@ type ZeroTrustAccessApplication interface {
 	PutDestinations(value interface{})
 	PutFooterLinks(value interface{})
 	PutLandingPageDesign(value *ZeroTrustAccessApplicationLandingPageDesign)
+	PutMfaConfig(value *ZeroTrustAccessApplicationMfaConfig)
+	PutOauthConfiguration(value *ZeroTrustAccessApplicationOauthConfiguration)
 	PutPolicies(value interface{})
 	PutSaasApp(value *ZeroTrustAccessApplicationSaasApp)
 	PutScimConfig(value *ZeroTrustAccessApplicationScimConfig)
@@ -241,7 +247,9 @@ type ZeroTrustAccessApplication interface {
 	ResetHttpOnlyCookieAttribute()
 	ResetLandingPageDesign()
 	ResetLogoUrl()
+	ResetMfaConfig()
 	ResetName()
+	ResetOauthConfiguration()
 	ResetOptionsPreflightBypass()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -818,6 +826,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) LogoUrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplication) MfaConfig() ZeroTrustAccessApplicationMfaConfigOutputReference {
+	var returns ZeroTrustAccessApplicationMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) MfaConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplication) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -843,6 +871,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) OauthConfiguration() ZeroTrustAccessApplicationOauthConfigurationOutputReference {
+	var returns ZeroTrustAccessApplicationOauthConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"oauthConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) OauthConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oauthConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1229,7 +1277,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) ZeroTrustAccessApplication {
 	_init_.Initialize()
 
@@ -1247,7 +1295,7 @@ func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication_Override(z ZeroTrustAccessApplication, scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -2053,6 +2101,28 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) PutLandingPageDesign(value *ZeroT
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplication) PutMfaConfig(value *ZeroTrustAccessApplicationMfaConfig) {
+	if err := z.validatePutMfaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putMfaConfig",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) PutOauthConfiguration(value *ZeroTrustAccessApplicationOauthConfiguration) {
+	if err := z.validatePutOauthConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putOauthConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplication) PutPolicies(value interface{}) {
 	if err := z.validatePutPoliciesParameters(value); err != nil {
 		panic(err)
@@ -2265,10 +2335,26 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) ResetLogoUrl() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplication) ResetMfaConfig() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMfaConfig",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplication) ResetName() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) ResetOauthConfiguration() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetOauthConfiguration",
 		nil, // no parameters
 	)
 }

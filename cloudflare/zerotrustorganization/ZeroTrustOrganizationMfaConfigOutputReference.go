@@ -5,9 +5,9 @@ package zerotrustorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -16,6 +16,9 @@ type ZeroTrustOrganizationMfaConfigOutputReference interface {
 	AllowedAuthenticators() *[]*string
 	SetAllowedAuthenticators(val *[]*string)
 	AllowedAuthenticatorsInput() *[]*string
+	AmrMatchingSessionDuration() *string
+	SetAmrMatchingSessionDuration(val *string)
+	AmrMatchingSessionDurationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +38,9 @@ type ZeroTrustOrganizationMfaConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	RequiredAaguids() *string
+	SetRequiredAaguids(val *string)
+	RequiredAaguidsInput() *string
 	SessionDuration() *string
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
@@ -71,6 +77,8 @@ type ZeroTrustOrganizationMfaConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedAuthenticators()
+	ResetAmrMatchingSessionDuration()
+	ResetRequiredAaguids()
 	ResetSessionDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -102,6 +110,26 @@ func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) AllowedAuthent
 	_jsii_.Get(
 		j,
 		"allowedAuthenticatorsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) AmrMatchingSessionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"amrMatchingSessionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) AmrMatchingSessionDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"amrMatchingSessionDurationInput",
 		&returns,
 	)
 	return returns
@@ -152,6 +180,26 @@ func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) RequiredAaguids() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requiredAaguids",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) RequiredAaguidsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requiredAaguidsInput",
 		&returns,
 	)
 	return returns
@@ -236,6 +284,17 @@ func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference)SetAllowedAuthe
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference)SetAmrMatchingSessionDuration(val *string) {
+	if err := j.validateSetAmrMatchingSessionDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"amrMatchingSessionDuration",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -265,6 +324,17 @@ func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference)SetInternalValu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference)SetRequiredAaguids(val *string) {
+	if err := j.validateSetRequiredAaguidsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requiredAaguids",
 		val,
 	)
 }
@@ -492,6 +562,22 @@ func (z *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) ResetAllowedAu
 	_jsii_.InvokeVoid(
 		z,
 		"resetAllowedAuthenticators",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) ResetAmrMatchingSessionDuration() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAmrMatchingSessionDuration",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) ResetRequiredAaguids() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRequiredAaguids",
 		nil, // no parameters
 	)
 }

@@ -67,11 +67,11 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetDisabledAtParameters(val *string) error {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetFlattenCnameParameters(val interface{}) error {
 	return nil
 }
 

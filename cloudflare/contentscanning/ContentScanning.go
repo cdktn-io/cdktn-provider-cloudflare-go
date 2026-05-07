@@ -5,14 +5,14 @@ package contentscanning
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/contentscanning/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/contentscanning/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning cloudflare_content_scanning}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/content_scanning cloudflare_content_scanning}.
 type ContentScanning interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -114,6 +114,7 @@ type ContentScanning interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -352,7 +353,7 @@ func (j *jsiiProxy_ContentScanning) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning cloudflare_content_scanning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/content_scanning cloudflare_content_scanning} Resource.
 func NewContentScanning(scope constructs.Construct, id *string, config *ContentScanningConfig) ContentScanning {
 	_init_.Initialize()
 
@@ -370,7 +371,7 @@ func NewContentScanning(scope constructs.Construct, id *string, config *ContentS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning cloudflare_content_scanning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/content_scanning cloudflare_content_scanning} Resource.
 func NewContentScanning_Override(c ContentScanning, scope constructs.Construct, id *string, config *ContentScanningConfig) {
 	_init_.Initialize()
 
@@ -828,6 +829,14 @@ func (c *jsiiProxy_ContentScanning) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContentScanning) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

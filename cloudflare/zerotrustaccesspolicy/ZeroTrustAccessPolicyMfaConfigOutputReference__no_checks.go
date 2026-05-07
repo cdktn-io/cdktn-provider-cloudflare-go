@@ -67,7 +67,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) validateSetInt
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) validateSetMfaBypassParameters(val interface{}) error {
+func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) validateSetMfaDisabledParameters(val interface{}) error {
 	return nil
 }
 

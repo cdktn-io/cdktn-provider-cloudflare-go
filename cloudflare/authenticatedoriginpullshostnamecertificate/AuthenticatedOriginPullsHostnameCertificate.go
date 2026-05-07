@@ -5,14 +5,14 @@ package authenticatedoriginpullshostnamecertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpullshostnamecertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpullshostnamecertificate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate}.
 type AuthenticatedOriginPullsHostnameCertificate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsHostnameCertificate) ZoneIdInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate} Resource.
 func NewAuthenticatedOriginPullsHostnameCertificate(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsHostnameCertificateConfig) AuthenticatedOriginPullsHostnameCertificate {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewAuthenticatedOriginPullsHostnameCertificate(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate} Resource.
 func NewAuthenticatedOriginPullsHostnameCertificate_Override(a AuthenticatedOriginPullsHostnameCertificate, scope constructs.Construct, id *string, config *AuthenticatedOriginPullsHostnameCertificateConfig) {
 	_init_.Initialize()
 

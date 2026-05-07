@@ -5,14 +5,14 @@ package workersdeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersdeployment/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workersdeployment/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_deployment cloudflare_workers_deployment}.
 type WorkersDeployment interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -123,6 +123,7 @@ type WorkersDeployment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAnnotations(value *WorkersDeploymentAnnotations)
 	PutVersions(value interface{})
+	ResetAccountId()
 	ResetAnnotations()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -455,7 +456,7 @@ func (j *jsiiProxy_WorkersDeployment) VersionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment(scope constructs.Construct, id *string, config *WorkersDeploymentConfig) WorkersDeployment {
 	_init_.Initialize()
 
@@ -473,7 +474,7 @@ func NewWorkersDeployment(scope constructs.Construct, id *string, config *Worker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment_Override(w WorkersDeployment, scope constructs.Construct, id *string, config *WorkersDeploymentConfig) {
 	_init_.Initialize()
 
@@ -957,6 +958,14 @@ func (w *jsiiProxy_WorkersDeployment) PutVersions(value interface{}) {
 		w,
 		"putVersions",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkersDeployment) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

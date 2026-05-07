@@ -5,9 +5,9 @@ package datacloudflarezerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccessapplication/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustaccessapplication/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -41,6 +41,7 @@ type DataCloudflareZeroTrustAccessApplicationPoliciesOutputReference interface {
 	InternalValue() *DataCloudflareZeroTrustAccessApplicationPolicies
 	SetInternalValue(val *DataCloudflareZeroTrustAccessApplicationPolicies)
 	IsolationRequired() cdktn.IResolvable
+	MfaConfig() DataCloudflareZeroTrustAccessApplicationPoliciesMfaConfigOutputReference
 	Name() *string
 	Precedence() *float64
 	PurposeJustificationPrompt() *string
@@ -230,6 +231,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationPoliciesOutputReferen
 	_jsii_.Get(
 		j,
 		"isolationRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationPoliciesOutputReference) MfaConfig() DataCloudflareZeroTrustAccessApplicationPoliciesMfaConfigOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationPoliciesMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
 		&returns,
 	)
 	return returns

@@ -5,14 +5,17 @@ package zerotrustaccessaicontrolsmcpportal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessaicontrolsmcpportal/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessaicontrolsmcpportal/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference interface {
 	cdktn.ComplexObject
+	Alias() *string
+	SetAlias(val *string)
+	AliasInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +76,7 @@ type ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference inte
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetAlias()
 	ResetDescription()
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
@@ -88,6 +92,26 @@ type ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference inte
 // The jsii proxy struct for ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference
 type jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference) Alias() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference) AliasInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aliasInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference) ComplexObjectIndex() interface{} {
@@ -245,6 +269,17 @@ func NewZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference_O
 		"@cdktn/provider-cloudflare.zeroTrustAccessAiControlsMcpPortal.ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference)SetAlias(val *string) {
+	if err := j.validateSetAliasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alias",
+		val,
 	)
 }
 
@@ -520,6 +555,14 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutput
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference) ResetAlias() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAlias",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsOutputReference) ResetDescription() {

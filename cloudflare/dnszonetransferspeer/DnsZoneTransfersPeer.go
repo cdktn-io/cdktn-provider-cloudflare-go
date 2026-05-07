@@ -5,14 +5,14 @@ package dnszonetransferspeer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnszonetransferspeer/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnszonetransferspeer/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer}.
 type DnsZoneTransfersPeer interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -123,6 +123,7 @@ type DnsZoneTransfersPeer interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetIp()
 	ResetIxfrEnable()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -448,7 +449,7 @@ func (j *jsiiProxy_DnsZoneTransfersPeer) TsigIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource.
 func NewDnsZoneTransfersPeer(scope constructs.Construct, id *string, config *DnsZoneTransfersPeerConfig) DnsZoneTransfersPeer {
 	_init_.Initialize()
 
@@ -466,7 +467,7 @@ func NewDnsZoneTransfersPeer(scope constructs.Construct, id *string, config *Dns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Resource.
 func NewDnsZoneTransfersPeer_Override(d DnsZoneTransfersPeer, scope constructs.Construct, id *string, config *DnsZoneTransfersPeerConfig) {
 	_init_.Initialize()
 
@@ -961,6 +962,14 @@ func (d *jsiiProxy_DnsZoneTransfersPeer) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DnsZoneTransfersPeer) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

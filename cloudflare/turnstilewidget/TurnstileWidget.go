@@ -5,14 +5,14 @@ package turnstilewidget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/turnstilewidget/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/turnstilewidget/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 type TurnstileWidget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -136,6 +136,7 @@ type TurnstileWidget interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetBotFightMode()
 	ResetClearanceLevel()
 	ResetEphemeralId()
@@ -562,7 +563,7 @@ func (j *jsiiProxy_TurnstileWidget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget(scope constructs.Construct, id *string, config *TurnstileWidgetConfig) TurnstileWidget {
 	_init_.Initialize()
 
@@ -580,7 +581,7 @@ func NewTurnstileWidget(scope constructs.Construct, id *string, config *Turnstil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget_Override(t TurnstileWidget, scope constructs.Construct, id *string, config *TurnstileWidgetConfig) {
 	_init_.Initialize()
 
@@ -1108,6 +1109,14 @@ func (t *jsiiProxy_TurnstileWidget) OverrideLogicalId(newLogicalId *string) {
 		t,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (t *jsiiProxy_TurnstileWidget) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -337,6 +337,14 @@ func (j *jsiiProxy_ObservatoryScheduledTest) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ObservatoryScheduledTest) validateSetFrequencyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ObservatoryScheduledTest) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -386,6 +394,14 @@ func (j *jsiiProxy_ObservatoryScheduledTest) validateSetProvisionersParameters(v
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktn.FileProvisioner, *cdktn.LocalExecProvisioner, *cdktn.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObservatoryScheduledTest) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

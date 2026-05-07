@@ -5,14 +5,14 @@ package zerotrustaccessshortlivedcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessshortlivedcertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessshortlivedcertificate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate}.
 type ZeroTrustAccessShortLivedCertificate interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -399,7 +399,7 @@ func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Resource.
 func NewZeroTrustAccessShortLivedCertificate(scope constructs.Construct, id *string, config *ZeroTrustAccessShortLivedCertificateConfig) ZeroTrustAccessShortLivedCertificate {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewZeroTrustAccessShortLivedCertificate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Resource.
 func NewZeroTrustAccessShortLivedCertificate_Override(z ZeroTrustAccessShortLivedCertificate, scope constructs.Construct, id *string, config *ZeroTrustAccessShortLivedCertificateConfig) {
 	_init_.Initialize()
 

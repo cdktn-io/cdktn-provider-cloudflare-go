@@ -5,14 +5,14 @@ package datacloudflarestreamcaptionlanguage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamcaptionlanguage/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamcaptionlanguage/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream_caption_language cloudflare_stream_caption_language}.
 type DataCloudflareStreamCaptionLanguage interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -90,6 +90,7 @@ type DataCloudflareStreamCaptionLanguage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -352,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream_caption_language cloudflare_stream_caption_language} Data Source.
 func NewDataCloudflareStreamCaptionLanguage(scope constructs.Construct, id *string, config *DataCloudflareStreamCaptionLanguageConfig) DataCloudflareStreamCaptionLanguage {
 	_init_.Initialize()
 
@@ -370,7 +371,7 @@ func NewDataCloudflareStreamCaptionLanguage(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream_caption_language cloudflare_stream_caption_language} Data Source.
 func NewDataCloudflareStreamCaptionLanguage_Override(d DataCloudflareStreamCaptionLanguage, scope constructs.Construct, id *string, config *DataCloudflareStreamCaptionLanguageConfig) {
 	_init_.Initialize()
 
@@ -742,6 +743,14 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) OverrideLogicalId(newLog
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

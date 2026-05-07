@@ -5,14 +5,14 @@ package zerotrustdextest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdextest/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdextest/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
 type ZeroTrustDexTest interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -128,6 +128,7 @@ type ZeroTrustDexTest interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutData(value *ZeroTrustDexTestData)
 	PutTargetPolicies(value interface{})
+	ResetAccountId()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -491,7 +492,7 @@ func (j *jsiiProxy_ZeroTrustDexTest) TestId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
 func NewZeroTrustDexTest(scope constructs.Construct, id *string, config *ZeroTrustDexTestConfig) ZeroTrustDexTest {
 	_init_.Initialize()
 
@@ -509,7 +510,7 @@ func NewZeroTrustDexTest(scope constructs.Construct, id *string, config *ZeroTru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
 func NewZeroTrustDexTest_Override(z ZeroTrustDexTest, scope constructs.Construct, id *string, config *ZeroTrustDexTestConfig) {
 	_init_.Initialize()
 
@@ -1015,6 +1016,14 @@ func (z *jsiiProxy_ZeroTrustDexTest) PutTargetPolicies(value interface{}) {
 		z,
 		"putTargetPolicies",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDexTest) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

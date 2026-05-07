@@ -5,9 +5,9 @@ package worker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/worker/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/worker/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -48,6 +48,8 @@ type WorkerObservabilityOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Traces() WorkerObservabilityTracesOutputReference
+	TracesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,9 +75,11 @@ type WorkerObservabilityOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLogs(value *WorkerObservabilityLogs)
+	PutTraces(value *WorkerObservabilityTraces)
 	ResetEnabled()
 	ResetHeadSamplingRate()
 	ResetLogs()
+	ResetTraces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -216,6 +220,26 @@ func (j *jsiiProxy_WorkerObservabilityOutputReference) TerraformResource() cdktn
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityOutputReference) Traces() WorkerObservabilityTracesOutputReference {
+	var returns WorkerObservabilityTracesOutputReference
+	_jsii_.Get(
+		j,
+		"traces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityOutputReference) TracesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tracesInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) PutLogs(value *WorkerObse
 	)
 }
 
+func (w *jsiiProxy_WorkerObservabilityOutputReference) PutTraces(value *WorkerObservabilityTraces) {
+	if err := w.validatePutTracesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putTraces",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerObservabilityOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		w,
@@ -543,6 +578,14 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) ResetLogs() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetLogs",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerObservabilityOutputReference) ResetTraces() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTraces",
 		nil, // no parameters
 	)
 }

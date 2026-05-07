@@ -5,15 +5,16 @@ package datacloudflarezerotrustdeviceposturerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustdeviceposturerule/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdeviceposturerule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustDevicePostureRuleInputOutputReference interface {
 	cdktn.ComplexObject
 	ActiveThreats() *float64
+	AuthState() *[]*string
 	CertificateId() *string
 	CheckDisks() *[]*string
 	CheckPrivateKey() cdktn.IResolvable
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRuleInputOutputReference)
 	_jsii_.Get(
 		j,
 		"activeThreats",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRuleInputOutputReference) AuthState() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authState",
 		&returns,
 	)
 	return returns

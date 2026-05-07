@@ -5,14 +5,14 @@ package zerotrustriskscoringintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustriskscoringintegration/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustriskscoringintegration/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration}.
 type ZeroTrustRiskScoringIntegration interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -123,6 +123,7 @@ type ZeroTrustRiskScoringIntegration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetActive()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -456,7 +457,7 @@ func (j *jsiiProxy_ZeroTrustRiskScoringIntegration) WellKnownUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Resource.
 func NewZeroTrustRiskScoringIntegration(scope constructs.Construct, id *string, config *ZeroTrustRiskScoringIntegrationConfig) ZeroTrustRiskScoringIntegration {
 	_init_.Initialize()
 
@@ -474,7 +475,7 @@ func NewZeroTrustRiskScoringIntegration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Resource.
 func NewZeroTrustRiskScoringIntegration_Override(z ZeroTrustRiskScoringIntegration, scope constructs.Construct, id *string, config *ZeroTrustRiskScoringIntegrationConfig) {
 	_init_.Initialize()
 
@@ -958,6 +959,14 @@ func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) OverrideLogicalId(newLogical
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

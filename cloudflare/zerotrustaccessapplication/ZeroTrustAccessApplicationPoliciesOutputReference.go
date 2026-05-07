@@ -5,9 +5,9 @@ package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -44,6 +44,8 @@ type ZeroTrustAccessApplicationPoliciesOutputReference interface {
 	IncludeInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MfaConfig() ZeroTrustAccessApplicationPoliciesMfaConfigOutputReference
+	MfaConfigInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -87,12 +89,14 @@ type ZeroTrustAccessApplicationPoliciesOutputReference interface {
 	PutConnectionRules(value *ZeroTrustAccessApplicationPoliciesConnectionRules)
 	PutExclude(value interface{})
 	PutInclude(value interface{})
+	PutMfaConfig(value *ZeroTrustAccessApplicationPoliciesMfaConfig)
 	PutRequire(value interface{})
 	ResetConnectionRules()
 	ResetDecision()
 	ResetExclude()
 	ResetId()
 	ResetInclude()
+	ResetMfaConfig()
 	ResetName()
 	ResetPrecedence()
 	ResetRequire()
@@ -256,6 +260,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) MfaConfig() ZeroTrustAccessApplicationPoliciesMfaConfigOutputReference {
+	var returns ZeroTrustAccessApplicationPoliciesMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) MfaConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaConfigInput",
 		&returns,
 	)
 	return returns
@@ -687,6 +711,17 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) PutInclude
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) PutMfaConfig(value *ZeroTrustAccessApplicationPoliciesMfaConfig) {
+	if err := z.validatePutMfaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putMfaConfig",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) PutRequire(value interface{}) {
 	if err := z.validatePutRequireParameters(value); err != nil {
 		panic(err)
@@ -734,6 +769,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) ResetInclu
 	_jsii_.InvokeVoid(
 		z,
 		"resetInclude",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) ResetMfaConfig() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMfaConfig",
 		nil, // no parameters
 	)
 }

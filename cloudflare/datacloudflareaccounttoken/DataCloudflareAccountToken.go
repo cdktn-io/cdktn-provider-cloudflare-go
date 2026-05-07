@@ -5,14 +5,14 @@ package datacloudflareaccounttoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaccounttoken/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaccounttoken/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token cloudflare_account_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_token cloudflare_account_token}.
 type DataCloudflareAccountToken interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -97,6 +97,7 @@ type DataCloudflareAccountToken interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareAccountTokenFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -431,7 +432,7 @@ func (j *jsiiProxy_DataCloudflareAccountToken) TokenIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token cloudflare_account_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_token cloudflare_account_token} Data Source.
 func NewDataCloudflareAccountToken(scope constructs.Construct, id *string, config *DataCloudflareAccountTokenConfig) DataCloudflareAccountToken {
 	_init_.Initialize()
 
@@ -449,7 +450,7 @@ func NewDataCloudflareAccountToken(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token cloudflare_account_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_token cloudflare_account_token} Data Source.
 func NewDataCloudflareAccountToken_Override(d DataCloudflareAccountToken, scope constructs.Construct, id *string, config *DataCloudflareAccountTokenConfig) {
 	_init_.Initialize()
 
@@ -821,6 +822,14 @@ func (d *jsiiProxy_DataCloudflareAccountToken) PutFilter(value *DataCloudflareAc
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAccountToken) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

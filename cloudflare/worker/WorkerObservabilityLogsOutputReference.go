@@ -5,9 +5,9 @@ package worker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/worker/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/worker/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,9 @@ type WorkerObservabilityLogsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Destinations() *[]*string
+	SetDestinations(val *[]*string)
+	DestinationsInput() *[]*string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -41,6 +44,9 @@ type WorkerObservabilityLogsOutputReference interface {
 	InvocationLogs() interface{}
 	SetInvocationLogs(val interface{})
 	InvocationLogsInput() interface{}
+	Persist() interface{}
+	SetPersist(val interface{})
+	PersistInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,9 +79,11 @@ type WorkerObservabilityLogsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDestinations()
 	ResetEnabled()
 	ResetHeadSamplingRate()
 	ResetInvocationLogs()
+	ResetPersist()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -116,6 +124,26 @@ func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) CreationStack() *[]*s
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) Destinations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) DestinationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinationsInput",
 		&returns,
 	)
 	return returns
@@ -201,6 +229,26 @@ func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) InvocationLogsInput()
 	return returns
 }
 
+func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) Persist() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"persist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) PersistInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"persistInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -271,6 +319,17 @@ func (j *jsiiProxy_WorkerObservabilityLogsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
+func (j *jsiiProxy_WorkerObservabilityLogsOutputReference)SetDestinations(val *[]*string) {
+	if err := j.validateSetDestinationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinations",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerObservabilityLogsOutputReference)SetEnabled(val interface{}) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
@@ -311,6 +370,17 @@ func (j *jsiiProxy_WorkerObservabilityLogsOutputReference)SetInvocationLogs(val 
 	_jsii_.Set(
 		j,
 		"invocationLogs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerObservabilityLogsOutputReference)SetPersist(val interface{}) {
+	if err := j.validateSetPersistParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"persist",
 		val,
 	)
 }
@@ -523,6 +593,14 @@ func (w *jsiiProxy_WorkerObservabilityLogsOutputReference) InterpolationForAttri
 	return returns
 }
 
+func (w *jsiiProxy_WorkerObservabilityLogsOutputReference) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDestinations",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerObservabilityLogsOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		w,
@@ -543,6 +621,14 @@ func (w *jsiiProxy_WorkerObservabilityLogsOutputReference) ResetInvocationLogs()
 	_jsii_.InvokeVoid(
 		w,
 		"resetInvocationLogs",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerObservabilityLogsOutputReference) ResetPersist() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPersist",
 		nil, // no parameters
 	)
 }

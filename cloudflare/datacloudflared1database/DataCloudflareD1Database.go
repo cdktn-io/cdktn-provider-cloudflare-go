@@ -5,14 +5,14 @@ package datacloudflared1database
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflared1database/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflared1database/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database cloudflare_d1_database}.
 type DataCloudflareD1Database interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -46,6 +46,7 @@ type DataCloudflareD1Database interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Jurisdiction() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -95,6 +96,7 @@ type DataCloudflareD1Database interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareD1DatabaseFilter)
+	ResetAccountId()
 	ResetDatabaseId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -288,6 +290,16 @@ func (j *jsiiProxy_DataCloudflareD1Database) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareD1Database) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareD1Database) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -409,7 +421,7 @@ func (j *jsiiProxy_DataCloudflareD1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) DataCloudflareD1Database {
 	_init_.Initialize()
 
@@ -427,7 +439,7 @@ func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database_Override(d DataCloudflareD1Database, scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) {
 	_init_.Initialize()
 
@@ -799,6 +811,14 @@ func (d *jsiiProxy_DataCloudflareD1Database) PutFilter(value *DataCloudflareD1Da
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareD1Database) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

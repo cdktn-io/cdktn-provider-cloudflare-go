@@ -5,14 +5,14 @@ package datacloudflareaccountroles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaccountroles/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaccountroles/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_roles cloudflare_account_roles}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_roles cloudflare_account_roles}.
 type DataCloudflareAccountRoles interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -85,6 +85,7 @@ type DataCloudflareAccountRoles interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -308,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
 func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, config *DataCloudflareAccountRolesConfig) DataCloudflareAccountRoles {
 	_init_.Initialize()
 
@@ -326,7 +327,7 @@ func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
 func NewDataCloudflareAccountRoles_Override(d DataCloudflareAccountRoles, scope constructs.Construct, id *string, config *DataCloudflareAccountRolesConfig) {
 	_init_.Initialize()
 
@@ -687,6 +688,14 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAccountRoles) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

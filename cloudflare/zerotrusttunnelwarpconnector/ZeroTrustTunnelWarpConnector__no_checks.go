@@ -103,6 +103,10 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetCountParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetHaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

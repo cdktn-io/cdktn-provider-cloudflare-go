@@ -5,9 +5,9 @@ package datacloudflarecustomssls
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomssls/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomssls/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -29,6 +29,7 @@ type DataCloudflareCustomSslsResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomCsrId() *string
 	ExpiresOn() *string
 	// Experimental.
 	Fqn() *string
@@ -128,6 +129,16 @@ func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomSslsResultOutputReference) CustomCsrId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customCsrId",
 		&returns,
 	)
 	return returns

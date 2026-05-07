@@ -5,14 +5,14 @@ package datacloudflareapitokens
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareapitokens/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapitokens/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_tokens cloudflare_api_tokens}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_tokens cloudflare_api_tokens}.
 type DataCloudflareApiTokens interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareApiTokens) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source.
 func NewDataCloudflareApiTokens(scope constructs.Construct, id *string, config *DataCloudflareApiTokensConfig) DataCloudflareApiTokens {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareApiTokens(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source.
 func NewDataCloudflareApiTokens_Override(d DataCloudflareApiTokens, scope constructs.Construct, id *string, config *DataCloudflareApiTokensConfig) {
 	_init_.Initialize()
 

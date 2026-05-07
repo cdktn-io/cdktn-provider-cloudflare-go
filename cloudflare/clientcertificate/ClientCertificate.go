@@ -5,14 +5,14 @@ package clientcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/clientcertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/clientcertificate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/client_certificate cloudflare_client_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/client_certificate cloudflare_client_certificate}.
 type ClientCertificate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -136,6 +136,7 @@ type ClientCertificate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReactivate()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -564,7 +565,7 @@ func (j *jsiiProxy_ClientCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/client_certificate cloudflare_client_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/client_certificate cloudflare_client_certificate} Resource.
 func NewClientCertificate(scope constructs.Construct, id *string, config *ClientCertificateConfig) ClientCertificate {
 	_init_.Initialize()
 
@@ -582,7 +583,7 @@ func NewClientCertificate(scope constructs.Construct, id *string, config *Client
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/client_certificate cloudflare_client_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/client_certificate cloudflare_client_certificate} Resource.
 func NewClientCertificate_Override(c ClientCertificate, scope constructs.Construct, id *string, config *ClientCertificateConfig) {
 	_init_.Initialize()
 
@@ -1070,6 +1071,14 @@ func (c *jsiiProxy_ClientCertificate) ResetReactivate() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetReactivate",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClientCertificate) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

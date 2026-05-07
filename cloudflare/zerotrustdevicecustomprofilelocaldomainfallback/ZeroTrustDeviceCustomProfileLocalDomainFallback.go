@@ -5,14 +5,14 @@ package zerotrustdevicecustomprofilelocaldomainfallback
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdevicecustomprofilelocaldomainfallback/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicecustomprofilelocaldomainfallback/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback}.
 type ZeroTrustDeviceCustomProfileLocalDomainFallback interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -114,6 +114,7 @@ type ZeroTrustDeviceCustomProfileLocalDomainFallback interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDomains(value interface{})
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -375,7 +376,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback} Resource.
 func NewZeroTrustDeviceCustomProfileLocalDomainFallback(scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileLocalDomainFallbackConfig) ZeroTrustDeviceCustomProfileLocalDomainFallback {
 	_init_.Initialize()
 
@@ -393,7 +394,7 @@ func NewZeroTrustDeviceCustomProfileLocalDomainFallback(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback} Resource.
 func NewZeroTrustDeviceCustomProfileLocalDomainFallback_Override(z ZeroTrustDeviceCustomProfileLocalDomainFallback, scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileLocalDomainFallbackConfig) {
 	_init_.Initialize()
 
@@ -855,6 +856,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) PutDomains(v
 		z,
 		"putDomains",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

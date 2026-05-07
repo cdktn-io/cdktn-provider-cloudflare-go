@@ -5,14 +5,14 @@ package workersroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersroute/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workersroute/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_route cloudflare_workers_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_route cloudflare_workers_route}.
 type WorkersRoute interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -118,6 +118,7 @@ type WorkersRoute interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetScript()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -376,7 +377,7 @@ func (j *jsiiProxy_WorkersRoute) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRouteConfig) WorkersRoute {
 	_init_.Initialize()
 
@@ -394,7 +395,7 @@ func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute_Override(w WorkersRoute, scope constructs.Construct, id *string, config *WorkersRouteConfig) {
 	_init_.Initialize()
 
@@ -871,6 +872,14 @@ func (w *jsiiProxy_WorkersRoute) ResetScript() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetScript",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersRoute) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

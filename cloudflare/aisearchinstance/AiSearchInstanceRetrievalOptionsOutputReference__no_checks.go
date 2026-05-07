@@ -47,6 +47,10 @@ func (a *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) validateInte
 	return nil
 }
 
+func (a *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) validatePutBoostByParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

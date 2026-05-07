@@ -5,9 +5,9 @@ package datacloudflareaisearchinstances
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstances/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstances/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -23,6 +23,7 @@ type DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsOutp
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContentSelector() DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsContentSelectorList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -98,6 +99,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerPa
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsOutputReference) ContentSelector() DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsContentSelectorList {
+	var returns DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsContentSelectorList
+	_jsii_.Get(
+		j,
+		"contentSelector",
 		&returns,
 	)
 	return returns

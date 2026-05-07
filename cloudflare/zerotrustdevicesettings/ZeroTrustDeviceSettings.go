@@ -5,14 +5,14 @@ package zerotrustdevicesettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdevicesettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdevicesettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
 type ZeroTrustDeviceSettings interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -134,6 +134,7 @@ type ZeroTrustDeviceSettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetDisableForTime()
 	ResetExternalEmergencySignalEnabled()
 	ResetExternalEmergencySignalFingerprint()
@@ -534,7 +535,7 @@ func (j *jsiiProxy_ZeroTrustDeviceSettings) UseZtVirtualIpInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Resource.
 func NewZeroTrustDeviceSettings(scope constructs.Construct, id *string, config *ZeroTrustDeviceSettingsConfig) ZeroTrustDeviceSettings {
 	_init_.Initialize()
 
@@ -552,7 +553,7 @@ func NewZeroTrustDeviceSettings(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_device_settings cloudflare_zero_trust_device_settings} Resource.
 func NewZeroTrustDeviceSettings_Override(z ZeroTrustDeviceSettings, scope constructs.Construct, id *string, config *ZeroTrustDeviceSettingsConfig) {
 	_init_.Initialize()
 
@@ -1091,6 +1092,14 @@ func (z *jsiiProxy_ZeroTrustDeviceSettings) OverrideLogicalId(newLogicalId *stri
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceSettings) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

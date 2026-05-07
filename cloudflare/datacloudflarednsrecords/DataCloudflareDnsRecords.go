@@ -5,14 +5,14 @@ package datacloudflarednsrecords
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarednsrecords/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarednsrecords/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_records cloudflare_dns_records}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/dns_records cloudflare_dns_records}.
 type DataCloudflareDnsRecords interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -133,6 +133,7 @@ type DataCloudflareDnsRecords interface {
 	ResetTag()
 	ResetTagMatch()
 	ResetType()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -572,7 +573,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecords) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_records cloudflare_dns_records} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/dns_records cloudflare_dns_records} Data Source.
 func NewDataCloudflareDnsRecords(scope constructs.Construct, id *string, config *DataCloudflareDnsRecordsConfig) DataCloudflareDnsRecords {
 	_init_.Initialize()
 
@@ -590,7 +591,7 @@ func NewDataCloudflareDnsRecords(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_records cloudflare_dns_records} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/dns_records cloudflare_dns_records} Data Source.
 func NewDataCloudflareDnsRecords_Override(d DataCloudflareDnsRecords, scope constructs.Construct, id *string, config *DataCloudflareDnsRecordsConfig) {
 	_init_.Initialize()
 
@@ -1175,6 +1176,14 @@ func (d *jsiiProxy_DataCloudflareDnsRecords) ResetType() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareDnsRecords) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

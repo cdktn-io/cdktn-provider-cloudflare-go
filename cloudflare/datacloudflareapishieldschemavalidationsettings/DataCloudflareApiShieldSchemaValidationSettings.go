@@ -5,14 +5,14 @@ package datacloudflareapishieldschemavalidationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareapishieldschemavalidationsettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapishieldschemavalidationsettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
 type DataCloudflareApiShieldSchemaValidationSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -87,6 +87,7 @@ type DataCloudflareApiShieldSchemaValidationSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -306,7 +307,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchemaValidationSettings) ZoneIdInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldSchemaValidationSettings(scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemaValidationSettingsConfig) DataCloudflareApiShieldSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -324,7 +325,7 @@ func NewDataCloudflareApiShieldSchemaValidationSettings(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldSchemaValidationSettings_Override(d DataCloudflareApiShieldSchemaValidationSettings, scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 
@@ -681,6 +682,14 @@ func (d *jsiiProxy_DataCloudflareApiShieldSchemaValidationSettings) ResetOverrid
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareApiShieldSchemaValidationSettings) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

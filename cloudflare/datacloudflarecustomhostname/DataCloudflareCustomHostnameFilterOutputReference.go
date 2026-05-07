@@ -5,14 +5,17 @@ package datacloudflarecustomhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomhostname/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomhostname/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareCustomHostnameFilterOutputReference interface {
 	cdktn.ComplexObject
+	CertificateAuthority() *string
+	SetCertificateAuthority(val *string)
+	CertificateAuthorityInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,14 +31,19 @@ type DataCloudflareCustomHostnameFilterOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomOriginServer() *string
+	SetCustomOriginServer(val *string)
+	CustomOriginServerInput() *string
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
 	// Experimental.
 	Fqn() *string
-	Hostname() *string
-	SetHostname(val *string)
-	HostnameInput() *string
+	Hostname() DataCloudflareCustomHostnameFilterHostnameOutputReference
+	HostnameInput() interface{}
+	HostnameStatus() *string
+	SetHostnameStatus(val *string)
+	HostnameStatusInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -47,6 +55,9 @@ type DataCloudflareCustomHostnameFilterOutputReference interface {
 	Ssl() *float64
 	SetSsl(val *float64)
 	SslInput() *float64
+	SslStatus() *string
+	SetSslStatus(val *string)
+	SslStatusInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,6 +66,9 @@ type DataCloudflareCustomHostnameFilterOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Wildcard() interface{}
+	SetWildcard(val interface{})
+	WildcardInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,11 +93,17 @@ type DataCloudflareCustomHostnameFilterOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutHostname(value *DataCloudflareCustomHostnameFilterHostname)
+	ResetCertificateAuthority()
+	ResetCustomOriginServer()
 	ResetDirection()
 	ResetHostname()
+	ResetHostnameStatus()
 	ResetId()
 	ResetOrder()
 	ResetSsl()
+	ResetSslStatus()
+	ResetWildcard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -97,6 +117,26 @@ type DataCloudflareCustomHostnameFilterOutputReference interface {
 // The jsii proxy struct for DataCloudflareCustomHostnameFilterOutputReference
 type jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) CertificateAuthority() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateAuthority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) CertificateAuthorityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateAuthorityInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -124,6 +164,26 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) CustomOriginServer() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customOriginServer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) CustomOriginServerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customOriginServerInput",
 		&returns,
 	)
 	return returns
@@ -159,8 +219,8 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) Hostname() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) Hostname() DataCloudflareCustomHostnameFilterHostnameOutputReference {
+	var returns DataCloudflareCustomHostnameFilterHostnameOutputReference
 	_jsii_.Get(
 		j,
 		"hostname",
@@ -169,11 +229,31 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) Hostname()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) HostnameInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) HostnameInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"hostnameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) HostnameStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) HostnameStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameStatusInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +329,26 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) SslInput()
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) SslStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) SslStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslStatusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -264,6 +364,26 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) TerraformR
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) Wildcard() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"wildcard",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) WildcardInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"wildcardInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +417,17 @@ func NewDataCloudflareCustomHostnameFilterOutputReference_Override(d DataCloudfl
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetCertificateAuthority(val *string) {
+	if err := j.validateSetCertificateAuthorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateAuthority",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -319,6 +450,17 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetComplexO
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetCustomOriginServer(val *string) {
+	if err := j.validateSetCustomOriginServerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customOriginServer",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
@@ -330,13 +472,13 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetDirectio
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetHostname(val *string) {
-	if err := j.validateSetHostnameParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetHostnameStatus(val *string) {
+	if err := j.validateSetHostnameStatusParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"hostname",
+		"hostnameStatus",
 		val,
 	)
 }
@@ -385,6 +527,17 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetSsl(val 
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetSslStatus(val *string) {
+	if err := j.validateSetSslStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslStatus",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -403,6 +556,17 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetTerrafor
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference)SetWildcard(val interface{}) {
+	if err := j.validateSetWildcardParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"wildcard",
 		val,
 	)
 }
@@ -593,6 +757,33 @@ func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) Interpolat
 	return returns
 }
 
+func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) PutHostname(value *DataCloudflareCustomHostnameFilterHostname) {
+	if err := d.validatePutHostnameParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHostname",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) ResetCertificateAuthority() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCertificateAuthority",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) ResetCustomOriginServer() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomOriginServer",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) ResetDirection() {
 	_jsii_.InvokeVoid(
 		d,
@@ -605,6 +796,14 @@ func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) ResetHostn
 	_jsii_.InvokeVoid(
 		d,
 		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) ResetHostnameStatus() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHostnameStatus",
 		nil, // no parameters
 	)
 }
@@ -629,6 +828,22 @@ func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) ResetSsl()
 	_jsii_.InvokeVoid(
 		d,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) ResetSslStatus() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSslStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomHostnameFilterOutputReference) ResetWildcard() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWildcard",
 		nil, // no parameters
 	)
 }

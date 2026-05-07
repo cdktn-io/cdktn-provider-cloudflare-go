@@ -5,14 +5,14 @@ package datacloudflarezerotrusttunnelcloudflaredvirtualnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredvirtualnetwork/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network}.
 type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -93,6 +93,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -387,7 +388,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork) Virtu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkConfig) DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork {
 	_init_.Initialize()
 
@@ -405,7 +406,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork_Override(d DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkConfig) {
 	_init_.Initialize()
 
@@ -777,6 +778,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork) PutFi
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetwork) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

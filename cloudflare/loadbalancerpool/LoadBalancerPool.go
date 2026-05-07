@@ -5,14 +5,14 @@ package loadbalancerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/loadbalancerpool/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/loadbalancerpool/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
 type LoadBalancerPool interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -154,6 +154,7 @@ type LoadBalancerPool interface {
 	PutNotificationFilter(value *LoadBalancerPoolNotificationFilter)
 	PutOrigins(value interface{})
 	PutOriginSteering(value *LoadBalancerPoolOriginSteering)
+	ResetAccountId()
 	ResetCheckRegions()
 	ResetDescription()
 	ResetEnabled()
@@ -707,7 +708,7 @@ func (j *jsiiProxy_LoadBalancerPool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) LoadBalancerPool {
 	_init_.Initialize()
 
@@ -725,7 +726,7 @@ func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool_Override(l LoadBalancerPool, scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) {
 	_init_.Initialize()
 
@@ -1319,6 +1320,14 @@ func (l *jsiiProxy_LoadBalancerPool) PutOriginSteering(value *LoadBalancerPoolOr
 		l,
 		"putOriginSteering",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPool) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

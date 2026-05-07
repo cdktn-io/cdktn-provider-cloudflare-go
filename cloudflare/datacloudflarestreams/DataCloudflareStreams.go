@@ -5,22 +5,28 @@ package datacloudflarestreams
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreams/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreams/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams cloudflare_streams}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/streams cloudflare_streams}.
 type DataCloudflareStreams interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	After() *string
+	SetAfter(val *string)
+	AfterInput() *string
 	Asc() interface{}
 	SetAsc(val interface{})
 	AscInput() interface{}
+	Before() *string
+	SetBefore(val *string)
+	BeforeInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -47,6 +53,9 @@ type DataCloudflareStreams interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	IncludeCounts() interface{}
 	SetIncludeCounts(val interface{})
 	IncludeCountsInput() interface{}
@@ -54,9 +63,18 @@ type DataCloudflareStreams interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Limit() *float64
+	SetLimit(val *float64)
+	LimitInput() *float64
+	LiveInputId() *string
+	SetLiveInputId(val *string)
+	LiveInputIdInput() *string
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -112,11 +130,18 @@ type DataCloudflareStreams interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
+	ResetAfter()
 	ResetAsc()
+	ResetBefore()
 	ResetCreator()
 	ResetEnd()
+	ResetId()
 	ResetIncludeCounts()
+	ResetLimit()
+	ResetLiveInputId()
 	ResetMaxItems()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -173,6 +198,26 @@ func (j *jsiiProxy_DataCloudflareStreams) AccountIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreams) After() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"after",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) AfterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"afterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareStreams) Asc() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -188,6 +233,26 @@ func (j *jsiiProxy_DataCloudflareStreams) AscInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ascInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) Before() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"before",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) BeforeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"beforeInput",
 		&returns,
 	)
 	return returns
@@ -303,6 +368,26 @@ func (j *jsiiProxy_DataCloudflareStreams) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreams) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareStreams) IncludeCounts() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -333,6 +418,46 @@ func (j *jsiiProxy_DataCloudflareStreams) Lifecycle() *cdktn.TerraformResourceLi
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreams) Limit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"limit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) LimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) LiveInputId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"liveInputId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) LiveInputIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"liveInputIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareStreams) MaxItems() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -348,6 +473,26 @@ func (j *jsiiProxy_DataCloudflareStreams) MaxItemsInput() *float64 {
 	_jsii_.Get(
 		j,
 		"maxItemsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreams) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -524,7 +669,7 @@ func (j *jsiiProxy_DataCloudflareStreams) VideoNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams cloudflare_streams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/streams cloudflare_streams} Data Source.
 func NewDataCloudflareStreams(scope constructs.Construct, id *string, config *DataCloudflareStreamsConfig) DataCloudflareStreams {
 	_init_.Initialize()
 
@@ -542,7 +687,7 @@ func NewDataCloudflareStreams(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams cloudflare_streams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/streams cloudflare_streams} Data Source.
 func NewDataCloudflareStreams_Override(d DataCloudflareStreams, scope constructs.Construct, id *string, config *DataCloudflareStreamsConfig) {
 	_init_.Initialize()
 
@@ -564,6 +709,17 @@ func (j *jsiiProxy_DataCloudflareStreams)SetAccountId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareStreams)SetAfter(val *string) {
+	if err := j.validateSetAfterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"after",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareStreams)SetAsc(val interface{}) {
 	if err := j.validateSetAscParameters(val); err != nil {
 		panic(err)
@@ -571,6 +727,17 @@ func (j *jsiiProxy_DataCloudflareStreams)SetAsc(val interface{}) {
 	_jsii_.Set(
 		j,
 		"asc",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareStreams)SetBefore(val *string) {
+	if err := j.validateSetBeforeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"before",
 		val,
 	)
 }
@@ -624,6 +791,17 @@ func (j *jsiiProxy_DataCloudflareStreams)SetForEach(val cdktn.ITerraformIterator
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareStreams)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareStreams)SetIncludeCounts(val interface{}) {
 	if err := j.validateSetIncludeCountsParameters(val); err != nil {
 		panic(err)
@@ -646,6 +824,28 @@ func (j *jsiiProxy_DataCloudflareStreams)SetLifecycle(val *cdktn.TerraformResour
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareStreams)SetLimit(val *float64) {
+	if err := j.validateSetLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"limit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareStreams)SetLiveInputId(val *string) {
+	if err := j.validateSetLiveInputIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"liveInputId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareStreams)SetMaxItems(val *float64) {
 	if err := j.validateSetMaxItemsParameters(val); err != nil {
 		panic(err)
@@ -653,6 +853,17 @@ func (j *jsiiProxy_DataCloudflareStreams)SetMaxItems(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareStreams)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -1005,10 +1216,34 @@ func (d *jsiiProxy_DataCloudflareStreams) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareStreams) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareStreams) ResetAfter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAfter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareStreams) ResetAsc() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAsc",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareStreams) ResetBefore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBefore",
 		nil, // no parameters
 	)
 }
@@ -1029,6 +1264,14 @@ func (d *jsiiProxy_DataCloudflareStreams) ResetEnd() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareStreams) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareStreams) ResetIncludeCounts() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1037,10 +1280,34 @@ func (d *jsiiProxy_DataCloudflareStreams) ResetIncludeCounts() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareStreams) ResetLimit() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareStreams) ResetLiveInputId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLiveInputId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareStreams) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaxItems",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareStreams) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
 		nil, // no parameters
 	)
 }

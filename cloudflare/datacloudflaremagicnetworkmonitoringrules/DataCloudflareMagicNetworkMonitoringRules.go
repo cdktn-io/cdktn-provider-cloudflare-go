@@ -5,14 +5,14 @@ package datacloudflaremagicnetworkmonitoringrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicnetworkmonitoringrules/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicnetworkmonitoringrules/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules}.
 type DataCloudflareMagicNetworkMonitoringRules interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -85,6 +85,7 @@ type DataCloudflareMagicNetworkMonitoringRules interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -308,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRules) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringRules(scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringRulesConfig) DataCloudflareMagicNetworkMonitoringRules {
 	_init_.Initialize()
 
@@ -326,7 +327,7 @@ func NewDataCloudflareMagicNetworkMonitoringRules(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringRules_Override(d DataCloudflareMagicNetworkMonitoringRules, scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringRulesConfig) {
 	_init_.Initialize()
 
@@ -687,6 +688,14 @@ func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRules) OverrideLogicalId(
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRules) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

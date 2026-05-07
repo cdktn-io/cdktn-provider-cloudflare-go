@@ -5,14 +5,14 @@ package datacloudflareworkerscrontrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareworkerscrontrigger/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareworkerscrontrigger/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger}.
 type DataCloudflareWorkersCronTrigger interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -86,6 +86,7 @@ type DataCloudflareWorkersCronTrigger interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -318,7 +319,7 @@ func (j *jsiiProxy_DataCloudflareWorkersCronTrigger) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger} Data Source.
 func NewDataCloudflareWorkersCronTrigger(scope constructs.Construct, id *string, config *DataCloudflareWorkersCronTriggerConfig) DataCloudflareWorkersCronTrigger {
 	_init_.Initialize()
 
@@ -336,7 +337,7 @@ func NewDataCloudflareWorkersCronTrigger(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/workers_cron_trigger cloudflare_workers_cron_trigger} Data Source.
 func NewDataCloudflareWorkersCronTrigger_Override(d DataCloudflareWorkersCronTrigger, scope constructs.Construct, id *string, config *DataCloudflareWorkersCronTriggerConfig) {
 	_init_.Initialize()
 
@@ -697,6 +698,14 @@ func (d *jsiiProxy_DataCloudflareWorkersCronTrigger) OverrideLogicalId(newLogica
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersCronTrigger) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

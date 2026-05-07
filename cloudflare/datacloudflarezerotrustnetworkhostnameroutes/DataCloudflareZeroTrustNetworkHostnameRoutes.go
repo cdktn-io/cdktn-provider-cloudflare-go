@@ -5,14 +5,14 @@ package datacloudflarezerotrustnetworkhostnameroutes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustnetworkhostnameroutes/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustnetworkhostnameroutes/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes}.
 type DataCloudflareZeroTrustNetworkHostnameRoutes interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -103,6 +103,7 @@ type DataCloudflareZeroTrustNetworkHostnameRoutes interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetComment()
 	ResetExistedAt()
 	ResetHostname()
@@ -452,7 +453,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoutes) TunnelIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes} Data Source.
 func NewDataCloudflareZeroTrustNetworkHostnameRoutes(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustNetworkHostnameRoutesConfig) DataCloudflareZeroTrustNetworkHostnameRoutes {
 	_init_.Initialize()
 
@@ -470,7 +471,7 @@ func NewDataCloudflareZeroTrustNetworkHostnameRoutes(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes} Data Source.
 func NewDataCloudflareZeroTrustNetworkHostnameRoutes_Override(d DataCloudflareZeroTrustNetworkHostnameRoutes, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustNetworkHostnameRoutesConfig) {
 	_init_.Initialize()
 
@@ -897,6 +898,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoutes) OverrideLogical
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoutes) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

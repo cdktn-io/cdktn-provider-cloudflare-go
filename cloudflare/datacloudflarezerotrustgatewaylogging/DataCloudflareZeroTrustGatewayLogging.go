@@ -5,14 +5,14 @@ package datacloudflarezerotrustgatewaylogging
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustgatewaylogging/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustgatewaylogging/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging}.
 type DataCloudflareZeroTrustGatewayLogging interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -38,6 +38,7 @@ type DataCloudflareZeroTrustGatewayLogging interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -83,6 +84,7 @@ type DataCloudflareZeroTrustGatewayLogging interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -204,6 +206,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) FriendlyUniqueId() *st
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -295,7 +307,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Data Source.
 func NewDataCloudflareZeroTrustGatewayLogging(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayLoggingConfig) DataCloudflareZeroTrustGatewayLogging {
 	_init_.Initialize()
 
@@ -313,7 +325,7 @@ func NewDataCloudflareZeroTrustGatewayLogging(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Data Source.
 func NewDataCloudflareZeroTrustGatewayLogging_Override(d DataCloudflareZeroTrustGatewayLogging, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayLoggingConfig) {
 	_init_.Initialize()
 
@@ -663,6 +675,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) OverrideLogicalId(newL
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayLogging) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

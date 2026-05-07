@@ -5,9 +5,9 @@ package datacloudflarezerotrustaccessapplications
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccessapplications/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustaccessapplications/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -54,6 +54,7 @@ type DataCloudflareZeroTrustAccessApplicationsResultOutputReference interface {
 	SetInternalValue(val *DataCloudflareZeroTrustAccessApplicationsResult)
 	LandingPageDesign() DataCloudflareZeroTrustAccessApplicationsResultLandingPageDesignOutputReference
 	LogoUrl() *string
+	MfaConfig() DataCloudflareZeroTrustAccessApplicationsResultMfaConfigOutputReference
 	Name() *string
 	OptionsPreflightBypass() cdktn.IResolvable
 	PathCookieAttribute() cdktn.IResolvable
@@ -382,6 +383,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReferenc
 	_jsii_.Get(
 		j,
 		"logoUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReference) MfaConfig() DataCloudflareZeroTrustAccessApplicationsResultMfaConfigOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationsResultMfaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"mfaConfig",
 		&returns,
 	)
 	return returns

@@ -5,14 +5,14 @@ package emailroutingaddress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/emailroutingaddress/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/emailroutingaddress/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_address cloudflare_email_routing_address}.
 type EmailRoutingAddress interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -115,6 +115,7 @@ type EmailRoutingAddress interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -396,7 +397,7 @@ func (j *jsiiProxy_EmailRoutingAddress) Verified() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
 func NewEmailRoutingAddress(scope constructs.Construct, id *string, config *EmailRoutingAddressConfig) EmailRoutingAddress {
 	_init_.Initialize()
 
@@ -414,7 +415,7 @@ func NewEmailRoutingAddress(scope constructs.Construct, id *string, config *Emai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
 func NewEmailRoutingAddress_Override(e EmailRoutingAddress, scope constructs.Construct, id *string, config *EmailRoutingAddressConfig) {
 	_init_.Initialize()
 
@@ -865,6 +866,14 @@ func (e *jsiiProxy_EmailRoutingAddress) OverrideLogicalId(newLogicalId *string) 
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_EmailRoutingAddress) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

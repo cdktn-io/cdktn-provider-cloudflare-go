@@ -5,9 +5,9 @@ package emailroutingdns
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/emailroutingdns/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/emailroutingdns/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -44,6 +44,7 @@ type EmailRoutingDnsResultInfoOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TotalCount() *float64
+	TotalPages() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -188,6 +189,16 @@ func (j *jsiiProxy_EmailRoutingDnsResultInfoOutputReference) TotalCount() *float
 	_jsii_.Get(
 		j,
 		"totalCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingDnsResultInfoOutputReference) TotalPages() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalPages",
 		&returns,
 	)
 	return returns

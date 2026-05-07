@@ -5,14 +5,14 @@ package hostnametlssetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hostnametlssetting/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hostnametlssetting/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 type HostnameTlsSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -123,6 +123,7 @@ type HostnameTlsSetting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -431,7 +432,7 @@ func (j *jsiiProxy_HostnameTlsSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) HostnameTlsSetting {
 	_init_.Initialize()
 
@@ -449,7 +450,7 @@ func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *Hostn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting_Override(h HostnameTlsSetting, scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) {
 	_init_.Initialize()
 
@@ -929,6 +930,14 @@ func (h *jsiiProxy_HostnameTlsSetting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HostnameTlsSetting) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

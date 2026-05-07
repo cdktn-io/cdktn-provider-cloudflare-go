@@ -5,14 +5,15 @@ package datacloudflareconnectivitydirectoryservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservices/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservices/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareConnectivityDirectoryServicesResultOutputReference interface {
 	cdktn.ComplexObject
+	AppProtocol() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,11 +35,11 @@ type DataCloudflareConnectivityDirectoryServicesResultOutputReference interface 
 	Host() DataCloudflareConnectivityDirectoryServicesResultHostOutputReference
 	HttpPort() *float64
 	HttpsPort() *float64
-	Id() *string
 	InternalValue() *DataCloudflareConnectivityDirectoryServicesResult
 	SetInternalValue(val *DataCloudflareConnectivityDirectoryServicesResult)
 	Name() *string
 	ServiceId() *string
+	TcpPort() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,6 +48,7 @@ type DataCloudflareConnectivityDirectoryServicesResultOutputReference interface 
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TlsSettings() DataCloudflareConnectivityDirectoryServicesResultTlsSettingsOutputReference
 	Type() *string
 	UpdatedAt() *string
 	// Experimental.
@@ -86,6 +88,16 @@ type DataCloudflareConnectivityDirectoryServicesResultOutputReference interface 
 // The jsii proxy struct for DataCloudflareConnectivityDirectoryServicesResultOutputReference
 type jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputReference) AppProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appProtocol",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputReference) ComplexObjectIndex() interface{} {
@@ -168,16 +180,6 @@ func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputReference) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputReference) InternalValue() *DataCloudflareConnectivityDirectoryServicesResult {
 	var returns *DataCloudflareConnectivityDirectoryServicesResult
 	_jsii_.Get(
@@ -208,6 +210,16 @@ func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputReference) TcpPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tcpPort",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -223,6 +235,16 @@ func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServicesResultOutputReference) TlsSettings() DataCloudflareConnectivityDirectoryServicesResultTlsSettingsOutputReference {
+	var returns DataCloudflareConnectivityDirectoryServicesResultTlsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"tlsSettings",
 		&returns,
 	)
 	return returns

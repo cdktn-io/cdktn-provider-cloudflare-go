@@ -5,14 +5,14 @@ package magictransitsitelan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitsitelan/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitsitelan/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
 type MagicTransitSiteLan interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -49,6 +49,12 @@ type MagicTransitSiteLan interface {
 	SetHaLink(val interface{})
 	HaLinkInput() interface{}
 	Id() *string
+	IsBreakout() interface{}
+	SetIsBreakout(val interface{})
+	IsBreakoutInput() interface{}
+	IsPrioritized() interface{}
+	SetIsPrioritized(val interface{})
+	IsPrioritizedInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -135,8 +141,11 @@ type MagicTransitSiteLan interface {
 	PutNat(value *MagicTransitSiteLanNat)
 	PutRoutedSubnets(value interface{})
 	PutStaticAddressing(value *MagicTransitSiteLanStaticAddressing)
+	ResetAccountId()
 	ResetBondId()
 	ResetHaLink()
+	ResetIsBreakout()
+	ResetIsPrioritized()
 	ResetName()
 	ResetNat()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -318,6 +327,46 @@ func (j *jsiiProxy_MagicTransitSiteLan) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteLan) IsBreakout() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isBreakout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteLan) IsBreakoutInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isBreakoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteLan) IsPrioritized() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isPrioritized",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteLan) IsPrioritizedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isPrioritizedInput",
 		&returns,
 	)
 	return returns
@@ -544,7 +593,7 @@ func (j *jsiiProxy_MagicTransitSiteLan) VlanTagInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
 func NewMagicTransitSiteLan(scope constructs.Construct, id *string, config *MagicTransitSiteLanConfig) MagicTransitSiteLan {
 	_init_.Initialize()
 
@@ -562,7 +611,7 @@ func NewMagicTransitSiteLan(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
 func NewMagicTransitSiteLan_Override(m MagicTransitSiteLan, scope constructs.Construct, id *string, config *MagicTransitSiteLanConfig) {
 	_init_.Initialize()
 
@@ -640,6 +689,28 @@ func (j *jsiiProxy_MagicTransitSiteLan)SetHaLink(val interface{}) {
 	_jsii_.Set(
 		j,
 		"haLink",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitSiteLan)SetIsBreakout(val interface{}) {
+	if err := j.validateSetIsBreakoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isBreakout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitSiteLan)SetIsPrioritized(val interface{}) {
+	if err := j.validateSetIsPrioritizedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isPrioritized",
 		val,
 	)
 }
@@ -1104,6 +1175,14 @@ func (m *jsiiProxy_MagicTransitSiteLan) PutStaticAddressing(value *MagicTransitS
 	)
 }
 
+func (m *jsiiProxy_MagicTransitSiteLan) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MagicTransitSiteLan) ResetBondId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1116,6 +1195,22 @@ func (m *jsiiProxy_MagicTransitSiteLan) ResetHaLink() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetHaLink",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteLan) ResetIsBreakout() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIsBreakout",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteLan) ResetIsPrioritized() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIsPrioritized",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package datacloudflaremtlscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremtlscertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremtlscertificate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/mtls_certificate cloudflare_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/mtls_certificate cloudflare_mtls_certificate}.
 type DataCloudflareMtlsCertificate interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -395,7 +395,7 @@ func (j *jsiiProxy_DataCloudflareMtlsCertificate) UploadedOn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/mtls_certificate cloudflare_mtls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/mtls_certificate cloudflare_mtls_certificate} Data Source.
 func NewDataCloudflareMtlsCertificate(scope constructs.Construct, id *string, config *DataCloudflareMtlsCertificateConfig) DataCloudflareMtlsCertificate {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewDataCloudflareMtlsCertificate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/mtls_certificate cloudflare_mtls_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/mtls_certificate cloudflare_mtls_certificate} Data Source.
 func NewDataCloudflareMtlsCertificate_Override(d DataCloudflareMtlsCertificate, scope constructs.Construct, id *string, config *DataCloudflareMtlsCertificateConfig) {
 	_init_.Initialize()
 

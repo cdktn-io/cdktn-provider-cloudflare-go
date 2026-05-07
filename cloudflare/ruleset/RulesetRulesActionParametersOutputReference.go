@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ruleset/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/ruleset/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -50,6 +50,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetComplexObjectIsFromSet(val *bool)
 	Content() *string
 	SetContent(val *string)
+	ContentConverter() interface{}
+	SetContentConverter(val interface{})
+	ContentConverterInput() interface{}
 	ContentInput() *string
 	ContentType() *string
 	SetContentType(val *string)
@@ -158,6 +161,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	ReadTimeout() *float64
 	SetReadTimeout(val *float64)
 	ReadTimeoutInput() *float64
+	RedirectsForAiTraining() interface{}
+	SetRedirectsForAiTraining(val interface{})
+	RedirectsForAiTrainingInput() interface{}
 	RequestBodyBuffering() *string
 	SetRequestBodyBuffering(val *string)
 	RequestBodyBufferingInput() *string
@@ -303,6 +309,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetCacheKey()
 	ResetCacheReserve()
 	ResetContent()
+	ResetContentConverter()
 	ResetContentType()
 	ResetCookieFields()
 	ResetDisableApps()
@@ -342,6 +349,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetPublic()
 	ResetRawResponseFields()
 	ResetReadTimeout()
+	ResetRedirectsForAiTraining()
 	ResetRequestBodyBuffering()
 	ResetRequestFields()
 	ResetRespectStrongEtags()
@@ -608,6 +616,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Content() *strin
 	_jsii_.Get(
 		j,
 		"content",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ContentConverter() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"contentConverter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ContentConverterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"contentConverterInput",
 		&returns,
 	)
 	return returns
@@ -1433,6 +1461,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ReadTimeoutInput
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RedirectsForAiTraining() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redirectsForAiTraining",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RedirectsForAiTrainingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redirectsForAiTrainingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RequestBodyBuffering() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2089,6 +2137,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetContent(val *s
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetContentConverter(val interface{}) {
+	if err := j.validateSetContentConverterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contentConverter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
@@ -2316,6 +2375,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetReadTimeout(va
 	_jsii_.Set(
 		j,
 		"readTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetRedirectsForAiTraining(val interface{}) {
+	if err := j.validateSetRedirectsForAiTrainingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redirectsForAiTraining",
 		val,
 	)
 }
@@ -3166,6 +3236,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetContent() {
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetContentConverter() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetContentConverter",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetContentType() {
 	_jsii_.InvokeVoid(
 		r,
@@ -3474,6 +3552,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetReadTimeout
 	_jsii_.InvokeVoid(
 		r,
 		"resetReadTimeout",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRedirectsForAiTraining() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRedirectsForAiTraining",
 		nil, // no parameters
 	)
 }

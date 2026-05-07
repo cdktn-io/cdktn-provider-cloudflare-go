@@ -61,6 +61,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mfaConfigurationAllowedInput", GoGetter: "MfaConfigurationAllowedInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaRequiredForAllApps", GoGetter: "MfaRequiredForAllApps"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaRequiredForAllAppsInput", GoGetter: "MfaRequiredForAllAppsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaSshPivKeyRequirements", GoGetter: "MfaSshPivKeyRequirements"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaSshPivKeyRequirementsInput", GoGetter: "MfaSshPivKeyRequirementsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -73,6 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCustomPages", GoMethod: "PutCustomPages"},
 			_jsii_.MemberMethod{JsiiMethod: "putLoginDesign", GoMethod: "PutLoginDesign"},
 			_jsii_.MemberMethod{JsiiMethod: "putMfaConfig", GoMethod: "PutMfaConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putMfaSshPivKeyRequirements", GoMethod: "PutMfaSshPivKeyRequirements"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowAuthenticateViaWarp", GoMethod: "ResetAllowAuthenticateViaWarp"},
@@ -86,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMfaConfig", GoMethod: "ResetMfaConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMfaConfigurationAllowed", GoMethod: "ResetMfaConfigurationAllowed"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMfaRequiredForAllApps", GoMethod: "ResetMfaRequiredForAllApps"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMfaSshPivKeyRequirements", GoMethod: "ResetMfaSshPivKeyRequirements"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionDuration", GoMethod: "ResetSessionDuration"},
@@ -227,6 +231,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedAuthenticators", GoGetter: "AllowedAuthenticators"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedAuthenticatorsInput", GoGetter: "AllowedAuthenticatorsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "amrMatchingSessionDuration", GoGetter: "AmrMatchingSessionDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "amrMatchingSessionDurationInput", GoGetter: "AmrMatchingSessionDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -244,7 +250,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredAaguids", GoGetter: "RequiredAaguids"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredAaguidsInput", GoGetter: "RequiredAaguidsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedAuthenticators", GoMethod: "ResetAllowedAuthenticators"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAmrMatchingSessionDuration", GoMethod: "ResetAmrMatchingSessionDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequiredAaguids", GoMethod: "ResetRequiredAaguids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionDuration", GoMethod: "ResetSessionDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionDuration", GoGetter: "SessionDuration"},
@@ -255,6 +265,57 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements",
+		reflect.TypeOf((*ZeroTrustOrganizationMfaSshPivKeyRequirements)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference",
+		reflect.TypeOf((*ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pinPolicy", GoGetter: "PinPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "pinPolicyInput", GoGetter: "PinPolicyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requireFipsDevice", GoGetter: "RequireFipsDevice"},
+			_jsii_.MemberProperty{JsiiProperty: "requireFipsDeviceInput", GoGetter: "RequireFipsDeviceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPinPolicy", GoMethod: "ResetPinPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequireFipsDevice", GoMethod: "ResetRequireFipsDevice"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSshKeySize", GoMethod: "ResetSshKeySize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSshKeyType", GoMethod: "ResetSshKeyType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTouchPolicy", GoMethod: "ResetTouchPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sshKeySize", GoGetter: "SshKeySize"},
+			_jsii_.MemberProperty{JsiiProperty: "sshKeySizeInput", GoGetter: "SshKeySizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sshKeyType", GoGetter: "SshKeyType"},
+			_jsii_.MemberProperty{JsiiProperty: "sshKeyTypeInput", GoGetter: "SshKeyTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "touchPolicy", GoGetter: "TouchPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "touchPolicyInput", GoGetter: "TouchPolicyInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

@@ -5,9 +5,9 @@ package workerversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workerversion/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workerversion/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -22,6 +22,9 @@ type WorkerVersionBindingsOutputReference interface {
 	AllowedSenderAddresses() *[]*string
 	SetAllowedSenderAddresses(val *[]*string)
 	AllowedSenderAddressesInput() *[]*string
+	AppId() *string
+	SetAppId(val *string)
+	AppIdInput() *string
 	BucketName() *string
 	SetBucketName(val *string)
 	BucketNameInput() *string
@@ -46,12 +49,21 @@ type WorkerVersionBindingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabaseId() *string
+	SetDatabaseId(val *string)
+	DatabaseIdInput() *string
 	Dataset() *string
 	SetDataset(val *string)
 	DatasetInput() *string
 	DestinationAddress() *string
 	SetDestinationAddress(val *string)
 	DestinationAddressInput() *string
+	DispatchNamespace() *string
+	SetDispatchNamespace(val *string)
+	DispatchNamespaceInput() *string
+	Entrypoint() *string
+	SetEntrypoint(val *string)
+	EntrypointInput() *string
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
@@ -66,6 +78,9 @@ type WorkerVersionBindingsOutputReference interface {
 	IndexName() *string
 	SetIndexName(val *string)
 	IndexNameInput() *string
+	InstanceName() *string
+	SetInstanceName(val *string)
+	InstanceNameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Json() *string
@@ -89,6 +104,9 @@ type WorkerVersionBindingsOutputReference interface {
 	SetNamespaceId(val *string)
 	NamespaceIdInput() *string
 	NamespaceInput() *string
+	NetworkId() *string
+	SetNetworkId(val *string)
+	NetworkIdInput() *string
 	OldName() *string
 	SetOldName(val *string)
 	OldNameInput() *string
@@ -111,6 +129,9 @@ type WorkerVersionBindingsOutputReference interface {
 	SecretNameInput() *string
 	Service() *string
 	SetService(val *string)
+	ServiceId() *string
+	SetServiceId(val *string)
+	ServiceIdInput() *string
 	ServiceInput() *string
 	Simple() WorkerVersionBindingsSimpleOutputReference
 	SimpleInput() interface{}
@@ -128,6 +149,9 @@ type WorkerVersionBindingsOutputReference interface {
 	Text() *string
 	SetText(val *string)
 	TextInput() *string
+	TunnelId() *string
+	SetTunnelId(val *string)
+	TunnelIdInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -169,21 +193,27 @@ type WorkerVersionBindingsOutputReference interface {
 	ResetAlgorithm()
 	ResetAllowedDestinationAddresses()
 	ResetAllowedSenderAddresses()
+	ResetAppId()
 	ResetBucketName()
 	ResetCertificateId()
 	ResetClassName()
+	ResetDatabaseId()
 	ResetDataset()
 	ResetDestinationAddress()
+	ResetDispatchNamespace()
+	ResetEntrypoint()
 	ResetEnvironment()
 	ResetFormat()
 	ResetId()
 	ResetIndexName()
+	ResetInstanceName()
 	ResetJson()
 	ResetJurisdiction()
 	ResetKeyBase64()
 	ResetKeyJwk()
 	ResetNamespace()
 	ResetNamespaceId()
+	ResetNetworkId()
 	ResetOldName()
 	ResetOutbound()
 	ResetPart()
@@ -192,9 +222,11 @@ type WorkerVersionBindingsOutputReference interface {
 	ResetScriptName()
 	ResetSecretName()
 	ResetService()
+	ResetServiceId()
 	ResetSimple()
 	ResetStoreId()
 	ResetText()
+	ResetTunnelId()
 	ResetUsages()
 	ResetVersionId()
 	ResetWorkflowName()
@@ -268,6 +300,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) AllowedSenderAddressesI
 	_jsii_.Get(
 		j,
 		"allowedSenderAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) AppId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) AppIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appIdInput",
 		&returns,
 	)
 	return returns
@@ -363,6 +415,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) CreationStack() *[]*str
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) DatabaseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) DatabaseIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) Dataset() *string {
 	var returns *string
 	_jsii_.Get(
@@ -398,6 +470,46 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) DestinationAddressInput
 	_jsii_.Get(
 		j,
 		"destinationAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) DispatchNamespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dispatchNamespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) DispatchNamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dispatchNamespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) Entrypoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entrypoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) EntrypointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entrypointInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +600,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) IndexNameInput() *strin
 	_jsii_.Get(
 		j,
 		"indexNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) InstanceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) InstanceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceNameInput",
 		&returns,
 	)
 	return returns
@@ -643,6 +775,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) NamespaceInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) NetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) NetworkIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) OldName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -793,6 +945,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) Service() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) ServiceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) ServiceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) ServiceInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -878,6 +1050,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) TextInput() *string {
 	_jsii_.Get(
 		j,
 		"textInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) TunnelId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunnelId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) TunnelIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunnelIdInput",
 		&returns,
 	)
 	return returns
@@ -1024,6 +1216,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetAllowedSenderAddresse
 	)
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetAppId(val *string) {
+	if err := j.validateSetAppIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetBucketName(val *string) {
 	if err := j.validateSetBucketNameParameters(val); err != nil {
 		panic(err)
@@ -1079,6 +1282,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetDatabaseId(val *string) {
+	if err := j.validateSetDatabaseIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetDataset(val *string) {
 	if err := j.validateSetDatasetParameters(val); err != nil {
 		panic(err)
@@ -1097,6 +1311,28 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetDestinationAddress(va
 	_jsii_.Set(
 		j,
 		"destinationAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetDispatchNamespace(val *string) {
+	if err := j.validateSetDispatchNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dispatchNamespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetEntrypoint(val *string) {
+	if err := j.validateSetEntrypointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"entrypoint",
 		val,
 	)
 }
@@ -1141,6 +1377,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetIndexName(val *string
 	_jsii_.Set(
 		j,
 		"indexName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetInstanceName(val *string) {
+	if err := j.validateSetInstanceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceName",
 		val,
 	)
 }
@@ -1233,6 +1480,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetNamespaceId(val *stri
 	)
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetNetworkId(val *string) {
+	if err := j.validateSetNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetOldName(val *string) {
 	if err := j.validateSetOldNameParameters(val); err != nil {
 		panic(err)
@@ -1310,6 +1568,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetService(val *string) 
 	)
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetServiceId(val *string) {
+	if err := j.validateSetServiceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetStoreId(val *string) {
 	if err := j.validateSetStoreIdParameters(val); err != nil {
 		panic(err)
@@ -1350,6 +1619,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetText(val *string) {
 	_jsii_.Set(
 		j,
 		"text",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetTunnelId(val *string) {
+	if err := j.validateSetTunnelIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tunnelId",
 		val,
 	)
 }
@@ -1630,6 +1910,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetAllowedSenderAddre
 	)
 }
 
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetAppId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAppId",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetBucketName() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1654,6 +1942,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetClassName() {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetDatabaseId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDatabaseId",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetDataset() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1666,6 +1962,22 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetDestinationAddress
 	_jsii_.InvokeVoid(
 		w,
 		"resetDestinationAddress",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetDispatchNamespace() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDispatchNamespace",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetEntrypoint() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEntrypoint",
 		nil, // no parameters
 	)
 }
@@ -1698,6 +2010,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetIndexName() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetIndexName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetInstanceName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetInstanceName",
 		nil, // no parameters
 	)
 }
@@ -1746,6 +2066,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetNamespaceId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetNamespaceId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetNetworkId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetNetworkId",
 		nil, // no parameters
 	)
 }
@@ -1814,6 +2142,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetService() {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetServiceId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetServiceId",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetSimple() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1834,6 +2170,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetText() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetText",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetTunnelId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTunnelId",
 		nil, // no parameters
 	)
 }

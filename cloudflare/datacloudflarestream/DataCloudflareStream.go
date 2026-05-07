@@ -5,14 +5,14 @@ package datacloudflarestream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestream/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestream/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream cloudflare_stream}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream cloudflare_stream}.
 type DataCloudflareStream interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -21,6 +21,7 @@ type DataCloudflareStream interface {
 	AllowedOrigins() *[]*string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	ClippedFrom() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -52,6 +53,7 @@ type DataCloudflareStream interface {
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LiveInput() *string
 	MaxDurationSeconds() *float64
+	MaxSizeBytes() *float64
 	Meta() *string
 	Modified() *string
 	// The tree node.
@@ -62,6 +64,7 @@ type DataCloudflareStream interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	PublicDetails() DataCloudflareStreamPublicDetailsOutputReference
 	// Experimental.
 	RawOverrides() interface{}
 	ReadyToStream() cdktn.IResolvable
@@ -107,6 +110,7 @@ type DataCloudflareStream interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -173,6 +177,16 @@ func (j *jsiiProxy_DataCloudflareStream) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStream) ClippedFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clippedFrom",
 		&returns,
 	)
 	return returns
@@ -328,6 +342,16 @@ func (j *jsiiProxy_DataCloudflareStream) MaxDurationSeconds() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStream) MaxSizeBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSizeBytes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareStream) Meta() *string {
 	var returns *string
 	_jsii_.Get(
@@ -383,6 +407,16 @@ func (j *jsiiProxy_DataCloudflareStream) Provider() cdktn.TerraformProvider {
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStream) PublicDetails() DataCloudflareStreamPublicDetailsOutputReference {
+	var returns DataCloudflareStreamPublicDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"publicDetails",
 		&returns,
 	)
 	return returns
@@ -549,7 +583,7 @@ func (j *jsiiProxy_DataCloudflareStream) Watermark() DataCloudflareStreamWaterma
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream cloudflare_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream cloudflare_stream} Data Source.
 func NewDataCloudflareStream(scope constructs.Construct, id *string, config *DataCloudflareStreamConfig) DataCloudflareStream {
 	_init_.Initialize()
 
@@ -567,7 +601,7 @@ func NewDataCloudflareStream(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream cloudflare_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream cloudflare_stream} Data Source.
 func NewDataCloudflareStream_Override(d DataCloudflareStream, scope constructs.Construct, id *string, config *DataCloudflareStreamConfig) {
 	_init_.Initialize()
 
@@ -928,6 +962,14 @@ func (d *jsiiProxy_DataCloudflareStream) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareStream) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

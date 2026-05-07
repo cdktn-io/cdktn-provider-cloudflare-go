@@ -55,6 +55,10 @@ func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) validateSetAll
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) validateSetAmrMatchingSessionDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) validateSetCom
 }
 
 func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustOrganizationMfaConfigOutputReference) validateSetRequiredAaguidsParameters(val *string) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package emailsecurityimpersonationregistry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/emailsecurityimpersonationregistry/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/emailsecurityimpersonationregistry/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}.
 type EmailSecurityImpersonationRegistry interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -124,6 +124,7 @@ type EmailSecurityImpersonationRegistry interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -475,7 +476,7 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource.
 func NewEmailSecurityImpersonationRegistry(scope constructs.Construct, id *string, config *EmailSecurityImpersonationRegistryConfig) EmailSecurityImpersonationRegistry {
 	_init_.Initialize()
 
@@ -493,7 +494,7 @@ func NewEmailSecurityImpersonationRegistry(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource.
 func NewEmailSecurityImpersonationRegistry_Override(e EmailSecurityImpersonationRegistry, scope constructs.Construct, id *string, config *EmailSecurityImpersonationRegistryConfig) {
 	_init_.Initialize()
 
@@ -966,6 +967,14 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) OverrideLogicalId(newLogi
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

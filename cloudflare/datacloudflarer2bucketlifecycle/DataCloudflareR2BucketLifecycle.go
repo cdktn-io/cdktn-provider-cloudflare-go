@@ -5,14 +5,14 @@ package datacloudflarer2bucketlifecycle
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarer2bucketlifecycle/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarer2bucketlifecycle/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
 type DataCloudflareR2BucketLifecycle interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -85,6 +85,7 @@ type DataCloudflareR2BucketLifecycle interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -307,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketLifecycle) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source.
 func NewDataCloudflareR2BucketLifecycle(scope constructs.Construct, id *string, config *DataCloudflareR2BucketLifecycleConfig) DataCloudflareR2BucketLifecycle {
 	_init_.Initialize()
 
@@ -325,7 +326,7 @@ func NewDataCloudflareR2BucketLifecycle(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source.
 func NewDataCloudflareR2BucketLifecycle_Override(d DataCloudflareR2BucketLifecycle, scope constructs.Construct, id *string, config *DataCloudflareR2BucketLifecycleConfig) {
 	_init_.Initialize()
 
@@ -686,6 +687,14 @@ func (d *jsiiProxy_DataCloudflareR2BucketLifecycle) OverrideLogicalId(newLogical
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareR2BucketLifecycle) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

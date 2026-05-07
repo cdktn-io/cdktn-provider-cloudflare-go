@@ -5,9 +5,9 @@ package datacloudflareloadbalancerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareloadbalancerpool/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareloadbalancerpool/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -31,6 +31,7 @@ type DataCloudflareLoadBalancerPoolOriginsOutputReference interface {
 	CreationStack() *[]*string
 	DisabledAt() *string
 	Enabled() cdktn.IResolvable
+	FlattenCname() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	Header() DataCloudflareLoadBalancerPoolOriginsHeaderOutputReference
@@ -142,6 +143,16 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsOutputReference) Enabled
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsOutputReference) FlattenCname() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"flattenCname",
 		&returns,
 	)
 	return returns

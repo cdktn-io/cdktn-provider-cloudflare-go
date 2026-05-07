@@ -5,14 +5,14 @@ package schemavalidationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/schemavalidationsettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/schemavalidationsettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
 type SchemaValidationSettings interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -117,6 +117,7 @@ type SchemaValidationSettings interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetValidationOverrideMitigationAction()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -365,7 +366,7 @@ func (j *jsiiProxy_SchemaValidationSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
 func NewSchemaValidationSettings(scope constructs.Construct, id *string, config *SchemaValidationSettingsConfig) SchemaValidationSettings {
 	_init_.Initialize()
 
@@ -383,7 +384,7 @@ func NewSchemaValidationSettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
 func NewSchemaValidationSettings_Override(s SchemaValidationSettings, scope constructs.Construct, id *string, config *SchemaValidationSettingsConfig) {
 	_init_.Initialize()
 
@@ -860,6 +861,14 @@ func (s *jsiiProxy_SchemaValidationSettings) ResetValidationOverrideMitigationAc
 	_jsii_.InvokeVoid(
 		s,
 		"resetValidationOverrideMitigationAction",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SchemaValidationSettings) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

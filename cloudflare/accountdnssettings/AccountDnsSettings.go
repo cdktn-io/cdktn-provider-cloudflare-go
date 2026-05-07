@@ -5,14 +5,14 @@ package accountdnssettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
 type AccountDnsSettings interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -34,6 +34,9 @@ type AccountDnsSettings interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnforceDnsOnly() interface{}
+	SetEnforceDnsOnly(val interface{})
+	EnforceDnsOnlyInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -110,6 +113,8 @@ type AccountDnsSettings interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutZoneDefaults(value *AccountDnsSettingsZoneDefaults)
+	ResetAccountId()
+	ResetEnforceDnsOnly()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -206,6 +211,26 @@ func (j *jsiiProxy_AccountDnsSettings) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountDnsSettings) EnforceDnsOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceDnsOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountDnsSettings) EnforceDnsOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceDnsOnlyInput",
 		&returns,
 	)
 	return returns
@@ -342,7 +367,7 @@ func (j *jsiiProxy_AccountDnsSettings) ZoneDefaultsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
 func NewAccountDnsSettings(scope constructs.Construct, id *string, config *AccountDnsSettingsConfig) AccountDnsSettings {
 	_init_.Initialize()
 
@@ -360,7 +385,7 @@ func NewAccountDnsSettings(scope constructs.Construct, id *string, config *Accou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
 func NewAccountDnsSettings_Override(a AccountDnsSettings, scope constructs.Construct, id *string, config *AccountDnsSettingsConfig) {
 	_init_.Initialize()
 
@@ -408,6 +433,17 @@ func (j *jsiiProxy_AccountDnsSettings)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountDnsSettings)SetEnforceDnsOnly(val interface{}) {
+	if err := j.validateSetEnforceDnsOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enforceDnsOnly",
 		val,
 	)
 }
@@ -811,6 +847,22 @@ func (a *jsiiProxy_AccountDnsSettings) PutZoneDefaults(value *AccountDnsSettings
 		a,
 		"putZoneDefaults",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccountDnsSettings) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountDnsSettings) ResetEnforceDnsOnly() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnforceDnsOnly",
+		nil, // no parameters
 	)
 }
 

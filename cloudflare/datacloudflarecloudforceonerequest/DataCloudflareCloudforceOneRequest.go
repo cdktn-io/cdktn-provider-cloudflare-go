@@ -5,14 +5,14 @@ package datacloudflarecloudforceonerequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecloudforceonerequest/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecloudforceonerequest/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 type DataCloudflareCloudforceOneRequest interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -100,6 +100,7 @@ type DataCloudflareCloudforceOneRequest interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareCloudforceOneRequestFilter)
+	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -464,7 +465,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
 func NewDataCloudflareCloudforceOneRequest(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestConfig) DataCloudflareCloudforceOneRequest {
 	_init_.Initialize()
 
@@ -482,7 +483,7 @@ func NewDataCloudflareCloudforceOneRequest(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
 func NewDataCloudflareCloudforceOneRequest_Override(d DataCloudflareCloudforceOneRequest, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestConfig) {
 	_init_.Initialize()
 
@@ -854,6 +855,14 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) PutFilter(value *DataClou
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

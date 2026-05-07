@@ -5,15 +5,16 @@ package datacloudflarezerotrustorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustorganization/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustorganization/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustOrganizationMfaConfigOutputReference interface {
 	cdktn.ComplexObject
 	AllowedAuthenticators() *[]*string
+	AmrMatchingSessionDuration() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -33,6 +34,7 @@ type DataCloudflareZeroTrustOrganizationMfaConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareZeroTrustOrganizationMfaConfig
 	SetInternalValue(val *DataCloudflareZeroTrustOrganizationMfaConfig)
+	RequiredAaguids() *string
 	SessionDuration() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -91,6 +93,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationMfaConfigOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationMfaConfigOutputReference) AmrMatchingSessionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"amrMatchingSessionDuration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationMfaConfigOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -136,6 +148,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationMfaConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganizationMfaConfigOutputReference) RequiredAaguids() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requiredAaguids",
 		&returns,
 	)
 	return returns

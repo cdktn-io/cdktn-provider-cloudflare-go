@@ -5,14 +5,14 @@ package managedtransforms
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/managed_transforms cloudflare_managed_transforms}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms cloudflare_managed_transforms}.
 type ManagedTransforms interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_ManagedTransforms) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
 func NewManagedTransforms(scope constructs.Construct, id *string, config *ManagedTransformsConfig) ManagedTransforms {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewManagedTransforms(scope constructs.Construct, id *string, config *Manage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms cloudflare_managed_transforms} Resource.
 func NewManagedTransforms_Override(m ManagedTransforms, scope constructs.Construct, id *string, config *ManagedTransformsConfig) {
 	_init_.Initialize()
 

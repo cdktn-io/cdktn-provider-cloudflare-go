@@ -5,19 +5,22 @@ package connectivitydirectoryservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/connectivitydirectoryservice/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/connectivitydirectoryservice/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}.
 type ConnectivityDirectoryService interface {
 	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AppProtocol() *string
+	SetAppProtocol(val *string)
+	AppProtocolInput() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -72,12 +75,17 @@ type ConnectivityDirectoryService interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ServiceId() *string
+	TcpPort() *float64
+	SetTcpPort(val *float64)
+	TcpPortInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TlsSettings() ConnectivityDirectoryServiceTlsSettingsOutputReference
+	TlsSettingsInput() interface{}
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -126,11 +134,16 @@ type ConnectivityDirectoryService interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutHost(value *ConnectivityDirectoryServiceHost)
+	PutTlsSettings(value *ConnectivityDirectoryServiceTlsSettings)
+	ResetAccountId()
+	ResetAppProtocol()
 	ResetHttpPort()
 	ResetHttpsPort()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTcpPort()
+	ResetTlsSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -173,6 +186,26 @@ func (j *jsiiProxy_ConnectivityDirectoryService) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryService) AppProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appProtocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryService) AppProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appProtocolInput",
 		&returns,
 	)
 	return returns
@@ -418,6 +451,26 @@ func (j *jsiiProxy_ConnectivityDirectoryService) ServiceId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ConnectivityDirectoryService) TcpPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tcpPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryService) TcpPortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tcpPortInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConnectivityDirectoryService) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -443,6 +496,26 @@ func (j *jsiiProxy_ConnectivityDirectoryService) TerraformResourceType() *string
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryService) TlsSettings() ConnectivityDirectoryServiceTlsSettingsOutputReference {
+	var returns ConnectivityDirectoryServiceTlsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"tlsSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryService) TlsSettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsSettingsInput",
 		&returns,
 	)
 	return returns
@@ -479,7 +552,7 @@ func (j *jsiiProxy_ConnectivityDirectoryService) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
 func NewConnectivityDirectoryService(scope constructs.Construct, id *string, config *ConnectivityDirectoryServiceConfig) ConnectivityDirectoryService {
 	_init_.Initialize()
 
@@ -497,7 +570,7 @@ func NewConnectivityDirectoryService(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
 func NewConnectivityDirectoryService_Override(c ConnectivityDirectoryService, scope constructs.Construct, id *string, config *ConnectivityDirectoryServiceConfig) {
 	_init_.Initialize()
 
@@ -515,6 +588,17 @@ func (j *jsiiProxy_ConnectivityDirectoryService)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryService)SetAppProtocol(val *string) {
+	if err := j.validateSetAppProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appProtocol",
 		val,
 	)
 }
@@ -616,6 +700,17 @@ func (j *jsiiProxy_ConnectivityDirectoryService)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryService)SetTcpPort(val *float64) {
+	if err := j.validateSetTcpPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tcpPort",
 		val,
 	)
 }
@@ -995,6 +1090,33 @@ func (c *jsiiProxy_ConnectivityDirectoryService) PutHost(value *ConnectivityDire
 	)
 }
 
+func (c *jsiiProxy_ConnectivityDirectoryService) PutTlsSettings(value *ConnectivityDirectoryServiceTlsSettings) {
+	if err := c.validatePutTlsSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTlsSettings",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConnectivityDirectoryService) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectivityDirectoryService) ResetAppProtocol() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAppProtocol",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ConnectivityDirectoryService) ResetHttpPort() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1015,6 +1137,22 @@ func (c *jsiiProxy_ConnectivityDirectoryService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectivityDirectoryService) ResetTcpPort() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTcpPort",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectivityDirectoryService) ResetTlsSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTlsSettings",
 		nil, // no parameters
 	)
 }

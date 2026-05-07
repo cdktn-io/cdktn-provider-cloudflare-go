@@ -5,9 +5,9 @@ package zerotrustaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccesspolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccesspolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -35,9 +35,9 @@ type ZeroTrustAccessPolicyMfaConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	MfaBypass() interface{}
-	SetMfaBypass(val interface{})
-	MfaBypassInput() interface{}
+	MfaDisabled() interface{}
+	SetMfaDisabled(val interface{})
+	MfaDisabledInput() interface{}
 	SessionDuration() *string
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
@@ -74,7 +74,7 @@ type ZeroTrustAccessPolicyMfaConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedAuthenticators()
-	ResetMfaBypass()
+	ResetMfaDisabled()
 	ResetSessionDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -161,21 +161,21 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) InternalValue(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) MfaBypass() interface{} {
+func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) MfaDisabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"mfaBypass",
+		"mfaDisabled",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) MfaBypassInput() interface{} {
+func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) MfaDisabledInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"mfaBypassInput",
+		"mfaDisabledInput",
 		&returns,
 	)
 	return returns
@@ -293,13 +293,13 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference)SetMfaBypass(val interface{}) {
-	if err := j.validateSetMfaBypassParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference)SetMfaDisabled(val interface{}) {
+	if err := j.validateSetMfaDisabledParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"mfaBypass",
+		"mfaDisabled",
 		val,
 	)
 }
@@ -531,10 +531,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) ResetAllowedAu
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) ResetMfaBypass() {
+func (z *jsiiProxy_ZeroTrustAccessPolicyMfaConfigOutputReference) ResetMfaDisabled() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetMfaBypass",
+		"resetMfaDisabled",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package datacloudflarezerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustgatewaypolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustgatewaypolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -52,6 +52,7 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Upload() *string
 	Version() *string
+	WmId() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -276,6 +277,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminCont
 	_jsii_.Get(
 		j,
 		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) WmId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wmId",
 		&returns,
 	)
 	return returns

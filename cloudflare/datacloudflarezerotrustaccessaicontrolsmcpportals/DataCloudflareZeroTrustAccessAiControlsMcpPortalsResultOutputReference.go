@@ -5,14 +5,15 @@ package datacloudflarezerotrustaccessaicontrolsmcpportals
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccessaicontrolsmcpportals/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustaccessaicontrolsmcpportals/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference interface {
 	cdktn.ComplexObject
+	AllowCodeMode() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,6 +42,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference inte
 	ModifiedBy() *string
 	Name() *string
 	SecureWebGateway() cdktn.IResolvable
+	Servers() DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,6 +88,16 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference inte
 // The jsii proxy struct for DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference
 type jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference) AllowCodeMode() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"allowCodeMode",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference) ComplexObjectIndex() interface{} {
@@ -223,6 +235,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutput
 	_jsii_.Get(
 		j,
 		"secureWebGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference) Servers() DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersList {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersList
+	_jsii_.Get(
+		j,
+		"servers",
 		&returns,
 	)
 	return returns

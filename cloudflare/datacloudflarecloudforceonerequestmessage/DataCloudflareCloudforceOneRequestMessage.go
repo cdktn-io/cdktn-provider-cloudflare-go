@@ -5,14 +5,14 @@ package datacloudflarecloudforceonerequestmessage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecloudforceonerequestmessage/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecloudforceonerequestmessage/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
 type DataCloudflareCloudforceOneRequestMessage interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -108,6 +108,7 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetAfter()
 	ResetBefore()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -504,7 +505,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Updated() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
 func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestMessageConfig) DataCloudflareCloudforceOneRequestMessage {
 	_init_.Initialize()
 
@@ -522,7 +523,7 @@ func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
 func NewDataCloudflareCloudforceOneRequestMessage_Override(d DataCloudflareCloudforceOneRequestMessage, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestMessageConfig) {
 	_init_.Initialize()
 
@@ -949,6 +950,14 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) OverrideLogicalId(
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

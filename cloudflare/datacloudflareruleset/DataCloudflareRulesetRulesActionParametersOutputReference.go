@@ -5,9 +5,9 @@ package datacloudflareruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareruleset/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareruleset/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -34,6 +34,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Content() *string
+	ContentConverter() cdktn.IResolvable
 	ContentType() *string
 	CookieFields() DataCloudflareRulesetRulesActionParametersCookieFieldsList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -82,6 +83,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	Public() DataCloudflareRulesetRulesActionParametersPublicOutputReference
 	RawResponseFields() DataCloudflareRulesetRulesActionParametersRawResponseFieldsList
 	ReadTimeout() *float64
+	RedirectsForAiTraining() cdktn.IResolvable
 	RequestBodyBuffering() *string
 	RequestFields() DataCloudflareRulesetRulesActionParametersRequestFieldsList
 	RespectStrongEtags() cdktn.IResolvable
@@ -280,6 +282,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Co
 	_jsii_.Get(
 		j,
 		"content",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ContentConverter() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"contentConverter",
 		&returns,
 	)
 	return returns
@@ -700,6 +712,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Re
 	_jsii_.Get(
 		j,
 		"readTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RedirectsForAiTraining() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"redirectsForAiTraining",
 		&returns,
 	)
 	return returns

@@ -5,14 +5,14 @@ package zerotrustaccessaicontrolsmcpserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessaicontrolsmcpserver/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessaicontrolsmcpserver/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
 type ZeroTrustAccessAiControlsMcpServer interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -92,6 +92,10 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Tools() cdktn.StringMapList
+	UpdatedPrompts() ZeroTrustAccessAiControlsMcpServerUpdatedPromptsList
+	UpdatedPromptsInput() interface{}
+	UpdatedTools() ZeroTrustAccessAiControlsMcpServerUpdatedToolsList
+	UpdatedToolsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -135,11 +139,16 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutUpdatedPrompts(value interface{})
+	PutUpdatedTools(value interface{})
+	ResetAccountId()
 	ResetAuthCredentials()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetUpdatedPrompts()
+	ResetUpdatedTools()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -567,8 +576,48 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Tools() cdktn.StringMapLi
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) UpdatedPrompts() ZeroTrustAccessAiControlsMcpServerUpdatedPromptsList {
+	var returns ZeroTrustAccessAiControlsMcpServerUpdatedPromptsList
+	_jsii_.Get(
+		j,
+		"updatedPrompts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) UpdatedPromptsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"updatedPromptsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) UpdatedTools() ZeroTrustAccessAiControlsMcpServerUpdatedToolsList {
+	var returns ZeroTrustAccessAiControlsMcpServerUpdatedToolsList
+	_jsii_.Get(
+		j,
+		"updatedTools",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) UpdatedToolsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"updatedToolsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
 func NewZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpServerConfig) ZeroTrustAccessAiControlsMcpServer {
 	_init_.Initialize()
 
@@ -586,7 +635,7 @@ func NewZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
 func NewZeroTrustAccessAiControlsMcpServer_Override(z ZeroTrustAccessAiControlsMcpServer, scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpServerConfig) {
 	_init_.Initialize()
 
@@ -1095,6 +1144,36 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) OverrideLogicalId(newLogi
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) PutUpdatedPrompts(value interface{}) {
+	if err := z.validatePutUpdatedPromptsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putUpdatedPrompts",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) PutUpdatedTools(value interface{}) {
+	if err := z.validatePutUpdatedToolsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putUpdatedTools",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ResetAuthCredentials() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1115,6 +1194,22 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ResetUpdatedPrompts() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUpdatedPrompts",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ResetUpdatedTools() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUpdatedTools",
 		nil, // no parameters
 	)
 }

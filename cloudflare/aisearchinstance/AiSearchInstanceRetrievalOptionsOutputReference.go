@@ -5,14 +5,16 @@ package aisearchinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/aisearchinstance/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchinstance/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type AiSearchInstanceRetrievalOptionsOutputReference interface {
 	cdktn.ComplexObject
+	BoostBy() AiSearchInstanceRetrievalOptionsBoostByList
+	BoostByInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +69,8 @@ type AiSearchInstanceRetrievalOptionsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutBoostBy(value interface{})
+	ResetBoostBy()
 	ResetKeywordMatchMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type AiSearchInstanceRetrievalOptionsOutputReference interface {
 // The jsii proxy struct for AiSearchInstanceRetrievalOptionsOutputReference
 type jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) BoostBy() AiSearchInstanceRetrievalOptionsBoostByList {
+	var returns AiSearchInstanceRetrievalOptionsBoostByList
+	_jsii_.Get(
+		j,
+		"boostBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) BoostByInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"boostByInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -451,6 +475,25 @@ func (a *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) PutBoostBy(value interface{}) {
+	if err := a.validatePutBoostByParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBoostBy",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) ResetBoostBy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBoostBy",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AiSearchInstanceRetrievalOptionsOutputReference) ResetKeywordMatchMode() {

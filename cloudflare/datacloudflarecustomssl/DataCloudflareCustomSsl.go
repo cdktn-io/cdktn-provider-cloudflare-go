@@ -5,14 +5,14 @@ package datacloudflarecustomssl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomssl/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomssl/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
 type DataCloudflareCustomSsl interface {
 	cdktn.TerraformDataSource
 	BundleMethod() *string
@@ -27,6 +27,7 @@ type DataCloudflareCustomSsl interface {
 	CustomCertificateId() *string
 	SetCustomCertificateId(val *string)
 	CustomCertificateIdInput() *string
+	CustomCsrId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -105,6 +106,7 @@ type DataCloudflareCustomSsl interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -188,6 +190,16 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) CustomCertificateIdInput() *string {
 	_jsii_.Get(
 		j,
 		"customCertificateIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomSsl) CustomCsrId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customCsrId",
 		&returns,
 	)
 	return returns
@@ -464,7 +476,7 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) DataCloudflareCustomSsl {
 	_init_.Initialize()
 
@@ -482,7 +494,7 @@ func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl_Override(d DataCloudflareCustomSsl, scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) {
 	_init_.Initialize()
 
@@ -877,6 +889,14 @@ func (d *jsiiProxy_DataCloudflareCustomSsl) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomSsl) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

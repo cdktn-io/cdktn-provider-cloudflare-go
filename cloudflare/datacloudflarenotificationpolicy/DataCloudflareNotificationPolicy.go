@@ -5,14 +5,14 @@ package datacloudflarenotificationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarenotificationpolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarenotificationpolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/notification_policy cloudflare_notification_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policy cloudflare_notification_policy}.
 type DataCloudflareNotificationPolicy interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -94,6 +94,7 @@ type DataCloudflareNotificationPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -406,7 +407,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/notification_policy cloudflare_notification_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policy cloudflare_notification_policy} Data Source.
 func NewDataCloudflareNotificationPolicy(scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyConfig) DataCloudflareNotificationPolicy {
 	_init_.Initialize()
 
@@ -424,7 +425,7 @@ func NewDataCloudflareNotificationPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/notification_policy cloudflare_notification_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policy cloudflare_notification_policy} Data Source.
 func NewDataCloudflareNotificationPolicy_Override(d DataCloudflareNotificationPolicy, scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyConfig) {
 	_init_.Initialize()
 
@@ -785,6 +786,14 @@ func (d *jsiiProxy_DataCloudflareNotificationPolicy) OverrideLogicalId(newLogica
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareNotificationPolicy) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

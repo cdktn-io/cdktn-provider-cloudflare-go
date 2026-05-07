@@ -5,9 +5,9 @@ package datacloudflarelogpushdatasetjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarelogpushdatasetjob/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarelogpushdatasetjob/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -37,6 +37,7 @@ type DataCloudflareLogpushDatasetJobOutputOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareLogpushDatasetJobOutputOptions
 	SetInternalValue(val *DataCloudflareLogpushDatasetJobOutputOptions)
+	MergeSubrequests() cdktn.IResolvable
 	OutputType() *string
 	RecordDelimiter() *string
 	RecordPrefix() *string
@@ -186,6 +187,16 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJobOutputOptionsOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJobOutputOptionsOutputReference) MergeSubrequests() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"mergeSubrequests",
 		&returns,
 	)
 	return returns

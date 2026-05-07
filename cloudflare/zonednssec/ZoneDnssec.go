@@ -5,14 +5,14 @@ package zonednssec
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonednssec/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonednssec/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
 type ZoneDnssec interface {
 	cdktn.TerraformResource
 	Algorithm() *string
@@ -535,7 +535,7 @@ func (j *jsiiProxy_ZoneDnssec) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
 func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecConfig) ZoneDnssec {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
 func NewZoneDnssec_Override(z ZoneDnssec, scope constructs.Construct, id *string, config *ZoneDnssecConfig) {
 	_init_.Initialize()
 

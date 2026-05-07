@@ -5,14 +5,14 @@ package datacloudflarecloudforceonerequestpriority
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecloudforceonerequestpriority/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecloudforceonerequestpriority/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
 type DataCloudflareCloudforceOneRequestPriority interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -97,6 +97,7 @@ type DataCloudflareCloudforceOneRequestPriority interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -439,7 +440,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Updated() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
 func NewDataCloudflareCloudforceOneRequestPriority(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestPriorityConfig) DataCloudflareCloudforceOneRequestPriority {
 	_init_.Initialize()
 
@@ -457,7 +458,7 @@ func NewDataCloudflareCloudforceOneRequestPriority(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
 func NewDataCloudflareCloudforceOneRequestPriority_Override(d DataCloudflareCloudforceOneRequestPriority, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestPriorityConfig) {
 	_init_.Initialize()
 
@@ -818,6 +819,14 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) OverrideLogicalId
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

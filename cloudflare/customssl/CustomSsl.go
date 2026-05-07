@@ -5,14 +5,14 @@ package customssl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customssl/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customssl/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_ssl cloudflare_custom_ssl}.
 type CustomSsl interface {
 	cdktn.TerraformResource
 	BundleMethod() *string
@@ -33,6 +33,9 @@ type CustomSsl interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomCsrId() *string
+	SetCustomCsrId(val *string)
+	CustomCsrIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -140,6 +143,7 @@ type CustomSsl interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutGeoRestrictions(value *CustomSslGeoRestrictions)
 	ResetBundleMethod()
+	ResetCustomCsrId()
 	ResetDeploy()
 	ResetGeoRestrictions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -147,6 +151,7 @@ type CustomSsl interface {
 	ResetOverrideLogicalId()
 	ResetPolicy()
 	ResetType()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -249,6 +254,26 @@ func (j *jsiiProxy_CustomSsl) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) CustomCsrId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customCsrId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomSsl) CustomCsrIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customCsrIdInput",
 		&returns,
 	)
 	return returns
@@ -605,7 +630,7 @@ func (j *jsiiProxy_CustomSsl) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfig) CustomSsl {
 	_init_.Initialize()
 
@@ -623,7 +648,7 @@ func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl_Override(c CustomSsl, scope constructs.Construct, id *string, config *CustomSslConfig) {
 	_init_.Initialize()
 
@@ -674,6 +699,17 @@ func (j *jsiiProxy_CustomSsl)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomSsl)SetCustomCsrId(val *string) {
+	if err := j.validateSetCustomCsrIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customCsrId",
 		val,
 	)
 }
@@ -1151,6 +1187,14 @@ func (c *jsiiProxy_CustomSsl) ResetBundleMethod() {
 	)
 }
 
+func (c *jsiiProxy_CustomSsl) ResetCustomCsrId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomCsrId",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CustomSsl) ResetDeploy() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1187,6 +1231,14 @@ func (c *jsiiProxy_CustomSsl) ResetType() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomSsl) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

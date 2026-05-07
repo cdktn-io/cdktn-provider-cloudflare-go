@@ -5,14 +5,14 @@ package botmanagement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/botmanagement/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/botmanagement/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktn.TerraformResource
 	AiBotsProtection() *string
@@ -35,6 +35,9 @@ type BotManagement interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContentBotsProtection() *string
+	SetContentBotsProtection(val *string)
+	ContentBotsProtectionInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -156,6 +159,7 @@ type BotManagement interface {
 	ResetAutoUpdateModel()
 	ResetBmCookieEnabled()
 	ResetCfRobotsVariant()
+	ResetContentBotsProtection()
 	ResetCrawlerProtection()
 	ResetEnableJs()
 	ResetFightMode()
@@ -301,6 +305,26 @@ func (j *jsiiProxy_BotManagement) ConstructNodeMetadata() *map[string]interface{
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) ContentBotsProtection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentBotsProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) ContentBotsProtectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentBotsProtectionInput",
 		&returns,
 	)
 	return returns
@@ -687,7 +711,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -705,7 +729,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -767,6 +791,17 @@ func (j *jsiiProxy_BotManagement)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetContentBotsProtection(val *string) {
+	if err := j.validateSetContentBotsProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contentBotsProtection",
 		val,
 	)
 }
@@ -1330,6 +1365,14 @@ func (b *jsiiProxy_BotManagement) ResetCfRobotsVariant() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetCfRobotsVariant",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetContentBotsProtection() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetContentBotsProtection",
 		nil, // no parameters
 	)
 }

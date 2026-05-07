@@ -5,14 +5,14 @@ package list
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/list/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/list/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/list cloudflare_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/list cloudflare_list}.
 type List interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -124,6 +124,7 @@ type List interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutItems(value interface{})
+	ResetAccountId()
 	ResetDescription()
 	ResetItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -467,7 +468,7 @@ func (j *jsiiProxy_List) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/list cloudflare_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/list cloudflare_list} Resource.
 func NewList(scope constructs.Construct, id *string, config *ListConfig) List {
 	_init_.Initialize()
 
@@ -485,7 +486,7 @@ func NewList(scope constructs.Construct, id *string, config *ListConfig) List {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/list cloudflare_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/list cloudflare_list} Resource.
 func NewList_Override(l List, scope constructs.Construct, id *string, config *ListConfig) {
 	_init_.Initialize()
 
@@ -969,6 +970,14 @@ func (l *jsiiProxy_List) PutItems(value interface{}) {
 		l,
 		"putItems",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_List) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

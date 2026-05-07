@@ -5,14 +5,14 @@ package datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdevicedefaultprofilelocaldomainfallback/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}.
 type DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -85,6 +85,7 @@ type DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -317,7 +318,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig) DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback {
 	_init_.Initialize()
 
@@ -335,7 +336,7 @@ func NewDataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback(scope con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback_Override(d DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig) {
 	_init_.Initialize()
 
@@ -685,6 +686,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallbac
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileLocalDomainFallback) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

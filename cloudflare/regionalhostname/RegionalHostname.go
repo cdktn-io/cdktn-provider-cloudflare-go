@@ -5,14 +5,14 @@ package regionalhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionalhostname/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionalhostname/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_hostname cloudflare_regional_hostname}.
 type RegionalHostname interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -122,6 +122,7 @@ type RegionalHostname interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRouting()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -410,7 +411,7 @@ func (j *jsiiProxy_RegionalHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname(scope constructs.Construct, id *string, config *RegionalHostnameConfig) RegionalHostname {
 	_init_.Initialize()
 
@@ -428,7 +429,7 @@ func NewRegionalHostname(scope constructs.Construct, id *string, config *Regiona
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname_Override(r RegionalHostname, scope constructs.Construct, id *string, config *RegionalHostnameConfig) {
 	_init_.Initialize()
 
@@ -916,6 +917,14 @@ func (r *jsiiProxy_RegionalHostname) ResetRouting() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetRouting",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegionalHostname) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

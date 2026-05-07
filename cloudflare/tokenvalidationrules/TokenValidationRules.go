@@ -5,14 +5,14 @@ package tokenvalidationrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationrules/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationrules/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules cloudflare_token_validation_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules cloudflare_token_validation_rules}.
 type TokenValidationRules interface {
 	cdktn.TerraformResource
 	Action() *string
@@ -135,6 +135,7 @@ type TokenValidationRules interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPosition()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -513,7 +514,7 @@ func (j *jsiiProxy_TokenValidationRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource.
 func NewTokenValidationRules(scope constructs.Construct, id *string, config *TokenValidationRulesConfig) TokenValidationRules {
 	_init_.Initialize()
 
@@ -531,7 +532,7 @@ func NewTokenValidationRules(scope constructs.Construct, id *string, config *Tok
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource.
 func NewTokenValidationRules_Override(t TokenValidationRules, scope constructs.Construct, id *string, config *TokenValidationRulesConfig) {
 	_init_.Initialize()
 
@@ -1063,6 +1064,14 @@ func (t *jsiiProxy_TokenValidationRules) ResetPosition() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPosition",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TokenValidationRules) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package datacloudflareipranges
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareipranges/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareipranges/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ip_ranges cloudflare_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ip_ranges cloudflare_ip_ranges}.
 type DataCloudflareIpRanges interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataCloudflareIpRanges) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
 func NewDataCloudflareIpRanges(scope constructs.Construct, id *string, config *DataCloudflareIpRangesConfig) DataCloudflareIpRanges {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataCloudflareIpRanges(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
 func NewDataCloudflareIpRanges_Override(d DataCloudflareIpRanges, scope constructs.Construct, id *string, config *DataCloudflareIpRangesConfig) {
 	_init_.Initialize()
 

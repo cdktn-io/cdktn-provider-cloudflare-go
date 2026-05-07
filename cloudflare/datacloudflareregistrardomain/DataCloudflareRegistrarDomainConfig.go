@@ -22,13 +22,13 @@ type DataCloudflareRegistrarDomainConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
+	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Domain name.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
-	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

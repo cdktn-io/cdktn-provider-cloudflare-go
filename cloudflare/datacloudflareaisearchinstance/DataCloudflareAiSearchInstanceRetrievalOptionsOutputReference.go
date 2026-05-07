@@ -5,14 +5,15 @@ package datacloudflareaisearchinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareAiSearchInstanceRetrievalOptionsOutputReference interface {
 	cdktn.ComplexObject
+	BoostBy() DataCloudflareAiSearchInstanceRetrievalOptionsBoostByList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,6 +79,16 @@ type DataCloudflareAiSearchInstanceRetrievalOptionsOutputReference interface {
 // The jsii proxy struct for DataCloudflareAiSearchInstanceRetrievalOptionsOutputReference
 type jsiiProxy_DataCloudflareAiSearchInstanceRetrievalOptionsOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceRetrievalOptionsOutputReference) BoostBy() DataCloudflareAiSearchInstanceRetrievalOptionsBoostByList {
+	var returns DataCloudflareAiSearchInstanceRetrievalOptionsBoostByList
+	_jsii_.Get(
+		j,
+		"boostBy",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareAiSearchInstanceRetrievalOptionsOutputReference) ComplexObjectIndex() interface{} {

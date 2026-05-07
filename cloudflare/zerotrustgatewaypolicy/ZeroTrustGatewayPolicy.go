@@ -5,14 +5,14 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustgatewaypolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaypolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
 type ZeroTrustGatewayPolicy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -152,6 +152,7 @@ type ZeroTrustGatewayPolicy interface {
 	PutExpiration(value *ZeroTrustGatewayPolicyExpiration)
 	PutRuleSettings(value *ZeroTrustGatewayPolicyRuleSettings)
 	PutSchedule(value *ZeroTrustGatewayPolicySchedule)
+	ResetAccountId()
 	ResetDescription()
 	ResetDevicePosture()
 	ResetEnabled()
@@ -703,7 +704,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) WarningStatus() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) ZeroTrustGatewayPolicy {
 	_init_.Initialize()
 
@@ -721,7 +722,7 @@ func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *Z
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy_Override(z ZeroTrustGatewayPolicy, scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) {
 	_init_.Initialize()
 
@@ -1293,6 +1294,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) PutSchedule(value *ZeroTrustGatewayPo
 		z,
 		"putSchedule",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

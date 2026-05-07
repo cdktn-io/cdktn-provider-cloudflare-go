@@ -5,14 +5,14 @@ package emailroutingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/emailroutingrule/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/emailroutingrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
 type EmailRoutingRule interface {
 	cdktn.TerraformResource
 	Actions() EmailRoutingRuleActionsList
@@ -130,6 +130,7 @@ type EmailRoutingRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPriority()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -458,7 +459,7 @@ func (j *jsiiProxy_EmailRoutingRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
 func NewEmailRoutingRule(scope constructs.Construct, id *string, config *EmailRoutingRuleConfig) EmailRoutingRule {
 	_init_.Initialize()
 
@@ -476,7 +477,7 @@ func NewEmailRoutingRule(scope constructs.Construct, id *string, config *EmailRo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
 func NewEmailRoutingRule_Override(e EmailRoutingRule, scope constructs.Construct, id *string, config *EmailRoutingRuleConfig) {
 	_init_.Initialize()
 
@@ -1002,6 +1003,14 @@ func (e *jsiiProxy_EmailRoutingRule) ResetPriority() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailRoutingRule) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

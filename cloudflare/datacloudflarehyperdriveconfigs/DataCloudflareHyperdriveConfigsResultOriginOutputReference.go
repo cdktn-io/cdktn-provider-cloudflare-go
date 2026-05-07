@@ -5,9 +5,9 @@ package datacloudflarehyperdriveconfigs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarehyperdriveconfigs/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarehyperdriveconfigs/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -39,6 +39,7 @@ type DataCloudflareHyperdriveConfigsResultOriginOutputReference interface {
 	Password() *string
 	Port() *float64
 	Scheme() *string
+	ServiceId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -202,6 +203,16 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) S
 	_jsii_.Get(
 		j,
 		"scheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOriginOutputReference) ServiceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceId",
 		&returns,
 	)
 	return returns

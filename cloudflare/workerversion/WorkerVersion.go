@@ -5,14 +5,14 @@ package workerversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workerversion/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workerversion/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version cloudflare_worker_version}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker_version cloudflare_worker_version}.
 type WorkerVersion interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -38,6 +38,8 @@ type WorkerVersion interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Containers() WorkerVersionContainersList
+	ContainersInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -68,6 +70,7 @@ type WorkerVersion interface {
 	MainScriptBase64() *string
 	Migrations() WorkerVersionMigrationsOutputReference
 	MigrationsInput() interface{}
+	MigrationTag() *string
 	Modules() WorkerVersionModulesList
 	ModulesInput() interface{}
 	// The tree node.
@@ -93,6 +96,7 @@ type WorkerVersion interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Urls() *[]*string
 	UsageModel() *string
 	SetUsageModel(val *string)
 	UsageModelInput() *string
@@ -145,15 +149,18 @@ type WorkerVersion interface {
 	PutAnnotations(value *WorkerVersionAnnotations)
 	PutAssets(value *WorkerVersionAssets)
 	PutBindings(value interface{})
+	PutContainers(value interface{})
 	PutLimits(value *WorkerVersionLimits)
 	PutMigrations(value *WorkerVersionMigrations)
 	PutModules(value interface{})
 	PutPlacement(value *WorkerVersionPlacement)
+	ResetAccountId()
 	ResetAnnotations()
 	ResetAssets()
 	ResetBindings()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
+	ResetContainers()
 	ResetLimits()
 	ResetMainModule()
 	ResetMigrations()
@@ -340,6 +347,26 @@ func (j *jsiiProxy_WorkerVersion) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersion) Containers() WorkerVersionContainersList {
+	var returns WorkerVersionContainersList
+	_jsii_.Get(
+		j,
+		"containers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) ContainersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"containersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersion) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -490,6 +517,16 @@ func (j *jsiiProxy_WorkerVersion) MigrationsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersion) MigrationTag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationTag",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersion) Modules() WorkerVersionModulesList {
 	var returns WorkerVersionModulesList
 	_jsii_.Get(
@@ -630,6 +667,16 @@ func (j *jsiiProxy_WorkerVersion) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersion) Urls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"urls",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersion) UsageModel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -671,7 +718,7 @@ func (j *jsiiProxy_WorkerVersion) WorkerIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVersionConfig) WorkerVersion {
 	_init_.Initialize()
 
@@ -689,7 +736,7 @@ func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVers
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion_Override(w WorkerVersion, scope constructs.Construct, id *string, config *WorkerVersionConfig) {
 	_init_.Initialize()
 
@@ -1220,6 +1267,17 @@ func (w *jsiiProxy_WorkerVersion) PutBindings(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersion) PutContainers(value interface{}) {
+	if err := w.validatePutContainersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putContainers",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerVersion) PutLimits(value *WorkerVersionLimits) {
 	if err := w.validatePutLimitsParameters(value); err != nil {
 		panic(err)
@@ -1264,6 +1322,14 @@ func (w *jsiiProxy_WorkerVersion) PutPlacement(value *WorkerVersionPlacement) {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersion) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerVersion) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1300,6 +1366,14 @@ func (w *jsiiProxy_WorkerVersion) ResetCompatibilityFlags() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCompatibilityFlags",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersion) ResetContainers() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetContainers",
 		nil, // no parameters
 	)
 }

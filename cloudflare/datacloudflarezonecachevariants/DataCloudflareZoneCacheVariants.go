@@ -5,14 +5,14 @@ package datacloudflarezonecachevariants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezonecachevariants/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezonecachevariants/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}.
 type DataCloudflareZoneCacheVariants interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -88,6 +88,7 @@ type DataCloudflareZoneCacheVariants interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -317,7 +318,7 @@ func (j *jsiiProxy_DataCloudflareZoneCacheVariants) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source.
 func NewDataCloudflareZoneCacheVariants(scope constructs.Construct, id *string, config *DataCloudflareZoneCacheVariantsConfig) DataCloudflareZoneCacheVariants {
 	_init_.Initialize()
 
@@ -335,7 +336,7 @@ func NewDataCloudflareZoneCacheVariants(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source.
 func NewDataCloudflareZoneCacheVariants_Override(d DataCloudflareZoneCacheVariants, scope constructs.Construct, id *string, config *DataCloudflareZoneCacheVariantsConfig) {
 	_init_.Initialize()
 
@@ -692,6 +693,14 @@ func (d *jsiiProxy_DataCloudflareZoneCacheVariants) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZoneCacheVariants) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

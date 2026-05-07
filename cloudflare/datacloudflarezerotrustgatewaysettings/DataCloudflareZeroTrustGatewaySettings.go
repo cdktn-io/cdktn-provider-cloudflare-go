@@ -5,14 +5,14 @@ package datacloudflarezerotrustgatewaysettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustgatewaysettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustgatewaysettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
 type DataCloudflareZeroTrustGatewaySettings interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -85,6 +85,7 @@ type DataCloudflareZeroTrustGatewaySettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -317,7 +318,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettings) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source.
 func NewDataCloudflareZeroTrustGatewaySettings(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewaySettingsConfig) DataCloudflareZeroTrustGatewaySettings {
 	_init_.Initialize()
 
@@ -335,7 +336,7 @@ func NewDataCloudflareZeroTrustGatewaySettings(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Data Source.
 func NewDataCloudflareZeroTrustGatewaySettings_Override(d DataCloudflareZeroTrustGatewaySettings, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewaySettingsConfig) {
 	_init_.Initialize()
 
@@ -685,6 +686,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettings) OverrideLogicalId(new
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewaySettings) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

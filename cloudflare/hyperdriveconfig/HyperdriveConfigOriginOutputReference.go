@@ -5,9 +5,9 @@ package hyperdriveconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -53,6 +53,9 @@ type HyperdriveConfigOriginOutputReference interface {
 	Scheme() *string
 	SetScheme(val *string)
 	SchemeInput() *string
+	ServiceId() *string
+	SetServiceId(val *string)
+	ServiceIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -90,7 +93,9 @@ type HyperdriveConfigOriginOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccessClientId()
 	ResetAccessClientSecret()
+	ResetHost()
 	ResetPort()
+	ResetServiceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -296,6 +301,26 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) SchemeInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) ServiceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) ServiceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -470,6 +495,17 @@ func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetScheme(val *string) 
 	_jsii_.Set(
 		j,
 		"scheme",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetServiceId(val *string) {
+	if err := j.validateSetServiceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceId",
 		val,
 	)
 }
@@ -709,10 +745,26 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ResetAccessClientSecre
 	)
 }
 
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetHost",
+		nil, // no parameters
+	)
+}
+
 func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ResetServiceId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetServiceId",
 		nil, // no parameters
 	)
 }

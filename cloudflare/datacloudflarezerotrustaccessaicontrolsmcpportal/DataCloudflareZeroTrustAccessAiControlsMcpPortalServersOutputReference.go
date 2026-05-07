@@ -5,9 +5,9 @@ package datacloudflarezerotrustaccessaicontrolsmcpportal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccessaicontrolsmcpportal/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustaccessaicontrolsmcpportal/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -57,8 +57,8 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference inte
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tools() cdktn.StringMapList
-	UpdatedPrompts() cdktn.AnyMap
-	UpdatedTools() cdktn.AnyMap
+	UpdatedPrompts() DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList
+	UpdatedTools() DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -338,8 +338,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) UpdatedPrompts() cdktn.AnyMap {
-	var returns cdktn.AnyMap
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) UpdatedPrompts() DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedPromptsList
 	_jsii_.Get(
 		j,
 		"updatedPrompts",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) UpdatedTools() cdktn.AnyMap {
-	var returns cdktn.AnyMap
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) UpdatedTools() DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsList {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsList
 	_jsii_.Get(
 		j,
 		"updatedTools",

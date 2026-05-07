@@ -5,14 +5,14 @@ package useragentblockingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/useragentblockingrule/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/useragentblockingrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
 type UserAgentBlockingRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -125,6 +125,7 @@ type UserAgentBlockingRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPaused()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -423,7 +424,7 @@ func (j *jsiiProxy_UserAgentBlockingRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
 func NewUserAgentBlockingRule(scope constructs.Construct, id *string, config *UserAgentBlockingRuleConfig) UserAgentBlockingRule {
 	_init_.Initialize()
 
@@ -441,7 +442,7 @@ func NewUserAgentBlockingRule(scope constructs.Construct, id *string, config *Us
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
 func NewUserAgentBlockingRule_Override(u UserAgentBlockingRule, scope constructs.Construct, id *string, config *UserAgentBlockingRuleConfig) {
 	_init_.Initialize()
 
@@ -948,6 +949,14 @@ func (u *jsiiProxy_UserAgentBlockingRule) ResetPaused() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetPaused",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserAgentBlockingRule) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

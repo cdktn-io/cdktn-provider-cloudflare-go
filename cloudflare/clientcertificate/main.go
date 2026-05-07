@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "reactivateInput", GoGetter: "ReactivateInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReactivate", GoMethod: "ResetReactivate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "serialNumber", GoGetter: "SerialNumber"},
 			_jsii_.MemberProperty{JsiiProperty: "signature", GoGetter: "Signature"},
 			_jsii_.MemberProperty{JsiiProperty: "ski", GoGetter: "Ski"},

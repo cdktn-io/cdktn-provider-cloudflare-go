@@ -7,15 +7,15 @@ package ruleset
 type RulesetRulesActionParametersPrivate struct {
 	// The operation to perform. Available values: "set", "remove".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
 	Operation *string `field:"required" json:"operation" yaml:"operation"`
 	// Whether to apply the directive only to Cloudflare's cache.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 	CloudflareOnly interface{} `field:"optional" json:"cloudflareOnly" yaml:"cloudflareOnly"`
 	// The qualifiers for the directive.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
 	Qualifiers *[]*string `field:"optional" json:"qualifiers" yaml:"qualifiers"`
 }
 

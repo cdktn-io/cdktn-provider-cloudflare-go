@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePu
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePutMfaConfigParameters(value *ZeroTrustAccessApplicationPoliciesMfaConfig) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesOutputReference) validatePutRequireParameters(value interface{}) error {
 	return nil
 }

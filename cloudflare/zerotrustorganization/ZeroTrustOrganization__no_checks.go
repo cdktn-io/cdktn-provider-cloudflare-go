@@ -87,6 +87,10 @@ func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaConfigParameters(value *
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaSshPivKeyRequirementsParameters(value *ZeroTrustOrganizationMfaSshPivKeyRequirements) error {
+	return nil
+}
+
 func validateZeroTrustOrganization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

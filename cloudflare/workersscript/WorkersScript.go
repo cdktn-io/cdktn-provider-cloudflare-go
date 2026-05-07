@@ -5,19 +5,21 @@ package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersscript/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workersscript/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	Annotations() WorkersScriptAnnotationsOutputReference
+	AnnotationsInput() interface{}
 	Assets() WorkersScriptAssetsOutputReference
 	AssetsInput() interface{}
 	Bindings() WorkersScriptBindingsList
@@ -173,6 +175,7 @@ type WorkersScript interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAnnotations(value *WorkersScriptAnnotations)
 	PutAssets(value *WorkersScriptAssets)
 	PutBindings(value interface{})
 	PutLimits(value *WorkersScriptLimits)
@@ -180,6 +183,8 @@ type WorkersScript interface {
 	PutObservability(value *WorkersScriptObservability)
 	PutPlacement(value *WorkersScriptPlacement)
 	PutTailConsumers(value interface{})
+	ResetAccountId()
+	ResetAnnotations()
 	ResetAssets()
 	ResetBindings()
 	ResetBodyPart()
@@ -244,6 +249,26 @@ func (j *jsiiProxy_WorkersScript) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) Annotations() WorkersScriptAnnotationsOutputReference {
+	var returns WorkersScriptAnnotationsOutputReference
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) AnnotationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"annotationsInput",
 		&returns,
 	)
 	return returns
@@ -940,7 +965,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -958,7 +983,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -1544,6 +1569,17 @@ func (w *jsiiProxy_WorkersScript) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (w *jsiiProxy_WorkersScript) PutAnnotations(value *WorkersScriptAnnotations) {
+	if err := w.validatePutAnnotationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAnnotations",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScript) PutAssets(value *WorkersScriptAssets) {
 	if err := w.validatePutAssetsParameters(value); err != nil {
 		panic(err)
@@ -1618,6 +1654,22 @@ func (w *jsiiProxy_WorkersScript) PutTailConsumers(value interface{}) {
 		w,
 		"putTailConsumers",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAnnotations",
+		nil, // no parameters
 	)
 }
 

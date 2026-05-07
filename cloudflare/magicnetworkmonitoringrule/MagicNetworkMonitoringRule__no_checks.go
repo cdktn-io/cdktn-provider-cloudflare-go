@@ -99,7 +99,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetAutomaticAdvertisement
 	return nil
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetBandwidthParameters(val *float64) error {
+func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetBandwidthThresholdParameters(val *float64) error {
 	return nil
 }
 
@@ -131,7 +131,23 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetPrefixesParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetPrefixMatchParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetZscoreSensitivityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetZscoreTargetParameters(val *string) error {
 	return nil
 }
 

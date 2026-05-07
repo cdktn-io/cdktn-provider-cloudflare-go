@@ -5,14 +5,14 @@ package magicnetworkmonitoringrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicnetworkmonitoringrule/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicnetworkmonitoringrule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
 type MagicNetworkMonitoringRule interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -21,10 +21,9 @@ type MagicNetworkMonitoringRule interface {
 	AutomaticAdvertisement() interface{}
 	SetAutomaticAdvertisement(val interface{})
 	AutomaticAdvertisementInput() interface{}
-	Bandwidth() *float64
-	SetBandwidth(val *float64)
-	BandwidthInput() *float64
 	BandwidthThreshold() *float64
+	SetBandwidthThreshold(val *float64)
+	BandwidthThresholdInput() *float64
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -69,6 +68,8 @@ type MagicNetworkMonitoringRule interface {
 	SetPrefixes(val *[]*string)
 	PrefixesInput() *[]*string
 	PrefixMatch() *string
+	SetPrefixMatch(val *string)
+	PrefixMatchInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -86,8 +87,14 @@ type MagicNetworkMonitoringRule interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	ZscoreSensitivity() *string
+	SetZscoreSensitivity(val *string)
+	ZscoreSensitivityInput() *string
 	ZscoreTarget() *string
+	SetZscoreTarget(val *string)
+	ZscoreTargetInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -131,14 +138,16 @@ type MagicNetworkMonitoringRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAutomaticAdvertisement()
-	ResetBandwidth()
+	ResetAccountId()
+	ResetBandwidthThreshold()
 	ResetDuration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPacketThreshold()
-	ResetPrefixes()
+	ResetPrefixMatch()
+	ResetZscoreSensitivity()
+	ResetZscoreTarget()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -206,31 +215,21 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) AutomaticAdvertisementInput() int
 	return returns
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringRule) Bandwidth() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"bandwidth",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicNetworkMonitoringRule) BandwidthInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"bandwidthInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MagicNetworkMonitoringRule) BandwidthThreshold() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"bandwidthThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicNetworkMonitoringRule) BandwidthThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bandwidthThresholdInput",
 		&returns,
 	)
 	return returns
@@ -436,6 +435,16 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) PrefixMatch() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicNetworkMonitoringRule) PrefixMatchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixMatchInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicNetworkMonitoringRule) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -506,11 +515,31 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) Type() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicNetworkMonitoringRule) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicNetworkMonitoringRule) ZscoreSensitivity() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"zscoreSensitivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicNetworkMonitoringRule) ZscoreSensitivityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zscoreSensitivityInput",
 		&returns,
 	)
 	return returns
@@ -526,8 +555,18 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) ZscoreTarget() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicNetworkMonitoringRule) ZscoreTargetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zscoreTargetInput",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) MagicNetworkMonitoringRule {
 	_init_.Initialize()
 
@@ -545,7 +584,7 @@ func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule_Override(m MagicNetworkMonitoringRule, scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) {
 	_init_.Initialize()
 
@@ -578,13 +617,13 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule)SetAutomaticAdvertisement(val inte
 	)
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringRule)SetBandwidth(val *float64) {
-	if err := j.validateSetBandwidthParameters(val); err != nil {
+func (j *jsiiProxy_MagicNetworkMonitoringRule)SetBandwidthThreshold(val *float64) {
+	if err := j.validateSetBandwidthThresholdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"bandwidth",
+		"bandwidthThreshold",
 		val,
 	)
 }
@@ -682,6 +721,17 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule)SetPrefixes(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_MagicNetworkMonitoringRule)SetPrefixMatch(val *string) {
+	if err := j.validateSetPrefixMatchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prefixMatch",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MagicNetworkMonitoringRule)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -697,6 +747,39 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicNetworkMonitoringRule)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicNetworkMonitoringRule)SetZscoreSensitivity(val *string) {
+	if err := j.validateSetZscoreSensitivityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zscoreSensitivity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicNetworkMonitoringRule)SetZscoreTarget(val *string) {
+	if err := j.validateSetZscoreTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zscoreTarget",
 		val,
 	)
 }
@@ -1054,18 +1137,18 @@ func (m *jsiiProxy_MagicNetworkMonitoringRule) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetAutomaticAdvertisement() {
+func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetAutomaticAdvertisement",
+		"resetAccountId",
 		nil, // no parameters
 	)
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetBandwidth() {
+func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetBandwidthThreshold() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetBandwidth",
+		"resetBandwidthThreshold",
 		nil, // no parameters
 	)
 }
@@ -1094,10 +1177,26 @@ func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetPacketThreshold() {
 	)
 }
 
-func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetPrefixes() {
+func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetPrefixMatch() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetPrefixes",
+		"resetPrefixMatch",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetZscoreSensitivity() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetZscoreSensitivity",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetZscoreTarget() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetZscoreTarget",
 		nil, // no parameters
 	)
 }

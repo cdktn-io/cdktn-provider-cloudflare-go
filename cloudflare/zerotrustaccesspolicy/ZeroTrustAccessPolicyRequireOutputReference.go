@@ -5,9 +5,9 @@ package zerotrustaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccesspolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccesspolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -88,6 +88,8 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UserRiskScore() ZeroTrustAccessPolicyRequireUserRiskScoreOutputReference
+	UserRiskScoreInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -136,6 +138,7 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 	PutOkta(value *ZeroTrustAccessPolicyRequireOkta)
 	PutSaml(value *ZeroTrustAccessPolicyRequireSaml)
 	PutServiceToken(value *ZeroTrustAccessPolicyRequireServiceToken)
+	PutUserRiskScore(value *ZeroTrustAccessPolicyRequireUserRiskScore)
 	ResetAnyValidServiceToken()
 	ResetAuthContext()
 	ResetAuthMethod()
@@ -160,6 +163,7 @@ type ZeroTrustAccessPolicyRequireOutputReference interface {
 	ResetOkta()
 	ResetSaml()
 	ResetServiceToken()
+	ResetUserRiskScore()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -725,6 +729,26 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) UserRiskScore() ZeroTrustAccessPolicyRequireUserRiskScoreOutputReference {
+	var returns ZeroTrustAccessPolicyRequireUserRiskScoreOutputReference
+	_jsii_.Get(
+		j,
+		"userRiskScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) UserRiskScoreInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userRiskScoreInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewZeroTrustAccessPolicyRequireOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessPolicyRequireOutputReference {
 	_init_.Initialize()
@@ -1258,6 +1282,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) PutServiceToken(
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) PutUserRiskScore(value *ZeroTrustAccessPolicyRequireUserRiskScore) {
+	if err := z.validatePutUserRiskScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putUserRiskScore",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) ResetAnyValidServiceToken() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1446,6 +1481,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) ResetServiceToke
 	_jsii_.InvokeVoid(
 		z,
 		"resetServiceToken",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyRequireOutputReference) ResetUserRiskScore() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUserRiskScore",
 		nil, // no parameters
 	)
 }

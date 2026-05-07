@@ -5,14 +5,14 @@ package datacloudflarezerotrustaccessinfrastructuretargets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccessinfrastructuretargets/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustaccessinfrastructuretargets/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets}.
 type DataCloudflareZeroTrustAccessInfrastructureTargets interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -139,6 +139,7 @@ type DataCloudflareZeroTrustAccessInfrastructureTargets interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetCreatedAfter()
 	ResetCreatedBefore()
 	ResetDirection()
@@ -740,7 +741,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) VirtualNe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
 func NewDataCloudflareZeroTrustAccessInfrastructureTargets(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessInfrastructureTargetsConfig) DataCloudflareZeroTrustAccessInfrastructureTargets {
 	_init_.Initialize()
 
@@ -758,7 +759,7 @@ func NewDataCloudflareZeroTrustAccessInfrastructureTargets(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
 func NewDataCloudflareZeroTrustAccessInfrastructureTargets_Override(d DataCloudflareZeroTrustAccessInfrastructureTargets, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessInfrastructureTargetsConfig) {
 	_init_.Initialize()
 
@@ -1317,6 +1318,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) OverrideL
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -5,14 +5,14 @@ package datacloudflareorigincacertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareorigincacertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareorigincacertificate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 type DataCloudflareOriginCaCertificate interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificate) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source.
 func NewDataCloudflareOriginCaCertificate(scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificateConfig) DataCloudflareOriginCaCertificate {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataCloudflareOriginCaCertificate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source.
 func NewDataCloudflareOriginCaCertificate_Override(d DataCloudflareOriginCaCertificate, scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificateConfig) {
 	_init_.Initialize()
 

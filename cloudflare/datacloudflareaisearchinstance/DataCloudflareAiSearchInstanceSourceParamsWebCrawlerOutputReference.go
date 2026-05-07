@@ -5,9 +5,9 @@ package datacloudflareaisearchinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -23,6 +23,7 @@ type DataCloudflareAiSearchInstanceSourceParamsWebCrawlerOutputReference interfa
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CrawlOptions() DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -97,6 +98,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceSourceParamsWebCrawlerOutputRef
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceSourceParamsWebCrawlerOutputReference) CrawlOptions() DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference {
+	var returns DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"crawlOptions",
 		&returns,
 	)
 	return returns

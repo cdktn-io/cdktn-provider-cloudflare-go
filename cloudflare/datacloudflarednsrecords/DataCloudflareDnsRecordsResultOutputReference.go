@@ -5,9 +5,9 @@ package datacloudflarednsrecords
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarednsrecords/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarednsrecords/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -42,6 +42,7 @@ type DataCloudflareDnsRecordsResultOutputReference interface {
 	ModifiedOn() *string
 	Name() *string
 	Priority() *float64
+	PrivateRouting() cdktn.IResolvable
 	Proxiable() cdktn.IResolvable
 	Proxied() cdktn.IResolvable
 	Settings() DataCloudflareDnsRecordsResultSettingsOutputReference
@@ -241,6 +242,16 @@ func (j *jsiiProxy_DataCloudflareDnsRecordsResultOutputReference) Priority() *fl
 	_jsii_.Get(
 		j,
 		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecordsResultOutputReference) PrivateRouting() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"privateRouting",
 		&returns,
 	)
 	return returns

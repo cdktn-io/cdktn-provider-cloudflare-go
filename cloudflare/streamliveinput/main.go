@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "recording", GoGetter: "Recording"},
 			_jsii_.MemberProperty{JsiiProperty: "recordingInput", GoGetter: "RecordingInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultCreator", GoMethod: "ResetDefaultCreator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteRecordingAfterDays", GoMethod: "ResetDeleteRecordingAfterDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},

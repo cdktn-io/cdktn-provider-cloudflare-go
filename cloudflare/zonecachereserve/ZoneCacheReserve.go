@@ -5,14 +5,14 @@ package zonecachereserve
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonecachereserve/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonecachereserve/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 type ZoneCacheReserve interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_ZoneCacheReserve) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
 func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCacheReserveConfig) ZoneCacheReserve {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
 func NewZoneCacheReserve_Override(z ZoneCacheReserve, scope constructs.Construct, id *string, config *ZoneCacheReserveConfig) {
 	_init_.Initialize()
 

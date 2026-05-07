@@ -5,14 +5,14 @@ package datacloudflareaccountdnssettingsinternalviews
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaccountdnssettingsinternalviews/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaccountdnssettingsinternalviews/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views}.
 type DataCloudflareAccountDnsSettingsInternalViews interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -103,6 +103,7 @@ type DataCloudflareAccountDnsSettingsInternalViews interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutName(value *DataCloudflareAccountDnsSettingsInternalViewsName)
+	ResetAccountId()
 	ResetDirection()
 	ResetMatch()
 	ResetMaxItems()
@@ -452,7 +453,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViews) ZoneNameInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views} Data Source.
 func NewDataCloudflareAccountDnsSettingsInternalViews(scope constructs.Construct, id *string, config *DataCloudflareAccountDnsSettingsInternalViewsConfig) DataCloudflareAccountDnsSettingsInternalViews {
 	_init_.Initialize()
 
@@ -470,7 +471,7 @@ func NewDataCloudflareAccountDnsSettingsInternalViews(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_dns_settings_internal_views cloudflare_account_dns_settings_internal_views} Data Source.
 func NewDataCloudflareAccountDnsSettingsInternalViews_Override(d DataCloudflareAccountDnsSettingsInternalViews, scope constructs.Construct, id *string, config *DataCloudflareAccountDnsSettingsInternalViewsConfig) {
 	_init_.Initialize()
 
@@ -897,6 +898,14 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViews) PutName(value 
 		d,
 		"putName",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalViews) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

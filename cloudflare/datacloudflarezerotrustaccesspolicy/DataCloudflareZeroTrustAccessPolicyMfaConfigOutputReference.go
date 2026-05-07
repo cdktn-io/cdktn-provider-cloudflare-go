@@ -5,9 +5,9 @@ package datacloudflarezerotrustaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccesspolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustaccesspolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -33,7 +33,7 @@ type DataCloudflareZeroTrustAccessPolicyMfaConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareZeroTrustAccessPolicyMfaConfig
 	SetInternalValue(val *DataCloudflareZeroTrustAccessPolicyMfaConfig)
-	MfaBypass() cdktn.IResolvable
+	MfaDisabled() cdktn.IResolvable
 	SessionDuration() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -142,11 +142,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyMfaConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyMfaConfigOutputReference) MfaBypass() cdktn.IResolvable {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyMfaConfigOutputReference) MfaDisabled() cdktn.IResolvable {
 	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
-		"mfaBypass",
+		"mfaDisabled",
 		&returns,
 	)
 	return returns

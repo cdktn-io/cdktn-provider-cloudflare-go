@@ -5,14 +5,14 @@ package regionaltieredcache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionaltieredcache/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionaltieredcache/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
 type RegionalTieredCache interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_RegionalTieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache(scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) RegionalTieredCache {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewRegionalTieredCache(scope constructs.Construct, id *string, config *Regi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache_Override(r RegionalTieredCache, scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) {
 	_init_.Initialize()
 

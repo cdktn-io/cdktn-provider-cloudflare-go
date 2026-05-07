@@ -71,6 +71,10 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetAllowedSende
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetAppIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetBucketNameParameters(val *string) error {
 	return nil
 }
@@ -91,11 +95,23 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetDatabaseIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetDatasetParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetDestinationAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetDispatchNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetEntrypointParameters(val *string) error {
 	return nil
 }
 
@@ -112,6 +128,10 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetIdParameters
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetIndexNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetInstanceNameParameters(val *string) error {
 	return nil
 }
 
@@ -147,6 +167,10 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetNamespaceIdP
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetNetworkIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetOldNameParameters(val *string) error {
 	return nil
 }
@@ -175,6 +199,10 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetServiceParam
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetServiceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetStoreIdParameters(val *string) error {
 	return nil
 }
@@ -188,6 +216,10 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetTerraformRes
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetTextParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetTunnelIdParameters(val *string) error {
 	return nil
 }
 

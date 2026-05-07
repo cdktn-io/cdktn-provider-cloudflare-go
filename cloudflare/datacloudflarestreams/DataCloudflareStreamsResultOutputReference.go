@@ -5,15 +5,16 @@ package datacloudflarestreams
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreams/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreams/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareStreamsResultOutputReference interface {
 	cdktn.ComplexObject
 	AllowedOrigins() *[]*string
+	ClippedFrom() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,10 +40,12 @@ type DataCloudflareStreamsResultOutputReference interface {
 	SetInternalValue(val *DataCloudflareStreamsResult)
 	LiveInput() *string
 	MaxDurationSeconds() *float64
+	MaxSizeBytes() *float64
 	Meta() *string
 	Modified() *string
 	Playback() DataCloudflareStreamsResultPlaybackOutputReference
 	Preview() *string
+	PublicDetails() DataCloudflareStreamsResultPublicDetailsOutputReference
 	ReadyToStream() cdktn.IResolvable
 	ReadyToStreamAt() *string
 	RequireSignedUrls() cdktn.IResolvable
@@ -107,6 +110,16 @@ func (j *jsiiProxy_DataCloudflareStreamsResultOutputReference) AllowedOrigins() 
 	_jsii_.Get(
 		j,
 		"allowedOrigins",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreamsResultOutputReference) ClippedFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clippedFrom",
 		&returns,
 	)
 	return returns
@@ -222,6 +235,16 @@ func (j *jsiiProxy_DataCloudflareStreamsResultOutputReference) MaxDurationSecond
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreamsResultOutputReference) MaxSizeBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSizeBytes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareStreamsResultOutputReference) Meta() *string {
 	var returns *string
 	_jsii_.Get(
@@ -257,6 +280,16 @@ func (j *jsiiProxy_DataCloudflareStreamsResultOutputReference) Preview() *string
 	_jsii_.Get(
 		j,
 		"preview",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareStreamsResultOutputReference) PublicDetails() DataCloudflareStreamsResultPublicDetailsOutputReference {
+	var returns DataCloudflareStreamsResultPublicDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"publicDetails",
 		&returns,
 	)
 	return returns

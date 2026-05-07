@@ -5,9 +5,9 @@ package datacloudflarezerotrustaccessaicontrolsmcpservers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccessaicontrolsmcpservers/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustaccessaicontrolsmcpservers/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -55,6 +55,8 @@ type DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference inte
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tools() cdktn.StringMapList
+	UpdatedPrompts() DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedPromptsList
+	UpdatedTools() DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedToolsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -309,6 +311,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutput
 	_jsii_.Get(
 		j,
 		"tools",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference) UpdatedPrompts() DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedPromptsList {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedPromptsList
+	_jsii_.Get(
+		j,
+		"updatedPrompts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference) UpdatedTools() DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedToolsList {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpServersResultUpdatedToolsList
+	_jsii_.Get(
+		j,
+		"updatedTools",
 		&returns,
 	)
 	return returns

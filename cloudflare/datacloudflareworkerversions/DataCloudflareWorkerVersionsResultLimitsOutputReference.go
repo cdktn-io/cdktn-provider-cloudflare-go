@@ -5,9 +5,9 @@ package datacloudflareworkerversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareworkerversions/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareworkerversions/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -33,6 +33,7 @@ type DataCloudflareWorkerVersionsResultLimitsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareWorkerVersionsResultLimits
 	SetInternalValue(val *DataCloudflareWorkerVersionsResultLimits)
+	Subrequests() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionsResultLimitsOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultLimitsOutputReference) Subrequests() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subrequests",
 		&returns,
 	)
 	return returns

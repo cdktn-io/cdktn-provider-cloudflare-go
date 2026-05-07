@@ -79,6 +79,14 @@ func (a *jsiiProxy_AiSearchInstance) validatePutCustomMetadataParameters(value i
 	return nil
 }
 
+func (a *jsiiProxy_AiSearchInstance) validatePutIndexingOptionsParameters(value *AiSearchInstanceIndexingOptions) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiSearchInstance) validatePutIndexMethodParameters(value *AiSearchInstanceIndexMethod) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiSearchInstance) validatePutMetadataParameters(value *AiSearchInstanceMetadata) error {
 	return nil
 }
@@ -212,6 +220,10 @@ func (j *jsiiProxy_AiSearchInstance) validateSetSummarizationParameters(val inte
 }
 
 func (j *jsiiProxy_AiSearchInstance) validateSetSummarizationModelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AiSearchInstance) validateSetSyncIntervalParameters(val *float64) error {
 	return nil
 }
 

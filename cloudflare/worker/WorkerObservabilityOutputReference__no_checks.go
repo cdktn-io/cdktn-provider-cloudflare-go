@@ -51,6 +51,10 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) validatePutLogsParameters
 	return nil
 }
 
+func (w *jsiiProxy_WorkerObservabilityOutputReference) validatePutTracesParameters(value *WorkerObservabilityTraces) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerObservabilityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

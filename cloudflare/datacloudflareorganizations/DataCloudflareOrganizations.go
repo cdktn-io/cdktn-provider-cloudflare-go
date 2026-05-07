@@ -5,14 +5,14 @@ package datacloudflareorganizations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareorganizations/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareorganizations/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/organizations cloudflare_organizations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/organizations cloudflare_organizations}.
 type DataCloudflareOrganizations interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DataCloudflareOrganizations) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/organizations cloudflare_organizations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/organizations cloudflare_organizations} Data Source.
 func NewDataCloudflareOrganizations(scope constructs.Construct, id *string, config *DataCloudflareOrganizationsConfig) DataCloudflareOrganizations {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewDataCloudflareOrganizations(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/organizations cloudflare_organizations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/organizations cloudflare_organizations} Data Source.
 func NewDataCloudflareOrganizations_Override(d DataCloudflareOrganizations, scope constructs.Construct, id *string, config *DataCloudflareOrganizationsConfig) {
 	_init_.Initialize()
 

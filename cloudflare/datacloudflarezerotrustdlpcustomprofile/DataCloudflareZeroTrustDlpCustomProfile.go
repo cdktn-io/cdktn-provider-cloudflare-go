@@ -5,14 +5,14 @@ package datacloudflarezerotrustdlpcustomprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustdlpcustomprofile/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdlpcustomprofile/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
 type DataCloudflareZeroTrustDlpCustomProfile interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -31,6 +31,8 @@ type DataCloudflareZeroTrustDlpCustomProfile interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
+	DataClasses() *[]*string
+	DataTags() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,6 +66,7 @@ type DataCloudflareZeroTrustDlpCustomProfile interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SensitivityLevels() DataCloudflareZeroTrustDlpCustomProfileSensitivityLevelsList
 	SharedEntries() DataCloudflareZeroTrustDlpCustomProfileSharedEntriesList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -98,6 +101,7 @@ type DataCloudflareZeroTrustDlpCustomProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -224,6 +228,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) CreatedAt() *string 
 	_jsii_.Get(
 		j,
 		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) DataClasses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataClasses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) DataTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dataTags",
 		&returns,
 	)
 	return returns
@@ -389,6 +413,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) SensitivityLevels() DataCloudflareZeroTrustDlpCustomProfileSensitivityLevelsList {
+	var returns DataCloudflareZeroTrustDlpCustomProfileSensitivityLevelsList
+	_jsii_.Get(
+		j,
+		"sensitivityLevels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) SharedEntries() DataCloudflareZeroTrustDlpCustomProfileSharedEntriesList {
 	var returns DataCloudflareZeroTrustDlpCustomProfileSharedEntriesList
 	_jsii_.Get(
@@ -450,7 +484,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) UpdatedAt() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source.
 func NewDataCloudflareZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpCustomProfileConfig) DataCloudflareZeroTrustDlpCustomProfile {
 	_init_.Initialize()
 
@@ -468,7 +502,7 @@ func NewDataCloudflareZeroTrustDlpCustomProfile(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source.
 func NewDataCloudflareZeroTrustDlpCustomProfile_Override(d DataCloudflareZeroTrustDlpCustomProfile, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -829,6 +863,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) OverrideLogicalId(ne
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

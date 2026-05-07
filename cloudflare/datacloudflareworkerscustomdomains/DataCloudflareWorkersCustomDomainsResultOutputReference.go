@@ -5,14 +5,15 @@ package datacloudflareworkerscustomdomains
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareworkerscustomdomains/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareworkerscustomdomains/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareWorkersCustomDomainsResultOutputReference interface {
 	cdktn.ComplexObject
+	CertId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -83,6 +84,16 @@ type DataCloudflareWorkersCustomDomainsResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareWorkersCustomDomainsResultOutputReference
 type jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference) CertId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference) ComplexObjectIndex() interface{} {

@@ -5,9 +5,9 @@ package datacloudflarelogpushjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarelogpushjob/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarelogpushjob/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -37,6 +37,7 @@ type DataCloudflareLogpushJobOutputOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareLogpushJobOutputOptions
 	SetInternalValue(val *DataCloudflareLogpushJobOutputOptions)
+	MergeSubrequests() cdktn.IResolvable
 	OutputType() *string
 	RecordDelimiter() *string
 	RecordPrefix() *string
@@ -186,6 +187,16 @@ func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushJobOutputOptionsOutputReference) MergeSubrequests() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"mergeSubrequests",
 		&returns,
 	)
 	return returns

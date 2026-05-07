@@ -5,14 +5,14 @@ package totaltls
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/totaltls/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/totaltls/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/total_tls cloudflare_total_tls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/total_tls cloudflare_total_tls}.
 type TotalTls interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -387,7 +387,7 @@ func (j *jsiiProxy_TotalTls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/total_tls cloudflare_total_tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/total_tls cloudflare_total_tls} Resource.
 func NewTotalTls(scope constructs.Construct, id *string, config *TotalTlsConfig) TotalTls {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewTotalTls(scope constructs.Construct, id *string, config *TotalTlsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/total_tls cloudflare_total_tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/total_tls cloudflare_total_tls} Resource.
 func NewTotalTls_Override(t TotalTls, scope constructs.Construct, id *string, config *TotalTlsConfig) {
 	_init_.Initialize()
 

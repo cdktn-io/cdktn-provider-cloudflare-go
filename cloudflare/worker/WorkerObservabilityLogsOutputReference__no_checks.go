@@ -59,6 +59,10 @@ func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) validateSetDestinationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) validateSetInternalVa
 }
 
 func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) validateSetInvocationLogsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerObservabilityLogsOutputReference) validateSetPersistParameters(val interface{}) error {
 	return nil
 }
 

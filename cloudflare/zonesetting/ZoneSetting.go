@@ -5,14 +5,14 @@ package zonesetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesetting/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesetting/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_setting cloudflare_zone_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_setting cloudflare_zone_setting}.
 type ZoneSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -124,6 +124,7 @@ type ZoneSetting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -432,7 +433,7 @@ func (j *jsiiProxy_ZoneSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_setting cloudflare_zone_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_setting cloudflare_zone_setting} Resource.
 func NewZoneSetting(scope constructs.Construct, id *string, config *ZoneSettingConfig) ZoneSetting {
 	_init_.Initialize()
 
@@ -450,7 +451,7 @@ func NewZoneSetting(scope constructs.Construct, id *string, config *ZoneSettingC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_setting cloudflare_zone_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_setting cloudflare_zone_setting} Resource.
 func NewZoneSetting_Override(z ZoneSetting, scope constructs.Construct, id *string, config *ZoneSettingConfig) {
 	_init_.Initialize()
 
@@ -938,6 +939,14 @@ func (z *jsiiProxy_ZoneSetting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSetting) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

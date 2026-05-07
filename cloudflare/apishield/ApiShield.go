@@ -5,14 +5,14 @@ package apishield
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/apishield/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/apishield/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield cloudflare_api_shield}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/api_shield cloudflare_api_shield}.
 type ApiShield interface {
 	cdktn.TerraformResource
 	AuthIdCharacteristics() ApiShieldAuthIdCharacteristicsList
@@ -352,7 +352,7 @@ func (j *jsiiProxy_ApiShield) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfig) ApiShield {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield_Override(a ApiShield, scope constructs.Construct, id *string, config *ApiShieldConfig) {
 	_init_.Initialize()
 

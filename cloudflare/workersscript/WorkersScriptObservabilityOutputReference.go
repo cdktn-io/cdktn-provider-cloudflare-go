@@ -5,9 +5,9 @@ package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workersscript/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workersscript/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -48,6 +48,8 @@ type WorkersScriptObservabilityOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Traces() WorkersScriptObservabilityTracesOutputReference
+	TracesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,8 +75,10 @@ type WorkersScriptObservabilityOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLogs(value *WorkersScriptObservabilityLogs)
+	PutTraces(value *WorkersScriptObservabilityTraces)
 	ResetHeadSamplingRate()
 	ResetLogs()
+	ResetTraces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -215,6 +219,26 @@ func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) TerraformResource(
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) Traces() WorkersScriptObservabilityTracesOutputReference {
+	var returns WorkersScriptObservabilityTracesOutputReference
+	_jsii_.Get(
+		j,
+		"traces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) TracesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tracesInput",
 		&returns,
 	)
 	return returns
@@ -522,6 +546,17 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) PutLogs(value *Wor
 	)
 }
 
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) PutTraces(value *WorkersScriptObservabilityTraces) {
+	if err := w.validatePutTracesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putTraces",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetHeadSamplingRate() {
 	_jsii_.InvokeVoid(
 		w,
@@ -534,6 +569,14 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetLogs() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetLogs",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetTraces() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTraces",
 		nil, // no parameters
 	)
 }

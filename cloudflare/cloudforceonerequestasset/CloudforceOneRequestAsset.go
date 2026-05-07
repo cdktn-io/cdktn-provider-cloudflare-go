@@ -5,14 +5,14 @@ package cloudforceonerequestasset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudforceonerequestasset/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudforceonerequestasset/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 type CloudforceOneRequestAsset interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -124,6 +124,7 @@ type CloudforceOneRequestAsset interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -466,7 +467,7 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
 func NewCloudforceOneRequestAsset(scope constructs.Construct, id *string, config *CloudforceOneRequestAssetConfig) CloudforceOneRequestAsset {
 	_init_.Initialize()
 
@@ -484,7 +485,7 @@ func NewCloudforceOneRequestAsset(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
 func NewCloudforceOneRequestAsset_Override(c CloudforceOneRequestAsset, scope constructs.Construct, id *string, config *CloudforceOneRequestAssetConfig) {
 	_init_.Initialize()
 
@@ -968,6 +969,14 @@ func (c *jsiiProxy_CloudforceOneRequestAsset) OverrideLogicalId(newLogicalId *st
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CloudforceOneRequestAsset) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

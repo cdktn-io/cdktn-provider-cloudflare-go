@@ -5,14 +5,14 @@ package datacloudflarewaitingroomrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarewaitingroomrules/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarewaitingroomrules/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules}.
 type DataCloudflareWaitingRoomRules interface {
 	cdktn.TerraformDataSource
 	Action() *string
@@ -94,6 +94,7 @@ type DataCloudflareWaitingRoomRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -373,7 +374,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
 func NewDataCloudflareWaitingRoomRules(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomRulesConfig) DataCloudflareWaitingRoomRules {
 	_init_.Initialize()
 
@@ -391,7 +392,7 @@ func NewDataCloudflareWaitingRoomRules(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
 func NewDataCloudflareWaitingRoomRules_Override(d DataCloudflareWaitingRoomRules, scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomRulesConfig) {
 	_init_.Initialize()
 
@@ -759,6 +760,14 @@ func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWaitingRoomRules) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

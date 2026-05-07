@@ -5,14 +5,14 @@ package streamwatermark
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamwatermark/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamwatermark/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark cloudflare_stream_watermark}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_watermark cloudflare_stream_watermark}.
 type StreamWatermarkA interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -36,9 +36,6 @@ type StreamWatermarkA interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DownloadedFrom() *string
-	File() *string
-	SetFile(val *string)
-	FileInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -90,6 +87,9 @@ type StreamWatermarkA interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Uid() *string
+	Url() *string
+	SetUrl(val *string)
+	UrlInput() *string
 	Width() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -134,6 +134,7 @@ type StreamWatermarkA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetIdentifier()
 	ResetName()
 	ResetOpacity()
@@ -143,6 +144,7 @@ type StreamWatermarkA interface {
 	ResetPadding()
 	ResetPosition()
 	ResetScale()
+	ResetUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -255,26 +257,6 @@ func (j *jsiiProxy_StreamWatermarkA) DownloadedFrom() *string {
 	_jsii_.Get(
 		j,
 		"downloadedFrom",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StreamWatermarkA) File() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"file",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StreamWatermarkA) FileInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"fileInput",
 		&returns,
 	)
 	return returns
@@ -540,6 +522,26 @@ func (j *jsiiProxy_StreamWatermarkA) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StreamWatermarkA) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamWatermarkA) UrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamWatermarkA) Width() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -551,7 +553,7 @@ func (j *jsiiProxy_StreamWatermarkA) Width() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
 func NewStreamWatermarkA(scope constructs.Construct, id *string, config *StreamWatermarkAConfig) StreamWatermarkA {
 	_init_.Initialize()
 
@@ -569,7 +571,7 @@ func NewStreamWatermarkA(scope constructs.Construct, id *string, config *StreamW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
 func NewStreamWatermarkA_Override(s StreamWatermarkA, scope constructs.Construct, id *string, config *StreamWatermarkAConfig) {
 	_init_.Initialize()
 
@@ -617,17 +619,6 @@ func (j *jsiiProxy_StreamWatermarkA)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_StreamWatermarkA)SetFile(val *string) {
-	if err := j.validateSetFileParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"file",
 		val,
 	)
 }
@@ -732,6 +723,17 @@ func (j *jsiiProxy_StreamWatermarkA)SetScale(val *float64) {
 	_jsii_.Set(
 		j,
 		"scale",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StreamWatermarkA)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"url",
 		val,
 	)
 }
@@ -1089,6 +1091,14 @@ func (s *jsiiProxy_StreamWatermarkA) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_StreamWatermarkA) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StreamWatermarkA) ResetIdentifier() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1141,6 +1151,14 @@ func (s *jsiiProxy_StreamWatermarkA) ResetScale() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetScale",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamWatermarkA) ResetUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUrl",
 		nil, // no parameters
 	)
 }

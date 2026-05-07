@@ -5,14 +5,14 @@ package datacloudflarezerotrustlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustlist/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustlist/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list cloudflare_zero_trust_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_list cloudflare_zero_trust_list}.
 type DataCloudflareZeroTrustList interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -95,6 +95,7 @@ type DataCloudflareZeroTrustList interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareZeroTrustListFilter)
+	ResetAccountId()
 	ResetFilter()
 	ResetListId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -409,7 +410,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustList) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list cloudflare_zero_trust_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_list cloudflare_zero_trust_list} Data Source.
 func NewDataCloudflareZeroTrustList(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustListConfig) DataCloudflareZeroTrustList {
 	_init_.Initialize()
 
@@ -427,7 +428,7 @@ func NewDataCloudflareZeroTrustList(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list cloudflare_zero_trust_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_list cloudflare_zero_trust_list} Data Source.
 func NewDataCloudflareZeroTrustList_Override(d DataCloudflareZeroTrustList, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustListConfig) {
 	_init_.Initialize()
 
@@ -799,6 +800,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustList) PutFilter(value *DataCloudflareZ
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustList) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

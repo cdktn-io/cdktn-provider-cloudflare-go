@@ -5,14 +5,14 @@ package zonednssettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonednssettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonednssettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_dns_settings cloudflare_zone_dns_settings}.
 type ZoneDnsSettings interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -145,6 +145,7 @@ type ZoneDnsSettings interface {
 	ResetOverrideLogicalId()
 	ResetSecondaryOverrides()
 	ResetSoa()
+	ResetZoneId()
 	ResetZoneMode()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -534,7 +535,7 @@ func (j *jsiiProxy_ZoneDnsSettings) ZoneModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
 func NewZoneDnsSettings(scope constructs.Construct, id *string, config *ZoneDnsSettingsConfig) ZoneDnsSettings {
 	_init_.Initialize()
 
@@ -552,7 +553,7 @@ func NewZoneDnsSettings(scope constructs.Construct, id *string, config *ZoneDnsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
 func NewZoneDnsSettings_Override(z ZoneDnsSettings, scope constructs.Construct, id *string, config *ZoneDnsSettingsConfig) {
 	_init_.Initialize()
 
@@ -1162,6 +1163,14 @@ func (z *jsiiProxy_ZoneDnsSettings) ResetSoa() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetSoa",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnsSettings) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

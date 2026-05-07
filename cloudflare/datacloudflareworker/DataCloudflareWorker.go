@@ -5,14 +5,14 @@ package datacloudflareworker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareworker/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareworker/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/worker cloudflare_worker}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/worker cloudflare_worker}.
 type DataCloudflareWorker interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -31,6 +31,9 @@ type DataCloudflareWorker interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeployedOn() *string
+	Filter() DataCloudflareWorkerFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -94,9 +97,13 @@ type DataCloudflareWorker interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareWorkerFilter)
+	ResetAccountId()
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWorkerId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -190,6 +197,36 @@ func (j *jsiiProxy_DataCloudflareWorker) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorker) DeployedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deployedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorker) Filter() DataCloudflareWorkerFilterOutputReference {
+	var returns DataCloudflareWorkerFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorker) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -406,7 +443,7 @@ func (j *jsiiProxy_DataCloudflareWorker) WorkerIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/worker cloudflare_worker} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/worker cloudflare_worker} Data Source.
 func NewDataCloudflareWorker(scope constructs.Construct, id *string, config *DataCloudflareWorkerConfig) DataCloudflareWorker {
 	_init_.Initialize()
 
@@ -424,7 +461,7 @@ func NewDataCloudflareWorker(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/worker cloudflare_worker} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/worker cloudflare_worker} Data Source.
 func NewDataCloudflareWorker_Override(d DataCloudflareWorker, scope constructs.Construct, id *string, config *DataCloudflareWorkerConfig) {
 	_init_.Initialize()
 
@@ -788,10 +825,45 @@ func (d *jsiiProxy_DataCloudflareWorker) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareWorker) PutFilter(value *DataCloudflareWorkerFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorker) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorker) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareWorker) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorker) ResetWorkerId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWorkerId",
 		nil, // no parameters
 	)
 }

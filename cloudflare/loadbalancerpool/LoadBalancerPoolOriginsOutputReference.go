@@ -5,9 +5,9 @@ package loadbalancerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/loadbalancerpool/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/loadbalancerpool/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -32,11 +32,12 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DisabledAt() *string
-	SetDisabledAt(val *string)
-	DisabledAtInput() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	FlattenCname() interface{}
+	SetFlattenCname(val interface{})
+	FlattenCnameInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Header() LoadBalancerPoolOriginsHeaderOutputReference
@@ -89,8 +90,8 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutHeader(value *LoadBalancerPoolOriginsHeader)
 	ResetAddress()
-	ResetDisabledAt()
 	ResetEnabled()
+	ResetFlattenCname()
 	ResetHeader()
 	ResetName()
 	ResetPort()
@@ -171,16 +172,6 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) DisabledAt() *string 
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) DisabledAtInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"disabledAtInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Enabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -196,6 +187,26 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) EnabledInput() interf
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) FlattenCname() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flattenCname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) FlattenCnameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flattenCnameInput",
 		&returns,
 	)
 	return returns
@@ -402,17 +413,6 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetDisabledAt(val *string) {
-	if err := j.validateSetDisabledAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disabledAt",
-		val,
-	)
-}
-
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetEnabled(val interface{}) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
@@ -420,6 +420,17 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetEnabled(val interfa
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetFlattenCname(val interface{}) {
+	if err := j.validateSetFlattenCnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flattenCname",
 		val,
 	)
 }
@@ -706,18 +717,18 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetAddress() {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetDisabledAt() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetDisabledAt",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetFlattenCname() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFlattenCname",
 		nil, // no parameters
 	)
 }

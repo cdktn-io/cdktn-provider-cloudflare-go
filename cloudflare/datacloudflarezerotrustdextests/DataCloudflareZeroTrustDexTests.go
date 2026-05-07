@@ -5,14 +5,14 @@ package datacloudflarezerotrustdextests
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustdextests/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdextests/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests}.
 type DataCloudflareZeroTrustDexTests interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -91,6 +91,7 @@ type DataCloudflareZeroTrustDexTests interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetKind()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -356,7 +357,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTests) TestNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
 func NewDataCloudflareZeroTrustDexTests(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDexTestsConfig) DataCloudflareZeroTrustDexTests {
 	_init_.Initialize()
 
@@ -374,7 +375,7 @@ func NewDataCloudflareZeroTrustDexTests(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
 func NewDataCloudflareZeroTrustDexTests_Override(d DataCloudflareZeroTrustDexTests, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDexTestsConfig) {
 	_init_.Initialize()
 
@@ -757,6 +758,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTests) OverrideLogicalId(newLogical
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTests) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

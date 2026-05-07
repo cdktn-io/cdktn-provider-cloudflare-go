@@ -5,14 +5,14 @@ package datacloudflarezerotrustaccesscustompage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrustaccesscustompage/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustaccesscustompage/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 type DataCloudflareZeroTrustAccessCustomPage interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -89,6 +89,7 @@ type DataCloudflareZeroTrustAccessCustomPage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -351,7 +352,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
 func NewDataCloudflareZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessCustomPageConfig) DataCloudflareZeroTrustAccessCustomPage {
 	_init_.Initialize()
 
@@ -369,7 +370,7 @@ func NewDataCloudflareZeroTrustAccessCustomPage(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Data Source.
 func NewDataCloudflareZeroTrustAccessCustomPage_Override(d DataCloudflareZeroTrustAccessCustomPage, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessCustomPageConfig) {
 	_init_.Initialize()
 
@@ -730,6 +731,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) OverrideLogicalId(ne
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessCustomPage) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

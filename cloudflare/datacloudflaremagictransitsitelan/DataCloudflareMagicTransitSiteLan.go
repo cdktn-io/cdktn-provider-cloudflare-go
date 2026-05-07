@@ -5,14 +5,14 @@ package datacloudflaremagictransitsitelan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagictransitsitelan/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagictransitsitelan/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
 type DataCloudflareMagicTransitSiteLan interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -41,6 +41,8 @@ type DataCloudflareMagicTransitSiteLan interface {
 	FriendlyUniqueId() *string
 	HaLink() cdktn.IResolvable
 	Id() *string
+	IsBreakout() cdktn.IResolvable
+	IsPrioritized() cdktn.IResolvable
 	LanId() *string
 	SetLanId(val *string)
 	LanIdInput() *string
@@ -96,6 +98,7 @@ type DataCloudflareMagicTransitSiteLan interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -242,6 +245,26 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) IsBreakout() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isBreakout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) IsPrioritized() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isPrioritized",
 		&returns,
 	)
 	return returns
@@ -418,7 +441,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) VlanTag() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
 func NewDataCloudflareMagicTransitSiteLan(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteLanConfig) DataCloudflareMagicTransitSiteLan {
 	_init_.Initialize()
 
@@ -436,7 +459,7 @@ func NewDataCloudflareMagicTransitSiteLan(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
 func NewDataCloudflareMagicTransitSiteLan_Override(d DataCloudflareMagicTransitSiteLan, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteLanConfig) {
 	_init_.Initialize()
 
@@ -808,6 +831,14 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteLan) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -219,6 +219,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetConte
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetContentConverterParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetContentTypeParameters(val *string) error {
 	return nil
 }
@@ -300,6 +304,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetProdu
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetReadTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetRedirectsForAiTrainingParameters(val interface{}) error {
 	return nil
 }
 

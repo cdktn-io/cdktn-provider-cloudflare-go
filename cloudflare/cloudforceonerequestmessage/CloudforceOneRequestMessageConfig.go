@@ -22,17 +22,17 @@ type CloudforceOneRequestMessageConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/cloudforce_one_request_message#account_id CloudforceOneRequestMessage#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/cloudforce_one_request_message#request_id CloudforceOneRequestMessage#request_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/cloudforce_one_request_message#request_id CloudforceOneRequestMessage#request_id}
 	RequestId *string `field:"required" json:"requestId" yaml:"requestId"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/cloudforce_one_request_message#account_id CloudforceOneRequestMessage#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Content of message.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
 	Content *string `field:"optional" json:"content" yaml:"content"`
 }
 

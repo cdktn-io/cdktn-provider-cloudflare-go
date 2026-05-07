@@ -5,14 +5,14 @@ package datacloudflareapishieldschemas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareapishieldschemas/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapishieldschemas/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas}.
 type DataCloudflareApiShieldSchemas interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -97,6 +97,7 @@ type DataCloudflareApiShieldSchemas interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetValidationEnabled()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -356,7 +357,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchemas) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas} Data Source.
 func NewDataCloudflareApiShieldSchemas(scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemasConfig) DataCloudflareApiShieldSchemas {
 	_init_.Initialize()
 
@@ -374,7 +375,7 @@ func NewDataCloudflareApiShieldSchemas(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_schemas cloudflare_api_shield_schemas} Data Source.
 func NewDataCloudflareApiShieldSchemas_Override(d DataCloudflareApiShieldSchemas, scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemasConfig) {
 	_init_.Initialize()
 
@@ -788,6 +789,14 @@ func (d *jsiiProxy_DataCloudflareApiShieldSchemas) ResetValidationEnabled() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetValidationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareApiShieldSchemas) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

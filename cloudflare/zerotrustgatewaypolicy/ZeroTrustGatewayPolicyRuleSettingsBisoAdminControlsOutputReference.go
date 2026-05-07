@@ -5,9 +5,9 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustgatewaypolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaypolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -76,6 +76,9 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
+	WmId() *string
+	SetWmId(val *string)
+	WmIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -112,6 +115,7 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	ResetPrinting()
 	ResetUpload()
 	ResetVersion()
+	ResetWmId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -437,6 +441,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) WmId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wmId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) WmIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wmIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference {
 	_init_.Initialize()
@@ -648,6 +672,17 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.Set(
 		j,
 		"version",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetWmId(val *string) {
+	if err := j.validateSetWmIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"wmId",
 		val,
 	)
 }
@@ -930,6 +965,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.InvokeVoid(
 		z,
 		"resetVersion",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetWmId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetWmId",
 		nil, // no parameters
 	)
 }

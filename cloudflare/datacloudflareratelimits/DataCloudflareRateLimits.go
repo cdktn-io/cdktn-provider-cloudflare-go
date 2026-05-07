@@ -5,14 +5,14 @@ package datacloudflareratelimits
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareratelimits/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareratelimits/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/rate_limits cloudflare_rate_limits}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/rate_limits cloudflare_rate_limits}.
 type DataCloudflareRateLimits interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -89,6 +89,7 @@ type DataCloudflareRateLimits interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -308,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareRateLimits) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source.
 func NewDataCloudflareRateLimits(scope constructs.Construct, id *string, config *DataCloudflareRateLimitsConfig) DataCloudflareRateLimits {
 	_init_.Initialize()
 
@@ -326,7 +327,7 @@ func NewDataCloudflareRateLimits(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source.
 func NewDataCloudflareRateLimits_Override(d DataCloudflareRateLimits, scope constructs.Construct, id *string, config *DataCloudflareRateLimitsConfig) {
 	_init_.Initialize()
 
@@ -702,6 +703,14 @@ func (d *jsiiProxy_DataCloudflareRateLimits) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareRateLimits) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

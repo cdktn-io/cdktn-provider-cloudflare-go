@@ -5,14 +5,14 @@ package addressmap
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/addressmap/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/addressmap/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map cloudflare_address_map}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/address_map cloudflare_address_map}.
 type AddressMap interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -127,6 +127,7 @@ type AddressMap interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMemberships(value interface{})
+	ResetAccountId()
 	ResetDefaultSni()
 	ResetDescription()
 	ResetEnabled()
@@ -493,7 +494,7 @@ func (j *jsiiProxy_AddressMap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapConfig) AddressMap {
 	_init_.Initialize()
 
@@ -511,7 +512,7 @@ func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map cloudflare_address_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/address_map cloudflare_address_map} Resource.
 func NewAddressMap_Override(a AddressMap, scope constructs.Construct, id *string, config *AddressMapConfig) {
 	_init_.Initialize()
 
@@ -1006,6 +1007,14 @@ func (a *jsiiProxy_AddressMap) PutMemberships(value interface{}) {
 		a,
 		"putMemberships",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AddressMap) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

@@ -5,14 +5,14 @@ package emailroutingcatchall
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/emailroutingcatchall/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/emailroutingcatchall/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 type EmailRoutingCatchAll interface {
 	cdktn.TerraformResource
 	Actions() EmailRoutingCatchAllActionsList
@@ -434,7 +434,7 @@ func (j *jsiiProxy_EmailRoutingCatchAll) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) EmailRoutingCatchAll {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *Ema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll_Override(e EmailRoutingCatchAll, scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) {
 	_init_.Initialize()
 

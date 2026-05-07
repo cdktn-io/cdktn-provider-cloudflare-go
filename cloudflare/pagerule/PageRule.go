@@ -5,14 +5,14 @@ package pagerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/page_rule cloudflare_page_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_rule cloudflare_page_rule}.
 type PageRule interface {
 	cdktn.TerraformResource
 	Actions() PageRuleActionsOutputReference
@@ -127,6 +127,7 @@ type PageRule interface {
 	ResetOverrideLogicalId()
 	ResetPriority()
 	ResetStatus()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -445,7 +446,7 @@ func (j *jsiiProxy_PageRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/page_rule cloudflare_page_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_rule cloudflare_page_rule} Resource.
 func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig) PageRule {
 	_init_.Initialize()
 
@@ -463,7 +464,7 @@ func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/page_rule cloudflare_page_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_rule cloudflare_page_rule} Resource.
 func NewPageRule_Override(p PageRule, scope constructs.Construct, id *string, config *PageRuleConfig) {
 	_init_.Initialize()
 
@@ -970,6 +971,14 @@ func (p *jsiiProxy_PageRule) ResetStatus() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PageRule) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

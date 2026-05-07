@@ -5,14 +5,14 @@ package datacloudflareaisearchinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instance cloudflare_ai_search_instance}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ai_search_instance cloudflare_ai_search_instance}.
 type DataCloudflareAiSearchInstance interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -41,6 +41,7 @@ type DataCloudflareAiSearchInstance interface {
 	SetDependsOn(val *[]*string)
 	EmbeddingModel() *string
 	Enable() cdktn.IResolvable
+	EngineVersion() *float64
 	Filter() DataCloudflareAiSearchInstanceFilterOutputReference
 	FilterInput() interface{}
 	// Experimental.
@@ -56,6 +57,8 @@ type DataCloudflareAiSearchInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IndexingOptions() DataCloudflareAiSearchInstanceIndexingOptionsOutputReference
+	IndexMethod() DataCloudflareAiSearchInstanceIndexMethodOutputReference
 	LastActivity() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -65,6 +68,7 @@ type DataCloudflareAiSearchInstance interface {
 	Metadata() DataCloudflareAiSearchInstanceMetadataOutputReference
 	ModifiedAt() *string
 	ModifiedBy() *string
+	Namespace() *string
 	// The tree node.
 	Node() constructs.Node
 	Paused() cdktn.IResolvable
@@ -85,6 +89,7 @@ type DataCloudflareAiSearchInstance interface {
 	Source() *string
 	SourceParams() DataCloudflareAiSearchInstanceSourceParamsOutputReference
 	Status() *string
+	SyncInterval() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -93,7 +98,6 @@ type DataCloudflareAiSearchInstance interface {
 	TerraformResourceType() *string
 	TokenId() *string
 	Type() *string
-	VectorizeName() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -120,6 +124,7 @@ type DataCloudflareAiSearchInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareAiSearchInstanceFilter)
+	ResetAccountId()
 	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -323,6 +328,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstance) Enable() cdktn.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstance) EngineVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"engineVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstance) Filter() DataCloudflareAiSearchInstanceFilterOutputReference {
 	var returns DataCloudflareAiSearchInstanceFilterOutputReference
 	_jsii_.Get(
@@ -413,6 +428,26 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstance) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstance) IndexingOptions() DataCloudflareAiSearchInstanceIndexingOptionsOutputReference {
+	var returns DataCloudflareAiSearchInstanceIndexingOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"indexingOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstance) IndexMethod() DataCloudflareAiSearchInstanceIndexMethodOutputReference {
+	var returns DataCloudflareAiSearchInstanceIndexMethodOutputReference
+	_jsii_.Get(
+		j,
+		"indexMethod",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstance) LastActivity() *string {
 	var returns *string
 	_jsii_.Get(
@@ -468,6 +503,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstance) ModifiedBy() *string {
 	_jsii_.Get(
 		j,
 		"modifiedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstance) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
 		&returns,
 	)
 	return returns
@@ -623,6 +668,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstance) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstance) SyncInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"syncInterval",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstance) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -673,18 +728,8 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstance) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAiSearchInstance) VectorizeName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vectorizeName",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instance cloudflare_ai_search_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ai_search_instance cloudflare_ai_search_instance} Data Source.
 func NewDataCloudflareAiSearchInstance(scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstanceConfig) DataCloudflareAiSearchInstance {
 	_init_.Initialize()
 
@@ -702,7 +747,7 @@ func NewDataCloudflareAiSearchInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instance cloudflare_ai_search_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ai_search_instance cloudflare_ai_search_instance} Data Source.
 func NewDataCloudflareAiSearchInstance_Override(d DataCloudflareAiSearchInstance, scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstanceConfig) {
 	_init_.Initialize()
 
@@ -1074,6 +1119,14 @@ func (d *jsiiProxy_DataCloudflareAiSearchInstance) PutFilter(value *DataCloudfla
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchInstance) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

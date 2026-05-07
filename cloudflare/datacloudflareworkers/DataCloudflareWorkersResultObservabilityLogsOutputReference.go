@@ -5,9 +5,9 @@ package datacloudflareworkers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareworkers/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareworkers/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -28,6 +28,7 @@ type DataCloudflareWorkersResultObservabilityLogsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Destinations() *[]*string
 	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -35,6 +36,7 @@ type DataCloudflareWorkersResultObservabilityLogsOutputReference interface {
 	InternalValue() *DataCloudflareWorkersResultObservabilityLogs
 	SetInternalValue(val *DataCloudflareWorkersResultObservabilityLogs)
 	InvocationLogs() cdktn.IResolvable
+	Persist() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -112,6 +114,16 @@ func (j *jsiiProxy_DataCloudflareWorkersResultObservabilityLogsOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersResultObservabilityLogsOutputReference) Destinations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersResultObservabilityLogsOutputReference) Enabled() cdktn.IResolvable {
 	var returns cdktn.IResolvable
 	_jsii_.Get(
@@ -157,6 +169,16 @@ func (j *jsiiProxy_DataCloudflareWorkersResultObservabilityLogsOutputReference) 
 	_jsii_.Get(
 		j,
 		"invocationLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersResultObservabilityLogsOutputReference) Persist() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"persist",
 		&returns,
 	)
 	return returns

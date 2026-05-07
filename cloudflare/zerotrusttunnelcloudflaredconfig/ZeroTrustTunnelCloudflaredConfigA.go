@@ -5,14 +5,14 @@ package zerotrusttunnelcloudflaredconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}.
 type ZeroTrustTunnelCloudflaredConfigA interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -119,6 +119,7 @@ type ZeroTrustTunnelCloudflaredConfigA interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value *ZeroTrustTunnelCloudflaredConfigConfig)
+	ResetAccountId()
 	ResetConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -422,7 +423,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
 func NewZeroTrustTunnelCloudflaredConfigA(scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredConfigAConfig) ZeroTrustTunnelCloudflaredConfigA {
 	_init_.Initialize()
 
@@ -440,7 +441,7 @@ func NewZeroTrustTunnelCloudflaredConfigA(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
 func NewZeroTrustTunnelCloudflaredConfigA_Override(z ZeroTrustTunnelCloudflaredConfigA, scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredConfigAConfig) {
 	_init_.Initialize()
 
@@ -913,6 +914,14 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) PutConfig(value *ZeroTrust
 		z,
 		"putConfig",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

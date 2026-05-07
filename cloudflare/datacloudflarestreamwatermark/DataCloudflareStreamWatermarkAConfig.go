@@ -22,13 +22,13 @@ type DataCloudflareStreamWatermarkAConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier tag.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_watermark#account_id DataCloudflareStreamWatermarkA#account_id}
-	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The unique identifier for a watermark profile.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_watermark#identifier DataCloudflareStreamWatermarkA#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream_watermark#identifier DataCloudflareStreamWatermarkA#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
+	// The account identifier tag.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream_watermark#account_id DataCloudflareStreamWatermarkA#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

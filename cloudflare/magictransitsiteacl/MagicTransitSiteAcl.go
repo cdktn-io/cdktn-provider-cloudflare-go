@@ -5,14 +5,14 @@ package magictransitsiteacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitsiteacl/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitsiteacl/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl}.
 type MagicTransitSiteAcl interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -132,6 +132,7 @@ type MagicTransitSiteAcl interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLan1(value *MagicTransitSiteAclLan1)
 	PutLan2(value *MagicTransitSiteAclLan2)
+	ResetAccountId()
 	ResetDescription()
 	ResetForwardLocally()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -517,7 +518,7 @@ func (j *jsiiProxy_MagicTransitSiteAcl) UnidirectionalInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource.
 func NewMagicTransitSiteAcl(scope constructs.Construct, id *string, config *MagicTransitSiteAclConfig) MagicTransitSiteAcl {
 	_init_.Initialize()
 
@@ -535,7 +536,7 @@ func NewMagicTransitSiteAcl(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource.
 func NewMagicTransitSiteAcl_Override(m MagicTransitSiteAcl, scope constructs.Construct, id *string, config *MagicTransitSiteAclConfig) {
 	_init_.Initialize()
 
@@ -1063,6 +1064,14 @@ func (m *jsiiProxy_MagicTransitSiteAcl) PutLan2(value *MagicTransitSiteAclLan2) 
 		m,
 		"putLan2",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteAcl) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

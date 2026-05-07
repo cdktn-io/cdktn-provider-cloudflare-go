@@ -5,9 +5,9 @@ package datacloudflareaisearchinstances
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstances/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstances/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -39,11 +39,14 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	CustomMetadata() DataCloudflareAiSearchInstancesResultCustomMetadataList
 	EmbeddingModel() *string
 	Enable() cdktn.IResolvable
+	EngineVersion() *float64
 	// Experimental.
 	Fqn() *string
 	FusionMethod() *string
 	HybridSearchEnabled() cdktn.IResolvable
 	Id() *string
+	IndexingOptions() DataCloudflareAiSearchInstancesResultIndexingOptionsOutputReference
+	IndexMethod() DataCloudflareAiSearchInstancesResultIndexMethodOutputReference
 	InternalValue() *DataCloudflareAiSearchInstancesResult
 	SetInternalValue(val *DataCloudflareAiSearchInstancesResult)
 	LastActivity() *string
@@ -51,6 +54,7 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	Metadata() DataCloudflareAiSearchInstancesResultMetadataOutputReference
 	ModifiedAt() *string
 	ModifiedBy() *string
+	Namespace() *string
 	Paused() cdktn.IResolvable
 	PublicEndpointId() *string
 	PublicEndpointParams() DataCloudflareAiSearchInstancesResultPublicEndpointParamsOutputReference
@@ -63,6 +67,7 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	Source() *string
 	SourceParams() DataCloudflareAiSearchInstancesResultSourceParamsOutputReference
 	Status() *string
+	SyncInterval() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,7 +78,6 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenId() *string
 	Type() *string
-	VectorizeName() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -253,6 +257,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Enable(
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) EngineVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"engineVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -288,6 +302,26 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Id() *s
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) IndexingOptions() DataCloudflareAiSearchInstancesResultIndexingOptionsOutputReference {
+	var returns DataCloudflareAiSearchInstancesResultIndexingOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"indexingOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) IndexMethod() DataCloudflareAiSearchInstancesResultIndexMethodOutputReference {
+	var returns DataCloudflareAiSearchInstancesResultIndexMethodOutputReference
+	_jsii_.Get(
+		j,
+		"indexMethod",
 		&returns,
 	)
 	return returns
@@ -348,6 +382,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Modifie
 	_jsii_.Get(
 		j,
 		"modifiedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
 		&returns,
 	)
 	return returns
@@ -473,6 +517,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Status(
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SyncInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"syncInterval",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -508,16 +562,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Type() 
 	_jsii_.Get(
 		j,
 		"type",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) VectorizeName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vectorizeName",
 		&returns,
 	)
 	return returns

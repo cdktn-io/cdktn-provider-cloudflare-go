@@ -5,9 +5,9 @@ package datacloudflareaisearchinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -33,6 +33,7 @@ type DataCloudflareAiSearchInstanceMetadataOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareAiSearchInstanceMetadata
 	SetInternalValue(val *DataCloudflareAiSearchInstanceMetadata)
+	SearchForAgents() DataCloudflareAiSearchInstanceMetadataSearchForAgentsOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceMetadataOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceMetadataOutputReference) SearchForAgents() DataCloudflareAiSearchInstanceMetadataSearchForAgentsOutputReference {
+	var returns DataCloudflareAiSearchInstanceMetadataSearchForAgentsOutputReference
+	_jsii_.Get(
+		j,
+		"searchForAgents",
 		&returns,
 	)
 	return returns

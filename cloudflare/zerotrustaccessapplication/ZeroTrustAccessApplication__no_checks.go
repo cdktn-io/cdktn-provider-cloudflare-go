@@ -91,6 +91,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutLandingPageDesignParam
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutMfaConfigParameters(value *ZeroTrustAccessApplicationMfaConfig) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutOauthConfigurationParameters(value *ZeroTrustAccessApplicationOauthConfiguration) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutPoliciesParameters(value interface{}) error {
 	return nil
 }

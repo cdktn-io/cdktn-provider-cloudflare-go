@@ -127,6 +127,10 @@ func (j *jsiiProxy_WorkersCustomDomain) validateSetZoneIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_WorkersCustomDomain) validateSetZoneNameParameters(val *string) error {
+	return nil
+}
+
 func validateNewWorkersCustomDomainParameters(scope constructs.Construct, id *string, config *WorkersCustomDomainConfig) error {
 	return nil
 }

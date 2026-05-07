@@ -5,9 +5,9 @@ package datacloudflareworker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareworker/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareworker/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -43,6 +43,7 @@ type DataCloudflareWorkerObservabilityOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Traces() DataCloudflareWorkerObservabilityTracesOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -177,6 +178,16 @@ func (j *jsiiProxy_DataCloudflareWorkerObservabilityOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerObservabilityOutputReference) Traces() DataCloudflareWorkerObservabilityTracesOutputReference {
+	var returns DataCloudflareWorkerObservabilityTracesOutputReference
+	_jsii_.Get(
+		j,
+		"traces",
 		&returns,
 	)
 	return returns

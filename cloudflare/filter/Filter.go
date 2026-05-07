@@ -5,14 +5,14 @@ package filter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/filter/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/filter/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter cloudflare_filter}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/filter cloudflare_filter}.
 type Filter interface {
 	cdktn.TerraformResource
 	Body() FilterBodyList
@@ -130,6 +130,7 @@ type Filter interface {
 	ResetOverrideLogicalId()
 	ResetPaused()
 	ResetRef()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -448,7 +449,7 @@ func (j *jsiiProxy_Filter) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Filter {
 	_init_.Initialize()
 
@@ -466,7 +467,7 @@ func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Fil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter_Override(f Filter, scope constructs.Construct, id *string, config *FilterConfig) {
 	_init_.Initialize()
 
@@ -1000,6 +1001,14 @@ func (f *jsiiProxy_Filter) ResetRef() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetRef",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_Filter) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -103,10 +103,6 @@ func (j *jsiiProxy_StreamWatermarkA) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_StreamWatermarkA) validateSetFileParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_StreamWatermarkA) validateSetIdentifierParameters(val *string) error {
 	return nil
 }
@@ -136,6 +132,10 @@ func (j *jsiiProxy_StreamWatermarkA) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_StreamWatermarkA) validateSetScaleParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_StreamWatermarkA) validateSetUrlParameters(val *string) error {
 	return nil
 }
 

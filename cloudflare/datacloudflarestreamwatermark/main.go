@@ -48,7 +48,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "position", GoGetter: "Position"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "scale", GoGetter: "Scale"},
 			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},

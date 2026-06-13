@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/filter cloudflare_filter}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/filter cloudflare_filter}.
 type Filter interface {
 	cdktn.TerraformResource
 	Body() FilterBodyList
@@ -449,7 +449,7 @@ func (j *jsiiProxy_Filter) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Filter {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Fil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter_Override(f Filter, scope constructs.Construct, id *string, config *FilterConfig) {
 	_init_.Initialize()
 

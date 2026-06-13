@@ -24,13 +24,13 @@ type DataCloudflarePipelineStreamConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specifies the public ID of the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pipeline_stream#account_id DataCloudflarePipelineStream#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pipeline_stream#account_id DataCloudflarePipelineStream#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pipeline_stream#filter DataCloudflarePipelineStream#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pipeline_stream#filter DataCloudflarePipelineStream#filter}.
 	Filter *DataCloudflarePipelineStreamFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Specifies the public ID of the stream.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pipeline_stream#stream_id DataCloudflarePipelineStream#stream_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pipeline_stream#stream_id DataCloudflarePipelineStream#stream_id}
 	StreamId *string `field:"optional" json:"streamId" yaml:"streamId"`
 }
 

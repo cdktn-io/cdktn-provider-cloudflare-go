@@ -79,7 +79,15 @@ func (a *jsiiProxy_AiGateway) validatePutDlpParameters(value *AiGatewayDlp) erro
 	return nil
 }
 
+func (a *jsiiProxy_AiGateway) validatePutGuardrailsParameters(value *AiGatewayGuardrails) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGateway) validatePutOtelParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGateway) validatePutSpendLimitsParameters(value *AiGatewaySpendLimits) error {
 	return nil
 }
 

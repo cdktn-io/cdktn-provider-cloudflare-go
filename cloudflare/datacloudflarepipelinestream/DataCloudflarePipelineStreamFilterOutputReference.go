@@ -32,6 +32,9 @@ type DataCloudflarePipelineStreamFilterOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	PipelineId() *string
 	SetPipelineId(val *string)
 	PipelineIdInput() *string
@@ -67,6 +70,7 @@ type DataCloudflarePipelineStreamFilterOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetName()
 	ResetPipelineId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference)SetInternal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (d *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) ResetPipelineId() {

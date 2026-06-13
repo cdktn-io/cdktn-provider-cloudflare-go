@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database cloudflare_d1_database}.
 type D1Database interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -480,7 +480,7 @@ func (j *jsiiProxy_D1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseConfig) D1Database {
 	_init_.Initialize()
 
@@ -498,7 +498,7 @@ func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database_Override(d D1Database, scope constructs.Construct, id *string, config *D1DatabaseConfig) {
 	_init_.Initialize()
 

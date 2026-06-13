@@ -119,6 +119,10 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetEnableEncryptionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetIdpPublicCertsParameters(val *[]*string) error {
 	return nil
 }
@@ -148,6 +152,10 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 }
 
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetPromptParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetRestrictToAccountMembersParameters(val interface{}) error {
 	return nil
 }
 

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperation) validateSetOperationIdParam
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareApiShieldOperation) validateSetWithSchemasParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareApiShieldOperation) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

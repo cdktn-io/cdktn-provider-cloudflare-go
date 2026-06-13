@@ -255,6 +255,14 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetAccountIdParam
 	return nil
 }
 
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetCommentsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktn.SSHProvisionerConnection:
@@ -345,7 +353,31 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetCountParameter
 	return nil
 }
 
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetDirectoryIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetDirectoryNodeIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetEmailParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetExternalDirectoryNodeIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -382,6 +414,14 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetLifecycleParam
 }
 
 func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetProvenanceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
 type ZeroTrustAccessIdentityProvider interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -64,6 +64,13 @@ type ZeroTrustAccessIdentityProvider interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadOnly() interface{}
+	SetReadOnly(val interface{})
+	ReadOnlyInput() interface{}
+	SamlCertificateSet() ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference
+	SamlCertificateSetId() *string
+	SetSamlCertificateSetId(val *string)
+	SamlCertificateSetIdInput() *string
 	ScimConfig() ZeroTrustAccessIdentityProviderScimConfigOutputReference
 	ScimConfigInput() interface{}
 	// Experimental.
@@ -127,6 +134,8 @@ type ZeroTrustAccessIdentityProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetReadOnly()
+	ResetSamlCertificateSetId()
 	ResetScimConfig()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -356,6 +365,56 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) ReadOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) ReadOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) SamlCertificateSet() ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference {
+	var returns ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference
+	_jsii_.Get(
+		j,
+		"samlCertificateSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) SamlCertificateSetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"samlCertificateSetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) SamlCertificateSetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"samlCertificateSetIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) ScimConfig() ZeroTrustAccessIdentityProviderScimConfigOutputReference {
 	var returns ZeroTrustAccessIdentityProviderScimConfigOutputReference
 	_jsii_.Get(
@@ -447,7 +506,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Resource.
 func NewZeroTrustAccessIdentityProvider(scope constructs.Construct, id *string, config *ZeroTrustAccessIdentityProviderConfig) ZeroTrustAccessIdentityProvider {
 	_init_.Initialize()
 
@@ -465,7 +524,7 @@ func NewZeroTrustAccessIdentityProvider(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Resource.
 func NewZeroTrustAccessIdentityProvider_Override(z ZeroTrustAccessIdentityProvider, scope constructs.Construct, id *string, config *ZeroTrustAccessIdentityProviderConfig) {
 	_init_.Initialize()
 
@@ -562,6 +621,28 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProvider)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProvider)SetReadOnly(val interface{}) {
+	if err := j.validateSetReadOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProvider)SetSamlCertificateSetId(val *string) {
+	if err := j.validateSetSamlCertificateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"samlCertificateSetId",
 		val,
 	)
 }
@@ -975,6 +1056,22 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessIdentityProvider) ResetReadOnly() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetReadOnly",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessIdentityProvider) ResetSamlCertificateSetId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSamlCertificateSetId",
 		nil, // no parameters
 	)
 }

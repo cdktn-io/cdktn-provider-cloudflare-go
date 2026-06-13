@@ -31,6 +31,7 @@ type OrganizationMetaOutputReference interface {
 	Flags() OrganizationMetaFlagsOutputReference
 	// Experimental.
 	Fqn() *string
+	HierarchyTags() *[]*string
 	InternalValue() *OrganizationMeta
 	SetInternalValue(val *OrganizationMeta)
 	ManagedBy() *string
@@ -126,6 +127,16 @@ func (j *jsiiProxy_OrganizationMetaOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationMetaOutputReference) HierarchyTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hierarchyTags",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
 type AiSearchInstance interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -30,6 +30,9 @@ type AiSearchInstance interface {
 	CacheThreshold() *string
 	SetCacheThreshold(val *string)
 	CacheThresholdInput() *string
+	CacheTtl() *float64
+	SetCacheTtl(val *float64)
+	CacheTtlInput() *float64
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	Chunk() interface{}
@@ -224,6 +227,7 @@ type AiSearchInstance interface {
 	ResetAisearchModel()
 	ResetCache()
 	ResetCacheThreshold()
+	ResetCacheTtl()
 	ResetChunk()
 	ResetChunkOverlap()
 	ResetChunkSize()
@@ -378,6 +382,26 @@ func (j *jsiiProxy_AiSearchInstance) CacheThresholdInput() *string {
 	_jsii_.Get(
 		j,
 		"cacheThresholdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) CacheTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cacheTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstance) CacheTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cacheTtlInput",
 		&returns,
 	)
 	return returns
@@ -1254,7 +1278,7 @@ func (j *jsiiProxy_AiSearchInstance) VectorizeName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearchInstanceConfig) AiSearchInstance {
 	_init_.Initialize()
 
@@ -1272,7 +1296,7 @@ func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance_Override(a AiSearchInstance, scope constructs.Construct, id *string, config *AiSearchInstanceConfig) {
 	_init_.Initialize()
 
@@ -1334,6 +1358,17 @@ func (j *jsiiProxy_AiSearchInstance)SetCacheThreshold(val *string) {
 	_jsii_.Set(
 		j,
 		"cacheThreshold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchInstance)SetCacheTtl(val *float64) {
+	if err := j.validateSetCacheTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cacheTtl",
 		val,
 	)
 }
@@ -2117,6 +2152,14 @@ func (a *jsiiProxy_AiSearchInstance) ResetCacheThreshold() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCacheThreshold",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstance) ResetCacheTtl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCacheTtl",
 		nil, // no parameters
 	)
 }

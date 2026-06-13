@@ -396,6 +396,14 @@ func (j *jsiiProxy_AiSearchInstance) validateSetCacheThresholdParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AiSearchInstance) validateSetCacheTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AiSearchInstance) validateSetChunkParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

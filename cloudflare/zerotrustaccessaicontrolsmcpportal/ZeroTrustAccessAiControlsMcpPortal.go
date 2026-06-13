@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
 type ZeroTrustAccessAiControlsMcpPortal interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -528,7 +528,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) ZeroTrustAccessAiControlsMcpPortal {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal_Override(z ZeroTrustAccessAiControlsMcpPortal, scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) {
 	_init_.Initialize()
 

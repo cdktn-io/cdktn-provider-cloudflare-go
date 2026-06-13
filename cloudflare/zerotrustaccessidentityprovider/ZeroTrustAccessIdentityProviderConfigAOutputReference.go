@@ -70,6 +70,9 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	EmailClaimName() *string
 	SetEmailClaimName(val *string)
 	EmailClaimNameInput() *string
+	EnableEncryption() interface{}
+	SetEnableEncryption(val interface{})
+	EnableEncryptionInput() interface{}
 	// Experimental.
 	Fqn() *string
 	HeaderAttributes() ZeroTrustAccessIdentityProviderConfigHeaderAttributesList
@@ -98,6 +101,9 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	SetPrompt(val *string)
 	PromptInput() *string
 	RedirectUrl() *string
+	RestrictToAccountMembers() interface{}
+	SetRestrictToAccountMembers(val interface{})
+	RestrictToAccountMembersInput() interface{}
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -160,6 +166,7 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	ResetDirectoryId()
 	ResetEmailAttributeName()
 	ResetEmailClaimName()
+	ResetEnableEncryption()
 	ResetHeaderAttributes()
 	ResetIdpPublicCerts()
 	ResetIssuerUrl()
@@ -168,6 +175,7 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	ResetPingEnvId()
 	ResetPkceEnabled()
 	ResetPrompt()
+	ResetRestrictToAccountMembers()
 	ResetScopes()
 	ResetSignRequest()
 	ResetSsoTargetUrl()
@@ -498,6 +506,26 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) EmailC
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) EnableEncryption() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) EnableEncryptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -683,6 +711,26 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Redire
 	_jsii_.Get(
 		j,
 		"redirectUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) RestrictToAccountMembers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictToAccountMembers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) RestrictToAccountMembersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictToAccountMembersInput",
 		&returns,
 	)
 	return returns
@@ -1012,6 +1060,17 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetEmai
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetEnableEncryption(val interface{}) {
+	if err := j.validateSetEnableEncryptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableEncryption",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetIdpPublicCerts(val *[]*string) {
 	if err := j.validateSetIdpPublicCertsParameters(val); err != nil {
 		panic(err)
@@ -1096,6 +1155,17 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetProm
 	_jsii_.Set(
 		j,
 		"prompt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetRestrictToAccountMembers(val interface{}) {
+	if err := j.validateSetRestrictToAccountMembersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restrictToAccountMembers",
 		val,
 	)
 }
@@ -1486,6 +1556,14 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetE
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetEnableEncryption() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnableEncryption",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetHeaderAttributes() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1546,6 +1624,14 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetP
 	_jsii_.InvokeVoid(
 		z,
 		"resetPrompt",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetRestrictToAccountMembers() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRestrictToAccountMembers",
 		nil, // no parameters
 	)
 }

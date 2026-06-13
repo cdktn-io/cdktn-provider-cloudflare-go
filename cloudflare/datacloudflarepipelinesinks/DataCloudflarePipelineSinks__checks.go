@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataCloudflarePipelineSinks) validateSetMaxItemsParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineSinks) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineSinks) validateSetPipelineIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

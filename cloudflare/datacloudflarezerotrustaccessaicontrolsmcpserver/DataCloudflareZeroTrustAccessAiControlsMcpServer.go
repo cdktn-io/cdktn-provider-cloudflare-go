@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
 type DataCloudflareZeroTrustAccessAiControlsMcpServer interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -35,6 +35,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpServer interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	Error() *string
+	ErrorDetails() DataCloudflareZeroTrustAccessAiControlsMcpServerErrorDetailsOutputReference
 	Filter() DataCloudflareZeroTrustAccessAiControlsMcpServerFilterOutputReference
 	FilterInput() interface{}
 	// Experimental.
@@ -49,6 +50,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpServer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsSharedOauthCallbackEnabled() cdktn.IResolvable
 	LastSuccessfulSync() *string
 	LastSynced() *string
 	// Experimental.
@@ -67,6 +69,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpServer interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SecureWebGateway() cdktn.IResolvable
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -247,6 +250,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServer) Error() *st
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServer) ErrorDetails() DataCloudflareZeroTrustAccessAiControlsMcpServerErrorDetailsOutputReference {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpServerErrorDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"errorDetails",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServer) Filter() DataCloudflareZeroTrustAccessAiControlsMcpServerFilterOutputReference {
 	var returns DataCloudflareZeroTrustAccessAiControlsMcpServerFilterOutputReference
 	_jsii_.Get(
@@ -322,6 +335,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServer) IdInput() *
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServer) IsSharedOauthCallbackEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isSharedOauthCallbackEnabled",
 		&returns,
 	)
 	return returns
@@ -427,6 +450,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServer) RawOverride
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServer) SecureWebGateway() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"secureWebGateway",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServer) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -498,7 +531,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServer) UpdatedTool
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Data Source.
 func NewDataCloudflareZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessAiControlsMcpServerConfig) DataCloudflareZeroTrustAccessAiControlsMcpServer {
 	_init_.Initialize()
 
@@ -516,7 +549,7 @@ func NewDataCloudflareZeroTrustAccessAiControlsMcpServer(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Data Source.
 func NewDataCloudflareZeroTrustAccessAiControlsMcpServer_Override(d DataCloudflareZeroTrustAccessAiControlsMcpServer, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessAiControlsMcpServerConfig) {
 	_init_.Initialize()
 

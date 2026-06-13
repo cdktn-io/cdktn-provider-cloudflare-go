@@ -18,6 +18,7 @@ type DataCloudflareZeroTrustAccessGroupIncludeOutputReference interface {
 	AuthMethod() DataCloudflareZeroTrustAccessGroupIncludeAuthMethodOutputReference
 	AzureAd() DataCloudflareZeroTrustAccessGroupIncludeAzureAdOutputReference
 	Certificate() DataCloudflareZeroTrustAccessGroupIncludeCertificateOutputReference
+	CloudflareAccountMember() DataCloudflareZeroTrustAccessGroupIncludeCloudflareAccountMemberOutputReference
 	CommonName() DataCloudflareZeroTrustAccessGroupIncludeCommonNameOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIncludeOutputReference) Cer
 	_jsii_.Get(
 		j,
 		"certificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIncludeOutputReference) CloudflareAccountMember() DataCloudflareZeroTrustAccessGroupIncludeCloudflareAccountMemberOutputReference {
+	var returns DataCloudflareZeroTrustAccessGroupIncludeCloudflareAccountMemberOutputReference
+	_jsii_.Get(
+		j,
+		"cloudflareAccountMember",
 		&returns,
 	)
 	return returns

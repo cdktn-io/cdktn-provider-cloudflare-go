@@ -24,11 +24,11 @@ type WorkersKvNamespaceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A human-readable string name for a Namespace.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

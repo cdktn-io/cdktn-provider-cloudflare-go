@@ -79,6 +79,10 @@ func (w *jsiiProxy_Workflow) validatePutLimitsParameters(value *WorkflowLimits) 
 	return nil
 }
 
+func (w *jsiiProxy_Workflow) validatePutSchedulesParameters(value interface{}) error {
+	return nil
+}
+
 func validateWorkflow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

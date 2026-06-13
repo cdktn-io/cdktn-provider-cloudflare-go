@@ -22,13 +22,15 @@ type CustomOriginTrustStoreConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The zone's SSL certificate or certificate and the intermediate(s).
+	// The root CA certificate in PEM format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
+	// Only root CA certificates are accepted; intermediate and leaf certificates are not supported.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
 	Certificate *string `field:"required" json:"certificate" yaml:"certificate"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

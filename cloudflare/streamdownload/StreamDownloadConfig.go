@@ -24,11 +24,11 @@ type StreamDownloadConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A Cloudflare-generated unique identifier for a media item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_download#identifier StreamDownload#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_download#identifier StreamDownload#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_download#account_id StreamDownload#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_download#account_id StreamDownload#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}.
 type ZeroTrustAccessInfrastructureTarget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -398,7 +398,7 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
 func NewZeroTrustAccessInfrastructureTarget(scope constructs.Construct, id *string, config *ZeroTrustAccessInfrastructureTargetConfig) ZeroTrustAccessInfrastructureTarget {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewZeroTrustAccessInfrastructureTarget(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
 func NewZeroTrustAccessInfrastructureTarget_Override(z ZeroTrustAccessInfrastructureTarget, scope constructs.Construct, id *string, config *ZeroTrustAccessInfrastructureTargetConfig) {
 	_init_.Initialize()
 

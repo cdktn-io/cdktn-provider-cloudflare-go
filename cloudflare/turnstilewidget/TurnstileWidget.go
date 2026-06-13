@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 type TurnstileWidget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -563,7 +563,7 @@ func (j *jsiiProxy_TurnstileWidget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget(scope constructs.Construct, id *string, config *TurnstileWidgetConfig) TurnstileWidget {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewTurnstileWidget(scope constructs.Construct, id *string, config *Turnstil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget_Override(t TurnstileWidget, scope constructs.Construct, id *string, config *TurnstileWidgetConfig) {
 	_init_.Initialize()
 

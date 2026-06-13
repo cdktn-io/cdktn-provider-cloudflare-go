@@ -42,6 +42,7 @@ type DataCloudflareMagicTransitConnectorDeviceOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -166,6 +167,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectorDeviceOutputReference) Ter
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectorDeviceOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
 		&returns,
 	)
 	return returns

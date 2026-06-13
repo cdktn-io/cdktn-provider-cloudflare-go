@@ -151,6 +151,10 @@ func (j *jsiiProxy_SpectrumApplication) validateSetTrafficTypeParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_SpectrumApplication) validateSetVirtualNetworkIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpectrumApplication) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

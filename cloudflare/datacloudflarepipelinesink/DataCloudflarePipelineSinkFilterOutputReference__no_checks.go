@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetPipelineIdParameters(val *string) error {
 	return nil
 }

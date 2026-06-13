@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
 type DataCloudflareCustomOriginTrustStore interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataCloudflareCustomOriginTrustStore) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Data Source.
 func NewDataCloudflareCustomOriginTrustStore(scope constructs.Construct, id *string, config *DataCloudflareCustomOriginTrustStoreConfig) DataCloudflareCustomOriginTrustStore {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDataCloudflareCustomOriginTrustStore(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Data Source.
 func NewDataCloudflareCustomOriginTrustStore_Override(d DataCloudflareCustomOriginTrustStore, scope constructs.Construct, id *string, config *DataCloudflareCustomOriginTrustStoreConfig) {
 	_init_.Initialize()
 

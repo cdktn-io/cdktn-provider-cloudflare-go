@@ -141,6 +141,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelId", GoGetter: "TunnelId"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelName", GoGetter: "TunnelName"},
+			_jsii_.MemberProperty{JsiiProperty: "tunType", GoGetter: "TunType"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoutesResultOutputReference{}

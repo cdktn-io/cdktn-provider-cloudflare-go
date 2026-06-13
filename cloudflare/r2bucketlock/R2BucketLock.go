@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
 type R2BucketLock interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -116,7 +116,6 @@ type R2BucketLock interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRules(value interface{})
-	ResetAccountId()
 	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -390,7 +389,7 @@ func (j *jsiiProxy_R2BucketLock) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
 func NewR2BucketLock(scope constructs.Construct, id *string, config *R2BucketLockConfig) R2BucketLock {
 	_init_.Initialize()
 
@@ -408,7 +407,7 @@ func NewR2BucketLock(scope constructs.Construct, id *string, config *R2BucketLoc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
 func NewR2BucketLock_Override(r R2BucketLock, scope constructs.Construct, id *string, config *R2BucketLockConfig) {
 	_init_.Initialize()
 
@@ -881,14 +880,6 @@ func (r *jsiiProxy_R2BucketLock) PutRules(value interface{}) {
 		r,
 		"putRules",
 		[]interface{}{value},
-	)
-}
-
-func (r *jsiiProxy_R2BucketLock) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

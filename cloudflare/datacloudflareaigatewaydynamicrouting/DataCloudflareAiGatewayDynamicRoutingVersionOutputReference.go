@@ -35,6 +35,7 @@ type DataCloudflareAiGatewayDynamicRoutingVersionOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareAiGatewayDynamicRoutingVersion
 	SetInternalValue(val *DataCloudflareAiGatewayDynamicRoutingVersion)
+	IsValid() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataCloudflareAiGatewayDynamicRoutingVersionOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiGatewayDynamicRoutingVersionOutputReference) IsValid() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isValid",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet cloudflare_snippet}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet cloudflare_snippet}.
 type Snippet interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -42,6 +42,7 @@ type Snippet interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -259,6 +260,16 @@ func (j *jsiiProxy_Snippet) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Snippet) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Snippet) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -410,7 +421,7 @@ func (j *jsiiProxy_Snippet) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet cloudflare_snippet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet cloudflare_snippet} Resource.
 func NewSnippet(scope constructs.Construct, id *string, config *SnippetConfig) Snippet {
 	_init_.Initialize()
 
@@ -428,7 +439,7 @@ func NewSnippet(scope constructs.Construct, id *string, config *SnippetConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet cloudflare_snippet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet cloudflare_snippet} Resource.
 func NewSnippet_Override(s Snippet, scope constructs.Construct, id *string, config *SnippetConfig) {
 	_init_.Initialize()
 

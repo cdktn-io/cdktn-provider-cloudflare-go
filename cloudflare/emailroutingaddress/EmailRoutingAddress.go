@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_address cloudflare_email_routing_address}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
 type EmailRoutingAddress interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -397,7 +397,7 @@ func (j *jsiiProxy_EmailRoutingAddress) Verified() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
 func NewEmailRoutingAddress(scope constructs.Construct, id *string, config *EmailRoutingAddressConfig) EmailRoutingAddress {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewEmailRoutingAddress(scope constructs.Construct, id *string, config *Emai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
 func NewEmailRoutingAddress_Override(e EmailRoutingAddress, scope constructs.Construct, id *string, config *EmailRoutingAddressConfig) {
 	_init_.Initialize()
 

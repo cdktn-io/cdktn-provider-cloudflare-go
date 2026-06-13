@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ai_search_token cloudflare_ai_search_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_token cloudflare_ai_search_token}.
 type DataCloudflareAiSearchToken interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataCloudflareAiSearchToken) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
 func NewDataCloudflareAiSearchToken(scope constructs.Construct, id *string, config *DataCloudflareAiSearchTokenConfig) DataCloudflareAiSearchToken {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDataCloudflareAiSearchToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source.
 func NewDataCloudflareAiSearchToken_Override(d DataCloudflareAiSearchToken, scope constructs.Construct, id *string, config *DataCloudflareAiSearchTokenConfig) {
 	_init_.Initialize()
 

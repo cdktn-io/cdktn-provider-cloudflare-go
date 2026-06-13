@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route}.
 type DataCloudflareZeroTrustNetworkHostnameRoute interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -68,6 +68,7 @@ type DataCloudflareZeroTrustNetworkHostnameRoute interface {
 	TerraformResourceType() *string
 	TunnelId() *string
 	TunnelName() *string
+	TunType() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -398,8 +399,18 @@ func (j *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoute) TunnelName() *st
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoute) TunType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunType",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source.
 func NewDataCloudflareZeroTrustNetworkHostnameRoute(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustNetworkHostnameRouteConfig) DataCloudflareZeroTrustNetworkHostnameRoute {
 	_init_.Initialize()
 
@@ -417,7 +428,7 @@ func NewDataCloudflareZeroTrustNetworkHostnameRoute(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source.
 func NewDataCloudflareZeroTrustNetworkHostnameRoute_Override(d DataCloudflareZeroTrustNetworkHostnameRoute, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustNetworkHostnameRouteConfig) {
 	_init_.Initialize()
 

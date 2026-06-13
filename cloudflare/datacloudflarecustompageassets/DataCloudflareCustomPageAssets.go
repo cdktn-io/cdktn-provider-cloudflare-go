@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_page_assets cloudflare_custom_page_assets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_page_assets cloudflare_custom_page_assets}.
 type DataCloudflareCustomPageAssets interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataCloudflareCustomPageAssets) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_page_assets cloudflare_custom_page_assets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_page_assets cloudflare_custom_page_assets} Data Source.
 func NewDataCloudflareCustomPageAssets(scope constructs.Construct, id *string, config *DataCloudflareCustomPageAssetsConfig) DataCloudflareCustomPageAssets {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataCloudflareCustomPageAssets(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_page_assets cloudflare_custom_page_assets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_page_assets cloudflare_custom_page_assets} Data Source.
 func NewDataCloudflareCustomPageAssets_Override(d DataCloudflareCustomPageAssets, scope constructs.Construct, id *string, config *DataCloudflareCustomPageAssetsConfig) {
 	_init_.Initialize()
 

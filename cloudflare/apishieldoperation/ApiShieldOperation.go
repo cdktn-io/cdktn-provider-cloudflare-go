@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 type ApiShieldOperation interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -68,6 +68,7 @@ type ApiShieldOperation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Schemas() ApiShieldOperationSchemasOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -381,6 +382,16 @@ func (j *jsiiProxy_ApiShieldOperation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApiShieldOperation) Schemas() ApiShieldOperationSchemasOutputReference {
+	var returns ApiShieldOperationSchemasOutputReference
+	_jsii_.Get(
+		j,
+		"schemas",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShieldOperation) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -432,7 +443,7 @@ func (j *jsiiProxy_ApiShieldOperation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiShieldOperationConfig) ApiShieldOperation {
 	_init_.Initialize()
 
@@ -450,7 +461,7 @@ func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiSh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation_Override(a ApiShieldOperation, scope constructs.Construct, id *string, config *ApiShieldOperationConfig) {
 	_init_.Initialize()
 

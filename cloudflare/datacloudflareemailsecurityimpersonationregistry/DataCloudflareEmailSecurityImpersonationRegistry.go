@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}.
 type DataCloudflareEmailSecurityImpersonationRegistry interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -34,9 +34,6 @@ type DataCloudflareEmailSecurityImpersonationRegistry interface {
 	SetDependsOn(val *[]*string)
 	DirectoryId() *float64
 	DirectoryNodeId() *float64
-	DisplayNameId() *float64
-	SetDisplayNameId(val *float64)
-	DisplayNameIdInput() *float64
 	Email() *string
 	ExternalDirectoryNodeId() *string
 	Filter() DataCloudflareEmailSecurityImpersonationRegistryFilterOutputReference
@@ -49,13 +46,17 @@ type DataCloudflareEmailSecurityImpersonationRegistry interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *float64
+	Id() *string
+	ImpersonationRegistryId() *string
+	SetImpersonationRegistryId(val *string)
+	ImpersonationRegistryIdInput() *string
 	IsEmailRegex() cdktn.IResolvable
 	LastModified() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	ModifiedAt() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -99,8 +100,8 @@ type DataCloudflareEmailSecurityImpersonationRegistry interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareEmailSecurityImpersonationRegistryFilter)
 	ResetAccountId()
-	ResetDisplayNameId()
 	ResetFilter()
+	ResetImpersonationRegistryId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -232,26 +233,6 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) DirectoryNo
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) DisplayNameId() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"displayNameId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) DisplayNameIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"displayNameIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) Email() *string {
 	var returns *string
 	_jsii_.Get(
@@ -322,11 +303,31 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) FriendlyUni
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) Id() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) Id() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) ImpersonationRegistryId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"impersonationRegistryId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) ImpersonationRegistryIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"impersonationRegistryIdInput",
 		&returns,
 	)
 	return returns
@@ -357,6 +358,16 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) Lifecycle()
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
 		&returns,
 	)
 	return returns
@@ -443,7 +454,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Data Source.
 func NewDataCloudflareEmailSecurityImpersonationRegistry(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityImpersonationRegistryConfig) DataCloudflareEmailSecurityImpersonationRegistry {
 	_init_.Initialize()
 
@@ -461,7 +472,7 @@ func NewDataCloudflareEmailSecurityImpersonationRegistry(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Data Source.
 func NewDataCloudflareEmailSecurityImpersonationRegistry_Override(d DataCloudflareEmailSecurityImpersonationRegistry, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityImpersonationRegistryConfig) {
 	_init_.Initialize()
 
@@ -502,21 +513,21 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry)SetDependsOn
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry)SetDisplayNameId(val *float64) {
-	if err := j.validateSetDisplayNameIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"displayNameId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry)SetImpersonationRegistryId(val *string) {
+	if err := j.validateSetImpersonationRegistryIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"impersonationRegistryId",
 		val,
 	)
 }
@@ -844,18 +855,18 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) ResetAccoun
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) ResetDisplayNameId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDisplayNameId",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) ResetFilter() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) ResetImpersonationRegistryId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetImpersonationRegistryId",
 		nil, // no parameters
 	)
 }

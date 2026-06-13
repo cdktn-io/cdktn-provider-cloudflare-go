@@ -22,22 +22,22 @@ type ZeroTrustDlpSettingsConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Whether AI context analysis is enabled at the account level.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_settings#ai_context_analysis ZeroTrustDlpSettings#ai_context_analysis}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#ai_context_analysis ZeroTrustDlpSettings#ai_context_analysis}
 	AiContextAnalysis interface{} `field:"optional" json:"aiContextAnalysis" yaml:"aiContextAnalysis"`
 	// Whether OCR is enabled at the account level.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_settings#ocr ZeroTrustDlpSettings#ocr}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#ocr ZeroTrustDlpSettings#ocr}
 	Ocr interface{} `field:"optional" json:"ocr" yaml:"ocr"`
 	// Request model for payload log settings within the DLP settings endpoint.
 	//
 	// Unlike the legacy endpoint, null and missing are treated identically here
 	// (both mean "not provided" for PATCH, "reset to default" for PUT).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_settings#payload_logging ZeroTrustDlpSettings#payload_logging}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#payload_logging ZeroTrustDlpSettings#payload_logging}
 	PayloadLogging *ZeroTrustDlpSettingsPayloadLogging `field:"optional" json:"payloadLogging" yaml:"payloadLogging"`
 }
 

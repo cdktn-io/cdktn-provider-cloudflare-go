@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
 type ApiShieldSchema interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -132,7 +132,6 @@ type ApiShieldSchema interface {
 	ResetOverrideLogicalId()
 	ResetSchemaId()
 	ResetValidationEnabled()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -481,7 +480,7 @@ func (j *jsiiProxy_ApiShieldSchema) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
 func NewApiShieldSchema(scope constructs.Construct, id *string, config *ApiShieldSchemaConfig) ApiShieldSchema {
 	_init_.Initialize()
 
@@ -499,7 +498,7 @@ func NewApiShieldSchema(scope constructs.Construct, id *string, config *ApiShiel
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
 func NewApiShieldSchema_Override(a ApiShieldSchema, scope constructs.Construct, id *string, config *ApiShieldSchemaConfig) {
 	_init_.Initialize()
 
@@ -1025,14 +1024,6 @@ func (a *jsiiProxy_ApiShieldSchema) ResetValidationEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetValidationEnabled",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiShieldSchema) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

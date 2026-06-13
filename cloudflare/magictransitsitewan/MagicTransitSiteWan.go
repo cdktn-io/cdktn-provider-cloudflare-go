@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
 type MagicTransitSiteWan interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -127,7 +127,6 @@ type MagicTransitSiteWan interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutStaticAddressing(value *MagicTransitSiteWanStaticAddressing)
-	ResetAccountId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -483,7 +482,7 @@ func (j *jsiiProxy_MagicTransitSiteWan) VlanTagInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
 func NewMagicTransitSiteWan(scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) MagicTransitSiteWan {
 	_init_.Initialize()
 
@@ -501,7 +500,7 @@ func NewMagicTransitSiteWan(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
 func NewMagicTransitSiteWan_Override(m MagicTransitSiteWan, scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) {
 	_init_.Initialize()
 
@@ -1007,14 +1006,6 @@ func (m *jsiiProxy_MagicTransitSiteWan) PutStaticAddressing(value *MagicTransitS
 		m,
 		"putStaticAddressing",
 		[]interface{}{value},
-	)
-}
-
-func (m *jsiiProxy_MagicTransitSiteWan) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

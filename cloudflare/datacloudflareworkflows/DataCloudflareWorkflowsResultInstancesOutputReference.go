@@ -36,6 +36,7 @@ type DataCloudflareWorkflowsResultInstancesOutputReference interface {
 	SetInternalValue(val *DataCloudflareWorkflowsResultInstances)
 	Paused() *float64
 	Queued() *float64
+	RollingBack() *float64
 	Running() *float64
 	Terminated() *float64
 	// Experimental.
@@ -172,6 +173,16 @@ func (j *jsiiProxy_DataCloudflareWorkflowsResultInstancesOutputReference) Queued
 	_jsii_.Get(
 		j,
 		"queued",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkflowsResultInstancesOutputReference) RollingBack() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rollingBack",
 		&returns,
 	)
 	return returns

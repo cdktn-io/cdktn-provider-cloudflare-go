@@ -28,7 +28,6 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputRe
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Description() *string
 	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -36,7 +35,9 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputRe
 	SetInternalValue(val *DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedTools)
 	Name() *string
 	PortalAlias() *string
+	PortalDescription() *string
 	ServerAlias() *string
+	ServerDescription() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -114,16 +115,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdate
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) Description() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"description",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) Enabled() cdktn.IResolvable {
 	var returns cdktn.IResolvable
 	_jsii_.Get(
@@ -174,11 +165,31 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdate
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) PortalDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"portalDescription",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) ServerAlias() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"serverAlias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersUpdatedToolsOutputReference) ServerDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverDescription",
 		&returns,
 	)
 	return returns

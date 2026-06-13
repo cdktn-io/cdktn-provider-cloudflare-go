@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors}.
 type DataCloudflareR2BucketCors interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -85,7 +85,6 @@ type DataCloudflareR2BucketCors interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -308,7 +307,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
 func NewDataCloudflareR2BucketCors(scope constructs.Construct, id *string, config *DataCloudflareR2BucketCorsConfig) DataCloudflareR2BucketCors {
 	_init_.Initialize()
 
@@ -326,7 +325,7 @@ func NewDataCloudflareR2BucketCors(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
 func NewDataCloudflareR2BucketCors_Override(d DataCloudflareR2BucketCors, scope constructs.Construct, id *string, config *DataCloudflareR2BucketCorsConfig) {
 	_init_.Initialize()
 
@@ -687,14 +686,6 @@ func (d *jsiiProxy_DataCloudflareR2BucketCors) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareR2BucketCors) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

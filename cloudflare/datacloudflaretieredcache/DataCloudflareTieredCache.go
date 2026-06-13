@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/tiered_cache cloudflare_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/tiered_cache cloudflare_tiered_cache}.
 type DataCloudflareTieredCache interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataCloudflareTieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/tiered_cache cloudflare_tiered_cache} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/tiered_cache cloudflare_tiered_cache} Data Source.
 func NewDataCloudflareTieredCache(scope constructs.Construct, id *string, config *DataCloudflareTieredCacheConfig) DataCloudflareTieredCache {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataCloudflareTieredCache(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/tiered_cache cloudflare_tiered_cache} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/tiered_cache cloudflare_tiered_cache} Data Source.
 func NewDataCloudflareTieredCache_Override(d DataCloudflareTieredCache, scope constructs.Construct, id *string, config *DataCloudflareTieredCacheConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ai_search_instance cloudflare_ai_search_instance}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_instance cloudflare_ai_search_instance}.
 type DataCloudflareAiSearchInstance interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -22,6 +22,7 @@ type DataCloudflareAiSearchInstance interface {
 	AisearchModel() *string
 	Cache() cdktn.IResolvable
 	CacheThreshold() *string
+	CacheTtl() *float64
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	ChunkOverlap() *float64
@@ -213,6 +214,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstance) CacheThreshold() *string {
 	_jsii_.Get(
 		j,
 		"cacheThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstance) CacheTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cacheTtl",
 		&returns,
 	)
 	return returns
@@ -729,7 +740,7 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstance) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ai_search_instance cloudflare_ai_search_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_instance cloudflare_ai_search_instance} Data Source.
 func NewDataCloudflareAiSearchInstance(scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstanceConfig) DataCloudflareAiSearchInstance {
 	_init_.Initialize()
 
@@ -747,7 +758,7 @@ func NewDataCloudflareAiSearchInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/ai_search_instance cloudflare_ai_search_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_instance cloudflare_ai_search_instance} Data Source.
 func NewDataCloudflareAiSearchInstance_Override(d DataCloudflareAiSearchInstance, scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstanceConfig) {
 	_init_.Initialize()
 

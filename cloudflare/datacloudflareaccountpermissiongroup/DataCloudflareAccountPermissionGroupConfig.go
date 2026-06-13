@@ -22,13 +22,13 @@ type DataCloudflareAccountPermissionGroupConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Permission Group identifier tag.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_permission_group#permission_group_id DataCloudflareAccountPermissionGroup#permission_group_id}
-	PermissionGroupId *string `field:"required" json:"permissionGroupId" yaml:"permissionGroupId"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/account_permission_group#account_id DataCloudflareAccountPermissionGroup#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/account_permission_group#account_id DataCloudflareAccountPermissionGroup#account_id}
+	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// Permission Group identifier tag.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/account_permission_group#permission_group_id DataCloudflareAccountPermissionGroup#permission_group_id}
+	PermissionGroupId *string `field:"required" json:"permissionGroupId" yaml:"permissionGroupId"`
 }
 

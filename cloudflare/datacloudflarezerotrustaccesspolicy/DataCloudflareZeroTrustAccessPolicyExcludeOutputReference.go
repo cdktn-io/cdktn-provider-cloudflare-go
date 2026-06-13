@@ -18,6 +18,7 @@ type DataCloudflareZeroTrustAccessPolicyExcludeOutputReference interface {
 	AuthMethod() DataCloudflareZeroTrustAccessPolicyExcludeAuthMethodOutputReference
 	AzureAd() DataCloudflareZeroTrustAccessPolicyExcludeAzureAdOutputReference
 	Certificate() DataCloudflareZeroTrustAccessPolicyExcludeCertificateOutputReference
+	CloudflareAccountMember() DataCloudflareZeroTrustAccessPolicyExcludeCloudflareAccountMemberOutputReference
 	CommonName() DataCloudflareZeroTrustAccessPolicyExcludeCommonNameOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyExcludeOutputReference) Ce
 	_jsii_.Get(
 		j,
 		"certificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyExcludeOutputReference) CloudflareAccountMember() DataCloudflareZeroTrustAccessPolicyExcludeCloudflareAccountMemberOutputReference {
+	var returns DataCloudflareZeroTrustAccessPolicyExcludeCloudflareAccountMemberOutputReference
+	_jsii_.Get(
+		j,
+		"cloudflareAccountMember",
 		&returns,
 	)
 	return returns

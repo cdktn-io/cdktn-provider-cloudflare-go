@@ -23,6 +23,8 @@ type ZeroTrustAccessPolicyIncludeOutputReference interface {
 	AzureAdInput() interface{}
 	Certificate() ZeroTrustAccessPolicyIncludeCertificateOutputReference
 	CertificateInput() interface{}
+	CloudflareAccountMember() ZeroTrustAccessPolicyIncludeCloudflareAccountMemberOutputReference
+	CloudflareAccountMemberInput() interface{}
 	CommonName() ZeroTrustAccessPolicyIncludeCommonNameOutputReference
 	CommonNameInput() interface{}
 	// the index of the complex object in a list.
@@ -119,6 +121,7 @@ type ZeroTrustAccessPolicyIncludeOutputReference interface {
 	PutAuthMethod(value *ZeroTrustAccessPolicyIncludeAuthMethod)
 	PutAzureAd(value *ZeroTrustAccessPolicyIncludeAzureAd)
 	PutCertificate(value *ZeroTrustAccessPolicyIncludeCertificate)
+	PutCloudflareAccountMember(value *ZeroTrustAccessPolicyIncludeCloudflareAccountMember)
 	PutCommonName(value *ZeroTrustAccessPolicyIncludeCommonName)
 	PutDevicePosture(value *ZeroTrustAccessPolicyIncludeDevicePosture)
 	PutEmail(value *ZeroTrustAccessPolicyIncludeEmail)
@@ -144,6 +147,7 @@ type ZeroTrustAccessPolicyIncludeOutputReference interface {
 	ResetAuthMethod()
 	ResetAzureAd()
 	ResetCertificate()
+	ResetCloudflareAccountMember()
 	ResetCommonName()
 	ResetDevicePosture()
 	ResetEmail()
@@ -274,6 +278,26 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) CertificateInput
 	_jsii_.Get(
 		j,
 		"certificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) CloudflareAccountMember() ZeroTrustAccessPolicyIncludeCloudflareAccountMemberOutputReference {
+	var returns ZeroTrustAccessPolicyIncludeCloudflareAccountMemberOutputReference
+	_jsii_.Get(
+		j,
+		"cloudflareAccountMember",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) CloudflareAccountMemberInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cloudflareAccountMemberInput",
 		&returns,
 	)
 	return returns
@@ -1073,6 +1097,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) PutCertificate(v
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) PutCloudflareAccountMember(value *ZeroTrustAccessPolicyIncludeCloudflareAccountMember) {
+	if err := z.validatePutCloudflareAccountMemberParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putCloudflareAccountMember",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) PutCommonName(value *ZeroTrustAccessPolicyIncludeCommonName) {
 	if err := z.validatePutCommonNameParameters(value); err != nil {
 		panic(err)
@@ -1329,6 +1364,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) ResetCertificate
 	_jsii_.InvokeVoid(
 		z,
 		"resetCertificate",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) ResetCloudflareAccountMember() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetCloudflareAccountMember",
 		nil, // no parameters
 	)
 }

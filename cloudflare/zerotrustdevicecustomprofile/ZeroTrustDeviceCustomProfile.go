@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
 type ZeroTrustDeviceCustomProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -56,6 +56,8 @@ type ZeroTrustDeviceCustomProfile interface {
 	DisableAutoFallback() interface{}
 	SetDisableAutoFallback(val interface{})
 	DisableAutoFallbackInput() interface{}
+	DnsSearchSuffixes() ZeroTrustDeviceCustomProfileDnsSearchSuffixesList
+	DnsSearchSuffixesInput() interface{}
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -133,6 +135,8 @@ type ZeroTrustDeviceCustomProfile interface {
 	TunnelProtocol() *string
 	SetTunnelProtocol(val *string)
 	TunnelProtocolInput() *string
+	VirtualNetworks() ZeroTrustDeviceCustomProfileVirtualNetworksOutputReference
+	VirtualNetworksInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -176,9 +180,11 @@ type ZeroTrustDeviceCustomProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDnsSearchSuffixes(value interface{})
 	PutExclude(value interface{})
 	PutInclude(value interface{})
 	PutServiceModeV2(value *ZeroTrustDeviceCustomProfileServiceModeV2)
+	PutVirtualNetworks(value *ZeroTrustDeviceCustomProfileVirtualNetworks)
 	ResetAccountId()
 	ResetAllowedToLeave()
 	ResetAllowModeSwitch()
@@ -187,6 +193,7 @@ type ZeroTrustDeviceCustomProfile interface {
 	ResetCaptivePortal()
 	ResetDescription()
 	ResetDisableAutoFallback()
+	ResetDnsSearchSuffixes()
 	ResetEnabled()
 	ResetExclude()
 	ResetExcludeOfficeIps()
@@ -203,6 +210,7 @@ type ZeroTrustDeviceCustomProfile interface {
 	ResetSupportUrl()
 	ResetSwitchLocked()
 	ResetTunnelProtocol()
+	ResetVirtualNetworks()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -445,6 +453,26 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) DisableAutoFallbackInput() inte
 	_jsii_.Get(
 		j,
 		"disableAutoFallbackInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) DnsSearchSuffixes() ZeroTrustDeviceCustomProfileDnsSearchSuffixesList {
+	var returns ZeroTrustDeviceCustomProfileDnsSearchSuffixesList
+	_jsii_.Get(
+		j,
+		"dnsSearchSuffixes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) DnsSearchSuffixesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsSearchSuffixesInput",
 		&returns,
 	)
 	return returns
@@ -910,8 +938,28 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) TunnelProtocolInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) VirtualNetworks() ZeroTrustDeviceCustomProfileVirtualNetworksOutputReference {
+	var returns ZeroTrustDeviceCustomProfileVirtualNetworksOutputReference
+	_jsii_.Get(
+		j,
+		"virtualNetworks",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) VirtualNetworksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworksInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) ZeroTrustDeviceCustomProfile {
 	_init_.Initialize()
 
@@ -929,7 +977,7 @@ func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile_Override(z ZeroTrustDeviceCustomProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -1581,6 +1629,17 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutDnsSearchSuffixes(value interface{}) {
+	if err := z.validatePutDnsSearchSuffixesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putDnsSearchSuffixes",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutExclude(value interface{}) {
 	if err := z.validatePutExcludeParameters(value); err != nil {
 		panic(err)
@@ -1610,6 +1669,17 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutServiceModeV2(value *ZeroTru
 	_jsii_.InvokeVoid(
 		z,
 		"putServiceModeV2",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutVirtualNetworks(value *ZeroTrustDeviceCustomProfileVirtualNetworks) {
+	if err := z.validatePutVirtualNetworksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putVirtualNetworks",
 		[]interface{}{value},
 	)
 }
@@ -1674,6 +1744,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetDisableAutoFallback() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetDisableAutoFallback",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetDnsSearchSuffixes() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDnsSearchSuffixes",
 		nil, // no parameters
 	)
 }
@@ -1786,6 +1864,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetTunnelProtocol() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetTunnelProtocol",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetVirtualNetworks() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetVirtualNetworks",
 		nil, // no parameters
 	)
 }

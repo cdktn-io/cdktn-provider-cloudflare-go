@@ -75,10 +75,6 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomains) validatePutBodyParameters(value interface{}) error {
-	return nil
-}
-
 func validateEmailSecurityTrustedDomains_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

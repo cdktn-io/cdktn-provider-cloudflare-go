@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application cloudflare_spectrum_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application cloudflare_spectrum_application}.
 type SpectrumApplication interface {
 	cdktn.TerraformResource
 	ArgoSmartRouting() interface{}
@@ -94,6 +94,9 @@ type SpectrumApplication interface {
 	TrafficType() *string
 	SetTrafficType(val *string)
 	TrafficTypeInput() *string
+	VirtualNetworkId() *string
+	SetVirtualNetworkId(val *string)
+	VirtualNetworkIdInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -155,6 +158,7 @@ type SpectrumApplication interface {
 	ResetProxyProtocol()
 	ResetTls()
 	ResetTrafficType()
+	ResetVirtualNetworkId()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -593,6 +597,26 @@ func (j *jsiiProxy_SpectrumApplication) TrafficTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SpectrumApplication) VirtualNetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpectrumApplication) VirtualNetworkIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpectrumApplication) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -614,7 +638,7 @@ func (j *jsiiProxy_SpectrumApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication(scope constructs.Construct, id *string, config *SpectrumApplicationConfig) SpectrumApplication {
 	_init_.Initialize()
 
@@ -632,7 +656,7 @@ func NewSpectrumApplication(scope constructs.Construct, id *string, config *Spec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication_Override(s SpectrumApplication, scope constructs.Construct, id *string, config *SpectrumApplicationConfig) {
 	_init_.Initialize()
 
@@ -795,6 +819,17 @@ func (j *jsiiProxy_SpectrumApplication)SetTrafficType(val *string) {
 	_jsii_.Set(
 		j,
 		"trafficType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpectrumApplication)SetVirtualNetworkId(val *string) {
+	if err := j.validateSetVirtualNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualNetworkId",
 		val,
 	)
 }
@@ -1272,6 +1307,14 @@ func (s *jsiiProxy_SpectrumApplication) ResetTrafficType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTrafficType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpectrumApplication) ResetVirtualNetworkId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVirtualNetworkId",
 		nil, // no parameters
 	)
 }

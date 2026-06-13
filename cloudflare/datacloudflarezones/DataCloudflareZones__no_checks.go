@@ -107,6 +107,10 @@ func (j *jsiiProxy_DataCloudflareZones) validateSetStatusParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZones) validateSetTypeParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewDataCloudflareZonesParameters(scope constructs.Construct, id *string, config *DataCloudflareZonesConfig) error {
 	return nil
 }

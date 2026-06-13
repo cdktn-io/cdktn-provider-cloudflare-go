@@ -36,6 +36,7 @@ type DataCloudflareAiGatewaysResultOutputReference interface {
 	Dlp() DataCloudflareAiGatewaysResultDlpOutputReference
 	// Experimental.
 	Fqn() *string
+	Guardrails() DataCloudflareAiGatewaysResultGuardrailsOutputReference
 	Id() *string
 	InternalValue() *DataCloudflareAiGatewaysResult
 	SetInternalValue(val *DataCloudflareAiGatewaysResult)
@@ -52,6 +53,7 @@ type DataCloudflareAiGatewaysResultOutputReference interface {
 	RetryBackoff() *string
 	RetryDelay() *float64
 	RetryMaxAttempts() *float64
+	SpendLimits() DataCloudflareAiGatewaysResultSpendLimitsOutputReference
 	StoreId() *string
 	Stripe() DataCloudflareAiGatewaysResultStripeOutputReference
 	// Experimental.
@@ -203,6 +205,16 @@ func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) Fqn() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) Guardrails() DataCloudflareAiGatewaysResultGuardrailsOutputReference {
+	var returns DataCloudflareAiGatewaysResultGuardrailsOutputReference
+	_jsii_.Get(
+		j,
+		"guardrails",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -348,6 +360,16 @@ func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) RetryMaxAttemp
 	_jsii_.Get(
 		j,
 		"retryMaxAttempts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) SpendLimits() DataCloudflareAiGatewaysResultSpendLimitsOutputReference {
+	var returns DataCloudflareAiGatewaysResultSpendLimitsOutputReference
+	_jsii_.Get(
+		j,
+		"spendLimits",
 		&returns,
 	)
 	return returns

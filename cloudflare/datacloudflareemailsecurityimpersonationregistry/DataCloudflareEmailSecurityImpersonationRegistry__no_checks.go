@@ -83,7 +83,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateSetDisplayNameIdParameters(val *float64) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateSetImpersonationRegistryIdParameters(val *string) error {
 	return nil
 }
 

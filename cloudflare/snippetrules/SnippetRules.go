@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet_rules cloudflare_snippet_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
 type SnippetRules interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -39,6 +39,7 @@ type SnippetRules interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -221,6 +222,16 @@ func (j *jsiiProxy_SnippetRules) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SnippetRules) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SnippetRules) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -342,7 +353,7 @@ func (j *jsiiProxy_SnippetRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRulesConfig) SnippetRules {
 	_init_.Initialize()
 
@@ -360,7 +371,7 @@ func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules_Override(s SnippetRules, scope constructs.Construct, id *string, config *SnippetRulesConfig) {
 	_init_.Initialize()
 

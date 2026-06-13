@@ -111,6 +111,10 @@ func (j *jsiiProxy_DnsFirewall) validateSetDeprecateAnyRequestsParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DnsFirewall) validateSetDnsFirewallIpCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsFirewall) validateSetEcsFallbackParameters(val interface{}) error {
 	return nil
 }

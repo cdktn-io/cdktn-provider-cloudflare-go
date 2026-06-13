@@ -24,11 +24,11 @@ type DataCloudflareNotificationPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique identifier of a notification policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policy#policy_id DataCloudflareNotificationPolicy#policy_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/notification_policy#policy_id DataCloudflareNotificationPolicy#policy_id}
 	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
 	// The account id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policy#account_id DataCloudflareNotificationPolicy#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/notification_policy#account_id DataCloudflareNotificationPolicy#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

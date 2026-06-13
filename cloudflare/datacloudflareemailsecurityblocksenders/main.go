@@ -132,6 +132,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isRegex", GoGetter: "IsRegex"},
 			_jsii_.MemberProperty{JsiiProperty: "lastModified", GoGetter: "LastModified"},
+			_jsii_.MemberProperty{JsiiProperty: "modifiedAt", GoGetter: "ModifiedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "pattern", GoGetter: "Pattern"},
 			_jsii_.MemberProperty{JsiiProperty: "patternType", GoGetter: "PatternType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

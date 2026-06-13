@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates}.
 type DataCloudflareAuthenticatedOriginPullsHostnameCertificates interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsHostnameCertificates) Z
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsHostnameCertificates(scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsHostnameCertificatesConfig) DataCloudflareAuthenticatedOriginPullsHostnameCertificates {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataCloudflareAuthenticatedOriginPullsHostnameCertificates(scope constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsHostnameCertificates_Override(d DataCloudflareAuthenticatedOriginPullsHostnameCertificates, scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsHostnameCertificatesConfig) {
 	_init_.Initialize()
 

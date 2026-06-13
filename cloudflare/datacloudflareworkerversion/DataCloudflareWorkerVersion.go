@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/worker_version cloudflare_worker_version}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/worker_version cloudflare_worker_version}.
 type DataCloudflareWorkerVersion interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -110,7 +110,6 @@ type DataCloudflareWorkerVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetInclude()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -564,7 +563,7 @@ func (j *jsiiProxy_DataCloudflareWorkerVersion) WorkerIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/worker_version cloudflare_worker_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/worker_version cloudflare_worker_version} Data Source.
 func NewDataCloudflareWorkerVersion(scope constructs.Construct, id *string, config *DataCloudflareWorkerVersionConfig) DataCloudflareWorkerVersion {
 	_init_.Initialize()
 
@@ -582,7 +581,7 @@ func NewDataCloudflareWorkerVersion(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/worker_version cloudflare_worker_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/worker_version cloudflare_worker_version} Data Source.
 func NewDataCloudflareWorkerVersion_Override(d DataCloudflareWorkerVersion, scope constructs.Construct, id *string, config *DataCloudflareWorkerVersionConfig) {
 	_init_.Initialize()
 
@@ -965,14 +964,6 @@ func (d *jsiiProxy_DataCloudflareWorkerVersion) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareWorkerVersion) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

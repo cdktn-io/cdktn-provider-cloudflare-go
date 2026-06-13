@@ -67,6 +67,10 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) validatePutCertif
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) validatePutCloudflareAccountMemberParameters(value *ZeroTrustAccessGroupIncludeCloudflareAccountMember) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) validatePutCommonNameParameters(value *ZeroTrustAccessGroupIncludeCommonName) error {
 	return nil
 }

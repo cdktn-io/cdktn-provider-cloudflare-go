@@ -17,6 +17,7 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	AisearchModel() *string
 	Cache() cdktn.IResolvable
 	CacheThreshold() *string
+	CacheTtl() *float64
 	ChunkOverlap() *float64
 	ChunkSize() *float64
 	// the index of the complex object in a list.
@@ -152,6 +153,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) CacheTh
 	_jsii_.Get(
 		j,
 		"cacheThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) CacheTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cacheTtl",
 		&returns,
 	)
 	return returns

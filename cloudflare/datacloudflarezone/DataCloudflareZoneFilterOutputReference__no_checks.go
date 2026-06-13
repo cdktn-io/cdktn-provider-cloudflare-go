@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataCloudflareZoneFilterOutputReference) validateSetTerraform
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZoneFilterOutputReference) validateSetTypeParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewDataCloudflareZoneFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

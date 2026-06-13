@@ -512,6 +512,14 @@ func (j *jsiiProxy_SpectrumApplication) validateSetTrafficTypeParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_SpectrumApplication) validateSetVirtualNetworkIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpectrumApplication) validateSetZoneIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

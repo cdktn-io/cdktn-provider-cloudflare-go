@@ -87,7 +87,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) validateSetLifecycleP
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) validateSetPatternIdParameters(val *float64) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) validateSetPatternIdParameters(val *string) error {
 	return nil
 }
 

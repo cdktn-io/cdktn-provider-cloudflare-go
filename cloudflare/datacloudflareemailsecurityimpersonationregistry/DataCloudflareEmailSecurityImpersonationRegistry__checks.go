@@ -230,7 +230,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateSetDisplayNameIdParameters(val *float64) error {
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateSetImpersonationRegistryIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

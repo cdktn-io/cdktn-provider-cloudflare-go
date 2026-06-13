@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareD1Database) validateSetDatabaseIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareD1Database) validateSetFieldsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareD1Database) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

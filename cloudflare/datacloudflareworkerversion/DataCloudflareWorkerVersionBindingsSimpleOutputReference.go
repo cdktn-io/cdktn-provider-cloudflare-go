@@ -33,6 +33,7 @@ type DataCloudflareWorkerVersionBindingsSimpleOutputReference interface {
 	InternalValue() *DataCloudflareWorkerVersionBindingsSimple
 	SetInternalValue(val *DataCloudflareWorkerVersionBindingsSimple)
 	Limit() *float64
+	MitigationTimeout() *float64
 	Period() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsSimpleOutputReference) Lim
 	_jsii_.Get(
 		j,
 		"limit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsSimpleOutputReference) MitigationTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"mitigationTimeout",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
 type NotificationPolicyWebhooks interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -444,7 +444,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Resource.
 func NewNotificationPolicyWebhooks(scope constructs.Construct, id *string, config *NotificationPolicyWebhooksConfig) NotificationPolicyWebhooks {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewNotificationPolicyWebhooks(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Resource.
 func NewNotificationPolicyWebhooks_Override(n NotificationPolicyWebhooks, scope constructs.Construct, id *string, config *NotificationPolicyWebhooksConfig) {
 	_init_.Initialize()
 

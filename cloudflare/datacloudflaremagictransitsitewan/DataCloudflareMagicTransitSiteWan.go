@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
 type DataCloudflareMagicTransitSiteWan interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -94,7 +94,6 @@ type DataCloudflareMagicTransitSiteWan interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteWan) WanIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Data Source.
 func NewDataCloudflareMagicTransitSiteWan(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteWanConfig) DataCloudflareMagicTransitSiteWan {
 	_init_.Initialize()
 
@@ -415,7 +414,7 @@ func NewDataCloudflareMagicTransitSiteWan(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Data Source.
 func NewDataCloudflareMagicTransitSiteWan_Override(d DataCloudflareMagicTransitSiteWan, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteWanConfig) {
 	_init_.Initialize()
 
@@ -787,14 +786,6 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteWan) OverrideLogicalId(newLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteWan) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

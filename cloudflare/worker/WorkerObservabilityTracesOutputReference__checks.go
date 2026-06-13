@@ -246,6 +246,14 @@ func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) validateSetPersistP
 	return nil
 }
 
+func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) validateSetPropagationPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

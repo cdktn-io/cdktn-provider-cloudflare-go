@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}.
 type R2ManagedDomain interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -118,7 +118,6 @@ type R2ManagedDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -411,7 +410,7 @@ func (j *jsiiProxy_R2ManagedDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource.
 func NewR2ManagedDomain(scope constructs.Construct, id *string, config *R2ManagedDomainConfig) R2ManagedDomain {
 	_init_.Initialize()
 
@@ -429,7 +428,7 @@ func NewR2ManagedDomain(scope constructs.Construct, id *string, config *R2Manage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource.
 func NewR2ManagedDomain_Override(r R2ManagedDomain, scope constructs.Construct, id *string, config *R2ManagedDomainConfig) {
 	_init_.Initialize()
 
@@ -902,14 +901,6 @@ func (r *jsiiProxy_R2ManagedDomain) OverrideLogicalId(newLogicalId *string) {
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (r *jsiiProxy_R2ManagedDomain) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

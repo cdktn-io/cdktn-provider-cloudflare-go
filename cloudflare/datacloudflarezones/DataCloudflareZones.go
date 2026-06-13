@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zones cloudflare_zones}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zones cloudflare_zones}.
 type DataCloudflareZones interface {
 	cdktn.TerraformDataSource
 	Account() DataCloudflareZonesAccountOutputReference
@@ -74,6 +74,9 @@ type DataCloudflareZones interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *[]*string
+	SetType(val *[]*string)
+	TypeInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -110,6 +113,7 @@ type DataCloudflareZones interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatus()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -428,8 +432,28 @@ func (j *jsiiProxy_DataCloudflareZones) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZones) Type() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zones cloudflare_zones} Data Source.
+func (j *jsiiProxy_DataCloudflareZones) TypeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zones cloudflare_zones} Data Source.
 func NewDataCloudflareZones(scope constructs.Construct, id *string, config *DataCloudflareZonesConfig) DataCloudflareZones {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewDataCloudflareZones(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zones cloudflare_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zones cloudflare_zones} Data Source.
 func NewDataCloudflareZones_Override(d DataCloudflareZones, scope constructs.Construct, id *string, config *DataCloudflareZonesConfig) {
 	_init_.Initialize()
 
@@ -566,6 +590,17 @@ func (j *jsiiProxy_DataCloudflareZones)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZones)SetType(val *[]*string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -926,6 +961,14 @@ func (d *jsiiProxy_DataCloudflareZones) ResetStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZones) ResetType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetType",
 		nil, // no parameters
 	)
 }

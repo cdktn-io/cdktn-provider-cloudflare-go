@@ -67,6 +67,10 @@ func (j *jsiiProxy_WorkersScriptBindingsSimpleOutputReference) validateSetLimitP
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsSimpleOutputReference) validateSetMitigationTimeoutParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsSimpleOutputReference) validateSetPeriodParameters(val *float64) error {
 	return nil
 }

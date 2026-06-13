@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates}.
 type DataCloudflareOriginCaCertificates interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificates) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
 func NewDataCloudflareOriginCaCertificates(scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificatesConfig) DataCloudflareOriginCaCertificates {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataCloudflareOriginCaCertificates(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
 func NewDataCloudflareOriginCaCertificates_Override(d DataCloudflareOriginCaCertificates, scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificatesConfig) {
 	_init_.Initialize()
 

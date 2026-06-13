@@ -42,6 +42,7 @@ type DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOutputReference i
 	DirectoryId() *string
 	EmailAttributeName() *string
 	EmailClaimName() *string
+	EnableEncryption() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	HeaderAttributes() DataCloudflareZeroTrustAccessIdentityProvidersResultConfigHeaderAttributesList
@@ -54,6 +55,8 @@ type DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOutputReference i
 	PingEnvId() *string
 	PkceEnabled() cdktn.IResolvable
 	Prompt() *string
+	RedirectUrl() *string
+	RestrictToAccountMembers() cdktn.IResolvable
 	Scopes() *[]*string
 	SignRequest() cdktn.IResolvable
 	SsoTargetUrl() *string
@@ -276,6 +279,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOut
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOutputReference) EnableEncryption() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"enableEncryption",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -371,6 +384,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOut
 	_jsii_.Get(
 		j,
 		"prompt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOutputReference) RedirectUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redirectUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOutputReference) RestrictToAccountMembers() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"restrictToAccountMembers",
 		&returns,
 	)
 	return returns

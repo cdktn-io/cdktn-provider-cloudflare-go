@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow cloudflare_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow cloudflare_workflow}.
 type Workflow interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -69,6 +69,8 @@ type Workflow interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Schedules() WorkflowSchedulesList
+	SchedulesInput() interface{}
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
@@ -128,11 +130,13 @@ type Workflow interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLimits(value *WorkflowLimits)
+	PutSchedules(value interface{})
 	ResetAccountId()
 	ResetLimits()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSchedules()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -410,6 +414,26 @@ func (j *jsiiProxy_Workflow) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Workflow) Schedules() WorkflowSchedulesList {
+	var returns WorkflowSchedulesList
+	_jsii_.Get(
+		j,
+		"schedules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) SchedulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"schedulesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Workflow) ScriptName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -511,7 +535,7 @@ func (j *jsiiProxy_Workflow) WorkflowNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig) Workflow {
 	_init_.Initialize()
 
@@ -529,7 +553,7 @@ func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow_Override(w Workflow, scope constructs.Construct, id *string, config *WorkflowConfig) {
 	_init_.Initialize()
 
@@ -1016,6 +1040,17 @@ func (w *jsiiProxy_Workflow) PutLimits(value *WorkflowLimits) {
 	)
 }
 
+func (w *jsiiProxy_Workflow) PutSchedules(value interface{}) {
+	if err := w.validatePutSchedulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putSchedules",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Workflow) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1036,6 +1071,14 @@ func (w *jsiiProxy_Workflow) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workflow) ResetSchedules() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSchedules",
 		nil, // no parameters
 	)
 }

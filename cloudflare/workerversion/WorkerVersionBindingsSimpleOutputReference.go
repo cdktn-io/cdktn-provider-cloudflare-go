@@ -35,6 +35,9 @@ type WorkerVersionBindingsSimpleOutputReference interface {
 	Limit() *float64
 	SetLimit(val *float64)
 	LimitInput() *float64
+	MitigationTimeout() *float64
+	SetMitigationTimeout(val *float64)
+	MitigationTimeoutInput() *float64
 	Period() *float64
 	SetPeriod(val *float64)
 	PeriodInput() *float64
@@ -70,6 +73,7 @@ type WorkerVersionBindingsSimpleOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetMitigationTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -150,6 +154,26 @@ func (j *jsiiProxy_WorkerVersionBindingsSimpleOutputReference) LimitInput() *flo
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsSimpleOutputReference) MitigationTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"mitigationTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsSimpleOutputReference) MitigationTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"mitigationTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +287,17 @@ func (j *jsiiProxy_WorkerVersionBindingsSimpleOutputReference)SetLimit(val *floa
 	_jsii_.Set(
 		j,
 		"limit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsSimpleOutputReference)SetMitigationTimeout(val *float64) {
+	if err := j.validateSetMitigationTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mitigationTimeout",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (w *jsiiProxy_WorkerVersionBindingsSimpleOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsSimpleOutputReference) ResetMitigationTimeout() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetMitigationTimeout",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WorkerVersionBindingsSimpleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

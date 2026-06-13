@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
 type R2BucketLifecycle interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -116,7 +116,6 @@ type R2BucketLifecycle interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRules(value interface{})
-	ResetAccountId()
 	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -390,7 +389,7 @@ func (j *jsiiProxy_R2BucketLifecycle) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource.
 func NewR2BucketLifecycle(scope constructs.Construct, id *string, config *R2BucketLifecycleConfig) R2BucketLifecycle {
 	_init_.Initialize()
 
@@ -408,7 +407,7 @@ func NewR2BucketLifecycle(scope constructs.Construct, id *string, config *R2Buck
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource.
 func NewR2BucketLifecycle_Override(r R2BucketLifecycle, scope constructs.Construct, id *string, config *R2BucketLifecycleConfig) {
 	_init_.Initialize()
 
@@ -881,14 +880,6 @@ func (r *jsiiProxy_R2BucketLifecycle) PutRules(value interface{}) {
 		r,
 		"putRules",
 		[]interface{}{value},
-	)
-}
-
-func (r *jsiiProxy_R2BucketLifecycle) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

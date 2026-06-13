@@ -22,13 +22,13 @@ type DataCloudflareCallsSfuAppConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// A Cloudflare-generated unique identifier for a item.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
-	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// The account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
+	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// A Cloudflare-generated unique identifier for a item.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
+	AppId *string `field:"required" json:"appId" yaml:"appId"`
 }
 

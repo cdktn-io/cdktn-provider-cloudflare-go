@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database cloudflare_d1_database}.
 type DataCloudflareD1Database interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -34,6 +34,9 @@ type DataCloudflareD1Database interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Fields() *[]*string
+	SetFields(val *[]*string)
+	FieldsInput() *[]*string
 	FileSize() *float64
 	Filter() DataCloudflareD1DatabaseFilterOutputReference
 	FilterInput() interface{}
@@ -98,6 +101,7 @@ type DataCloudflareD1Database interface {
 	PutFilter(value *DataCloudflareD1DatabaseFilter)
 	ResetAccountId()
 	ResetDatabaseId()
+	ResetFields()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -215,6 +219,26 @@ func (j *jsiiProxy_DataCloudflareD1Database) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareD1Database) Fields() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"fields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareD1Database) FieldsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"fieldsInput",
 		&returns,
 	)
 	return returns
@@ -421,7 +445,7 @@ func (j *jsiiProxy_DataCloudflareD1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) DataCloudflareD1Database {
 	_init_.Initialize()
 
@@ -439,7 +463,7 @@ func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database_Override(d DataCloudflareD1Database, scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) {
 	_init_.Initialize()
 
@@ -487,6 +511,17 @@ func (j *jsiiProxy_DataCloudflareD1Database)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareD1Database)SetFields(val *[]*string) {
+	if err := j.validateSetFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fields",
 		val,
 	)
 }
@@ -826,6 +861,14 @@ func (d *jsiiProxy_DataCloudflareD1Database) ResetDatabaseId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDatabaseId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareD1Database) ResetFields() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFields",
 		nil, // no parameters
 	)
 }

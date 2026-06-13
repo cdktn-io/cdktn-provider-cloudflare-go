@@ -95,6 +95,10 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetAccountIdParam
 	return nil
 }
 
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetCommentsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -103,7 +107,19 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetCountParameter
 	return nil
 }
 
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetDirectoryIdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetDirectoryNodeIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetEmailParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetExternalDirectoryNodeIdParameters(val *string) error {
 	return nil
 }
 
@@ -116,6 +132,10 @@ func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetLifecycleParam
 }
 
 func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_EmailSecurityImpersonationRegistry) validateSetProvenanceParameters(val *string) error {
 	return nil
 }
 

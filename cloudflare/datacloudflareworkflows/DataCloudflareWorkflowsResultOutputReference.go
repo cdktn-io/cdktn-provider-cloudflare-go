@@ -38,6 +38,7 @@ type DataCloudflareWorkflowsResultOutputReference interface {
 	SetInternalValue(val *DataCloudflareWorkflowsResult)
 	ModifiedOn() *string
 	Name() *string
+	Schedules() DataCloudflareWorkflowsResultSchedulesList
 	ScriptName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -192,6 +193,16 @@ func (j *jsiiProxy_DataCloudflareWorkflowsResultOutputReference) Name() *string 
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkflowsResultOutputReference) Schedules() DataCloudflareWorkflowsResultSchedulesList {
+	var returns DataCloudflareWorkflowsResultSchedulesList
+	_jsii_.Get(
+		j,
+		"schedules",
 		&returns,
 	)
 	return returns

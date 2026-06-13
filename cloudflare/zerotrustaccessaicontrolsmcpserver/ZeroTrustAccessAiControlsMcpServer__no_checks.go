@@ -131,6 +131,10 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetIsSharedOauthCallbackEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetNameParameters
 }
 
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetSecureWebGatewayParameters(val interface{}) error {
 	return nil
 }
 

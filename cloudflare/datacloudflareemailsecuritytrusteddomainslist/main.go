@@ -137,6 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isRegex", GoGetter: "IsRegex"},
 			_jsii_.MemberProperty{JsiiProperty: "isSimilarity", GoGetter: "IsSimilarity"},
 			_jsii_.MemberProperty{JsiiProperty: "lastModified", GoGetter: "LastModified"},
+			_jsii_.MemberProperty{JsiiProperty: "modifiedAt", GoGetter: "ModifiedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "pattern", GoGetter: "Pattern"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/registrar_domain cloudflare_registrar_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/registrar_domain cloudflare_registrar_domain}.
 type DataCloudflareRegistrarDomain interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -84,7 +84,6 @@ type DataCloudflareRegistrarDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -297,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareRegistrarDomain) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/registrar_domain cloudflare_registrar_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/registrar_domain cloudflare_registrar_domain} Data Source.
 func NewDataCloudflareRegistrarDomain(scope constructs.Construct, id *string, config *DataCloudflareRegistrarDomainConfig) DataCloudflareRegistrarDomain {
 	_init_.Initialize()
 
@@ -315,7 +314,7 @@ func NewDataCloudflareRegistrarDomain(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/registrar_domain cloudflare_registrar_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/registrar_domain cloudflare_registrar_domain} Data Source.
 func NewDataCloudflareRegistrarDomain_Override(d DataCloudflareRegistrarDomain, scope constructs.Construct, id *string, config *DataCloudflareRegistrarDomainConfig) {
 	_init_.Initialize()
 
@@ -676,14 +675,6 @@ func (d *jsiiProxy_DataCloudflareRegistrarDomain) OverrideLogicalId(newLogicalId
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareRegistrarDomain) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

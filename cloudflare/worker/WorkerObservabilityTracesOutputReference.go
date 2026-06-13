@@ -44,6 +44,9 @@ type WorkerObservabilityTracesOutputReference interface {
 	Persist() interface{}
 	SetPersist(val interface{})
 	PersistInput() interface{}
+	PropagationPolicy() *string
+	SetPropagationPolicy(val *string)
+	PropagationPolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +83,7 @@ type WorkerObservabilityTracesOutputReference interface {
 	ResetEnabled()
 	ResetHeadSamplingRate()
 	ResetPersist()
+	ResetPropagationPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -225,6 +229,26 @@ func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) PersistInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) PropagationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) PropagationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagationPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -346,6 +370,17 @@ func (j *jsiiProxy_WorkerObservabilityTracesOutputReference)SetPersist(val inter
 	_jsii_.Set(
 		j,
 		"persist",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerObservabilityTracesOutputReference)SetPropagationPolicy(val *string) {
+	if err := j.validateSetPropagationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"propagationPolicy",
 		val,
 	)
 }
@@ -586,6 +621,14 @@ func (w *jsiiProxy_WorkerObservabilityTracesOutputReference) ResetPersist() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetPersist",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerObservabilityTracesOutputReference) ResetPropagationPolicy() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPropagationPolicy",
 		nil, // no parameters
 	)
 }

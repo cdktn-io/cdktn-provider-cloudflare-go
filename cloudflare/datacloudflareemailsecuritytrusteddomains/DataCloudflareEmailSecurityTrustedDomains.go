@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
 type DataCloudflareEmailSecurityTrustedDomains interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -42,7 +42,7 @@ type DataCloudflareEmailSecurityTrustedDomains interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *float64
+	Id() *string
 	IsRecent() cdktn.IResolvable
 	IsRegex() cdktn.IResolvable
 	IsSimilarity() cdktn.IResolvable
@@ -51,6 +51,7 @@ type DataCloudflareEmailSecurityTrustedDomains interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
 	Pattern() *string
@@ -66,9 +67,9 @@ type DataCloudflareEmailSecurityTrustedDomains interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TrustedDomainId() *float64
-	SetTrustedDomainId(val *float64)
-	TrustedDomainIdInput() *float64
+	TrustedDomainId() *string
+	SetTrustedDomainId(val *string)
+	TrustedDomainIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -259,8 +260,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) FriendlyUniqueId()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) Id() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) Id() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
@@ -314,6 +315,16 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) Lifecycle() *cdktn
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
 		&returns,
 	)
 	return returns
@@ -389,8 +400,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) TerraformResourceT
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) TrustedDomainId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) TrustedDomainId() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"trustedDomainId",
@@ -399,8 +410,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) TrustedDomainId() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) TrustedDomainIdInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) TrustedDomainIdInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"trustedDomainIdInput",
@@ -410,7 +421,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) TrustedDomainIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomains(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsConfig) DataCloudflareEmailSecurityTrustedDomains {
 	_init_.Initialize()
 
@@ -428,7 +439,7 @@ func NewDataCloudflareEmailSecurityTrustedDomains(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomains_Override(d DataCloudflareEmailSecurityTrustedDomains, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsConfig) {
 	_init_.Initialize()
 
@@ -496,7 +507,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains)SetTrustedDomainId(val *float64) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains)SetTrustedDomainId(val *string) {
 	if err := j.validateSetTrustedDomainIdParameters(val); err != nil {
 		panic(err)
 	}

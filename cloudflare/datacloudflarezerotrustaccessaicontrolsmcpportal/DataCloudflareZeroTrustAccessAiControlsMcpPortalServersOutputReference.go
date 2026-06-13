@@ -34,12 +34,14 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference inte
 	DefaultDisabled() cdktn.IResolvable
 	Description() *string
 	Error() *string
+	ErrorDetails() DataCloudflareZeroTrustAccessAiControlsMcpPortalServersErrorDetailsOutputReference
 	// Experimental.
 	Fqn() *string
 	Hostname() *string
 	Id() *string
 	InternalValue() *DataCloudflareZeroTrustAccessAiControlsMcpPortalServers
 	SetInternalValue(val *DataCloudflareZeroTrustAccessAiControlsMcpPortalServers)
+	IsSharedOauthCallbackEnabled() cdktn.IResolvable
 	LastSuccessfulSync() *string
 	LastSynced() *string
 	ModifiedAt() *string
@@ -47,6 +49,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference inte
 	Name() *string
 	OnBehalf() cdktn.IResolvable
 	Prompts() cdktn.StringMapList
+	SecureWebGateway() cdktn.IResolvable
 	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -188,6 +191,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) ErrorDetails() DataCloudflareZeroTrustAccessAiControlsMcpPortalServersErrorDetailsOutputReference {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpPortalServersErrorDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"errorDetails",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -223,6 +236,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutput
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) IsSharedOauthCallbackEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isSharedOauthCallbackEnabled",
 		&returns,
 	)
 	return returns
@@ -293,6 +316,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutput
 	_jsii_.Get(
 		j,
 		"prompts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) SecureWebGateway() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"secureWebGateway",
 		&returns,
 	)
 	return returns

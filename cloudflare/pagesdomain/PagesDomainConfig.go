@@ -24,15 +24,15 @@ type PagesDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The domain name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/pages_domain#name PagesDomain#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pages_domain#name PagesDomain#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Name of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/pages_domain#project_name PagesDomain#project_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
 	ProjectName *string `field:"required" json:"projectName" yaml:"projectName"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/pages_domain#account_id PagesDomain#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

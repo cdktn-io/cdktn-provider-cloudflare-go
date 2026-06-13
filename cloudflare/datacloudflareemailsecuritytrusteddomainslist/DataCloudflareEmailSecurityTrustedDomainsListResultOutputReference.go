@@ -32,13 +32,14 @@ type DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Id() *float64
+	Id() *string
 	InternalValue() *DataCloudflareEmailSecurityTrustedDomainsListResult
 	SetInternalValue(val *DataCloudflareEmailSecurityTrustedDomainsListResult)
 	IsRecent() cdktn.IResolvable
 	IsRegex() cdktn.IResolvable
 	IsSimilarity() cdktn.IResolvable
 	LastModified() *string
+	ModifiedAt() *string
 	Pattern() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -147,8 +148,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) Id() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) Id() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
@@ -202,6 +203,16 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputRefe
 	_jsii_.Get(
 		j,
 		"lastModified",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
 		&returns,
 	)
 	return returns

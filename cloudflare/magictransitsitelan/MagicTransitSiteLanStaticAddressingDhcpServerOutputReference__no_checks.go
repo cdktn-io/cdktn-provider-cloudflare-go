@@ -47,6 +47,10 @@ func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	return nil
 }
 
+func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validatePutDhcpOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

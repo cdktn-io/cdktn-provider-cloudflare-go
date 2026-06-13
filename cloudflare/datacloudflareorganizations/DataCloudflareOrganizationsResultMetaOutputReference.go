@@ -31,6 +31,7 @@ type DataCloudflareOrganizationsResultMetaOutputReference interface {
 	Flags() DataCloudflareOrganizationsResultMetaFlagsOutputReference
 	// Experimental.
 	Fqn() *string
+	HierarchyTags() *[]*string
 	InternalValue() *DataCloudflareOrganizationsResultMeta
 	SetInternalValue(val *DataCloudflareOrganizationsResultMeta)
 	ManagedBy() *string
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataCloudflareOrganizationsResultMetaOutputReference) Fqn() *
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationsResultMetaOutputReference) HierarchyTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hierarchyTags",
 		&returns,
 	)
 	return returns

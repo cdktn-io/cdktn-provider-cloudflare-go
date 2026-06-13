@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
 type R2CustomDomain interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -130,7 +130,6 @@ type R2CustomDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetCiphers()
 	ResetJurisdiction()
 	ResetMinTls()
@@ -505,7 +504,7 @@ func (j *jsiiProxy_R2CustomDomain) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource.
 func NewR2CustomDomain(scope constructs.Construct, id *string, config *R2CustomDomainConfig) R2CustomDomain {
 	_init_.Initialize()
 
@@ -523,7 +522,7 @@ func NewR2CustomDomain(scope constructs.Construct, id *string, config *R2CustomD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource.
 func NewR2CustomDomain_Override(r R2CustomDomain, scope constructs.Construct, id *string, config *R2CustomDomainConfig) {
 	_init_.Initialize()
 
@@ -1040,14 +1039,6 @@ func (r *jsiiProxy_R2CustomDomain) OverrideLogicalId(newLogicalId *string) {
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (r *jsiiProxy_R2CustomDomain) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

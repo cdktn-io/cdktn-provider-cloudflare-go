@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender}.
 type DataCloudflareEmailSecurityBlockSender interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -42,19 +42,20 @@ type DataCloudflareEmailSecurityBlockSender interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *float64
+	Id() *string
 	IsRegex() cdktn.IResolvable
 	LastModified() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
 	Pattern() *string
-	PatternId() *float64
-	SetPatternId(val *float64)
-	PatternIdInput() *float64
+	PatternId() *string
+	SetPatternId(val *string)
+	PatternIdInput() *string
 	PatternType() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
@@ -258,8 +259,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) FriendlyUniqueId() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) Id() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) Id() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
@@ -298,6 +299,16 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) Lifecycle() *cdktn.Te
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -318,8 +329,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) Pattern() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) PatternId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) PatternId() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"patternId",
@@ -328,8 +339,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) PatternId() *float64 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) PatternIdInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) PatternIdInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"patternIdInput",
@@ -399,7 +410,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
 func NewDataCloudflareEmailSecurityBlockSender(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityBlockSenderConfig) DataCloudflareEmailSecurityBlockSender {
 	_init_.Initialize()
 
@@ -417,7 +428,7 @@ func NewDataCloudflareEmailSecurityBlockSender(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
 func NewDataCloudflareEmailSecurityBlockSender_Override(d DataCloudflareEmailSecurityBlockSender, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityBlockSenderConfig) {
 	_init_.Initialize()
 
@@ -477,7 +488,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender)SetPatternId(val *float64) {
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender)SetPatternId(val *string) {
 	if err := j.validateSetPatternIdParameters(val); err != nil {
 		panic(err)
 	}

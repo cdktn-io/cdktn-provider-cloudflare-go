@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams) validateSetMaxItemsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineStreams) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineStreams) validateSetPipelineIdParameters(val *string) error {
 	return nil
 }

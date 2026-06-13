@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/snippet cloudflare_snippet}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/snippet cloudflare_snippet}.
 type DataCloudflareSnippet interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -36,6 +36,7 @@ type DataCloudflareSnippet interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -198,6 +199,16 @@ func (j *jsiiProxy_DataCloudflareSnippet) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareSnippet) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareSnippet) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -319,7 +330,7 @@ func (j *jsiiProxy_DataCloudflareSnippet) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/snippet cloudflare_snippet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/snippet cloudflare_snippet} Data Source.
 func NewDataCloudflareSnippet(scope constructs.Construct, id *string, config *DataCloudflareSnippetConfig) DataCloudflareSnippet {
 	_init_.Initialize()
 
@@ -337,7 +348,7 @@ func NewDataCloudflareSnippet(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/snippet cloudflare_snippet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/snippet cloudflare_snippet} Data Source.
 func NewDataCloudflareSnippet_Override(d DataCloudflareSnippet, scope constructs.Construct, id *string, config *DataCloudflareSnippetConfig) {
 	_init_.Initialize()
 

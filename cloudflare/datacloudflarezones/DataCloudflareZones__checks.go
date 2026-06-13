@@ -278,6 +278,14 @@ func (j *jsiiProxy_DataCloudflareZones) validateSetStatusParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZones) validateSetTypeParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataCloudflareZonesParameters(scope constructs.Construct, id *string, config *DataCloudflareZonesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

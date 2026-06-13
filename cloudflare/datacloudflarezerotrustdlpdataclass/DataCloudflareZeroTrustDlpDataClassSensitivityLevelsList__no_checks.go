@@ -1,0 +1,37 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datacloudflarezerotrustdlpdataclass
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpDataClassSensitivityLevelsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpDataClassSensitivityLevelsList) validateGetParameters(index *float64) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpDataClassSensitivityLevelsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpDataClassSensitivityLevelsList) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpDataClassSensitivityLevelsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpDataClassSensitivityLevelsList) validateSetWrapsSetParameters(val *bool) error {
+	return nil
+}
+
+func validateNewDataCloudflareZeroTrustDlpDataClassSensitivityLevelsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+	return nil
+}
+

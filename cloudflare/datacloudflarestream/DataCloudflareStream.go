@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream cloudflare_stream}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/stream cloudflare_stream}.
 type DataCloudflareStream interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -110,7 +110,6 @@ type DataCloudflareStream interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -583,7 +582,7 @@ func (j *jsiiProxy_DataCloudflareStream) Watermark() DataCloudflareStreamWaterma
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream cloudflare_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/stream cloudflare_stream} Data Source.
 func NewDataCloudflareStream(scope constructs.Construct, id *string, config *DataCloudflareStreamConfig) DataCloudflareStream {
 	_init_.Initialize()
 
@@ -601,7 +600,7 @@ func NewDataCloudflareStream(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/stream cloudflare_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/stream cloudflare_stream} Data Source.
 func NewDataCloudflareStream_Override(d DataCloudflareStream, scope constructs.Construct, id *string, config *DataCloudflareStreamConfig) {
 	_init_.Initialize()
 
@@ -962,14 +961,6 @@ func (d *jsiiProxy_DataCloudflareStream) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareStream) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

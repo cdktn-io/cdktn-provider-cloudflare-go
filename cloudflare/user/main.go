@@ -24,6 +24,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "country", GoGetter: "Country"},
 			_jsii_.MemberProperty{JsiiProperty: "countryInput", GoGetter: "CountryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "email", GoGetter: "Email"},
 			_jsii_.MemberProperty{JsiiProperty: "firstName", GoGetter: "FirstName"},
 			_jsii_.MemberProperty{JsiiProperty: "firstNameInput", GoGetter: "FirstNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},

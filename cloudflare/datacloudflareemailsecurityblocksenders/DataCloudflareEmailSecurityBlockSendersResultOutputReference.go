@@ -32,11 +32,12 @@ type DataCloudflareEmailSecurityBlockSendersResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Id() *float64
+	Id() *string
 	InternalValue() *DataCloudflareEmailSecurityBlockSendersResult
 	SetInternalValue(val *DataCloudflareEmailSecurityBlockSendersResult)
 	IsRegex() cdktn.IResolvable
 	LastModified() *string
+	ModifiedAt() *string
 	Pattern() *string
 	PatternType() *string
 	// Experimental.
@@ -146,8 +147,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSendersResultOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSendersResultOutputReference) Id() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSendersResultOutputReference) Id() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
@@ -181,6 +182,16 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSendersResultOutputReference)
 	_jsii_.Get(
 		j,
 		"lastModified",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSendersResultOutputReference) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
 		&returns,
 	)
 	return returns

@@ -36,6 +36,7 @@ type DataCloudflareWorkerObservabilityTracesOutputReference interface {
 	InternalValue() *DataCloudflareWorkerObservabilityTraces
 	SetInternalValue(val *DataCloudflareWorkerObservabilityTraces)
 	Persist() cdktn.IResolvable
+	PropagationPolicy() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -168,6 +169,16 @@ func (j *jsiiProxy_DataCloudflareWorkerObservabilityTracesOutputReference) Persi
 	_jsii_.Get(
 		j,
 		"persist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerObservabilityTracesOutputReference) PropagationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagationPolicy",
 		&returns,
 	)
 	return returns

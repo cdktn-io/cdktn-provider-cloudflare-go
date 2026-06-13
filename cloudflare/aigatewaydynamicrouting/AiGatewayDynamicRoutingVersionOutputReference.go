@@ -35,6 +35,7 @@ type AiGatewayDynamicRoutingVersionOutputReference interface {
 	Fqn() *string
 	InternalValue() *AiGatewayDynamicRoutingVersion
 	SetInternalValue(val *AiGatewayDynamicRoutingVersion)
+	IsValid() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -158,6 +159,16 @@ func (j *jsiiProxy_AiGatewayDynamicRoutingVersionOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayDynamicRoutingVersionOutputReference) IsValid() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isValid",
 		&returns,
 	)
 	return returns

@@ -218,6 +218,17 @@ func (a *jsiiProxy_AiGateway) validatePutDlpParameters(value *AiGatewayDlp) erro
 	return nil
 }
 
+func (a *jsiiProxy_AiGateway) validatePutGuardrailsParameters(value *AiGatewayGuardrails) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AiGateway) validatePutOtelParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -244,6 +255,17 @@ func (a *jsiiProxy_AiGateway) validatePutOtelParameters(value interface{}) error
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AiGatewayOtel; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AiGateway) validatePutSpendLimitsParameters(value *AiGatewaySpendLimits) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

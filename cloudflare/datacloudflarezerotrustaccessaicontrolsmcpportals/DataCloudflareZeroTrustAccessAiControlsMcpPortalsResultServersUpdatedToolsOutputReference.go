@@ -28,7 +28,6 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersUpdatedToolsO
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Description() *string
 	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -36,7 +35,9 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersUpdatedToolsO
 	SetInternalValue(val *DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersUpdatedTools)
 	Name() *string
 	PortalAlias() *string
+	PortalDescription() *string
 	ServerAlias() *string
+	ServerDescription() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -114,16 +115,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServer
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersUpdatedToolsOutputReference) Description() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"description",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersUpdatedToolsOutputReference) Enabled() cdktn.IResolvable {
 	var returns cdktn.IResolvable
 	_jsii_.Get(
@@ -174,11 +165,31 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServer
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersUpdatedToolsOutputReference) PortalDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"portalDescription",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersUpdatedToolsOutputReference) ServerAlias() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"serverAlias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersUpdatedToolsOutputReference) ServerDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverDescription",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/accounts cloudflare_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/accounts cloudflare_accounts}.
 type DataCloudflareAccounts interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataCloudflareAccounts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/accounts cloudflare_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
 func NewDataCloudflareAccounts(scope constructs.Construct, id *string, config *DataCloudflareAccountsConfig) DataCloudflareAccounts {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataCloudflareAccounts(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/accounts cloudflare_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
 func NewDataCloudflareAccounts_Override(d DataCloudflareAccounts, scope constructs.Construct, id *string, config *DataCloudflareAccountsConfig) {
 	_init_.Initialize()
 

@@ -23,6 +23,8 @@ type ZeroTrustAccessGroupRequireOutputReference interface {
 	AzureAdInput() interface{}
 	Certificate() ZeroTrustAccessGroupRequireCertificateOutputReference
 	CertificateInput() interface{}
+	CloudflareAccountMember() ZeroTrustAccessGroupRequireCloudflareAccountMemberOutputReference
+	CloudflareAccountMemberInput() interface{}
 	CommonName() ZeroTrustAccessGroupRequireCommonNameOutputReference
 	CommonNameInput() interface{}
 	// the index of the complex object in a list.
@@ -119,6 +121,7 @@ type ZeroTrustAccessGroupRequireOutputReference interface {
 	PutAuthMethod(value *ZeroTrustAccessGroupRequireAuthMethod)
 	PutAzureAd(value *ZeroTrustAccessGroupRequireAzureAd)
 	PutCertificate(value *ZeroTrustAccessGroupRequireCertificate)
+	PutCloudflareAccountMember(value *ZeroTrustAccessGroupRequireCloudflareAccountMember)
 	PutCommonName(value *ZeroTrustAccessGroupRequireCommonName)
 	PutDevicePosture(value *ZeroTrustAccessGroupRequireDevicePosture)
 	PutEmail(value *ZeroTrustAccessGroupRequireEmail)
@@ -144,6 +147,7 @@ type ZeroTrustAccessGroupRequireOutputReference interface {
 	ResetAuthMethod()
 	ResetAzureAd()
 	ResetCertificate()
+	ResetCloudflareAccountMember()
 	ResetCommonName()
 	ResetDevicePosture()
 	ResetEmail()
@@ -274,6 +278,26 @@ func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) CertificateInput(
 	_jsii_.Get(
 		j,
 		"certificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) CloudflareAccountMember() ZeroTrustAccessGroupRequireCloudflareAccountMemberOutputReference {
+	var returns ZeroTrustAccessGroupRequireCloudflareAccountMemberOutputReference
+	_jsii_.Get(
+		j,
+		"cloudflareAccountMember",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) CloudflareAccountMemberInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cloudflareAccountMemberInput",
 		&returns,
 	)
 	return returns
@@ -1073,6 +1097,17 @@ func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) PutCertificate(va
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) PutCloudflareAccountMember(value *ZeroTrustAccessGroupRequireCloudflareAccountMember) {
+	if err := z.validatePutCloudflareAccountMemberParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putCloudflareAccountMember",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) PutCommonName(value *ZeroTrustAccessGroupRequireCommonName) {
 	if err := z.validatePutCommonNameParameters(value); err != nil {
 		panic(err)
@@ -1329,6 +1364,14 @@ func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) ResetCertificate(
 	_jsii_.InvokeVoid(
 		z,
 		"resetCertificate",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) ResetCloudflareAccountMember() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetCloudflareAccountMember",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
 type ZeroTrustAccessAiControlsMcpServer interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -46,6 +46,7 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	Error() *string
+	ErrorDetails() ZeroTrustAccessAiControlsMcpServerErrorDetailsOutputReference
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -60,6 +61,9 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsSharedOauthCallbackEnabled() interface{}
+	SetIsSharedOauthCallbackEnabled(val interface{})
+	IsSharedOauthCallbackEnabledInput() interface{}
 	LastSuccessfulSync() *string
 	LastSynced() *string
 	// Experimental.
@@ -84,6 +88,9 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecureWebGateway() interface{}
+	SetSecureWebGateway(val interface{})
+	SecureWebGatewayInput() interface{}
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -144,9 +151,11 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	ResetAccountId()
 	ResetAuthCredentials()
 	ResetDescription()
+	ResetIsSharedOauthCallbackEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecureWebGateway()
 	ResetUpdatedPrompts()
 	ResetUpdatedTools()
 	SynthesizeAttributes() *map[string]interface{}
@@ -336,6 +345,16 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Error() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ErrorDetails() ZeroTrustAccessAiControlsMcpServerErrorDetailsOutputReference {
+	var returns ZeroTrustAccessAiControlsMcpServerErrorDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"errorDetails",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -401,6 +420,26 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) IsSharedOauthCallbackEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSharedOauthCallbackEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) IsSharedOauthCallbackEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSharedOauthCallbackEnabledInput",
 		&returns,
 	)
 	return returns
@@ -526,6 +565,26 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) SecureWebGateway() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secureWebGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) SecureWebGatewayInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secureWebGatewayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -617,7 +676,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) UpdatedToolsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
 func NewZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpServerConfig) ZeroTrustAccessAiControlsMcpServer {
 	_init_.Initialize()
 
@@ -635,7 +694,7 @@ func NewZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
 func NewZeroTrustAccessAiControlsMcpServer_Override(z ZeroTrustAccessAiControlsMcpServer, scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpServerConfig) {
 	_init_.Initialize()
 
@@ -750,6 +809,17 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetIsSharedOauthCallbackEnabled(val interface{}) {
+	if err := j.validateSetIsSharedOauthCallbackEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSharedOauthCallbackEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -787,6 +857,17 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer)SetSecureWebGateway(val interface{}) {
+	if err := j.validateSetSecureWebGatewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secureWebGateway",
 		val,
 	)
 }
@@ -1190,10 +1271,26 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ResetDescription() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ResetIsSharedOauthCallbackEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIsSharedOauthCallbackEnabled",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) ResetSecureWebGateway() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSecureWebGateway",
 		nil, // no parameters
 	)
 }

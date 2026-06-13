@@ -79,6 +79,10 @@ func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) validateSetPersistP
 	return nil
 }
 
+func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) validateSetPropagationPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerObservabilityTracesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

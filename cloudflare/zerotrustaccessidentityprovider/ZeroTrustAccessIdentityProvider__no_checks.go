@@ -123,6 +123,14 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) validateSetReadOnlyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) validateSetSamlCertificateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) validateSetTypeParameters(val *string) error {
 	return nil
 }

@@ -12,14 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
 type EmailSecurityTrustedDomains interface {
 	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	Body() EmailSecurityTrustedDomainsBodyList
-	BodyInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	Comments() *string
@@ -48,7 +46,7 @@ type EmailSecurityTrustedDomains interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *float64
+	Id() *string
 	IsRecent() interface{}
 	SetIsRecent(val interface{})
 	IsRecentInput() interface{}
@@ -63,6 +61,7 @@ type EmailSecurityTrustedDomains interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
 	Pattern() *string
@@ -127,9 +126,7 @@ type EmailSecurityTrustedDomains interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutBody(value interface{})
 	ResetAccountId()
-	ResetBody()
 	ResetComments()
 	ResetIsRecent()
 	ResetIsRegex()
@@ -137,7 +134,6 @@ type EmailSecurityTrustedDomains interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPattern()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -180,26 +176,6 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailSecurityTrustedDomains) Body() EmailSecurityTrustedDomainsBodyList {
-	var returns EmailSecurityTrustedDomainsBodyList
-	_jsii_.Get(
-		j,
-		"body",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailSecurityTrustedDomains) BodyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"bodyInput",
 		&returns,
 	)
 	return returns
@@ -315,8 +291,8 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailSecurityTrustedDomains) Id() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmailSecurityTrustedDomains) Id() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
@@ -400,6 +376,16 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) Lifecycle() *cdktn.TerraformReso
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailSecurityTrustedDomains) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
 		&returns,
 	)
 	return returns
@@ -496,7 +482,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) EmailSecurityTrustedDomains {
 	_init_.Initialize()
 
@@ -514,7 +500,7 @@ func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains_Override(e EmailSecurityTrustedDomains, scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) {
 	_init_.Initialize()
 
@@ -1012,29 +998,10 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) OverrideLogicalId(newLogicalId *
 	)
 }
 
-func (e *jsiiProxy_EmailSecurityTrustedDomains) PutBody(value interface{}) {
-	if err := e.validatePutBodyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		e,
-		"putBody",
-		[]interface{}{value},
-	)
-}
-
 func (e *jsiiProxy_EmailSecurityTrustedDomains) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EmailSecurityTrustedDomains) ResetBody() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetBody",
 		nil, // no parameters
 	)
 }
@@ -1075,14 +1042,6 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EmailSecurityTrustedDomains) ResetPattern() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetPattern",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,7 @@ type DataCloudflareZeroTrustNetworkHostnameRoutesResultOutputReference interface
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TunnelId() *string
 	TunnelName() *string
+	TunType() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -221,6 +222,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoutesResultOutputRefer
 	_jsii_.Get(
 		j,
 		"tunnelName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoutesResultOutputReference) TunType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunType",
 		&returns,
 	)
 	return returns

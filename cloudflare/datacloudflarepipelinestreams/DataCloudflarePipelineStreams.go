@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pipeline_streams cloudflare_pipeline_streams}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pipeline_streams cloudflare_pipeline_streams}.
 type DataCloudflarePipelineStreams interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -45,6 +45,9 @@ type DataCloudflarePipelineStreams interface {
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	PipelineId() *string
@@ -90,6 +93,7 @@ type DataCloudflarePipelineStreams interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
 	ResetMaxItems()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -242,6 +246,26 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams) MaxItemsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineStreams) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreams) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineStreams) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -333,7 +357,7 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pipeline_streams cloudflare_pipeline_streams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pipeline_streams cloudflare_pipeline_streams} Data Source.
 func NewDataCloudflarePipelineStreams(scope constructs.Construct, id *string, config *DataCloudflarePipelineStreamsConfig) DataCloudflarePipelineStreams {
 	_init_.Initialize()
 
@@ -351,7 +375,7 @@ func NewDataCloudflarePipelineStreams(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pipeline_streams cloudflare_pipeline_streams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pipeline_streams cloudflare_pipeline_streams} Data Source.
 func NewDataCloudflarePipelineStreams_Override(d DataCloudflarePipelineStreams, scope constructs.Construct, id *string, config *DataCloudflarePipelineStreamsConfig) {
 	_init_.Initialize()
 
@@ -418,6 +442,17 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams)SetMaxItems(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreams)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -738,6 +773,14 @@ func (d *jsiiProxy_DataCloudflarePipelineStreams) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaxItems",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflarePipelineStreams) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
 		nil, // no parameters
 	)
 }

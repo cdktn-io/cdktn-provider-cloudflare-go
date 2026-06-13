@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/pipeline_stream cloudflare_pipeline_stream}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline_stream cloudflare_pipeline_stream}.
 type PipelineStream interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -493,7 +493,7 @@ func (j *jsiiProxy_PipelineStream) WorkerBindingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/pipeline_stream cloudflare_pipeline_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline_stream cloudflare_pipeline_stream} Resource.
 func NewPipelineStream(scope constructs.Construct, id *string, config *PipelineStreamConfig) PipelineStream {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewPipelineStream(scope constructs.Construct, id *string, config *PipelineS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/pipeline_stream cloudflare_pipeline_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline_stream cloudflare_pipeline_stream} Resource.
 func NewPipelineStream_Override(p PipelineStream, scope constructs.Construct, id *string, config *PipelineStreamConfig) {
 	_init_.Initialize()
 

@@ -139,6 +139,10 @@ func (j *jsiiProxy_AiSearchInstance) validateSetCacheThresholdParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AiSearchInstance) validateSetCacheTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiSearchInstance) validateSetChunkParameters(val interface{}) error {
 	return nil
 }

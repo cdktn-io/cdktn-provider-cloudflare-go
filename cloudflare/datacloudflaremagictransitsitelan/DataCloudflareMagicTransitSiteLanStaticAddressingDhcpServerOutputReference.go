@@ -28,6 +28,7 @@ type DataCloudflareMagicTransitSiteLanStaticAddressingDhcpServerOutputReference 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DhcpOptions() DataCloudflareMagicTransitSiteLanStaticAddressingDhcpServerDhcpOptionsList
 	DhcpPoolEnd() *string
 	DhcpPoolStart() *string
 	DnsServer() *string
@@ -109,6 +110,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLanStaticAddressingDhcpServerOu
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLanStaticAddressingDhcpServerOutputReference) DhcpOptions() DataCloudflareMagicTransitSiteLanStaticAddressingDhcpServerDhcpOptionsList {
+	var returns DataCloudflareMagicTransitSiteLanStaticAddressingDhcpServerDhcpOptionsList
+	_jsii_.Get(
+		j,
+		"dhcpOptions",
 		&returns,
 	)
 	return returns

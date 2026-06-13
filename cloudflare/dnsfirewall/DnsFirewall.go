@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall cloudflare_dns_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall cloudflare_dns_firewall}.
 type DnsFirewall interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -39,6 +39,9 @@ type DnsFirewall interface {
 	DeprecateAnyRequests() interface{}
 	SetDeprecateAnyRequests(val interface{})
 	DeprecateAnyRequestsInput() interface{}
+	DnsFirewallIpCount() *float64
+	SetDnsFirewallIpCount(val *float64)
+	DnsFirewallIpCountInput() *float64
 	DnsFirewallIps() *[]*string
 	EcsFallback() interface{}
 	SetEcsFallback(val interface{})
@@ -143,6 +146,7 @@ type DnsFirewall interface {
 	ResetAccountId()
 	ResetAttackMitigation()
 	ResetDeprecateAnyRequests()
+	ResetDnsFirewallIpCount()
 	ResetEcsFallback()
 	ResetMaximumCacheTtl()
 	ResetMinimumCacheTtl()
@@ -284,6 +288,26 @@ func (j *jsiiProxy_DnsFirewall) DeprecateAnyRequestsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"deprecateAnyRequestsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsFirewall) DnsFirewallIpCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dnsFirewallIpCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsFirewall) DnsFirewallIpCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dnsFirewallIpCountInput",
 		&returns,
 	)
 	return returns
@@ -590,7 +614,7 @@ func (j *jsiiProxy_DnsFirewall) UpstreamIpsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
 func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallConfig) DnsFirewall {
 	_init_.Initialize()
 
@@ -608,7 +632,7 @@ func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
 func NewDnsFirewall_Override(d DnsFirewall, scope constructs.Construct, id *string, config *DnsFirewallConfig) {
 	_init_.Initialize()
 
@@ -667,6 +691,17 @@ func (j *jsiiProxy_DnsFirewall)SetDeprecateAnyRequests(val interface{}) {
 	_jsii_.Set(
 		j,
 		"deprecateAnyRequests",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DnsFirewall)SetDnsFirewallIpCount(val *float64) {
+	if err := j.validateSetDnsFirewallIpCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsFirewallIpCount",
 		val,
 	)
 }
@@ -1181,6 +1216,14 @@ func (d *jsiiProxy_DnsFirewall) ResetDeprecateAnyRequests() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDeprecateAnyRequests",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsFirewall) ResetDnsFirewallIpCount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDnsFirewallIpCount",
 		nil, // no parameters
 	)
 }

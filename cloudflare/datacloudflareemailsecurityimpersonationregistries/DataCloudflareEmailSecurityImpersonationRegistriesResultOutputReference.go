@@ -36,11 +36,12 @@ type DataCloudflareEmailSecurityImpersonationRegistriesResultOutputReference int
 	ExternalDirectoryNodeId() *string
 	// Experimental.
 	Fqn() *string
-	Id() *float64
+	Id() *string
 	InternalValue() *DataCloudflareEmailSecurityImpersonationRegistriesResult
 	SetInternalValue(val *DataCloudflareEmailSecurityImpersonationRegistriesResult)
 	IsEmailRegex() cdktn.IResolvable
 	LastModified() *string
+	ModifiedAt() *string
 	Name() *string
 	Provenance() *string
 	// Experimental.
@@ -190,8 +191,8 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistriesResultOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistriesResultOutputReference) Id() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistriesResultOutputReference) Id() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
@@ -225,6 +226,16 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistriesResultOutpu
 	_jsii_.Get(
 		j,
 		"lastModified",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistriesResultOutputReference) ModifiedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedAt",
 		&returns,
 	)
 	return returns

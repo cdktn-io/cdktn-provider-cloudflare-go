@@ -22,19 +22,22 @@ type EmailSecurityBlockSenderConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}.
 	IsRegex interface{} `field:"required" json:"isRegex" yaml:"isRegex"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}.
 	Pattern *string `field:"required" json:"pattern" yaml:"pattern"`
+	// Type of pattern matching.
+	//
+	// Note: UNKNOWN is deprecated and cannot be used when creating or updating policies, but may be returned for existing entries.
 	// Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
 	PatternType *string `field:"required" json:"patternType" yaml:"patternType"`
-	// Account Identifier.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
 	Comments *string `field:"optional" json:"comments" yaml:"comments"`
 }
 

@@ -75,6 +75,10 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutDnsSearchSuffixesParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutExcludeParameters(value interface{}) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutIncludeParameters(v
 }
 
 func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutServiceModeV2Parameters(value *ZeroTrustDeviceDefaultProfileServiceModeV2) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutVirtualNetworksParameters(value *ZeroTrustDeviceDefaultProfileVirtualNetworks) error {
 	return nil
 }
 

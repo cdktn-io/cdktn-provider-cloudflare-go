@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectors) validateSetCountParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectors) validateSetDeviceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareMagicTransitConnectors) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

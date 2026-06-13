@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) validateSetPipelineIdParameters(val *string) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package pipelinestream
 
 
 type PipelineStreamHttpCors struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/pipeline_stream#origins PipelineStream#origins}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline_stream#origins PipelineStream#origins}.
 	Origins *[]*string `field:"optional" json:"origins" yaml:"origins"`
 }
 

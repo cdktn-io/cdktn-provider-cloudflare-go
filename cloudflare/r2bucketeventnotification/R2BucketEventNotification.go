@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
 type R2BucketEventNotification interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -120,7 +120,6 @@ type R2BucketEventNotification interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRules(value interface{})
-	ResetAccountId()
 	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -423,7 +422,7 @@ func (j *jsiiProxy_R2BucketEventNotification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
 func NewR2BucketEventNotification(scope constructs.Construct, id *string, config *R2BucketEventNotificationConfig) R2BucketEventNotification {
 	_init_.Initialize()
 
@@ -441,7 +440,7 @@ func NewR2BucketEventNotification(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
 func NewR2BucketEventNotification_Override(r R2BucketEventNotification, scope constructs.Construct, id *string, config *R2BucketEventNotificationConfig) {
 	_init_.Initialize()
 
@@ -925,14 +924,6 @@ func (r *jsiiProxy_R2BucketEventNotification) PutRules(value interface{}) {
 		r,
 		"putRules",
 		[]interface{}{value},
-	)
-}
-
-func (r *jsiiProxy_R2BucketEventNotification) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

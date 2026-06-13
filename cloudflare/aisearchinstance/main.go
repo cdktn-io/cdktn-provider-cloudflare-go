@@ -26,6 +26,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cacheInput", GoGetter: "CacheInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheThreshold", GoGetter: "CacheThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheThresholdInput", GoGetter: "CacheThresholdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cacheTtl", GoGetter: "CacheTtl"},
+			_jsii_.MemberProperty{JsiiProperty: "cacheTtlInput", GoGetter: "CacheTtlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "chunk", GoGetter: "Chunk"},
 			_jsii_.MemberProperty{JsiiProperty: "chunkInput", GoGetter: "ChunkInput"},
@@ -107,6 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAisearchModel", GoMethod: "ResetAisearchModel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCache", GoMethod: "ResetCache"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCacheThreshold", GoMethod: "ResetCacheThreshold"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCacheTtl", GoMethod: "ResetCacheTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChunk", GoMethod: "ResetChunk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChunkOverlap", GoMethod: "ResetChunkOverlap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChunkSize", GoMethod: "ResetChunkSize"},
@@ -356,13 +359,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putSearchForAgents", GoMethod: "PutSearchForAgents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreatedFromAisearchWizard", GoMethod: "ResetCreatedFromAisearchWizard"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSearchForAgents", GoMethod: "ResetSearchForAgents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkerDomain", GoMethod: "ResetWorkerDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "searchForAgents", GoGetter: "SearchForAgents"},
-			_jsii_.MemberProperty{JsiiProperty: "searchForAgentsInput", GoGetter: "SearchForAgentsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -371,48 +370,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AiSearchInstanceMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktn/provider-cloudflare.aiSearchInstance.AiSearchInstanceMetadataSearchForAgents",
-		reflect.TypeOf((*AiSearchInstanceMetadataSearchForAgents)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktn/provider-cloudflare.aiSearchInstance.AiSearchInstanceMetadataSearchForAgentsOutputReference",
-		reflect.TypeOf((*AiSearchInstanceMetadataSearchForAgentsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hostname", GoGetter: "Hostname"},
-			_jsii_.MemberProperty{JsiiProperty: "hostnameInput", GoGetter: "HostnameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneName", GoGetter: "ZoneName"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneNameInput", GoGetter: "ZoneNameInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AiSearchInstanceMetadataSearchForAgentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -751,7 +751,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -769,7 +769,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 

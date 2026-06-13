@@ -57,6 +57,9 @@ type DataCloudflareZoneFilterOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Type() *[]*string
+	SetType(val *[]*string)
+	TypeInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -88,6 +91,7 @@ type DataCloudflareZoneFilterOutputReference interface {
 	ResetName()
 	ResetOrder()
 	ResetStatus()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -293,6 +297,26 @@ func (j *jsiiProxy_DataCloudflareZoneFilterOutputReference) TerraformResource() 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZoneFilterOutputReference) Type() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZoneFilterOutputReference) TypeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataCloudflareZoneFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataCloudflareZoneFilterOutputReference {
 	_init_.Initialize()
@@ -427,6 +451,17 @@ func (j *jsiiProxy_DataCloudflareZoneFilterOutputReference)SetTerraformResource(
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZoneFilterOutputReference)SetType(val *[]*string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -672,6 +707,14 @@ func (d *jsiiProxy_DataCloudflareZoneFilterOutputReference) ResetStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZoneFilterOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetType",
 		nil, // no parameters
 	)
 }

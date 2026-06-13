@@ -29,7 +29,7 @@ type SchemaValidationSettingsConfig struct {
 	//   - `"none"` - skip running schema validation
 	// Available values: "none", "log", "block".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
 	ValidationDefaultMitigationAction *string `field:"required" json:"validationDefaultMitigationAction" yaml:"validationDefaultMitigationAction"`
 	// When set, this overrides both zone level and operation level mitigation actions.
 	//
@@ -37,11 +37,11 @@ type SchemaValidationSettingsConfig struct {
 	//   - `null` - clears any existing override
 	// Available values: "none".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
 	ValidationOverrideMitigationAction *string `field:"optional" json:"validationOverrideMitigationAction" yaml:"validationOverrideMitigationAction"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

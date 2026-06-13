@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
 type DataCloudflareZeroTrustAccessIdentityProvider interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -58,6 +58,9 @@ type DataCloudflareZeroTrustAccessIdentityProvider interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ReadOnly() cdktn.IResolvable
+	SamlCertificateSet() DataCloudflareZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference
+	SamlCertificateSetId() *string
 	ScimConfig() DataCloudflareZeroTrustAccessIdentityProviderScimConfigOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -330,6 +333,36 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) RawOverrides()
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ReadOnly() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) SamlCertificateSet() DataCloudflareZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference {
+	var returns DataCloudflareZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference
+	_jsii_.Get(
+		j,
+		"samlCertificateSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) SamlCertificateSetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"samlCertificateSetId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ScimConfig() DataCloudflareZeroTrustAccessIdentityProviderScimConfigOutputReference {
 	var returns DataCloudflareZeroTrustAccessIdentityProviderScimConfigOutputReference
 	_jsii_.Get(
@@ -401,7 +434,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ZoneIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
 func NewDataCloudflareZeroTrustAccessIdentityProvider(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessIdentityProviderConfig) DataCloudflareZeroTrustAccessIdentityProvider {
 	_init_.Initialize()
 
@@ -419,7 +452,7 @@ func NewDataCloudflareZeroTrustAccessIdentityProvider(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
 func NewDataCloudflareZeroTrustAccessIdentityProvider_Override(d DataCloudflareZeroTrustAccessIdentityProvider, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessIdentityProviderConfig) {
 	_init_.Initialize()
 

@@ -207,6 +207,37 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutDnsSearchSuffixesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ZeroTrustDeviceCustomProfileDnsSearchSuffixes:
+		value := value.(*[]*ZeroTrustDeviceCustomProfileDnsSearchSuffixes)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ZeroTrustDeviceCustomProfileDnsSearchSuffixes:
+		value_ := value.([]*ZeroTrustDeviceCustomProfileDnsSearchSuffixes)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ZeroTrustDeviceCustomProfileDnsSearchSuffixes; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutExcludeParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -270,6 +301,17 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutIncludeParameters(va
 }
 
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutServiceModeV2Parameters(value *ZeroTrustDeviceCustomProfileServiceModeV2) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutVirtualNetworksParameters(value *ZeroTrustDeviceCustomProfileVirtualNetworks) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

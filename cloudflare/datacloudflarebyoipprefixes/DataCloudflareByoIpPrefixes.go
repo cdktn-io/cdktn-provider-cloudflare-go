@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes}.
 type DataCloudflareByoIpPrefixes interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixes) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes} Data Source.
 func NewDataCloudflareByoIpPrefixes(scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixesConfig) DataCloudflareByoIpPrefixes {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareByoIpPrefixes(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/byo_ip_prefixes cloudflare_byo_ip_prefixes} Data Source.
 func NewDataCloudflareByoIpPrefixes_Override(d DataCloudflareByoIpPrefixes, scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixesConfig) {
 	_init_.Initialize()
 

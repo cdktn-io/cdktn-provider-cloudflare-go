@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker_version cloudflare_worker_version}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker_version cloudflare_worker_version}.
 type WorkerVersion interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -718,7 +718,7 @@ func (j *jsiiProxy_WorkerVersion) WorkerIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVersionConfig) WorkerVersion {
 	_init_.Initialize()
 
@@ -736,7 +736,7 @@ func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVers
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion_Override(w WorkerVersion, scope constructs.Construct, id *string, config *WorkerVersionConfig) {
 	_init_.Initialize()
 

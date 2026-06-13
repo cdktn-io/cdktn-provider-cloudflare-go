@@ -58,7 +58,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "readyToStream", GoGetter: "ReadyToStream"},
 			_jsii_.MemberProperty{JsiiProperty: "readyToStreamAt", GoGetter: "ReadyToStreamAt"},
 			_jsii_.MemberProperty{JsiiProperty: "requireSignedUrls", GoGetter: "RequireSignedUrls"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "scheduledDeletion", GoGetter: "ScheduledDeletion"},
 			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},

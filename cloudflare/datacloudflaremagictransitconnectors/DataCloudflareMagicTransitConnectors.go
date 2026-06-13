@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors}.
 type DataCloudflareMagicTransitConnectors interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -30,6 +30,9 @@ type DataCloudflareMagicTransitConnectors interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeviceType() *string
+	SetDeviceType(val *string)
+	DeviceTypeInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -86,6 +89,7 @@ type DataCloudflareMagicTransitConnectors interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
+	ResetDeviceType()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -173,6 +177,26 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectors) DependsOn() *[]*string 
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectors) DeviceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectors) DeviceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceTypeInput",
 		&returns,
 	)
 	return returns
@@ -309,7 +333,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectors) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors} Data Source.
 func NewDataCloudflareMagicTransitConnectors(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorsConfig) DataCloudflareMagicTransitConnectors {
 	_init_.Initialize()
 
@@ -327,7 +351,7 @@ func NewDataCloudflareMagicTransitConnectors(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors} Data Source.
 func NewDataCloudflareMagicTransitConnectors_Override(d DataCloudflareMagicTransitConnectors, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorsConfig) {
 	_init_.Initialize()
 
@@ -364,6 +388,17 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectors)SetDependsOn(val *[]*str
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitConnectors)SetDeviceType(val *string) {
+	if err := j.validateSetDeviceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deviceType",
 		val,
 	)
 }
@@ -695,6 +730,14 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnectors) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareMagicTransitConnectors) ResetDeviceType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDeviceType",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector}.
 type DataCloudflareMagicTransitConnector interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -35,6 +35,8 @@ type DataCloudflareMagicTransitConnector interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Device() DataCloudflareMagicTransitConnectorDeviceOutputReference
+	Filter() DataCloudflareMagicTransitConnectorFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -97,7 +99,10 @@ type DataCloudflareMagicTransitConnector interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareMagicTransitConnectorFilter)
 	ResetAccountId()
+	ResetConnectorId()
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -224,6 +229,26 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnector) Device() DataCloudflareM
 	_jsii_.Get(
 		j,
 		"device",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitConnector) Filter() DataCloudflareMagicTransitConnectorFilterOutputReference {
+	var returns DataCloudflareMagicTransitConnectorFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitConnector) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -440,7 +465,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnector) Timezone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
 func NewDataCloudflareMagicTransitConnector(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorConfig) DataCloudflareMagicTransitConnector {
 	_init_.Initialize()
 
@@ -458,7 +483,7 @@ func NewDataCloudflareMagicTransitConnector(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source.
 func NewDataCloudflareMagicTransitConnector_Override(d DataCloudflareMagicTransitConnector, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorConfig) {
 	_init_.Initialize()
 
@@ -822,10 +847,37 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnector) OverrideLogicalId(newLog
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareMagicTransitConnector) PutFilter(value *DataCloudflareMagicTransitConnectorFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareMagicTransitConnector) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareMagicTransitConnector) ResetConnectorId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConnectorId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareMagicTransitConnector) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
 		nil, // no parameters
 	)
 }

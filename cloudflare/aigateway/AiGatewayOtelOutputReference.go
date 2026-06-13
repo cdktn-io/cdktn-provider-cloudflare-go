@@ -76,6 +76,7 @@ type AiGatewayOtelOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetAuthorization()
 	ResetContentType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -553,6 +554,14 @@ func (a *jsiiProxy_AiGatewayOtelOutputReference) InterpolationForAttribute(terra
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AiGatewayOtelOutputReference) ResetAuthorization() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthorization",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AiGatewayOtelOutputReference) ResetContentType() {

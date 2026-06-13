@@ -36,6 +36,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	Default() cdktn.IResolvable
 	Description() *string
 	DisableAutoFallback() cdktn.IResolvable
+	DnsSearchSuffixes() DataCloudflareZeroTrustDeviceCustomProfilesResultDnsSearchSuffixesList
 	Enabled() cdktn.IResolvable
 	Exclude() DataCloudflareZeroTrustDeviceCustomProfilesResultExcludeList
 	ExcludeOfficeIps() cdktn.IResolvable
@@ -68,6 +69,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TunnelProtocol() *string
+	VirtualNetworks() DataCloudflareZeroTrustDeviceCustomProfilesResultVirtualNetworksOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -212,6 +214,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"disableAutoFallback",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) DnsSearchSuffixes() DataCloudflareZeroTrustDeviceCustomProfilesResultDnsSearchSuffixesList {
+	var returns DataCloudflareZeroTrustDeviceCustomProfilesResultDnsSearchSuffixesList
+	_jsii_.Get(
+		j,
+		"dnsSearchSuffixes",
 		&returns,
 	)
 	return returns
@@ -452,6 +464,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"tunnelProtocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) VirtualNetworks() DataCloudflareZeroTrustDeviceCustomProfilesResultVirtualNetworksOutputReference {
+	var returns DataCloudflareZeroTrustDeviceCustomProfilesResultVirtualNetworksOutputReference
+	_jsii_.Get(
+		j,
+		"virtualNetworks",
 		&returns,
 	)
 	return returns

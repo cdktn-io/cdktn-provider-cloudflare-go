@@ -28,6 +28,8 @@ type MagicTransitSiteLanStaticAddressingDhcpServerOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DhcpOptions() MagicTransitSiteLanStaticAddressingDhcpServerDhcpOptionsList
+	DhcpOptionsInput() interface{}
 	DhcpPoolEnd() *string
 	SetDhcpPoolEnd(val *string)
 	DhcpPoolEndInput() *string
@@ -79,6 +81,8 @@ type MagicTransitSiteLanStaticAddressingDhcpServerOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutDhcpOptions(value interface{})
+	ResetDhcpOptions()
 	ResetDhcpPoolEnd()
 	ResetDhcpPoolStart()
 	ResetDnsServer()
@@ -124,6 +128,26 @@ func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) DhcpOptions() MagicTransitSiteLanStaticAddressingDhcpServerDhcpOptionsList {
+	var returns MagicTransitSiteLanStaticAddressingDhcpServerDhcpOptionsList
+	_jsii_.Get(
+		j,
+		"dhcpOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) DhcpOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dhcpOptionsInput",
 		&returns,
 	)
 	return returns
@@ -591,6 +615,25 @@ func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) PutDhcpOptions(value interface{}) {
+	if err := m.validatePutDhcpOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDhcpOptions",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) ResetDhcpOptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDhcpOptions",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) ResetDhcpPoolEnd() {

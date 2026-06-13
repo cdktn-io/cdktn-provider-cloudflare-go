@@ -35,6 +35,9 @@ type DataCloudflareZeroTrustAccessIdentityProvidersResultOutputReference interfa
 	InternalValue() *DataCloudflareZeroTrustAccessIdentityProvidersResult
 	SetInternalValue(val *DataCloudflareZeroTrustAccessIdentityProvidersResult)
 	Name() *string
+	ReadOnly() cdktn.IResolvable
+	SamlCertificateSet() DataCloudflareZeroTrustAccessIdentityProvidersResultSamlCertificateSetOutputReference
+	SamlCertificateSetId() *string
 	ScimConfig() DataCloudflareZeroTrustAccessIdentityProvidersResultScimConfigOutputReference
 	// Experimental.
 	TerraformAttribute() *string
@@ -159,6 +162,36 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultOutputRef
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultOutputReference) ReadOnly() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultOutputReference) SamlCertificateSet() DataCloudflareZeroTrustAccessIdentityProvidersResultSamlCertificateSetOutputReference {
+	var returns DataCloudflareZeroTrustAccessIdentityProvidersResultSamlCertificateSetOutputReference
+	_jsii_.Get(
+		j,
+		"samlCertificateSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultOutputReference) SamlCertificateSetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"samlCertificateSetId",
 		&returns,
 	)
 	return returns

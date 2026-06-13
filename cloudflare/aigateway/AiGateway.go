@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway cloudflare_ai_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway cloudflare_ai_gateway}.
 type AiGateway interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -57,6 +57,8 @@ type AiGateway interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Guardrails() AiGatewayGuardrailsOutputReference
+	GuardrailsInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -110,6 +112,8 @@ type AiGateway interface {
 	RetryMaxAttempts() *float64
 	SetRetryMaxAttempts(val *float64)
 	RetryMaxAttemptsInput() *float64
+	SpendLimits() AiGatewaySpendLimitsOutputReference
+	SpendLimitsInput() interface{}
 	StoreId() *string
 	SetStoreId(val *string)
 	StoreIdInput() *string
@@ -171,11 +175,14 @@ type AiGateway interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDlp(value *AiGatewayDlp)
+	PutGuardrails(value *AiGatewayGuardrails)
 	PutOtel(value interface{})
+	PutSpendLimits(value *AiGatewaySpendLimits)
 	PutStripe(value *AiGatewayStripe)
 	ResetAccountId()
 	ResetAuthentication()
 	ResetDlp()
+	ResetGuardrails()
 	ResetLogManagement()
 	ResetLogManagementStrategy()
 	ResetLogpush()
@@ -188,6 +195,7 @@ type AiGateway interface {
 	ResetRetryBackoff()
 	ResetRetryDelay()
 	ResetRetryMaxAttempts()
+	ResetSpendLimits()
 	ResetStoreId()
 	ResetStripe()
 	ResetWorkersAiBillingMode()
@@ -424,6 +432,26 @@ func (j *jsiiProxy_AiGateway) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGateway) Guardrails() AiGatewayGuardrailsOutputReference {
+	var returns AiGatewayGuardrailsOutputReference
+	_jsii_.Get(
+		j,
+		"guardrails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGateway) GuardrailsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"guardrailsInput",
 		&returns,
 	)
 	return returns
@@ -739,6 +767,26 @@ func (j *jsiiProxy_AiGateway) RetryMaxAttemptsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_AiGateway) SpendLimits() AiGatewaySpendLimitsOutputReference {
+	var returns AiGatewaySpendLimitsOutputReference
+	_jsii_.Get(
+		j,
+		"spendLimits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGateway) SpendLimitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"spendLimitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AiGateway) StoreId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -850,7 +898,7 @@ func (j *jsiiProxy_AiGateway) ZdrInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
 func NewAiGateway(scope constructs.Construct, id *string, config *AiGatewayConfig) AiGateway {
 	_init_.Initialize()
 
@@ -868,7 +916,7 @@ func NewAiGateway(scope constructs.Construct, id *string, config *AiGatewayConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
 func NewAiGateway_Override(a AiGateway, scope constructs.Construct, id *string, config *AiGatewayConfig) {
 	_init_.Initialize()
 
@@ -1520,6 +1568,17 @@ func (a *jsiiProxy_AiGateway) PutDlp(value *AiGatewayDlp) {
 	)
 }
 
+func (a *jsiiProxy_AiGateway) PutGuardrails(value *AiGatewayGuardrails) {
+	if err := a.validatePutGuardrailsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putGuardrails",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiGateway) PutOtel(value interface{}) {
 	if err := a.validatePutOtelParameters(value); err != nil {
 		panic(err)
@@ -1527,6 +1586,17 @@ func (a *jsiiProxy_AiGateway) PutOtel(value interface{}) {
 	_jsii_.InvokeVoid(
 		a,
 		"putOtel",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AiGateway) PutSpendLimits(value *AiGatewaySpendLimits) {
+	if err := a.validatePutSpendLimitsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSpendLimits",
 		[]interface{}{value},
 	)
 }
@@ -1562,6 +1632,14 @@ func (a *jsiiProxy_AiGateway) ResetDlp() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDlp",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiGateway) ResetGuardrails() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGuardrails",
 		nil, // no parameters
 	)
 }
@@ -1642,6 +1720,14 @@ func (a *jsiiProxy_AiGateway) ResetRetryMaxAttempts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRetryMaxAttempts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiGateway) ResetSpendLimits() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSpendLimits",
 		nil, // no parameters
 	)
 }

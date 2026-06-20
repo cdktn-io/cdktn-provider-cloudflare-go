@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
 type CallsSfuApp interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -117,7 +117,6 @@ type CallsSfuApp interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetAppId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -411,7 +410,7 @@ func (j *jsiiProxy_CallsSfuApp) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app} Resource.
 func NewCallsSfuApp(scope constructs.Construct, id *string, config *CallsSfuAppConfig) CallsSfuApp {
 	_init_.Initialize()
 
@@ -429,7 +428,7 @@ func NewCallsSfuApp(scope constructs.Construct, id *string, config *CallsSfuAppC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app} Resource.
 func NewCallsSfuApp_Override(c CallsSfuApp, scope constructs.Construct, id *string, config *CallsSfuAppConfig) {
 	_init_.Initialize()
 
@@ -891,14 +890,6 @@ func (c *jsiiProxy_CallsSfuApp) OverrideLogicalId(newLogicalId *string) {
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (c *jsiiProxy_CallsSfuApp) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

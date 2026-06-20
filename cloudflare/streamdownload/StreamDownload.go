@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_download cloudflare_stream_download}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_download cloudflare_stream_download}.
 type StreamDownload interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -112,7 +112,6 @@ type StreamDownload interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -364,7 +363,7 @@ func (j *jsiiProxy_StreamDownload) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_download cloudflare_stream_download} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_download cloudflare_stream_download} Resource.
 func NewStreamDownload(scope constructs.Construct, id *string, config *StreamDownloadConfig) StreamDownload {
 	_init_.Initialize()
 
@@ -382,7 +381,7 @@ func NewStreamDownload(scope constructs.Construct, id *string, config *StreamDow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_download cloudflare_stream_download} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_download cloudflare_stream_download} Resource.
 func NewStreamDownload_Override(s StreamDownload, scope constructs.Construct, id *string, config *StreamDownloadConfig) {
 	_init_.Initialize()
 
@@ -833,14 +832,6 @@ func (s *jsiiProxy_StreamDownload) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (s *jsiiProxy_StreamDownload) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site cloudflare_magic_transit_site}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site cloudflare_magic_transit_site}.
 type MagicTransitSite interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -126,7 +126,6 @@ type MagicTransitSite interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLocation(value *MagicTransitSiteLocation)
-	ResetAccountId()
 	ResetConnectorId()
 	ResetDescription()
 	ResetHaMode()
@@ -473,7 +472,7 @@ func (j *jsiiProxy_MagicTransitSite) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site cloudflare_magic_transit_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site cloudflare_magic_transit_site} Resource.
 func NewMagicTransitSite(scope constructs.Construct, id *string, config *MagicTransitSiteConfig) MagicTransitSite {
 	_init_.Initialize()
 
@@ -491,7 +490,7 @@ func NewMagicTransitSite(scope constructs.Construct, id *string, config *MagicTr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site cloudflare_magic_transit_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site cloudflare_magic_transit_site} Resource.
 func NewMagicTransitSite_Override(m MagicTransitSite, scope constructs.Construct, id *string, config *MagicTransitSiteConfig) {
 	_init_.Initialize()
 
@@ -997,14 +996,6 @@ func (m *jsiiProxy_MagicTransitSite) PutLocation(value *MagicTransitSiteLocation
 		m,
 		"putLocation",
 		[]interface{}{value},
-	)
-}
-
-func (m *jsiiProxy_MagicTransitSite) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

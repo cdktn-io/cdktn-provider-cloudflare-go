@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
 type DnsZoneTransfersOutgoing interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -121,7 +121,6 @@ type DnsZoneTransfersOutgoing interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -420,7 +419,7 @@ func (j *jsiiProxy_DnsZoneTransfersOutgoing) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Resource.
 func NewDnsZoneTransfersOutgoing(scope constructs.Construct, id *string, config *DnsZoneTransfersOutgoingConfig) DnsZoneTransfersOutgoing {
 	_init_.Initialize()
 
@@ -438,7 +437,7 @@ func NewDnsZoneTransfersOutgoing(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Resource.
 func NewDnsZoneTransfersOutgoing_Override(d DnsZoneTransfersOutgoing, scope constructs.Construct, id *string, config *DnsZoneTransfersOutgoingConfig) {
 	_init_.Initialize()
 
@@ -907,14 +906,6 @@ func (d *jsiiProxy_DnsZoneTransfersOutgoing) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DnsZoneTransfersOutgoing) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

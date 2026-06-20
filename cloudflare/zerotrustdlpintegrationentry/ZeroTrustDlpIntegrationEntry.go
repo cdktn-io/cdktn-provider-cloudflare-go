@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry}.
 type ZeroTrustDlpIntegrationEntry interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -130,7 +130,6 @@ type ZeroTrustDlpIntegrationEntry interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -543,7 +542,7 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) WordList() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
 func NewZeroTrustDlpIntegrationEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpIntegrationEntryConfig) ZeroTrustDlpIntegrationEntry {
 	_init_.Initialize()
 
@@ -561,7 +560,7 @@ func NewZeroTrustDlpIntegrationEntry(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
 func NewZeroTrustDlpIntegrationEntry_Override(z ZeroTrustDlpIntegrationEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpIntegrationEntryConfig) {
 	_init_.Initialize()
 
@@ -1034,14 +1033,6 @@ func (z *jsiiProxy_ZeroTrustDlpIntegrationEntry) OverrideLogicalId(newLogicalId 
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDlpIntegrationEntry) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

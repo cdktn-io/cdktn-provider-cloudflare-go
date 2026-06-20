@@ -26,11 +26,11 @@ type CustomOriginTrustStoreConfig struct {
 	//
 	// Only root CA certificates are accepted; intermediate and leaf certificates are not supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
 	Certificate *string `field:"required" json:"certificate" yaml:"certificate"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
-	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
+	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

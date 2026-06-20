@@ -61,7 +61,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putHost", GoMethod: "PutHost"},
 			_jsii_.MemberMethod{JsiiMethod: "putTlsSettings", GoMethod: "PutTlsSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppProtocol", GoMethod: "ResetAppProtocol"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpPort", GoMethod: "ResetHttpPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpsPort", GoMethod: "ResetHttpsPort"},

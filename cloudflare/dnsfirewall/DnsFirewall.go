@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall cloudflare_dns_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall cloudflare_dns_firewall}.
 type DnsFirewall interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -143,7 +143,6 @@ type DnsFirewall interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAttackMitigation(value *DnsFirewallAttackMitigation)
-	ResetAccountId()
 	ResetAttackMitigation()
 	ResetDeprecateAnyRequests()
 	ResetDnsFirewallIpCount()
@@ -614,7 +613,7 @@ func (j *jsiiProxy_DnsFirewall) UpstreamIpsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
 func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallConfig) DnsFirewall {
 	_init_.Initialize()
 
@@ -632,7 +631,7 @@ func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
 func NewDnsFirewall_Override(d DnsFirewall, scope constructs.Construct, id *string, config *DnsFirewallConfig) {
 	_init_.Initialize()
 
@@ -1193,14 +1192,6 @@ func (d *jsiiProxy_DnsFirewall) PutAttackMitigation(value *DnsFirewallAttackMiti
 		d,
 		"putAttackMitigation",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DnsFirewall) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -22,11 +22,11 @@ type DataCloudflareImageVariantConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant#variant_id DataCloudflareImageVariant#variant_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/image_variant#variant_id DataCloudflareImageVariant#variant_id}.
 	VariantId *string `field:"required" json:"variantId" yaml:"variantId"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant#account_id DataCloudflareImageVariant#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/image_variant#account_id DataCloudflareImageVariant#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations}.
 type DataCloudflareMtlsCertificateAssociations interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataCloudflareMtlsCertificateAssociations) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations} Data Source.
 func NewDataCloudflareMtlsCertificateAssociations(scope constructs.Construct, id *string, config *DataCloudflareMtlsCertificateAssociationsConfig) DataCloudflareMtlsCertificateAssociations {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataCloudflareMtlsCertificateAssociations(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations} Data Source.
 func NewDataCloudflareMtlsCertificateAssociations_Override(d DataCloudflareMtlsCertificateAssociations, scope constructs.Construct, id *string, config *DataCloudflareMtlsCertificateAssociationsConfig) {
 	_init_.Initialize()
 

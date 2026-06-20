@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow cloudflare_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workflow cloudflare_workflow}.
 type Workflow interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -131,7 +131,6 @@ type Workflow interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLimits(value *WorkflowLimits)
 	PutSchedules(value interface{})
-	ResetAccountId()
 	ResetLimits()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -535,7 +534,7 @@ func (j *jsiiProxy_Workflow) WorkflowNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig) Workflow {
 	_init_.Initialize()
 
@@ -553,7 +552,7 @@ func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow_Override(w Workflow, scope constructs.Construct, id *string, config *WorkflowConfig) {
 	_init_.Initialize()
 
@@ -1048,14 +1047,6 @@ func (w *jsiiProxy_Workflow) PutSchedules(value interface{}) {
 		w,
 		"putSchedules",
 		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_Workflow) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

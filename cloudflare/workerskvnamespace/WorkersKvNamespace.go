@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
 type WorkersKvNamespace interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -112,7 +112,6 @@ type WorkersKvNamespace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -364,7 +363,7 @@ func (j *jsiiProxy_WorkersKvNamespace) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) WorkersKvNamespace {
 	_init_.Initialize()
 
@@ -382,7 +381,7 @@ func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *Worke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace_Override(w WorkersKvNamespace, scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) {
 	_init_.Initialize()
 
@@ -833,14 +832,6 @@ func (w *jsiiProxy_WorkersKvNamespace) OverrideLogicalId(newLogicalId *string) {
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (w *jsiiProxy_WorkersKvNamespace) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -73,7 +73,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "readyToStreamAt", GoGetter: "ReadyToStreamAt"},
 			_jsii_.MemberProperty{JsiiProperty: "requireSignedUrls", GoGetter: "RequireSignedUrls"},
 			_jsii_.MemberProperty{JsiiProperty: "requireSignedUrlsInput", GoGetter: "RequireSignedUrlsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedOrigins", GoMethod: "ResetAllowedOrigins"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreator", GoMethod: "ResetCreator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIdentifier", GoMethod: "ResetIdentifier"},

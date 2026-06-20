@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy cloudflare_page_shield_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/page_shield_policy cloudflare_page_shield_policy}.
 type PageShieldPolicy interface {
 	cdktn.TerraformResource
 	Action() *string
@@ -126,7 +126,6 @@ type PageShieldPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -445,7 +444,7 @@ func (j *jsiiProxy_PageShieldPolicy) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy cloudflare_page_shield_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/page_shield_policy cloudflare_page_shield_policy} Resource.
 func NewPageShieldPolicy(scope constructs.Construct, id *string, config *PageShieldPolicyConfig) PageShieldPolicy {
 	_init_.Initialize()
 
@@ -463,7 +462,7 @@ func NewPageShieldPolicy(scope constructs.Construct, id *string, config *PageShi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy cloudflare_page_shield_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/page_shield_policy cloudflare_page_shield_policy} Resource.
 func NewPageShieldPolicy_Override(p PageShieldPolicy, scope constructs.Construct, id *string, config *PageShieldPolicyConfig) {
 	_init_.Initialize()
 
@@ -965,14 +964,6 @@ func (p *jsiiProxy_PageShieldPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PageShieldPolicy) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

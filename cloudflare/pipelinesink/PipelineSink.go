@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline_sink cloudflare_pipeline_sink}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_sink cloudflare_pipeline_sink}.
 type PipelineSink interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -125,7 +125,6 @@ type PipelineSink interface {
 	PutConfig(value *PipelineSinkConfigA)
 	PutFormat(value *PipelineSinkFormat)
 	PutSchema(value *PipelineSinkSchema)
-	ResetAccountId()
 	ResetConfig()
 	ResetFormat()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -470,7 +469,7 @@ func (j *jsiiProxy_PipelineSink) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline_sink cloudflare_pipeline_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_sink cloudflare_pipeline_sink} Resource.
 func NewPipelineSink(scope constructs.Construct, id *string, config *PipelineSinkConfig) PipelineSink {
 	_init_.Initialize()
 
@@ -488,7 +487,7 @@ func NewPipelineSink(scope constructs.Construct, id *string, config *PipelineSin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline_sink cloudflare_pipeline_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_sink cloudflare_pipeline_sink} Resource.
 func NewPipelineSink_Override(p PipelineSink, scope constructs.Construct, id *string, config *PipelineSinkConfig) {
 	_init_.Initialize()
 
@@ -983,14 +982,6 @@ func (p *jsiiProxy_PipelineSink) PutSchema(value *PipelineSinkSchema) {
 		p,
 		"putSchema",
 		[]interface{}{value},
-	)
-}
-
-func (p *jsiiProxy_PipelineSink) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

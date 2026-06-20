@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
 type MagicNetworkMonitoringRule interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -138,7 +138,6 @@ type MagicNetworkMonitoringRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetBandwidthThreshold()
 	ResetDuration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -566,7 +565,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) ZscoreTargetInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) MagicNetworkMonitoringRule {
 	_init_.Initialize()
 
@@ -584,7 +583,7 @@ func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule_Override(m MagicNetworkMonitoringRule, scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) {
 	_init_.Initialize()
 
@@ -1134,14 +1133,6 @@ func (m *jsiiProxy_MagicNetworkMonitoringRule) OverrideLogicalId(newLogicalId *s
 		m,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (m *jsiiProxy_MagicNetworkMonitoringRule) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

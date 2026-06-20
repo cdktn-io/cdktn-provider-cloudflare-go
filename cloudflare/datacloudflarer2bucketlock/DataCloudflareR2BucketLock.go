@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock}.
 type DataCloudflareR2BucketLock interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketLock) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock} Data Source.
 func NewDataCloudflareR2BucketLock(scope constructs.Construct, id *string, config *DataCloudflareR2BucketLockConfig) DataCloudflareR2BucketLock {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataCloudflareR2BucketLock(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/r2_bucket_lock cloudflare_r2_bucket_lock} Data Source.
 func NewDataCloudflareR2BucketLock_Override(d DataCloudflareR2BucketLock, scope constructs.Construct, id *string, config *DataCloudflareR2BucketLockConfig) {
 	_init_.Initialize()
 

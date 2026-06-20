@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile}.
 type ZeroTrustDeviceIpProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -128,7 +128,6 @@ type ZeroTrustDeviceIpProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetDescription()
 	ResetEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -492,7 +491,7 @@ func (j *jsiiProxy_ZeroTrustDeviceIpProfile) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
 func NewZeroTrustDeviceIpProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceIpProfileConfig) ZeroTrustDeviceIpProfile {
 	_init_.Initialize()
 
@@ -510,7 +509,7 @@ func NewZeroTrustDeviceIpProfile(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
 func NewZeroTrustDeviceIpProfile_Override(z ZeroTrustDeviceIpProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceIpProfileConfig) {
 	_init_.Initialize()
 
@@ -1016,14 +1015,6 @@ func (z *jsiiProxy_ZeroTrustDeviceIpProfile) OverrideLogicalId(newLogicalId *str
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDeviceIpProfile) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

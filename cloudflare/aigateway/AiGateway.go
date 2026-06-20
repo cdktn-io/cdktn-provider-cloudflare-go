@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway cloudflare_ai_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/ai_gateway cloudflare_ai_gateway}.
 type AiGateway interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -179,7 +179,6 @@ type AiGateway interface {
 	PutOtel(value interface{})
 	PutSpendLimits(value *AiGatewaySpendLimits)
 	PutStripe(value *AiGatewayStripe)
-	ResetAccountId()
 	ResetAuthentication()
 	ResetDlp()
 	ResetGuardrails()
@@ -898,7 +897,7 @@ func (j *jsiiProxy_AiGateway) ZdrInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
 func NewAiGateway(scope constructs.Construct, id *string, config *AiGatewayConfig) AiGateway {
 	_init_.Initialize()
 
@@ -916,7 +915,7 @@ func NewAiGateway(scope constructs.Construct, id *string, config *AiGatewayConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
 func NewAiGateway_Override(a AiGateway, scope constructs.Construct, id *string, config *AiGatewayConfig) {
 	_init_.Initialize()
 
@@ -1609,14 +1608,6 @@ func (a *jsiiProxy_AiGateway) PutStripe(value *AiGatewayStripe) {
 		a,
 		"putStripe",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AiGateway) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

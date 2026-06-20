@@ -24,11 +24,11 @@ type DataCloudflareQueueConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A Resource identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/queue#queue_id DataCloudflareQueue#queue_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/queue#queue_id DataCloudflareQueue#queue_id}
 	QueueId *string `field:"required" json:"queueId" yaml:"queueId"`
 	// A Resource identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/queue#account_id DataCloudflareQueue#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/queue#account_id DataCloudflareQueue#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

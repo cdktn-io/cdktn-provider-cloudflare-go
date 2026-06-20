@@ -22,13 +22,13 @@ type R2DataCatalogConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Specifies the R2 bucket name.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
-	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
 	// Use this to identify the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
+	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// Specifies the R2 bucket name.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
+	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
 }
 

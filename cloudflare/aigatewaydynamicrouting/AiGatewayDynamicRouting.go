@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing}.
 type AiGatewayDynamicRouting interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -123,7 +123,6 @@ type AiGatewayDynamicRouting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutElements(value interface{})
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -465,7 +464,7 @@ func (j *jsiiProxy_AiGatewayDynamicRouting) Version() AiGatewayDynamicRoutingVer
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Resource.
 func NewAiGatewayDynamicRouting(scope constructs.Construct, id *string, config *AiGatewayDynamicRoutingConfig) AiGatewayDynamicRouting {
 	_init_.Initialize()
 
@@ -483,7 +482,7 @@ func NewAiGatewayDynamicRouting(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Resource.
 func NewAiGatewayDynamicRouting_Override(a AiGatewayDynamicRouting, scope constructs.Construct, id *string, config *AiGatewayDynamicRoutingConfig) {
 	_init_.Initialize()
 
@@ -956,14 +955,6 @@ func (a *jsiiProxy_AiGatewayDynamicRouting) PutElements(value interface{}) {
 		a,
 		"putElements",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AiGatewayDynamicRouting) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

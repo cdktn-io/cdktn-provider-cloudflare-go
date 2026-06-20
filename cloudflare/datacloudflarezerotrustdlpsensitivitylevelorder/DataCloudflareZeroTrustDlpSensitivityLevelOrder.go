@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order}.
 type DataCloudflareZeroTrustDlpSensitivityLevelOrder interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpSensitivityLevelOrder) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order} Data Source.
 func NewDataCloudflareZeroTrustDlpSensitivityLevelOrder(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig) DataCloudflareZeroTrustDlpSensitivityLevelOrder {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataCloudflareZeroTrustDlpSensitivityLevelOrder(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order} Data Source.
 func NewDataCloudflareZeroTrustDlpSensitivityLevelOrder_Override(d DataCloudflareZeroTrustDlpSensitivityLevelOrder, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig) {
 	_init_.Initialize()
 

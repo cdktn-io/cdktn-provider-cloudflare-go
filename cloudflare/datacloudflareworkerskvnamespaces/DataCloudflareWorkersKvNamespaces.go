@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces}.
 type DataCloudflareWorkersKvNamespaces interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespaces) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
 func NewDataCloudflareWorkersKvNamespaces(scope constructs.Construct, id *string, config *DataCloudflareWorkersKvNamespacesConfig) DataCloudflareWorkersKvNamespaces {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataCloudflareWorkersKvNamespaces(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workers_kv_namespaces cloudflare_workers_kv_namespaces} Data Source.
 func NewDataCloudflareWorkersKvNamespaces_Override(d DataCloudflareWorkersKvNamespaces, scope constructs.Construct, id *string, config *DataCloudflareWorkersKvNamespacesConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 type HostnameTlsSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -123,7 +123,6 @@ type HostnameTlsSetting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -432,7 +431,7 @@ func (j *jsiiProxy_HostnameTlsSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) HostnameTlsSetting {
 	_init_.Initialize()
 
@@ -450,7 +449,7 @@ func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *Hostn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting_Override(h HostnameTlsSetting, scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) {
 	_init_.Initialize()
 
@@ -930,14 +929,6 @@ func (h *jsiiProxy_HostnameTlsSetting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (h *jsiiProxy_HostnameTlsSetting) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

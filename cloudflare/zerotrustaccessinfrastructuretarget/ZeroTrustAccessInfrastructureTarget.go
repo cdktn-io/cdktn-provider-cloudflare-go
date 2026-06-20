@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}.
 type ZeroTrustAccessInfrastructureTarget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -116,7 +116,6 @@ type ZeroTrustAccessInfrastructureTarget interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutIp(value *ZeroTrustAccessInfrastructureTargetIp)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -398,7 +397,7 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
 func NewZeroTrustAccessInfrastructureTarget(scope constructs.Construct, id *string, config *ZeroTrustAccessInfrastructureTargetConfig) ZeroTrustAccessInfrastructureTarget {
 	_init_.Initialize()
 
@@ -416,7 +415,7 @@ func NewZeroTrustAccessInfrastructureTarget(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
 func NewZeroTrustAccessInfrastructureTarget_Override(z ZeroTrustAccessInfrastructureTarget, scope constructs.Construct, id *string, config *ZeroTrustAccessInfrastructureTargetConfig) {
 	_init_.Initialize()
 
@@ -878,14 +877,6 @@ func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) PutIp(value *ZeroTrustAc
 		z,
 		"putIp",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

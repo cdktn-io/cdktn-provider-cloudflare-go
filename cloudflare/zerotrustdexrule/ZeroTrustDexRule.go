@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_rule cloudflare_zero_trust_dex_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_rule cloudflare_zero_trust_dex_rule}.
 type ZeroTrustDexRule interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -120,7 +120,6 @@ type ZeroTrustDexRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -433,7 +432,7 @@ func (j *jsiiProxy_ZeroTrustDexRule) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_rule cloudflare_zero_trust_dex_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_rule cloudflare_zero_trust_dex_rule} Resource.
 func NewZeroTrustDexRule(scope constructs.Construct, id *string, config *ZeroTrustDexRuleConfig) ZeroTrustDexRule {
 	_init_.Initialize()
 
@@ -451,7 +450,7 @@ func NewZeroTrustDexRule(scope constructs.Construct, id *string, config *ZeroTru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_rule cloudflare_zero_trust_dex_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_rule cloudflare_zero_trust_dex_rule} Resource.
 func NewZeroTrustDexRule_Override(z ZeroTrustDexRule, scope constructs.Construct, id *string, config *ZeroTrustDexRuleConfig) {
 	_init_.Initialize()
 
@@ -924,14 +923,6 @@ func (z *jsiiProxy_ZeroTrustDexRule) OverrideLogicalId(newLogicalId *string) {
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDexRule) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

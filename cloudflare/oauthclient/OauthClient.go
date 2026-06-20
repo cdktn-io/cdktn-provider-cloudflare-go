@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/oauth_client cloudflare_oauth_client}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/oauth_client cloudflare_oauth_client}.
 type OauthClient interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -725,7 +725,7 @@ func (j *jsiiProxy_OauthClient) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/oauth_client cloudflare_oauth_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/oauth_client cloudflare_oauth_client} Resource.
 func NewOauthClient(scope constructs.Construct, id *string, config *OauthClientConfig) OauthClient {
 	_init_.Initialize()
 
@@ -743,7 +743,7 @@ func NewOauthClient(scope constructs.Construct, id *string, config *OauthClientC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/oauth_client cloudflare_oauth_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/oauth_client cloudflare_oauth_client} Resource.
 func NewOauthClient_Override(o OauthClient, scope constructs.Construct, id *string, config *OauthClientConfig) {
 	_init_.Initialize()
 

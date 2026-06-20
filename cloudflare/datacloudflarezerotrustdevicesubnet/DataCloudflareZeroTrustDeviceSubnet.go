@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet}.
 type DataCloudflareZeroTrustDeviceSubnet interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceSubnet) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet} Data Source.
 func NewDataCloudflareZeroTrustDeviceSubnet(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceSubnetConfig) DataCloudflareZeroTrustDeviceSubnet {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataCloudflareZeroTrustDeviceSubnet(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet} Data Source.
 func NewDataCloudflareZeroTrustDeviceSubnet_Override(d DataCloudflareZeroTrustDeviceSubnet, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceSubnetConfig) {
 	_init_.Initialize()
 

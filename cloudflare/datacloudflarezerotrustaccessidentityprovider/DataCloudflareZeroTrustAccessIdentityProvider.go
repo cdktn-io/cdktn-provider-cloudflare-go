@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
 type DataCloudflareZeroTrustAccessIdentityProvider interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -434,7 +434,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ZoneIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
 func NewDataCloudflareZeroTrustAccessIdentityProvider(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessIdentityProviderConfig) DataCloudflareZeroTrustAccessIdentityProvider {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewDataCloudflareZeroTrustAccessIdentityProvider(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
 func NewDataCloudflareZeroTrustAccessIdentityProvider_Override(d DataCloudflareZeroTrustAccessIdentityProvider, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessIdentityProviderConfig) {
 	_init_.Initialize()
 

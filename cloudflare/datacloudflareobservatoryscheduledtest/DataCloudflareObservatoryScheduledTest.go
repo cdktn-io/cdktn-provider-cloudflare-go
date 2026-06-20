@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
 type DataCloudflareObservatoryScheduledTest interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Data Source.
 func NewDataCloudflareObservatoryScheduledTest(scope constructs.Construct, id *string, config *DataCloudflareObservatoryScheduledTestConfig) DataCloudflareObservatoryScheduledTest {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDataCloudflareObservatoryScheduledTest(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Data Source.
 func NewDataCloudflareObservatoryScheduledTest_Override(d DataCloudflareObservatoryScheduledTest, scope constructs.Construct, id *string, config *DataCloudflareObservatoryScheduledTestConfig) {
 	_init_.Initialize()
 

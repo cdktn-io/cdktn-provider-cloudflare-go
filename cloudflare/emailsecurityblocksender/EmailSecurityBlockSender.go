@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
 type EmailSecurityBlockSender interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -123,7 +123,6 @@ type EmailSecurityBlockSender interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetComments()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -456,7 +455,7 @@ func (j *jsiiProxy_EmailSecurityBlockSender) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
 func NewEmailSecurityBlockSender(scope constructs.Construct, id *string, config *EmailSecurityBlockSenderConfig) EmailSecurityBlockSender {
 	_init_.Initialize()
 
@@ -474,7 +473,7 @@ func NewEmailSecurityBlockSender(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
 func NewEmailSecurityBlockSender_Override(e EmailSecurityBlockSender, scope constructs.Construct, id *string, config *EmailSecurityBlockSenderConfig) {
 	_init_.Initialize()
 
@@ -958,14 +957,6 @@ func (e *jsiiProxy_EmailSecurityBlockSender) OverrideLogicalId(newLogicalId *str
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (e *jsiiProxy_EmailSecurityBlockSender) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

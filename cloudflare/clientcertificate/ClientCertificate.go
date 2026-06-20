@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate cloudflare_client_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate cloudflare_client_certificate}.
 type ClientCertificate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -136,7 +136,6 @@ type ClientCertificate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReactivate()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -565,7 +564,7 @@ func (j *jsiiProxy_ClientCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate cloudflare_client_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate cloudflare_client_certificate} Resource.
 func NewClientCertificate(scope constructs.Construct, id *string, config *ClientCertificateConfig) ClientCertificate {
 	_init_.Initialize()
 
@@ -583,7 +582,7 @@ func NewClientCertificate(scope constructs.Construct, id *string, config *Client
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate cloudflare_client_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate cloudflare_client_certificate} Resource.
 func NewClientCertificate_Override(c ClientCertificate, scope constructs.Construct, id *string, config *ClientCertificateConfig) {
 	_init_.Initialize()
 
@@ -1071,14 +1070,6 @@ func (c *jsiiProxy_ClientCertificate) ResetReactivate() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetReactivate",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ClientCertificate) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

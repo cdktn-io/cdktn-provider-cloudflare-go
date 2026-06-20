@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
 type CustomOriginTrustStore interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -120,7 +120,6 @@ type CustomOriginTrustStore interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -419,7 +418,7 @@ func (j *jsiiProxy_CustomOriginTrustStore) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Resource.
 func NewCustomOriginTrustStore(scope constructs.Construct, id *string, config *CustomOriginTrustStoreConfig) CustomOriginTrustStore {
 	_init_.Initialize()
 
@@ -437,7 +436,7 @@ func NewCustomOriginTrustStore(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Resource.
 func NewCustomOriginTrustStore_Override(c CustomOriginTrustStore, scope constructs.Construct, id *string, config *CustomOriginTrustStoreConfig) {
 	_init_.Initialize()
 
@@ -895,14 +894,6 @@ func (c *jsiiProxy_CustomOriginTrustStore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CustomOriginTrustStore) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

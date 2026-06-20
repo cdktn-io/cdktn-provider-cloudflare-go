@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workers_deployment cloudflare_workers_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workers_deployment cloudflare_workers_deployment}.
 type DataCloudflareWorkersDeployment interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment) Versions() DataCloudflareWor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
 func NewDataCloudflareWorkersDeployment(scope constructs.Construct, id *string, config *DataCloudflareWorkersDeploymentConfig) DataCloudflareWorkersDeployment {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataCloudflareWorkersDeployment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
 func NewDataCloudflareWorkersDeployment_Override(d DataCloudflareWorkersDeployment, scope constructs.Construct, id *string, config *DataCloudflareWorkersDeploymentConfig) {
 	_init_.Initialize()
 

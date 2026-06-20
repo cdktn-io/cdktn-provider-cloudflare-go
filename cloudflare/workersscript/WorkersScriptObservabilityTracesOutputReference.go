@@ -44,6 +44,9 @@ type WorkersScriptObservabilityTracesOutputReference interface {
 	Persist() interface{}
 	SetPersist(val interface{})
 	PersistInput() interface{}
+	PropagationPolicy() *string
+	SetPropagationPolicy(val *string)
+	PropagationPolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +83,7 @@ type WorkersScriptObservabilityTracesOutputReference interface {
 	ResetEnabled()
 	ResetHeadSamplingRate()
 	ResetPersist()
+	ResetPropagationPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -225,6 +229,26 @@ func (j *jsiiProxy_WorkersScriptObservabilityTracesOutputReference) PersistInput
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptObservabilityTracesOutputReference) PropagationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityTracesOutputReference) PropagationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagationPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptObservabilityTracesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -346,6 +370,17 @@ func (j *jsiiProxy_WorkersScriptObservabilityTracesOutputReference)SetPersist(va
 	_jsii_.Set(
 		j,
 		"persist",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityTracesOutputReference)SetPropagationPolicy(val *string) {
+	if err := j.validateSetPropagationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"propagationPolicy",
 		val,
 	)
 }
@@ -586,6 +621,14 @@ func (w *jsiiProxy_WorkersScriptObservabilityTracesOutputReference) ResetPersist
 	_jsii_.InvokeVoid(
 		w,
 		"resetPersist",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptObservabilityTracesOutputReference) ResetPropagationPolicy() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPropagationPolicy",
 		nil, // no parameters
 	)
 }

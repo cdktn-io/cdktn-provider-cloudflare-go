@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_record cloudflare_dns_record}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_record cloudflare_dns_record}.
 type DnsRecord interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -158,7 +158,6 @@ type DnsRecord interface {
 	ResetProxied()
 	ResetSettings()
 	ResetTags()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -657,7 +656,7 @@ func (j *jsiiProxy_DnsRecord) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_record cloudflare_dns_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_record cloudflare_dns_record} Resource.
 func NewDnsRecord(scope constructs.Construct, id *string, config *DnsRecordConfig) DnsRecord {
 	_init_.Initialize()
 
@@ -675,7 +674,7 @@ func NewDnsRecord(scope constructs.Construct, id *string, config *DnsRecordConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_record cloudflare_dns_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_record cloudflare_dns_record} Resource.
 func NewDnsRecord_Override(d DnsRecord, scope constructs.Construct, id *string, config *DnsRecordConfig) {
 	_init_.Initialize()
 
@@ -1307,14 +1306,6 @@ func (d *jsiiProxy_DnsRecord) ResetTags() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTags",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DnsRecord) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

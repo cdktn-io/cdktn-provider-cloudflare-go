@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/logpush_job cloudflare_logpush_job}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/logpush_job cloudflare_logpush_job}.
 type LogpushJob interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -698,7 +698,7 @@ func (j *jsiiProxy_LogpushJob) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobConfig) LogpushJob {
 	_init_.Initialize()
 
@@ -716,7 +716,7 @@ func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob_Override(l LogpushJob, scope constructs.Construct, id *string, config *LogpushJobConfig) {
 	_init_.Initialize()
 

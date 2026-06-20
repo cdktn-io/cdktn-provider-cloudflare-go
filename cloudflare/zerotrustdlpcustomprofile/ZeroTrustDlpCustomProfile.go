@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
 type ZeroTrustDlpCustomProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -148,7 +148,6 @@ type ZeroTrustDlpCustomProfile interface {
 	PutEntries(value interface{})
 	PutSensitivityLevels(value interface{})
 	PutSharedEntries(value interface{})
-	ResetAccountId()
 	ResetAiContextEnabled()
 	ResetAllowedMatchCount()
 	ResetConfidenceThreshold()
@@ -661,7 +660,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
 func NewZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config *ZeroTrustDlpCustomProfileConfig) ZeroTrustDlpCustomProfile {
 	_init_.Initialize()
 
@@ -679,7 +678,7 @@ func NewZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
 func NewZeroTrustDlpCustomProfile_Override(z ZeroTrustDlpCustomProfile, scope constructs.Construct, id *string, config *ZeroTrustDlpCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -1251,14 +1250,6 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutSharedEntries(value interface{}
 		z,
 		"putSharedEntries",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

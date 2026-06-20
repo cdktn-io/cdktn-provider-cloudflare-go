@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_csr cloudflare_custom_csr}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_csr cloudflare_custom_csr}.
 type CustomCsr interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_CustomCsr) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_csr cloudflare_custom_csr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_csr cloudflare_custom_csr} Resource.
 func NewCustomCsr(scope constructs.Construct, id *string, config *CustomCsrConfig) CustomCsr {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewCustomCsr(scope constructs.Construct, id *string, config *CustomCsrConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_csr cloudflare_custom_csr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_csr cloudflare_custom_csr} Resource.
 func NewCustomCsr_Override(c CustomCsr, scope constructs.Construct, id *string, config *CustomCsrConfig) {
 	_init_.Initialize()
 

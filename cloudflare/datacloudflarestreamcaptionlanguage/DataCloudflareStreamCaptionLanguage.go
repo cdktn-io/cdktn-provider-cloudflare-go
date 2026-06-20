@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language}.
 type DataCloudflareStreamCaptionLanguage interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language} Data Source.
 func NewDataCloudflareStreamCaptionLanguage(scope constructs.Construct, id *string, config *DataCloudflareStreamCaptionLanguageConfig) DataCloudflareStreamCaptionLanguage {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataCloudflareStreamCaptionLanguage(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language} Data Source.
 func NewDataCloudflareStreamCaptionLanguage_Override(d DataCloudflareStreamCaptionLanguage, scope constructs.Construct, id *string, config *DataCloudflareStreamCaptionLanguageConfig) {
 	_init_.Initialize()
 

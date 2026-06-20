@@ -63,7 +63,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomOriginSni", GoMethod: "ResetCustomOriginSni"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsl", GoMethod: "ResetSsl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "ssl", GoGetter: "Ssl"},
 			_jsii_.MemberProperty{JsiiProperty: "sslInput", GoGetter: "SslInput"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},

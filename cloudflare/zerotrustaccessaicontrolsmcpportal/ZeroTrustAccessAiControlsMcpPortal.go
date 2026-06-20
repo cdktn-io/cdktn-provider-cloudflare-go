@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
 type ZeroTrustAccessAiControlsMcpPortal interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -132,7 +132,6 @@ type ZeroTrustAccessAiControlsMcpPortal interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutServers(value interface{})
-	ResetAccountId()
 	ResetAllowCodeMode()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -528,7 +527,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) ZeroTrustAccessAiControlsMcpPortal {
 	_init_.Initialize()
 
@@ -546,7 +545,7 @@ func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal_Override(z ZeroTrustAccessAiControlsMcpPortal, scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) {
 	_init_.Initialize()
 
@@ -1063,14 +1062,6 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) PutServers(value interfac
 		z,
 		"putServers",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

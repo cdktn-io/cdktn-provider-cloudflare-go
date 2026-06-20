@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_key cloudflare_stream_key}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_key cloudflare_stream_key}.
 type StreamKey interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -112,7 +112,6 @@ type StreamKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -374,7 +373,7 @@ func (j *jsiiProxy_StreamKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_key cloudflare_stream_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_key cloudflare_stream_key} Resource.
 func NewStreamKey(scope constructs.Construct, id *string, config *StreamKeyConfig) StreamKey {
 	_init_.Initialize()
 
@@ -392,7 +391,7 @@ func NewStreamKey(scope constructs.Construct, id *string, config *StreamKeyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_key cloudflare_stream_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_key cloudflare_stream_key} Resource.
 func NewStreamKey_Override(s StreamKey, scope constructs.Construct, id *string, config *StreamKeyConfig) {
 	_init_.Initialize()
 
@@ -832,14 +831,6 @@ func (s *jsiiProxy_StreamKey) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (s *jsiiProxy_StreamKey) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

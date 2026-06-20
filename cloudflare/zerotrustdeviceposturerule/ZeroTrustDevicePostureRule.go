@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}.
 type ZeroTrustDevicePostureRule interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -129,7 +129,6 @@ type ZeroTrustDevicePostureRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutInput(value *ZeroTrustDevicePostureRuleInput)
 	PutMatch(value interface{})
-	ResetAccountId()
 	ResetDescription()
 	ResetExpiration()
 	ResetInput()
@@ -497,7 +496,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRule) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource.
 func NewZeroTrustDevicePostureRule(scope constructs.Construct, id *string, config *ZeroTrustDevicePostureRuleConfig) ZeroTrustDevicePostureRule {
 	_init_.Initialize()
 
@@ -515,7 +514,7 @@ func NewZeroTrustDevicePostureRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource.
 func NewZeroTrustDevicePostureRule_Override(z ZeroTrustDevicePostureRule, scope constructs.Construct, id *string, config *ZeroTrustDevicePostureRuleConfig) {
 	_init_.Initialize()
 
@@ -1032,14 +1031,6 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRule) PutMatch(value interface{}) {
 		z,
 		"putMatch",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDevicePostureRule) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

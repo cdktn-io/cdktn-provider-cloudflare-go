@@ -60,7 +60,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putInput", GoMethod: "PutInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putMatch", GoMethod: "PutMatch"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExpiration", GoMethod: "ResetExpiration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInput", GoMethod: "ResetInput"},

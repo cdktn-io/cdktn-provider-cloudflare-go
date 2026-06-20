@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
 type AccountDnsSettings interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -113,7 +113,6 @@ type AccountDnsSettings interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutZoneDefaults(value *AccountDnsSettingsZoneDefaults)
-	ResetAccountId()
 	ResetEnforceDnsOnly()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -367,7 +366,7 @@ func (j *jsiiProxy_AccountDnsSettings) ZoneDefaultsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
 func NewAccountDnsSettings(scope constructs.Construct, id *string, config *AccountDnsSettingsConfig) AccountDnsSettings {
 	_init_.Initialize()
 
@@ -385,7 +384,7 @@ func NewAccountDnsSettings(scope constructs.Construct, id *string, config *Accou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
 func NewAccountDnsSettings_Override(a AccountDnsSettings, scope constructs.Construct, id *string, config *AccountDnsSettingsConfig) {
 	_init_.Initialize()
 
@@ -847,14 +846,6 @@ func (a *jsiiProxy_AccountDnsSettings) PutZoneDefaults(value *AccountDnsSettings
 		a,
 		"putZoneDefaults",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AccountDnsSettings) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

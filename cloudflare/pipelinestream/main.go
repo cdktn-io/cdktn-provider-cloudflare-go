@@ -61,7 +61,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSchema", GoMethod: "PutSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkerBinding", GoMethod: "PutWorkerBinding"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFormat", GoMethod: "ResetFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttp", GoMethod: "ResetHttp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

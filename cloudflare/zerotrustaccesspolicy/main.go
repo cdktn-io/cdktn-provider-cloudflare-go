@@ -78,7 +78,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "require", GoGetter: "Require"},
 			_jsii_.MemberProperty{JsiiProperty: "requireInput", GoGetter: "RequireInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApprovalGroups", GoMethod: "ResetApprovalGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApprovalRequired", GoMethod: "ResetApprovalRequired"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionRules", GoMethod: "ResetConnectionRules"},

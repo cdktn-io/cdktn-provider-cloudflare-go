@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/image cloudflare_image}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/image cloudflare_image}.
 type Image interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -129,7 +129,6 @@ type Image interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetCreator()
 	ResetFile()
 	ResetMetadata()
@@ -506,7 +505,7 @@ func (j *jsiiProxy_Image) Variants() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/image cloudflare_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/image cloudflare_image} Resource.
 func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image {
 	_init_.Initialize()
 
@@ -524,7 +523,7 @@ func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/image cloudflare_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/image cloudflare_image} Resource.
 func NewImage_Override(i Image, scope constructs.Construct, id *string, config *ImageConfig) {
 	_init_.Initialize()
 
@@ -1030,14 +1029,6 @@ func (i *jsiiProxy_Image) OverrideLogicalId(newLogicalId *string) {
 		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (i *jsiiProxy_Image) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
 type LeakedCredentialCheckRule interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -119,7 +119,6 @@ type LeakedCredentialCheckRule interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetUsername()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -378,7 +377,7 @@ func (j *jsiiProxy_LeakedCredentialCheckRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
 func NewLeakedCredentialCheckRule(scope constructs.Construct, id *string, config *LeakedCredentialCheckRuleConfig) LeakedCredentialCheckRule {
 	_init_.Initialize()
 
@@ -396,7 +395,7 @@ func NewLeakedCredentialCheckRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Resource.
 func NewLeakedCredentialCheckRule_Override(l LeakedCredentialCheckRule, scope constructs.Construct, id *string, config *LeakedCredentialCheckRuleConfig) {
 	_init_.Initialize()
 
@@ -881,14 +880,6 @@ func (l *jsiiProxy_LeakedCredentialCheckRule) ResetUsername() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetUsername",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LeakedCredentialCheckRule) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

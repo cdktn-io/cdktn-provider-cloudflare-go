@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
 type EmailSecurityTrustedDomains interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -126,7 +126,6 @@ type EmailSecurityTrustedDomains interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetComments()
 	ResetIsRecent()
 	ResetIsRegex()
@@ -482,7 +481,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) EmailSecurityTrustedDomains {
 	_init_.Initialize()
 
@@ -500,7 +499,7 @@ func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains_Override(e EmailSecurityTrustedDomains, scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) {
 	_init_.Initialize()
 
@@ -995,14 +994,6 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) OverrideLogicalId(newLogicalId *
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (e *jsiiProxy_EmailSecurityTrustedDomains) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/waiting_room cloudflare_waiting_room}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/waiting_room cloudflare_waiting_room}.
 type WaitingRoom interface {
 	cdktn.TerraformResource
 	AdditionalRoutes() WaitingRoomAdditionalRoutesList
@@ -195,7 +195,6 @@ type WaitingRoom interface {
 	ResetSuspended()
 	ResetTurnstileAction()
 	ResetTurnstileMode()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -874,7 +873,7 @@ func (j *jsiiProxy_WaitingRoom) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomConfig) WaitingRoom {
 	_init_.Initialize()
 
@@ -892,7 +891,7 @@ func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom_Override(w WaitingRoom, scope constructs.Construct, id *string, config *WaitingRoomConfig) {
 	_init_.Initialize()
 
@@ -1706,14 +1705,6 @@ func (w *jsiiProxy_WaitingRoom) ResetTurnstileMode() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTurnstileMode",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WaitingRoom) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

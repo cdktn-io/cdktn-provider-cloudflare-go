@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
 type ZeroTrustDeviceCustomProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -185,7 +185,6 @@ type ZeroTrustDeviceCustomProfile interface {
 	PutInclude(value interface{})
 	PutServiceModeV2(value *ZeroTrustDeviceCustomProfileServiceModeV2)
 	PutVirtualNetworks(value *ZeroTrustDeviceCustomProfileVirtualNetworks)
-	ResetAccountId()
 	ResetAllowedToLeave()
 	ResetAllowModeSwitch()
 	ResetAllowUpdates()
@@ -959,7 +958,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) VirtualNetworksInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) ZeroTrustDeviceCustomProfile {
 	_init_.Initialize()
 
@@ -977,7 +976,7 @@ func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile_Override(z ZeroTrustDeviceCustomProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -1681,14 +1680,6 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutVirtualNetworks(value *ZeroT
 		z,
 		"putVirtualNetworks",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

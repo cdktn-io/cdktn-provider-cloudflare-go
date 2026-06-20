@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}.
 type ConnectivityDirectoryService interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -135,7 +135,6 @@ type ConnectivityDirectoryService interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHost(value *ConnectivityDirectoryServiceHost)
 	PutTlsSettings(value *ConnectivityDirectoryServiceTlsSettings)
-	ResetAccountId()
 	ResetAppProtocol()
 	ResetHttpPort()
 	ResetHttpsPort()
@@ -552,7 +551,7 @@ func (j *jsiiProxy_ConnectivityDirectoryService) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
 func NewConnectivityDirectoryService(scope constructs.Construct, id *string, config *ConnectivityDirectoryServiceConfig) ConnectivityDirectoryService {
 	_init_.Initialize()
 
@@ -570,7 +569,7 @@ func NewConnectivityDirectoryService(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
 func NewConnectivityDirectoryService_Override(c ConnectivityDirectoryService, scope constructs.Construct, id *string, config *ConnectivityDirectoryServiceConfig) {
 	_init_.Initialize()
 
@@ -1098,14 +1097,6 @@ func (c *jsiiProxy_ConnectivityDirectoryService) PutTlsSettings(value *Connectiv
 		c,
 		"putTlsSettings",
 		[]interface{}{value},
-	)
-}
-
-func (c *jsiiProxy_ConnectivityDirectoryService) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

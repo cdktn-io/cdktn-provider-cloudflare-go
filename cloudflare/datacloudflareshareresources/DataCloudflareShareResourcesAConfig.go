@@ -24,23 +24,23 @@ type DataCloudflareShareResourcesAConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resources#account_id DataCloudflareShareResourcesA#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resources#account_id DataCloudflareShareResourcesA#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Share identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resources#share_id DataCloudflareShareResourcesA#share_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resources#share_id DataCloudflareShareResourcesA#share_id}
 	ShareId *string `field:"required" json:"shareId" yaml:"shareId"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resources#max_items DataCloudflareShareResourcesA#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resources#max_items DataCloudflareShareResourcesA#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// Filter share resources by resource_type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resources#resource_type DataCloudflareShareResourcesA#resource_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resources#resource_type DataCloudflareShareResourcesA#resource_type}
 	ResourceType *string `field:"optional" json:"resourceType" yaml:"resourceType"`
 	// Filter share resources by status. Available values: "active", "deleting", "deleted".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resources#status DataCloudflareShareResourcesA#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resources#status DataCloudflareShareResourcesA#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

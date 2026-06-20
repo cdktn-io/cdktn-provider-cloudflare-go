@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 type ZeroTrustAccessTag interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -111,7 +111,6 @@ type ZeroTrustAccessTag interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -353,7 +352,7 @@ func (j *jsiiProxy_ZeroTrustAccessTag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
 func NewZeroTrustAccessTag(scope constructs.Construct, id *string, config *ZeroTrustAccessTagConfig) ZeroTrustAccessTag {
 	_init_.Initialize()
 
@@ -371,7 +370,7 @@ func NewZeroTrustAccessTag(scope constructs.Construct, id *string, config *ZeroT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
 func NewZeroTrustAccessTag_Override(z ZeroTrustAccessTag, scope constructs.Construct, id *string, config *ZeroTrustAccessTagConfig) {
 	_init_.Initialize()
 
@@ -822,14 +821,6 @@ func (z *jsiiProxy_ZeroTrustAccessTag) OverrideLogicalId(newLogicalId *string) {
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessTag) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

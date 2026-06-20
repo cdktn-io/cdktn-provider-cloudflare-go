@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_search_token cloudflare_ai_search_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/ai_search_token cloudflare_ai_search_token}.
 type AiSearchToken interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -125,7 +125,6 @@ type AiSearchToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetLegacy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -478,7 +477,7 @@ func (j *jsiiProxy_AiSearchToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource.
 func NewAiSearchToken(scope constructs.Construct, id *string, config *AiSearchTokenConfig) AiSearchToken {
 	_init_.Initialize()
 
@@ -496,7 +495,7 @@ func NewAiSearchToken(scope constructs.Construct, id *string, config *AiSearchTo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource.
 func NewAiSearchToken_Override(a AiSearchToken, scope constructs.Construct, id *string, config *AiSearchTokenConfig) {
 	_init_.Initialize()
 
@@ -980,14 +979,6 @@ func (a *jsiiProxy_AiSearchToken) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (a *jsiiProxy_AiSearchToken) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -63,7 +63,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMtls", GoMethod: "PutMtls"},
 			_jsii_.MemberMethod{JsiiMethod: "putOrigin", GoMethod: "PutOrigin"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaching", GoMethod: "ResetCaching"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMtls", GoMethod: "ResetMtls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOriginConnectionLimit", GoMethod: "ResetOriginConnectionLimit"},

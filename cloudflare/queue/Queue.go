@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue cloudflare_queue}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue cloudflare_queue}.
 type Queue interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -121,7 +121,6 @@ type Queue interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSettings(value *QueueSettings)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -454,7 +453,7 @@ func (j *jsiiProxy_Queue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue {
 	_init_.Initialize()
 
@@ -472,7 +471,7 @@ func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue_Override(q Queue, scope constructs.Construct, id *string, config *QueueConfig) {
 	_init_.Initialize()
 
@@ -934,14 +933,6 @@ func (q *jsiiProxy_Queue) PutSettings(value *QueueSettings) {
 		q,
 		"putSettings",
 		[]interface{}{value},
-	)
-}
-
-func (q *jsiiProxy_Queue) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		q,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

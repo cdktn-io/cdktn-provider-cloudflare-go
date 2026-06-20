@@ -85,7 +85,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rateLimitingTechnique", GoGetter: "RateLimitingTechnique"},
 			_jsii_.MemberProperty{JsiiProperty: "rateLimitingTechniqueInput", GoGetter: "RateLimitingTechniqueInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthentication", GoMethod: "ResetAuthentication"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDlp", GoMethod: "ResetDlp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGuardrails", GoMethod: "ResetGuardrails"},

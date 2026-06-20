@@ -72,7 +72,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putUpdatedPrompts", GoMethod: "PutUpdatedPrompts"},
 			_jsii_.MemberMethod{JsiiMethod: "putUpdatedTools", GoMethod: "PutUpdatedTools"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthCredentials", GoMethod: "ResetAuthCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsSharedOauthCallbackEnabled", GoMethod: "ResetIsSharedOauthCallbackEnabled"},

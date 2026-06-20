@@ -24,15 +24,15 @@ type LoadBalancerMonitorGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/load_balancer_monitor_group#account_id LoadBalancerMonitorGroup#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#account_id LoadBalancerMonitorGroup#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A short description of the monitor group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/load_balancer_monitor_group#description LoadBalancerMonitorGroup#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#description LoadBalancerMonitorGroup#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// List of monitors in this group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/load_balancer_monitor_group#members LoadBalancerMonitorGroup#members}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#members LoadBalancerMonitorGroup#members}
 	Members interface{} `field:"required" json:"members" yaml:"members"`
 }
 

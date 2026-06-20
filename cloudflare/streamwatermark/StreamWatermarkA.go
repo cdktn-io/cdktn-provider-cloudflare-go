@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark cloudflare_stream_watermark}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark cloudflare_stream_watermark}.
 type StreamWatermarkA interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -134,7 +134,6 @@ type StreamWatermarkA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetIdentifier()
 	ResetName()
 	ResetOpacity()
@@ -553,7 +552,7 @@ func (j *jsiiProxy_StreamWatermarkA) Width() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
 func NewStreamWatermarkA(scope constructs.Construct, id *string, config *StreamWatermarkAConfig) StreamWatermarkA {
 	_init_.Initialize()
 
@@ -571,7 +570,7 @@ func NewStreamWatermarkA(scope constructs.Construct, id *string, config *StreamW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark cloudflare_stream_watermark} Resource.
 func NewStreamWatermarkA_Override(s StreamWatermarkA, scope constructs.Construct, id *string, config *StreamWatermarkAConfig) {
 	_init_.Initialize()
 
@@ -1088,14 +1087,6 @@ func (s *jsiiProxy_StreamWatermarkA) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (s *jsiiProxy_StreamWatermarkA) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

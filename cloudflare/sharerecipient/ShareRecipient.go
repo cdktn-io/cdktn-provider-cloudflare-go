@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient cloudflare_share_recipient}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient cloudflare_share_recipient}.
 type ShareRecipient interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -444,7 +444,7 @@ func (j *jsiiProxy_ShareRecipient) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
 func NewShareRecipient(scope constructs.Construct, id *string, config *ShareRecipientConfig) ShareRecipient {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewShareRecipient(scope constructs.Construct, id *string, config *ShareReci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
 func NewShareRecipient_Override(s ShareRecipient, scope constructs.Construct, id *string, config *ShareRecipientConfig) {
 	_init_.Initialize()
 

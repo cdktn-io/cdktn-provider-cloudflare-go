@@ -24,15 +24,15 @@ type DataCloudflareFlagshipFlagConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Cloudflare account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/flagship_flag#account_id DataCloudflareFlagshipFlag#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_flag#account_id DataCloudflareFlagshipFlag#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// App identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/flagship_flag#app_id DataCloudflareFlagshipFlag#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_flag#app_id DataCloudflareFlagshipFlag#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// Flag key (slug).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/flagship_flag#flag_key DataCloudflareFlagshipFlag#flag_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_flag#flag_key DataCloudflareFlagshipFlag#flag_key}
 	FlagKey *string `field:"required" json:"flagKey" yaml:"flagKey"`
 }
 

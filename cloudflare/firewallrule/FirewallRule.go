@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
 type FirewallRule interface {
 	cdktn.TerraformResource
 	Action() FirewallRuleActionOutputReference
@@ -122,7 +122,6 @@ type FirewallRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -431,7 +430,7 @@ func (j *jsiiProxy_FirewallRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRuleConfig) FirewallRule {
 	_init_.Initialize()
 
@@ -449,7 +448,7 @@ func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule_Override(f FirewallRule, scope constructs.Construct, id *string, config *FirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -918,14 +917,6 @@ func (f *jsiiProxy_FirewallRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_FirewallRule) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

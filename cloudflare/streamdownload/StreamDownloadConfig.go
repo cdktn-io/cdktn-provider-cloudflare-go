@@ -22,13 +22,13 @@ type StreamDownloadConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// A Cloudflare-generated unique identifier for a media item.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_download#identifier StreamDownload#identifier}
-	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_download#account_id StreamDownload#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_download#account_id StreamDownload#account_id}
+	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// A Cloudflare-generated unique identifier for a media item.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_download#identifier StreamDownload#identifier}
+	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 }
 

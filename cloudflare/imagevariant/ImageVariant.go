@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/image_variant cloudflare_image_variant}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/image_variant cloudflare_image_variant}.
 type ImageVariant interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -117,7 +117,6 @@ type ImageVariant interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutOptions(value *ImageVariantOptions)
-	ResetAccountId()
 	ResetNeverRequireSignedUrls()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -400,7 +399,7 @@ func (j *jsiiProxy_ImageVariant) Variant() ImageVariantVariantOutputReference {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/image_variant cloudflare_image_variant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/image_variant cloudflare_image_variant} Resource.
 func NewImageVariant(scope constructs.Construct, id *string, config *ImageVariantConfig) ImageVariant {
 	_init_.Initialize()
 
@@ -418,7 +417,7 @@ func NewImageVariant(scope constructs.Construct, id *string, config *ImageVarian
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/image_variant cloudflare_image_variant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/image_variant cloudflare_image_variant} Resource.
 func NewImageVariant_Override(i ImageVariant, scope constructs.Construct, id *string, config *ImageVariantConfig) {
 	_init_.Initialize()
 
@@ -891,14 +890,6 @@ func (i *jsiiProxy_ImageVariant) PutOptions(value *ImageVariantOptions) {
 		i,
 		"putOptions",
 		[]interface{}{value},
-	)
-}
-
-func (i *jsiiProxy_ImageVariant) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector}.
 type ZeroTrustTunnelWarpConnector interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -126,7 +126,6 @@ type ZeroTrustTunnelWarpConnector interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetHa()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -500,7 +499,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnector) TunType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Resource.
 func NewZeroTrustTunnelWarpConnector(scope constructs.Construct, id *string, config *ZeroTrustTunnelWarpConnectorConfig) ZeroTrustTunnelWarpConnector {
 	_init_.Initialize()
 
@@ -518,7 +517,7 @@ func NewZeroTrustTunnelWarpConnector(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_tunnel_warp_connector cloudflare_zero_trust_tunnel_warp_connector} Resource.
 func NewZeroTrustTunnelWarpConnector_Override(z ZeroTrustTunnelWarpConnector, scope constructs.Construct, id *string, config *ZeroTrustTunnelWarpConnectorConfig) {
 	_init_.Initialize()
 
@@ -991,14 +990,6 @@ func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) OverrideLogicalId(newLogicalId 
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustTunnelWarpConnector) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

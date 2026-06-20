@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -183,7 +183,6 @@ type WorkersScript interface {
 	PutObservability(value *WorkersScriptObservability)
 	PutPlacement(value *WorkersScriptPlacement)
 	PutTailConsumers(value interface{})
-	ResetAccountId()
 	ResetAnnotations()
 	ResetAssets()
 	ResetBindings()
@@ -965,7 +964,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -983,7 +982,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -1654,14 +1653,6 @@ func (w *jsiiProxy_WorkersScript) PutTailConsumers(value interface{}) {
 		w,
 		"putTailConsumers",
 		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

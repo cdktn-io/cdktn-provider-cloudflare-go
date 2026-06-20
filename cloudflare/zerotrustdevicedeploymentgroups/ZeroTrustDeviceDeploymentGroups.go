@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups}.
 type ZeroTrustDeviceDeploymentGroups interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDeploymentGroups) VersionConfigInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Resource.
 func NewZeroTrustDeviceDeploymentGroups(scope constructs.Construct, id *string, config *ZeroTrustDeviceDeploymentGroupsConfig) ZeroTrustDeviceDeploymentGroups {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewZeroTrustDeviceDeploymentGroups(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Resource.
 func NewZeroTrustDeviceDeploymentGroups_Override(z ZeroTrustDeviceDeploymentGroups, scope constructs.Construct, id *string, config *ZeroTrustDeviceDeploymentGroupsConfig) {
 	_init_.Initialize()
 

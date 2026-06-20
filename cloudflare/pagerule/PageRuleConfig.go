@@ -22,10 +22,14 @@ type PageRuleConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_rule#actions PageRule#actions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/page_rule#actions PageRule#actions}.
 	Actions *PageRuleActions `field:"required" json:"actions" yaml:"actions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_rule#target PageRule#target}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/page_rule#target PageRule#target}.
 	Target *string `field:"required" json:"target" yaml:"target"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/page_rule#zone_id PageRule#zone_id}
+	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// The priority of the rule, used to define which Page Rule is processed over another.
 	//
 	// A higher number indicates a higher priority. For example,
@@ -33,15 +37,11 @@ type PageRuleConfig struct {
 	// specific Page Rule to take precedence (rule B: `/images/special/*`),
 	// specify a higher priority for rule B so it overrides rule A.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_rule#priority PageRule#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/page_rule#priority PageRule#priority}
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
 	// The status of the Page Rule. Available values: "active", "disabled".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_rule#status PageRule#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/page_rule#status PageRule#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
-	// Identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_rule#zone_id PageRule#zone_id}
-	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

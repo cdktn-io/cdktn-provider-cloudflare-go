@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}.
 type R2DataCatalog interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -116,7 +116,6 @@ type R2DataCatalog interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -408,7 +407,7 @@ func (j *jsiiProxy_R2DataCatalog) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog} Resource.
 func NewR2DataCatalog(scope constructs.Construct, id *string, config *R2DataCatalogConfig) R2DataCatalog {
 	_init_.Initialize()
 
@@ -426,7 +425,7 @@ func NewR2DataCatalog(scope constructs.Construct, id *string, config *R2DataCata
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog} Resource.
 func NewR2DataCatalog_Override(r R2DataCatalog, scope constructs.Construct, id *string, config *R2DataCatalogConfig) {
 	_init_.Initialize()
 
@@ -877,14 +876,6 @@ func (r *jsiiProxy_R2DataCatalog) OverrideLogicalId(newLogicalId *string) {
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (r *jsiiProxy_R2DataCatalog) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry}.
 type ZeroTrustDlpCustomEntry interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -133,7 +133,6 @@ type ZeroTrustDlpCustomEntry interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPattern(value *ZeroTrustDlpCustomEntryPattern)
-	ResetAccountId()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -557,7 +556,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntry) WordList() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
 func NewZeroTrustDlpCustomEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpCustomEntryConfig) ZeroTrustDlpCustomEntry {
 	_init_.Initialize()
 
@@ -575,7 +574,7 @@ func NewZeroTrustDlpCustomEntry(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
 func NewZeroTrustDlpCustomEntry_Override(z ZeroTrustDlpCustomEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpCustomEntryConfig) {
 	_init_.Initialize()
 
@@ -1070,14 +1069,6 @@ func (z *jsiiProxy_ZeroTrustDlpCustomEntry) PutPattern(value *ZeroTrustDlpCustom
 		z,
 		"putPattern",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDlpCustomEntry) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -7,23 +7,23 @@ package datacloudflareemailsecurityblocksender
 type DataCloudflareEmailSecurityBlockSenderFilter struct {
 	// The sorting direction. Available values: "asc", "desc".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_block_sender#direction DataCloudflareEmailSecurityBlockSender#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_security_block_sender#direction DataCloudflareEmailSecurityBlockSender#direction}
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 	// Field to sort by. Available values: "pattern", "created_at".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_block_sender#order DataCloudflareEmailSecurityBlockSender#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_security_block_sender#order DataCloudflareEmailSecurityBlockSender#order}
 	Order *string `field:"optional" json:"order" yaml:"order"`
 	// Filter by pattern value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_block_sender#pattern DataCloudflareEmailSecurityBlockSender#pattern}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_security_block_sender#pattern DataCloudflareEmailSecurityBlockSender#pattern}
 	Pattern *string `field:"optional" json:"pattern" yaml:"pattern"`
 	// Filter by pattern type. Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_block_sender#pattern_type DataCloudflareEmailSecurityBlockSender#pattern_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_security_block_sender#pattern_type DataCloudflareEmailSecurityBlockSender#pattern_type}
 	PatternType *string `field:"optional" json:"patternType" yaml:"patternType"`
 	// Search term for filtering records. Behavior may change.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_block_sender#search DataCloudflareEmailSecurityBlockSender#search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_security_block_sender#search DataCloudflareEmailSecurityBlockSender#search}
 	Search *string `field:"optional" json:"search" yaml:"search"`
 }
 

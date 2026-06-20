@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route}.
 type ZeroTrustTunnelCloudflaredRoute interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -122,7 +122,6 @@ type ZeroTrustTunnelCloudflaredRoute interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetComment()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -446,7 +445,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredRoute) VirtualNetworkIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Resource.
 func NewZeroTrustTunnelCloudflaredRoute(scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredRouteConfig) ZeroTrustTunnelCloudflaredRoute {
 	_init_.Initialize()
 
@@ -464,7 +463,7 @@ func NewZeroTrustTunnelCloudflaredRoute(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Resource.
 func NewZeroTrustTunnelCloudflaredRoute_Override(z ZeroTrustTunnelCloudflaredRoute, scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredRouteConfig) {
 	_init_.Initialize()
 
@@ -948,14 +947,6 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredRoute) OverrideLogicalId(newLogical
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredRoute) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

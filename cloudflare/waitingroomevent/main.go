@@ -79,7 +79,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTotalActiveUsers", GoMethod: "ResetTotalActiveUsers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTurnstileAction", GoMethod: "ResetTurnstileAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTurnstileMode", GoMethod: "ResetTurnstileMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionDuration", GoGetter: "SessionDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionDurationInput", GoGetter: "SessionDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "shuffleAtEventStart", GoGetter: "ShuffleAtEventStart"},

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain cloudflare_registrar_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain cloudflare_registrar_domain}.
 type RegistrarDomain interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -119,7 +119,6 @@ type RegistrarDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetAutoRenew()
 	ResetLocked()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -414,7 +413,7 @@ func (j *jsiiProxy_RegistrarDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain cloudflare_registrar_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain cloudflare_registrar_domain} Resource.
 func NewRegistrarDomain(scope constructs.Construct, id *string, config *RegistrarDomainConfig) RegistrarDomain {
 	_init_.Initialize()
 
@@ -432,7 +431,7 @@ func NewRegistrarDomain(scope constructs.Construct, id *string, config *Registra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain cloudflare_registrar_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain cloudflare_registrar_domain} Resource.
 func NewRegistrarDomain_Override(r RegistrarDomain, scope constructs.Construct, id *string, config *RegistrarDomainConfig) {
 	_init_.Initialize()
 
@@ -916,14 +915,6 @@ func (r *jsiiProxy_RegistrarDomain) OverrideLogicalId(newLogicalId *string) {
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (r *jsiiProxy_RegistrarDomain) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

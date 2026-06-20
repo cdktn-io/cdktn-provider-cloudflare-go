@@ -82,7 +82,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putModules", GoMethod: "PutModules"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlacement", GoMethod: "PutPlacement"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssets", GoMethod: "ResetAssets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBindings", GoMethod: "ResetBindings"},

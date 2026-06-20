@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate}.
 type AuthenticatedOriginPullsHostnameCertificate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsHostnameCertificate) ZoneIdInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate} Resource.
 func NewAuthenticatedOriginPullsHostnameCertificate(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsHostnameCertificateConfig) AuthenticatedOriginPullsHostnameCertificate {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewAuthenticatedOriginPullsHostnameCertificate(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/authenticated_origin_pulls_hostname_certificate cloudflare_authenticated_origin_pulls_hostname_certificate} Resource.
 func NewAuthenticatedOriginPullsHostnameCertificate_Override(a AuthenticatedOriginPullsHostnameCertificate, scope constructs.Construct, id *string, config *AuthenticatedOriginPullsHostnameCertificateConfig) {
 	_init_.Initialize()
 

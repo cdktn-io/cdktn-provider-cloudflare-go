@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
 type ApiShieldOperationSchemaValidationSettings interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -118,7 +118,6 @@ type ApiShieldOperationSchemaValidationSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -377,7 +376,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ZoneIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
 func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, id *string, config *ApiShieldOperationSchemaValidationSettingsConfig) ApiShieldOperationSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -395,7 +394,7 @@ func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
 func NewApiShieldOperationSchemaValidationSettings_Override(a ApiShieldOperationSchemaValidationSettings, scope constructs.Construct, id *string, config *ApiShieldOperationSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 
@@ -872,14 +871,6 @@ func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

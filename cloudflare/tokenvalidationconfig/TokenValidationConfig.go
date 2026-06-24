@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/token_validation_config cloudflare_token_validation_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/token_validation_config cloudflare_token_validation_config}.
 type TokenValidationConfig interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -466,7 +466,7 @@ func (j *jsiiProxy_TokenValidationConfig) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/token_validation_config cloudflare_token_validation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/token_validation_config cloudflare_token_validation_config} Resource.
 func NewTokenValidationConfig(scope constructs.Construct, id *string, config *TokenValidationConfigConfig) TokenValidationConfig {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewTokenValidationConfig(scope constructs.Construct, id *string, config *To
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/token_validation_config cloudflare_token_validation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/token_validation_config cloudflare_token_validation_config} Resource.
 func NewTokenValidationConfig_Override(t TokenValidationConfig, scope constructs.Construct, id *string, config *TokenValidationConfigConfig) {
 	_init_.Initialize()
 

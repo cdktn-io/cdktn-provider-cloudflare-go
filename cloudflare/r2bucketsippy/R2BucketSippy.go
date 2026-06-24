@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
 type R2BucketSippy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_R2BucketSippy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSippyConfig) R2BucketSippy {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy_Override(r R2BucketSippy, scope constructs.Construct, id *string, config *R2BucketSippyConfig) {
 	_init_.Initialize()
 

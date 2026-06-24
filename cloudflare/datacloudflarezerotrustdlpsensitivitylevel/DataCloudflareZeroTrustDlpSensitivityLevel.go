@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level cloudflare_zero_trust_dlp_sensitivity_level}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dlp_sensitivity_level cloudflare_zero_trust_dlp_sensitivity_level}.
 type DataCloudflareZeroTrustDlpSensitivityLevel interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpSensitivityLevel) UpdatedAt() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level cloudflare_zero_trust_dlp_sensitivity_level} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dlp_sensitivity_level cloudflare_zero_trust_dlp_sensitivity_level} Data Source.
 func NewDataCloudflareZeroTrustDlpSensitivityLevel(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpSensitivityLevelConfig) DataCloudflareZeroTrustDlpSensitivityLevel {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewDataCloudflareZeroTrustDlpSensitivityLevel(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level cloudflare_zero_trust_dlp_sensitivity_level} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dlp_sensitivity_level cloudflare_zero_trust_dlp_sensitivity_level} Data Source.
 func NewDataCloudflareZeroTrustDlpSensitivityLevel_Override(d DataCloudflareZeroTrustDlpSensitivityLevel, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpSensitivityLevelConfig) {
 	_init_.Initialize()
 

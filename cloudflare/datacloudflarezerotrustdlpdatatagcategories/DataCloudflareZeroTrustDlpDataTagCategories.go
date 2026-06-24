@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tag_categories cloudflare_zero_trust_dlp_data_tag_categories}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dlp_data_tag_categories cloudflare_zero_trust_dlp_data_tag_categories}.
 type DataCloudflareZeroTrustDlpDataTagCategories interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpDataTagCategories) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tag_categories cloudflare_zero_trust_dlp_data_tag_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dlp_data_tag_categories cloudflare_zero_trust_dlp_data_tag_categories} Data Source.
 func NewDataCloudflareZeroTrustDlpDataTagCategories(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpDataTagCategoriesConfig) DataCloudflareZeroTrustDlpDataTagCategories {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataCloudflareZeroTrustDlpDataTagCategories(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tag_categories cloudflare_zero_trust_dlp_data_tag_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dlp_data_tag_categories cloudflare_zero_trust_dlp_data_tag_categories} Data Source.
 func NewDataCloudflareZeroTrustDlpDataTagCategories_Override(d DataCloudflareZeroTrustDlpDataTagCategories, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpDataTagCategoriesConfig) {
 	_init_.Initialize()
 

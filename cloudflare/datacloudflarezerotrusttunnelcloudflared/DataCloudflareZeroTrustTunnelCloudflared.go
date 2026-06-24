@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared}.
 type DataCloudflareZeroTrustTunnelCloudflared interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -465,7 +465,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflared) TunType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflared(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredConfig) DataCloudflareZeroTrustTunnelCloudflared {
 	_init_.Initialize()
 
@@ -483,7 +483,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflared(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_tunnel_cloudflared cloudflare_zero_trust_tunnel_cloudflared} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflared_Override(d DataCloudflareZeroTrustTunnelCloudflared, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredConfig) {
 	_init_.Initialize()
 

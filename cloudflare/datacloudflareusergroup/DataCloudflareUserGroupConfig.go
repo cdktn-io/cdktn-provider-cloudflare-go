@@ -24,13 +24,13 @@ type DataCloudflareUserGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/user_group#account_id DataCloudflareUserGroup#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/user_group#account_id DataCloudflareUserGroup#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/user_group#filter DataCloudflareUserGroup#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/user_group#filter DataCloudflareUserGroup#filter}.
 	Filter *DataCloudflareUserGroupFilter `field:"optional" json:"filter" yaml:"filter"`
 	// User Group identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/user_group#user_group_id DataCloudflareUserGroup#user_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/user_group#user_group_id DataCloudflareUserGroup#user_group_id}
 	UserGroupId *string `field:"optional" json:"userGroupId" yaml:"userGroupId"`
 }
 

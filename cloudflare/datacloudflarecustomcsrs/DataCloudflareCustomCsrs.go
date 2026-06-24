@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/custom_csrs cloudflare_custom_csrs}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/custom_csrs cloudflare_custom_csrs}.
 type DataCloudflareCustomCsrs interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataCloudflareCustomCsrs) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/custom_csrs cloudflare_custom_csrs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/custom_csrs cloudflare_custom_csrs} Data Source.
 func NewDataCloudflareCustomCsrs(scope constructs.Construct, id *string, config *DataCloudflareCustomCsrsConfig) DataCloudflareCustomCsrs {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataCloudflareCustomCsrs(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/custom_csrs cloudflare_custom_csrs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/custom_csrs cloudflare_custom_csrs} Data Source.
 func NewDataCloudflareCustomCsrs_Override(d DataCloudflareCustomCsrs, scope constructs.Construct, id *string, config *DataCloudflareCustomCsrsConfig) {
 	_init_.Initialize()
 

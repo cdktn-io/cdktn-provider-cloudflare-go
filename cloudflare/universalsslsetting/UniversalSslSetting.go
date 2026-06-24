@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting}.
 type UniversalSslSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_UniversalSslSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource.
 func NewUniversalSslSetting(scope constructs.Construct, id *string, config *UniversalSslSettingConfig) UniversalSslSetting {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewUniversalSslSetting(scope constructs.Construct, id *string, config *Univ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/universal_ssl_setting cloudflare_universal_ssl_setting} Resource.
 func NewUniversalSslSetting_Override(u UniversalSslSetting, scope constructs.Construct, id *string, config *UniversalSslSettingConfig) {
 	_init_.Initialize()
 

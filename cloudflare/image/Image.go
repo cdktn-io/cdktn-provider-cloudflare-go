@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/image cloudflare_image}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/image cloudflare_image}.
 type Image interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -505,7 +505,7 @@ func (j *jsiiProxy_Image) Variants() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/image cloudflare_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/image cloudflare_image} Resource.
 func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/image cloudflare_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/image cloudflare_image} Resource.
 func NewImage_Override(i Image, scope constructs.Construct, id *string, config *ImageConfig) {
 	_init_.Initialize()
 

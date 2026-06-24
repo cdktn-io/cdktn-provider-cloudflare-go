@@ -7,17 +7,17 @@ package flagshipflag
 type FlagshipFlagRules struct {
 	// Conditions the context must satisfy for this rule to match. An empty array matches all contexts.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/flagship_flag#conditions FlagshipFlag#conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/flagship_flag#conditions FlagshipFlag#conditions}
 	Conditions interface{} `field:"required" json:"conditions" yaml:"conditions"`
 	// Evaluation order; lower numbers are evaluated first. Must be unique across the flag's rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/flagship_flag#priority FlagshipFlag#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/flagship_flag#priority FlagshipFlag#priority}
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
 	// Variation served when this rule matches. Must be a key in `variations`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/flagship_flag#serve_variation FlagshipFlag#serve_variation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/flagship_flag#serve_variation FlagshipFlag#serve_variation}
 	ServeVariation *string `field:"required" json:"serveVariation" yaml:"serveVariation"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/flagship_flag#rollout FlagshipFlag#rollout}.
 	Rollout *FlagshipFlagRulesRollout `field:"optional" json:"rollout" yaml:"rollout"`
 }
 

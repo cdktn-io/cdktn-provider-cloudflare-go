@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}.
 type ZeroTrustDeviceDefaultProfileLocalDomainFallback interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -352,7 +352,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileLocalDomainFallback) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Resource.
 func NewZeroTrustDeviceDefaultProfileLocalDomainFallback(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig) ZeroTrustDeviceDefaultProfileLocalDomainFallback {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewZeroTrustDeviceDefaultProfileLocalDomainFallback(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Resource.
 func NewZeroTrustDeviceDefaultProfileLocalDomainFallback_Override(z ZeroTrustDeviceDefaultProfileLocalDomainFallback, scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig) {
 	_init_.Initialize()
 

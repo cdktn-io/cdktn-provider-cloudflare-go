@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_posture_integrations cloudflare_zero_trust_device_posture_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_posture_integrations cloudflare_zero_trust_device_posture_integrations}.
 type DataCloudflareZeroTrustDevicePostureIntegrations interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureIntegrations) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_posture_integrations cloudflare_zero_trust_device_posture_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_posture_integrations cloudflare_zero_trust_device_posture_integrations} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureIntegrations(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureIntegrationsConfig) DataCloudflareZeroTrustDevicePostureIntegrations {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareZeroTrustDevicePostureIntegrations(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_posture_integrations cloudflare_zero_trust_device_posture_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_posture_integrations cloudflare_zero_trust_device_posture_integrations} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureIntegrations_Override(d DataCloudflareZeroTrustDevicePostureIntegrations, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureIntegrationsConfig) {
 	_init_.Initialize()
 

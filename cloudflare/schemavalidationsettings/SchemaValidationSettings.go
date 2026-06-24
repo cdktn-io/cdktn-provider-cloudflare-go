@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
 type SchemaValidationSettings interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_SchemaValidationSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
 func NewSchemaValidationSettings(scope constructs.Construct, id *string, config *SchemaValidationSettingsConfig) SchemaValidationSettings {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewSchemaValidationSettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/schema_validation_settings cloudflare_schema_validation_settings} Resource.
 func NewSchemaValidationSettings_Override(s SchemaValidationSettings, scope constructs.Construct, id *string, config *SchemaValidationSettingsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_risk_scoring_integrations cloudflare_zero_trust_risk_scoring_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_risk_scoring_integrations cloudflare_zero_trust_risk_scoring_integrations}.
 type DataCloudflareZeroTrustRiskScoringIntegrations interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegrations) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_risk_scoring_integrations cloudflare_zero_trust_risk_scoring_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_risk_scoring_integrations cloudflare_zero_trust_risk_scoring_integrations} Data Source.
 func NewDataCloudflareZeroTrustRiskScoringIntegrations(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustRiskScoringIntegrationsConfig) DataCloudflareZeroTrustRiskScoringIntegrations {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareZeroTrustRiskScoringIntegrations(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_risk_scoring_integrations cloudflare_zero_trust_risk_scoring_integrations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_risk_scoring_integrations cloudflare_zero_trust_risk_scoring_integrations} Data Source.
 func NewDataCloudflareZeroTrustRiskScoringIntegrations_Override(d DataCloudflareZeroTrustRiskScoringIntegrations, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustRiskScoringIntegrationsConfig) {
 	_init_.Initialize()
 

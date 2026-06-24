@@ -240,6 +240,8 @@ type RulesetRulesActionParametersOutputReference interface {
 	Values() *[]*string
 	SetValues(val *[]*string)
 	ValuesInput() *[]*string
+	Vary() RulesetRulesActionParametersVaryOutputReference
+	VaryInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -298,6 +300,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutStaleWhileRevalidate(value *RulesetRulesActionParametersStaleWhileRevalidate)
 	PutTransformedRequestFields(value interface{})
 	PutUri(value *RulesetRulesActionParametersUri)
+	PutVary(value *RulesetRulesActionParametersVary)
 	ResetAdditionalCacheablePorts()
 	ResetAlgorithms()
 	ResetAssetName()
@@ -376,6 +379,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetTransformedRequestFields()
 	ResetUri()
 	ResetValues()
+	ResetVary()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -2021,6 +2025,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ValuesInput() *[
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Vary() RulesetRulesActionParametersVaryOutputReference {
+	var returns RulesetRulesActionParametersVaryOutputReference
+	_jsii_.Get(
+		j,
+		"vary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) VaryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"varyInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewRulesetRulesActionParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersOutputReference {
 	_init_.Initialize()
@@ -3148,6 +3172,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutUri(value *Ru
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutVary(value *RulesetRulesActionParametersVary) {
+	if err := r.validatePutVaryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putVary",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAdditionalCacheablePorts() {
 	_jsii_.InvokeVoid(
 		r,
@@ -3768,6 +3803,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetValues() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetValues",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetVary() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetVary",
 		nil, // no parameters
 	)
 }

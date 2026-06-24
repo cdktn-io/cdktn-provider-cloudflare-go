@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list}.
 type DataCloudflareNotificationPolicyWebhooksList interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyWebhooksList) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
 func NewDataCloudflareNotificationPolicyWebhooksList(scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyWebhooksListConfig) DataCloudflareNotificationPolicyWebhooksList {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareNotificationPolicyWebhooksList(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/notification_policy_webhooks_list cloudflare_notification_policy_webhooks_list} Data Source.
 func NewDataCloudflareNotificationPolicyWebhooksList_Override(d DataCloudflareNotificationPolicyWebhooksList, scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyWebhooksListConfig) {
 	_init_.Initialize()
 

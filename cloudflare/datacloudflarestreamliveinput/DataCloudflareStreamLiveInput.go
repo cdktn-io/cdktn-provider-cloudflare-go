@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/stream_live_input cloudflare_stream_live_input}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/stream_live_input cloudflare_stream_live_input}.
 type DataCloudflareStreamLiveInput interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -450,7 +450,7 @@ func (j *jsiiProxy_DataCloudflareStreamLiveInput) WebRtcPlayback() DataCloudflar
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source.
 func NewDataCloudflareStreamLiveInput(scope constructs.Construct, id *string, config *DataCloudflareStreamLiveInputConfig) DataCloudflareStreamLiveInput {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewDataCloudflareStreamLiveInput(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source.
 func NewDataCloudflareStreamLiveInput_Override(d DataCloudflareStreamLiveInput, scope constructs.Construct, id *string, config *DataCloudflareStreamLiveInputConfig) {
 	_init_.Initialize()
 

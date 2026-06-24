@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex}.
 type ZoneAutoOriginTlsKex interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_ZoneAutoOriginTlsKex) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex} Resource.
 func NewZoneAutoOriginTlsKex(scope constructs.Construct, id *string, config *ZoneAutoOriginTlsKexConfig) ZoneAutoOriginTlsKex {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewZoneAutoOriginTlsKex(scope constructs.Construct, id *string, config *Zon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex} Resource.
 func NewZoneAutoOriginTlsKex_Override(z ZoneAutoOriginTlsKex, scope constructs.Construct, id *string, config *ZoneAutoOriginTlsKexConfig) {
 	_init_.Initialize()
 

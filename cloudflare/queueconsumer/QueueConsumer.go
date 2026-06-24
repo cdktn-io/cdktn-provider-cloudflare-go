@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue_consumer cloudflare_queue_consumer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/queue_consumer cloudflare_queue_consumer}.
 type QueueConsumer interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -469,7 +469,7 @@ func (j *jsiiProxy_QueueConsumer) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
 func NewQueueConsumer(scope constructs.Construct, id *string, config *QueueConsumerConfig) QueueConsumer {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewQueueConsumer(scope constructs.Construct, id *string, config *QueueConsu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/queue_consumer cloudflare_queue_consumer} Resource.
 func NewQueueConsumer_Override(q QueueConsumer, scope constructs.Construct, id *string, config *QueueConsumerConfig) {
 	_init_.Initialize()
 

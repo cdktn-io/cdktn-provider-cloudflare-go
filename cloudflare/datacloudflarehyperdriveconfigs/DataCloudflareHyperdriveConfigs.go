@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs}.
 type DataCloudflareHyperdriveConfigs interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigs) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source.
 func NewDataCloudflareHyperdriveConfigs(scope constructs.Construct, id *string, config *DataCloudflareHyperdriveConfigsConfig) DataCloudflareHyperdriveConfigs {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareHyperdriveConfigs(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/hyperdrive_configs cloudflare_hyperdrive_configs} Data Source.
 func NewDataCloudflareHyperdriveConfigs_Override(d DataCloudflareHyperdriveConfigs, scope constructs.Construct, id *string, config *DataCloudflareHyperdriveConfigsConfig) {
 	_init_.Initialize()
 

@@ -24,7 +24,7 @@ type HostnameTlsSettingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The hostname for which the tls settings are set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
 	// The TLS Setting name.
 	//
@@ -34,7 +34,7 @@ type HostnameTlsSettingConfig struct {
 	// - `http2`: value is `"on"` or `"off"`.
 	// Available values: "ciphers", "min_tls_version", "http2".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
 	SettingId *string `field:"required" json:"settingId" yaml:"settingId"`
 	// The TLS setting value.
 	//
@@ -44,11 +44,11 @@ type HostnameTlsSettingConfig struct {
 	// - `http2`: a string indicating whether HTTP/2 is enabled — `"on"` or `"off"` (e.g., `"on"`).
 	// Available values: "1.0", "1.1", "1.2", "1.3", "on", "off".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
 	Value *map[string]interface{} `field:"required" json:"value" yaml:"value"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

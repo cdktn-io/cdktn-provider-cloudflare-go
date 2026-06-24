@@ -5,15 +5,15 @@ package datacloudflarezone
 
 
 type DataCloudflareZoneFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zone#account DataCloudflareZone#account}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zone#account DataCloudflareZone#account}.
 	Account *DataCloudflareZoneFilterAccount `field:"optional" json:"account" yaml:"account"`
 	// Direction to order zones. Available values: "asc", "desc".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zone#direction DataCloudflareZone#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zone#direction DataCloudflareZone#direction}
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 	// Whether to match all search requirements or at least one (any). Available values: "any", "all".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zone#match DataCloudflareZone#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zone#match DataCloudflareZone#match}
 	Match *string `field:"optional" json:"match" yaml:"match"`
 	// A domain name.
 	//
@@ -27,21 +27,21 @@ type DataCloudflareZoneFilter struct {
 	//   * `ends_with_case_sensitive`
 	//   * `contains_case_sensitive`
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zone#name DataCloudflareZone#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zone#name DataCloudflareZone#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Field to order zones by. Available values: "name", "status", "account.id", "account.name", "plan.id".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zone#order DataCloudflareZone#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zone#order DataCloudflareZone#order}
 	Order *string `field:"optional" json:"order" yaml:"order"`
 	// Specify a zone status to filter by. Available values: "initializing", "pending", "active", "moved".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zone#status DataCloudflareZone#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zone#status DataCloudflareZone#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 	// Zone types to filter by.
 	//
 	// Multiple types can be specified as a comma-separated list (e.g., ?type=full,partial,secondary). When this parameter is not provided, zones with type "internal" are excluded from the results.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zone#type DataCloudflareZone#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zone#type DataCloudflareZone#type}
 	Type *[]*string `field:"optional" json:"type" yaml:"type"`
 }
 

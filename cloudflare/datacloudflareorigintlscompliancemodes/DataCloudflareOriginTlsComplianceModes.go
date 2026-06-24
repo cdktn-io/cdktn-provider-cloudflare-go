@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes}.
 type DataCloudflareOriginTlsComplianceModes interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataCloudflareOriginTlsComplianceModes) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes} Data Source.
 func NewDataCloudflareOriginTlsComplianceModes(scope constructs.Construct, id *string, config *DataCloudflareOriginTlsComplianceModesConfig) DataCloudflareOriginTlsComplianceModes {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataCloudflareOriginTlsComplianceModes(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes} Data Source.
 func NewDataCloudflareOriginTlsComplianceModes_Override(d DataCloudflareOriginTlsComplianceModes, scope constructs.Construct, id *string, config *DataCloudflareOriginTlsComplianceModesConfig) {
 	_init_.Initialize()
 

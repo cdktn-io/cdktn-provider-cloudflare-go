@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
 type DataCloudflareZeroTrustDeviceDefaultProfile interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -527,7 +527,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfile) VirtualNetworks(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileConfig) DataCloudflareZeroTrustDeviceDefaultProfile {
 	_init_.Initialize()
 
@@ -545,7 +545,7 @@ func NewDataCloudflareZeroTrustDeviceDefaultProfile(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfile_Override(d DataCloudflareZeroTrustDeviceDefaultProfile, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileConfig) {
 	_init_.Initialize()
 

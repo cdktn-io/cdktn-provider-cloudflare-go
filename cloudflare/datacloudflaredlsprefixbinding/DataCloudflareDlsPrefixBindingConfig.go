@@ -24,11 +24,11 @@ type DataCloudflareDlsPrefixBindingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier of a Cloudflare account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dls_prefix_binding#account_id DataCloudflareDlsPrefixBinding#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dls_prefix_binding#account_id DataCloudflareDlsPrefixBinding#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Unique identifier for the prefix binding.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dls_prefix_binding#binding_id DataCloudflareDlsPrefixBinding#binding_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dls_prefix_binding#binding_id DataCloudflareDlsPrefixBinding#binding_id}
 	BindingId *string `field:"required" json:"bindingId" yaml:"bindingId"`
 }
 

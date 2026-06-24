@@ -24,19 +24,19 @@ type DataCloudflareShareRecipientsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipients#account_id DataCloudflareShareRecipients#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipients#account_id DataCloudflareShareRecipients#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Share identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipients#share_id DataCloudflareShareRecipients#share_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipients#share_id DataCloudflareShareRecipients#share_id}
 	ShareId *string `field:"required" json:"shareId" yaml:"shareId"`
 	// Include resources in the response.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipients#include_resources DataCloudflareShareRecipients#include_resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipients#include_resources DataCloudflareShareRecipients#include_resources}
 	IncludeResources interface{} `field:"optional" json:"includeResources" yaml:"includeResources"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipients#max_items DataCloudflareShareRecipients#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipients#max_items DataCloudflareShareRecipients#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 }
 

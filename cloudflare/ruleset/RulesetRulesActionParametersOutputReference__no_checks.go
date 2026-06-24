@@ -183,6 +183,10 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutUriPa
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutVaryParameters(value *RulesetRulesActionParametersVary) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

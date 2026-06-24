@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/origin_cloud_region cloudflare_origin_cloud_region}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_cloud_region cloudflare_origin_cloud_region}.
 type OriginCloudRegion interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -409,7 +409,7 @@ func (j *jsiiProxy_OriginCloudRegion) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/origin_cloud_region cloudflare_origin_cloud_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_cloud_region cloudflare_origin_cloud_region} Resource.
 func NewOriginCloudRegion(scope constructs.Construct, id *string, config *OriginCloudRegionConfig) OriginCloudRegion {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewOriginCloudRegion(scope constructs.Construct, id *string, config *Origin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/origin_cloud_region cloudflare_origin_cloud_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_cloud_region cloudflare_origin_cloud_region} Resource.
 func NewOriginCloudRegion_Override(o OriginCloudRegion, scope constructs.Construct, id *string, config *OriginCloudRegionConfig) {
 	_init_.Initialize()
 

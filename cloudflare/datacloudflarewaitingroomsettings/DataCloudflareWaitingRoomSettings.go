@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/waiting_room_settings cloudflare_waiting_room_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/waiting_room_settings cloudflare_waiting_room_settings}.
 type DataCloudflareWaitingRoomSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/waiting_room_settings cloudflare_waiting_room_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/waiting_room_settings cloudflare_waiting_room_settings} Data Source.
 func NewDataCloudflareWaitingRoomSettings(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomSettingsConfig) DataCloudflareWaitingRoomSettings {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareWaitingRoomSettings(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/waiting_room_settings cloudflare_waiting_room_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/waiting_room_settings cloudflare_waiting_room_settings} Data Source.
 func NewDataCloudflareWaitingRoomSettings_Override(d DataCloudflareWaitingRoomSettings, scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomSettingsConfig) {
 	_init_.Initialize()
 

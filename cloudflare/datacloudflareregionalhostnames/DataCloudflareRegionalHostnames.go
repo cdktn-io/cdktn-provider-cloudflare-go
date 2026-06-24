@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/regional_hostnames cloudflare_regional_hostnames}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/regional_hostnames cloudflare_regional_hostnames}.
 type DataCloudflareRegionalHostnames interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareRegionalHostnames) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/regional_hostnames cloudflare_regional_hostnames} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/regional_hostnames cloudflare_regional_hostnames} Data Source.
 func NewDataCloudflareRegionalHostnames(scope constructs.Construct, id *string, config *DataCloudflareRegionalHostnamesConfig) DataCloudflareRegionalHostnames {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareRegionalHostnames(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/regional_hostnames cloudflare_regional_hostnames} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/regional_hostnames cloudflare_regional_hostnames} Data Source.
 func NewDataCloudflareRegionalHostnames_Override(d DataCloudflareRegionalHostnames, scope constructs.Construct, id *string, config *DataCloudflareRegionalHostnamesConfig) {
 	_init_.Initialize()
 

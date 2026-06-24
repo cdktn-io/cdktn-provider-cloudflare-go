@@ -24,11 +24,11 @@ type SecretsStoreConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store#account_id SecretsStore#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store#account_id SecretsStore#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the store.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store#name SecretsStore#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store#name SecretsStore#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

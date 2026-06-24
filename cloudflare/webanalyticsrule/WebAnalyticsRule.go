@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
 type WebAnalyticsRule interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -470,7 +470,7 @@ func (j *jsiiProxy_WebAnalyticsRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
 func NewWebAnalyticsRule(scope constructs.Construct, id *string, config *WebAnalyticsRuleConfig) WebAnalyticsRule {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewWebAnalyticsRule(scope constructs.Construct, id *string, config *WebAnal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
 func NewWebAnalyticsRule_Override(w WebAnalyticsRule, scope constructs.Construct, id *string, config *WebAnalyticsRuleConfig) {
 	_init_.Initialize()
 

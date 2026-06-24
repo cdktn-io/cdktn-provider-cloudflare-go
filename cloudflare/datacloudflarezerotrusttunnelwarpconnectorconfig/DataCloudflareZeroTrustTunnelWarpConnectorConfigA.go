@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config}.
 type DataCloudflareZeroTrustTunnelWarpConnectorConfigA interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorConfigA) UpdatedAt(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config} Data Source.
 func NewDataCloudflareZeroTrustTunnelWarpConnectorConfigA(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelWarpConnectorConfigAConfig) DataCloudflareZeroTrustTunnelWarpConnectorConfigA {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataCloudflareZeroTrustTunnelWarpConnectorConfigA(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config} Data Source.
 func NewDataCloudflareZeroTrustTunnelWarpConnectorConfigA_Override(d DataCloudflareZeroTrustTunnelWarpConnectorConfigA, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelWarpConnectorConfigAConfig) {
 	_init_.Initialize()
 

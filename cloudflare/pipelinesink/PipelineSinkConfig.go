@@ -24,23 +24,23 @@ type PipelineSinkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specifies the public ID of the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_sink#account_id PipelineSink#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Defines the name of the Sink.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_sink#name PipelineSink#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_sink#name PipelineSink#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Specifies the type of sink. Available values: "r2", "r2_data_catalog".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_sink#type PipelineSink#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_sink#type PipelineSink#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Defines the configuration of the R2 Sink.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_sink#config PipelineSink#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_sink#config PipelineSink#config}
 	Config *PipelineSinkConfigA `field:"optional" json:"config" yaml:"config"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_sink#format PipelineSink#format}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_sink#format PipelineSink#format}.
 	Format *PipelineSinkFormat `field:"optional" json:"format" yaml:"format"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_sink#schema PipelineSink#schema}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_sink#schema PipelineSink#schema}.
 	Schema *PipelineSinkSchema `field:"optional" json:"schema" yaml:"schema"`
 }
 

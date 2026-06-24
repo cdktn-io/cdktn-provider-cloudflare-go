@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes}.
 type DataCloudflareZeroTrustNetworkHostnameRoutes interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoutes) TunnelIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes} Data Source.
 func NewDataCloudflareZeroTrustNetworkHostnameRoutes(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustNetworkHostnameRoutesConfig) DataCloudflareZeroTrustNetworkHostnameRoutes {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewDataCloudflareZeroTrustNetworkHostnameRoutes(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_network_hostname_routes cloudflare_zero_trust_network_hostname_routes} Data Source.
 func NewDataCloudflareZeroTrustNetworkHostnameRoutes_Override(d DataCloudflareZeroTrustNetworkHostnameRoutes, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustNetworkHostnameRoutesConfig) {
 	_init_.Initialize()
 

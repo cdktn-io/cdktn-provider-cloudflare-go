@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_apps cloudflare_flagship_apps}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/flagship_apps cloudflare_flagship_apps}.
 type DataCloudflareFlagshipApps interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareFlagshipApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_apps cloudflare_flagship_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/flagship_apps cloudflare_flagship_apps} Data Source.
 func NewDataCloudflareFlagshipApps(scope constructs.Construct, id *string, config *DataCloudflareFlagshipAppsConfig) DataCloudflareFlagshipApps {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataCloudflareFlagshipApps(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_apps cloudflare_flagship_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/flagship_apps cloudflare_flagship_apps} Data Source.
 func NewDataCloudflareFlagshipApps_Override(d DataCloudflareFlagshipApps, scope constructs.Construct, id *string, config *DataCloudflareFlagshipAppsConfig) {
 	_init_.Initialize()
 

@@ -22,17 +22,17 @@ type ZeroTrustDexRuleConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_rule#account_id ZeroTrustDexRule#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dex_rule#account_id ZeroTrustDexRule#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The wirefilter expression to match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_rule#match ZeroTrustDexRule#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dex_rule#match ZeroTrustDexRule#match}
 	Match *string `field:"required" json:"match" yaml:"match"`
 	// The name of the Rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_rule#name ZeroTrustDexRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dex_rule#name ZeroTrustDexRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_rule#description ZeroTrustDexRule#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dex_rule#description ZeroTrustDexRule#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

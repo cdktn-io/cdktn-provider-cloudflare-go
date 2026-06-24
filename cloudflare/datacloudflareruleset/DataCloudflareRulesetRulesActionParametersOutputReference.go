@@ -118,6 +118,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	TransformedRequestFields() DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList
 	Uri() DataCloudflareRulesetRulesActionParametersUriOutputReference
 	Values() *[]*string
+	Vary() DataCloudflareRulesetRulesActionParametersVaryOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -1002,6 +1003,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Va
 	_jsii_.Get(
 		j,
 		"values",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Vary() DataCloudflareRulesetRulesActionParametersVaryOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersVaryOutputReference
+	_jsii_.Get(
+		j,
+		"vary",
 		&returns,
 	)
 	return returns

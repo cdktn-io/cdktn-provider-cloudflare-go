@@ -22,11 +22,11 @@ type ZeroTrustDlpSensitivityLevelOrderConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level_order#account_id ZeroTrustDlpSensitivityLevelOrder#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dlp_sensitivity_level_order#account_id ZeroTrustDlpSensitivityLevelOrder#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level_order#level_ids ZeroTrustDlpSensitivityLevelOrder#level_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dlp_sensitivity_level_order#level_ids ZeroTrustDlpSensitivityLevelOrder#level_ids}.
 	LevelIds *[]*string `field:"required" json:"levelIds" yaml:"levelIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id ZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id ZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}.
 	SensitivityGroupId *string `field:"required" json:"sensitivityGroupId" yaml:"sensitivityGroupId"`
 }
 

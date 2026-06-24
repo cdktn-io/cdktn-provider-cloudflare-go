@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
 type EmailSecurityBlockSender interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -455,7 +455,7 @@ func (j *jsiiProxy_EmailSecurityBlockSender) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
 func NewEmailSecurityBlockSender(scope constructs.Construct, id *string, config *EmailSecurityBlockSenderConfig) EmailSecurityBlockSender {
 	_init_.Initialize()
 
@@ -473,7 +473,7 @@ func NewEmailSecurityBlockSender(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
 func NewEmailSecurityBlockSender_Override(e EmailSecurityBlockSender, scope constructs.Construct, id *string, config *EmailSecurityBlockSenderConfig) {
 	_init_.Initialize()
 

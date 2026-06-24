@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_managed_networks_list cloudflare_zero_trust_device_managed_networks_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_managed_networks_list cloudflare_zero_trust_device_managed_networks_list}.
 type DataCloudflareZeroTrustDeviceManagedNetworksList interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceManagedNetworksList) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_managed_networks_list cloudflare_zero_trust_device_managed_networks_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_managed_networks_list cloudflare_zero_trust_device_managed_networks_list} Data Source.
 func NewDataCloudflareZeroTrustDeviceManagedNetworksList(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceManagedNetworksListConfig) DataCloudflareZeroTrustDeviceManagedNetworksList {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareZeroTrustDeviceManagedNetworksList(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_managed_networks_list cloudflare_zero_trust_device_managed_networks_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_managed_networks_list cloudflare_zero_trust_device_managed_networks_list} Data Source.
 func NewDataCloudflareZeroTrustDeviceManagedNetworksList_Override(d DataCloudflareZeroTrustDeviceManagedNetworksList, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceManagedNetworksListConfig) {
 	_init_.Initialize()
 

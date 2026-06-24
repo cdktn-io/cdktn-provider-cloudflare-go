@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups}.
 type DataCloudflareZeroTrustDeviceDeploymentGroups interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -362,7 +362,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDeploymentGroups) VersionConfig(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Data Source.
 func NewDataCloudflareZeroTrustDeviceDeploymentGroups(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDeploymentGroupsConfig) DataCloudflareZeroTrustDeviceDeploymentGroups {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewDataCloudflareZeroTrustDeviceDeploymentGroups(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Data Source.
 func NewDataCloudflareZeroTrustDeviceDeploymentGroups_Override(d DataCloudflareZeroTrustDeviceDeploymentGroups, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDeploymentGroupsConfig) {
 	_init_.Initialize()
 

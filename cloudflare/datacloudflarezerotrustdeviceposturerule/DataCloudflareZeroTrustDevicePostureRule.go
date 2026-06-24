@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}.
 type DataCloudflareZeroTrustDevicePostureRule interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRule) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureRule(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureRuleConfig) DataCloudflareZeroTrustDevicePostureRule {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataCloudflareZeroTrustDevicePostureRule(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureRule_Override(d DataCloudflareZeroTrustDevicePostureRule, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureRuleConfig) {
 	_init_.Initialize()
 

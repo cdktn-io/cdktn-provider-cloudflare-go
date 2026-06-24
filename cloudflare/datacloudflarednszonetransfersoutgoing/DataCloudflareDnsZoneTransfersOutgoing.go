@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
 type DataCloudflareDnsZoneTransfersOutgoing interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataCloudflareDnsZoneTransfersOutgoing) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Data Source.
 func NewDataCloudflareDnsZoneTransfersOutgoing(scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersOutgoingConfig) DataCloudflareDnsZoneTransfersOutgoing {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataCloudflareDnsZoneTransfersOutgoing(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Data Source.
 func NewDataCloudflareDnsZoneTransfersOutgoing_Override(d DataCloudflareDnsZoneTransfersOutgoing, scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersOutgoingConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network}.
 type ZeroTrustTunnelCloudflaredVirtualNetwork interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -446,7 +446,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredVirtualNetwork) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Resource.
 func NewZeroTrustTunnelCloudflaredVirtualNetwork(scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredVirtualNetworkConfig) ZeroTrustTunnelCloudflaredVirtualNetwork {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewZeroTrustTunnelCloudflaredVirtualNetwork(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network} Resource.
 func NewZeroTrustTunnelCloudflaredVirtualNetwork_Override(z ZeroTrustTunnelCloudflaredVirtualNetwork, scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredVirtualNetworkConfig) {
 	_init_.Initialize()
 

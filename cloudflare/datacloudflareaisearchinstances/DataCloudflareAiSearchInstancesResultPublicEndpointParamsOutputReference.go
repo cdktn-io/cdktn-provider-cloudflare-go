@@ -30,6 +30,7 @@ type DataCloudflareAiSearchInstancesResultPublicEndpointParamsOutputReference in
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomDomains() *[]*string
 	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -130,6 +131,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultPublicEndpointParamsOutp
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultPublicEndpointParamsOutputReference) CustomDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customDomains",
 		&returns,
 	)
 	return returns

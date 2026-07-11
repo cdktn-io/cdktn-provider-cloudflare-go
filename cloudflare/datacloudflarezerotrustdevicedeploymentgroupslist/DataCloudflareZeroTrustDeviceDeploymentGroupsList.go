@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_deployment_groups_list cloudflare_zero_trust_device_deployment_groups_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_device_deployment_groups_list cloudflare_zero_trust_device_deployment_groups_list}.
 type DataCloudflareZeroTrustDeviceDeploymentGroupsList interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDeploymentGroupsList) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_deployment_groups_list cloudflare_zero_trust_device_deployment_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_device_deployment_groups_list cloudflare_zero_trust_device_deployment_groups_list} Data Source.
 func NewDataCloudflareZeroTrustDeviceDeploymentGroupsList(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDeploymentGroupsListConfig) DataCloudflareZeroTrustDeviceDeploymentGroupsList {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataCloudflareZeroTrustDeviceDeploymentGroupsList(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_device_deployment_groups_list cloudflare_zero_trust_device_deployment_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_device_deployment_groups_list cloudflare_zero_trust_device_deployment_groups_list} Data Source.
 func NewDataCloudflareZeroTrustDeviceDeploymentGroupsList_Override(d DataCloudflareZeroTrustDeviceDeploymentGroupsList, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDeploymentGroupsListConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
 type EmailRoutingRule interface {
 	cdktn.TerraformResource
 	Actions() EmailRoutingRuleActionsList
@@ -56,6 +56,9 @@ type EmailRoutingRule interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OwnerWorkerTag() *string
+	SetOwnerWorkerTag(val *string)
+	OwnerWorkerTagInput() *string
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -69,6 +72,9 @@ type EmailRoutingRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	Tag() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -129,7 +135,9 @@ type EmailRoutingRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwnerWorkerTag()
 	ResetPriority()
+	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -347,6 +355,26 @@ func (j *jsiiProxy_EmailRoutingRule) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_EmailRoutingRule) OwnerWorkerTag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerWorkerTag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingRule) OwnerWorkerTagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerWorkerTagInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmailRoutingRule) Priority() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -392,6 +420,26 @@ func (j *jsiiProxy_EmailRoutingRule) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingRule) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingRule) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
 		&returns,
 	)
 	return returns
@@ -458,7 +506,7 @@ func (j *jsiiProxy_EmailRoutingRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
 func NewEmailRoutingRule(scope constructs.Construct, id *string, config *EmailRoutingRuleConfig) EmailRoutingRule {
 	_init_.Initialize()
 
@@ -476,7 +524,7 @@ func NewEmailRoutingRule(scope constructs.Construct, id *string, config *EmailRo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
 func NewEmailRoutingRule_Override(e EmailRoutingRule, scope constructs.Construct, id *string, config *EmailRoutingRuleConfig) {
 	_init_.Initialize()
 
@@ -558,6 +606,17 @@ func (j *jsiiProxy_EmailRoutingRule)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_EmailRoutingRule)SetOwnerWorkerTag(val *string) {
+	if err := j.validateSetOwnerWorkerTagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ownerWorkerTag",
+		val,
+	)
+}
+
 func (j *jsiiProxy_EmailRoutingRule)SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
@@ -584,6 +643,17 @@ func (j *jsiiProxy_EmailRoutingRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmailRoutingRule)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -998,10 +1068,26 @@ func (e *jsiiProxy_EmailRoutingRule) ResetOverrideLogicalId() {
 	)
 }
 
+func (e *jsiiProxy_EmailRoutingRule) ResetOwnerWorkerTag() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOwnerWorkerTag",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_EmailRoutingRule) ResetPriority() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailRoutingRule) ResetSource() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSource",
 		nil, // no parameters
 	)
 }

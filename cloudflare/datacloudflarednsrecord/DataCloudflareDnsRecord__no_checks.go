@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataCloudflareDnsRecord) validateSetDnsRecordIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareDnsRecord) validateSetIncludeShadowMetadataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareDnsRecord) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

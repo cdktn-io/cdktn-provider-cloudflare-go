@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order}.
 type ZeroTrustDlpSensitivityLevelOrder interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -375,7 +375,7 @@ func (j *jsiiProxy_ZeroTrustDlpSensitivityLevelOrder) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order} Resource.
 func NewZeroTrustDlpSensitivityLevelOrder(scope constructs.Construct, id *string, config *ZeroTrustDlpSensitivityLevelOrderConfig) ZeroTrustDlpSensitivityLevelOrder {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewZeroTrustDlpSensitivityLevelOrder(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order} Resource.
 func NewZeroTrustDlpSensitivityLevelOrder_Override(z ZeroTrustDlpSensitivityLevelOrder, scope constructs.Construct, id *string, config *ZeroTrustDlpSensitivityLevelOrderConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_records cloudflare_dns_records}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_records cloudflare_dns_records}.
 type DataCloudflareDnsRecords interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -42,6 +42,9 @@ type DataCloudflareDnsRecords interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	IncludeShadowMetadata() interface{}
+	SetIncludeShadowMetadata(val interface{})
+	IncludeShadowMetadataInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -72,6 +75,12 @@ type DataCloudflareDnsRecords interface {
 	Search() *string
 	SetSearch(val *string)
 	SearchInput() *string
+	ShadowedByName() *string
+	SetShadowedByName(val *string)
+	ShadowedByNameInput() *string
+	ShadowingName() *string
+	SetShadowingName(val *string)
+	ShadowingNameInput() *string
 	Tag() DataCloudflareDnsRecordsTagOutputReference
 	TagInput() interface{}
 	TagMatch() *string
@@ -121,6 +130,7 @@ type DataCloudflareDnsRecords interface {
 	ResetComment()
 	ResetContent()
 	ResetDirection()
+	ResetIncludeShadowMetadata()
 	ResetMatch()
 	ResetMaxItems()
 	ResetName()
@@ -130,6 +140,8 @@ type DataCloudflareDnsRecords interface {
 	ResetOverrideLogicalId()
 	ResetProxied()
 	ResetSearch()
+	ResetShadowedByName()
+	ResetShadowingName()
 	ResetTag()
 	ResetTagMatch()
 	ResetType()
@@ -287,6 +299,26 @@ func (j *jsiiProxy_DataCloudflareDnsRecords) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords) IncludeShadowMetadata() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeShadowMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords) IncludeShadowMetadataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeShadowMetadataInput",
 		&returns,
 	)
 	return returns
@@ -462,6 +494,46 @@ func (j *jsiiProxy_DataCloudflareDnsRecords) SearchInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareDnsRecords) ShadowedByName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shadowedByName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords) ShadowedByNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shadowedByNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords) ShadowingName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shadowingName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords) ShadowingNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shadowingNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareDnsRecords) Tag() DataCloudflareDnsRecordsTagOutputReference {
 	var returns DataCloudflareDnsRecordsTagOutputReference
 	_jsii_.Get(
@@ -573,7 +645,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecords) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_records cloudflare_dns_records} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_records cloudflare_dns_records} Data Source.
 func NewDataCloudflareDnsRecords(scope constructs.Construct, id *string, config *DataCloudflareDnsRecordsConfig) DataCloudflareDnsRecords {
 	_init_.Initialize()
 
@@ -591,7 +663,7 @@ func NewDataCloudflareDnsRecords(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dns_records cloudflare_dns_records} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_records cloudflare_dns_records} Data Source.
 func NewDataCloudflareDnsRecords_Override(d DataCloudflareDnsRecords, scope constructs.Construct, id *string, config *DataCloudflareDnsRecordsConfig) {
 	_init_.Initialize()
 
@@ -636,6 +708,17 @@ func (j *jsiiProxy_DataCloudflareDnsRecords)SetForEach(val cdktn.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords)SetIncludeShadowMetadata(val interface{}) {
+	if err := j.validateSetIncludeShadowMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeShadowMetadata",
 		val,
 	)
 }
@@ -710,6 +793,28 @@ func (j *jsiiProxy_DataCloudflareDnsRecords)SetSearch(val *string) {
 	_jsii_.Set(
 		j,
 		"search",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords)SetShadowedByName(val *string) {
+	if err := j.validateSetShadowedByNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shadowedByName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords)SetShadowingName(val *string) {
+	if err := j.validateSetShadowingNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shadowingName",
 		val,
 	)
 }
@@ -1100,6 +1205,14 @@ func (d *jsiiProxy_DataCloudflareDnsRecords) ResetDirection() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareDnsRecords) ResetIncludeShadowMetadata() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeShadowMetadata",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareDnsRecords) ResetMatch() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1152,6 +1265,22 @@ func (d *jsiiProxy_DataCloudflareDnsRecords) ResetSearch() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSearch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareDnsRecords) ResetShadowedByName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetShadowedByName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareDnsRecords) ResetShadowingName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetShadowingName",
 		nil, // no parameters
 	)
 }

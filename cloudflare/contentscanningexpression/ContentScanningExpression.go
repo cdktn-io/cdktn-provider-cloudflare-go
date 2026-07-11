@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
 type ContentScanningExpression interface {
 	cdktn.TerraformResource
 	Body() ContentScanningExpressionBodyList
@@ -352,7 +352,7 @@ func (j *jsiiProxy_ContentScanningExpression) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
 func NewContentScanningExpression(scope constructs.Construct, id *string, config *ContentScanningExpressionConfig) ContentScanningExpression {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewContentScanningExpression(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
 func NewContentScanningExpression_Override(c ContentScanningExpression, scope constructs.Construct, id *string, config *ContentScanningExpressionConfig) {
 	_init_.Initialize()
 

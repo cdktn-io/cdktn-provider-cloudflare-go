@@ -243,6 +243,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "prompts", GoGetter: "Prompts"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "secureWebGateway", GoGetter: "SecureWebGateway"},
+			_jsii_.MemberProperty{JsiiProperty: "serverId", GoGetter: "ServerId"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

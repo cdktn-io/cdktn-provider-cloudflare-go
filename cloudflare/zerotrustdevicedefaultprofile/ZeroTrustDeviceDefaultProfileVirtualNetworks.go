@@ -9,11 +9,11 @@ type ZeroTrustDeviceDefaultProfileVirtualNetworks struct {
 	//
 	// When virtual_networks is set, at least one entry is required.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_device_default_profile#allowed ZeroTrustDeviceDefaultProfile#allowed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_default_profile#allowed ZeroTrustDeviceDefaultProfile#allowed}
 	Allowed *[]*string `field:"required" json:"allowed" yaml:"allowed"`
 	// The default virtual network ID. Must be included in the `allowed` list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_device_default_profile#default ZeroTrustDeviceDefaultProfile#default}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_default_profile#default ZeroTrustDeviceDefaultProfile#default}
 	Default *string `field:"required" json:"default" yaml:"default"`
 }
 

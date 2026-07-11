@@ -50,6 +50,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference inte
 	OnBehalf() cdktn.IResolvable
 	Prompts() cdktn.StringMapList
 	SecureWebGateway() cdktn.IResolvable
+	ServerId() *string
 	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -326,6 +327,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutput
 	_jsii_.Get(
 		j,
 		"secureWebGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) ServerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverId",
 		&returns,
 	)
 	return returns

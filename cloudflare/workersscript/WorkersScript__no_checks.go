@@ -87,6 +87,14 @@ func (w *jsiiProxy_WorkersScript) validatePutBindingsParameters(value interface{
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScript) validatePutCacheOptionsParameters(value *WorkersScriptCacheOptions) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkersScript) validatePutExportsParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScript) validatePutLimitsParameters(value *WorkersScriptLimits) error {
 	return nil
 }
@@ -96,6 +104,10 @@ func (w *jsiiProxy_WorkersScript) validatePutMigrationsParameters(value *Workers
 }
 
 func (w *jsiiProxy_WorkersScript) validatePutObservabilityParameters(value *WorkersScriptObservability) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkersScript) validatePutPackageDependenciesParameters(value interface{}) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_instances cloudflare_ai_search_instances}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances}.
 type DataCloudflareAiSearchInstances interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
 func NewDataCloudflareAiSearchInstances(scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstancesConfig) DataCloudflareAiSearchInstances {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataCloudflareAiSearchInstances(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
 func NewDataCloudflareAiSearchInstances_Override(d DataCloudflareAiSearchInstances, scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstancesConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
 type CallsTurnApp interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -410,7 +410,7 @@ func (j *jsiiProxy_CallsTurnApp) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
 func NewCallsTurnApp(scope constructs.Construct, id *string, config *CallsTurnAppConfig) CallsTurnApp {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewCallsTurnApp(scope constructs.Construct, id *string, config *CallsTurnAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
 func NewCallsTurnApp_Override(c CallsTurnApp, scope constructs.Construct, id *string, config *CallsTurnAppConfig) {
 	_init_.Initialize()
 

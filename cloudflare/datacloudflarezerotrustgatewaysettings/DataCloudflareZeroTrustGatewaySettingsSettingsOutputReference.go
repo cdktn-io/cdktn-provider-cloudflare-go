@@ -43,6 +43,7 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference interface {
 	Inspection() DataCloudflareZeroTrustGatewaySettingsSettingsInspectionOutputReference
 	InternalValue() *DataCloudflareZeroTrustGatewaySettingsSettings
 	SetInternalValue(val *DataCloudflareZeroTrustGatewaySettingsSettings)
+	MaxTtlSecs() *float64
 	ProtocolDetection() DataCloudflareZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference
 	Sandbox() DataCloudflareZeroTrustGatewaySettingsSettingsSandboxOutputReference
 	// Experimental.
@@ -248,6 +249,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference) MaxTtlSecs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTtlSecs",
 		&returns,
 	)
 	return returns

@@ -52,6 +52,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putManagedRequestHeaders", GoMethod: "PutManagedRequestHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "putManagedResponseHeaders", GoMethod: "PutManagedResponseHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManagedRequestHeaders", GoMethod: "ResetManagedRequestHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManagedResponseHeaders", GoMethod: "ResetManagedResponseHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},

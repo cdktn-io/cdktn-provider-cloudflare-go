@@ -54,6 +54,9 @@ type ZeroTrustGatewaySettingsSettingsOutputReference interface {
 	InspectionInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MaxTtlSecs() *float64
+	SetMaxTtlSecs(val *float64)
+	MaxTtlSecsInput() *float64
 	ProtocolDetection() ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference
 	ProtocolDetectionInput() interface{}
 	Sandbox() ZeroTrustGatewaySettingsSettingsSandboxOutputReference
@@ -117,6 +120,7 @@ type ZeroTrustGatewaySettingsSettingsOutputReference interface {
 	ResetFips()
 	ResetHostSelector()
 	ResetInspection()
+	ResetMaxTtlSecs()
 	ResetProtocolDetection()
 	ResetSandbox()
 	ResetTlsDecrypt()
@@ -405,6 +409,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) InternalValu
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) MaxTtlSecs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTtlSecs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) MaxTtlSecsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTtlSecsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) ProtocolDetection() ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference {
 	var returns ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference
 	_jsii_.Get(
@@ -542,6 +566,17 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference)SetMaxTtlSecs(val *float64) {
+	if err := j.validateSetMaxTtlSecsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxTtlSecs",
 		val,
 	)
 }
@@ -992,6 +1027,14 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) ResetInspect
 	_jsii_.InvokeVoid(
 		z,
 		"resetInspection",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) ResetMaxTtlSecs() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMaxTtlSecs",
 		nil, // no parameters
 	)
 }

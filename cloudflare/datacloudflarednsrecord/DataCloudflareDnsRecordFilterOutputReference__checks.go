@@ -286,6 +286,22 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetSear
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetShadowedByNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetShadowingNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetTagMatchParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

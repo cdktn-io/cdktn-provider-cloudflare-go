@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareWorkersScriptsResultOutputReference interface {
 	cdktn.ComplexObject
+	CacheOptions() DataCloudflareWorkersScriptsResultCacheOptionsOutputReference
 	CompatibilityDate() *string
 	CompatibilityFlags() *[]*string
 	// the index of the complex object in a list.
@@ -99,6 +100,16 @@ type DataCloudflareWorkersScriptsResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareWorkersScriptsResultOutputReference
 type jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) CacheOptions() DataCloudflareWorkersScriptsResultCacheOptionsOutputReference {
+	var returns DataCloudflareWorkersScriptsResultCacheOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cacheOptions",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) CompatibilityDate() *string {

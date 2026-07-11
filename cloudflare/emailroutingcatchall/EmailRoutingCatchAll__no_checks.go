@@ -119,7 +119,15 @@ func (j *jsiiProxy_EmailRoutingCatchAll) validateSetNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_EmailRoutingCatchAll) validateSetOwnerWorkerTagParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailRoutingCatchAll) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_EmailRoutingCatchAll) validateSetSourceParameters(val *string) error {
 	return nil
 }
 

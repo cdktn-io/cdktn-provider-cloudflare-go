@@ -16,6 +16,7 @@ type DataCloudflareWorkerVersionsResultOutputReference interface {
 	Annotations() DataCloudflareWorkerVersionsResultAnnotationsOutputReference
 	Assets() DataCloudflareWorkerVersionsResultAssetsOutputReference
 	Bindings() DataCloudflareWorkerVersionsResultBindingsList
+	CacheOptions() DataCloudflareWorkerVersionsResultCacheOptionsOutputReference
 	CompatibilityDate() *string
 	CompatibilityFlags() *[]*string
 	// the index of the complex object in a list.
@@ -47,6 +48,7 @@ type DataCloudflareWorkerVersionsResultOutputReference interface {
 	MigrationTag() *string
 	Modules() DataCloudflareWorkerVersionsResultModulesList
 	Number() *float64
+	PackageDependencies() DataCloudflareWorkerVersionsResultPackageDependenciesList
 	Placement() DataCloudflareWorkerVersionsResultPlacementOutputReference
 	Source() *string
 	StartupTimeMs() *float64
@@ -124,6 +126,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) Bindings()
 	_jsii_.Get(
 		j,
 		"bindings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) CacheOptions() DataCloudflareWorkerVersionsResultCacheOptionsOutputReference {
+	var returns DataCloudflareWorkerVersionsResultCacheOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cacheOptions",
 		&returns,
 	)
 	return returns
@@ -294,6 +306,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) Number() *
 	_jsii_.Get(
 		j,
 		"number",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) PackageDependencies() DataCloudflareWorkerVersionsResultPackageDependenciesList {
+	var returns DataCloudflareWorkerVersionsResultPackageDependenciesList
+	_jsii_.Get(
+		j,
+		"packageDependencies",
 		&returns,
 	)
 	return returns

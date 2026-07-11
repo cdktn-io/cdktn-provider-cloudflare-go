@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -27,6 +27,8 @@ type WorkersScript interface {
 	BodyPart() *string
 	SetBodyPart(val *string)
 	BodyPartInput() *string
+	CacheOptions() WorkersScriptCacheOptionsOutputReference
+	CacheOptionsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	CompatibilityDate() *string
@@ -63,6 +65,8 @@ type WorkersScript interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Etag() *string
+	Exports() WorkersScriptExportsMap
+	ExportsInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -103,6 +107,8 @@ type WorkersScript interface {
 	Node() constructs.Node
 	Observability() WorkersScriptObservabilityOutputReference
 	ObservabilityInput() interface{}
+	PackageDependencies() WorkersScriptPackageDependenciesList
+	PackageDependenciesInput() interface{}
 	Placement() WorkersScriptPlacementOutputReference
 	PlacementInput() interface{}
 	PlacementMode() *string
@@ -178,21 +184,26 @@ type WorkersScript interface {
 	PutAnnotations(value *WorkersScriptAnnotations)
 	PutAssets(value *WorkersScriptAssets)
 	PutBindings(value interface{})
+	PutCacheOptions(value *WorkersScriptCacheOptions)
+	PutExports(value interface{})
 	PutLimits(value *WorkersScriptLimits)
 	PutMigrations(value *WorkersScriptMigrations)
 	PutObservability(value *WorkersScriptObservability)
+	PutPackageDependencies(value interface{})
 	PutPlacement(value *WorkersScriptPlacement)
 	PutTailConsumers(value interface{})
 	ResetAnnotations()
 	ResetAssets()
 	ResetBindings()
 	ResetBodyPart()
+	ResetCacheOptions()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
 	ResetContent()
 	ResetContentFile()
 	ResetContentSha256()
 	ResetContentType()
+	ResetExports()
 	ResetKeepAssets()
 	ResetKeepBindings()
 	ResetLimits()
@@ -203,6 +214,7 @@ type WorkersScript interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPackageDependencies()
 	ResetPlacement()
 	ResetTailConsumers()
 	ResetUsageModel()
@@ -328,6 +340,26 @@ func (j *jsiiProxy_WorkersScript) BodyPartInput() *string {
 	_jsii_.Get(
 		j,
 		"bodyPartInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) CacheOptions() WorkersScriptCacheOptionsOutputReference {
+	var returns WorkersScriptCacheOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cacheOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) CacheOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cacheOptionsInput",
 		&returns,
 	)
 	return returns
@@ -518,6 +550,26 @@ func (j *jsiiProxy_WorkersScript) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) Exports() WorkersScriptExportsMap {
+	var returns WorkersScriptExportsMap
+	_jsii_.Get(
+		j,
+		"exports",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) ExportsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportsInput",
 		&returns,
 	)
 	return returns
@@ -793,6 +845,26 @@ func (j *jsiiProxy_WorkersScript) ObservabilityInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScript) PackageDependencies() WorkersScriptPackageDependenciesList {
+	var returns WorkersScriptPackageDependenciesList
+	_jsii_.Get(
+		j,
+		"packageDependencies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) PackageDependenciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"packageDependenciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScript) Placement() WorkersScriptPlacementOutputReference {
 	var returns WorkersScriptPlacementOutputReference
 	_jsii_.Get(
@@ -964,7 +1036,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -982,7 +1054,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -1601,6 +1673,28 @@ func (w *jsiiProxy_WorkersScript) PutBindings(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkersScript) PutCacheOptions(value *WorkersScriptCacheOptions) {
+	if err := w.validatePutCacheOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCacheOptions",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) PutExports(value interface{}) {
+	if err := w.validatePutExportsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putExports",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScript) PutLimits(value *WorkersScriptLimits) {
 	if err := w.validatePutLimitsParameters(value); err != nil {
 		panic(err)
@@ -1630,6 +1724,17 @@ func (w *jsiiProxy_WorkersScript) PutObservability(value *WorkersScriptObservabi
 	_jsii_.InvokeVoid(
 		w,
 		"putObservability",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) PutPackageDependencies(value interface{}) {
+	if err := w.validatePutPackageDependenciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putPackageDependencies",
 		[]interface{}{value},
 	)
 }
@@ -1688,6 +1793,14 @@ func (w *jsiiProxy_WorkersScript) ResetBodyPart() {
 	)
 }
 
+func (w *jsiiProxy_WorkersScript) ResetCacheOptions() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCacheOptions",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScript) ResetCompatibilityDate() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1732,6 +1845,14 @@ func (w *jsiiProxy_WorkersScript) ResetContentType() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetContentType",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetExports() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetExports",
 		nil, // no parameters
 	)
 }
@@ -1796,6 +1917,14 @@ func (w *jsiiProxy_WorkersScript) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetPackageDependencies() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPackageDependencies",
 		nil, // no parameters
 	)
 }

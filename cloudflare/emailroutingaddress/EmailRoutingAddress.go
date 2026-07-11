@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address cloudflare_email_routing_address}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
 type EmailRoutingAddress interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -64,6 +64,9 @@ type EmailRoutingAddress interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	Tag() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -118,6 +121,7 @@ type EmailRoutingAddress interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -345,6 +349,26 @@ func (j *jsiiProxy_EmailRoutingAddress) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EmailRoutingAddress) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingAddress) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmailRoutingAddress) Tag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -396,7 +420,7 @@ func (j *jsiiProxy_EmailRoutingAddress) Verified() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
 func NewEmailRoutingAddress(scope constructs.Construct, id *string, config *EmailRoutingAddressConfig) EmailRoutingAddress {
 	_init_.Initialize()
 
@@ -414,7 +438,7 @@ func NewEmailRoutingAddress(scope constructs.Construct, id *string, config *Emai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
 func NewEmailRoutingAddress_Override(e EmailRoutingAddress, scope constructs.Construct, id *string, config *EmailRoutingAddressConfig) {
 	_init_.Initialize()
 
@@ -511,6 +535,17 @@ func (j *jsiiProxy_EmailRoutingAddress)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmailRoutingAddress)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -872,6 +907,14 @@ func (e *jsiiProxy_EmailRoutingAddress) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailRoutingAddress) ResetStatus() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

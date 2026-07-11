@@ -24,11 +24,11 @@ type DataCloudflareOauthClientConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/oauth_client#account_id DataCloudflareOauthClient#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/oauth_client#account_id DataCloudflareOauthClient#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The unique identifier for an OAuth client.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/oauth_client#oauth_client_id DataCloudflareOauthClient#oauth_client_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/oauth_client#oauth_client_id DataCloudflareOauthClient#oauth_client_id}
 	OauthClientId *string `field:"required" json:"oauthClientId" yaml:"oauthClientId"`
 }
 

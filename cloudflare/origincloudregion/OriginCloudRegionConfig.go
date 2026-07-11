@@ -26,19 +26,19 @@ type OriginCloudRegionConfig struct {
 	//
 	// For the single PUT endpoint (`PUT /origin/cloud_regions/{origin_ip}`), this field must match the path parameter or the request will be rejected with a 400 error. For the batch PUT endpoint, this field identifies which mapping to upsert.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_cloud_region#origin_ip OriginCloudRegion#origin_ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/origin_cloud_region#origin_ip OriginCloudRegion#origin_ip}
 	OriginIp *string `field:"required" json:"originIp" yaml:"originIp"`
 	// Cloud vendor region identifier. Must be a valid region for the specified vendor as returned by the supported_regions endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_cloud_region#region OriginCloudRegion#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/origin_cloud_region#region OriginCloudRegion#region}
 	Region *string `field:"required" json:"region" yaml:"region"`
 	// Cloud vendor hosting the origin. Must be one of the supported vendors. Available values: "aws", "azure", "gcp", "oci".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_cloud_region#vendor OriginCloudRegion#vendor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/origin_cloud_region#vendor OriginCloudRegion#vendor}
 	Vendor *string `field:"required" json:"vendor" yaml:"vendor"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_cloud_region#zone_id OriginCloudRegion#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/origin_cloud_region#zone_id OriginCloudRegion#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

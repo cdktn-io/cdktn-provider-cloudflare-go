@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 type ZeroTrustDnsLocation interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -64,6 +64,8 @@ type ZeroTrustDnsLocation interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	MaxTtl() ZeroTrustDnsLocationMaxTtlOutputReference
+	MaxTtlInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -132,11 +134,13 @@ type ZeroTrustDnsLocation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEndpoints(value *ZeroTrustDnsLocationEndpoints)
+	PutMaxTtl(value *ZeroTrustDnsLocationMaxTtl)
 	PutNetworks(value interface{})
 	ResetClientDefault()
 	ResetDnsDestinationIpsId()
 	ResetEcsSupport()
 	ResetEndpoints()
+	ResetMaxTtl()
 	ResetNetworks()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -428,6 +432,26 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) Lifecycle() *cdktn.TerraformResourceLif
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDnsLocation) MaxTtl() ZeroTrustDnsLocationMaxTtlOutputReference {
+	var returns ZeroTrustDnsLocationMaxTtlOutputReference
+	_jsii_.Get(
+		j,
+		"maxTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocation) MaxTtlInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"maxTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDnsLocation) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -549,7 +573,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
 func NewZeroTrustDnsLocation(scope constructs.Construct, id *string, config *ZeroTrustDnsLocationConfig) ZeroTrustDnsLocation {
 	_init_.Initialize()
 
@@ -567,7 +591,7 @@ func NewZeroTrustDnsLocation(scope constructs.Construct, id *string, config *Zer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
 func NewZeroTrustDnsLocation_Override(z ZeroTrustDnsLocation, scope constructs.Construct, id *string, config *ZeroTrustDnsLocationConfig) {
 	_init_.Initialize()
 
@@ -1065,6 +1089,17 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) PutEndpoints(value *ZeroTrustDnsLocatio
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDnsLocation) PutMaxTtl(value *ZeroTrustDnsLocationMaxTtl) {
+	if err := z.validatePutMaxTtlParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putMaxTtl",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDnsLocation) PutNetworks(value interface{}) {
 	if err := z.validatePutNetworksParameters(value); err != nil {
 		panic(err)
@@ -1104,6 +1139,14 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) ResetEndpoints() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetEndpoints",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDnsLocation) ResetMaxTtl() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMaxTtl",
 		nil, // no parameters
 	)
 }

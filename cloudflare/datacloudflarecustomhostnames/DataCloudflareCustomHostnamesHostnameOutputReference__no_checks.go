@@ -63,7 +63,15 @@ func (j *jsiiProxy_DataCloudflareCustomHostnamesHostnameOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnamesHostnameOutputReference) validateSetExactParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnamesHostnameOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnamesHostnameOutputReference) validateSetStartsWithParameters(val *string) error {
 	return nil
 }
 

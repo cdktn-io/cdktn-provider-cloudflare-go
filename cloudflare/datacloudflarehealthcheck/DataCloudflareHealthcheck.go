@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/healthcheck cloudflare_healthcheck}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/healthcheck cloudflare_healthcheck}.
 type DataCloudflareHealthcheck interface {
 	cdktn.TerraformDataSource
 	Address() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_DataCloudflareHealthcheck) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/healthcheck cloudflare_healthcheck} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/healthcheck cloudflare_healthcheck} Data Source.
 func NewDataCloudflareHealthcheck(scope constructs.Construct, id *string, config *DataCloudflareHealthcheckConfig) DataCloudflareHealthcheck {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewDataCloudflareHealthcheck(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/healthcheck cloudflare_healthcheck} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/healthcheck cloudflare_healthcheck} Data Source.
 func NewDataCloudflareHealthcheck_Override(d DataCloudflareHealthcheck, scope constructs.Construct, id *string, config *DataCloudflareHealthcheckConfig) {
 	_init_.Initialize()
 

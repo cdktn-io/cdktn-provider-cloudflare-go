@@ -131,6 +131,10 @@ func (j *jsiiProxy_StreamLiveInput) validateSetMetaParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_StreamLiveInput) validateSetPreferLowLatencyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamLiveInput) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

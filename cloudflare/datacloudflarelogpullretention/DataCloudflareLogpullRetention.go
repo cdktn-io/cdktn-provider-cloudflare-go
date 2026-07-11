@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/logpull_retention cloudflare_logpull_retention}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/logpull_retention cloudflare_logpull_retention}.
 type DataCloudflareLogpullRetention interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareLogpullRetention) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/logpull_retention cloudflare_logpull_retention} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/logpull_retention cloudflare_logpull_retention} Data Source.
 func NewDataCloudflareLogpullRetention(scope constructs.Construct, id *string, config *DataCloudflareLogpullRetentionConfig) DataCloudflareLogpullRetention {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareLogpullRetention(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/logpull_retention cloudflare_logpull_retention} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/logpull_retention cloudflare_logpull_retention} Data Source.
 func NewDataCloudflareLogpullRetention_Override(d DataCloudflareLogpullRetention, scope constructs.Construct, id *string, config *DataCloudflareLogpullRetentionConfig) {
 	_init_.Initialize()
 

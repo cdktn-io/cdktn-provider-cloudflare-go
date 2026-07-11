@@ -9,21 +9,21 @@ type AiSearchInstanceSourceParamsWebCrawlerParseOptions struct {
 	//
 	// Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. Only the matched HTML fragment is stored and indexed. Omit the field to disable content selection — empty arrays are rejected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ai_search_instance#content_selector AiSearchInstance#content_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_search_instance#content_selector AiSearchInstance#content_selector}
 	ContentSelector interface{} `field:"optional" json:"contentSelector" yaml:"contentSelector"`
 	// Up to 5 custom HTTP headers sent with each crawl request.
 	//
 	// Names must be RFC-7230 token characters (no spaces, colons, or control characters); values must be HTAB + printable ASCII (no CR/LF).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ai_search_instance#include_headers AiSearchInstance#include_headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_search_instance#include_headers AiSearchInstance#include_headers}
 	IncludeHeaders *map[string]*string `field:"optional" json:"includeHeaders" yaml:"includeHeaders"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ai_search_instance#include_images AiSearchInstance#include_images}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_search_instance#include_images AiSearchInstance#include_images}.
 	IncludeImages interface{} `field:"optional" json:"includeImages" yaml:"includeImages"`
 	// List of specific sitemap URLs to use for crawling. Only valid when parse_type is 'sitemap'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ai_search_instance#specific_sitemaps AiSearchInstance#specific_sitemaps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_search_instance#specific_sitemaps AiSearchInstance#specific_sitemaps}
 	SpecificSitemaps *[]*string `field:"optional" json:"specificSitemaps" yaml:"specificSitemaps"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ai_search_instance#use_browser_rendering AiSearchInstance#use_browser_rendering}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_search_instance#use_browser_rendering AiSearchInstance#use_browser_rendering}.
 	UseBrowserRendering interface{} `field:"optional" json:"useBrowserRendering" yaml:"useBrowserRendering"`
 }
 

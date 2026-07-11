@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/load_balancer_monitor cloudflare_load_balancer_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/load_balancer_monitor cloudflare_load_balancer_monitor}.
 type DataCloudflareLoadBalancerMonitor interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -506,7 +506,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerMonitor) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/load_balancer_monitor cloudflare_load_balancer_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/load_balancer_monitor cloudflare_load_balancer_monitor} Data Source.
 func NewDataCloudflareLoadBalancerMonitor(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerMonitorConfig) DataCloudflareLoadBalancerMonitor {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewDataCloudflareLoadBalancerMonitor(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/load_balancer_monitor cloudflare_load_balancer_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/load_balancer_monitor cloudflare_load_balancer_monitor} Data Source.
 func NewDataCloudflareLoadBalancerMonitor_Override(d DataCloudflareLoadBalancerMonitor, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerMonitorConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding}.
 type DataCloudflareDlsPrefixBinding interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataCloudflareDlsPrefixBinding) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding} Data Source.
 func NewDataCloudflareDlsPrefixBinding(scope constructs.Construct, id *string, config *DataCloudflareDlsPrefixBindingConfig) DataCloudflareDlsPrefixBinding {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataCloudflareDlsPrefixBinding(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding} Data Source.
 func NewDataCloudflareDlsPrefixBinding_Override(d DataCloudflareDlsPrefixBinding, scope constructs.Construct, id *string, config *DataCloudflareDlsPrefixBindingConfig) {
 	_init_.Initialize()
 

@@ -31,10 +31,16 @@ type DataCloudflareCustomHostnameFilterHostnameOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Exact() *string
+	SetExact(val *string)
+	ExactInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	StartsWith() *string
+	SetStartsWith(val *string)
+	StartsWithInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +74,8 @@ type DataCloudflareCustomHostnameFilterHostnameOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetContain()
+	ResetExact()
+	ResetStartsWith()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -133,6 +141,26 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) Cr
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) Exact() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"exact",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) ExactInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"exactInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -148,6 +176,26 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) StartsWith() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startsWith",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) StartsWithInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startsWithInput",
 		&returns,
 	)
 	return returns
@@ -234,6 +282,17 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference)Set
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference)SetExact(val *string) {
+	if err := j.validateSetExactParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exact",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -241,6 +300,17 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference)SetStartsWith(val *string) {
+	if err := j.validateSetStartsWithParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startsWith",
 		val,
 	)
 }
@@ -457,6 +527,22 @@ func (d *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) Re
 	_jsii_.InvokeVoid(
 		d,
 		"resetContain",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) ResetExact() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExact",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomHostnameFilterHostnameOutputReference) ResetStartsWith() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStartsWith",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group}.
 type LoadBalancerMonitorGroup interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -397,7 +397,7 @@ func (j *jsiiProxy_LoadBalancerMonitorGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group} Resource.
 func NewLoadBalancerMonitorGroup(scope constructs.Construct, id *string, config *LoadBalancerMonitorGroupConfig) LoadBalancerMonitorGroup {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewLoadBalancerMonitorGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group} Resource.
 func NewLoadBalancerMonitorGroup_Override(l LoadBalancerMonitorGroup, scope constructs.Construct, id *string, config *LoadBalancerMonitorGroupConfig) {
 	_init_.Initialize()
 

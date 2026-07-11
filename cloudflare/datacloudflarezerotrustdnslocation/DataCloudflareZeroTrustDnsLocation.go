@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 type DataCloudflareZeroTrustDnsLocation interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -56,6 +56,7 @@ type DataCloudflareZeroTrustDnsLocation interface {
 	LocationId() *string
 	SetLocationId(val *string)
 	LocationIdInput() *string
+	MaxTtl() DataCloudflareZeroTrustDnsLocationMaxTtlOutputReference
 	Name() *string
 	Networks() DataCloudflareZeroTrustDnsLocationNetworksList
 	// The tree node.
@@ -360,6 +361,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) LocationIdInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) MaxTtl() DataCloudflareZeroTrustDnsLocationMaxTtlOutputReference {
+	var returns DataCloudflareZeroTrustDnsLocationMaxTtlOutputReference
+	_jsii_.Get(
+		j,
+		"maxTtl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -451,7 +462,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
 func NewDataCloudflareZeroTrustDnsLocation(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDnsLocationConfig) DataCloudflareZeroTrustDnsLocation {
 	_init_.Initialize()
 
@@ -469,7 +480,7 @@ func NewDataCloudflareZeroTrustDnsLocation(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
 func NewDataCloudflareZeroTrustDnsLocation_Override(d DataCloudflareZeroTrustDnsLocation, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDnsLocationConfig) {
 	_init_.Initialize()
 

@@ -24,13 +24,13 @@ type DataCloudflarePipelineSinkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specifies the public ID of the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_sink#account_id DataCloudflarePipelineSink#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/pipeline_sink#account_id DataCloudflarePipelineSink#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_sink#filter DataCloudflarePipelineSink#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/pipeline_sink#filter DataCloudflarePipelineSink#filter}.
 	Filter *DataCloudflarePipelineSinkFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Specifies the publid ID of the sink.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_sink#sink_id DataCloudflarePipelineSink#sink_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/pipeline_sink#sink_id DataCloudflarePipelineSink#sink_id}
 	SinkId *string `field:"optional" json:"sinkId" yaml:"sinkId"`
 }
 

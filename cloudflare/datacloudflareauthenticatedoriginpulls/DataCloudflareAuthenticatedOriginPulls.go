@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
 type DataCloudflareAuthenticatedOriginPulls interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -439,7 +439,7 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPulls) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Data Source.
 func NewDataCloudflareAuthenticatedOriginPulls(scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsConfig) DataCloudflareAuthenticatedOriginPulls {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewDataCloudflareAuthenticatedOriginPulls(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Data Source.
 func NewDataCloudflareAuthenticatedOriginPulls_Override(d DataCloudflareAuthenticatedOriginPulls, scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsConfig) {
 	_init_.Initialize()
 

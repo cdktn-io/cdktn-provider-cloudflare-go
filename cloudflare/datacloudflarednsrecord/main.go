@@ -41,6 +41,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "includeShadowMetadata", GoGetter: "IncludeShadowMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "includeShadowMetadataInput", GoGetter: "IncludeShadowMetadataInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "meta", GoGetter: "Meta"},
@@ -57,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsRecordId", GoMethod: "ResetDnsRecordId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludeShadowMetadata", GoMethod: "ResetIncludeShadowMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "settings", GoGetter: "Settings"},
@@ -360,12 +363,18 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOrder", GoMethod: "ResetOrder"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProxied", GoMethod: "ResetProxied"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSearch", GoMethod: "ResetSearch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetShadowedByName", GoMethod: "ResetShadowedByName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetShadowingName", GoMethod: "ResetShadowingName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTag", GoMethod: "ResetTag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagMatch", GoMethod: "ResetTagMatch"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "search", GoGetter: "Search"},
 			_jsii_.MemberProperty{JsiiProperty: "searchInput", GoGetter: "SearchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "shadowedByName", GoGetter: "ShadowedByName"},
+			_jsii_.MemberProperty{JsiiProperty: "shadowedByNameInput", GoGetter: "ShadowedByNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "shadowingName", GoGetter: "ShadowingName"},
+			_jsii_.MemberProperty{JsiiProperty: "shadowingNameInput", GoGetter: "ShadowingNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tag", GoGetter: "Tag"},
 			_jsii_.MemberProperty{JsiiProperty: "tagInput", GoGetter: "TagInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tagMatch", GoGetter: "TagMatch"},
@@ -432,6 +441,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareDnsRecordFilterTagOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMeta",
+		reflect.TypeOf((*DataCloudflareDnsRecordMeta)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.dataCloudflareDnsRecord.DataCloudflareDnsRecordMetaOutputReference",
+		reflect.TypeOf((*DataCloudflareDnsRecordMetaOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deadGlue", GoGetter: "DeadGlue"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "isGlue", GoGetter: "IsGlue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "shadowedBy", GoGetter: "ShadowedBy"},
+			_jsii_.MemberProperty{JsiiProperty: "shadowedRecordsCount", GoGetter: "ShadowedRecordsCount"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataCloudflareDnsRecordMetaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

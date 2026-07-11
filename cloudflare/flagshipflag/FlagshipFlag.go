@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/flagship_flag cloudflare_flagship_flag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/flagship_flag cloudflare_flagship_flag}.
 type FlagshipFlag interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -550,7 +550,7 @@ func (j *jsiiProxy_FlagshipFlag) VariationsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
 func NewFlagshipFlag(scope constructs.Construct, id *string, config *FlagshipFlagConfig) FlagshipFlag {
 	_init_.Initialize()
 
@@ -568,7 +568,7 @@ func NewFlagshipFlag(scope constructs.Construct, id *string, config *FlagshipFla
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
 func NewFlagshipFlag_Override(f FlagshipFlag, scope constructs.Construct, id *string, config *FlagshipFlagConfig) {
 	_init_.Initialize()
 

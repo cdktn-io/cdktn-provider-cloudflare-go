@@ -407,6 +407,14 @@ func (j *jsiiProxy_EmailRoutingAddress) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_EmailRoutingAddress) validateSetStatusParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewEmailRoutingAddressParameters(scope constructs.Construct, id *string, config *EmailRoutingAddressConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

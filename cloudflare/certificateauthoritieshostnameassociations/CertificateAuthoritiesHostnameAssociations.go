@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations}.
 type CertificateAuthoritiesHostnameAssociations interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_CertificateAuthoritiesHostnameAssociations) ZoneIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations} Resource.
 func NewCertificateAuthoritiesHostnameAssociations(scope constructs.Construct, id *string, config *CertificateAuthoritiesHostnameAssociationsConfig) CertificateAuthoritiesHostnameAssociations {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewCertificateAuthoritiesHostnameAssociations(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations} Resource.
 func NewCertificateAuthoritiesHostnameAssociations_Override(c CertificateAuthoritiesHostnameAssociations, scope constructs.Construct, id *string, config *CertificateAuthoritiesHostnameAssociationsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
 type R2BucketLock interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -389,7 +389,7 @@ func (j *jsiiProxy_R2BucketLock) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
 func NewR2BucketLock(scope constructs.Construct, id *string, config *R2BucketLockConfig) R2BucketLock {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewR2BucketLock(scope constructs.Construct, id *string, config *R2BucketLoc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
 func NewR2BucketLock_Override(r R2BucketLock, scope constructs.Construct, id *string, config *R2BucketLockConfig) {
 	_init_.Initialize()
 

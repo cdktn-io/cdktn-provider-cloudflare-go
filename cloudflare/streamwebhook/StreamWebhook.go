@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_webhook cloudflare_stream_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
 type StreamWebhook interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_StreamWebhook) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
 func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebhookConfig) StreamWebhook {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
 func NewStreamWebhook_Override(s StreamWebhook, scope constructs.Construct, id *string, config *StreamWebhookConfig) {
 	_init_.Initialize()
 

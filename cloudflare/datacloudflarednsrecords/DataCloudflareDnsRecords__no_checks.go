@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetDirectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetIncludeShadowMetadataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -116,6 +120,14 @@ func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetProxiedParameters(val in
 }
 
 func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetSearchParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetShadowedByNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecords) validateSetShadowingNameParameters(val *string) error {
 	return nil
 }
 

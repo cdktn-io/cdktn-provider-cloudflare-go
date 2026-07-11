@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 type EmailRoutingCatchAll interface {
 	cdktn.TerraformResource
 	Actions() EmailRoutingCatchAllActionsList
@@ -56,6 +56,9 @@ type EmailRoutingCatchAll interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OwnerWorkerTag() *string
+	SetOwnerWorkerTag(val *string)
+	OwnerWorkerTagInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -66,6 +69,9 @@ type EmailRoutingCatchAll interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	Tag() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -126,6 +132,8 @@ type EmailRoutingCatchAll interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwnerWorkerTag()
+	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -343,6 +351,26 @@ func (j *jsiiProxy_EmailRoutingCatchAll) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_EmailRoutingCatchAll) OwnerWorkerTag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerWorkerTag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingCatchAll) OwnerWorkerTagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerWorkerTagInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmailRoutingCatchAll) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -368,6 +396,26 @@ func (j *jsiiProxy_EmailRoutingCatchAll) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingCatchAll) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingCatchAll) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
 		&returns,
 	)
 	return returns
@@ -434,7 +482,7 @@ func (j *jsiiProxy_EmailRoutingCatchAll) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) EmailRoutingCatchAll {
 	_init_.Initialize()
 
@@ -452,7 +500,7 @@ func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *Ema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll_Override(e EmailRoutingCatchAll, scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) {
 	_init_.Initialize()
 
@@ -534,6 +582,17 @@ func (j *jsiiProxy_EmailRoutingCatchAll)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_EmailRoutingCatchAll)SetOwnerWorkerTag(val *string) {
+	if err := j.validateSetOwnerWorkerTagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ownerWorkerTag",
+		val,
+	)
+}
+
 func (j *jsiiProxy_EmailRoutingCatchAll)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -549,6 +608,17 @@ func (j *jsiiProxy_EmailRoutingCatchAll)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmailRoutingCatchAll)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -959,6 +1029,22 @@ func (e *jsiiProxy_EmailRoutingCatchAll) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailRoutingCatchAll) ResetOwnerWorkerTag() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOwnerWorkerTag",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailRoutingCatchAll) ResetSource() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSource",
 		nil, // no parameters
 	)
 }

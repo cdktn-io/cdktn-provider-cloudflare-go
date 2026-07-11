@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/client_certificates cloudflare_client_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/client_certificates cloudflare_client_certificates}.
 type DataCloudflareClientCertificates interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataCloudflareClientCertificates) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/client_certificates cloudflare_client_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/client_certificates cloudflare_client_certificates} Data Source.
 func NewDataCloudflareClientCertificates(scope constructs.Construct, id *string, config *DataCloudflareClientCertificatesConfig) DataCloudflareClientCertificates {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataCloudflareClientCertificates(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/client_certificates cloudflare_client_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/client_certificates cloudflare_client_certificates} Data Source.
 func NewDataCloudflareClientCertificates_Override(d DataCloudflareClientCertificates, scope constructs.Construct, id *string, config *DataCloudflareClientCertificatesConfig) {
 	_init_.Initialize()
 

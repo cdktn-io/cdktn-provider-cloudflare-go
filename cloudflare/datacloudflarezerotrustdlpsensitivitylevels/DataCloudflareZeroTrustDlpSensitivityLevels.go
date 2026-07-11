@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dlp_sensitivity_levels cloudflare_zero_trust_dlp_sensitivity_levels}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_dlp_sensitivity_levels cloudflare_zero_trust_dlp_sensitivity_levels}.
 type DataCloudflareZeroTrustDlpSensitivityLevels interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpSensitivityLevels) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dlp_sensitivity_levels cloudflare_zero_trust_dlp_sensitivity_levels} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_dlp_sensitivity_levels cloudflare_zero_trust_dlp_sensitivity_levels} Data Source.
 func NewDataCloudflareZeroTrustDlpSensitivityLevels(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpSensitivityLevelsConfig) DataCloudflareZeroTrustDlpSensitivityLevels {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataCloudflareZeroTrustDlpSensitivityLevels(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_dlp_sensitivity_levels cloudflare_zero_trust_dlp_sensitivity_levels} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_dlp_sensitivity_levels cloudflare_zero_trust_dlp_sensitivity_levels} Data Source.
 func NewDataCloudflareZeroTrustDlpSensitivityLevels_Override(d DataCloudflareZeroTrustDlpSensitivityLevels, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpSensitivityLevelsConfig) {
 	_init_.Initialize()
 

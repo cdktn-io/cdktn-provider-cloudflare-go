@@ -7,11 +7,11 @@ package zerotrustdevicecustomprofile
 type ZeroTrustDeviceCustomProfileDnsSearchSuffixes struct {
 	// The DNS search suffix to append when resolving short hostnames.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_device_custom_profile#suffix ZeroTrustDeviceCustomProfile#suffix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_custom_profile#suffix ZeroTrustDeviceCustomProfile#suffix}
 	Suffix *string `field:"required" json:"suffix" yaml:"suffix"`
 	// A description of the DNS search suffix.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

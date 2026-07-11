@@ -22,7 +22,7 @@ type DataCloudflareZoneAutoOriginTlsKexConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zone_auto_origin_tls_kex#zone_id DataCloudflareZoneAutoOriginTlsKex#zone_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zone_auto_origin_tls_kex#zone_id DataCloudflareZoneAutoOriginTlsKex#zone_id}.
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

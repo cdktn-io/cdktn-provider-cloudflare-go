@@ -43,6 +43,7 @@ type DataCloudflareZeroTrustDnsLocationsResultOutputReference interface {
 	Ip() *string
 	Ipv4Destination() *string
 	Ipv4DestinationBackup() *string
+	MaxTtl() DataCloudflareZeroTrustDnsLocationsResultMaxTtlOutputReference
 	Name() *string
 	Networks() DataCloudflareZeroTrustDnsLocationsResultNetworksList
 	// Experimental.
@@ -248,6 +249,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationsResultOutputReference) Ipv
 	_jsii_.Get(
 		j,
 		"ipv4DestinationBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationsResultOutputReference) MaxTtl() DataCloudflareZeroTrustDnsLocationsResultMaxTtlOutputReference {
+	var returns DataCloudflareZeroTrustDnsLocationsResultMaxTtlOutputReference
+	_jsii_.Get(
+		j,
+		"maxTtl",
 		&returns,
 	)
 	return returns

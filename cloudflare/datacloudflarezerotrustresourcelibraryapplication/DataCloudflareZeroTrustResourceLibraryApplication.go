@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
 type DataCloudflareZeroTrustResourceLibraryApplication interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -483,7 +483,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) Version() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplication(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationConfig) DataCloudflareZeroTrustResourceLibraryApplication {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewDataCloudflareZeroTrustResourceLibraryApplication(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplication_Override(d DataCloudflareZeroTrustResourceLibraryApplication, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationConfig) {
 	_init_.Initialize()
 

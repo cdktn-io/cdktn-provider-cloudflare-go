@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/user cloudflare_user}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/user cloudflare_user}.
 type DataCloudflareUser interface {
 	cdktn.TerraformDataSource
 	Betas() *[]*string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_DataCloudflareUser) Zipcode() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/user cloudflare_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/user cloudflare_user} Data Source.
 func NewDataCloudflareUser(scope constructs.Construct, id *string, config *DataCloudflareUserConfig) DataCloudflareUser {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewDataCloudflareUser(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/user cloudflare_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/user cloudflare_user} Data Source.
 func NewDataCloudflareUser_Override(d DataCloudflareUser, scope constructs.Construct, id *string, config *DataCloudflareUserConfig) {
 	_init_.Initialize()
 

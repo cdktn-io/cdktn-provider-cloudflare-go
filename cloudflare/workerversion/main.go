@@ -24,6 +24,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "assetsInput", GoGetter: "AssetsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bindings", GoGetter: "Bindings"},
 			_jsii_.MemberProperty{JsiiProperty: "bindingsInput", GoGetter: "BindingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cacheOptions", GoGetter: "CacheOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cacheOptionsInput", GoGetter: "CacheOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityDate", GoGetter: "CompatibilityDate"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityDateInput", GoGetter: "CompatibilityDateInput"},
@@ -69,6 +71,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "number", GoGetter: "Number"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "packageDependencies", GoGetter: "PackageDependencies"},
+			_jsii_.MemberProperty{JsiiProperty: "packageDependenciesInput", GoGetter: "PackageDependenciesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "placement", GoGetter: "Placement"},
 			_jsii_.MemberProperty{JsiiProperty: "placementInput", GoGetter: "PlacementInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -76,15 +80,18 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAnnotations", GoMethod: "PutAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "putAssets", GoMethod: "PutAssets"},
 			_jsii_.MemberMethod{JsiiMethod: "putBindings", GoMethod: "PutBindings"},
+			_jsii_.MemberMethod{JsiiMethod: "putCacheOptions", GoMethod: "PutCacheOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putContainers", GoMethod: "PutContainers"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimits", GoMethod: "PutLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "putMigrations", GoMethod: "PutMigrations"},
 			_jsii_.MemberMethod{JsiiMethod: "putModules", GoMethod: "PutModules"},
+			_jsii_.MemberMethod{JsiiMethod: "putPackageDependencies", GoMethod: "PutPackageDependencies"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlacement", GoMethod: "PutPlacement"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssets", GoMethod: "ResetAssets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBindings", GoMethod: "ResetBindings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCacheOptions", GoMethod: "ResetCacheOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompatibilityDate", GoMethod: "ResetCompatibilityDate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompatibilityFlags", GoMethod: "ResetCompatibilityFlags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContainers", GoMethod: "ResetContainers"},
@@ -93,6 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMigrations", GoMethod: "ResetMigrations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetModules", GoMethod: "ResetModules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPackageDependencies", GoMethod: "ResetPackageDependencies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlacement", GoMethod: "ResetPlacement"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsageModel", GoMethod: "ResetUsageModel"},
 			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
@@ -626,6 +634,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerVersionBindingsSimpleOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.workerVersion.WorkerVersionCacheOptions",
+		reflect.TypeOf((*WorkerVersionCacheOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.workerVersion.WorkerVersionCacheOptionsOutputReference",
+		reflect.TypeOf((*WorkerVersionCacheOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "crossVersionCache", GoGetter: "CrossVersionCache"},
+			_jsii_.MemberProperty{JsiiProperty: "crossVersionCacheInput", GoGetter: "CrossVersionCacheInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCrossVersionCache", GoMethod: "ResetCrossVersionCache"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkerVersionCacheOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -1201,6 +1251,70 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerVersionModulesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.workerVersion.WorkerVersionPackageDependencies",
+		reflect.TypeOf((*WorkerVersionPackageDependencies)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.workerVersion.WorkerVersionPackageDependenciesList",
+		reflect.TypeOf((*WorkerVersionPackageDependenciesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkerVersionPackageDependenciesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.workerVersion.WorkerVersionPackageDependenciesOutputReference",
+		reflect.TypeOf((*WorkerVersionPackageDependenciesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "installedVersion", GoGetter: "InstalledVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "installedVersionInput", GoGetter: "InstalledVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "packageJsonVersion", GoGetter: "PackageJsonVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "packageJsonVersionInput", GoGetter: "PackageJsonVersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkerVersionPackageDependenciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

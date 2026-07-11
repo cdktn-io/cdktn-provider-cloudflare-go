@@ -23,8 +23,6 @@ type AiSearchInstanceSourceParamsWebCrawlerOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CrawlOptions() AiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference
-	CrawlOptionsInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -73,10 +71,8 @@ type AiSearchInstanceSourceParamsWebCrawlerOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	PutCrawlOptions(value *AiSearchInstanceSourceParamsWebCrawlerCrawlOptions)
 	PutParseOptions(value *AiSearchInstanceSourceParamsWebCrawlerParseOptions)
 	PutStoreOptions(value *AiSearchInstanceSourceParamsWebCrawlerStoreOptions)
-	ResetCrawlOptions()
 	ResetParseOptions()
 	ResetParseType()
 	ResetStoreOptions()
@@ -110,26 +106,6 @@ func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) Comple
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) CrawlOptions() AiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference {
-	var returns AiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference
-	_jsii_.Get(
-		j,
-		"crawlOptions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) CrawlOptionsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"crawlOptionsInput",
 		&returns,
 	)
 	return returns
@@ -525,17 +501,6 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) Interp
 	return returns
 }
 
-func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) PutCrawlOptions(value *AiSearchInstanceSourceParamsWebCrawlerCrawlOptions) {
-	if err := a.validatePutCrawlOptionsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putCrawlOptions",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) PutParseOptions(value *AiSearchInstanceSourceParamsWebCrawlerParseOptions) {
 	if err := a.validatePutParseOptionsParameters(value); err != nil {
 		panic(err)
@@ -555,14 +520,6 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) PutSto
 		a,
 		"putStoreOptions",
 		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) ResetCrawlOptions() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetCrawlOptions",
-		nil, // no parameters
 	)
 }
 

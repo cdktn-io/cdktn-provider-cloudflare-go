@@ -119,11 +119,19 @@ func (j *jsiiProxy_EmailRoutingRule) validateSetNameParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_EmailRoutingRule) validateSetOwnerWorkerTagParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailRoutingRule) validateSetPriorityParameters(val *float64) error {
 	return nil
 }
 
 func (j *jsiiProxy_EmailRoutingRule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_EmailRoutingRule) validateSetSourceParameters(val *string) error {
 	return nil
 }
 

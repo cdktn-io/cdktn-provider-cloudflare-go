@@ -7,15 +7,15 @@ package ruleset
 type RulesetRulesActionParametersSMaxage struct {
 	// The operation to perform. Available values: "set", "remove".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ruleset#operation Ruleset#operation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ruleset#operation Ruleset#operation}
 	Operation *string `field:"required" json:"operation" yaml:"operation"`
 	// Whether to apply the directive only to Cloudflare's cache.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 	CloudflareOnly interface{} `field:"optional" json:"cloudflareOnly" yaml:"cloudflareOnly"`
 	// The value for the directive in seconds.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ruleset#value Ruleset#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ruleset#value Ruleset#value}
 	Value *float64 `field:"optional" json:"value" yaml:"value"`
 }
 

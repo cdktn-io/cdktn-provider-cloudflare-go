@@ -53,6 +53,12 @@ type DataCloudflareDnsRecordFilterOutputReference interface {
 	Search() *string
 	SetSearch(val *string)
 	SearchInput() *string
+	ShadowedByName() *string
+	SetShadowedByName(val *string)
+	ShadowedByNameInput() *string
+	ShadowingName() *string
+	SetShadowingName(val *string)
+	ShadowingNameInput() *string
 	Tag() DataCloudflareDnsRecordFilterTagOutputReference
 	TagInput() interface{}
 	TagMatch() *string
@@ -105,6 +111,8 @@ type DataCloudflareDnsRecordFilterOutputReference interface {
 	ResetOrder()
 	ResetProxied()
 	ResetSearch()
+	ResetShadowedByName()
+	ResetShadowingName()
 	ResetTag()
 	ResetTagMatch()
 	ResetType()
@@ -333,6 +341,46 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) SearchInput() *
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) ShadowedByName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shadowedByName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) ShadowedByNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shadowedByNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) ShadowingName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shadowingName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) ShadowingNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shadowingNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) Tag() DataCloudflareDnsRecordFilterTagOutputReference {
 	var returns DataCloudflareDnsRecordFilterTagOutputReference
 	_jsii_.Get(
@@ -525,6 +573,28 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference)SetSearch(val *s
 	_jsii_.Set(
 		j,
 		"search",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference)SetShadowedByName(val *string) {
+	if err := j.validateSetShadowedByNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shadowedByName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference)SetShadowingName(val *string) {
+	if err := j.validateSetShadowingNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shadowingName",
 		val,
 	)
 }
@@ -863,6 +933,22 @@ func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) ResetSearch() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSearch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) ResetShadowedByName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetShadowedByName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) ResetShadowingName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetShadowingName",
 		nil, // no parameters
 	)
 }

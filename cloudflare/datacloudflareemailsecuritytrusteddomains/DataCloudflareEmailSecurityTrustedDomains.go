@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
 type DataCloudflareEmailSecurityTrustedDomains interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomains) TrustedDomainIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomains(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsConfig) DataCloudflareEmailSecurityTrustedDomains {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataCloudflareEmailSecurityTrustedDomains(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomains_Override(d DataCloudflareEmailSecurityTrustedDomains, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsConfig) {
 	_init_.Initialize()
 

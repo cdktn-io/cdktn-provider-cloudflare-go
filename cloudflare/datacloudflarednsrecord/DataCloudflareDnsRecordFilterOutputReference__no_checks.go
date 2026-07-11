@@ -99,6 +99,14 @@ func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetSear
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetShadowedByNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetShadowingNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareDnsRecordFilterOutputReference) validateSetTagMatchParameters(val *string) error {
 	return nil
 }

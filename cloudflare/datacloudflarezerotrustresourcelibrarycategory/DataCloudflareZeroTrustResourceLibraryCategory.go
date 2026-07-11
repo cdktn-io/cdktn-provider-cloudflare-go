@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category}.
 type DataCloudflareZeroTrustResourceLibraryCategory interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -329,7 +329,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryCategory(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryCategoryConfig) DataCloudflareZeroTrustResourceLibraryCategory {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewDataCloudflareZeroTrustResourceLibraryCategory(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryCategory_Override(d DataCloudflareZeroTrustResourceLibraryCategory, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryCategoryConfig) {
 	_init_.Initialize()
 

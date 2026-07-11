@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
 type DataCloudflareApiShieldSchemaValidationSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchemaValidationSettings) ZoneIdInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldSchemaValidationSettings(scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemaValidationSettingsConfig) DataCloudflareApiShieldSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataCloudflareApiShieldSchemaValidationSettings(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldSchemaValidationSettings_Override(d DataCloudflareApiShieldSchemaValidationSettings, scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 

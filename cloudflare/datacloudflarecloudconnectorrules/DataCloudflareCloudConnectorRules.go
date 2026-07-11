@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules}.
 type DataCloudflareCloudConnectorRules interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataCloudflareCloudConnectorRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
 func NewDataCloudflareCloudConnectorRules(scope constructs.Construct, id *string, config *DataCloudflareCloudConnectorRulesConfig) DataCloudflareCloudConnectorRules {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataCloudflareCloudConnectorRules(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
 func NewDataCloudflareCloudConnectorRules_Override(d DataCloudflareCloudConnectorRules, scope constructs.Construct, id *string, config *DataCloudflareCloudConnectorRulesConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ai_search_namespace cloudflare_ai_search_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace}.
 type AiSearchNamespace interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_AiSearchNamespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
 func NewAiSearchNamespace(scope constructs.Construct, id *string, config *AiSearchNamespaceConfig) AiSearchNamespace {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewAiSearchNamespace(scope constructs.Construct, id *string, config *AiSear
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
 func NewAiSearchNamespace_Override(a AiSearchNamespace, scope constructs.Construct, id *string, config *AiSearchNamespaceConfig) {
 	_init_.Initialize()
 

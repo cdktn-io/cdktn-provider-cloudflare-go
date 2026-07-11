@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/organization_profile cloudflare_organization_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/organization_profile cloudflare_organization_profile}.
 type OrganizationProfileA interface {
 	cdktn.TerraformResource
 	BusinessAddress() *string
@@ -433,7 +433,7 @@ func (j *jsiiProxy_OrganizationProfileA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/organization_profile cloudflare_organization_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/organization_profile cloudflare_organization_profile} Resource.
 func NewOrganizationProfileA(scope constructs.Construct, id *string, config *OrganizationProfileAConfig) OrganizationProfileA {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewOrganizationProfileA(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/organization_profile cloudflare_organization_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/organization_profile cloudflare_organization_profile} Resource.
 func NewOrganizationProfileA_Override(o OrganizationProfileA, scope constructs.Construct, id *string, config *OrganizationProfileAConfig) {
 	_init_.Initialize()
 

@@ -24,21 +24,21 @@ type DataCloudflareShareConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share#account_id DataCloudflareShare#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/share#account_id DataCloudflareShare#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share#filter DataCloudflareShare#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/share#filter DataCloudflareShare#filter}.
 	Filter *DataCloudflareShareFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Include recipient counts in the response.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share#include_recipient_counts DataCloudflareShare#include_recipient_counts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/share#include_recipient_counts DataCloudflareShare#include_recipient_counts}
 	IncludeRecipientCounts interface{} `field:"optional" json:"includeRecipientCounts" yaml:"includeRecipientCounts"`
 	// Include resources in the response.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share#include_resources DataCloudflareShare#include_resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/share#include_resources DataCloudflareShare#include_resources}
 	IncludeResources interface{} `field:"optional" json:"includeResources" yaml:"includeResources"`
 	// Share identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share#share_id DataCloudflareShare#share_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/share#share_id DataCloudflareShare#share_id}
 	ShareId *string `field:"optional" json:"shareId" yaml:"shareId"`
 }
 

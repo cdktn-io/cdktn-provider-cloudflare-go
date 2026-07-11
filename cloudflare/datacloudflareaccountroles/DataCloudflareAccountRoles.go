@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/account_roles cloudflare_account_roles}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_roles cloudflare_account_roles}.
 type DataCloudflareAccountRoles interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
 func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, config *DataCloudflareAccountRolesConfig) DataCloudflareAccountRoles {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
 func NewDataCloudflareAccountRoles_Override(d DataCloudflareAccountRoles, scope constructs.Construct, id *string, config *DataCloudflareAccountRolesConfig) {
 	_init_.Initialize()
 

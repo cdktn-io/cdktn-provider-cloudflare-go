@@ -33,6 +33,9 @@ type AiSearchInstancePublicEndpointParamsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomDomains() *[]*string
+	SetCustomDomains(val *[]*string)
+	CustomDomainsInput() *[]*string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -84,6 +87,7 @@ type AiSearchInstancePublicEndpointParamsOutputReference interface {
 	PutSearchEndpoint(value *AiSearchInstancePublicEndpointParamsSearchEndpoint)
 	ResetAuthorizedHosts()
 	ResetChatCompletionsEndpoint()
+	ResetCustomDomains()
 	ResetEnabled()
 	ResetMcp()
 	ResetRateLimit()
@@ -168,6 +172,26 @@ func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) CustomDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) CustomDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customDomainsInput",
 		&returns,
 	)
 	return returns
@@ -350,6 +374,17 @@ func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference)SetCustomDomains(val *[]*string) {
+	if err := j.validateSetCustomDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customDomains",
 		val,
 	)
 }
@@ -640,6 +675,14 @@ func (a *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) ResetCha
 	_jsii_.InvokeVoid(
 		a,
 		"resetChatCompletionsEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) ResetCustomDomains() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomDomains",
 		nil, // no parameters
 	)
 }

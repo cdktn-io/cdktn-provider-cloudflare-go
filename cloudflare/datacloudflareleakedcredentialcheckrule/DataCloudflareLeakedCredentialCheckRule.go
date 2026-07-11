@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
 type DataCloudflareLeakedCredentialCheckRule interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataCloudflareLeakedCredentialCheckRule) ZoneIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Data Source.
 func NewDataCloudflareLeakedCredentialCheckRule(scope constructs.Construct, id *string, config *DataCloudflareLeakedCredentialCheckRuleConfig) DataCloudflareLeakedCredentialCheckRule {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataCloudflareLeakedCredentialCheckRule(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule} Data Source.
 func NewDataCloudflareLeakedCredentialCheckRule_Override(d DataCloudflareLeakedCredentialCheckRule, scope constructs.Construct, id *string, config *DataCloudflareLeakedCredentialCheckRuleConfig) {
 	_init_.Initialize()
 

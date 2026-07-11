@@ -47,10 +47,6 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) validatePutCrawlOptionsParameters(value *AiSearchInstanceSourceParamsWebCrawlerCrawlOptions) error {
-	return nil
-}
-
 func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) validatePutParseOptionsParameters(value *AiSearchInstanceSourceParamsWebCrawlerParseOptions) error {
 	return nil
 }

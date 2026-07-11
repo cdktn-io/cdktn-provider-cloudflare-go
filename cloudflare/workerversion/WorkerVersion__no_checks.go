@@ -87,6 +87,10 @@ func (w *jsiiProxy_WorkerVersion) validatePutBindingsParameters(value interface{
 	return nil
 }
 
+func (w *jsiiProxy_WorkerVersion) validatePutCacheOptionsParameters(value *WorkerVersionCacheOptions) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerVersion) validatePutContainersParameters(value interface{}) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (w *jsiiProxy_WorkerVersion) validatePutMigrationsParameters(value *WorkerV
 }
 
 func (w *jsiiProxy_WorkerVersion) validatePutModulesParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerVersion) validatePutPackageDependenciesParameters(value interface{}) error {
 	return nil
 }
 

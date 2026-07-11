@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/worker_version cloudflare_worker_version}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/worker_version cloudflare_worker_version}.
 type WorkerVersion interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -24,6 +24,8 @@ type WorkerVersion interface {
 	AssetsInput() interface{}
 	Bindings() WorkerVersionBindingsList
 	BindingsInput() interface{}
+	CacheOptions() WorkerVersionCacheOptionsOutputReference
+	CacheOptionsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	CompatibilityDate() *string
@@ -76,6 +78,8 @@ type WorkerVersion interface {
 	// The tree node.
 	Node() constructs.Node
 	Number() *float64
+	PackageDependencies() WorkerVersionPackageDependenciesList
+	PackageDependenciesInput() interface{}
 	Placement() WorkerVersionPlacementOutputReference
 	PlacementInput() interface{}
 	// Experimental.
@@ -149,14 +153,17 @@ type WorkerVersion interface {
 	PutAnnotations(value *WorkerVersionAnnotations)
 	PutAssets(value *WorkerVersionAssets)
 	PutBindings(value interface{})
+	PutCacheOptions(value *WorkerVersionCacheOptions)
 	PutContainers(value interface{})
 	PutLimits(value *WorkerVersionLimits)
 	PutMigrations(value *WorkerVersionMigrations)
 	PutModules(value interface{})
+	PutPackageDependencies(value interface{})
 	PutPlacement(value *WorkerVersionPlacement)
 	ResetAnnotations()
 	ResetAssets()
 	ResetBindings()
+	ResetCacheOptions()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
 	ResetContainers()
@@ -167,6 +174,7 @@ type WorkerVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPackageDependencies()
 	ResetPlacement()
 	ResetUsageModel()
 	SynthesizeAttributes() *map[string]interface{}
@@ -271,6 +279,26 @@ func (j *jsiiProxy_WorkerVersion) BindingsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"bindingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) CacheOptions() WorkerVersionCacheOptionsOutputReference {
+	var returns WorkerVersionCacheOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cacheOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) CacheOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cacheOptionsInput",
 		&returns,
 	)
 	return returns
@@ -566,6 +594,26 @@ func (j *jsiiProxy_WorkerVersion) Number() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersion) PackageDependencies() WorkerVersionPackageDependenciesList {
+	var returns WorkerVersionPackageDependenciesList
+	_jsii_.Get(
+		j,
+		"packageDependencies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) PackageDependenciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"packageDependenciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersion) Placement() WorkerVersionPlacementOutputReference {
 	var returns WorkerVersionPlacementOutputReference
 	_jsii_.Get(
@@ -717,7 +765,7 @@ func (j *jsiiProxy_WorkerVersion) WorkerIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVersionConfig) WorkerVersion {
 	_init_.Initialize()
 
@@ -735,7 +783,7 @@ func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVers
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion_Override(w WorkerVersion, scope constructs.Construct, id *string, config *WorkerVersionConfig) {
 	_init_.Initialize()
 
@@ -1266,6 +1314,17 @@ func (w *jsiiProxy_WorkerVersion) PutBindings(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersion) PutCacheOptions(value *WorkerVersionCacheOptions) {
+	if err := w.validatePutCacheOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCacheOptions",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerVersion) PutContainers(value interface{}) {
 	if err := w.validatePutContainersParameters(value); err != nil {
 		panic(err)
@@ -1310,6 +1369,17 @@ func (w *jsiiProxy_WorkerVersion) PutModules(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersion) PutPackageDependencies(value interface{}) {
+	if err := w.validatePutPackageDependenciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putPackageDependencies",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerVersion) PutPlacement(value *WorkerVersionPlacement) {
 	if err := w.validatePutPlacementParameters(value); err != nil {
 		panic(err)
@@ -1341,6 +1411,14 @@ func (w *jsiiProxy_WorkerVersion) ResetBindings() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetBindings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersion) ResetCacheOptions() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCacheOptions",
 		nil, // no parameters
 	)
 }
@@ -1405,6 +1483,14 @@ func (w *jsiiProxy_WorkerVersion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersion) ResetPackageDependencies() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPackageDependencies",
 		nil, // no parameters
 	)
 }

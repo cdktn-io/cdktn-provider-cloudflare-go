@@ -79,6 +79,10 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutEndpointsParameters(value *Z
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutMaxTtlParameters(value *ZeroTrustDnsLocationMaxTtl) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }

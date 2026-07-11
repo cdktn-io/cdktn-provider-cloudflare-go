@@ -119,6 +119,10 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validateSetMaxTtlSecsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -24,19 +24,19 @@ type ShareRecipientConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/share_recipient#account_id ShareRecipient#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/share_recipient#account_id ShareRecipient#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Share identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/share_recipient#share_id ShareRecipient#share_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/share_recipient#share_id ShareRecipient#share_id}
 	ShareId *string `field:"required" json:"shareId" yaml:"shareId"`
 	// Organization identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
 	OrganizationId *string `field:"optional" json:"organizationId" yaml:"organizationId"`
 	// The account that will receive the share.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
 	RecipientAccountId *string `field:"optional" json:"recipientAccountId" yaml:"recipientAccountId"`
 }
 

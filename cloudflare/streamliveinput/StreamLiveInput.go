@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input cloudflare_stream_live_input}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
 type StreamLiveInput interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -52,6 +52,7 @@ type StreamLiveInput interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	KeysRotatedAt() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -65,6 +66,9 @@ type StreamLiveInput interface {
 	Modified() *string
 	// The tree node.
 	Node() constructs.Node
+	PreferLowLatency() interface{}
+	SetPreferLowLatency(val interface{})
+	PreferLowLatencyInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -143,6 +147,7 @@ type StreamLiveInput interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreferLowLatency()
 	ResetRecording()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -341,6 +346,16 @@ func (j *jsiiProxy_StreamLiveInput) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StreamLiveInput) KeysRotatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keysRotatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamLiveInput) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -406,6 +421,26 @@ func (j *jsiiProxy_StreamLiveInput) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamLiveInput) PreferLowLatency() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preferLowLatency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamLiveInput) PreferLowLatencyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preferLowLatencyInput",
 		&returns,
 	)
 	return returns
@@ -572,7 +607,7 @@ func (j *jsiiProxy_StreamLiveInput) WebRtcPlayback() StreamLiveInputWebRtcPlayba
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLiveInputConfig) StreamLiveInput {
 	_init_.Initialize()
 
@@ -590,7 +625,7 @@ func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput_Override(s StreamLiveInput, scope constructs.Construct, id *string, config *StreamLiveInputConfig) {
 	_init_.Initialize()
 
@@ -712,6 +747,17 @@ func (j *jsiiProxy_StreamLiveInput)SetMeta(val *string) {
 	_jsii_.Set(
 		j,
 		"meta",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StreamLiveInput)SetPreferLowLatency(val interface{}) {
+	if err := j.validateSetPreferLowLatencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferLowLatency",
 		val,
 	)
 }
@@ -1143,6 +1189,14 @@ func (s *jsiiProxy_StreamLiveInput) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamLiveInput) ResetPreferLowLatency() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPreferLowLatency",
 		nil, // no parameters
 	)
 }

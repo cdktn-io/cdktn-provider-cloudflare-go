@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes}.
 type OriginTlsComplianceModes interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -374,7 +374,7 @@ func (j *jsiiProxy_OriginTlsComplianceModes) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes} Resource.
 func NewOriginTlsComplianceModes(scope constructs.Construct, id *string, config *OriginTlsComplianceModesConfig) OriginTlsComplianceModes {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewOriginTlsComplianceModes(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes} Resource.
 func NewOriginTlsComplianceModes_Override(o OriginTlsComplianceModes, scope constructs.Construct, id *string, config *OriginTlsComplianceModesConfig) {
 	_init_.Initialize()
 

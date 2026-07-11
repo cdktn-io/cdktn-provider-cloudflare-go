@@ -24,11 +24,11 @@ type DataCloudflareImageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Image unique identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/image#image_id DataCloudflareImage#image_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/image#image_id DataCloudflareImage#image_id}
 	ImageId *string `field:"required" json:"imageId" yaml:"imageId"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/image#account_id DataCloudflareImage#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/image#account_id DataCloudflareImage#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 }
 

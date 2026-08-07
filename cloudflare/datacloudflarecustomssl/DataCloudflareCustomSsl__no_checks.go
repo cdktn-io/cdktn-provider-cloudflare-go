@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareCustomSsl) validatePutFilterParameters(value *D
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCustomSsl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareCustomSsl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

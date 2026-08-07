@@ -5,14 +5,14 @@ package datacloudflarezerotrusttunnelcloudflaredroutes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrusttunnelcloudflaredroutes/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes}.
 type DataCloudflareZeroTrustTunnelCloudflaredRoutes interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -112,6 +112,19 @@ type DataCloudflareZeroTrustTunnelCloudflaredRoutes interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
 	ResetComment()
 	ResetExistedAt()
@@ -525,7 +538,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) VirtualNetwor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredRoutes(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredRoutesConfig) DataCloudflareZeroTrustTunnelCloudflaredRoutes {
 	_init_.Initialize()
 
@@ -543,7 +556,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredRoutes(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredRoutes_Override(d DataCloudflareZeroTrustTunnelCloudflaredRoutes, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredRoutesConfig) {
 	_init_.Initialize()
 
@@ -1003,6 +1016,17 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) OverrideLogic
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZoneHold) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (z *jsiiProxy_ZoneHold) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneHold) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (z *jsiiProxy_ZoneHold) validateMoveToIdParameters(id *string) error {
 }
 
 func (z *jsiiProxy_ZoneHold) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneHold) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (e *jsiiProxy_EmailSecurityBlockSender) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_EmailSecurityBlockSender) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailSecurityBlockSender) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (e *jsiiProxy_EmailSecurityBlockSender) validateMoveToIdParameters(id *stri
 }
 
 func (e *jsiiProxy_EmailSecurityBlockSender) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailSecurityBlockSender) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

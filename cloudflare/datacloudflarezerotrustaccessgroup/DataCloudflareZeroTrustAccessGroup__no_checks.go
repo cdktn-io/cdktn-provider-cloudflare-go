@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroup) validatePutFilterParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustAccessGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

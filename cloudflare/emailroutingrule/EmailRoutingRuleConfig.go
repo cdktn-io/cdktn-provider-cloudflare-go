@@ -24,31 +24,31 @@ type EmailRoutingRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// List actions patterns.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#actions EmailRoutingRule#actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_rule#actions EmailRoutingRule#actions}
 	Actions interface{} `field:"required" json:"actions" yaml:"actions"`
 	// Matching patterns to forward to your actions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#matchers EmailRoutingRule#matchers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_rule#matchers EmailRoutingRule#matchers}
 	Matchers interface{} `field:"required" json:"matchers" yaml:"matchers"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Routing rule status.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// Routing rule name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Public tag (script_tag) of the Worker that owns this rule. Required when `source` is `wrangler`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#owner_worker_tag EmailRoutingRule#owner_worker_tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_rule#owner_worker_tag EmailRoutingRule#owner_worker_tag}
 	OwnerWorkerTag *string `field:"optional" json:"ownerWorkerTag" yaml:"ownerWorkerTag"`
 	// Priority of the routing rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
 	// Who manages the rule.
 	//
@@ -57,7 +57,7 @@ type EmailRoutingRuleConfig struct {
 	// to `api` when omitted on write.
 	// Available values: "api", "wrangler".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/email_routing_rule#source EmailRoutingRule#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/email_routing_rule#source EmailRoutingRule#source}
 	Source *string `field:"optional" json:"source" yaml:"source"`
 }
 

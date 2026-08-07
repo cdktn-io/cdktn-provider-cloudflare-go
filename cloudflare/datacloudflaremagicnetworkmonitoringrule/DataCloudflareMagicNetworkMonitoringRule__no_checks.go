@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareMagicNetworkMonitoringRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

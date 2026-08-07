@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteAcl) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteAcl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareMagicTransitSiteAcl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

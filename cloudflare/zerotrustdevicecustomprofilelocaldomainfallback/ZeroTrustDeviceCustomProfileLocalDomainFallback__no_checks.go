@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) validateInte
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) validateOver
 }
 
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) validatePutDomainsParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

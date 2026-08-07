@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareMagicWanGreTunnel) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareMagicWanGreTunnel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareMagicWanGreTunnel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

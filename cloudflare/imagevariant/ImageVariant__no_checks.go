@@ -59,6 +59,10 @@ func (i *jsiiProxy_ImageVariant) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (i *jsiiProxy_ImageVariant) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImageVariant) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (i *jsiiProxy_ImageVariant) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (i *jsiiProxy_ImageVariant) validatePutOptionsParameters(value *ImageVariantOptions) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImageVariant) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

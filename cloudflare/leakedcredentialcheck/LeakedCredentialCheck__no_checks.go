@@ -59,6 +59,10 @@ func (l *jsiiProxy_LeakedCredentialCheck) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_LeakedCredentialCheck) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LeakedCredentialCheck) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (l *jsiiProxy_LeakedCredentialCheck) validateMoveToIdParameters(id *string)
 }
 
 func (l *jsiiProxy_LeakedCredentialCheck) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LeakedCredentialCheck) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

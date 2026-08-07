@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerMonitor) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareLoadBalancerMonitor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareLoadBalancerMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

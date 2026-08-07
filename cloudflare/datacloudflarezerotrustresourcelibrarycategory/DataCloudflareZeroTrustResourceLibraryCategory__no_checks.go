@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) validateOverr
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustResourceLibraryCategory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

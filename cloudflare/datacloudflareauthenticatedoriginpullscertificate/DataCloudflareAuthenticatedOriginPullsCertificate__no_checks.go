@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) validateOv
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareAuthenticatedOriginPullsCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

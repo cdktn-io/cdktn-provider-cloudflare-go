@@ -5,14 +5,14 @@ package datacloudflareturnstilewidget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareturnstilewidget/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareturnstilewidget/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget}.
 type DataCloudflareTurnstileWidget interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -33,6 +33,7 @@ type DataCloudflareTurnstileWidget interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeployedVia() *string
 	Domains() *[]*string
 	EphemeralId() cdktn.IResolvable
 	Filter() DataCloudflareTurnstileWidgetFilterOutputReference
@@ -46,6 +47,7 @@ type DataCloudflareTurnstileWidget interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	LastModifiedVia() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -99,6 +101,19 @@ type DataCloudflareTurnstileWidget interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareTurnstileWidgetFilter)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -223,6 +238,16 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidget) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareTurnstileWidget) DeployedVia() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deployedVia",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareTurnstileWidget) Domains() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -298,6 +323,16 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidget) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareTurnstileWidget) LastModifiedVia() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedVia",
 		&returns,
 	)
 	return returns
@@ -454,7 +489,7 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidget) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget} Data Source.
 func NewDataCloudflareTurnstileWidget(scope constructs.Construct, id *string, config *DataCloudflareTurnstileWidgetConfig) DataCloudflareTurnstileWidget {
 	_init_.Initialize()
 
@@ -472,7 +507,7 @@ func NewDataCloudflareTurnstileWidget(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget} Data Source.
 func NewDataCloudflareTurnstileWidget_Override(d DataCloudflareTurnstileWidget, scope constructs.Construct, id *string, config *DataCloudflareTurnstileWidgetConfig) {
 	_init_.Initialize()
 
@@ -844,6 +879,17 @@ func (d *jsiiProxy_DataCloudflareTurnstileWidget) PutFilter(value *DataCloudflar
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareTurnstileWidget) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

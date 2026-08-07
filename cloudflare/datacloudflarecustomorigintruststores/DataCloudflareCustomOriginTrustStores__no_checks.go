@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareCustomOriginTrustStores) validateOverrideLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCustomOriginTrustStores) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareCustomOriginTrustStores_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

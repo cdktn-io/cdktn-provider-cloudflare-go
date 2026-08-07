@@ -61,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "prioritizeMaliciousInput", GoGetter: "PrioritizeMaliciousInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDirection", GoMethod: "ResetDirection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeCdnCgi", GoMethod: "ResetExcludeCdnCgi"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeDuplicates", GoMethod: "ResetExcludeDuplicates"},

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespace) validateO
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareWorkersForPlatformsDispatchNamespace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

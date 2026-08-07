@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDnsLocation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDnsLocation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutMaxTtlParameters(value *Zero
 }
 
 func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutNetworksParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDnsLocation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

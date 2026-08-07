@@ -11,11 +11,11 @@ type WorkersScriptCacheOptions struct {
 	// while caching is off, so the preference survives turning
 	// caching off and back on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workers_script#cross_version_cache WorkersScript#cross_version_cache}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workers_script#cross_version_cache WorkersScript#cross_version_cache}
 	CrossVersionCache interface{} `field:"optional" json:"crossVersionCache" yaml:"crossVersionCache"`
 	// Whether caching is enabled for this Worker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workers_script#enabled WorkersScript#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

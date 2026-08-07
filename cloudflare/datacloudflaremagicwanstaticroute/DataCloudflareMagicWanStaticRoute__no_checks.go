@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareMagicWanStaticRoute) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareMagicWanStaticRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareMagicWanStaticRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

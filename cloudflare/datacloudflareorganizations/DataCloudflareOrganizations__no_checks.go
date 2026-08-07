@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataCloudflareOrganizations) validatePutParentParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareOrganizations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -16,7 +16,7 @@ type MagicWanIpsecTunnelCustomRemoteIdentities struct {
 	// fqdn_id. However, if another IPsec tunnel has the same value then the two tunnels
 	// cannot have the same cloudflare_endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/magic_wan_ipsec_tunnel#fqdn_id MagicWanIpsecTunnel#fqdn_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/magic_wan_ipsec_tunnel#fqdn_id MagicWanIpsecTunnel#fqdn_id}
 	FqdnId *string `field:"optional" json:"fqdnId" yaml:"fqdnId"`
 }
 

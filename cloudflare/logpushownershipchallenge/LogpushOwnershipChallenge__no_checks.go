@@ -59,6 +59,10 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) validateInterpolationForAttributeP
 	return nil
 }
 
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveToIdParameters(id *str
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

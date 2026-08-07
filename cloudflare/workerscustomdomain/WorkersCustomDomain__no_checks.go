@@ -59,6 +59,10 @@ func (w *jsiiProxy_WorkersCustomDomain) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (w *jsiiProxy_WorkersCustomDomain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersCustomDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (w *jsiiProxy_WorkersCustomDomain) validateMoveToIdParameters(id *string) e
 }
 
 func (w *jsiiProxy_WorkersCustomDomain) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkersCustomDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

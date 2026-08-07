@@ -59,6 +59,10 @@ func (e *jsiiProxy_EmailRoutingCatchAll) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_EmailRoutingCatchAll) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailRoutingCatchAll) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (e *jsiiProxy_EmailRoutingCatchAll) validatePutActionsParameters(value inte
 }
 
 func (e *jsiiProxy_EmailRoutingCatchAll) validatePutMatchersParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailRoutingCatchAll) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

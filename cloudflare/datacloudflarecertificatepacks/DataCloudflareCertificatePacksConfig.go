@@ -24,19 +24,19 @@ type DataCloudflareCertificatePacksConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specify the deployment environment for the certificate packs. Available values: "staging", "production".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/certificate_packs#deploy DataCloudflareCertificatePacks#deploy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/certificate_packs#deploy DataCloudflareCertificatePacks#deploy}
 	Deploy *string `field:"optional" json:"deploy" yaml:"deploy"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// Include Certificate Packs of all statuses, not just active ones. Available values: "all".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

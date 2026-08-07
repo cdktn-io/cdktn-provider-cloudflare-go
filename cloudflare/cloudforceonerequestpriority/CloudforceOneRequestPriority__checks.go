@@ -122,6 +122,14 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CloudforceOneRequestPriority) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudforceOneRequestPriority) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (c *jsiiProxy_CloudforceOneRequestPriority) validateMoveToIdParameters(id *
 func (c *jsiiProxy_CloudforceOneRequestPriority) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudforceOneRequestPriority) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

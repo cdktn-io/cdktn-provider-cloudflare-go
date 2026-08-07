@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflarePageShieldCookiesList) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflarePageShieldCookiesList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

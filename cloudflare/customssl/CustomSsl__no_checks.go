@@ -59,6 +59,10 @@ func (c *jsiiProxy_CustomSsl) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_CustomSsl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomSsl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_CustomSsl) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (c *jsiiProxy_CustomSsl) validatePutGeoRestrictionsParameters(value *CustomSslGeoRestrictions) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomSsl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

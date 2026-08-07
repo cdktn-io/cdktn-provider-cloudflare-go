@@ -122,6 +122,14 @@ func (w *jsiiProxy_WorkerVersion) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (w *jsiiProxy_WorkerVersion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WorkerVersion) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -302,6 +310,37 @@ func (w *jsiiProxy_WorkerVersion) validatePutContainersParameters(value interfac
 	return nil
 }
 
+func (w *jsiiProxy_WorkerVersion) validatePutExportsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *map[string]*WorkerVersionExports:
+		value := value.(*map[string]*WorkerVersionExports)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case map[string]*WorkerVersionExports:
+		value_ := value.(map[string]*WorkerVersionExports)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *map[string]*WorkerVersionExports; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WorkerVersion) validatePutLimitsParameters(value *WorkerVersionLimits) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -392,6 +431,14 @@ func (w *jsiiProxy_WorkerVersion) validatePutPlacementParameters(value *WorkerVe
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_WorkerVersion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

@@ -114,6 +114,14 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingCatchAll) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareEmailRoutingCatchAll) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateDataCloudflareEmailRoutingCatchAll_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

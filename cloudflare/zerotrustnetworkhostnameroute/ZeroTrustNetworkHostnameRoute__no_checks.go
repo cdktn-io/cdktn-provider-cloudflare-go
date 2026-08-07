@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustNetworkHostnameRoute) validateInterpolationForAttrib
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustNetworkHostnameRoute) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustNetworkHostnameRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (z *jsiiProxy_ZeroTrustNetworkHostnameRoute) validateMoveToIdParameters(id 
 }
 
 func (z *jsiiProxy_ZeroTrustNetworkHostnameRoute) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustNetworkHostnameRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

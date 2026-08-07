@@ -59,6 +59,10 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanIpsecTunnel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicWanIpsecTunnel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) validatePutCustomRemoteIdentitiesParamet
 }
 
 func (m *jsiiProxy_MagicWanIpsecTunnel) validatePutHealthCheckParameters(value *MagicWanIpsecTunnelHealthCheck) error {
+	return nil
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

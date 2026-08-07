@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequests) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequests) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareCloudforceOneRequests_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

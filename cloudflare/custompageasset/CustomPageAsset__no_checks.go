@@ -59,6 +59,10 @@ func (c *jsiiProxy_CustomPageAsset) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_CustomPageAsset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomPageAsset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (c *jsiiProxy_CustomPageAsset) validateMoveToIdParameters(id *string) error
 }
 
 func (c *jsiiProxy_CustomPageAsset) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomPageAsset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

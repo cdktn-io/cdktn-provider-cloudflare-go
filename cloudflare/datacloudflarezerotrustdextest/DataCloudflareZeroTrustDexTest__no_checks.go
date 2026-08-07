@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) validatePutTargetPoliciesPara
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDexTest) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustDexTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

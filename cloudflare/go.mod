@@ -1,9 +1,9 @@
-module github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15
+module github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16
 
 go 1.25
 
 require (
-	github.com/aws/jsii-runtime-go v1.135.0
-	github.com/open-constructs/cdk-terrain-go/cdktn v0.23.3
-	github.com/aws/constructs-go/constructs/v10 v10.6.0
+	github.com/aws/jsii-runtime-go v1.139.0
+	github.com/open-constructs/cdk-terrain-go/cdktn v0.24.0
+	github.com/aws/constructs-go/constructs/v10 v10.7.2
 )

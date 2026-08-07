@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRule) validateInterpolationForAttribute
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDevicePostureRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDevicePostureRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRule) validatePutInputParameters(value 
 }
 
 func (z *jsiiProxy_ZeroTrustDevicePostureRule) validatePutMatchParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (a *jsiiProxy_ArgoSmartRouting) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_ArgoSmartRouting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArgoSmartRouting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_ArgoSmartRouting) validateMoveToIdParameters(id *string) erro
 }
 
 func (a *jsiiProxy_ArgoSmartRouting) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArgoSmartRouting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

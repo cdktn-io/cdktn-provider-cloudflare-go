@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareR2BucketSippy) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareR2BucketSippy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareR2BucketSippy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

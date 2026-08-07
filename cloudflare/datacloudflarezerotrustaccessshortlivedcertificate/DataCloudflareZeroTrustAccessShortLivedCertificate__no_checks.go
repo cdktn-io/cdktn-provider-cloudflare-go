@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificate) validateO
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessShortLivedCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustAccessShortLivedCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

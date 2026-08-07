@@ -59,6 +59,10 @@ func (c *jsiiProxy_CustomOriginTrustStore) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CustomOriginTrustStore) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomOriginTrustStore) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (c *jsiiProxy_CustomOriginTrustStore) validateMoveToIdParameters(id *string
 }
 
 func (c *jsiiProxy_CustomOriginTrustStore) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomOriginTrustStore) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

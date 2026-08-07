@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareOriginTlsComplianceModes) validateOverrideLogic
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOriginTlsComplianceModes) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareOriginTlsComplianceModes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

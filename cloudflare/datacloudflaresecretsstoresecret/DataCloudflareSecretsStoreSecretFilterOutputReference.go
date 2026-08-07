@@ -5,9 +5,9 @@ package datacloudflaresecretsstoresecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaresecretsstoresecret/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresecretsstoresecret/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -38,9 +38,9 @@ type DataCloudflareSecretsStoreSecretFilterOutputReference interface {
 	Order() *string
 	SetOrder(val *string)
 	OrderInput() *string
-	Scopes() interface{}
-	SetScopes(val interface{})
-	ScopesInput() interface{}
+	Scopes() *[]*string
+	SetScopes(val *[]*string)
+	ScopesInput() *[]*string
 	Search() *string
 	SetSearch(val *string)
 	SearchInput() *string
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) OrderI
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) Scopes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) Scopes() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"scopes",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) Scopes
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) ScopesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) ScopesInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"scopesInput",
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference)SetOrde
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference)SetScopes(val interface{}) {
+func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference)SetScopes(val *[]*string) {
 	if err := j.validateSetScopesParameters(val); err != nil {
 		panic(err)
 	}

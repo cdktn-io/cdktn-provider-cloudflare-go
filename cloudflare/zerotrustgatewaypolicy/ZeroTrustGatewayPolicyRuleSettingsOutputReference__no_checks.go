@@ -135,6 +135,10 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetDeleteHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetIgnoreCnameCategoryMatchesParameters(val interface{}) error {
 	return nil
 }
@@ -164,6 +168,10 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSe
 }
 
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetResolveDnsThroughCloudflareParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetSetHeadersParameters(val interface{}) error {
 	return nil
 }
 

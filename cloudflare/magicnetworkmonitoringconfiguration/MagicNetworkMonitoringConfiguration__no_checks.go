@@ -59,6 +59,10 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) validateInterpolationFor
 	return nil
 }
 
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) validateOverrideLogicalI
 }
 
 func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) validatePutWarpDevicesParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MagicNetworkMonitoringConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

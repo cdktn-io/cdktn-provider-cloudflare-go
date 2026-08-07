@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareCustomPageAssets) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCustomPageAssets) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareCustomPageAssets_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

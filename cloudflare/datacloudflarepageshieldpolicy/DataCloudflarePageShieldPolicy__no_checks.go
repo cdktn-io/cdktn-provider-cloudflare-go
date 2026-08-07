@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflarePageShieldPolicy) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflarePageShieldPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflarePageShieldPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

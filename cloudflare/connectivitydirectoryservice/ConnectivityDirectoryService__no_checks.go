@@ -59,6 +59,10 @@ func (c *jsiiProxy_ConnectivityDirectoryService) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ConnectivityDirectoryService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectivityDirectoryService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (c *jsiiProxy_ConnectivityDirectoryService) validatePutHostParameters(value
 }
 
 func (c *jsiiProxy_ConnectivityDirectoryService) validatePutTlsSettingsParameters(value *ConnectivityDirectoryServiceTlsSettings) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectivityDirectoryService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

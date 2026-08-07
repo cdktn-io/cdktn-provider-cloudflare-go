@@ -59,6 +59,10 @@ func (s *jsiiProxy_Snippet) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (s *jsiiProxy_Snippet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Snippet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (s *jsiiProxy_Snippet) validatePutFilesParameters(value interface{}) error 
 }
 
 func (s *jsiiProxy_Snippet) validatePutMetadataParameters(value *SnippetMetadata) error {
+	return nil
+}
+
+func (s *jsiiProxy_Snippet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

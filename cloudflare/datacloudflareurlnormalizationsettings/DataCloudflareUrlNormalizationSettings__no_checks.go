@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareUrlNormalizationSettings) validateOverrideLogic
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareUrlNormalizationSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareUrlNormalizationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

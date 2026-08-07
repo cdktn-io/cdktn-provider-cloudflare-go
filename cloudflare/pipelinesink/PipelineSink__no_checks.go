@@ -59,6 +59,10 @@ func (p *jsiiProxy_PipelineSink) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (p *jsiiProxy_PipelineSink) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineSink) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (p *jsiiProxy_PipelineSink) validatePutFormatParameters(value *PipelineSink
 }
 
 func (p *jsiiProxy_PipelineSink) validatePutSchemaParameters(value *PipelineSinkSchema) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineSink) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

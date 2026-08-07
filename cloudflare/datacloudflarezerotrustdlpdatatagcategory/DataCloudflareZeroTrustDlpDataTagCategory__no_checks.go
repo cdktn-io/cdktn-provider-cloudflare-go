@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpDataTagCategory) validateOverrideLo
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpDataTagCategory) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustDlpDataTagCategory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

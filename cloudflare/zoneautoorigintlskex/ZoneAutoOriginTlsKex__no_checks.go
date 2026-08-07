@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZoneAutoOriginTlsKex) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (z *jsiiProxy_ZoneAutoOriginTlsKex) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneAutoOriginTlsKex) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (z *jsiiProxy_ZoneAutoOriginTlsKex) validateMoveToIdParameters(id *string) 
 }
 
 func (z *jsiiProxy_ZoneAutoOriginTlsKex) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneAutoOriginTlsKex) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -122,6 +122,14 @@ func (p *jsiiProxy_Pipeline) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (p *jsiiProxy_Pipeline) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_Pipeline) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (p *jsiiProxy_Pipeline) validateMoveToIdParameters(id *string) error {
 func (p *jsiiProxy_Pipeline) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_Pipeline) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

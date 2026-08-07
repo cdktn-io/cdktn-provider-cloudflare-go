@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareHyperdriveConfigs) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareHyperdriveConfigs) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareHyperdriveConfigs_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

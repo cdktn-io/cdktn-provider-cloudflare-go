@@ -5,14 +5,14 @@ package datacloudflaresecretsstore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaresecretsstore/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaresecretsstore/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_store cloudflare_secrets_store}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_store cloudflare_secrets_store}.
 type DataCloudflareSecretsStore interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -91,6 +91,19 @@ type DataCloudflareSecretsStore interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareSecretsStoreFilter)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -365,7 +378,7 @@ func (j *jsiiProxy_DataCloudflareSecretsStore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_store cloudflare_secrets_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_store cloudflare_secrets_store} Data Source.
 func NewDataCloudflareSecretsStore(scope constructs.Construct, id *string, config *DataCloudflareSecretsStoreConfig) DataCloudflareSecretsStore {
 	_init_.Initialize()
 
@@ -383,7 +396,7 @@ func NewDataCloudflareSecretsStore(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_store cloudflare_secrets_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_store cloudflare_secrets_store} Data Source.
 func NewDataCloudflareSecretsStore_Override(d DataCloudflareSecretsStore, scope constructs.Construct, id *string, config *DataCloudflareSecretsStoreConfig) {
 	_init_.Initialize()
 
@@ -755,6 +768,17 @@ func (d *jsiiProxy_DataCloudflareSecretsStore) PutFilter(value *DataCloudflareSe
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareSecretsStore) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

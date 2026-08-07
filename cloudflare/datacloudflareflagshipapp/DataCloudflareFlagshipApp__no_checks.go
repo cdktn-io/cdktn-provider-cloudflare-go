@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareFlagshipApp) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareFlagshipApp) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareFlagshipApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

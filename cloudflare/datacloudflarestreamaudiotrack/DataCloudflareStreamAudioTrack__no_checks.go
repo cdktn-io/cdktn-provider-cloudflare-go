@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareStreamAudioTrack) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareStreamAudioTrack) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareStreamAudioTrack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

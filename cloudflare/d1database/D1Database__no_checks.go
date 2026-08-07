@@ -59,6 +59,10 @@ func (d *jsiiProxy_D1Database) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_D1Database) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_D1Database) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_D1Database) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (d *jsiiProxy_D1Database) validatePutReadReplicationParameters(value *D1DatabaseReadReplication) error {
+	return nil
+}
+
+func (d *jsiiProxy_D1Database) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

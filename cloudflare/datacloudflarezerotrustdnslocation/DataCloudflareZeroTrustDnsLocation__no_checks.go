@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustDnsLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

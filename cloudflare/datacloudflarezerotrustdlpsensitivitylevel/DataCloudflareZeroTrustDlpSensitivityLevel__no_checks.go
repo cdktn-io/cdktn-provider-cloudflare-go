@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDlpSensitivityLevel) validateOverrideL
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDlpSensitivityLevel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustDlpSensitivityLevel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package datacloudflarer2bucketsippy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarer2bucketsippy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarer2bucketsippy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -25,6 +25,7 @@ type DataCloudflareR2BucketSippySourceOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Container() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -118,6 +119,16 @@ func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) ComplexObje
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareR2BucketSippySourceOutputReference) Container() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"container",
 		&returns,
 	)
 	return returns

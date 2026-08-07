@@ -24,15 +24,15 @@ type PipelineConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specifies the public ID of the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/pipeline#account_id Pipeline#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/pipeline#account_id Pipeline#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Specifies the name of the Pipeline.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/pipeline#name Pipeline#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/pipeline#name Pipeline#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Specifies SQL for the Pipeline processing flow.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/pipeline#sql Pipeline#sql}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/pipeline#sql Pipeline#sql}
 	Sql *string `field:"required" json:"sql" yaml:"sql"`
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareAccountSubscription) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareAccountSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareAccountSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_DataCloudflareAccountSubscription) validateSetCountParameters
 }
 
 func (j *jsiiProxy_DataCloudflareAccountSubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareAccountSubscription) validateSetZoneIdParameters(val *string) error {
 	return nil
 }
 

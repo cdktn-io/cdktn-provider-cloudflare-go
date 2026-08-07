@@ -59,6 +59,10 @@ func (q *jsiiProxy_QueueConsumer) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (q *jsiiProxy_QueueConsumer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_QueueConsumer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (q *jsiiProxy_QueueConsumer) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (q *jsiiProxy_QueueConsumer) validatePutSettingsParameters(value *QueueConsumerSettings) error {
+	return nil
+}
+
+func (q *jsiiProxy_QueueConsumer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package datacloudflarecustomssl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomssl/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecustomssl/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
 type DataCloudflareCustomSsl interface {
 	cdktn.TerraformDataSource
 	BundleMethod() *string
@@ -101,6 +101,19 @@ type DataCloudflareCustomSsl interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareCustomSslFilter)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetCustomCertificateId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -476,7 +489,7 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) DataCloudflareCustomSsl {
 	_init_.Initialize()
 
@@ -494,7 +507,7 @@ func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl_Override(d DataCloudflareCustomSsl, scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) {
 	_init_.Initialize()
 
@@ -866,6 +879,17 @@ func (d *jsiiProxy_DataCloudflareCustomSsl) PutFilter(value *DataCloudflareCusto
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomSsl) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

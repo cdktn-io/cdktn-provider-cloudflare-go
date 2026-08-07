@@ -24,29 +24,29 @@ type GoogleTagGatewayConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Enables or disables Google Tag Gateway for this zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/google_tag_gateway#enabled GoogleTagGateway#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/google_tag_gateway#enabled GoogleTagGateway#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// Specifies the endpoint path for proxying Google Tag Manager requests.
 	//
 	// Use an absolute path starting with '/', with no nested paths and alphanumeric characters only (e.g. /metrics).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/google_tag_gateway#endpoint GoogleTagGateway#endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/google_tag_gateway#endpoint GoogleTagGateway#endpoint}
 	Endpoint *string `field:"required" json:"endpoint" yaml:"endpoint"`
 	// Hides the original client IP address from Google when enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/google_tag_gateway#hide_original_ip GoogleTagGateway#hide_original_ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/google_tag_gateway#hide_original_ip GoogleTagGateway#hide_original_ip}
 	HideOriginalIp interface{} `field:"required" json:"hideOriginalIp" yaml:"hideOriginalIp"`
 	// Specify the Google Tag Manager container or measurement ID (e.g. GTM-XXXXXXX or G-XXXXXXXXXX).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/google_tag_gateway#measurement_id GoogleTagGateway#measurement_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/google_tag_gateway#measurement_id GoogleTagGateway#measurement_id}
 	MeasurementId *string `field:"required" json:"measurementId" yaml:"measurementId"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/google_tag_gateway#zone_id GoogleTagGateway#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/google_tag_gateway#zone_id GoogleTagGateway#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Set up the associated Google Tag on the zone automatically when enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/google_tag_gateway#set_up_tag GoogleTagGateway#set_up_tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/google_tag_gateway#set_up_tag GoogleTagGateway#set_up_tag}
 	SetUpTag interface{} `field:"optional" json:"setUpTag" yaml:"setUpTag"`
 }
 

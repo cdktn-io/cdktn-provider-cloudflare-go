@@ -59,6 +59,10 @@ func (f *jsiiProxy_Filter) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (f *jsiiProxy_Filter) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_Filter) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (f *jsiiProxy_Filter) validateOverrideLogicalIdParameters(newLogicalId *str
 }
 
 func (f *jsiiProxy_Filter) validatePutBodyParameters(value interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_Filter) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

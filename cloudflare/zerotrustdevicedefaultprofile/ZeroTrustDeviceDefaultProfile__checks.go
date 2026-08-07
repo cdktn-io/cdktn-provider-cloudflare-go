@@ -122,6 +122,14 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateInterpolationForAttrib
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -269,6 +277,17 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutExcludeParameters(v
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutGlobalAccelerationParameters(value *ZeroTrustDeviceDefaultProfileGlobalAcceleration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutIncludeParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -317,6 +336,14 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutVirtualNetworksPara
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

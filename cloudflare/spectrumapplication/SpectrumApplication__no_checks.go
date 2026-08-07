@@ -59,6 +59,10 @@ func (s *jsiiProxy_SpectrumApplication) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SpectrumApplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpectrumApplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (s *jsiiProxy_SpectrumApplication) validatePutEdgeIpsParameters(value *Spec
 }
 
 func (s *jsiiProxy_SpectrumApplication) validatePutOriginDnsParameters(value *SpectrumApplicationOriginDns) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpectrumApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -75,6 +75,10 @@ func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) validateSetKParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) validateSetKidParameters(val *string) error {
 	return nil
 }

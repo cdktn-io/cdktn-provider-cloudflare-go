@@ -59,6 +59,10 @@ func (w *jsiiProxy_Worker) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (w *jsiiProxy_Worker) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Worker) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (w *jsiiProxy_Worker) validatePutSubdomainParameters(value *WorkerSubdomain
 }
 
 func (w *jsiiProxy_Worker) validatePutTailConsumersParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Worker) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

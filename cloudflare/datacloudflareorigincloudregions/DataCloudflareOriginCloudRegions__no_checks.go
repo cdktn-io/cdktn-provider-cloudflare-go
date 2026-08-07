@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareOriginCloudRegions) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOriginCloudRegions) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareOriginCloudRegions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

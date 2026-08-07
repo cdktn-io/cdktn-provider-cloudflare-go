@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateInterpolationForAttri
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateOverrideLogicalIdPara
 }
 
 func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validatePutConfigParameters(value *ZeroTrustDeviceManagedNetworksConfigA) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

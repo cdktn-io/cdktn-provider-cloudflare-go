@@ -59,6 +59,10 @@ func (a *jsiiProxy_AiGateway) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (a *jsiiProxy_AiGateway) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGateway) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (a *jsiiProxy_AiGateway) validatePutSpendLimitsParameters(value *AiGatewayS
 }
 
 func (a *jsiiProxy_AiGateway) validatePutStripeParameters(value *AiGatewayStripe) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGateway) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

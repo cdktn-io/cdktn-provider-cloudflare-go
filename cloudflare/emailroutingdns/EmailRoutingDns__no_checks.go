@@ -59,6 +59,10 @@ func (e *jsiiProxy_EmailRoutingDns) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EmailRoutingDns) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailRoutingDns) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (e *jsiiProxy_EmailRoutingDns) validateMoveToIdParameters(id *string) error
 }
 
 func (e *jsiiProxy_EmailRoutingDns) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailRoutingDns) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

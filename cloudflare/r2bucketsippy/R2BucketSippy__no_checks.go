@@ -59,6 +59,10 @@ func (r *jsiiProxy_R2BucketSippy) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_R2BucketSippy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_R2BucketSippy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (r *jsiiProxy_R2BucketSippy) validatePutDestinationParameters(value *R2Buck
 }
 
 func (r *jsiiProxy_R2BucketSippy) validatePutSourceParameters(value *R2BucketSippySource) error {
+	return nil
+}
+
+func (r *jsiiProxy_R2BucketSippy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

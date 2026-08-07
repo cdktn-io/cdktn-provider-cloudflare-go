@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceIpProfile) validatePutFilterPara
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceIpProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustDeviceIpProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

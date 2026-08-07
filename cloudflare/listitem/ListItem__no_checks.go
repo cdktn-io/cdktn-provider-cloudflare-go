@@ -59,6 +59,10 @@ func (l *jsiiProxy_ListItem) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (l *jsiiProxy_ListItem) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_ListItem) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (l *jsiiProxy_ListItem) validatePutHostnameParameters(value *ListItemHostna
 }
 
 func (l *jsiiProxy_ListItem) validatePutRedirectParameters(value *ListItemRedirect) error {
+	return nil
+}
+
+func (l *jsiiProxy_ListItem) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

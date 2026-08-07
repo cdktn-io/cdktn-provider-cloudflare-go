@@ -59,6 +59,10 @@ func (c *jsiiProxy_CloudforceOneRequestMessage) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_CloudforceOneRequestMessage) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudforceOneRequestMessage) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (c *jsiiProxy_CloudforceOneRequestMessage) validateMoveToIdParameters(id *s
 }
 
 func (c *jsiiProxy_CloudforceOneRequestMessage) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudforceOneRequestMessage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

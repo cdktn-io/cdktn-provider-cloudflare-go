@@ -59,6 +59,10 @@ func (l *jsiiProxy_LoadBalancerPool) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancerPool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancerPool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (l *jsiiProxy_LoadBalancerPool) validatePutOriginsParameters(value interfac
 }
 
 func (l *jsiiProxy_LoadBalancerPool) validatePutOriginSteeringParameters(value *LoadBalancerPoolOriginSteering) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancerPool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

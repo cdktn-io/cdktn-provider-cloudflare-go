@@ -7,9 +7,9 @@ package aigateway
 type AiGatewaySpendLimitsRulesMetadata struct {
 	// Available values: "partition", "filter".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_gateway#mode AiGateway#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/ai_gateway#mode AiGateway#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/ai_gateway#values AiGateway#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/ai_gateway#values AiGateway#values}.
 	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 

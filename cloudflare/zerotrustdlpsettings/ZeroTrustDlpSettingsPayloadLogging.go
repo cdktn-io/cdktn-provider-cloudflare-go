@@ -13,7 +13,7 @@ type ZeroTrustDlpSettingsPayloadLogging struct {
 	// - `default`: DLP uses its default masking behavior.
 	// Available values: "full", "partial", "clear", "default".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_dlp_settings#masking_level ZeroTrustDlpSettings#masking_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_settings#masking_level ZeroTrustDlpSettings#masking_level}
 	MaskingLevel *string `field:"optional" json:"maskingLevel" yaml:"maskingLevel"`
 	// Base64-encoded public key for encrypting payload logs.
 	//
@@ -21,7 +21,7 @@ type ZeroTrustDlpSettingsPayloadLogging struct {
 	// - Set to an empty string to disable payload logging.
 	// - Omit or set to null to leave unchanged (PATCH) or reset to disabled (PUT).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/resources/zero_trust_dlp_settings#public_key ZeroTrustDlpSettings#public_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_settings#public_key ZeroTrustDlpSettings#public_key}
 	PublicKey *string `field:"optional" json:"publicKey" yaml:"publicKey"`
 }
 

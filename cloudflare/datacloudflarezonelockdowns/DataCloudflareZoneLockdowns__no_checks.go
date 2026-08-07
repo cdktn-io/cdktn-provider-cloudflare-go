@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZoneLockdowns) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZoneLockdowns) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZoneLockdowns_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

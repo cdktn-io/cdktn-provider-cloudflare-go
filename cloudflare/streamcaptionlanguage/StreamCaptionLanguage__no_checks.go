@@ -59,6 +59,10 @@ func (s *jsiiProxy_StreamCaptionLanguage) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_StreamCaptionLanguage) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamCaptionLanguage) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_StreamCaptionLanguage) validateMoveToIdParameters(id *string)
 }
 
 func (s *jsiiProxy_StreamCaptionLanguage) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamCaptionLanguage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

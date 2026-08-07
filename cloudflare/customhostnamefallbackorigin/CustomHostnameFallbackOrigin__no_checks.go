@@ -59,6 +59,10 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveToIdParameters(id *
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

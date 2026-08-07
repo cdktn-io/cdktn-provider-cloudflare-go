@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessPolicy) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustAccessPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

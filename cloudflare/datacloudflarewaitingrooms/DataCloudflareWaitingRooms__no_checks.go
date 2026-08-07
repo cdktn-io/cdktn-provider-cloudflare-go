@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareWaitingRooms) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareWaitingRooms) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareWaitingRooms_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

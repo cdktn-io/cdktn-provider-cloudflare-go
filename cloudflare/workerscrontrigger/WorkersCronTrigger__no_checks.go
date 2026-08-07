@@ -59,6 +59,10 @@ func (w *jsiiProxy_WorkersCronTrigger) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (w *jsiiProxy_WorkersCronTrigger) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersCronTrigger) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (w *jsiiProxy_WorkersCronTrigger) validateOverrideLogicalIdParameters(newLo
 }
 
 func (w *jsiiProxy_WorkersCronTrigger) validatePutSchedulesParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkersCronTrigger) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

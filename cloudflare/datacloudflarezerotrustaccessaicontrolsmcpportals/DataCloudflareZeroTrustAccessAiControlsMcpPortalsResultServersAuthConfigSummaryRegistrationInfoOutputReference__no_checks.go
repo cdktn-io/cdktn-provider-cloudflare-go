@@ -1,0 +1,77 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package datacloudflarezerotrustaccessaicontrolsmcpportals
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateSetInternalValueParameters(val *DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfo) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryRegistrationInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareR2BucketEventNotification) validateOverrideLogi
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareR2BucketEventNotification) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareR2BucketEventNotification_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

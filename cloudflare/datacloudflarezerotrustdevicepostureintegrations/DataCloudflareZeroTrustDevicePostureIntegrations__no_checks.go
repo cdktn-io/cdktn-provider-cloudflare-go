@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureIntegrations) validateOve
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDevicePostureIntegrations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustDevicePostureIntegrations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

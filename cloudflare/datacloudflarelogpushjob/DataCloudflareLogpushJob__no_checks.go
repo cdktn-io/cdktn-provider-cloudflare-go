@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareLogpushJob) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareLogpushJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareLogpushJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

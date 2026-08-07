@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareConnectivityDirectoryServices) validateOverride
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareConnectivityDirectoryServices) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareConnectivityDirectoryServices_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

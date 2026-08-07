@@ -59,6 +59,10 @@ func (a *jsiiProxy_AccessRule) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AccessRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_AccessRule) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (a *jsiiProxy_AccessRule) validatePutConfigurationParameters(value *AccessRuleConfiguration) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

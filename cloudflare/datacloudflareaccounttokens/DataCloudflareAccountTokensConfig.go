@@ -24,15 +24,19 @@ type DataCloudflareAccountTokensConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Direction to order results. Available values: "asc", "desc".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
+	// When true, includes recently-expired tokens in the response.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#include_expired DataCloudflareAccountTokens#include_expired}
+	IncludeExpired interface{} `field:"optional" json:"includeExpired" yaml:"includeExpired"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 }
 

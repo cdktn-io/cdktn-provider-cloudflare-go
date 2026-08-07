@@ -59,6 +59,10 @@ func (d *jsiiProxy_DnsFirewall) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (d *jsiiProxy_DnsFirewall) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsFirewall) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (d *jsiiProxy_DnsFirewall) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (d *jsiiProxy_DnsFirewall) validatePutAttackMitigationParameters(value *DnsFirewallAttackMitigation) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsFirewall) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

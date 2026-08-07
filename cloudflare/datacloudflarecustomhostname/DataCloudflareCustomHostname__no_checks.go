@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareCustomHostname) validatePutFilterParameters(val
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCustomHostname) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareCustomHostname_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (a *jsiiProxy_AiGatewayDynamicRouting) validateInterpolationForAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_AiGatewayDynamicRouting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiGatewayDynamicRouting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (a *jsiiProxy_AiGatewayDynamicRouting) validateOverrideLogicalIdParameters(
 }
 
 func (a *jsiiProxy_AiGatewayDynamicRouting) validatePutElementsParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiGatewayDynamicRouting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

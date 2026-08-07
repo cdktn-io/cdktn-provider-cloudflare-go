@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareStreamCaptionLanguage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareStreamCaptionLanguage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

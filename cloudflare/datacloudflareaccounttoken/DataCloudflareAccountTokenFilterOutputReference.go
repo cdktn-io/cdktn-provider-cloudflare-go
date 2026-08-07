@@ -5,9 +5,9 @@ package datacloudflareaccounttoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaccounttoken/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareaccounttoken/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -33,6 +33,9 @@ type DataCloudflareAccountTokenFilterOutputReference interface {
 	DirectionInput() *string
 	// Experimental.
 	Fqn() *string
+	IncludeExpired() interface{}
+	SetIncludeExpired(val interface{})
+	IncludeExpiredInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -68,6 +71,7 @@ type DataCloudflareAccountTokenFilterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDirection()
+	ResetIncludeExpired()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -138,6 +142,26 @@ func (j *jsiiProxy_DataCloudflareAccountTokenFilterOutputReference) Fqn() *strin
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountTokenFilterOutputReference) IncludeExpired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeExpired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountTokenFilterOutputReference) IncludeExpiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeExpiredInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_DataCloudflareAccountTokenFilterOutputReference)SetDirection(
 	_jsii_.Set(
 		j,
 		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAccountTokenFilterOutputReference)SetIncludeExpired(val interface{}) {
+	if err := j.validateSetIncludeExpiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeExpired",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (d *jsiiProxy_DataCloudflareAccountTokenFilterOutputReference) ResetDirecti
 	_jsii_.InvokeVoid(
 		d,
 		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAccountTokenFilterOutputReference) ResetIncludeExpired() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeExpired",
 		nil, // no parameters
 	)
 }

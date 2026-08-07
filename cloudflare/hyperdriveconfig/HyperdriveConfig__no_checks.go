@@ -59,6 +59,10 @@ func (h *jsiiProxy_HyperdriveConfig) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (h *jsiiProxy_HyperdriveConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HyperdriveConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (h *jsiiProxy_HyperdriveConfig) validatePutMtlsParameters(value *Hyperdrive
 }
 
 func (h *jsiiProxy_HyperdriveConfig) validatePutOriginParameters(value *HyperdriveConfigOrigin) error {
+	return nil
+}
+
+func (h *jsiiProxy_HyperdriveConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

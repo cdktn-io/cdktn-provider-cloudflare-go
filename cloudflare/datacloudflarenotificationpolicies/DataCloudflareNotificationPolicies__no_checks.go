@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareNotificationPolicies) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareNotificationPolicies) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareNotificationPolicies_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

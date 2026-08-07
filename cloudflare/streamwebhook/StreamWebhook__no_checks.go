@@ -59,6 +59,10 @@ func (s *jsiiProxy_StreamWebhook) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_StreamWebhook) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamWebhook) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_StreamWebhook) validateMoveToIdParameters(id *string) error {
 }
 
 func (s *jsiiProxy_StreamWebhook) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamWebhook) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

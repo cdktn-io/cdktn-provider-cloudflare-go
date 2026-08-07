@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooks) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareNotificationPolicyWebhooks) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareNotificationPolicyWebhooks_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

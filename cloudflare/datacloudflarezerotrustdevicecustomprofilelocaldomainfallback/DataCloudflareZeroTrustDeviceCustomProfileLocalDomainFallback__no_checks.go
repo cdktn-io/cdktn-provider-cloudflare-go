@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustDeviceCustomProfileLocalDomainFallback_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustOrganization) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustOrganization) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustOrganization) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaConfigParameters(value *
 }
 
 func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaSshPivKeyRequirementsParameters(value *ZeroTrustOrganizationMfaSshPivKeyRequirements) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

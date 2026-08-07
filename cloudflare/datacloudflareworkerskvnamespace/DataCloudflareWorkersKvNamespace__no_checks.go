@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) validatePutFilterParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareWorkersKvNamespace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareWorkersKvNamespace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

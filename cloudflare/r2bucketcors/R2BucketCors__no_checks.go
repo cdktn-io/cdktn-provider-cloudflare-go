@@ -59,6 +59,10 @@ func (r *jsiiProxy_R2BucketCors) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (r *jsiiProxy_R2BucketCors) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_R2BucketCors) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (r *jsiiProxy_R2BucketCors) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (r *jsiiProxy_R2BucketCors) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_R2BucketCors) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

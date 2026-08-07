@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateInterpolationForA
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateOverrideLogicalId
 }
 
 func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validatePutServersParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

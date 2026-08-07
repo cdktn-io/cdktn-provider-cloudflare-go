@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareLeakedCredentialCheck) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareLeakedCredentialCheck) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareLeakedCredentialCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

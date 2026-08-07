@@ -59,6 +59,10 @@ func (a *jsiiProxy_ApiShieldDiscoveryOperation) validateInterpolationForAttribut
 	return nil
 }
 
+func (a *jsiiProxy_ApiShieldDiscoveryOperation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiShieldDiscoveryOperation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_ApiShieldDiscoveryOperation) validateMoveToIdParameters(id *s
 }
 
 func (a *jsiiProxy_ApiShieldDiscoveryOperation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiShieldDiscoveryOperation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

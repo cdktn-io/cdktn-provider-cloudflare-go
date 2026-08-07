@@ -5,9 +5,9 @@ package datacloudflarehyperdriveconfigs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarehyperdriveconfigs/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarehyperdriveconfigs/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -40,6 +40,7 @@ type DataCloudflareHyperdriveConfigsResultOutputReference interface {
 	Name() *string
 	Origin() DataCloudflareHyperdriveConfigsResultOriginOutputReference
 	OriginConnectionLimit() *float64
+	RestartedOn() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -212,6 +213,16 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOutputReference) OriginC
 	_jsii_.Get(
 		j,
 		"originConnectionLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOutputReference) RestartedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restartedOn",
 		&returns,
 	)
 	return returns

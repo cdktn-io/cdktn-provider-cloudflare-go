@@ -122,6 +122,14 @@ func (z *jsiiProxy_ZeroTrustDeviceSubnet) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceSubnet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceSubnet) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (z *jsiiProxy_ZeroTrustDeviceSubnet) validateMoveToIdParameters(id *string)
 func (z *jsiiProxy_ZeroTrustDeviceSubnet) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceSubnet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

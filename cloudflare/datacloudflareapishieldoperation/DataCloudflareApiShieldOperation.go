@@ -5,14 +5,14 @@ package datacloudflareapishieldoperation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapishieldoperation/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareapishieldoperation/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
 type DataCloudflareApiShieldOperation interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -100,6 +100,19 @@ type DataCloudflareApiShieldOperation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareApiShieldOperationFilter)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetFeature()
 	ResetFilter()
 	ResetOperationId()
@@ -447,7 +460,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation} Data Source.
 func NewDataCloudflareApiShieldOperation(scope constructs.Construct, id *string, config *DataCloudflareApiShieldOperationConfig) DataCloudflareApiShieldOperation {
 	_init_.Initialize()
 
@@ -465,7 +478,7 @@ func NewDataCloudflareApiShieldOperation(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation} Data Source.
 func NewDataCloudflareApiShieldOperation_Override(d DataCloudflareApiShieldOperation, scope constructs.Construct, id *string, config *DataCloudflareApiShieldOperationConfig) {
 	_init_.Initialize()
 
@@ -859,6 +872,17 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperation) PutFilter(value *DataCloudf
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareApiShieldOperation) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

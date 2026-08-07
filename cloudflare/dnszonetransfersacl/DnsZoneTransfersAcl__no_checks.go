@@ -59,6 +59,10 @@ func (d *jsiiProxy_DnsZoneTransfersAcl) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (d *jsiiProxy_DnsZoneTransfersAcl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsZoneTransfersAcl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (d *jsiiProxy_DnsZoneTransfersAcl) validateMoveToIdParameters(id *string) e
 }
 
 func (d *jsiiProxy_DnsZoneTransfersAcl) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsZoneTransfersAcl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

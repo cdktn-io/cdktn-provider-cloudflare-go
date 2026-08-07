@@ -24,13 +24,13 @@ type DataCloudflareSecretsStoreConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_store#account_id DataCloudflareSecretsStore#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_store#account_id DataCloudflareSecretsStore#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}.
 	Filter *DataCloudflareSecretsStoreFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Store Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/secrets_store#store_id DataCloudflareSecretsStore#store_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_store#store_id DataCloudflareSecretsStore#store_id}
 	StoreId *string `field:"optional" json:"storeId" yaml:"storeId"`
 }
 

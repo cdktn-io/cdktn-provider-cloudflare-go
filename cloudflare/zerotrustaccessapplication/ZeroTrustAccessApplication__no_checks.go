@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validateInterpolationForAttribute
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutScimConfigParameters(v
 }
 
 func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutTargetCriteriaParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

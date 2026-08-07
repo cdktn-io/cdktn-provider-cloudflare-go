@@ -59,6 +59,10 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) validateInterpolationForAttribut
 	return nil
 }
 
+func (e *jsiiProxy_EmailSecurityTrustedDomains) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailSecurityTrustedDomains) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (e *jsiiProxy_EmailSecurityTrustedDomains) validateMoveToIdParameters(id *s
 }
 
 func (e *jsiiProxy_EmailSecurityTrustedDomains) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailSecurityTrustedDomains) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnector) validatePutFilterParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareMagicTransitConnector) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareMagicTransitConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

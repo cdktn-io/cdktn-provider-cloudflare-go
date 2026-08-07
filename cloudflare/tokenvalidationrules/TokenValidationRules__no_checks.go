@@ -59,6 +59,10 @@ func (t *jsiiProxy_TokenValidationRules) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TokenValidationRules) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TokenValidationRules) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (t *jsiiProxy_TokenValidationRules) validatePutPositionParameters(value *To
 }
 
 func (t *jsiiProxy_TokenValidationRules) validatePutSelectorParameters(value *TokenValidationRulesSelector) error {
+	return nil
+}
+
+func (t *jsiiProxy_TokenValidationRules) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

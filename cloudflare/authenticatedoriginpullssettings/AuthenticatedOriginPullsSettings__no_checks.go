@@ -59,6 +59,10 @@ func (a *jsiiProxy_AuthenticatedOriginPullsSettings) validateInterpolationForAtt
 	return nil
 }
 
+func (a *jsiiProxy_AuthenticatedOriginPullsSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthenticatedOriginPullsSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_AuthenticatedOriginPullsSettings) validateMoveToIdParameters(
 }
 
 func (a *jsiiProxy_AuthenticatedOriginPullsSettings) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuthenticatedOriginPullsSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -109,6 +109,22 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetAccessKeyIdPar
 	return nil
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetAccountKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetAccountNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetBucketParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -206,6 +222,14 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetComplexObjectI
 	return nil
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetContainerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktn.IResolvable:
@@ -239,6 +263,14 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetPrivateKeyPara
 }
 
 func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetSasTokenParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

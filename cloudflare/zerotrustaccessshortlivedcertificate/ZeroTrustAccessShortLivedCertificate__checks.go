@@ -122,6 +122,14 @@ func (z *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateInterpolationFo
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (z *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateMoveToIdParamet
 func (z *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

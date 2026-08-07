@@ -122,6 +122,14 @@ func (f *jsiiProxy_FlagshipApp) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (f *jsiiProxy_FlagshipApp) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FlagshipApp) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (f *jsiiProxy_FlagshipApp) validateMoveToIdParameters(id *string) error {
 func (f *jsiiProxy_FlagshipApp) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (f *jsiiProxy_FlagshipApp) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

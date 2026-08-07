@@ -59,6 +59,10 @@ func (m *jsiiProxy_MagicTransitSiteWan) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MagicTransitSiteWan) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicTransitSiteWan) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MagicTransitSiteWan) validateOverrideLogicalIdParameters(newL
 }
 
 func (m *jsiiProxy_MagicTransitSiteWan) validatePutStaticAddressingParameters(value *MagicTransitSiteWanStaticAddressing) error {
+	return nil
+}
+
+func (m *jsiiProxy_MagicTransitSiteWan) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

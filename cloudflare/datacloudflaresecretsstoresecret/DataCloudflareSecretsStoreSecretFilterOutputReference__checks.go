@@ -206,21 +206,9 @@ func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) validateSetScopesParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) validateSetScopesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case cdktn.IResolvable:
-		// ok
-	case *[]*[]*string:
-		// ok
-	case []*[]*string:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*[]*string; received %#v (a %T)", val, val)
-		}
 	}
 
 	return nil

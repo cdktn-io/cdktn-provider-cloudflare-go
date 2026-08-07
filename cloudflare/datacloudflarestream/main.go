@@ -57,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readyToStream", GoGetter: "ReadyToStream"},
 			_jsii_.MemberProperty{JsiiProperty: "readyToStreamAt", GoGetter: "ReadyToStreamAt"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requireSignedUrls", GoGetter: "RequireSignedUrls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "scheduledDeletion", GoGetter: "ScheduledDeletion"},

@@ -55,6 +55,14 @@ func (d *jsiiProxy_DataCloudflareCustomCsr) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCustomCsr) validatePutFilterParameters(value *DataCloudflareCustomCsrFilter) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCloudflareCustomCsr) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareCustomCsr_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

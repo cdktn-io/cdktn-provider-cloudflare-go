@@ -7,4 +7,5 @@ import (
 )
 type Type__cdktnTerraformDataSource = cdktn.TerraformDataSource
 type Type__cdktnComplexObject = cdktn.ComplexObject
+type Type__cdktnComplexMap = cdktn.ComplexMap
 type Type__cdktnComplexList = cdktn.ComplexList

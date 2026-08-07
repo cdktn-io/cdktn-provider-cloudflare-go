@@ -122,6 +122,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRule) validateInterpolationForAttribute
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDevicePostureRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDevicePostureRule) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -244,6 +252,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRule) validatePutMatchParameters(value 
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ZeroTrustDevicePostureRuleMatch; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

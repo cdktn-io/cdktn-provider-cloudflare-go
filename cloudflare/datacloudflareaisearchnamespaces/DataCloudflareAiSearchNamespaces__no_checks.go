@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareAiSearchNamespaces) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareAiSearchNamespaces) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareAiSearchNamespaces_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

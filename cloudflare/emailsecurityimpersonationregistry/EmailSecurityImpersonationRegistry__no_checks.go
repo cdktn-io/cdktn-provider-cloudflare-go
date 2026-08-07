@@ -59,6 +59,10 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) validateInterpolationForA
 	return nil
 }
 
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailSecurityImpersonationRegistry) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (e *jsiiProxy_EmailSecurityImpersonationRegistry) validateMoveToIdParameter
 }
 
 func (e *jsiiProxy_EmailSecurityImpersonationRegistry) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailSecurityImpersonationRegistry) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

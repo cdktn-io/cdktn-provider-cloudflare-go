@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readableId", GoGetter: "ReadableId"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "request", GoGetter: "Request"},
 			_jsii_.MemberProperty{JsiiProperty: "requestId", GoGetter: "RequestId"},
 			_jsii_.MemberProperty{JsiiProperty: "requestIdInput", GoGetter: "RequestIdInput"},

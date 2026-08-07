@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareCertificateAuthoritiesHostnameAssociations) val
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCertificateAuthoritiesHostnameAssociations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareCertificateAuthoritiesHostnameAssociations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

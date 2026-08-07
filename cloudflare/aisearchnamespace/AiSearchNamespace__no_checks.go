@@ -59,6 +59,10 @@ func (a *jsiiProxy_AiSearchNamespace) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AiSearchNamespace) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiSearchNamespace) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (a *jsiiProxy_AiSearchNamespace) validateMoveToIdParameters(id *string) err
 }
 
 func (a *jsiiProxy_AiSearchNamespace) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AiSearchNamespace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

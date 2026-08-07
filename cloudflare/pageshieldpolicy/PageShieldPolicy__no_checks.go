@@ -59,6 +59,10 @@ func (p *jsiiProxy_PageShieldPolicy) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (p *jsiiProxy_PageShieldPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PageShieldPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (p *jsiiProxy_PageShieldPolicy) validateMoveToIdParameters(id *string) erro
 }
 
 func (p *jsiiProxy_PageShieldPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PageShieldPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

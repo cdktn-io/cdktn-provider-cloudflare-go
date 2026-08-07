@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareDnsZoneTransfersTsig) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareDnsZoneTransfersTsig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareDnsZoneTransfersTsig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

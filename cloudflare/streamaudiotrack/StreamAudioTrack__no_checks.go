@@ -59,6 +59,10 @@ func (s *jsiiProxy_StreamAudioTrack) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_StreamAudioTrack) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAudioTrack) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_StreamAudioTrack) validateMoveToIdParameters(id *string) erro
 }
 
 func (s *jsiiProxy_StreamAudioTrack) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAudioTrack) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

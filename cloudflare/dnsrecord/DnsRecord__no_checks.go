@@ -59,6 +59,10 @@ func (d *jsiiProxy_DnsRecord) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DnsRecord) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsRecord) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (d *jsiiProxy_DnsRecord) validatePutDataParameters(value *DnsRecordData) er
 }
 
 func (d *jsiiProxy_DnsRecord) validatePutSettingsParameters(value *DnsRecordSettings) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsRecord) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

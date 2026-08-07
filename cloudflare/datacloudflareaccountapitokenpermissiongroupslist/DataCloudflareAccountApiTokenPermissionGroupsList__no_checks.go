@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsList) validateOv
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsList) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareAccountApiTokenPermissionGroupsList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredRoute) validateInterpolationForAttr
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredRoute) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustTunnelCloudflaredRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredRoute) validateMoveToIdParameters(i
 }
 
 func (z *jsiiProxy_ZeroTrustTunnelCloudflaredRoute) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

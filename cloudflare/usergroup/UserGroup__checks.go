@@ -122,6 +122,14 @@ func (u *jsiiProxy_UserGroup) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (u *jsiiProxy_UserGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (u *jsiiProxy_UserGroup) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -233,6 +241,14 @@ func (u *jsiiProxy_UserGroup) validatePutPoliciesParameters(value interface{}) e
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*UserGroupPolicies; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (u *jsiiProxy_UserGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

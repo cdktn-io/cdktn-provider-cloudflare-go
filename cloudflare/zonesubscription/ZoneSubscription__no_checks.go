@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZoneSubscription) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (z *jsiiProxy_ZoneSubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneSubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (z *jsiiProxy_ZoneSubscription) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (z *jsiiProxy_ZoneSubscription) validatePutRatePlanParameters(value *ZoneSubscriptionRatePlan) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

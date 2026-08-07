@@ -59,6 +59,10 @@ func (u *jsiiProxy_UniversalSslSetting) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (u *jsiiProxy_UniversalSslSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UniversalSslSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (u *jsiiProxy_UniversalSslSetting) validateMoveToIdParameters(id *string) e
 }
 
 func (u *jsiiProxy_UniversalSslSetting) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UniversalSslSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

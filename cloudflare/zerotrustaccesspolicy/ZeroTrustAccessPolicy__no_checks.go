@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutMfaConfigParameters(value *
 }
 
 func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutRequireParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

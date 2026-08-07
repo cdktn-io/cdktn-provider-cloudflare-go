@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareContentScanningExpressions) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareContentScanningExpressions) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareContentScanningExpressions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

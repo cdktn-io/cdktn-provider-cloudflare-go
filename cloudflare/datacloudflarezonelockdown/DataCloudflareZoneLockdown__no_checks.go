@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareZoneLockdown) validatePutFilterParameters(value
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZoneLockdown) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZoneLockdown_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

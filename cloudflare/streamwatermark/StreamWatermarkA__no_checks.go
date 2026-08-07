@@ -59,6 +59,10 @@ func (s *jsiiProxy_StreamWatermarkA) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_StreamWatermarkA) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamWatermarkA) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_StreamWatermarkA) validateMoveToIdParameters(id *string) erro
 }
 
 func (s *jsiiProxy_StreamWatermarkA) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamWatermarkA) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

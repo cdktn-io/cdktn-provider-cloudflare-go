@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareWorkersCronTrigger) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareWorkersCronTrigger) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareWorkersCronTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

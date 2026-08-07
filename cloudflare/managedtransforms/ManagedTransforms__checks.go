@@ -122,6 +122,14 @@ func (m *jsiiProxy_ManagedTransforms) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (m *jsiiProxy_ManagedTransforms) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_ManagedTransforms) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -264,6 +272,14 @@ func (m *jsiiProxy_ManagedTransforms) validatePutManagedResponseHeadersParameter
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ManagedTransformsManagedResponseHeaders; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_ManagedTransforms) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

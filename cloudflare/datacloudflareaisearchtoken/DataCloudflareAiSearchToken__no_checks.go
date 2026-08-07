@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareAiSearchToken) validatePutFilterParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareAiSearchToken) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareAiSearchToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

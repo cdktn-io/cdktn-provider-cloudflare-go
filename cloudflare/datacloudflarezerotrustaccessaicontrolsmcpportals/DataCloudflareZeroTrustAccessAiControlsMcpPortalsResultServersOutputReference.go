@@ -5,14 +5,15 @@ package datacloudflarezerotrustaccessaicontrolsmcpportals
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustaccessaicontrolsmcpportals/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustaccessaicontrolsmcpportals/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersOutputReference interface {
 	cdktn.ComplexObject
+	AuthConfigSummary() DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryOutputReference
 	AuthType() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -100,6 +101,16 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersOutputReferen
 // The jsii proxy struct for DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersOutputReference
 type jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersOutputReference) AuthConfigSummary() DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryOutputReference {
+	var returns DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryOutputReference
+	_jsii_.Get(
+		j,
+		"authConfigSummary",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersOutputReference) AuthType() *string {

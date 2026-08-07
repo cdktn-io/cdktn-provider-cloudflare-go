@@ -5,9 +5,9 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustgatewaypolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaypolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -51,6 +51,9 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeleteHeaders() *[]*string
+	SetDeleteHeaders(val *[]*string)
+	DeleteHeadersInput() *[]*string
 	DnsResolvers() ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	DnsResolversInput() interface{}
 	Egress() ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference
@@ -94,6 +97,9 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResolveDnsThroughCloudflare() interface{}
 	SetResolveDnsThroughCloudflare(val interface{})
 	ResolveDnsThroughCloudflareInput() interface{}
+	SetHeaders() interface{}
+	SetSetHeaders(val interface{})
+	SetHeadersInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -151,6 +157,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetBlockReason()
 	ResetBypassParentRule()
 	ResetCheckSession()
+	ResetDeleteHeaders()
 	ResetDnsResolvers()
 	ResetEgress()
 	ResetForensicCopy()
@@ -167,6 +174,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetRedirect()
 	ResetResolveDnsInternally()
 	ResetResolveDnsThroughCloudflare()
+	ResetSetHeaders()
 	ResetUntrustedCert()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -388,6 +396,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) DeleteHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deleteHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) DeleteHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deleteHeadersInput",
 		&returns,
 	)
 	return returns
@@ -733,6 +761,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDns
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetHeaders() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"setHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) SetHeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"setHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -878,6 +926,17 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetComplexO
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetDeleteHeaders(val *[]*string) {
+	if err := j.validateSetDeleteHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetIgnoreCnameCategoryMatches(val interface{}) {
 	if err := j.validateSetIgnoreCnameCategoryMatchesParameters(val); err != nil {
 		panic(err)
@@ -962,6 +1021,17 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetResolveD
 	_jsii_.Set(
 		j,
 		"resolveDnsThroughCloudflare",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetSetHeaders(val interface{}) {
+	if err := j.validateSetSetHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"setHeaders",
 		val,
 	)
 }
@@ -1400,6 +1470,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetCheck
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetDeleteHeaders() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDeleteHeaders",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetDnsResolvers() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1524,6 +1602,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetResol
 	_jsii_.InvokeVoid(
 		z,
 		"resetResolveDnsThroughCloudflare",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetSetHeaders() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSetHeaders",
 		nil, // no parameters
 	)
 }

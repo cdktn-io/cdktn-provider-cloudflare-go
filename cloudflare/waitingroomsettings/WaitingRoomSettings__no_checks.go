@@ -59,6 +59,10 @@ func (w *jsiiProxy_WaitingRoomSettings) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (w *jsiiProxy_WaitingRoomSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WaitingRoomSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (w *jsiiProxy_WaitingRoomSettings) validateMoveToIdParameters(id *string) e
 }
 
 func (w *jsiiProxy_WaitingRoomSettings) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WaitingRoomSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

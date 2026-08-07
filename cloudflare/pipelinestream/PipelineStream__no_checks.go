@@ -59,6 +59,10 @@ func (p *jsiiProxy_PipelineStream) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (p *jsiiProxy_PipelineStream) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipelineStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (p *jsiiProxy_PipelineStream) validatePutSchemaParameters(value *PipelineSt
 }
 
 func (p *jsiiProxy_PipelineStream) validatePutWorkerBindingParameters(value *PipelineStreamWorkerBinding) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipelineStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareZone) validatePutFilterParameters(value *DataCl
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZone) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

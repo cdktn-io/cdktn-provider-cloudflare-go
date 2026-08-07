@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareOrganizationProfileA) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizationProfileA) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareOrganizationProfileA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

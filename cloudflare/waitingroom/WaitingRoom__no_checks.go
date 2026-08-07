@@ -59,6 +59,10 @@ func (w *jsiiProxy_WaitingRoom) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (w *jsiiProxy_WaitingRoom) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WaitingRoom) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (w *jsiiProxy_WaitingRoom) validatePutAdditionalRoutesParameters(value inte
 }
 
 func (w *jsiiProxy_WaitingRoom) validatePutCookieAttributesParameters(value *WaitingRoomCookieAttributes) error {
+	return nil
+}
+
+func (w *jsiiProxy_WaitingRoom) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

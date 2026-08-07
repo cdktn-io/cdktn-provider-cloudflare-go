@@ -5,14 +5,14 @@ package datacloudflarecustomorigintruststore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststore/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecustomorigintruststore/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
 type DataCloudflareCustomOriginTrustStore interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -95,6 +95,19 @@ type DataCloudflareCustomOriginTrustStore interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareCustomOriginTrustStoreFilter)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetCustomOriginTrustStoreId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -410,7 +423,7 @@ func (j *jsiiProxy_DataCloudflareCustomOriginTrustStore) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Data Source.
 func NewDataCloudflareCustomOriginTrustStore(scope constructs.Construct, id *string, config *DataCloudflareCustomOriginTrustStoreConfig) DataCloudflareCustomOriginTrustStore {
 	_init_.Initialize()
 
@@ -428,7 +441,7 @@ func NewDataCloudflareCustomOriginTrustStore(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Data Source.
 func NewDataCloudflareCustomOriginTrustStore_Override(d DataCloudflareCustomOriginTrustStore, scope constructs.Construct, id *string, config *DataCloudflareCustomOriginTrustStoreConfig) {
 	_init_.Initialize()
 
@@ -800,6 +813,17 @@ func (d *jsiiProxy_DataCloudflareCustomOriginTrustStore) PutFilter(value *DataCl
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomOriginTrustStore) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

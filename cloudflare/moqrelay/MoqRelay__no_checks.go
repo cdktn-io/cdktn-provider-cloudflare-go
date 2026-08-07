@@ -59,6 +59,10 @@ func (m *jsiiProxy_MoqRelay) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (m *jsiiProxy_MoqRelay) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MoqRelay) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MoqRelay) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (m *jsiiProxy_MoqRelay) validatePutConfigParameters(value *MoqRelayConfigA) error {
+	return nil
+}
+
+func (m *jsiiProxy_MoqRelay) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

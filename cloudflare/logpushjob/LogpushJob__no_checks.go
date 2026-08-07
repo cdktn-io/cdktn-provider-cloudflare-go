@@ -59,6 +59,10 @@ func (l *jsiiProxy_LogpushJob) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LogpushJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogpushJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (l *jsiiProxy_LogpushJob) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (l *jsiiProxy_LogpushJob) validatePutOutputOptionsParameters(value *LogpushJobOutputOptions) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogpushJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

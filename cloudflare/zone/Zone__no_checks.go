@@ -59,6 +59,10 @@ func (z *jsiiProxy_Zone) validateInterpolationForAttributeParameters(terraformAt
 	return nil
 }
 
+func (z *jsiiProxy_Zone) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_Zone) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (z *jsiiProxy_Zone) validateOverrideLogicalIdParameters(newLogicalId *strin
 }
 
 func (z *jsiiProxy_Zone) validatePutAccountParameters(value *ZoneAccount) error {
+	return nil
+}
+
+func (z *jsiiProxy_Zone) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

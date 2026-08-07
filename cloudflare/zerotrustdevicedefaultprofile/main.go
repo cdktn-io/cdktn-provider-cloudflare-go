@@ -57,6 +57,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "globalAcceleration", GoGetter: "GlobalAcceleration"},
+			_jsii_.MemberProperty{JsiiProperty: "globalAccelerationInput", GoGetter: "GlobalAccelerationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
@@ -68,6 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lanAllowSubnetSize", GoGetter: "LanAllowSubnetSize"},
 			_jsii_.MemberProperty{JsiiProperty: "lanAllowSubnetSizeInput", GoGetter: "LanAllowSubnetSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -78,12 +81,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putDnsSearchSuffixes", GoMethod: "PutDnsSearchSuffixes"},
 			_jsii_.MemberMethod{JsiiMethod: "putExclude", GoMethod: "PutExclude"},
+			_jsii_.MemberMethod{JsiiMethod: "putGlobalAcceleration", GoMethod: "PutGlobalAcceleration"},
 			_jsii_.MemberMethod{JsiiMethod: "putInclude", GoMethod: "PutInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceModeV2", GoMethod: "PutServiceModeV2"},
 			_jsii_.MemberMethod{JsiiMethod: "putVirtualNetworks", GoMethod: "PutVirtualNetworks"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "registerInterfaceIpWithDns", GoGetter: "RegisterInterfaceIpWithDns"},
 			_jsii_.MemberProperty{JsiiProperty: "registerInterfaceIpWithDnsInput", GoGetter: "RegisterInterfaceIpWithDnsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedToLeave", GoMethod: "ResetAllowedToLeave"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowModeSwitch", GoMethod: "ResetAllowModeSwitch"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowUpdates", GoMethod: "ResetAllowUpdates"},
@@ -93,6 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsSearchSuffixes", GoMethod: "ResetDnsSearchSuffixes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExclude", GoMethod: "ResetExclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeOfficeIps", GoMethod: "ResetExcludeOfficeIps"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGlobalAcceleration", GoMethod: "ResetGlobalAcceleration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInclude", GoMethod: "ResetInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLanAllowMinutes", GoMethod: "ResetLanAllowMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLanAllowSubnetSize", GoMethod: "ResetLanAllowSubnetSize"},
@@ -323,6 +329,50 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustDeviceDefaultProfileFallbackDomainsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfileGlobalAcceleration",
+		reflect.TypeOf((*ZeroTrustDeviceDefaultProfileGlobalAcceleration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfile.ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference",
+		reflect.TypeOf((*ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "apiEndpoints", GoGetter: "ApiEndpoints"},
+			_jsii_.MemberProperty{JsiiProperty: "apiEndpointsInput", GoGetter: "ApiEndpointsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "masqueEndpoints", GoGetter: "MasqueEndpoints"},
+			_jsii_.MemberProperty{JsiiProperty: "masqueEndpointsInput", GoGetter: "MasqueEndpointsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wireguardEndpoints", GoGetter: "WireguardEndpoints"},
+			_jsii_.MemberProperty{JsiiProperty: "wireguardEndpointsInput", GoGetter: "WireguardEndpointsInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

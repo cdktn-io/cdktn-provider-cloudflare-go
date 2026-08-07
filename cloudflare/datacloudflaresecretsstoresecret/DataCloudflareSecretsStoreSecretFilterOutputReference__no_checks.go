@@ -71,7 +71,7 @@ func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) validateSetScopesParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSecretsStoreSecretFilterOutputReference) validateSetScopesParameters(val *[]*string) error {
 	return nil
 }
 

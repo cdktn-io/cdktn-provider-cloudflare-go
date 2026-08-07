@@ -122,6 +122,14 @@ func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateInterpolationForAttrib
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -233,6 +241,14 @@ func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) validatePutEntriesParameters(v
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ZeroTrustDlpPredefinedProfileEntries; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

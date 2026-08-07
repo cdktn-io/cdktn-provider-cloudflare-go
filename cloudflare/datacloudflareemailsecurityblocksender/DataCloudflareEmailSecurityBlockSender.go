@@ -5,14 +5,14 @@ package datacloudflareemailsecurityblocksender
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareemailsecurityblocksender/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareemailsecurityblocksender/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender}.
 type DataCloudflareEmailSecurityBlockSender interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -95,6 +95,19 @@ type DataCloudflareEmailSecurityBlockSender interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareEmailSecurityBlockSenderFilter)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -410,7 +423,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
 func NewDataCloudflareEmailSecurityBlockSender(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityBlockSenderConfig) DataCloudflareEmailSecurityBlockSender {
 	_init_.Initialize()
 
@@ -428,7 +441,7 @@ func NewDataCloudflareEmailSecurityBlockSender(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
 func NewDataCloudflareEmailSecurityBlockSender_Override(d DataCloudflareEmailSecurityBlockSender, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityBlockSenderConfig) {
 	_init_.Initialize()
 
@@ -800,6 +813,17 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSender) PutFilter(value *Data
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityBlockSender) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

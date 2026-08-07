@@ -59,6 +59,10 @@ func (d *jsiiProxy_DlsPrefixBinding) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DlsPrefixBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlsPrefixBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (d *jsiiProxy_DlsPrefixBinding) validateMoveToIdParameters(id *string) erro
 }
 
 func (d *jsiiProxy_DlsPrefixBinding) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DlsPrefixBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -214,6 +214,14 @@ func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) validateSetKParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) validateSetKidParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

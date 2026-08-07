@@ -83,6 +83,10 @@ func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) validateSetDefaultDomainEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

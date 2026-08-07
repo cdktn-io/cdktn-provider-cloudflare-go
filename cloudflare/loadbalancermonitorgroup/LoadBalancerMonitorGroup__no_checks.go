@@ -59,6 +59,10 @@ func (l *jsiiProxy_LoadBalancerMonitorGroup) validateInterpolationForAttributePa
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancerMonitorGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancerMonitorGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (l *jsiiProxy_LoadBalancerMonitorGroup) validateOverrideLogicalIdParameters
 }
 
 func (l *jsiiProxy_LoadBalancerMonitorGroup) validatePutMembersParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancerMonitorGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

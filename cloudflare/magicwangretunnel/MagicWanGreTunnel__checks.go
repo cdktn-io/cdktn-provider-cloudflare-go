@@ -122,6 +122,14 @@ func (m *jsiiProxy_MagicWanGreTunnel) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanGreTunnel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MagicWanGreTunnel) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -224,6 +232,14 @@ func (m *jsiiProxy_MagicWanGreTunnel) validatePutHealthCheckParameters(value *Ma
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

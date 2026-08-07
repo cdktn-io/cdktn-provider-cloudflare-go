@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareStreamDownload) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareStreamDownload) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareStreamDownload_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

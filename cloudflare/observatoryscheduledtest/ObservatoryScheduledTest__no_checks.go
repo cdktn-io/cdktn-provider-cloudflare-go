@@ -59,6 +59,10 @@ func (o *jsiiProxy_ObservatoryScheduledTest) validateInterpolationForAttributePa
 	return nil
 }
 
+func (o *jsiiProxy_ObservatoryScheduledTest) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservatoryScheduledTest) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (o *jsiiProxy_ObservatoryScheduledTest) validateMoveToIdParameters(id *stri
 }
 
 func (o *jsiiProxy_ObservatoryScheduledTest) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservatoryScheduledTest) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (h *jsiiProxy_HostnameTlsSetting) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (h *jsiiProxy_HostnameTlsSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostnameTlsSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (h *jsiiProxy_HostnameTlsSetting) validateMoveToIdParameters(id *string) er
 }
 
 func (h *jsiiProxy_HostnameTlsSetting) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HostnameTlsSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

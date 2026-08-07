@@ -59,6 +59,10 @@ func (m *jsiiProxy_ManagedTransforms) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (m *jsiiProxy_ManagedTransforms) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedTransforms) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (m *jsiiProxy_ManagedTransforms) validatePutManagedRequestHeadersParameters
 }
 
 func (m *jsiiProxy_ManagedTransforms) validatePutManagedResponseHeadersParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedTransforms) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

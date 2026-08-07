@@ -5,14 +5,14 @@ package datacloudflareaccountdnssettingsinternalview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaccountdnssettingsinternalview/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareaccountdnssettingsinternalview/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
 type DataCloudflareAccountDnsSettingsInternalView interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -92,6 +92,19 @@ type DataCloudflareAccountDnsSettingsInternalView interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value *DataCloudflareAccountDnsSettingsInternalViewFilter)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -377,7 +390,7 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) Zones() *[]*str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Data Source.
 func NewDataCloudflareAccountDnsSettingsInternalView(scope constructs.Construct, id *string, config *DataCloudflareAccountDnsSettingsInternalViewConfig) DataCloudflareAccountDnsSettingsInternalView {
 	_init_.Initialize()
 
@@ -395,7 +408,7 @@ func NewDataCloudflareAccountDnsSettingsInternalView(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Data Source.
 func NewDataCloudflareAccountDnsSettingsInternalView_Override(d DataCloudflareAccountDnsSettingsInternalView, scope constructs.Construct, id *string, config *DataCloudflareAccountDnsSettingsInternalViewConfig) {
 	_init_.Initialize()
 
@@ -767,6 +780,17 @@ func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) PutFilter(value
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAccountDnsSettingsInternalView) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingCatchAll) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareEmailRoutingCatchAll) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareEmailRoutingCatchAll_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

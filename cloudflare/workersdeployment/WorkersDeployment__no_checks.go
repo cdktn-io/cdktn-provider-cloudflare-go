@@ -59,6 +59,10 @@ func (w *jsiiProxy_WorkersDeployment) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (w *jsiiProxy_WorkersDeployment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersDeployment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (w *jsiiProxy_WorkersDeployment) validatePutAnnotationsParameters(value *Wo
 }
 
 func (w *jsiiProxy_WorkersDeployment) validatePutVersionsParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkersDeployment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

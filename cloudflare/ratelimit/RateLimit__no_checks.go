@@ -59,6 +59,10 @@ func (r *jsiiProxy_RateLimit) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_RateLimit) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RateLimit) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (r *jsiiProxy_RateLimit) validatePutActionParameters(value *RateLimitAction
 }
 
 func (r *jsiiProxy_RateLimit) validatePutMatchParameters(value *RateLimitMatch) error {
+	return nil
+}
+
+func (r *jsiiProxy_RateLimit) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

@@ -122,6 +122,14 @@ func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateInterpolationForAttr
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateMoveToIdParameters(i
 func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustRiskScoringIntegration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

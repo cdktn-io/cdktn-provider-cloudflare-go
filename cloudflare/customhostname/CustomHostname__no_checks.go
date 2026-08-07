@@ -59,6 +59,10 @@ func (c *jsiiProxy_CustomHostname) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_CustomHostname) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomHostname) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (c *jsiiProxy_CustomHostname) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (c *jsiiProxy_CustomHostname) validatePutSslParameters(value *CustomHostnameSsl) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomHostname) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

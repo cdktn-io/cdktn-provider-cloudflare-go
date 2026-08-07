@@ -59,6 +59,10 @@ func (s *jsiiProxy_StreamLiveInput) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_StreamLiveInput) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamLiveInput) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (s *jsiiProxy_StreamLiveInput) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (s *jsiiProxy_StreamLiveInput) validatePutRecordingParameters(value *StreamLiveInputRecording) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamLiveInput) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

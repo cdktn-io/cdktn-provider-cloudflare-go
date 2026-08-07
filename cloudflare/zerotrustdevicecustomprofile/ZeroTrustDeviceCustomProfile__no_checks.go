@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validateInterpolationForAttribu
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -83,6 +87,10 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutExcludeParameters(va
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutGlobalAccelerationParameters(value *ZeroTrustDeviceCustomProfileGlobalAcceleration) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutIncludeParameters(value interface{}) error {
 	return nil
 }
@@ -92,6 +100,10 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutServiceModeV2Paramet
 }
 
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutVirtualNetworksParameters(value *ZeroTrustDeviceCustomProfileVirtualNetworks) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

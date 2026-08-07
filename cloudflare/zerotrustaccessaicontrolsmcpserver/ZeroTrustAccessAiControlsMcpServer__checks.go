@@ -122,6 +122,14 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateInterpolationForA
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -269,6 +277,14 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validatePutUpdatedToolsPa
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateZeroTrustAccessAiControlsMcpServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -326,6 +342,14 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetAuthCredential
 }
 
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetAuthTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetClientSecretParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

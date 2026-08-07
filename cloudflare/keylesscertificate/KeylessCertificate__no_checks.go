@@ -59,6 +59,10 @@ func (k *jsiiProxy_KeylessCertificate) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (k *jsiiProxy_KeylessCertificate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeylessCertificate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (k *jsiiProxy_KeylessCertificate) validateOverrideLogicalIdParameters(newLo
 }
 
 func (k *jsiiProxy_KeylessCertificate) validatePutTunnelParameters(value *KeylessCertificateTunnel) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeylessCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

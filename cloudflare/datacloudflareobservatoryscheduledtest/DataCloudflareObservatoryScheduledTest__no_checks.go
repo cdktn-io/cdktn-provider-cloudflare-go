@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) validateOverrideLogic
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareObservatoryScheduledTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

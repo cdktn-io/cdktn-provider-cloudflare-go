@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareMoqRelays) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareMoqRelays) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareMoqRelays_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

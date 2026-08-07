@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareMoqRelay) validatePutFilterParameters(value *Da
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareMoqRelay) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareMoqRelay_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

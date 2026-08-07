@@ -59,6 +59,10 @@ func (w *jsiiProxy_Workflow) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (w *jsiiProxy_Workflow) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Workflow) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -75,11 +79,19 @@ func (w *jsiiProxy_Workflow) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (w *jsiiProxy_Workflow) validatePutDefaultRetentionParameters(value *WorkflowDefaultRetention) error {
+	return nil
+}
+
 func (w *jsiiProxy_Workflow) validatePutLimitsParameters(value *WorkflowLimits) error {
 	return nil
 }
 
 func (w *jsiiProxy_Workflow) validatePutSchedulesParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Workflow) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

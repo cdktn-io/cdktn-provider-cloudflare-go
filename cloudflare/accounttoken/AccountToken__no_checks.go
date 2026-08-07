@@ -59,6 +59,10 @@ func (a *jsiiProxy_AccountToken) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (a *jsiiProxy_AccountToken) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountToken) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (a *jsiiProxy_AccountToken) validatePutConditionParameters(value *AccountTo
 }
 
 func (a *jsiiProxy_AccountToken) validatePutPoliciesParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountToken) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

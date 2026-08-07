@@ -59,6 +59,10 @@ func (w *jsiiProxy_WorkerVersion) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (w *jsiiProxy_WorkerVersion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerVersion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -95,6 +99,10 @@ func (w *jsiiProxy_WorkerVersion) validatePutContainersParameters(value interfac
 	return nil
 }
 
+func (w *jsiiProxy_WorkerVersion) validatePutExportsParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerVersion) validatePutLimitsParameters(value *WorkerVersionLimits) error {
 	return nil
 }
@@ -112,6 +120,10 @@ func (w *jsiiProxy_WorkerVersion) validatePutPackageDependenciesParameters(value
 }
 
 func (w *jsiiProxy_WorkerVersion) validatePutPlacementParameters(value *WorkerVersionPlacement) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerVersion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

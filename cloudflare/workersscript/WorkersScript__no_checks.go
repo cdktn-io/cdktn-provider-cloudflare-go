@@ -59,6 +59,10 @@ func (w *jsiiProxy_WorkersScript) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScript) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScript) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (w *jsiiProxy_WorkersScript) validatePutPlacementParameters(value *WorkersS
 }
 
 func (w *jsiiProxy_WorkersScript) validatePutTailConsumersParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkersScript) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

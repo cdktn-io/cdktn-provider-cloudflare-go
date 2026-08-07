@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustDlpSensitivityGroup) validateInterpolationForAttribu
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDlpSensitivityGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDlpSensitivityGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (z *jsiiProxy_ZeroTrustDlpSensitivityGroup) validateMoveToIdParameters(id *
 }
 
 func (z *jsiiProxy_ZeroTrustDlpSensitivityGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDlpSensitivityGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

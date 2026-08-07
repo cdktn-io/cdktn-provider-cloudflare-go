@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingRule) validatePutFilterParameters(v
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareEmailRoutingRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareEmailRoutingRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

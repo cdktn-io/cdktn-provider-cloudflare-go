@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateOverri
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareEmailSecurityTrustedDomainsList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

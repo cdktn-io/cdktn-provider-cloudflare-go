@@ -59,6 +59,10 @@ func (b *jsiiProxy_ByoIpPrefix) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (b *jsiiProxy_ByoIpPrefix) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_ByoIpPrefix) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (b *jsiiProxy_ByoIpPrefix) validateMoveToIdParameters(id *string) error {
 }
 
 func (b *jsiiProxy_ByoIpPrefix) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_ByoIpPrefix) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

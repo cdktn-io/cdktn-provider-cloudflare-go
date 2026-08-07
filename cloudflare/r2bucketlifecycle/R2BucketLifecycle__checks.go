@@ -122,6 +122,14 @@ func (r *jsiiProxy_R2BucketLifecycle) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_R2BucketLifecycle) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_R2BucketLifecycle) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -233,6 +241,14 @@ func (r *jsiiProxy_R2BucketLifecycle) validatePutRulesParameters(value interface
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*R2BucketLifecycleRules; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (r *jsiiProxy_R2BucketLifecycle) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

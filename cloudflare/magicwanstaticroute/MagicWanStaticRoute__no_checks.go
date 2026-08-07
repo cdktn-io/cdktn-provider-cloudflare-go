@@ -59,6 +59,10 @@ func (m *jsiiProxy_MagicWanStaticRoute) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanStaticRoute) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicWanStaticRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (m *jsiiProxy_MagicWanStaticRoute) validateOverrideLogicalIdParameters(newL
 }
 
 func (m *jsiiProxy_MagicWanStaticRoute) validatePutScopeParameters(value *MagicWanStaticRouteScope) error {
+	return nil
+}
+
+func (m *jsiiProxy_MagicWanStaticRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

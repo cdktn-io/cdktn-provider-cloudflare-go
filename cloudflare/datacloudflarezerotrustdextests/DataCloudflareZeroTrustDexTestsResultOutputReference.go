@@ -5,9 +5,9 @@ package datacloudflarezerotrustdextests
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrustdextests/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdextests/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -23,6 +23,7 @@ type DataCloudflareZeroTrustDexTestsResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Created() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -50,6 +51,7 @@ type DataCloudflareZeroTrustDexTestsResultOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TestId() *string
+	Updated() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -106,6 +108,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Complex
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Created() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"created",
 		&returns,
 	)
 	return returns
@@ -256,6 +268,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) TestId(
 	_jsii_.Get(
 		j,
 		"testId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDexTestsResultOutputReference) Updated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updated",
 		&returns,
 	)
 	return returns

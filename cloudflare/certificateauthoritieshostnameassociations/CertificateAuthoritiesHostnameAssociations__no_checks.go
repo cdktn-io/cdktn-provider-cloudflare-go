@@ -59,6 +59,10 @@ func (c *jsiiProxy_CertificateAuthoritiesHostnameAssociations) validateInterpola
 	return nil
 }
 
+func (c *jsiiProxy_CertificateAuthoritiesHostnameAssociations) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateAuthoritiesHostnameAssociations) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (c *jsiiProxy_CertificateAuthoritiesHostnameAssociations) validateMoveToIdP
 }
 
 func (c *jsiiProxy_CertificateAuthoritiesHostnameAssociations) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateAuthoritiesHostnameAssociations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

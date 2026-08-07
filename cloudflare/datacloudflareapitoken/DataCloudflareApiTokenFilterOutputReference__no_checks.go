@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataCloudflareApiTokenFilterOutputReference) validateSetDirec
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareApiTokenFilterOutputReference) validateSetIncludeExpiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareApiTokenFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

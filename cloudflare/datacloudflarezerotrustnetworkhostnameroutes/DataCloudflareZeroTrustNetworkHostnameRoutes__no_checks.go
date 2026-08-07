@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoutes) validateOverrid
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustNetworkHostnameRoutes) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustNetworkHostnameRoutes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

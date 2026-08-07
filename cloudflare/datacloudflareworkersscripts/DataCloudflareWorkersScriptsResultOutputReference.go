@@ -5,9 +5,9 @@ package datacloudflareworkersscripts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareworkersscripts/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareworkersscripts/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -33,6 +33,7 @@ type DataCloudflareWorkersScriptsResultOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Etag() *string
+	Exports() DataCloudflareWorkersScriptsResultExportsMap
 	// Experimental.
 	Fqn() *string
 	Handlers() *[]*string
@@ -177,6 +178,16 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Etag() *st
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Exports() DataCloudflareWorkersScriptsResultExportsMap {
+	var returns DataCloudflareWorkersScriptsResultExportsMap
+	_jsii_.Get(
+		j,
+		"exports",
 		&returns,
 	)
 	return returns

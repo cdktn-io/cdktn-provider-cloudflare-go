@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateInterpolationForA
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validatePutUpdatedPrompts
 }
 
 func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validatePutUpdatedToolsParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,6 +116,10 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetAuthCredential
 }
 
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) validateSetClientSecretParameters(val *string) error {
 	return nil
 }
 

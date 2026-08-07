@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) validateOverrideL
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareApiShieldDiscoveryOperations) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareApiShieldDiscoveryOperations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

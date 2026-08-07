@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) val
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareApiShieldOperationSchemaValidationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

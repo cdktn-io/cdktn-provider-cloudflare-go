@@ -5,9 +5,9 @@ package tokenvalidationconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/tokenvalidationconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -41,9 +41,12 @@ type TokenValidationConfigCredentialsKeysOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	K() *string
+	SetK(val *string)
 	Kid() *string
 	SetKid(val *string)
 	KidInput() *string
+	KInput() *string
 	Kty() *string
 	SetKty(val *string)
 	KtyInput() *string
@@ -90,6 +93,7 @@ type TokenValidationConfigCredentialsKeysOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCrv()
 	ResetE()
+	ResetK()
 	ResetN()
 	ResetX()
 	ResetY()
@@ -218,6 +222,16 @@ func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) Internal
 	return returns
 }
 
+func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) K() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"k",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) Kid() *string {
 	var returns *string
 	_jsii_.Get(
@@ -233,6 +247,16 @@ func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) KidInput
 	_jsii_.Get(
 		j,
 		"kidInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) KInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kInput",
 		&returns,
 	)
 	return returns
@@ -428,6 +452,17 @@ func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference)SetK(val *string) {
+	if err := j.validateSetKParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"k",
 		val,
 	)
 }
@@ -707,6 +742,14 @@ func (t *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) ResetE()
 	_jsii_.InvokeVoid(
 		t,
 		"resetE",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TokenValidationConfigCredentialsKeysOutputReference) ResetK() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetK",
 		nil, // no parameters
 	)
 }

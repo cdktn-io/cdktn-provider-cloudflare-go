@@ -59,6 +59,10 @@ func (m *jsiiProxy_MagicWanGreTunnel) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanGreTunnel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicWanGreTunnel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (m *jsiiProxy_MagicWanGreTunnel) validatePutBgpParameters(value *MagicWanGr
 }
 
 func (m *jsiiProxy_MagicWanGreTunnel) validatePutHealthCheckParameters(value *MagicWanGreTunnelHealthCheck) error {
+	return nil
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

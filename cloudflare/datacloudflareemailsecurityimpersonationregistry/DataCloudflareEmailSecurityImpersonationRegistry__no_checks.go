@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validatePut
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistry) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareEmailSecurityImpersonationRegistry_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

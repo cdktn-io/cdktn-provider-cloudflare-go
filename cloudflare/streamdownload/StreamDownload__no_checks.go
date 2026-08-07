@@ -59,6 +59,10 @@ func (s *jsiiProxy_StreamDownload) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_StreamDownload) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamDownload) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_StreamDownload) validateMoveToIdParameters(id *string) error 
 }
 
 func (s *jsiiProxy_StreamDownload) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamDownload) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

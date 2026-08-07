@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareSecretsStoreSecrets) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareSecretsStoreSecrets) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareSecretsStoreSecrets_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -95,7 +99,7 @@ func (j *jsiiProxy_DataCloudflareSecretsStoreSecrets) validateSetOrderParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareSecretsStoreSecrets) validateSetScopesParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareSecretsStoreSecrets) validateSetScopesParameters(val *[]*string) error {
 	return nil
 }
 

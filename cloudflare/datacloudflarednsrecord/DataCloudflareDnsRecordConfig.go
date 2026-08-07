@@ -24,17 +24,17 @@ type DataCloudflareDnsRecordConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
 	DnsRecordId *string `field:"optional" json:"dnsRecordId" yaml:"dnsRecordId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}.
 	Filter *DataCloudflareDnsRecordFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Whether to include shadow metadata in the `meta` field of each record in the response. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#include_shadow_metadata DataCloudflareDnsRecord#include_shadow_metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/dns_record#include_shadow_metadata DataCloudflareDnsRecord#include_shadow_metadata}
 	IncludeShadowMetadata interface{} `field:"optional" json:"includeShadowMetadata" yaml:"includeShadowMetadata"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

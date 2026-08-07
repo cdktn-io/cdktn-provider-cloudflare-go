@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requestedValidity", GoGetter: "RequestedValidity"},
 			_jsii_.MemberProperty{JsiiProperty: "requestType", GoGetter: "RequestType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateId", GoMethod: "ResetCertificateId"},

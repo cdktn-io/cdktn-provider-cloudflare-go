@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZoneDnsSettings) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (z *jsiiProxy_ZoneDnsSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneDnsSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (z *jsiiProxy_ZoneDnsSettings) validatePutNameserversParameters(value *Zone
 }
 
 func (z *jsiiProxy_ZoneDnsSettings) validatePutSoaParameters(value *ZoneDnsSettingsSoa) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneDnsSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

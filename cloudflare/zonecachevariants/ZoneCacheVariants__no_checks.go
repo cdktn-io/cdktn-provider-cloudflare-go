@@ -59,6 +59,10 @@ func (z *jsiiProxy_ZoneCacheVariants) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (z *jsiiProxy_ZoneCacheVariants) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneCacheVariants) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (z *jsiiProxy_ZoneCacheVariants) validateOverrideLogicalIdParameters(newLog
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) validatePutValueParameters(value *ZoneCacheVariantsValue) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneCacheVariants) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

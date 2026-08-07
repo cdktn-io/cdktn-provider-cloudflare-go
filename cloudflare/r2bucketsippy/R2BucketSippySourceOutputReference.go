@@ -5,9 +5,9 @@ package r2bucketsippy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/r2bucketsippy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -16,6 +16,12 @@ type R2BucketSippySourceOutputReference interface {
 	AccessKeyId() *string
 	SetAccessKeyId(val *string)
 	AccessKeyIdInput() *string
+	AccountKey() *string
+	SetAccountKey(val *string)
+	AccountKeyInput() *string
+	AccountName() *string
+	SetAccountName(val *string)
+	AccountNameInput() *string
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
@@ -38,6 +44,9 @@ type R2BucketSippySourceOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Container() *string
+	SetContainer(val *string)
+	ContainerInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -53,6 +62,9 @@ type R2BucketSippySourceOutputReference interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SasToken() *string
+	SetSasToken(val *string)
+	SasTokenInput() *string
 	SecretAccessKey() *string
 	SetSecretAccessKey(val *string)
 	SecretAccessKeyInput() *string
@@ -89,12 +101,16 @@ type R2BucketSippySourceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAccessKeyId()
+	ResetAccountKey()
+	ResetAccountName()
 	ResetBucket()
 	ResetBucketUrl()
 	ResetClientEmail()
 	ResetCloudProvider()
+	ResetContainer()
 	ResetPrivateKey()
 	ResetRegion()
+	ResetSasToken()
 	ResetSecretAccessKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -126,6 +142,46 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) AccessKeyIdInput() *strin
 	_jsii_.Get(
 		j,
 		"accessKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) AccountKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) AccountKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) AccountName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) AccountNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountNameInput",
 		&returns,
 	)
 	return returns
@@ -231,6 +287,26 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) ComplexObjectIsFromSet() 
 	return returns
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) Container() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"container",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) ContainerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -296,6 +372,26 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) RegionInput() *string {
 	_jsii_.Get(
 		j,
 		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SasToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sasToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) SasTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sasTokenInput",
 		&returns,
 	)
 	return returns
@@ -380,6 +476,28 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetAccessKeyId(val *string
 	)
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetAccountKey(val *string) {
+	if err := j.validateSetAccountKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetAccountName(val *string) {
+	if err := j.validateSetAccountNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
@@ -446,6 +564,17 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetContainer(val *string) {
+	if err := j.validateSetContainerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"container",
+		val,
+	)
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -475,6 +604,17 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetSasToken(val *string) {
+	if err := j.validateSetSasTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sasToken",
 		val,
 	)
 }
@@ -706,6 +846,22 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetAccessKeyId() {
 	)
 }
 
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetAccountKey() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAccountKey",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetAccountName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAccountName",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetBucket() {
 	_jsii_.InvokeVoid(
 		r,
@@ -738,6 +894,14 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetCloudProvider() {
 	)
 }
 
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetContainer() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetContainer",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetPrivateKey() {
 	_jsii_.InvokeVoid(
 		r,
@@ -750,6 +914,14 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetRegion() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetSasToken() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSasToken",
 		nil, // no parameters
 	)
 }

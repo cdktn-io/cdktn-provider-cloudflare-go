@@ -5,14 +5,14 @@ package datacloudflarecustomcsr
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomcsr/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecustomcsr/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr cloudflare_custom_csr}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr cloudflare_custom_csr}.
 type DataCloudflareCustomCsr interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -39,6 +39,8 @@ type DataCloudflareCustomCsr interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	Filter() DataCloudflareCustomCsrFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -101,7 +103,23 @@ type DataCloudflareCustomCsr interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareCustomCsrFilter)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
+	ResetCustomCsrId()
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -269,6 +287,26 @@ func (j *jsiiProxy_DataCloudflareCustomCsr) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomCsr) Filter() DataCloudflareCustomCsrFilterOutputReference {
+	var returns DataCloudflareCustomCsrFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomCsr) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -475,7 +513,7 @@ func (j *jsiiProxy_DataCloudflareCustomCsr) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr cloudflare_custom_csr} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr cloudflare_custom_csr} Data Source.
 func NewDataCloudflareCustomCsr(scope constructs.Construct, id *string, config *DataCloudflareCustomCsrConfig) DataCloudflareCustomCsr {
 	_init_.Initialize()
 
@@ -493,7 +531,7 @@ func NewDataCloudflareCustomCsr(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.22.0/docs/data-sources/custom_csr cloudflare_custom_csr} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_csr cloudflare_custom_csr} Data Source.
 func NewDataCloudflareCustomCsr_Override(d DataCloudflareCustomCsr, scope constructs.Construct, id *string, config *DataCloudflareCustomCsrConfig) {
 	_init_.Initialize()
 
@@ -868,10 +906,48 @@ func (d *jsiiProxy_DataCloudflareCustomCsr) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareCustomCsr) PutFilter(value *DataCloudflareCustomCsrFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomCsr) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareCustomCsr) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomCsr) ResetCustomCsrId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomCsrId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCustomCsr) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
 		nil, // no parameters
 	)
 }

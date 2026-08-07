@@ -5,9 +5,9 @@ package aisearchinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchinstance/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/aisearchinstance/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
@@ -36,6 +36,9 @@ type AiSearchInstancePublicEndpointParamsOutputReference interface {
 	CustomDomains() *[]*string
 	SetCustomDomains(val *[]*string)
 	CustomDomainsInput() *[]*string
+	DefaultDomainEnabled() interface{}
+	SetDefaultDomainEnabled(val interface{})
+	DefaultDomainEnabledInput() interface{}
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -88,6 +91,7 @@ type AiSearchInstancePublicEndpointParamsOutputReference interface {
 	ResetAuthorizedHosts()
 	ResetChatCompletionsEndpoint()
 	ResetCustomDomains()
+	ResetDefaultDomainEnabled()
 	ResetEnabled()
 	ResetMcp()
 	ResetRateLimit()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) CustomDo
 	_jsii_.Get(
 		j,
 		"customDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) DefaultDomainEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultDomainEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) DefaultDomainEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultDomainEnabledInput",
 		&returns,
 	)
 	return returns
@@ -385,6 +409,17 @@ func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference)SetCustom
 	_jsii_.Set(
 		j,
 		"customDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference)SetDefaultDomainEnabled(val interface{}) {
+	if err := j.validateSetDefaultDomainEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultDomainEnabled",
 		val,
 	)
 }
@@ -683,6 +718,14 @@ func (a *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) ResetCus
 	_jsii_.InvokeVoid(
 		a,
 		"resetCustomDomains",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstancePublicEndpointParamsOutputReference) ResetDefaultDomainEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDefaultDomainEnabled",
 		nil, // no parameters
 	)
 }

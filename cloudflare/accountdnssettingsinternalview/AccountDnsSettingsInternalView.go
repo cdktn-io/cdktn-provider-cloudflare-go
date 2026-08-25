@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
 type AccountDnsSettingsInternalView interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -446,7 +446,7 @@ func (j *jsiiProxy_AccountDnsSettingsInternalView) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
 func NewAccountDnsSettingsInternalView(scope constructs.Construct, id *string, config *AccountDnsSettingsInternalViewConfig) AccountDnsSettingsInternalView {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewAccountDnsSettingsInternalView(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Resource.
 func NewAccountDnsSettingsInternalView_Override(a AccountDnsSettingsInternalView, scope constructs.Construct, id *string, config *AccountDnsSettingsInternalViewConfig) {
 	_init_.Initialize()
 

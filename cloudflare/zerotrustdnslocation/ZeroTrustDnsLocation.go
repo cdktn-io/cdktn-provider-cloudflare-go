@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 type ZeroTrustDnsLocation interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -622,7 +622,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
 func NewZeroTrustDnsLocation(scope constructs.Construct, id *string, config *ZeroTrustDnsLocationConfig) ZeroTrustDnsLocation {
 	_init_.Initialize()
 
@@ -640,7 +640,7 @@ func NewZeroTrustDnsLocation(scope constructs.Construct, id *string, config *Zer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
 func NewZeroTrustDnsLocation_Override(z ZeroTrustDnsLocation, scope constructs.Construct, id *string, config *ZeroTrustDnsLocationConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
 type R2BucketLifecycle interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_R2BucketLifecycle) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource.
 func NewR2BucketLifecycle(scope constructs.Construct, id *string, config *R2BucketLifecycleConfig) R2BucketLifecycle {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewR2BucketLifecycle(scope constructs.Construct, id *string, config *R2Buck
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource.
 func NewR2BucketLifecycle_Override(r R2BucketLifecycle, scope constructs.Construct, id *string, config *R2BucketLifecycleConfig) {
 	_init_.Initialize()
 

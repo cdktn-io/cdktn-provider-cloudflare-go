@@ -461,6 +461,14 @@ func (j *jsiiProxy_LoadBalancerPool) validateSetEnabledParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPool) validateSetHealthSourcesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPool) validateSetLatitudeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

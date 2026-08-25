@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category}.
 type DataCloudflareZeroTrustResourceLibraryCategory interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -40,9 +40,9 @@ type DataCloudflareZeroTrustResourceLibraryCategory interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Id() *float64
+	SetId(val *float64)
+	IdInput() *float64
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -241,8 +241,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) FriendlyUniqu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) Id() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) Id() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"id",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) Id() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) IdInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) IdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"idInput",
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryCategory(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryCategoryConfig) DataCloudflareZeroTrustResourceLibraryCategory {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewDataCloudflareZeroTrustResourceLibraryCategory(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_category cloudflare_zero_trust_resource_library_category} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryCategory_Override(d DataCloudflareZeroTrustResourceLibraryCategory, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryCategoryConfig) {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory)SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory)SetId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategory)SetId(val *float64) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}

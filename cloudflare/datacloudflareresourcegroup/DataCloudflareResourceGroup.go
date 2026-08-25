@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/resource_group cloudflare_resource_group}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/resource_group cloudflare_resource_group}.
 type DataCloudflareResourceGroup interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareResourceGroup) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/resource_group cloudflare_resource_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/resource_group cloudflare_resource_group} Data Source.
 func NewDataCloudflareResourceGroup(scope constructs.Construct, id *string, config *DataCloudflareResourceGroupConfig) DataCloudflareResourceGroup {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDataCloudflareResourceGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/resource_group cloudflare_resource_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/resource_group cloudflare_resource_group} Data Source.
 func NewDataCloudflareResourceGroup_Override(d DataCloudflareResourceGroup, scope constructs.Construct, id *string, config *DataCloudflareResourceGroupConfig) {
 	_init_.Initialize()
 

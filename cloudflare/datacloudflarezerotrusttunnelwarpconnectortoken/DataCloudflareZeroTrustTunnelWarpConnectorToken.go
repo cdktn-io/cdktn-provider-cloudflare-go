@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_tunnel_warp_connector_token cloudflare_zero_trust_tunnel_warp_connector_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_tunnel_warp_connector_token cloudflare_zero_trust_tunnel_warp_connector_token}.
 type DataCloudflareZeroTrustTunnelWarpConnectorToken interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorToken) TunnelIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_tunnel_warp_connector_token cloudflare_zero_trust_tunnel_warp_connector_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_tunnel_warp_connector_token cloudflare_zero_trust_tunnel_warp_connector_token} Data Source.
 func NewDataCloudflareZeroTrustTunnelWarpConnectorToken(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelWarpConnectorTokenConfig) DataCloudflareZeroTrustTunnelWarpConnectorToken {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataCloudflareZeroTrustTunnelWarpConnectorToken(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_tunnel_warp_connector_token cloudflare_zero_trust_tunnel_warp_connector_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_tunnel_warp_connector_token cloudflare_zero_trust_tunnel_warp_connector_token} Data Source.
 func NewDataCloudflareZeroTrustTunnelWarpConnectorToken_Override(d DataCloudflareZeroTrustTunnelWarpConnectorToken, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelWarpConnectorTokenConfig) {
 	_init_.Initialize()
 

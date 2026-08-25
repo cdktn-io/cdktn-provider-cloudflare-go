@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown}.
 type DataCloudflareZoneLockdown interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdown) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown} Data Source.
 func NewDataCloudflareZoneLockdown(scope constructs.Construct, id *string, config *DataCloudflareZoneLockdownConfig) DataCloudflareZoneLockdown {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataCloudflareZoneLockdown(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown} Data Source.
 func NewDataCloudflareZoneLockdown_Override(d DataCloudflareZoneLockdown, scope constructs.Construct, id *string, config *DataCloudflareZoneLockdownConfig) {
 	_init_.Initialize()
 

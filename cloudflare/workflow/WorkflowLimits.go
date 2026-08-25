@@ -5,7 +5,7 @@ package workflow
 
 
 type WorkflowLimits struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#steps Workflow#steps}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#steps Workflow#steps}.
 	Steps *float64 `field:"optional" json:"steps" yaml:"steps"`
 }
 

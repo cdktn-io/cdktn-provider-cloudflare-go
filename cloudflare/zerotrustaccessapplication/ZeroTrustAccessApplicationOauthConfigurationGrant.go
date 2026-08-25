@@ -9,13 +9,13 @@ type ZeroTrustAccessApplicationOauthConfigurationGrant struct {
 	//
 	// Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_application#access_token_lifetime ZeroTrustAccessApplication#access_token_lifetime}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_application#access_token_lifetime ZeroTrustAccessApplication#access_token_lifetime}
 	AccessTokenLifetime *string `field:"optional" json:"accessTokenLifetime" yaml:"accessTokenLifetime"`
 	// The duration of the OAuth session.
 	//
 	// Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_application#session_duration ZeroTrustAccessApplication#session_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_application#session_duration ZeroTrustAccessApplication#session_duration}
 	SessionDuration *string `field:"optional" json:"sessionDuration" yaml:"sessionDuration"`
 }
 

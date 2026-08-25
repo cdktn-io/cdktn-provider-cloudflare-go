@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/account_subscription cloudflare_account_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/account_subscription cloudflare_account_subscription}.
 type AccountSubscription interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -482,7 +482,7 @@ func (j *jsiiProxy_AccountSubscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
 func NewAccountSubscription(scope constructs.Construct, id *string, config *AccountSubscriptionConfig) AccountSubscription {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewAccountSubscription(scope constructs.Construct, id *string, config *Acco
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
 func NewAccountSubscription_Override(a AccountSubscription, scope constructs.Construct, id *string, config *AccountSubscriptionConfig) {
 	_init_.Initialize()
 

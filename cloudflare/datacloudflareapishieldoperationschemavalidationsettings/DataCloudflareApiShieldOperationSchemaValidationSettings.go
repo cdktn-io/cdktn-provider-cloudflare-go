@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
 type DataCloudflareApiShieldOperationSchemaValidationSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationSchemaValidationSettings) Zon
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldOperationSchemaValidationSettings(scope constructs.Construct, id *string, config *DataCloudflareApiShieldOperationSchemaValidationSettingsConfig) DataCloudflareApiShieldOperationSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataCloudflareApiShieldOperationSchemaValidationSettings(scope construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Data Source.
 func NewDataCloudflareApiShieldOperationSchemaValidationSettings_Override(d DataCloudflareApiShieldOperationSchemaValidationSettings, scope constructs.Construct, id *string, config *DataCloudflareApiShieldOperationSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 

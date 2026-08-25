@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies}.
 type DataCloudflareZeroTrustAccessPolicies interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicies) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source.
 func NewDataCloudflareZeroTrustAccessPolicies(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessPoliciesConfig) DataCloudflareZeroTrustAccessPolicies {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataCloudflareZeroTrustAccessPolicies(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_policies cloudflare_zero_trust_access_policies} Data Source.
 func NewDataCloudflareZeroTrustAccessPolicies_Override(d DataCloudflareZeroTrustAccessPolicies, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessPoliciesConfig) {
 	_init_.Initialize()
 

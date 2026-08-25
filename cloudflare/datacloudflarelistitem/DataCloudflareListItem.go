@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/list_item cloudflare_list_item}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/list_item cloudflare_list_item}.
 type DataCloudflareListItem interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataCloudflareListItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/list_item cloudflare_list_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/list_item cloudflare_list_item} Data Source.
 func NewDataCloudflareListItem(scope constructs.Construct, id *string, config *DataCloudflareListItemConfig) DataCloudflareListItem {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataCloudflareListItem(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/list_item cloudflare_list_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/list_item cloudflare_list_item} Data Source.
 func NewDataCloudflareListItem_Override(d DataCloudflareListItem, scope constructs.Construct, id *string, config *DataCloudflareListItemConfig) {
 	_init_.Initialize()
 

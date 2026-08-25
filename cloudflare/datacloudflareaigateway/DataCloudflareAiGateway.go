@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/ai_gateway cloudflare_ai_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/ai_gateway cloudflare_ai_gateway}.
 type DataCloudflareAiGateway interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -55,6 +55,7 @@ type DataCloudflareAiGateway interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	LogClassification() cdktn.IResolvable
 	LogManagement() *float64
 	LogManagementStrategy() *string
 	Logpush() cdktn.IResolvable
@@ -379,6 +380,16 @@ func (j *jsiiProxy_DataCloudflareAiGateway) Lifecycle() *cdktn.TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiGateway) LogClassification() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"logClassification",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiGateway) LogManagement() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -610,7 +621,7 @@ func (j *jsiiProxy_DataCloudflareAiGateway) Zdr() cdktn.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/ai_gateway cloudflare_ai_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/ai_gateway cloudflare_ai_gateway} Data Source.
 func NewDataCloudflareAiGateway(scope constructs.Construct, id *string, config *DataCloudflareAiGatewayConfig) DataCloudflareAiGateway {
 	_init_.Initialize()
 
@@ -628,7 +639,7 @@ func NewDataCloudflareAiGateway(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/ai_gateway cloudflare_ai_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/ai_gateway cloudflare_ai_gateway} Data Source.
 func NewDataCloudflareAiGateway_Override(d DataCloudflareAiGateway, scope constructs.Construct, id *string, config *DataCloudflareAiGatewayConfig) {
 	_init_.Initialize()
 

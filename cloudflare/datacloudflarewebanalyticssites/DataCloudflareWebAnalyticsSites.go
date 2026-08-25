@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites}.
 type DataCloudflareWebAnalyticsSites interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareWebAnalyticsSites) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source.
 func NewDataCloudflareWebAnalyticsSites(scope constructs.Construct, id *string, config *DataCloudflareWebAnalyticsSitesConfig) DataCloudflareWebAnalyticsSites {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataCloudflareWebAnalyticsSites(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source.
 func NewDataCloudflareWebAnalyticsSites_Override(d DataCloudflareWebAnalyticsSites, scope constructs.Construct, id *string, config *DataCloudflareWebAnalyticsSitesConfig) {
 	_init_.Initialize()
 

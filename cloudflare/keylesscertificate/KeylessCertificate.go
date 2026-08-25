@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
 type KeylessCertificate interface {
 	cdktn.TerraformResource
 	BundleMethod() *string
@@ -588,7 +588,7 @@ func (j *jsiiProxy_KeylessCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
 func NewKeylessCertificate(scope constructs.Construct, id *string, config *KeylessCertificateConfig) KeylessCertificate {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewKeylessCertificate(scope constructs.Construct, id *string, config *Keyle
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource.
 func NewKeylessCertificate_Override(k KeylessCertificate, scope constructs.Construct, id *string, config *KeylessCertificateConfig) {
 	_init_.Initialize()
 

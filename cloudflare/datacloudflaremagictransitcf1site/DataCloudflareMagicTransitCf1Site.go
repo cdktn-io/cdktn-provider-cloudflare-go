@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/magic_transit_cf1_site cloudflare_magic_transit_cf1_site}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/magic_transit_cf1_site cloudflare_magic_transit_cf1_site}.
 type DataCloudflareMagicTransitCf1Site interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitCf1Site) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/magic_transit_cf1_site cloudflare_magic_transit_cf1_site} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/magic_transit_cf1_site cloudflare_magic_transit_cf1_site} Data Source.
 func NewDataCloudflareMagicTransitCf1Site(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitCf1SiteConfig) DataCloudflareMagicTransitCf1Site {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataCloudflareMagicTransitCf1Site(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/magic_transit_cf1_site cloudflare_magic_transit_cf1_site} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/magic_transit_cf1_site cloudflare_magic_transit_cf1_site} Data Source.
 func NewDataCloudflareMagicTransitCf1Site_Override(d DataCloudflareMagicTransitCf1Site, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitCf1SiteConfig) {
 	_init_.Initialize()
 

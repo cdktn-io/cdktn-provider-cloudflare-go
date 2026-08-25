@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category}.
 type ZeroTrustDlpDataTagCategory interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -469,7 +469,7 @@ func (j *jsiiProxy_ZeroTrustDlpDataTagCategory) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category} Resource.
 func NewZeroTrustDlpDataTagCategory(scope constructs.Construct, id *string, config *ZeroTrustDlpDataTagCategoryConfig) ZeroTrustDlpDataTagCategory {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewZeroTrustDlpDataTagCategory(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category} Resource.
 func NewZeroTrustDlpDataTagCategory_Override(z ZeroTrustDlpDataTagCategory, scope constructs.Construct, id *string, config *ZeroTrustDlpDataTagCategoryConfig) {
 	_init_.Initialize()
 

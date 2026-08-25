@@ -38,6 +38,7 @@ type WorkerSubdomainOutputReference interface {
 	PreviewsEnabled() interface{}
 	SetPreviewsEnabled(val interface{})
 	PreviewsEnabledInput() interface{}
+	PreviewUrlSuffix() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,6 +47,7 @@ type WorkerSubdomainOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Url() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -177,6 +179,16 @@ func (j *jsiiProxy_WorkerSubdomainOutputReference) PreviewsEnabledInput() interf
 	return returns
 }
 
+func (j *jsiiProxy_WorkerSubdomainOutputReference) PreviewUrlSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"previewUrlSuffix",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerSubdomainOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -192,6 +204,16 @@ func (j *jsiiProxy_WorkerSubdomainOutputReference) TerraformResource() cdktn.IIn
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerSubdomainOutputReference) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/image_variant cloudflare_image_variant}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/image_variant cloudflare_image_variant}.
 type DataCloudflareImageVariant interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataCloudflareImageVariant) VariantIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/image_variant cloudflare_image_variant} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/image_variant cloudflare_image_variant} Data Source.
 func NewDataCloudflareImageVariant(scope constructs.Construct, id *string, config *DataCloudflareImageVariantConfig) DataCloudflareImageVariant {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDataCloudflareImageVariant(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/image_variant cloudflare_image_variant} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/image_variant cloudflare_image_variant} Data Source.
 func NewDataCloudflareImageVariant_Override(d DataCloudflareImageVariant, scope constructs.Construct, id *string, config *DataCloudflareImageVariantConfig) {
 	_init_.Initialize()
 

@@ -36,7 +36,6 @@ type DataCloudflareZeroTrustTunnelCloudflaredConnectionsOutputReference interfac
 	Id() *string
 	InternalValue() *DataCloudflareZeroTrustTunnelCloudflaredConnections
 	SetInternalValue(val *DataCloudflareZeroTrustTunnelCloudflaredConnections)
-	IsPendingReconnect() cdktn.IResolvable
 	OpenedAt() *string
 	OriginIp() *string
 	// Experimental.
@@ -172,16 +171,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConnectionsOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConnectionsOutputReference) IsPendingReconnect() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"isPendingReconnect",
 		&returns,
 	)
 	return returns

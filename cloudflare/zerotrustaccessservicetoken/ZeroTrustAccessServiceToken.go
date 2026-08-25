@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
 type ZeroTrustAccessServiceToken interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -42,6 +42,9 @@ type ZeroTrustAccessServiceToken interface {
 	Duration() *string
 	SetDuration(val *string)
 	DurationInput() *string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	ExpiresAt() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
@@ -178,6 +181,7 @@ type ZeroTrustAccessServiceToken interface {
 	ResetAccountId()
 	ResetClientSecretVersion()
 	ResetDuration()
+	ResetEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -335,6 +339,26 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) DurationInput() *string {
 	_jsii_.Get(
 		j,
 		"durationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -531,7 +555,7 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) ZeroTrustAccessServiceToken {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken_Override(z ZeroTrustAccessServiceToken, scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) {
 	_init_.Initialize()
 
@@ -619,6 +643,17 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetDuration(val *string) {
 	_jsii_.Set(
 		j,
 		"duration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -1094,6 +1129,14 @@ func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetDuration() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetDuration",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

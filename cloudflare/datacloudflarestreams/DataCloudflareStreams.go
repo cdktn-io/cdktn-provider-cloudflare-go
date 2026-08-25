@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/streams cloudflare_streams}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/streams cloudflare_streams}.
 type DataCloudflareStreams interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -682,7 +682,7 @@ func (j *jsiiProxy_DataCloudflareStreams) VideoNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/streams cloudflare_streams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/streams cloudflare_streams} Data Source.
 func NewDataCloudflareStreams(scope constructs.Construct, id *string, config *DataCloudflareStreamsConfig) DataCloudflareStreams {
 	_init_.Initialize()
 
@@ -700,7 +700,7 @@ func NewDataCloudflareStreams(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/streams cloudflare_streams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/streams cloudflare_streams} Data Source.
 func NewDataCloudflareStreams_Override(d DataCloudflareStreams, scope constructs.Construct, id *string, config *DataCloudflareStreamsConfig) {
 	_init_.Initialize()
 

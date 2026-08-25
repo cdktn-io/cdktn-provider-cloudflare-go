@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
 type CustomOriginTrustStore interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -467,7 +467,7 @@ func (j *jsiiProxy_CustomOriginTrustStore) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Resource.
 func NewCustomOriginTrustStore(scope constructs.Construct, id *string, config *CustomOriginTrustStoreConfig) CustomOriginTrustStore {
 	_init_.Initialize()
 
@@ -485,7 +485,7 @@ func NewCustomOriginTrustStore(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store} Resource.
 func NewCustomOriginTrustStore_Override(c CustomOriginTrustStore, scope constructs.Construct, id *string, config *CustomOriginTrustStoreConfig) {
 	_init_.Initialize()
 

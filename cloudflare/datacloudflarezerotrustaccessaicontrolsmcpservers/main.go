@@ -263,6 +263,7 @@ func init() {
 		reflect.TypeOf((*DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authConfigSummary", GoGetter: "AuthConfigSummary"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationStatus", GoGetter: "AuthenticationStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

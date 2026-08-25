@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
 type ZeroTrustAccessAiControlsMcpPortal interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -23,6 +23,9 @@ type ZeroTrustAccessAiControlsMcpPortal interface {
 	AllowCodeModeInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CodeMode() *string
+	SetCodeMode(val *string)
+	CodeModeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -182,6 +185,7 @@ type ZeroTrustAccessAiControlsMcpPortal interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAllowCodeMode()
+	ResetCodeMode()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -260,6 +264,26 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) CdktfStack() cdktn.Terraf
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) CodeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"codeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) CodeModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"codeModeInput",
 		&returns,
 	)
 	return returns
@@ -576,7 +600,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) ZeroTrustAccessAiControlsMcpPortal {
 	_init_.Initialize()
 
@@ -594,7 +618,7 @@ func NewZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Resource.
 func NewZeroTrustAccessAiControlsMcpPortal_Override(z ZeroTrustAccessAiControlsMcpPortal, scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpPortalConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal)SetAllowCodeMode(val inter
 	_jsii_.Set(
 		j,
 		"allowCodeMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal)SetCodeMode(val *string) {
+	if err := j.validateSetCodeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"codeMode",
 		val,
 	)
 }
@@ -1145,6 +1180,14 @@ func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) ResetAllowCodeMode() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetAllowCodeMode",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) ResetCodeMode() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetCodeMode",
 		nil, // no parameters
 	)
 }

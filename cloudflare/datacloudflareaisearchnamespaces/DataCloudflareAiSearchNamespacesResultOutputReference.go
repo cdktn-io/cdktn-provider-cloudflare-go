@@ -35,6 +35,8 @@ type DataCloudflareAiSearchNamespacesResultOutputReference interface {
 	InternalValue() *DataCloudflareAiSearchNamespacesResult
 	SetInternalValue(val *DataCloudflareAiSearchNamespacesResult)
 	Name() *string
+	PublicEndpointId() *string
+	PublicEndpointParams() DataCloudflareAiSearchNamespacesResultPublicEndpointParamsOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +159,26 @@ func (j *jsiiProxy_DataCloudflareAiSearchNamespacesResultOutputReference) Name()
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchNamespacesResultOutputReference) PublicEndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicEndpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchNamespacesResultOutputReference) PublicEndpointParams() DataCloudflareAiSearchNamespacesResultPublicEndpointParamsOutputReference {
+	var returns DataCloudflareAiSearchNamespacesResultPublicEndpointParamsOutputReference
+	_jsii_.Get(
+		j,
+		"publicEndpointParams",
 		&returns,
 	)
 	return returns

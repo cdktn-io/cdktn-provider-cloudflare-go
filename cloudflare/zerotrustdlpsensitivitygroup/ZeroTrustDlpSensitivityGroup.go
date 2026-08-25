@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_sensitivity_group cloudflare_zero_trust_dlp_sensitivity_group}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_sensitivity_group cloudflare_zero_trust_dlp_sensitivity_group}.
 type ZeroTrustDlpSensitivityGroup interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -469,7 +469,7 @@ func (j *jsiiProxy_ZeroTrustDlpSensitivityGroup) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_sensitivity_group cloudflare_zero_trust_dlp_sensitivity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_sensitivity_group cloudflare_zero_trust_dlp_sensitivity_group} Resource.
 func NewZeroTrustDlpSensitivityGroup(scope constructs.Construct, id *string, config *ZeroTrustDlpSensitivityGroupConfig) ZeroTrustDlpSensitivityGroup {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewZeroTrustDlpSensitivityGroup(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_sensitivity_group cloudflare_zero_trust_dlp_sensitivity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_sensitivity_group cloudflare_zero_trust_dlp_sensitivity_group} Resource.
 func NewZeroTrustDlpSensitivityGroup_Override(z ZeroTrustDlpSensitivityGroup, scope constructs.Construct, id *string, config *ZeroTrustDlpSensitivityGroupConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
 type DataCloudflareBotnetFeedConfigAsn interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataCloudflareBotnetFeedConfigAsn) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn} Data Source.
 func NewDataCloudflareBotnetFeedConfigAsn(scope constructs.Construct, id *string, config *DataCloudflareBotnetFeedConfigAsnConfig) DataCloudflareBotnetFeedConfigAsn {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataCloudflareBotnetFeedConfigAsn(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn} Data Source.
 func NewDataCloudflareBotnetFeedConfigAsn_Override(d DataCloudflareBotnetFeedConfigAsn, scope constructs.Construct, id *string, config *DataCloudflareBotnetFeedConfigAsnConfig) {
 	_init_.Initialize()
 

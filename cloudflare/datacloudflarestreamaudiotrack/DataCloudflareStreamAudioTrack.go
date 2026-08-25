@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track}.
 type DataCloudflareStreamAudioTrack interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
 func NewDataCloudflareStreamAudioTrack(scope constructs.Construct, id *string, config *DataCloudflareStreamAudioTrackConfig) DataCloudflareStreamAudioTrack {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataCloudflareStreamAudioTrack(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
 func NewDataCloudflareStreamAudioTrack_Override(d DataCloudflareStreamAudioTrack, scope constructs.Construct, id *string, config *DataCloudflareStreamAudioTrackConfig) {
 	_init_.Initialize()
 

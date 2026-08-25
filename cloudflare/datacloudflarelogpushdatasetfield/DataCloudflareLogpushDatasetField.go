@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field}.
 type DataCloudflareLogpushDatasetField interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetField) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field} Data Source.
 func NewDataCloudflareLogpushDatasetField(scope constructs.Construct, id *string, config *DataCloudflareLogpushDatasetFieldConfig) DataCloudflareLogpushDatasetField {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataCloudflareLogpushDatasetField(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field} Data Source.
 func NewDataCloudflareLogpushDatasetField_Override(d DataCloudflareLogpushDatasetField, scope constructs.Construct, id *string, config *DataCloudflareLogpushDatasetFieldConfig) {
 	_init_.Initialize()
 

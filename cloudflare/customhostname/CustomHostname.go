@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
 type CustomHostname interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -552,7 +552,7 @@ func (j *jsiiProxy_CustomHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
 func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHostnameConfig) CustomHostname {
 	_init_.Initialize()
 
@@ -570,7 +570,7 @@ func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
 func NewCustomHostname_Override(c CustomHostname, scope constructs.Construct, id *string, config *CustomHostnameConfig) {
 	_init_.Initialize()
 

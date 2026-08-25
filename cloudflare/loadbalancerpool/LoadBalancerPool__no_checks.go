@@ -139,6 +139,10 @@ func (j *jsiiProxy_LoadBalancerPool) validateSetEnabledParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPool) validateSetHealthSourcesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPool) validateSetLatitudeParameters(val *float64) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/sso_connectors cloudflare_sso_connectors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/sso_connectors cloudflare_sso_connectors}.
 type DataCloudflareSsoConnectors interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareSsoConnectors) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source.
 func NewDataCloudflareSsoConnectors(scope constructs.Construct, id *string, config *DataCloudflareSsoConnectorsConfig) DataCloudflareSsoConnectors {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataCloudflareSsoConnectors(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source.
 func NewDataCloudflareSsoConnectors_Override(d DataCloudflareSsoConnectors, scope constructs.Construct, id *string, config *DataCloudflareSsoConnectorsConfig) {
 	_init_.Initialize()
 

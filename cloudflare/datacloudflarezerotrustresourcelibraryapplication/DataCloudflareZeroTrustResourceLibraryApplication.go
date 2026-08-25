@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
 type DataCloudflareZeroTrustResourceLibraryApplication interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -23,6 +23,7 @@ type DataCloudflareZeroTrustResourceLibraryApplication interface {
 	ApplicationSource() *string
 	ApplicationType() *string
 	ApplicationTypeDescription() *string
+	CategoryId() *float64
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -47,10 +48,9 @@ type DataCloudflareZeroTrustResourceLibraryApplication interface {
 	GenAiScore() *float64
 	Hostnames() *[]*string
 	HumanId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	IntelId() *float64
+	Id() *float64
+	SetId(val *float64)
+	IdInput() *float64
 	IpSubnets() *[]*string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -215,6 +215,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) Applicatio
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) CategoryId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"categoryId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) CdktfStack() cdktn.TerraformStack {
 	var returns cdktn.TerraformStack
 	_jsii_.Get(
@@ -325,8 +335,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) HumanId() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) Id() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) Id() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"id",
@@ -335,21 +345,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) Id() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) IntelId() *float64 {
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) IdInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"intelId",
+		"idInput",
 		&returns,
 	)
 	return returns
@@ -496,7 +496,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) Version() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplication(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationConfig) DataCloudflareZeroTrustResourceLibraryApplication {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewDataCloudflareZeroTrustResourceLibraryApplication(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplication_Override(d DataCloudflareZeroTrustResourceLibraryApplication, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationConfig) {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication)SetForEach(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication)SetId(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication)SetId(val *float64) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/pipeline_sink cloudflare_pipeline_sink}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/pipeline_sink cloudflare_pipeline_sink}.
 type PipelineSink interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -518,7 +518,7 @@ func (j *jsiiProxy_PipelineSink) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/pipeline_sink cloudflare_pipeline_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/pipeline_sink cloudflare_pipeline_sink} Resource.
 func NewPipelineSink(scope constructs.Construct, id *string, config *PipelineSinkConfig) PipelineSink {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewPipelineSink(scope constructs.Construct, id *string, config *PipelineSin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/pipeline_sink cloudflare_pipeline_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/pipeline_sink cloudflare_pipeline_sink} Resource.
 func NewPipelineSink_Override(p PipelineSink, scope constructs.Construct, id *string, config *PipelineSinkConfig) {
 	_init_.Initialize()
 

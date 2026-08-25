@@ -119,6 +119,10 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetDurationParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

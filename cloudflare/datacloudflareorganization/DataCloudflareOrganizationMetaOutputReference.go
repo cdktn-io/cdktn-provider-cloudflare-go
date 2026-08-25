@@ -28,13 +28,13 @@ type DataCloudflareOrganizationMetaOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Flags() DataCloudflareOrganizationMetaFlagsOutputReference
 	// Experimental.
 	Fqn() *string
 	HierarchyTags() *[]*string
 	InternalValue() *DataCloudflareOrganizationMeta
 	SetInternalValue(val *DataCloudflareOrganizationMeta)
 	ManagedBy() *string
+	TenantFlags() DataCloudflareOrganizationMetaTenantFlagsOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -112,16 +112,6 @@ func (j *jsiiProxy_DataCloudflareOrganizationMetaOutputReference) CreationStack(
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareOrganizationMetaOutputReference) Flags() DataCloudflareOrganizationMetaFlagsOutputReference {
-	var returns DataCloudflareOrganizationMetaFlagsOutputReference
-	_jsii_.Get(
-		j,
-		"flags",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareOrganizationMetaOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -157,6 +147,16 @@ func (j *jsiiProxy_DataCloudflareOrganizationMetaOutputReference) ManagedBy() *s
 	_jsii_.Get(
 		j,
 		"managedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationMetaOutputReference) TenantFlags() DataCloudflareOrganizationMetaTenantFlagsOutputReference {
+	var returns DataCloudflareOrganizationMetaTenantFlagsOutputReference
+	_jsii_.Get(
+		j,
+		"tenantFlags",
 		&returns,
 	)
 	return returns

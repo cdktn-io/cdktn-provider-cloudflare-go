@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/total_tls cloudflare_total_tls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/total_tls cloudflare_total_tls}.
 type TotalTls interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_TotalTls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/total_tls cloudflare_total_tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/total_tls cloudflare_total_tls} Resource.
 func NewTotalTls(scope constructs.Construct, id *string, config *TotalTlsConfig) TotalTls {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewTotalTls(scope constructs.Construct, id *string, config *TotalTlsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/total_tls cloudflare_total_tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/total_tls cloudflare_total_tls} Resource.
 func NewTotalTls_Override(t TotalTls, scope constructs.Construct, id *string, config *TotalTlsConfig) {
 	_init_.Initialize()
 

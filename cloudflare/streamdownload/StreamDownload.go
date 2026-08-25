@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/stream_download cloudflare_stream_download}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_download cloudflare_stream_download}.
 type StreamDownload interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -412,7 +412,7 @@ func (j *jsiiProxy_StreamDownload) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/stream_download cloudflare_stream_download} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_download cloudflare_stream_download} Resource.
 func NewStreamDownload(scope constructs.Construct, id *string, config *StreamDownloadConfig) StreamDownload {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewStreamDownload(scope constructs.Construct, id *string, config *StreamDow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/stream_download cloudflare_stream_download} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_download cloudflare_stream_download} Resource.
 func NewStreamDownload_Override(s StreamDownload, scope constructs.Construct, id *string, config *StreamDownloadConfig) {
 	_init_.Initialize()
 

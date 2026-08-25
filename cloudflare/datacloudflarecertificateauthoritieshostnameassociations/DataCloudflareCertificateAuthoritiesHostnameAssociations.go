@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations}.
 type DataCloudflareCertificateAuthoritiesHostnameAssociations interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataCloudflareCertificateAuthoritiesHostnameAssociations) Zon
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations} Data Source.
 func NewDataCloudflareCertificateAuthoritiesHostnameAssociations(scope constructs.Construct, id *string, config *DataCloudflareCertificateAuthoritiesHostnameAssociationsConfig) DataCloudflareCertificateAuthoritiesHostnameAssociations {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataCloudflareCertificateAuthoritiesHostnameAssociations(scope construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations} Data Source.
 func NewDataCloudflareCertificateAuthoritiesHostnameAssociations_Override(d DataCloudflareCertificateAuthoritiesHostnameAssociations, scope constructs.Construct, id *string, config *DataCloudflareCertificateAuthoritiesHostnameAssociationsConfig) {
 	_init_.Initialize()
 

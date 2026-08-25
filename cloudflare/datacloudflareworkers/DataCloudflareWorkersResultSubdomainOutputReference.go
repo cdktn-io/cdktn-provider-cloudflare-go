@@ -34,6 +34,7 @@ type DataCloudflareWorkersResultSubdomainOutputReference interface {
 	InternalValue() *DataCloudflareWorkersResultSubdomain
 	SetInternalValue(val *DataCloudflareWorkersResultSubdomain)
 	PreviewsEnabled() cdktn.IResolvable
+	PreviewUrlSuffix() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,6 +43,7 @@ type DataCloudflareWorkersResultSubdomainOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	Url() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -151,6 +153,16 @@ func (j *jsiiProxy_DataCloudflareWorkersResultSubdomainOutputReference) Previews
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersResultSubdomainOutputReference) PreviewUrlSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"previewUrlSuffix",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersResultSubdomainOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -166,6 +178,16 @@ func (j *jsiiProxy_DataCloudflareWorkersResultSubdomainOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersResultSubdomainOutputReference) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
 		&returns,
 	)
 	return returns

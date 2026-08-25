@@ -155,6 +155,10 @@ func (j *jsiiProxy_AiGateway) validateSetLifecycleParameters(val *cdktn.Terrafor
 	return nil
 }
 
+func (j *jsiiProxy_AiGateway) validateSetLogClassificationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiGateway) validateSetLogManagementParameters(val *float64) error {
 	return nil
 }

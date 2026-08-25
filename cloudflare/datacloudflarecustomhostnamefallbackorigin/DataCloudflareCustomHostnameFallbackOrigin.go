@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
 type DataCloudflareCustomHostnameFallbackOrigin interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareCustomHostnameFallbackOrigin) ZoneIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Data Source.
 func NewDataCloudflareCustomHostnameFallbackOrigin(scope constructs.Construct, id *string, config *DataCloudflareCustomHostnameFallbackOriginConfig) DataCloudflareCustomHostnameFallbackOrigin {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDataCloudflareCustomHostnameFallbackOrigin(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Data Source.
 func NewDataCloudflareCustomHostnameFallbackOrigin_Override(d DataCloudflareCustomHostnameFallbackOrigin, scope constructs.Construct, id *string, config *DataCloudflareCustomHostnameFallbackOriginConfig) {
 	_init_.Initialize()
 

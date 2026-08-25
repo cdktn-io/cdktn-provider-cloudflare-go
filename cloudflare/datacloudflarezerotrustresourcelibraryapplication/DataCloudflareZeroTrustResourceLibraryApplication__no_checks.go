@@ -83,7 +83,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) validateSetIdParameters(val *float64) error {
 	return nil
 }
 

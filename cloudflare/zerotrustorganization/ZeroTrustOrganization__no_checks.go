@@ -183,6 +183,10 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetUserSeatExpirationInactiveT
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetWarpAuthNonBrowser401Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) validateSetWarpAuthSessionDurationParameters(val *string) error {
 	return nil
 }

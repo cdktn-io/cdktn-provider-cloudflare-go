@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry}.
 type ZeroTrustDlpIntegrationEntry interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -37,6 +37,7 @@ type ZeroTrustDlpIntegrationEntry interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Deprecated() cdktn.IResolvable
 	Description() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
@@ -305,6 +306,16 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) Deprecated() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"deprecated",
 		&returns,
 	)
 	return returns
@@ -591,7 +602,7 @@ func (j *jsiiProxy_ZeroTrustDlpIntegrationEntry) WordList() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
 func NewZeroTrustDlpIntegrationEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpIntegrationEntryConfig) ZeroTrustDlpIntegrationEntry {
 	_init_.Initialize()
 
@@ -609,7 +620,7 @@ func NewZeroTrustDlpIntegrationEntry(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_integration_entry cloudflare_zero_trust_dlp_integration_entry} Resource.
 func NewZeroTrustDlpIntegrationEntry_Override(z ZeroTrustDlpIntegrationEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpIntegrationEntryConfig) {
 	_init_.Initialize()
 

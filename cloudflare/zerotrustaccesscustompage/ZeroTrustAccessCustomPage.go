@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 type ZeroTrustAccessCustomPage interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -26,6 +26,9 @@ type ZeroTrustAccessCustomPage interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContractVersion() *float64
+	SetContractVersion(val *float64)
+	ContractVersionInput() *float64
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -75,6 +78,7 @@ type ZeroTrustAccessCustomPage interface {
 	SetType(val *string)
 	TypeInput() *string
 	Uid() *string
+	Warnings() ZeroTrustAccessCustomPageWarningsList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -167,6 +171,7 @@ type ZeroTrustAccessCustomPage interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetContractVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -242,6 +247,26 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) ConstructNodeMetadata() *map[strin
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessCustomPage) ContractVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"contractVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessCustomPage) ContractVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"contractVersionInput",
 		&returns,
 	)
 	return returns
@@ -457,8 +482,18 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessCustomPage) Warnings() ZeroTrustAccessCustomPageWarningsList {
+	var returns ZeroTrustAccessCustomPageWarningsList
+	_jsii_.Get(
+		j,
+		"warnings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
 func NewZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config *ZeroTrustAccessCustomPageConfig) ZeroTrustAccessCustomPage {
 	_init_.Initialize()
 
@@ -476,7 +511,7 @@ func NewZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
 func NewZeroTrustAccessCustomPage_Override(z ZeroTrustAccessCustomPage, scope constructs.Construct, id *string, config *ZeroTrustAccessCustomPageConfig) {
 	_init_.Initialize()
 
@@ -505,6 +540,17 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetContractVersion(val *float64) {
+	if err := j.validateSetContractVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contractVersion",
 		val,
 	)
 }
@@ -976,6 +1022,14 @@ func (z *jsiiProxy_ZeroTrustAccessCustomPage) RegisterProviderFeatureUsage(featu
 		z,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessCustomPage) ResetContractVersion() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetContractVersion",
+		nil, // no parameters
 	)
 }
 

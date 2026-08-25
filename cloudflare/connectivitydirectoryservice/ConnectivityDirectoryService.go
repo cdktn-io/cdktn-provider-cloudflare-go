@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}.
 type ConnectivityDirectoryService interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -600,7 +600,7 @@ func (j *jsiiProxy_ConnectivityDirectoryService) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
 func NewConnectivityDirectoryService(scope constructs.Construct, id *string, config *ConnectivityDirectoryServiceConfig) ConnectivityDirectoryService {
 	_init_.Initialize()
 
@@ -618,7 +618,7 @@ func NewConnectivityDirectoryService(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource.
 func NewConnectivityDirectoryService_Override(c ConnectivityDirectoryService, scope constructs.Construct, id *string, config *ConnectivityDirectoryServiceConfig) {
 	_init_.Initialize()
 

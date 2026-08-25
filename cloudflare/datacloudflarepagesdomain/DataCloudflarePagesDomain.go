@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/pages_domain cloudflare_pages_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/pages_domain cloudflare_pages_domain}.
 type DataCloudflarePagesDomain interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DataCloudflarePagesDomain) ZoneTag() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/pages_domain cloudflare_pages_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/pages_domain cloudflare_pages_domain} Data Source.
 func NewDataCloudflarePagesDomain(scope constructs.Construct, id *string, config *DataCloudflarePagesDomainConfig) DataCloudflarePagesDomain {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewDataCloudflarePagesDomain(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/pages_domain cloudflare_pages_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/pages_domain cloudflare_pages_domain} Data Source.
 func NewDataCloudflarePagesDomain_Override(d DataCloudflarePagesDomain, scope constructs.Construct, id *string, config *DataCloudflarePagesDomainConfig) {
 	_init_.Initialize()
 

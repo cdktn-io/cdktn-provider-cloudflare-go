@@ -79,6 +79,10 @@ func (a *jsiiProxy_AiSearchNamespace) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (a *jsiiProxy_AiSearchNamespace) validatePutPublicEndpointParamsParameters(value *AiSearchNamespacePublicEndpointParams) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiSearchNamespace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

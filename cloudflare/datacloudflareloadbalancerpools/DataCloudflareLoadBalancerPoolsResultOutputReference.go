@@ -35,6 +35,7 @@ type DataCloudflareLoadBalancerPoolsResultOutputReference interface {
 	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
+	HealthSources() *[]*string
 	Id() *string
 	InternalValue() *DataCloudflareLoadBalancerPoolsResult
 	SetInternalValue(val *DataCloudflareLoadBalancerPoolsResult)
@@ -183,6 +184,16 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsResultOutputReference) Fqn() *
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsResultOutputReference) HealthSources() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"healthSources",
 		&returns,
 	)
 	return returns

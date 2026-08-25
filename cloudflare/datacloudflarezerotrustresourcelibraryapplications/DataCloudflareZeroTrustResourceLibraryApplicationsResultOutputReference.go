@@ -18,6 +18,7 @@ type DataCloudflareZeroTrustResourceLibraryApplicationsResultOutputReference int
 	ApplicationSource() *string
 	ApplicationType() *string
 	ApplicationTypeDescription() *string
+	CategoryId() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,8 +40,7 @@ type DataCloudflareZeroTrustResourceLibraryApplicationsResultOutputReference int
 	GenAiScore() *float64
 	Hostnames() *[]*string
 	HumanId() *string
-	Id() *string
-	IntelId() *float64
+	Id() *float64
 	InternalValue() *DataCloudflareZeroTrustResourceLibraryApplicationsResult
 	SetInternalValue(val *DataCloudflareZeroTrustResourceLibraryApplicationsResult)
 	IpSubnets() *[]*string
@@ -147,6 +147,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationsResultOutpu
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationsResultOutputReference) CategoryId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"categoryId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationsResultOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -227,21 +237,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationsResultOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationsResultOutputReference) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationsResultOutputReference) IntelId() *float64 {
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationsResultOutputReference) Id() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"intelId",
+		"id",
 		&returns,
 	)
 	return returns

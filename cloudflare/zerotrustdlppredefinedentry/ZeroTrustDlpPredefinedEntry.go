@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
 type ZeroTrustDlpPredefinedEntry interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -37,6 +37,7 @@ type ZeroTrustDlpPredefinedEntry interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Deprecated() cdktn.IResolvable
 	Description() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
@@ -305,6 +306,16 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) Deprecated() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"deprecated",
 		&returns,
 	)
 	return returns
@@ -591,7 +602,7 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) WordList() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Resource.
 func NewZeroTrustDlpPredefinedEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedEntryConfig) ZeroTrustDlpPredefinedEntry {
 	_init_.Initialize()
 
@@ -609,7 +620,7 @@ func NewZeroTrustDlpPredefinedEntry(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Resource.
 func NewZeroTrustDlpPredefinedEntry_Override(z ZeroTrustDlpPredefinedEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedEntryConfig) {
 	_init_.Initialize()
 

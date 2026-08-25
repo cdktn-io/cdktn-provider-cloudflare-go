@@ -24,11 +24,11 @@ type DataCloudflareMoqRelaysConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Cloudflare account identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#account_id DataCloudflareMoqRelays#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#account_id DataCloudflareMoqRelays#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Sort order by `created`. When true, results are returned oldest-first (ascending); otherwise newest-first (descending, the default).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#asc DataCloudflareMoqRelays#asc}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#asc DataCloudflareMoqRelays#asc}
 	Asc interface{} `field:"optional" json:"asc" yaml:"asc"`
 	// Cursor for pagination.
 	//
@@ -36,7 +36,7 @@ type DataCloudflareMoqRelaysConfig struct {
 	// RFC 3339 timestamp (typically the `created` value of the last item
 	// on the current page, to fetch the next page).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#created_after DataCloudflareMoqRelays#created_after}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#created_after DataCloudflareMoqRelays#created_after}
 	CreatedAfter *string `field:"optional" json:"createdAfter" yaml:"createdAfter"`
 	// Cursor for pagination.
 	//
@@ -44,15 +44,15 @@ type DataCloudflareMoqRelaysConfig struct {
 	// RFC 3339 timestamp (typically the `created` value of the first item
 	// on the current page, to fetch the previous page).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#created_before DataCloudflareMoqRelays#created_before}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#created_before DataCloudflareMoqRelays#created_before}
 	CreatedBefore *string `field:"optional" json:"createdBefore" yaml:"createdBefore"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#max_items DataCloudflareMoqRelays#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#max_items DataCloudflareMoqRelays#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
-	// Maximum number of relays to return per page.
+	// Maximum number of relays to return per page. Values above the maximum are clamped to it rather than rejected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relays#per_page DataCloudflareMoqRelays#per_page}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relays#per_page DataCloudflareMoqRelays#per_page}
 	PerPage *float64 `field:"optional" json:"perPage" yaml:"perPage"`
 }
 

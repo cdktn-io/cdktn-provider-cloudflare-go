@@ -5,7 +5,7 @@ package workflow
 
 
 type WorkflowSchedules struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/workflow#cron Workflow#cron}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow#cron Workflow#cron}.
 	Cron *string `field:"required" json:"cron" yaml:"cron"`
 }
 

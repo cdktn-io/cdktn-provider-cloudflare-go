@@ -21,6 +21,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "authConfigSummary", GoGetter: "AuthConfigSummary"},
 			_jsii_.MemberProperty{JsiiProperty: "authCredentials", GoGetter: "AuthCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "authCredentialsInput", GoGetter: "AuthCredentialsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationStatus", GoGetter: "AuthenticationStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
 			_jsii_.MemberProperty{JsiiProperty: "authTypeInput", GoGetter: "AuthTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

@@ -41,6 +41,7 @@ type DataCloudflareAiGatewaysResultOutputReference interface {
 	InternalValue() *DataCloudflareAiGatewaysResult
 	SetInternalValue(val *DataCloudflareAiGatewaysResult)
 	IsDefault() cdktn.IResolvable
+	LogClassification() cdktn.IResolvable
 	LogManagement() *float64
 	LogManagementStrategy() *string
 	Logpush() cdktn.IResolvable
@@ -240,6 +241,16 @@ func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) IsDefault() cd
 	_jsii_.Get(
 		j,
 		"isDefault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) LogClassification() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"logClassification",
 		&returns,
 	)
 	return returns

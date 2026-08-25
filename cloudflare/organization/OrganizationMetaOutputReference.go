@@ -28,13 +28,13 @@ type OrganizationMetaOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Flags() OrganizationMetaFlagsOutputReference
 	// Experimental.
 	Fqn() *string
 	HierarchyTags() *[]*string
 	InternalValue() *OrganizationMeta
 	SetInternalValue(val *OrganizationMeta)
 	ManagedBy() *string
+	TenantFlags() OrganizationMetaTenantFlagsOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -112,16 +112,6 @@ func (j *jsiiProxy_OrganizationMetaOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationMetaOutputReference) Flags() OrganizationMetaFlagsOutputReference {
-	var returns OrganizationMetaFlagsOutputReference
-	_jsii_.Get(
-		j,
-		"flags",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_OrganizationMetaOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -157,6 +147,16 @@ func (j *jsiiProxy_OrganizationMetaOutputReference) ManagedBy() *string {
 	_jsii_.Get(
 		j,
 		"managedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationMetaOutputReference) TenantFlags() OrganizationMetaTenantFlagsOutputReference {
+	var returns OrganizationMetaTenantFlagsOutputReference
+	_jsii_.Get(
+		j,
+		"tenantFlags",
 		&returns,
 	)
 	return returns

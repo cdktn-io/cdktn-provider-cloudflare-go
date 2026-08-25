@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
 type DataCloudflareAccountTokens interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataCloudflareAccountTokens) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens cloudflare_account_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/account_tokens cloudflare_account_tokens} Data Source.
 func NewDataCloudflareAccountTokens(scope constructs.Construct, id *string, config *DataCloudflareAccountTokensConfig) DataCloudflareAccountTokens {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataCloudflareAccountTokens(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_tokens cloudflare_account_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/account_tokens cloudflare_account_tokens} Data Source.
 func NewDataCloudflareAccountTokens_Override(d DataCloudflareAccountTokens, scope constructs.Construct, id *string, config *DataCloudflareAccountTokensConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates}.
 type DataCloudflareAuthenticatedOriginPullsCertificates interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsCertificates) ZoneIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsCertificates(scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsCertificatesConfig) DataCloudflareAuthenticatedOriginPullsCertificates {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataCloudflareAuthenticatedOriginPullsCertificates(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/authenticated_origin_pulls_certificates cloudflare_authenticated_origin_pulls_certificates} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsCertificates_Override(d DataCloudflareAuthenticatedOriginPullsCertificates, scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsCertificatesConfig) {
 	_init_.Initialize()
 

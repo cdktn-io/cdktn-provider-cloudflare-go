@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/share_resources cloudflare_share_resources}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/share_resources cloudflare_share_resources}.
 type DataCloudflareShareResourcesA interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -392,7 +392,7 @@ func (j *jsiiProxy_DataCloudflareShareResourcesA) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/share_resources cloudflare_share_resources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/share_resources cloudflare_share_resources} Data Source.
 func NewDataCloudflareShareResourcesA(scope constructs.Construct, id *string, config *DataCloudflareShareResourcesAConfig) DataCloudflareShareResourcesA {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewDataCloudflareShareResourcesA(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/share_resources cloudflare_share_resources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/share_resources cloudflare_share_resources} Data Source.
 func NewDataCloudflareShareResourcesA_Override(d DataCloudflareShareResourcesA, scope constructs.Construct, id *string, config *DataCloudflareShareResourcesAConfig) {
 	_init_.Initialize()
 

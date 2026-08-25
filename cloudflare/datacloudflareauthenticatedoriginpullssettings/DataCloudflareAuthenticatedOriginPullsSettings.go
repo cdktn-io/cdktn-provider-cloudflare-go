@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings}.
 type DataCloudflareAuthenticatedOriginPullsSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPullsSettings) ZoneIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsSettings(scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsSettingsConfig) DataCloudflareAuthenticatedOriginPullsSettings {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDataCloudflareAuthenticatedOriginPullsSettings(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/authenticated_origin_pulls_settings cloudflare_authenticated_origin_pulls_settings} Data Source.
 func NewDataCloudflareAuthenticatedOriginPullsSettings_Override(d DataCloudflareAuthenticatedOriginPullsSettings, scope constructs.Construct, id *string, config *DataCloudflareAuthenticatedOriginPullsSettingsConfig) {
 	_init_.Initialize()
 

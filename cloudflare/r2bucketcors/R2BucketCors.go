@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors}.
 type R2BucketCors interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_R2BucketCors) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource.
 func NewR2BucketCors(scope constructs.Construct, id *string, config *R2BucketCorsConfig) R2BucketCors {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewR2BucketCors(scope constructs.Construct, id *string, config *R2BucketCor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/r2_bucket_cors cloudflare_r2_bucket_cors} Resource.
 func NewR2BucketCors_Override(r R2BucketCors, scope constructs.Construct, id *string, config *R2BucketCorsConfig) {
 	_init_.Initialize()
 

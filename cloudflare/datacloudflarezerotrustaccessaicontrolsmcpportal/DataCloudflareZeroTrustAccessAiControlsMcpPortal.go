@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal}.
 type DataCloudflareZeroTrustAccessAiControlsMcpPortal interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -21,6 +21,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortal interface {
 	AllowCodeMode() cdktn.IResolvable
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CodeMode() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -179,6 +180,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortal) CdktfStack(
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortal) CodeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"codeMode",
 		&returns,
 	)
 	return returns
@@ -445,7 +456,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortal) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
 func NewDataCloudflareZeroTrustAccessAiControlsMcpPortal(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessAiControlsMcpPortalConfig) DataCloudflareZeroTrustAccessAiControlsMcpPortal {
 	_init_.Initialize()
 
@@ -463,7 +474,7 @@ func NewDataCloudflareZeroTrustAccessAiControlsMcpPortal(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_access_ai_controls_mcp_portal cloudflare_zero_trust_access_ai_controls_mcp_portal} Data Source.
 func NewDataCloudflareZeroTrustAccessAiControlsMcpPortal_Override(d DataCloudflareZeroTrustAccessAiControlsMcpPortal, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessAiControlsMcpPortalConfig) {
 	_init_.Initialize()
 

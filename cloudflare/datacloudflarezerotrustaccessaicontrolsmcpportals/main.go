@@ -100,6 +100,7 @@ func init() {
 		reflect.TypeOf((*DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCodeMode", GoGetter: "AllowCodeMode"},
+			_jsii_.MemberProperty{JsiiProperty: "codeMode", GoGetter: "CodeMode"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -331,6 +332,7 @@ func init() {
 		reflect.TypeOf((*DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authConfigSummary", GoGetter: "AuthConfigSummary"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationStatus", GoGetter: "AuthenticationStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

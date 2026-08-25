@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 type DataCloudflareHostnameTlsSetting interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -37,7 +37,8 @@ type DataCloudflareHostnameTlsSetting interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Hostname() *string
-	Id() *string
+	SetHostname(val *string)
+	HostnameInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -225,11 +226,11 @@ func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) Hostname() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) Id() *string {
+func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) HostnameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"id",
+		"hostnameInput",
 		&returns,
 	)
 	return returns
@@ -376,7 +377,7 @@ func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source.
 func NewDataCloudflareHostnameTlsSetting(scope constructs.Construct, id *string, config *DataCloudflareHostnameTlsSettingConfig) DataCloudflareHostnameTlsSetting {
 	_init_.Initialize()
 
@@ -394,7 +395,7 @@ func NewDataCloudflareHostnameTlsSetting(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_setting cloudflare_hostname_tls_setting} Data Source.
 func NewDataCloudflareHostnameTlsSetting_Override(d DataCloudflareHostnameTlsSetting, scope constructs.Construct, id *string, config *DataCloudflareHostnameTlsSettingConfig) {
 	_init_.Initialize()
 
@@ -428,6 +429,17 @@ func (j *jsiiProxy_DataCloudflareHostnameTlsSetting)SetForEach(val cdktn.ITerraf
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareHostnameTlsSetting)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostname",
 		val,
 	)
 }

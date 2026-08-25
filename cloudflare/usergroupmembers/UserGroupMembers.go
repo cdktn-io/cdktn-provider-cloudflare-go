@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/user_group_members cloudflare_user_group_members}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/user_group_members cloudflare_user_group_members}.
 type UserGroupMembers interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_UserGroupMembers) UserGroupIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/user_group_members cloudflare_user_group_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/user_group_members cloudflare_user_group_members} Resource.
 func NewUserGroupMembers(scope constructs.Construct, id *string, config *UserGroupMembersConfig) UserGroupMembers {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewUserGroupMembers(scope constructs.Construct, id *string, config *UserGro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/user_group_members cloudflare_user_group_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/user_group_members cloudflare_user_group_members} Resource.
 func NewUserGroupMembers_Override(u UserGroupMembers, scope constructs.Construct, id *string, config *UserGroupMembersConfig) {
 	_init_.Initialize()
 

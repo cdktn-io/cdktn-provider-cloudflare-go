@@ -28,6 +28,8 @@ type AiSearchInstanceSourceParamsWebCrawlerOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DiscoverOptions() AiSearchInstanceSourceParamsWebCrawlerDiscoverOptionsOutputReference
+	DiscoverOptionsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -71,8 +73,10 @@ type AiSearchInstanceSourceParamsWebCrawlerOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutDiscoverOptions(value *AiSearchInstanceSourceParamsWebCrawlerDiscoverOptions)
 	PutParseOptions(value *AiSearchInstanceSourceParamsWebCrawlerParseOptions)
 	PutStoreOptions(value *AiSearchInstanceSourceParamsWebCrawlerStoreOptions)
+	ResetDiscoverOptions()
 	ResetParseOptions()
 	ResetParseType()
 	ResetStoreOptions()
@@ -116,6 +120,26 @@ func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) DiscoverOptions() AiSearchInstanceSourceParamsWebCrawlerDiscoverOptionsOutputReference {
+	var returns AiSearchInstanceSourceParamsWebCrawlerDiscoverOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"discoverOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) DiscoverOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"discoverOptionsInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) Interp
 	return returns
 }
 
+func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) PutDiscoverOptions(value *AiSearchInstanceSourceParamsWebCrawlerDiscoverOptions) {
+	if err := a.validatePutDiscoverOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDiscoverOptions",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) PutParseOptions(value *AiSearchInstanceSourceParamsWebCrawlerParseOptions) {
 	if err := a.validatePutParseOptionsParameters(value); err != nil {
 		panic(err)
@@ -520,6 +555,14 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) PutSto
 		a,
 		"putStoreOptions",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) ResetDiscoverOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDiscoverOptions",
+		nil, // no parameters
 	)
 }
 

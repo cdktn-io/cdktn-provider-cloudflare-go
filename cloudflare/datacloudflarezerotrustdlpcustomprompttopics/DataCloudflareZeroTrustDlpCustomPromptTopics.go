@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_dlp_custom_prompt_topics cloudflare_zero_trust_dlp_custom_prompt_topics}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_dlp_custom_prompt_topics cloudflare_zero_trust_dlp_custom_prompt_topics}.
 type DataCloudflareZeroTrustDlpCustomPromptTopics interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomPromptTopics) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_dlp_custom_prompt_topics cloudflare_zero_trust_dlp_custom_prompt_topics} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_dlp_custom_prompt_topics cloudflare_zero_trust_dlp_custom_prompt_topics} Data Source.
 func NewDataCloudflareZeroTrustDlpCustomPromptTopics(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpCustomPromptTopicsConfig) DataCloudflareZeroTrustDlpCustomPromptTopics {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataCloudflareZeroTrustDlpCustomPromptTopics(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_dlp_custom_prompt_topics cloudflare_zero_trust_dlp_custom_prompt_topics} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_dlp_custom_prompt_topics cloudflare_zero_trust_dlp_custom_prompt_topics} Data Source.
 func NewDataCloudflareZeroTrustDlpCustomPromptTopics_Override(d DataCloudflareZeroTrustDlpCustomPromptTopics, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpCustomPromptTopicsConfig) {
 	_init_.Initialize()
 

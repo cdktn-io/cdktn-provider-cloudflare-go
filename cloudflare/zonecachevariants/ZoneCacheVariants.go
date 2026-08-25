@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}.
 type ZoneCacheVariants interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_ZoneCacheVariants) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
 func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCacheVariantsConfig) ZoneCacheVariants {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
 func NewZoneCacheVariants_Override(z ZoneCacheVariants, scope constructs.Construct, id *string, config *ZoneCacheVariantsConfig) {
 	_init_.Initialize()
 

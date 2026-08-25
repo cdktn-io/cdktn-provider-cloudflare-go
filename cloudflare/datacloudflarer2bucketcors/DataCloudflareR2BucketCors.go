@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors}.
 type DataCloudflareR2BucketCors interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketCors) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
 func NewDataCloudflareR2BucketCors(scope constructs.Construct, id *string, config *DataCloudflareR2BucketCorsConfig) DataCloudflareR2BucketCors {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataCloudflareR2BucketCors(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/r2_bucket_cors cloudflare_r2_bucket_cors} Data Source.
 func NewDataCloudflareR2BucketCors_Override(d DataCloudflareR2BucketCors, scope constructs.Construct, id *string, config *DataCloudflareR2BucketCorsConfig) {
 	_init_.Initialize()
 

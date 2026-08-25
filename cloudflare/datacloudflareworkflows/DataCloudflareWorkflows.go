@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workflows cloudflare_workflows}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows cloudflare_workflows}.
 type DataCloudflareWorkflows interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareWorkflows) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workflows cloudflare_workflows} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows cloudflare_workflows} Data Source.
 func NewDataCloudflareWorkflows(scope constructs.Construct, id *string, config *DataCloudflareWorkflowsConfig) DataCloudflareWorkflows {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataCloudflareWorkflows(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/workflows cloudflare_workflows} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/workflows cloudflare_workflows} Data Source.
 func NewDataCloudflareWorkflows_Override(d DataCloudflareWorkflows, scope constructs.Construct, id *string, config *DataCloudflareWorkflowsConfig) {
 	_init_.Initialize()
 

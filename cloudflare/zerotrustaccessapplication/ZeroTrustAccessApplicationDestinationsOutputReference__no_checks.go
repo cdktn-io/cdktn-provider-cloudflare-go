@@ -103,6 +103,10 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetWorkerIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewZeroTrustAccessApplicationDestinationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

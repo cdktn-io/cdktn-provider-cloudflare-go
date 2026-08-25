@@ -194,6 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "vnetId", GoGetter: "VnetId"},
+			_jsii_.MemberProperty{JsiiProperty: "workerId", GoGetter: "WorkerId"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference{}

@@ -50,6 +50,7 @@ type DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference 
 	Type() *string
 	Uri() *string
 	VnetId() *string
+	WorkerId() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -245,6 +246,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOu
 	_jsii_.Get(
 		j,
 		"vnetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultDestinationsOutputReference) WorkerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerId",
 		&returns,
 	)
 	return returns

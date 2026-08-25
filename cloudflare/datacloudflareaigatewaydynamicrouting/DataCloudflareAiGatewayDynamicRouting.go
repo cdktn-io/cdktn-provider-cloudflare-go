@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing}.
 type DataCloudflareAiGatewayDynamicRouting interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataCloudflareAiGatewayDynamicRouting) Version() DataCloudfla
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Data Source.
 func NewDataCloudflareAiGatewayDynamicRouting(scope constructs.Construct, id *string, config *DataCloudflareAiGatewayDynamicRoutingConfig) DataCloudflareAiGatewayDynamicRouting {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDataCloudflareAiGatewayDynamicRouting(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Data Source.
 func NewDataCloudflareAiGatewayDynamicRouting_Override(d DataCloudflareAiGatewayDynamicRouting, scope constructs.Construct, id *string, config *DataCloudflareAiGatewayDynamicRoutingConfig) {
 	_init_.Initialize()
 

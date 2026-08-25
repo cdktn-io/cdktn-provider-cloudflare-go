@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 type ArgoTieredCaching interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_ArgoTieredCaching) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
 func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTieredCachingConfig) ArgoTieredCaching {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
 func NewArgoTieredCaching_Override(a ArgoTieredCaching, scope constructs.Construct, id *string, config *ArgoTieredCachingConfig) {
 	_init_.Initialize()
 

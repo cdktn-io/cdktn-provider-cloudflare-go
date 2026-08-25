@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile}.
 type ZeroTrustDeviceIpProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -540,7 +540,7 @@ func (j *jsiiProxy_ZeroTrustDeviceIpProfile) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
 func NewZeroTrustDeviceIpProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceIpProfileConfig) ZeroTrustDeviceIpProfile {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewZeroTrustDeviceIpProfile(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
 func NewZeroTrustDeviceIpProfile_Override(z ZeroTrustDeviceIpProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceIpProfileConfig) {
 	_init_.Initialize()
 

@@ -133,7 +133,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "isPendingReconnect", GoGetter: "IsPendingReconnect"},
 			_jsii_.MemberProperty{JsiiProperty: "openedAt", GoGetter: "OpenedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "originIp", GoGetter: "OriginIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

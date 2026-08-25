@@ -7,7 +7,7 @@ package zerotrusttunnelwarpconnectorconfig
 type ZeroTrustTunnelWarpConnectorConfigConfigVipsPrevious struct {
 	// Virtual IP address (IPv4 or IPv6).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_tunnel_warp_connector_config#address ZeroTrustTunnelWarpConnectorConfigA#address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_tunnel_warp_connector_config#address ZeroTrustTunnelWarpConnectorConfigA#address}
 	Address *string `field:"required" json:"address" yaml:"address"`
 }
 

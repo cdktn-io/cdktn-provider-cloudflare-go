@@ -36,7 +36,6 @@ type ZeroTrustTunnelWarpConnectorConnectionsOutputReference interface {
 	Id() *string
 	InternalValue() *ZeroTrustTunnelWarpConnectorConnections
 	SetInternalValue(val *ZeroTrustTunnelWarpConnectorConnections)
-	IsPendingReconnect() cdktn.IResolvable
 	OpenedAt() *string
 	OriginIp() *string
 	// Experimental.
@@ -172,16 +171,6 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnectorConnectionsOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelWarpConnectorConnectionsOutputReference) IsPendingReconnect() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"isPendingReconnect",
 		&returns,
 	)
 	return returns

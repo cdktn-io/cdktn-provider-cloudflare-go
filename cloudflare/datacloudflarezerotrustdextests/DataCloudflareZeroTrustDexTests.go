@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests}.
 type DataCloudflareZeroTrustDexTests interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDexTests) TestNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
 func NewDataCloudflareZeroTrustDexTests(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDexTestsConfig) DataCloudflareZeroTrustDexTests {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataCloudflareZeroTrustDexTests(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_dex_tests cloudflare_zero_trust_dex_tests} Data Source.
 func NewDataCloudflareZeroTrustDexTests_Override(d DataCloudflareZeroTrustDexTests, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDexTestsConfig) {
 	_init_.Initialize()
 

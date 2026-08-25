@@ -14,6 +14,7 @@ import (
 type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersOutputReference interface {
 	cdktn.ComplexObject
 	AuthConfigSummary() DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersAuthConfigSummaryOutputReference
+	AuthenticationStatus() *string
 	AuthType() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -108,6 +109,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServer
 	_jsii_.Get(
 		j,
 		"authConfigSummary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultServersOutputReference) AuthenticationStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationStatus",
 		&returns,
 	)
 	return returns

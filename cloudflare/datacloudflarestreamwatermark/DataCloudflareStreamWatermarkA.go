@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/stream_watermark cloudflare_stream_watermark}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/stream_watermark cloudflare_stream_watermark}.
 type DataCloudflareStreamWatermarkA interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataCloudflareStreamWatermarkA) Width() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/stream_watermark cloudflare_stream_watermark} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/stream_watermark cloudflare_stream_watermark} Data Source.
 func NewDataCloudflareStreamWatermarkA(scope constructs.Construct, id *string, config *DataCloudflareStreamWatermarkAConfig) DataCloudflareStreamWatermarkA {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewDataCloudflareStreamWatermarkA(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/stream_watermark cloudflare_stream_watermark} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/stream_watermark cloudflare_stream_watermark} Data Source.
 func NewDataCloudflareStreamWatermarkA_Override(d DataCloudflareStreamWatermarkA, scope constructs.Construct, id *string, config *DataCloudflareStreamWatermarkAConfig) {
 	_init_.Initialize()
 

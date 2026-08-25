@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps}.
 type DataCloudflareCallsTurnApps interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareCallsTurnApps) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps} Data Source.
 func NewDataCloudflareCallsTurnApps(scope constructs.Construct, id *string, config *DataCloudflareCallsTurnAppsConfig) DataCloudflareCallsTurnApps {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataCloudflareCallsTurnApps(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/calls_turn_apps cloudflare_calls_turn_apps} Data Source.
 func NewDataCloudflareCallsTurnApps_Override(d DataCloudflareCallsTurnApps, scope constructs.Construct, id *string, config *DataCloudflareCallsTurnAppsConfig) {
 	_init_.Initialize()
 

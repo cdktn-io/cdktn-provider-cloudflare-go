@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 type DataCloudflareArgoTieredCaching interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareArgoTieredCaching) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching} Data Source.
 func NewDataCloudflareArgoTieredCaching(scope constructs.Construct, id *string, config *DataCloudflareArgoTieredCachingConfig) DataCloudflareArgoTieredCaching {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataCloudflareArgoTieredCaching(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching} Data Source.
 func NewDataCloudflareArgoTieredCaching_Override(d DataCloudflareArgoTieredCaching, scope constructs.Construct, id *string, config *DataCloudflareArgoTieredCachingConfig) {
 	_init_.Initialize()
 

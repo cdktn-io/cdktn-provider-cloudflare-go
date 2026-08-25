@@ -23,6 +23,7 @@ type DataCloudflareZeroTrustAccessCustomPagesResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContractVersion() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -44,6 +45,7 @@ type DataCloudflareZeroTrustAccessCustomPagesResultOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	Uid() *string
+	Warnings() DataCloudflareZeroTrustAccessCustomPagesResultWarningsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -98,6 +100,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference) ContractVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"contractVersion",
 		&returns,
 	)
 	return returns
@@ -188,6 +200,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference
 	_jsii_.Get(
 		j,
 		"uid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessCustomPagesResultOutputReference) Warnings() DataCloudflareZeroTrustAccessCustomPagesResultWarningsList {
+	var returns DataCloudflareZeroTrustAccessCustomPagesResultWarningsList
+	_jsii_.Get(
+		j,
+		"warnings",
 		&returns,
 	)
 	return returns

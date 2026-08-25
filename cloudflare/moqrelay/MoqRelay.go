@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/moq_relay cloudflare_moq_relay}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/moq_relay cloudflare_moq_relay}.
 type MoqRelay interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -491,7 +491,7 @@ func (j *jsiiProxy_MoqRelay) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/moq_relay cloudflare_moq_relay} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/moq_relay cloudflare_moq_relay} Resource.
 func NewMoqRelay(scope constructs.Construct, id *string, config *MoqRelayConfig) MoqRelay {
 	_init_.Initialize()
 
@@ -509,7 +509,7 @@ func NewMoqRelay(scope constructs.Construct, id *string, config *MoqRelayConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/moq_relay cloudflare_moq_relay} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/moq_relay cloudflare_moq_relay} Resource.
 func NewMoqRelay_Override(m MoqRelay, scope constructs.Construct, id *string, config *MoqRelayConfig) {
 	_init_.Initialize()
 

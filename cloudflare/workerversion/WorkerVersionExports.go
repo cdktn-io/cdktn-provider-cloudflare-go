@@ -7,11 +7,11 @@ package workerversion
 type WorkerVersionExports struct {
 	// The kind of export. Available values: "worker", "durable-object".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#type WorkerVersion#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#type WorkerVersion#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Cache override for this entrypoint. It applies only to `type: worker` entries and overrides the Worker's global `cache_options.enabled` for that entrypoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#cache WorkerVersion#cache}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#cache WorkerVersion#cache}
 	Cache *WorkerVersionExportsCache `field:"optional" json:"cache" yaml:"cache"`
 	// Destination class name for a `state: renamed` tombstone.
 	//
@@ -19,7 +19,7 @@ type WorkerVersionExports struct {
 	// target must appear as a live (`created`) entry in the same
 	// `exports` map. Write-only: never present in GET responses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#renamed_to WorkerVersion#renamed_to}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#renamed_to WorkerVersion#renamed_to}
 	RenamedTo *string `field:"optional" json:"renamedTo" yaml:"renamedTo"`
 	// Lifecycle state of the export entry. Defaults to `created` (a normal, live export) when omitted.
 	//
@@ -34,7 +34,7 @@ type WorkerVersionExports struct {
 	// it carries `storage` and `transfer_from`.
 	// Available values: "created", "deleted", "renamed", "transferred", "expecting-transfer".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#state WorkerVersion#state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#state WorkerVersion#state}
 	State *string `field:"optional" json:"state" yaml:"state"`
 	// Storage backend for a `type: durable-object` export.
 	//
@@ -44,7 +44,7 @@ type WorkerVersionExports struct {
 	// `legacy-kv` selects the legacy key-value storage.
 	// Available values: "sqlite", "legacy-kv".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#storage WorkerVersion#storage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#storage WorkerVersion#storage}
 	Storage *string `field:"optional" json:"storage" yaml:"storage"`
 	// Source script for a `state: expecting-transfer` entry.
 	//
@@ -53,7 +53,7 @@ type WorkerVersionExports struct {
 	// script's data via the pending-transfer flow. Present on reads
 	// for `expecting-transfer` entries.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#transfer_from WorkerVersion#transfer_from}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#transfer_from WorkerVersion#transfer_from}
 	TransferFrom *string `field:"optional" json:"transferFrom" yaml:"transferFrom"`
 	// Destination script for a `state: transferred` tombstone.
 	//
@@ -62,7 +62,7 @@ type WorkerVersionExports struct {
 	// transfers are rejected. Write-only: never present in GET
 	// responses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#transferred_to WorkerVersion#transferred_to}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#transferred_to WorkerVersion#transferred_to}
 	TransferredTo *string `field:"optional" json:"transferredTo" yaml:"transferredTo"`
 }
 

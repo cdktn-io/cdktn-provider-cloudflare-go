@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/queue cloudflare_queue}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/queue cloudflare_queue}.
 type Queue interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -502,7 +502,7 @@ func (j *jsiiProxy_Queue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue_Override(q Queue, scope constructs.Construct, id *string, config *QueueConfig) {
 	_init_.Initialize()
 

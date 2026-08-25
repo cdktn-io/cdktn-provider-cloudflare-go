@@ -5,11 +5,11 @@ package listitem
 
 
 type ListItemHostname struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/list_item#url_hostname ListItem#url_hostname}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/list_item#url_hostname ListItem#url_hostname}.
 	UrlHostname *string `field:"required" json:"urlHostname" yaml:"urlHostname"`
-	// Only applies to wildcard hostnames (e.g., *.example.com). When true (default), only subdomains are blocked. When false, both the root domain and subdomains are blocked.
+	// Only applies to wildcard hostnames (e.g., *.example.com). When true (default), the rule blocks only subdomains. When false, the rule blocks both the root domain and subdomains.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/list_item#exclude_exact_hostname ListItem#exclude_exact_hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/list_item#exclude_exact_hostname ListItem#exclude_exact_hostname}
 	ExcludeExactHostname interface{} `field:"optional" json:"excludeExactHostname" yaml:"excludeExactHostname"`
 }
 

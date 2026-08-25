@@ -31,6 +31,7 @@ type DataCloudflareZeroTrustDlpCustomProfileEntriesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Deprecated() cdktn.IResolvable
 	Description() *string
 	Enabled() cdktn.IResolvable
 	// Experimental.
@@ -148,6 +149,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileEntriesOutputReference
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileEntriesOutputReference) Deprecated() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"deprecated",
 		&returns,
 	)
 	return returns

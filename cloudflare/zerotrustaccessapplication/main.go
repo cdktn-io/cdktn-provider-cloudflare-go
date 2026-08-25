@@ -326,6 +326,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUri", GoMethod: "ResetUri"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVnetId", GoMethod: "ResetVnetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerId", GoMethod: "ResetWorkerId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -336,6 +337,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vnetId", GoGetter: "VnetId"},
 			_jsii_.MemberProperty{JsiiProperty: "vnetIdInput", GoGetter: "VnetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workerId", GoGetter: "WorkerId"},
+			_jsii_.MemberProperty{JsiiProperty: "workerIdInput", GoGetter: "WorkerIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference{}

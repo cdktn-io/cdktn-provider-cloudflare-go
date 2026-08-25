@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections}.
 type DataCloudflarePageShieldConnections interface {
 	cdktn.TerraformDataSource
 	AddedAt() *string
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldConnections) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections} Data Source.
 func NewDataCloudflarePageShieldConnections(scope constructs.Construct, id *string, config *DataCloudflarePageShieldConnectionsConfig) DataCloudflarePageShieldConnections {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewDataCloudflarePageShieldConnections(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/page_shield_connections cloudflare_page_shield_connections} Data Source.
 func NewDataCloudflarePageShieldConnections_Override(d DataCloudflarePageShieldConnections, scope constructs.Construct, id *string, config *DataCloudflarePageShieldConnectionsConfig) {
 	_init_.Initialize()
 

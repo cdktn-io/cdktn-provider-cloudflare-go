@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog}.
 type DataCloudflareR2DataCatalog interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataCloudflareR2DataCatalog) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog} Data Source.
 func NewDataCloudflareR2DataCatalog(scope constructs.Construct, id *string, config *DataCloudflareR2DataCatalogConfig) DataCloudflareR2DataCatalog {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataCloudflareR2DataCatalog(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog} Data Source.
 func NewDataCloudflareR2DataCatalog_Override(d DataCloudflareR2DataCatalog, scope constructs.Construct, id *string, config *DataCloudflareR2DataCatalogConfig) {
 	_init_.Initialize()
 

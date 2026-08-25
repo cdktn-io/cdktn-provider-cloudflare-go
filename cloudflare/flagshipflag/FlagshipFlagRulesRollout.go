@@ -9,11 +9,11 @@ type FlagshipFlagRulesRollout struct {
 	//
 	// For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/flagship_flag#percentage FlagshipFlag#percentage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/flagship_flag#percentage FlagshipFlag#percentage}
 	Percentage *float64 `field:"required" json:"percentage" yaml:"percentage"`
 	// Context attribute used for sticky bucketing. Defaults to `targetingKey`. If absent at evaluation time, bucketing is random per request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/flagship_flag#attribute FlagshipFlag#attribute}
 	Attribute *string `field:"optional" json:"attribute" yaml:"attribute"`
 }
 

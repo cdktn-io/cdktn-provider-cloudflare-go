@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/dns_zone_transfers_tsigs cloudflare_dns_zone_transfers_tsigs}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/dns_zone_transfers_tsigs cloudflare_dns_zone_transfers_tsigs}.
 type DataCloudflareDnsZoneTransfersTsigs interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareDnsZoneTransfersTsigs) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/dns_zone_transfers_tsigs cloudflare_dns_zone_transfers_tsigs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/dns_zone_transfers_tsigs cloudflare_dns_zone_transfers_tsigs} Data Source.
 func NewDataCloudflareDnsZoneTransfersTsigs(scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersTsigsConfig) DataCloudflareDnsZoneTransfersTsigs {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataCloudflareDnsZoneTransfersTsigs(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/dns_zone_transfers_tsigs cloudflare_dns_zone_transfers_tsigs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/dns_zone_transfers_tsigs cloudflare_dns_zone_transfers_tsigs} Data Source.
 func NewDataCloudflareDnsZoneTransfersTsigs_Override(d DataCloudflareDnsZoneTransfersTsigs, scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersTsigsConfig) {
 	_init_.Initialize()
 

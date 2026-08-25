@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}.
 type DataCloudflareAccountApiTokenPermissionGroups interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroups(scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsConfig) DataCloudflareAccountApiTokenPermissionGroups {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataCloudflareAccountApiTokenPermissionGroups(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroups_Override(d DataCloudflareAccountApiTokenPermissionGroups, scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsConfig) {
 	_init_.Initialize()
 

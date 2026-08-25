@@ -24,15 +24,15 @@ type DataCloudflareApiTokensConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Direction to order results. Available values: "asc", "desc".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 	// When true, includes recently-expired tokens in the response.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#include_expired DataCloudflareApiTokens#include_expired}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/api_tokens#include_expired DataCloudflareApiTokens#include_expired}
 	IncludeExpired interface{} `field:"optional" json:"includeExpired" yaml:"includeExpired"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 }
 

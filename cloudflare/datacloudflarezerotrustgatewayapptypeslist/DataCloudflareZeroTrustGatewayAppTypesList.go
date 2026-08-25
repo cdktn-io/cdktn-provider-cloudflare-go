@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list}.
 type DataCloudflareZeroTrustGatewayAppTypesList interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayAppTypesList) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source.
 func NewDataCloudflareZeroTrustGatewayAppTypesList(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayAppTypesListConfig) DataCloudflareZeroTrustGatewayAppTypesList {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataCloudflareZeroTrustGatewayAppTypesList(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_gateway_app_types_list cloudflare_zero_trust_gateway_app_types_list} Data Source.
 func NewDataCloudflareZeroTrustGatewayAppTypesList_Override(d DataCloudflareZeroTrustGatewayAppTypesList, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayAppTypesListConfig) {
 	_init_.Initialize()
 

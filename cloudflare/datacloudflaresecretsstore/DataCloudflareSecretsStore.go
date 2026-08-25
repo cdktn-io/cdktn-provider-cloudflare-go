@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_store cloudflare_secrets_store}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/secrets_store cloudflare_secrets_store}.
 type DataCloudflareSecretsStore interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataCloudflareSecretsStore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_store cloudflare_secrets_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/secrets_store cloudflare_secrets_store} Data Source.
 func NewDataCloudflareSecretsStore(scope constructs.Construct, id *string, config *DataCloudflareSecretsStoreConfig) DataCloudflareSecretsStore {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataCloudflareSecretsStore(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/secrets_store cloudflare_secrets_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/secrets_store cloudflare_secrets_store} Data Source.
 func NewDataCloudflareSecretsStore_Override(d DataCloudflareSecretsStore, scope constructs.Construct, id *string, config *DataCloudflareSecretsStoreConfig) {
 	_init_.Initialize()
 

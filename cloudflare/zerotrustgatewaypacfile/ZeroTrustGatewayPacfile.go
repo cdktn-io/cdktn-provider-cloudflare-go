@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
 type ZeroTrustGatewayPacfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -505,7 +505,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPacfile) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
 func NewZeroTrustGatewayPacfile(scope constructs.Construct, id *string, config *ZeroTrustGatewayPacfileConfig) ZeroTrustGatewayPacfile {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewZeroTrustGatewayPacfile(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
 func NewZeroTrustGatewayPacfile_Override(z ZeroTrustGatewayPacfile, scope constructs.Construct, id *string, config *ZeroTrustGatewayPacfileConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/ai_gateway cloudflare_ai_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ai_gateway cloudflare_ai_gateway}.
 type AiGateway interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -67,6 +67,9 @@ type AiGateway interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	LogClassification() interface{}
+	SetLogClassification(val interface{})
+	LogClassificationInput() interface{}
 	LogManagement() *float64
 	SetLogManagement(val *float64)
 	LogManagementInput() *float64
@@ -231,6 +234,7 @@ type AiGateway interface {
 	ResetAuthentication()
 	ResetDlp()
 	ResetGuardrails()
+	ResetLogClassification()
 	ResetLogManagement()
 	ResetLogManagementStrategy()
 	ResetLogpush()
@@ -540,6 +544,26 @@ func (j *jsiiProxy_AiGateway) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGateway) LogClassification() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logClassification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGateway) LogClassificationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logClassificationInput",
 		&returns,
 	)
 	return returns
@@ -946,7 +970,7 @@ func (j *jsiiProxy_AiGateway) ZdrInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
 func NewAiGateway(scope constructs.Construct, id *string, config *AiGatewayConfig) AiGateway {
 	_init_.Initialize()
 
@@ -964,7 +988,7 @@ func NewAiGateway(scope constructs.Construct, id *string, config *AiGatewayConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
 func NewAiGateway_Override(a AiGateway, scope constructs.Construct, id *string, config *AiGatewayConfig) {
 	_init_.Initialize()
 
@@ -1086,6 +1110,17 @@ func (j *jsiiProxy_AiGateway)SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiGateway)SetLogClassification(val interface{}) {
+	if err := j.validateSetLogClassificationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logClassification",
 		val,
 	)
 }
@@ -1707,6 +1742,14 @@ func (a *jsiiProxy_AiGateway) ResetGuardrails() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetGuardrails",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiGateway) ResetLogClassification() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLogClassification",
 		nil, // no parameters
 	)
 }

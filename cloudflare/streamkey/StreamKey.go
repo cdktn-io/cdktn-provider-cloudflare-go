@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/stream_key cloudflare_stream_key}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_key cloudflare_stream_key}.
 type StreamKey interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -422,7 +422,7 @@ func (j *jsiiProxy_StreamKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/stream_key cloudflare_stream_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_key cloudflare_stream_key} Resource.
 func NewStreamKey(scope constructs.Construct, id *string, config *StreamKeyConfig) StreamKey {
 	_init_.Initialize()
 
@@ -440,7 +440,7 @@ func NewStreamKey(scope constructs.Construct, id *string, config *StreamKeyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/stream_key cloudflare_stream_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_key cloudflare_stream_key} Resource.
 func NewStreamKey_Override(s StreamKey, scope constructs.Construct, id *string, config *StreamKeyConfig) {
 	_init_.Initialize()
 

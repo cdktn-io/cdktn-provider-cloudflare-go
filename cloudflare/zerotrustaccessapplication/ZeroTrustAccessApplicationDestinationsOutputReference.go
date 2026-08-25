@@ -64,6 +64,9 @@ type ZeroTrustAccessApplicationDestinationsOutputReference interface {
 	VnetId() *string
 	SetVnetId(val *string)
 	VnetIdInput() *string
+	WorkerId() *string
+	SetWorkerId(val *string)
+	WorkerIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -96,6 +99,7 @@ type ZeroTrustAccessApplicationDestinationsOutputReference interface {
 	ResetType()
 	ResetUri()
 	ResetVnetId()
+	ResetWorkerId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -341,6 +345,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) VnetId
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) WorkerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) WorkerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewZeroTrustAccessApplicationDestinationsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationDestinationsOutputReference {
 	_init_.Initialize()
@@ -508,6 +532,17 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetVnet
 	_jsii_.Set(
 		j,
 		"vnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetWorkerId(val *string) {
+	if err := j.validateSetWorkerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workerId",
 		val,
 	)
 }
@@ -758,6 +793,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetV
 	_jsii_.InvokeVoid(
 		z,
 		"resetVnetId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetWorkerId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetWorkerId",
 		nil, // no parameters
 	)
 }

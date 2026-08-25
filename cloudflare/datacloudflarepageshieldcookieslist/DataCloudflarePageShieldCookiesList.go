@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}.
 type DataCloudflarePageShieldCookiesList interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -658,7 +658,7 @@ func (j *jsiiProxy_DataCloudflarePageShieldCookiesList) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
 func NewDataCloudflarePageShieldCookiesList(scope constructs.Construct, id *string, config *DataCloudflarePageShieldCookiesListConfig) DataCloudflarePageShieldCookiesList {
 	_init_.Initialize()
 
@@ -676,7 +676,7 @@ func NewDataCloudflarePageShieldCookiesList(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source.
 func NewDataCloudflarePageShieldCookiesList_Override(d DataCloudflarePageShieldCookiesList, scope constructs.Construct, id *string, config *DataCloudflarePageShieldCookiesListConfig) {
 	_init_.Initialize()
 

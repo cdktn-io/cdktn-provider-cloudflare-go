@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/image_variant cloudflare_image_variant}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/image_variant cloudflare_image_variant}.
 type ImageVariant interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -72,7 +72,6 @@ type ImageVariant interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Variant() ImageVariantVariantOutputReference
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -437,18 +436,8 @@ func (j *jsiiProxy_ImageVariant) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ImageVariant) Variant() ImageVariantVariantOutputReference {
-	var returns ImageVariantVariantOutputReference
-	_jsii_.Get(
-		j,
-		"variant",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/image_variant cloudflare_image_variant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/image_variant cloudflare_image_variant} Resource.
 func NewImageVariant(scope constructs.Construct, id *string, config *ImageVariantConfig) ImageVariant {
 	_init_.Initialize()
 
@@ -466,7 +455,7 @@ func NewImageVariant(scope constructs.Construct, id *string, config *ImageVarian
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/image_variant cloudflare_image_variant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/image_variant cloudflare_image_variant} Resource.
 func NewImageVariant_Override(i ImageVariant, scope constructs.Construct, id *string, config *ImageVariantConfig) {
 	_init_.Initialize()
 

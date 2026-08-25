@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
 type LoadBalancerPool interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -53,6 +53,9 @@ type LoadBalancerPool interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HealthSources() *[]*string
+	SetHealthSources(val *[]*string)
+	HealthSourcesInput() *[]*string
 	Id() *string
 	Latitude() *float64
 	SetLatitude(val *float64)
@@ -206,6 +209,7 @@ type LoadBalancerPool interface {
 	ResetCheckRegions()
 	ResetDescription()
 	ResetEnabled()
+	ResetHealthSources()
 	ResetLatitude()
 	ResetLoadShedding()
 	ResetLongitude()
@@ -420,6 +424,26 @@ func (j *jsiiProxy_LoadBalancerPool) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPool) HealthSources() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"healthSources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPool) HealthSourcesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"healthSourcesInput",
 		&returns,
 	)
 	return returns
@@ -756,7 +780,7 @@ func (j *jsiiProxy_LoadBalancerPool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) LoadBalancerPool {
 	_init_.Initialize()
 
@@ -774,7 +798,7 @@ func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool_Override(l LoadBalancerPool, scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) {
 	_init_.Initialize()
 
@@ -863,6 +887,17 @@ func (j *jsiiProxy_LoadBalancerPool)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerPool)SetHealthSources(val *[]*string) {
+	if err := j.validateSetHealthSourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthSources",
 		val,
 	)
 }
@@ -1418,6 +1453,14 @@ func (l *jsiiProxy_LoadBalancerPool) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPool) ResetHealthSources() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHealthSources",
 		nil, // no parameters
 	)
 }

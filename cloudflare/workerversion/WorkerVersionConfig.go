@@ -24,15 +24,15 @@ type WorkerVersionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#account_id WorkerVersion#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#account_id WorkerVersion#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Identifier for the Worker, which can be ID or name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
 	WorkerId *string `field:"required" json:"workerId" yaml:"workerId"`
 	// Metadata about the version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#annotations WorkerVersion#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#annotations WorkerVersion#annotations}
 	Annotations *WorkerVersionAnnotations `field:"optional" json:"annotations" yaml:"annotations"`
 	// Configuration for assets within a Worker.
 	//
@@ -40,11 +40,11 @@ type WorkerVersionConfig struct {
 	// [`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files should be
 	// included as modules named `_headers` and `_redirects` with content type `text/plain`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#assets WorkerVersion#assets}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#assets WorkerVersion#assets}
 	Assets *WorkerVersionAssets `field:"optional" json:"assets" yaml:"assets"`
 	// List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#bindings WorkerVersion#bindings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#bindings WorkerVersion#bindings}
 	Bindings interface{} `field:"optional" json:"bindings" yaml:"bindings"`
 	// Global CacheW configuration for the Worker.
 	//
@@ -53,25 +53,25 @@ type WorkerVersionConfig struct {
 	// A `type: worker` entry in the `exports` map can override this
 	// value for a single entrypoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#cache_options WorkerVersion#cache_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#cache_options WorkerVersion#cache_options}
 	CacheOptions *WorkerVersionCacheOptions `field:"optional" json:"cacheOptions" yaml:"cacheOptions"`
 	// Date indicating targeted support in the Workers runtime.
 	//
 	// Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
 	CompatibilityDate *string `field:"optional" json:"compatibilityDate" yaml:"compatibilityDate"`
 	// Flags that enable or disable certain features in the Workers runtime.
 	//
 	// Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
 	CompatibilityFlags *[]*string `field:"optional" json:"compatibilityFlags" yaml:"compatibilityFlags"`
 	// List of containers attached to a Worker.
 	//
 	// Containers can only be attached to Durable Object classes of this Worker script.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#containers WorkerVersion#containers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#containers WorkerVersion#containers}
 	Containers interface{} `field:"optional" json:"containers" yaml:"containers"`
 	// Declarative exports for the version, including Durable Object classes (with their `storage` backend) and named Worker entrypoints.
 	//
@@ -80,19 +80,19 @@ type WorkerVersionConfig struct {
 	// `expecting-transfer`) are returned. `exports` and `migrations`
 	// are mutually exclusive on upload.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#exports WorkerVersion#exports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#exports WorkerVersion#exports}
 	Exports interface{} `field:"optional" json:"exports" yaml:"exports"`
 	// Resource limits enforced at runtime.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#limits WorkerVersion#limits}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#limits WorkerVersion#limits}
 	Limits *WorkerVersionLimits `field:"optional" json:"limits" yaml:"limits"`
 	// The name of the main module in the `modules` array (e.g. the name of the module that exports a `fetch` handler).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#main_module WorkerVersion#main_module}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#main_module WorkerVersion#main_module}
 	MainModule *string `field:"optional" json:"mainModule" yaml:"mainModule"`
 	// Migrations for Durable Objects associated with the version. Migrations are applied when the version is deployed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#migrations WorkerVersion#migrations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#migrations WorkerVersion#migrations}
 	Migrations *WorkerVersionMigrations `field:"optional" json:"migrations" yaml:"migrations"`
 	// Code, sourcemaps, and other content used at runtime.
 	//
@@ -101,19 +101,19 @@ type WorkerVersionConfig struct {
 	// [Static Assets](https://developers.cloudflare.com/workers/static-assets/). `_headers` and `_redirects` files should be
 	// included as modules named `_headers` and `_redirects` with content type `text/plain`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#modules WorkerVersion#modules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#modules WorkerVersion#modules}
 	Modules interface{} `field:"optional" json:"modules" yaml:"modules"`
 	// The list of npm packages that were installed and used when this Worker version was built.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#package_dependencies WorkerVersion#package_dependencies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#package_dependencies WorkerVersion#package_dependencies}
 	PackageDependencies interface{} `field:"optional" json:"packageDependencies" yaml:"packageDependencies"`
 	// Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode='smart' for Smart Placement, or one of region/hostname/host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#placement WorkerVersion#placement}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#placement WorkerVersion#placement}
 	Placement *WorkerVersionPlacement `field:"optional" json:"placement" yaml:"placement"`
 	// Usage model for the version. Available values: "standard", "bundled", "unbound".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
 	UsageModel *string `field:"optional" json:"usageModel" yaml:"usageModel"`
 }
 

@@ -14,6 +14,7 @@ import (
 type DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference interface {
 	cdktn.ComplexObject
 	AllowCodeMode() cdktn.IResolvable
+	CodeMode() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -95,6 +96,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutput
 	_jsii_.Get(
 		j,
 		"allowCodeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalsResultOutputReference) CodeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"codeMode",
 		&returns,
 	)
 	return returns

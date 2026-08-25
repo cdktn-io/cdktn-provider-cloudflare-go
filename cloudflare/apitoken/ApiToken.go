@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/api_token cloudflare_api_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/api_token cloudflare_api_token}.
 type ApiToken interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -541,7 +541,7 @@ func (j *jsiiProxy_ApiToken) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/api_token cloudflare_api_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/api_token cloudflare_api_token} Resource.
 func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig) ApiToken {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/api_token cloudflare_api_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/api_token cloudflare_api_token} Resource.
 func NewApiToken_Override(a ApiToken, scope constructs.Construct, id *string, config *ApiTokenConfig) {
 	_init_.Initialize()
 

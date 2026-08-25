@@ -111,6 +111,10 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetAllowCodeModeP
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetCodeModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpPortal) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

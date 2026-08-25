@@ -28,6 +28,7 @@ type DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerOutputReference 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DiscoverOptions() DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerDiscoverOptionsOutputReference
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareAiSearchInstancesResultSourceParamsWebCrawler
@@ -107,6 +108,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerOu
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerOutputReference) DiscoverOptions() DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerDiscoverOptionsOutputReference {
+	var returns DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerDiscoverOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"discoverOptions",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/pipeline_stream cloudflare_pipeline_stream}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/pipeline_stream cloudflare_pipeline_stream}.
 type DataCloudflarePipelineStream interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -445,7 +445,7 @@ func (j *jsiiProxy_DataCloudflarePipelineStream) WorkerBinding() DataCloudflareP
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/pipeline_stream cloudflare_pipeline_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/pipeline_stream cloudflare_pipeline_stream} Data Source.
 func NewDataCloudflarePipelineStream(scope constructs.Construct, id *string, config *DataCloudflarePipelineStreamConfig) DataCloudflarePipelineStream {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewDataCloudflarePipelineStream(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/pipeline_stream cloudflare_pipeline_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/pipeline_stream cloudflare_pipeline_stream} Data Source.
 func NewDataCloudflarePipelineStream_Override(d DataCloudflarePipelineStream, scope constructs.Construct, id *string, config *DataCloudflarePipelineStreamConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config}.
 type ZeroTrustTunnelWarpConnectorConfigA interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -481,7 +481,7 @@ func (j *jsiiProxy_ZeroTrustTunnelWarpConnectorConfigA) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config} Resource.
 func NewZeroTrustTunnelWarpConnectorConfigA(scope constructs.Construct, id *string, config *ZeroTrustTunnelWarpConnectorConfigAConfig) ZeroTrustTunnelWarpConnectorConfigA {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewZeroTrustTunnelWarpConnectorConfigA(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_tunnel_warp_connector_config cloudflare_zero_trust_tunnel_warp_connector_config} Resource.
 func NewZeroTrustTunnelWarpConnectorConfigA_Override(z ZeroTrustTunnelWarpConnectorConfigA, scope constructs.Construct, id *string, config *ZeroTrustTunnelWarpConnectorConfigAConfig) {
 	_init_.Initialize()
 

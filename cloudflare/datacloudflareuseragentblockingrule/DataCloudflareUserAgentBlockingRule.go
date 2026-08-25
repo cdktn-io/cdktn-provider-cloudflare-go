@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
 type DataCloudflareUserAgentBlockingRule interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Data Source.
 func NewDataCloudflareUserAgentBlockingRule(scope constructs.Construct, id *string, config *DataCloudflareUserAgentBlockingRuleConfig) DataCloudflareUserAgentBlockingRule {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataCloudflareUserAgentBlockingRule(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Data Source.
 func NewDataCloudflareUserAgentBlockingRule_Override(d DataCloudflareUserAgentBlockingRule, scope constructs.Construct, id *string, config *DataCloudflareUserAgentBlockingRuleConfig) {
 	_init_.Initialize()
 

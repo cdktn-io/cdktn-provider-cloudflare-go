@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -108,6 +108,9 @@ type ZeroTrustOrganization interface {
 	UserSeatExpirationInactiveTime() *string
 	SetUserSeatExpirationInactiveTime(val *string)
 	UserSeatExpirationInactiveTimeInput() *string
+	WarpAuthNonBrowser401() interface{}
+	SetWarpAuthNonBrowser401(val interface{})
+	WarpAuthNonBrowser401Input() interface{}
 	WarpAuthSessionDuration() *string
 	SetWarpAuthSessionDuration(val *string)
 	WarpAuthSessionDurationInput() *string
@@ -230,6 +233,7 @@ type ZeroTrustOrganization interface {
 	ResetSessionDuration()
 	ResetUiReadOnlyToggleReason()
 	ResetUserSeatExpirationInactiveTime()
+	ResetWarpAuthNonBrowser401()
 	ResetWarpAuthSessionDuration()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -759,6 +763,26 @@ func (j *jsiiProxy_ZeroTrustOrganization) UserSeatExpirationInactiveTimeInput() 
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) WarpAuthNonBrowser401() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"warpAuthNonBrowser401",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) WarpAuthNonBrowser401Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"warpAuthNonBrowser401Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) WarpAuthSessionDuration() *string {
 	var returns *string
 	_jsii_.Get(
@@ -800,7 +824,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -818,7 +842,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 
@@ -1036,6 +1060,17 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetUserSeatExpirationInactiveTime(val *
 	_jsii_.Set(
 		j,
 		"userSeatExpirationInactiveTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization)SetWarpAuthNonBrowser401(val interface{}) {
+	if err := j.validateSetWarpAuthNonBrowser401Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"warpAuthNonBrowser401",
 		val,
 	)
 }
@@ -1626,6 +1661,14 @@ func (z *jsiiProxy_ZeroTrustOrganization) ResetUserSeatExpirationInactiveTime() 
 	_jsii_.InvokeVoid(
 		z,
 		"resetUserSeatExpirationInactiveTime",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetWarpAuthNonBrowser401() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetWarpAuthNonBrowser401",
 		nil, // no parameters
 	)
 }

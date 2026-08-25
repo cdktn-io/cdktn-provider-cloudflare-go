@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relay cloudflare_moq_relay}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relay cloudflare_moq_relay}.
 type DataCloudflareMoqRelay interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -411,7 +411,7 @@ func (j *jsiiProxy_DataCloudflareMoqRelay) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relay cloudflare_moq_relay} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relay cloudflare_moq_relay} Data Source.
 func NewDataCloudflareMoqRelay(scope constructs.Construct, id *string, config *DataCloudflareMoqRelayConfig) DataCloudflareMoqRelay {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewDataCloudflareMoqRelay(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/moq_relay cloudflare_moq_relay} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/moq_relay cloudflare_moq_relay} Data Source.
 func NewDataCloudflareMoqRelay_Override(d DataCloudflareMoqRelay, scope constructs.Construct, id *string, config *DataCloudflareMoqRelayConfig) {
 	_init_.Initialize()
 

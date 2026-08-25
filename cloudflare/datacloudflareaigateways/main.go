@@ -426,6 +426,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isDefault", GoGetter: "IsDefault"},
+			_jsii_.MemberProperty{JsiiProperty: "logClassification", GoGetter: "LogClassification"},
 			_jsii_.MemberProperty{JsiiProperty: "logManagement", GoGetter: "LogManagement"},
 			_jsii_.MemberProperty{JsiiProperty: "logManagementStrategy", GoGetter: "LogManagementStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "logpush", GoGetter: "Logpush"},

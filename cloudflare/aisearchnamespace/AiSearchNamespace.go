@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace}.
 type AiSearchNamespace interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -63,6 +63,9 @@ type AiSearchNamespace interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicEndpointId() *string
+	PublicEndpointParams() AiSearchNamespacePublicEndpointParamsOutputReference
+	PublicEndpointParamsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -150,6 +153,7 @@ type AiSearchNamespace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPublicEndpointParams(value *AiSearchNamespacePublicEndpointParams)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -167,6 +171,7 @@ type AiSearchNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicEndpointParams()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -384,6 +389,36 @@ func (j *jsiiProxy_AiSearchNamespace) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AiSearchNamespace) PublicEndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicEndpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchNamespace) PublicEndpointParams() AiSearchNamespacePublicEndpointParamsOutputReference {
+	var returns AiSearchNamespacePublicEndpointParamsOutputReference
+	_jsii_.Get(
+		j,
+		"publicEndpointParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchNamespace) PublicEndpointParamsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicEndpointParamsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AiSearchNamespace) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -425,7 +460,7 @@ func (j *jsiiProxy_AiSearchNamespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
 func NewAiSearchNamespace(scope constructs.Construct, id *string, config *AiSearchNamespaceConfig) AiSearchNamespace {
 	_init_.Initialize()
 
@@ -443,7 +478,7 @@ func NewAiSearchNamespace(scope constructs.Construct, id *string, config *AiSear
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
 func NewAiSearchNamespace_Override(a AiSearchNamespace, scope constructs.Construct, id *string, config *AiSearchNamespaceConfig) {
 	_init_.Initialize()
 
@@ -924,6 +959,17 @@ func (a *jsiiProxy_AiSearchNamespace) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AiSearchNamespace) PutPublicEndpointParams(value *AiSearchNamespacePublicEndpointParams) {
+	if err := a.validatePutPublicEndpointParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPublicEndpointParams",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiSearchNamespace) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
 	if err := a.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
@@ -947,6 +993,14 @@ func (a *jsiiProxy_AiSearchNamespace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchNamespace) ResetPublicEndpointParams() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPublicEndpointParams",
 		nil, // no parameters
 	)
 }

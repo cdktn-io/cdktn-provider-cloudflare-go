@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
 type MagicTransitSiteLan interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -641,7 +641,7 @@ func (j *jsiiProxy_MagicTransitSiteLan) VlanTagInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
 func NewMagicTransitSiteLan(scope constructs.Construct, id *string, config *MagicTransitSiteLanConfig) MagicTransitSiteLan {
 	_init_.Initialize()
 
@@ -659,7 +659,7 @@ func NewMagicTransitSiteLan(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
 func NewMagicTransitSiteLan_Override(m MagicTransitSiteLan, scope constructs.Construct, id *string, config *MagicTransitSiteLanConfig) {
 	_init_.Initialize()
 

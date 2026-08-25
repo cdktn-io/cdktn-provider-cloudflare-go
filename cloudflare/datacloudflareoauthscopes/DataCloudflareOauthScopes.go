@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/oauth_scopes cloudflare_oauth_scopes}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/oauth_scopes cloudflare_oauth_scopes}.
 type DataCloudflareOauthScopes interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataCloudflareOauthScopes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/oauth_scopes cloudflare_oauth_scopes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/oauth_scopes cloudflare_oauth_scopes} Data Source.
 func NewDataCloudflareOauthScopes(scope constructs.Construct, id *string, config *DataCloudflareOauthScopesConfig) DataCloudflareOauthScopes {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataCloudflareOauthScopes(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/oauth_scopes cloudflare_oauth_scopes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/oauth_scopes cloudflare_oauth_scopes} Data Source.
 func NewDataCloudflareOauthScopes_Override(d DataCloudflareOauthScopes, scope constructs.Construct, id *string, config *DataCloudflareOauthScopesConfig) {
 	_init_.Initialize()
 

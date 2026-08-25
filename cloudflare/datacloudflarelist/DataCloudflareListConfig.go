@@ -24,17 +24,17 @@ type DataCloudflareListConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique ID of the list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/list#list_id DataCloudflareList#list_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/list#list_id DataCloudflareList#list_id}
 	ListId *string `field:"required" json:"listId" yaml:"listId"`
 	// The Account ID for this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// A search query to filter returned items.
 	//
 	// Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/list#search DataCloudflareList#search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/list#search DataCloudflareList#search}
 	Search *string `field:"optional" json:"search" yaml:"search"`
 }
 

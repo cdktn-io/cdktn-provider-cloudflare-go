@@ -67,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uiReadOnlyToggleReason", GoGetter: "UiReadOnlyToggleReason"},
 			_jsii_.MemberProperty{JsiiProperty: "userSeatExpirationInactiveTime", GoGetter: "UserSeatExpirationInactiveTime"},
+			_jsii_.MemberProperty{JsiiProperty: "warpAuthNonBrowser401", GoGetter: "WarpAuthNonBrowser401"},
 			_jsii_.MemberProperty{JsiiProperty: "warpAuthSessionDuration", GoGetter: "WarpAuthSessionDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},

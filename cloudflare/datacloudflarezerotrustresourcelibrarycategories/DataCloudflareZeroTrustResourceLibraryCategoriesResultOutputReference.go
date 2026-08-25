@@ -32,7 +32,7 @@ type DataCloudflareZeroTrustResourceLibraryCategoriesResultOutputReference inter
 	Description() *string
 	// Experimental.
 	Fqn() *string
-	Id() *string
+	Id() *float64
 	InternalValue() *DataCloudflareZeroTrustResourceLibraryCategoriesResult
 	SetInternalValue(val *DataCloudflareZeroTrustResourceLibraryCategoriesResult)
 	Name() *string
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategoriesResultOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategoriesResultOutputReference) Id() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryCategoriesResultOutputReference) Id() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"id",

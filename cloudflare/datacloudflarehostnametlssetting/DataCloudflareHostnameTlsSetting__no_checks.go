@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) validateSetCountParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareHostnameTlsSetting) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

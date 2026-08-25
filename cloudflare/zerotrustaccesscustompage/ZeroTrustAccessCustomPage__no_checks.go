@@ -107,6 +107,10 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetContractVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetCountParameters(val interface{}) error {
 	return nil
 }

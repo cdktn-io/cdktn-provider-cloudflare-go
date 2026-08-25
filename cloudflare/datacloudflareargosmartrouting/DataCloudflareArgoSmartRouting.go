@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
 type DataCloudflareArgoSmartRouting interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareArgoSmartRouting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
 func NewDataCloudflareArgoSmartRouting(scope constructs.Construct, id *string, config *DataCloudflareArgoSmartRoutingConfig) DataCloudflareArgoSmartRouting {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataCloudflareArgoSmartRouting(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
 func NewDataCloudflareArgoSmartRouting_Override(d DataCloudflareArgoSmartRouting, scope constructs.Construct, id *string, config *DataCloudflareArgoSmartRoutingConfig) {
 	_init_.Initialize()
 

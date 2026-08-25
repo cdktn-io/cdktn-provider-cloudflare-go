@@ -30,6 +30,7 @@ type DataCloudflareZeroTrustAccessServiceTokensResultOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Duration() *string
+	Enabled() cdktn.IResolvable
 	ExpiresAt() *string
 	// Experimental.
 	Fqn() *string
@@ -129,6 +130,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReferen
 	_jsii_.Get(
 		j,
 		"duration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
 		&returns,
 	)
 	return returns

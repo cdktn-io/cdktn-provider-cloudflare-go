@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/google_tag_gateway cloudflare_google_tag_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/google_tag_gateway cloudflare_google_tag_gateway}.
 type GoogleTagGateway interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -494,7 +494,7 @@ func (j *jsiiProxy_GoogleTagGateway) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/google_tag_gateway cloudflare_google_tag_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/google_tag_gateway cloudflare_google_tag_gateway} Resource.
 func NewGoogleTagGateway(scope constructs.Construct, id *string, config *GoogleTagGatewayConfig) GoogleTagGateway {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewGoogleTagGateway(scope constructs.Construct, id *string, config *GoogleT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.23.0/docs/resources/google_tag_gateway cloudflare_google_tag_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/google_tag_gateway cloudflare_google_tag_gateway} Resource.
 func NewGoogleTagGateway_Override(g GoogleTagGateway, scope constructs.Construct, id *string, config *GoogleTagGatewayConfig) {
 	_init_.Initialize()
 

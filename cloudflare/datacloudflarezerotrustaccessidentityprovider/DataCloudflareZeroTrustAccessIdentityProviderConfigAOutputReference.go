@@ -43,6 +43,7 @@ type DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference interfa
 	EmailAttributeName() *string
 	EmailClaimName() *string
 	EnableEncryption() cdktn.IResolvable
+	ForceAuthn() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	HeaderAttributes() DataCloudflareZeroTrustAccessIdentityProviderConfigHeaderAttributesList
@@ -50,6 +51,7 @@ type DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference interfa
 	InternalValue() *DataCloudflareZeroTrustAccessIdentityProviderConfigA
 	SetInternalValue(val *DataCloudflareZeroTrustAccessIdentityProviderConfigA)
 	IssuerUrl() *string
+	MaxSsoUrlLength() *float64
 	OktaAccount() *string
 	OneloginAccount() *string
 	PingEnvId() *string
@@ -289,6 +291,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference) ForceAuthn() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"forceAuthn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -334,6 +346,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputRef
 	_jsii_.Get(
 		j,
 		"issuerUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference) MaxSsoUrlLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSsoUrlLength",
 		&returns,
 	)
 	return returns

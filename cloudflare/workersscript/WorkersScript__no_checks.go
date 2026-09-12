@@ -99,6 +99,10 @@ func (w *jsiiProxy_WorkersScript) validatePutExportsParameters(value interface{}
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScript) validatePutFilesParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScript) validatePutLimitsParameters(value *WorkersScriptLimits) error {
 	return nil
 }

@@ -34,7 +34,6 @@ type ApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference interface {
 	Id() *string
 	InternalValue() *ApiShieldOperationFeaturesSchemaInfoActiveSchema
 	SetInternalValue(val *ApiShieldOperationFeaturesSchemaInfoActiveSchema)
-	IsLearned() cdktn.IResolvable
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -148,16 +147,6 @@ func (j *jsiiProxy_ApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiShieldOperationFeaturesSchemaInfoActiveSchemaOutputReference) IsLearned() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"isLearned",
 		&returns,
 	)
 	return returns

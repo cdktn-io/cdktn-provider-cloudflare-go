@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors}.
 type DataCloudflareMagicTransitConnectors interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -101,7 +101,6 @@ type DataCloudflareMagicTransitConnectors interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
-	ResetAccountId()
 	ResetDeviceType()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -346,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectors) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors} Data Source.
 func NewDataCloudflareMagicTransitConnectors(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorsConfig) DataCloudflareMagicTransitConnectors {
 	_init_.Initialize()
 
@@ -364,7 +363,7 @@ func NewDataCloudflareMagicTransitConnectors(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/magic_transit_connectors cloudflare_magic_transit_connectors} Data Source.
 func NewDataCloudflareMagicTransitConnectors_Override(d DataCloudflareMagicTransitConnectors, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitConnectorsConfig) {
 	_init_.Initialize()
 
@@ -747,14 +746,6 @@ func (d *jsiiProxy_DataCloudflareMagicTransitConnectors) RegisterProviderFeature
 		d,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareMagicTransitConnectors) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

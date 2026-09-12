@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow cloudflare_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow cloudflare_workflow}.
 type Workflow interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -23,6 +23,8 @@ type Workflow interface {
 	ClassName() *string
 	SetClassName(val *string)
 	ClassNameInput() *string
+	Concurrency() WorkflowConcurrencyOutputReference
+	ConcurrencyInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -49,7 +51,7 @@ type Workflow interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	Instances() WorkflowInstancesOutputReference
+	Instances() cdktn.NumberMap
 	IsDeleted() *float64
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -167,6 +169,7 @@ type Workflow interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConcurrency(value *WorkflowConcurrency)
 	PutDefaultRetention(value *WorkflowDefaultRetention)
 	PutLimits(value *WorkflowLimits)
 	PutSchedules(value interface{})
@@ -183,6 +186,7 @@ type Workflow interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetConcurrency()
 	ResetDefaultRetention()
 	ResetLimits()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -261,6 +265,26 @@ func (j *jsiiProxy_Workflow) ClassNameInput() *string {
 	_jsii_.Get(
 		j,
 		"classNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) Concurrency() WorkflowConcurrencyOutputReference {
+	var returns WorkflowConcurrencyOutputReference
+	_jsii_.Get(
+		j,
+		"concurrency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) ConcurrencyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"concurrencyInput",
 		&returns,
 	)
 	return returns
@@ -376,8 +400,8 @@ func (j *jsiiProxy_Workflow) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Workflow) Instances() WorkflowInstancesOutputReference {
-	var returns WorkflowInstancesOutputReference
+func (j *jsiiProxy_Workflow) Instances() cdktn.NumberMap {
+	var returns cdktn.NumberMap
 	_jsii_.Get(
 		j,
 		"instances",
@@ -607,7 +631,7 @@ func (j *jsiiProxy_Workflow) WorkflowNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig) Workflow {
 	_init_.Initialize()
 
@@ -625,7 +649,7 @@ func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow_Override(w Workflow, scope constructs.Construct, id *string, config *WorkflowConfig) {
 	_init_.Initialize()
 
@@ -1117,6 +1141,17 @@ func (w *jsiiProxy_Workflow) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (w *jsiiProxy_Workflow) PutConcurrency(value *WorkflowConcurrency) {
+	if err := w.validatePutConcurrencyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putConcurrency",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Workflow) PutDefaultRetention(value *WorkflowDefaultRetention) {
 	if err := w.validatePutDefaultRetentionParameters(value); err != nil {
 		panic(err)
@@ -1158,6 +1193,14 @@ func (w *jsiiProxy_Workflow) RegisterProviderFeatureUsage(feature cdktn.Provider
 		w,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (w *jsiiProxy_Workflow) ResetConcurrency() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetConcurrency",
+		nil, // no parameters
 	)
 }
 

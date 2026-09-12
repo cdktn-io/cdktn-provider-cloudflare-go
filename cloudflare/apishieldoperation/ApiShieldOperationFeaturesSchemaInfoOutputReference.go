@@ -33,7 +33,6 @@ type ApiShieldOperationFeaturesSchemaInfoOutputReference interface {
 	Fqn() *string
 	InternalValue() *ApiShieldOperationFeaturesSchemaInfo
 	SetInternalValue(val *ApiShieldOperationFeaturesSchemaInfo)
-	LearnedAvailable() cdktn.IResolvable
 	MitigationAction() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -137,16 +136,6 @@ func (j *jsiiProxy_ApiShieldOperationFeaturesSchemaInfoOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiShieldOperationFeaturesSchemaInfoOutputReference) LearnedAvailable() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"learnedAvailable",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
 type WorkersKvNamespace interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -43,6 +43,9 @@ type WorkersKvNamespace interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Jurisdiction() *string
+	SetJurisdiction(val *string)
+	JurisdictionInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -161,6 +164,7 @@ type WorkersKvNamespace interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -301,6 +305,26 @@ func (j *jsiiProxy_WorkersKvNamespace) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersKvNamespace) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersKvNamespace) JurisdictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersKvNamespace) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -412,7 +436,7 @@ func (j *jsiiProxy_WorkersKvNamespace) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) WorkersKvNamespace {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *Worke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace_Override(w WorkersKvNamespace, scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) {
 	_init_.Initialize()
 
@@ -486,6 +510,17 @@ func (j *jsiiProxy_WorkersKvNamespace)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersKvNamespace)SetJurisdiction(val *string) {
+	if err := j.validateSetJurisdictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jurisdiction",
 		val,
 	)
 }
@@ -908,6 +943,14 @@ func (w *jsiiProxy_WorkersKvNamespace) RegisterProviderFeatureUsage(feature cdkt
 		w,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (w *jsiiProxy_WorkersKvNamespace) ResetJurisdiction() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJurisdiction",
+		nil, // no parameters
 	)
 }
 

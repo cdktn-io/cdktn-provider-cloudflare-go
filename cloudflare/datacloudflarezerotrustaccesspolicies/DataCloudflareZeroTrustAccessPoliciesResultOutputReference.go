@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareZeroTrustAccessPoliciesResultOutputReference interface {
 	cdktn.ComplexObject
+	AccountId() *string
 	AppCount() *float64
 	ApprovalGroups() DataCloudflareZeroTrustAccessPoliciesResultApprovalGroupsList
 	ApprovalRequired() cdktn.IResolvable
@@ -95,6 +96,16 @@ type DataCloudflareZeroTrustAccessPoliciesResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareZeroTrustAccessPoliciesResultOutputReference
 type jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference) AppCount() *float64 {

@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareZeroTrustAccessGroupIncludeDevicePostureOutputReference interface {
 	cdktn.ComplexObject
+	AccountId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,6 +79,16 @@ type DataCloudflareZeroTrustAccessGroupIncludeDevicePostureOutputReference inter
 // The jsii proxy struct for DataCloudflareZeroTrustAccessGroupIncludeDevicePostureOutputReference
 type jsiiProxy_DataCloudflareZeroTrustAccessGroupIncludeDevicePostureOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIncludeDevicePostureOutputReference) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIncludeDevicePostureOutputReference) ComplexObjectIndex() interface{} {

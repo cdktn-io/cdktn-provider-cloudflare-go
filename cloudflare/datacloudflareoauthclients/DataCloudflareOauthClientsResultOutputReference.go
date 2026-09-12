@@ -41,6 +41,7 @@ type DataCloudflareOauthClientsResultOutputReference interface {
 	InternalValue() *DataCloudflareOauthClientsResult
 	SetInternalValue(val *DataCloudflareOauthClientsResult)
 	LogoUri() *string
+	OptionalScopes() *[]*string
 	PolicyUri() *string
 	PostLogoutRedirectUris() *[]*string
 	PromotedAt() *string
@@ -233,6 +234,16 @@ func (j *jsiiProxy_DataCloudflareOauthClientsResultOutputReference) LogoUri() *s
 	_jsii_.Get(
 		j,
 		"logoUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOauthClientsResultOutputReference) OptionalScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalScopes",
 		&returns,
 	)
 	return returns

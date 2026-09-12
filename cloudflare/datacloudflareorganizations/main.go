@@ -285,6 +285,7 @@ func init() {
 		reflect.TypeOf((*DataCloudflareOrganizationsResultMetaTenantFlagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountCreation", GoGetter: "AccountCreation"},
+			_jsii_.MemberProperty{JsiiProperty: "accountCreationAppliesTenantDefaults", GoGetter: "AccountCreationAppliesTenantDefaults"},
 			_jsii_.MemberProperty{JsiiProperty: "accountDeletion", GoGetter: "AccountDeletion"},
 			_jsii_.MemberProperty{JsiiProperty: "accountMigration", GoGetter: "AccountMigration"},
 			_jsii_.MemberProperty{JsiiProperty: "accountMobility", GoGetter: "AccountMobility"},

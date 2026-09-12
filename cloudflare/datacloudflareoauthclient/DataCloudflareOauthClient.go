@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/oauth_client cloudflare_oauth_client}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/oauth_client cloudflare_oauth_client}.
 type DataCloudflareOauthClient interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -56,6 +56,7 @@ type DataCloudflareOauthClient interface {
 	OauthClientId() *string
 	SetOauthClientId(val *string)
 	OauthClientIdInput() *string
+	OptionalScopes() *[]*string
 	PolicyUri() *string
 	PostLogoutRedirectUris() *[]*string
 	PromotedAt() *string
@@ -367,6 +368,16 @@ func (j *jsiiProxy_DataCloudflareOauthClient) OauthClientIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareOauthClient) OptionalScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalScopes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareOauthClient) PolicyUri() *string {
 	var returns *string
 	_jsii_.Get(
@@ -518,7 +529,7 @@ func (j *jsiiProxy_DataCloudflareOauthClient) Visibility() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/oauth_client cloudflare_oauth_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/oauth_client cloudflare_oauth_client} Data Source.
 func NewDataCloudflareOauthClient(scope constructs.Construct, id *string, config *DataCloudflareOauthClientConfig) DataCloudflareOauthClient {
 	_init_.Initialize()
 
@@ -536,7 +547,7 @@ func NewDataCloudflareOauthClient(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/oauth_client cloudflare_oauth_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/oauth_client cloudflare_oauth_client} Data Source.
 func NewDataCloudflareOauthClient_Override(d DataCloudflareOauthClient, scope constructs.Construct, id *string, config *DataCloudflareOauthClientConfig) {
 	_init_.Initialize()
 

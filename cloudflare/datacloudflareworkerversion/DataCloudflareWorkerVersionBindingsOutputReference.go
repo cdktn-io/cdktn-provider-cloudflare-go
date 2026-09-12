@@ -45,6 +45,7 @@ type DataCloudflareWorkerVersionBindingsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
+	Identity() *string
 	IndexName() *string
 	InstanceName() *string
 	InternalValue() *DataCloudflareWorkerVersionBindings
@@ -306,6 +307,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Id() *str
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Identity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns

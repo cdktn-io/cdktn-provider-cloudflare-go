@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry}.
 type ZeroTrustDlpCustomEntry interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -616,7 +616,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntry) WordList() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
 func NewZeroTrustDlpCustomEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpCustomEntryConfig) ZeroTrustDlpCustomEntry {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewZeroTrustDlpCustomEntry(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
 func NewZeroTrustDlpCustomEntry_Override(z ZeroTrustDlpCustomEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpCustomEntryConfig) {
 	_init_.Initialize()
 

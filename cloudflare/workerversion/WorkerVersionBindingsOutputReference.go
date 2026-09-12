@@ -74,6 +74,9 @@ type WorkerVersionBindingsOutputReference interface {
 	Fqn() *string
 	Id() *string
 	SetId(val *string)
+	Identity() *string
+	SetIdentity(val *string)
+	IdentityInput() *string
 	IdInput() *string
 	IndexName() *string
 	SetIndexName(val *string)
@@ -205,6 +208,7 @@ type WorkerVersionBindingsOutputReference interface {
 	ResetEnvironment()
 	ResetFormat()
 	ResetId()
+	ResetIdentity()
 	ResetIndexName()
 	ResetInstanceName()
 	ResetJson()
@@ -570,6 +574,26 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) Identity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) IdentityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -1370,6 +1394,17 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetIdentity(val *string) {
+	if err := j.validateSetIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identity",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference)SetIndexName(val *string) {
 	if err := j.validateSetIndexNameParameters(val); err != nil {
 		panic(err)
@@ -2002,6 +2037,14 @@ func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionBindingsOutputReference) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

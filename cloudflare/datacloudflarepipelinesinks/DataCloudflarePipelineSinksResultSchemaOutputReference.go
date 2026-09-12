@@ -29,7 +29,6 @@ type DataCloudflarePipelineSinksResultSchemaOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Fields() DataCloudflarePipelineSinksResultSchemaFieldsList
-	Format() DataCloudflarePipelineSinksResultSchemaFormatOutputReference
 	// Experimental.
 	Fqn() *string
 	Inferred() cdktn.IResolvable
@@ -117,16 +116,6 @@ func (j *jsiiProxy_DataCloudflarePipelineSinksResultSchemaOutputReference) Field
 	_jsii_.Get(
 		j,
 		"fields",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflarePipelineSinksResultSchemaOutputReference) Format() DataCloudflarePipelineSinksResultSchemaFormatOutputReference {
-	var returns DataCloudflarePipelineSinksResultSchemaFormatOutputReference
-	_jsii_.Get(
-		j,
-		"format",
 		&returns,
 	)
 	return returns

@@ -123,6 +123,10 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOrigi
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOriginRangeRequestsParameters(value *RulesetRulesActionParametersOriginRangeRequests) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOverridesParameters(value *RulesetRulesActionParametersOverrides) error {
 	return nil
 }

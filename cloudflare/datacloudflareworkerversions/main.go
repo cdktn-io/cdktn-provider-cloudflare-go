@@ -382,6 +382,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "identity", GoGetter: "Identity"},
 			_jsii_.MemberProperty{JsiiProperty: "indexName", GoGetter: "IndexName"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceName", GoGetter: "InstanceName"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},

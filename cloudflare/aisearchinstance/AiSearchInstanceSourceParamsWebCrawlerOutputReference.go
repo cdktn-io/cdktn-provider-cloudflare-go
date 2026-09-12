@@ -39,8 +39,6 @@ type AiSearchInstanceSourceParamsWebCrawlerOutputReference interface {
 	ParseType() *string
 	SetParseType(val *string)
 	ParseTypeInput() *string
-	StoreOptions() AiSearchInstanceSourceParamsWebCrawlerStoreOptionsOutputReference
-	StoreOptionsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,11 +73,9 @@ type AiSearchInstanceSourceParamsWebCrawlerOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDiscoverOptions(value *AiSearchInstanceSourceParamsWebCrawlerDiscoverOptions)
 	PutParseOptions(value *AiSearchInstanceSourceParamsWebCrawlerParseOptions)
-	PutStoreOptions(value *AiSearchInstanceSourceParamsWebCrawlerStoreOptions)
 	ResetDiscoverOptions()
 	ResetParseOptions()
 	ResetParseType()
-	ResetStoreOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -200,26 +196,6 @@ func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) ParseT
 	_jsii_.Get(
 		j,
 		"parseTypeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) StoreOptions() AiSearchInstanceSourceParamsWebCrawlerStoreOptionsOutputReference {
-	var returns AiSearchInstanceSourceParamsWebCrawlerStoreOptionsOutputReference
-	_jsii_.Get(
-		j,
-		"storeOptions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) StoreOptionsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"storeOptionsInput",
 		&returns,
 	)
 	return returns
@@ -547,17 +523,6 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) PutPar
 	)
 }
 
-func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) PutStoreOptions(value *AiSearchInstanceSourceParamsWebCrawlerStoreOptions) {
-	if err := a.validatePutStoreOptionsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putStoreOptions",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) ResetDiscoverOptions() {
 	_jsii_.InvokeVoid(
 		a,
@@ -578,14 +543,6 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) ResetP
 	_jsii_.InvokeVoid(
 		a,
 		"resetParseType",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) ResetStoreOptions() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetStoreOptions",
 		nil, // no parameters
 	)
 }

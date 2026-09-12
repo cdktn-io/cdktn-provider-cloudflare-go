@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) validateOv
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) validatePutFilterParameters(value *DataCloudflareZeroTrustResourceLibraryApplicationFilter) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

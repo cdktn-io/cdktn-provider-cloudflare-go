@@ -115,6 +115,10 @@ func (j *jsiiProxy_ContentScanningExpression) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ContentScanningExpression) validateSetPayloadParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContentScanningExpression) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

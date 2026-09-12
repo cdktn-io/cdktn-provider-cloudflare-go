@@ -55,10 +55,6 @@ func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) validatePutStoreOptionsParameters(value *AiSearchInstanceSourceParamsWebCrawlerStoreOptions) error {
-	return nil
-}
-
 func (a *jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

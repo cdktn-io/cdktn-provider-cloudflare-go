@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktn.TerraformResource
 	AiBotsProtection() *string
@@ -24,6 +24,9 @@ type BotManagement interface {
 	BmCookieEnabled() interface{}
 	SetBmCookieEnabled(val interface{})
 	BmCookieEnabledInput() interface{}
+	BotPreferenceSyncEnabled() interface{}
+	SetBotPreferenceSyncEnabled(val interface{})
+	BotPreferenceSyncEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	CfRobotsVariant() *string
@@ -207,6 +210,7 @@ type BotManagement interface {
 	ResetAiBotsProtection()
 	ResetAutoUpdateModel()
 	ResetBmCookieEnabled()
+	ResetBotPreferenceSyncEnabled()
 	ResetCfRobotsVariant()
 	ResetContentBotsProtection()
 	ResetCrawlerProtection()
@@ -304,6 +308,26 @@ func (j *jsiiProxy_BotManagement) BmCookieEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"bmCookieEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) BotPreferenceSyncEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"botPreferenceSyncEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) BotPreferenceSyncEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"botPreferenceSyncEnabledInput",
 		&returns,
 	)
 	return returns
@@ -760,7 +784,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -778,7 +802,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -818,6 +842,17 @@ func (j *jsiiProxy_BotManagement)SetBmCookieEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"bmCookieEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetBotPreferenceSyncEnabled(val interface{}) {
+	if err := j.validateSetBotPreferenceSyncEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"botPreferenceSyncEnabled",
 		val,
 	)
 }
@@ -1433,6 +1468,14 @@ func (b *jsiiProxy_BotManagement) ResetBmCookieEnabled() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetBmCookieEnabled",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetBotPreferenceSyncEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBotPreferenceSyncEnabled",
 		nil, // no parameters
 	)
 }

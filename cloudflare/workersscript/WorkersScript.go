@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -67,6 +67,8 @@ type WorkersScript interface {
 	Etag() *string
 	Exports() WorkersScriptExportsMap
 	ExportsInput() interface{}
+	Files() WorkersScriptFilesMap
+	FilesInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -222,6 +224,7 @@ type WorkersScript interface {
 	PutBindings(value interface{})
 	PutCacheOptions(value *WorkersScriptCacheOptions)
 	PutExports(value interface{})
+	PutFiles(value interface{})
 	PutLimits(value *WorkersScriptLimits)
 	PutMigrations(value *WorkersScriptMigrations)
 	PutObservability(value *WorkersScriptObservability)
@@ -253,6 +256,7 @@ type WorkersScript interface {
 	ResetContentSha256()
 	ResetContentType()
 	ResetExports()
+	ResetFiles()
 	ResetKeepAssets()
 	ResetKeepBindings()
 	ResetLimits()
@@ -619,6 +623,26 @@ func (j *jsiiProxy_WorkersScript) ExportsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"exportsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) Files() WorkersScriptFilesMap {
+	var returns WorkersScriptFilesMap
+	_jsii_.Get(
+		j,
+		"files",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) FilesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filesInput",
 		&returns,
 	)
 	return returns
@@ -1085,7 +1109,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -1103,7 +1127,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -1760,6 +1784,17 @@ func (w *jsiiProxy_WorkersScript) PutExports(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkersScript) PutFiles(value interface{}) {
+	if err := w.validatePutFilesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putFiles",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScript) PutLimits(value *WorkersScriptLimits) {
 	if err := w.validatePutLimitsParameters(value); err != nil {
 		panic(err)
@@ -1929,6 +1964,14 @@ func (w *jsiiProxy_WorkersScript) ResetExports() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetExports",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetFiles() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetFiles",
 		nil, // no parameters
 	)
 }

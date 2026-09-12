@@ -22,11 +22,15 @@ type ContentScanningExpressionConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
 	Body interface{} `field:"required" json:"body" yaml:"body"`
 	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Defines the custom content extraction expression used to reach content objects in the request.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+	Payload *string `field:"optional" json:"payload" yaml:"payload"`
 }
 

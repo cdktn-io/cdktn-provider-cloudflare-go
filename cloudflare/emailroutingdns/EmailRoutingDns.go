@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
 type EmailRoutingDns interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -33,7 +33,6 @@ type EmailRoutingDns interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Enabled() cdktn.IResolvable
-	Errors() EmailRoutingDnsErrorsList
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -47,7 +46,6 @@ type EmailRoutingDns interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
-	Messages() EmailRoutingDnsMessagesList
 	Modified() *string
 	Name() *string
 	SetName(val *string)
@@ -64,11 +62,9 @@ type EmailRoutingDns interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Result() EmailRoutingDnsResultOutputReference
-	ResultInfo() EmailRoutingDnsResultInfoOutputReference
 	SkipWizard() cdktn.IResolvable
 	Status() *string
-	Success() cdktn.IResolvable
+	SupportSubaddress() cdktn.IResolvable
 	Tag() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -272,16 +268,6 @@ func (j *jsiiProxy_EmailRoutingDns) Enabled() cdktn.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) Errors() EmailRoutingDnsErrorsList {
-	var returns EmailRoutingDnsErrorsList
-	_jsii_.Get(
-		j,
-		"errors",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_EmailRoutingDns) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -327,16 +313,6 @@ func (j *jsiiProxy_EmailRoutingDns) Lifecycle() *cdktn.TerraformResourceLifecycl
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailRoutingDns) Messages() EmailRoutingDnsMessagesList {
-	var returns EmailRoutingDnsMessagesList
-	_jsii_.Get(
-		j,
-		"messages",
 		&returns,
 	)
 	return returns
@@ -412,26 +388,6 @@ func (j *jsiiProxy_EmailRoutingDns) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) Result() EmailRoutingDnsResultOutputReference {
-	var returns EmailRoutingDnsResultOutputReference
-	_jsii_.Get(
-		j,
-		"result",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailRoutingDns) ResultInfo() EmailRoutingDnsResultInfoOutputReference {
-	var returns EmailRoutingDnsResultInfoOutputReference
-	_jsii_.Get(
-		j,
-		"resultInfo",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_EmailRoutingDns) SkipWizard() cdktn.IResolvable {
 	var returns cdktn.IResolvable
 	_jsii_.Get(
@@ -452,11 +408,11 @@ func (j *jsiiProxy_EmailRoutingDns) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingDns) Success() cdktn.IResolvable {
+func (j *jsiiProxy_EmailRoutingDns) SupportSubaddress() cdktn.IResolvable {
 	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
-		"success",
+		"supportSubaddress",
 		&returns,
 	)
 	return returns
@@ -523,7 +479,7 @@ func (j *jsiiProxy_EmailRoutingDns) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
 func NewEmailRoutingDns(scope constructs.Construct, id *string, config *EmailRoutingDnsConfig) EmailRoutingDns {
 	_init_.Initialize()
 
@@ -541,7 +497,7 @@ func NewEmailRoutingDns(scope constructs.Construct, id *string, config *EmailRou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
 func NewEmailRoutingDns_Override(e EmailRoutingDns, scope constructs.Construct, id *string, config *EmailRoutingDnsConfig) {
 	_init_.Initialize()
 

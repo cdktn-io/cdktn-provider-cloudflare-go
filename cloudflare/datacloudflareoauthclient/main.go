@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "oauthClientId", GoGetter: "OauthClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "oauthClientIdInput", GoGetter: "OauthClientIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "optionalScopes", GoGetter: "OptionalScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "policyUri", GoGetter: "PolicyUri"},
 			_jsii_.MemberProperty{JsiiProperty: "postLogoutRedirectUris", GoGetter: "PostLogoutRedirectUris"},

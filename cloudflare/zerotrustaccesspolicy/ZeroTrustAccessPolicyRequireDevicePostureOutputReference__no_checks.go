@@ -51,6 +51,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireDevicePostureOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessPolicyRequireDevicePostureOutputReference) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessPolicyRequireDevicePostureOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

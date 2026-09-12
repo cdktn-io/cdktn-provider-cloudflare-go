@@ -34,7 +34,6 @@ type DataCloudflareApiShieldOperationsResultFeaturesSchemaInfoActiveSchemaOutput
 	Id() *string
 	InternalValue() *DataCloudflareApiShieldOperationsResultFeaturesSchemaInfoActiveSchema
 	SetInternalValue(val *DataCloudflareApiShieldOperationsResultFeaturesSchemaInfoActiveSchema)
-	IsLearned() cdktn.IResolvable
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -148,16 +147,6 @@ func (j *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesSchemaInfoActi
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareApiShieldOperationsResultFeaturesSchemaInfoActiveSchemaOutputReference) IsLearned() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"isLearned",
 		&returns,
 	)
 	return returns

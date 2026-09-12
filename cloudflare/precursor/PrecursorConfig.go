@@ -24,17 +24,17 @@ type PrecursorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#zone_id Precursor#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#zone_id Precursor#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// The zone-level Precursor enforcement mode applied to requests that do not match a more specific enforcement rule.
 	//
 	// Available values: "off", "min-friction", "max-security".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#default_mode Precursor#default_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#default_mode Precursor#default_mode}
 	DefaultMode *string `field:"optional" json:"defaultMode" yaml:"defaultMode"`
 	// The ordered list of enforcement rules for the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor#enforcement_rules Precursor#enforcement_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor#enforcement_rules Precursor#enforcement_rules}
 	EnforcementRules interface{} `field:"optional" json:"enforcementRules" yaml:"enforcementRules"`
 }
 

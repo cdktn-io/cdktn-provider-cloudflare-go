@@ -127,6 +127,10 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetIdParameters
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetIdentityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetIndexNameParameters(val *string) error {
 	return nil
 }

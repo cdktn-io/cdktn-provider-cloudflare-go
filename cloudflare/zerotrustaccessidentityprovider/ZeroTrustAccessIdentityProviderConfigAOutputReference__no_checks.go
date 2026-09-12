@@ -123,6 +123,10 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetForceAuthnParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetIdpPublicCertsParameters(val *[]*string) error {
 	return nil
 }
@@ -132,6 +136,10 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 }
 
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetIssuerUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetMaxSsoUrlLengthParameters(val *float64) error {
 	return nil
 }
 

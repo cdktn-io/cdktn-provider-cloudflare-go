@@ -180,7 +180,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "vectorizeName", GoGetter: "VectorizeName"},
 			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
@@ -850,14 +849,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parseTypeInput", GoGetter: "ParseTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDiscoverOptions", GoMethod: "PutDiscoverOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putParseOptions", GoMethod: "PutParseOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putStoreOptions", GoMethod: "PutStoreOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiscoverOptions", GoMethod: "ResetDiscoverOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParseOptions", GoMethod: "ResetParseOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParseType", GoMethod: "ResetParseType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStoreOptions", GoMethod: "ResetStoreOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "storeOptions", GoGetter: "StoreOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "storeOptionsInput", GoGetter: "StoreOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -978,50 +973,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktn/provider-cloudflare.aiSearchInstance.AiSearchInstanceSourceParamsWebCrawlerStoreOptions",
-		reflect.TypeOf((*AiSearchInstanceSourceParamsWebCrawlerStoreOptions)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktn/provider-cloudflare.aiSearchInstance.AiSearchInstanceSourceParamsWebCrawlerStoreOptionsOutputReference",
-		reflect.TypeOf((*AiSearchInstanceSourceParamsWebCrawlerStoreOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "r2Jurisdiction", GoGetter: "R2Jurisdiction"},
-			_jsii_.MemberProperty{JsiiProperty: "r2JurisdictionInput", GoGetter: "R2JurisdictionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetR2Jurisdiction", GoMethod: "ResetR2Jurisdiction"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStorageType", GoMethod: "ResetStorageType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "storageId", GoGetter: "StorageId"},
-			_jsii_.MemberProperty{JsiiProperty: "storageIdInput", GoGetter: "StorageIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "storageType", GoGetter: "StorageType"},
-			_jsii_.MemberProperty{JsiiProperty: "storageTypeInput", GoGetter: "StorageTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AiSearchInstanceSourceParamsWebCrawlerStoreOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

@@ -33,7 +33,7 @@ type DataCloudflareWorkflowsResultOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	Instances() DataCloudflareWorkflowsResultInstancesOutputReference
+	Instances() cdktn.NumberMap
 	InternalValue() *DataCloudflareWorkflowsResult
 	SetInternalValue(val *DataCloudflareWorkflowsResult)
 	ModifiedOn() *string
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataCloudflareWorkflowsResultOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareWorkflowsResultOutputReference) Instances() DataCloudflareWorkflowsResultInstancesOutputReference {
-	var returns DataCloudflareWorkflowsResultInstancesOutputReference
+func (j *jsiiProxy_DataCloudflareWorkflowsResultOutputReference) Instances() cdktn.NumberMap {
+	var returns cdktn.NumberMap
 	_jsii_.Get(
 		j,
 		"instances",

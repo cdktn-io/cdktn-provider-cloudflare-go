@@ -49,6 +49,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "etag", GoGetter: "Etag"},
 			_jsii_.MemberProperty{JsiiProperty: "exports", GoGetter: "Exports"},
 			_jsii_.MemberProperty{JsiiProperty: "exportsInput", GoGetter: "ExportsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "files", GoGetter: "Files"},
+			_jsii_.MemberProperty{JsiiProperty: "filesInput", GoGetter: "FilesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -106,6 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putBindings", GoMethod: "PutBindings"},
 			_jsii_.MemberMethod{JsiiMethod: "putCacheOptions", GoMethod: "PutCacheOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putExports", GoMethod: "PutExports"},
+			_jsii_.MemberMethod{JsiiMethod: "putFiles", GoMethod: "PutFiles"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimits", GoMethod: "PutLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "putMigrations", GoMethod: "PutMigrations"},
 			_jsii_.MemberMethod{JsiiMethod: "putObservability", GoMethod: "PutObservability"},
@@ -126,6 +129,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetContentSha256", GoMethod: "ResetContentSha256"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContentType", GoMethod: "ResetContentType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExports", GoMethod: "ResetExports"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFiles", GoMethod: "ResetFiles"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepAssets", GoMethod: "ResetKeepAssets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepBindings", GoMethod: "ResetKeepBindings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLimits", GoMethod: "ResetLimits"},
@@ -761,6 +765,72 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersScriptExportsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptFiles",
+		reflect.TypeOf((*WorkersScriptFiles)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptFilesMap",
+		reflect.TypeOf((*WorkersScriptFilesMap)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkersScriptFilesMap{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexMap)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptFilesOutputReference",
+		reflect.TypeOf((*WorkersScriptFilesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "contentBase64", GoGetter: "ContentBase64"},
+			_jsii_.MemberProperty{JsiiProperty: "contentBase64Input", GoGetter: "ContentBase64Input"},
+			_jsii_.MemberProperty{JsiiProperty: "contentFile", GoGetter: "ContentFile"},
+			_jsii_.MemberProperty{JsiiProperty: "contentFileInput", GoGetter: "ContentFileInput"},
+			_jsii_.MemberProperty{JsiiProperty: "contentSha256", GoGetter: "ContentSha256"},
+			_jsii_.MemberProperty{JsiiProperty: "contentType", GoGetter: "ContentType"},
+			_jsii_.MemberProperty{JsiiProperty: "contentTypeInput", GoGetter: "ContentTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContentBase64", GoMethod: "ResetContentBase64"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContentFile", GoMethod: "ResetContentFile"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkersScriptFilesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

@@ -46,6 +46,7 @@ type DataCloudflareZeroTrustResourceLibraryApplicationsResultOutputReference int
 	IpSubnets() *[]*string
 	Name() *string
 	PortProtocols() *[]*string
+	ReviewStatus() *string
 	SupportDomains() *[]*string
 	Supported() *[]*string
 	// Experimental.
@@ -282,6 +283,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationsResultOutpu
 	_jsii_.Get(
 		j,
 		"portProtocols",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationsResultOutputReference) ReviewStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reviewStatus",
 		&returns,
 	)
 	return returns

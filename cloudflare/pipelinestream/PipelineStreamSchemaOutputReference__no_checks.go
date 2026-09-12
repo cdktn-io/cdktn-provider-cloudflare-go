@@ -51,10 +51,6 @@ func (p *jsiiProxy_PipelineStreamSchemaOutputReference) validatePutFieldsParamet
 	return nil
 }
 
-func (p *jsiiProxy_PipelineStreamSchemaOutputReference) validatePutFormatParameters(value *PipelineStreamSchemaFormat) error {
-	return nil
-}
-
 func (p *jsiiProxy_PipelineStreamSchemaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

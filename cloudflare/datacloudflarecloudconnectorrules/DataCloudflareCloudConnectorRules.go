@@ -12,11 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules}.
 type DataCloudflareCloudConnectorRules interface {
 	cdktn.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CloudConnectorRulesProvider() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -27,6 +28,9 @@ type DataCloudflareCloudConnectorRules interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	Enabled() cdktn.IResolvable
+	Expression() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -42,13 +46,13 @@ type DataCloudflareCloudConnectorRules interface {
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Parameters() DataCloudflareCloudConnectorRulesParametersOutputReference
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Rules() DataCloudflareCloudConnectorRulesRulesList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -99,7 +103,6 @@ type DataCloudflareCloudConnectorRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -138,6 +141,16 @@ func (j *jsiiProxy_DataCloudflareCloudConnectorRules) CdktfStack() cdktn.Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCloudConnectorRules) CloudConnectorRulesProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudConnectorRulesProvider",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCloudConnectorRules) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -163,6 +176,36 @@ func (j *jsiiProxy_DataCloudflareCloudConnectorRules) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudConnectorRules) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudConnectorRules) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudConnectorRules) Expression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expression",
 		&returns,
 	)
 	return returns
@@ -228,6 +271,16 @@ func (j *jsiiProxy_DataCloudflareCloudConnectorRules) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCloudConnectorRules) Parameters() DataCloudflareCloudConnectorRulesParametersOutputReference {
+	var returns DataCloudflareCloudConnectorRulesParametersOutputReference
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCloudConnectorRules) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -243,16 +296,6 @@ func (j *jsiiProxy_DataCloudflareCloudConnectorRules) RawOverrides() interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareCloudConnectorRules) Rules() DataCloudflareCloudConnectorRulesRulesList {
-	var returns DataCloudflareCloudConnectorRulesRulesList
-	_jsii_.Get(
-		j,
-		"rules",
 		&returns,
 	)
 	return returns
@@ -309,7 +352,7 @@ func (j *jsiiProxy_DataCloudflareCloudConnectorRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
 func NewDataCloudflareCloudConnectorRules(scope constructs.Construct, id *string, config *DataCloudflareCloudConnectorRulesConfig) DataCloudflareCloudConnectorRules {
 	_init_.Initialize()
 
@@ -327,7 +370,7 @@ func NewDataCloudflareCloudConnectorRules(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/cloud_connector_rules cloudflare_cloud_connector_rules} Data Source.
 func NewDataCloudflareCloudConnectorRules_Override(d DataCloudflareCloudConnectorRules, scope constructs.Construct, id *string, config *DataCloudflareCloudConnectorRulesConfig) {
 	_init_.Initialize()
 
@@ -695,14 +738,6 @@ func (d *jsiiProxy_DataCloudflareCloudConnectorRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareCloudConnectorRules) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

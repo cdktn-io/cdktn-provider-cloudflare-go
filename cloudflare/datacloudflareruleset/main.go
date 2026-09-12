@@ -1321,6 +1321,43 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOriginRangeRequests",
+		reflect.TypeOf((*DataCloudflareRulesetRulesActionParametersOriginRangeRequests)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOriginRangeRequestsOutputReference",
+		reflect.TypeOf((*DataCloudflareRulesetRulesActionParametersOriginRangeRequestsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataCloudflareRulesetRulesActionParametersOriginRangeRequestsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference",
 		reflect.TypeOf((*DataCloudflareRulesetRulesActionParametersOutputReference)(nil)).Elem(),
@@ -1384,6 +1421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "origin", GoGetter: "Origin"},
 			_jsii_.MemberProperty{JsiiProperty: "originCacheControl", GoGetter: "OriginCacheControl"},
 			_jsii_.MemberProperty{JsiiProperty: "originErrorPagePassthru", GoGetter: "OriginErrorPagePassthru"},
+			_jsii_.MemberProperty{JsiiProperty: "originRangeRequests", GoGetter: "OriginRangeRequests"},
 			_jsii_.MemberProperty{JsiiProperty: "overrides", GoGetter: "Overrides"},
 			_jsii_.MemberProperty{JsiiProperty: "phases", GoGetter: "Phases"},
 			_jsii_.MemberProperty{JsiiProperty: "polish", GoGetter: "Polish"},

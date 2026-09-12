@@ -462,59 +462,6 @@ func init() {
 			return &j
 		},
 	)
-	_jsii_.RegisterStruct(
-		"@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFormat",
-		reflect.TypeOf((*PipelineSinkSchemaFormat)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaFormatOutputReference",
-		reflect.TypeOf((*PipelineSinkSchemaFormatOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberProperty{JsiiProperty: "compression", GoGetter: "Compression"},
-			_jsii_.MemberProperty{JsiiProperty: "compressionInput", GoGetter: "CompressionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "decimalEncoding", GoGetter: "DecimalEncoding"},
-			_jsii_.MemberProperty{JsiiProperty: "decimalEncodingInput", GoGetter: "DecimalEncodingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCompression", GoMethod: "ResetCompression"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDecimalEncoding", GoMethod: "ResetDecimalEncoding"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRowGroupBytes", GoMethod: "ResetRowGroupBytes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimestampFormat", GoMethod: "ResetTimestampFormat"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUnstructured", GoMethod: "ResetUnstructured"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "rowGroupBytes", GoGetter: "RowGroupBytes"},
-			_jsii_.MemberProperty{JsiiProperty: "rowGroupBytesInput", GoGetter: "RowGroupBytesInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timestampFormat", GoGetter: "TimestampFormat"},
-			_jsii_.MemberProperty{JsiiProperty: "timestampFormatInput", GoGetter: "TimestampFormatInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "unstructured", GoGetter: "Unstructured"},
-			_jsii_.MemberProperty{JsiiProperty: "unstructuredInput", GoGetter: "UnstructuredInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_PipelineSinkSchemaFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
-			return &j
-		},
-	)
 	_jsii_.RegisterClass(
 		"@cdktn/provider-cloudflare.pipelineSink.PipelineSinkSchemaOutputReference",
 		reflect.TypeOf((*PipelineSinkSchemaOutputReference)(nil)).Elem(),
@@ -525,8 +472,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fields", GoGetter: "Fields"},
 			_jsii_.MemberProperty{JsiiProperty: "fieldsInput", GoGetter: "FieldsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "format", GoGetter: "Format"},
-			_jsii_.MemberProperty{JsiiProperty: "formatInput", GoGetter: "FormatInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -543,9 +488,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putFields", GoMethod: "PutFields"},
-			_jsii_.MemberMethod{JsiiMethod: "putFormat", GoMethod: "PutFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFields", GoMethod: "ResetFields"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFormat", GoMethod: "ResetFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInferred", GoMethod: "ResetInferred"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -79,6 +79,10 @@ func (w *jsiiProxy_Workflow) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (w *jsiiProxy_Workflow) validatePutConcurrencyParameters(value *WorkflowConcurrency) error {
+	return nil
+}
+
 func (w *jsiiProxy_Workflow) validatePutDefaultRetentionParameters(value *WorkflowDefaultRetention) error {
 	return nil
 }

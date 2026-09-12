@@ -35,6 +35,7 @@ type DataCloudflareWorkersResultObservabilityOutputReference interface {
 	InternalValue() *DataCloudflareWorkersResultObservability
 	SetInternalValue(val *DataCloudflareWorkersResultObservability)
 	Logs() DataCloudflareWorkersResultObservabilityLogsOutputReference
+	RedactQueryString() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataCloudflareWorkersResultObservabilityOutputReference) Logs
 	_jsii_.Get(
 		j,
 		"logs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersResultObservabilityOutputReference) RedactQueryString() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"redactQueryString",
 		&returns,
 	)
 	return returns

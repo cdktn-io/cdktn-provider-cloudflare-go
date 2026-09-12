@@ -74,6 +74,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	Origin() DataCloudflareRulesetRulesActionParametersOriginOutputReference
 	OriginCacheControl() cdktn.IResolvable
 	OriginErrorPagePassthru() cdktn.IResolvable
+	OriginRangeRequests() DataCloudflareRulesetRulesActionParametersOriginRangeRequestsOutputReference
 	Overrides() DataCloudflareRulesetRulesActionParametersOverridesOutputReference
 	Phases() *[]*string
 	Polish() *string
@@ -623,6 +624,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Or
 	_jsii_.Get(
 		j,
 		"originErrorPagePassthru",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) OriginRangeRequests() DataCloudflareRulesetRulesActionParametersOriginRangeRequestsOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersOriginRangeRequestsOutputReference
+	_jsii_.Get(
+		j,
+		"originRangeRequests",
 		&returns,
 	)
 	return returns

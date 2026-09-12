@@ -14,6 +14,7 @@ import (
 type DataCloudflareOrganizationsResultMetaTenantFlagsOutputReference interface {
 	cdktn.ComplexObject
 	AccountCreation() *string
+	AccountCreationAppliesTenantDefaults() *string
 	AccountDeletion() *string
 	AccountMigration() *string
 	AccountMobility() *string
@@ -91,6 +92,16 @@ func (j *jsiiProxy_DataCloudflareOrganizationsResultMetaTenantFlagsOutputReferen
 	_jsii_.Get(
 		j,
 		"accountCreation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationsResultMetaTenantFlagsOutputReference) AccountCreationAppliesTenantDefaults() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountCreationAppliesTenantDefaults",
 		&returns,
 	)
 	return returns

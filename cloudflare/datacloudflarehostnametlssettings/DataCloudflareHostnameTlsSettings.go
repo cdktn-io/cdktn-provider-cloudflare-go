@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_settings cloudflare_hostname_tls_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/hostname_tls_settings cloudflare_hostname_tls_settings}.
 type DataCloudflareHostnameTlsSettings interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataCloudflareHostnameTlsSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_settings cloudflare_hostname_tls_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/hostname_tls_settings cloudflare_hostname_tls_settings} Data Source.
 func NewDataCloudflareHostnameTlsSettings(scope constructs.Construct, id *string, config *DataCloudflareHostnameTlsSettingsConfig) DataCloudflareHostnameTlsSettings {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataCloudflareHostnameTlsSettings(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/hostname_tls_settings cloudflare_hostname_tls_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/hostname_tls_settings cloudflare_hostname_tls_settings} Data Source.
 func NewDataCloudflareHostnameTlsSettings_Override(d DataCloudflareHostnameTlsSettings, scope constructs.Construct, id *string, config *DataCloudflareHostnameTlsSettingsConfig) {
 	_init_.Initialize()
 

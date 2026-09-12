@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
 type AiSearchInstance interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -172,7 +172,6 @@ type AiSearchInstance interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	VectorizeName() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -1316,18 +1315,8 @@ func (j *jsiiProxy_AiSearchInstance) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AiSearchInstance) VectorizeName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vectorizeName",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearchInstanceConfig) AiSearchInstance {
 	_init_.Initialize()
 
@@ -1345,7 +1334,7 @@ func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance_Override(a AiSearchInstance, scope constructs.Construct, id *string, config *AiSearchInstanceConfig) {
 	_init_.Initialize()
 

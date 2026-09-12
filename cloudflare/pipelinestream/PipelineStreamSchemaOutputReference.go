@@ -30,8 +30,6 @@ type PipelineStreamSchemaOutputReference interface {
 	CreationStack() *[]*string
 	Fields() PipelineStreamSchemaFieldsList
 	FieldsInput() interface{}
-	Format() PipelineStreamSchemaFormatOutputReference
-	FormatInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Inferred() interface{}
@@ -72,9 +70,7 @@ type PipelineStreamSchemaOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFields(value interface{})
-	PutFormat(value *PipelineStreamSchemaFormat)
 	ResetFields()
-	ResetFormat()
 	ResetInferred()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -136,26 +132,6 @@ func (j *jsiiProxy_PipelineStreamSchemaOutputReference) FieldsInput() interface{
 	_jsii_.Get(
 		j,
 		"fieldsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PipelineStreamSchemaOutputReference) Format() PipelineStreamSchemaFormatOutputReference {
-	var returns PipelineStreamSchemaFormatOutputReference
-	_jsii_.Get(
-		j,
-		"format",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PipelineStreamSchemaOutputReference) FormatInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"formatInput",
 		&returns,
 	)
 	return returns
@@ -512,29 +488,10 @@ func (p *jsiiProxy_PipelineStreamSchemaOutputReference) PutFields(value interfac
 	)
 }
 
-func (p *jsiiProxy_PipelineStreamSchemaOutputReference) PutFormat(value *PipelineStreamSchemaFormat) {
-	if err := p.validatePutFormatParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		p,
-		"putFormat",
-		[]interface{}{value},
-	)
-}
-
 func (p *jsiiProxy_PipelineStreamSchemaOutputReference) ResetFields() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetFields",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PipelineStreamSchemaOutputReference) ResetFormat() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetFormat",
 		nil, // no parameters
 	)
 }

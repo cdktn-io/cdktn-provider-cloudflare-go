@@ -5,9 +5,9 @@ package contentscanningexpression
 
 
 type ContentScanningExpressionBody struct {
-	// Defines the ruleset expression to use in matching content objects.
+	// Defines the custom content extraction expression used to reach content objects in the request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
 	Payload *string `field:"required" json:"payload" yaml:"payload"`
 }
 

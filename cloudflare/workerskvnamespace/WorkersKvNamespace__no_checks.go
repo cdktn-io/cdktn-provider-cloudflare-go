@@ -111,6 +111,10 @@ func (j *jsiiProxy_WorkersKvNamespace) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_WorkersKvNamespace) validateSetJurisdictionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersKvNamespace) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

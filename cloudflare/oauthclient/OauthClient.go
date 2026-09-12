@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/oauth_client cloudflare_oauth_client}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client cloudflare_oauth_client}.
 type OauthClient interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -71,6 +71,9 @@ type OauthClient interface {
 	OauthClientId() *string
 	SetOauthClientId(val *string)
 	OauthClientIdInput() *string
+	OptionalScopes() *[]*string
+	SetOptionalScopes(val *[]*string)
+	OptionalScopesInput() *[]*string
 	PolicyUri() *string
 	SetPolicyUri(val *string)
 	PolicyUriInput() *string
@@ -209,6 +212,7 @@ type OauthClient interface {
 	ResetClientUri()
 	ResetLogoUri()
 	ResetOauthClientId()
+	ResetOptionalScopes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -533,6 +537,26 @@ func (j *jsiiProxy_OauthClient) OauthClientIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OauthClient) OptionalScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalScopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthClient) OptionalScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalScopesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OauthClient) PolicyUri() *string {
 	var returns *string
 	_jsii_.Get(
@@ -774,7 +798,7 @@ func (j *jsiiProxy_OauthClient) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/oauth_client cloudflare_oauth_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client cloudflare_oauth_client} Resource.
 func NewOauthClient(scope constructs.Construct, id *string, config *OauthClientConfig) OauthClient {
 	_init_.Initialize()
 
@@ -792,7 +816,7 @@ func NewOauthClient(scope constructs.Construct, id *string, config *OauthClientC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/oauth_client cloudflare_oauth_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/oauth_client cloudflare_oauth_client} Resource.
 func NewOauthClient_Override(o OauthClient, scope constructs.Construct, id *string, config *OauthClientConfig) {
 	_init_.Initialize()
 
@@ -925,6 +949,17 @@ func (j *jsiiProxy_OauthClient)SetOauthClientId(val *string) {
 	_jsii_.Set(
 		j,
 		"oauthClientId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OauthClient)SetOptionalScopes(val *[]*string) {
+	if err := j.validateSetOptionalScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalScopes",
 		val,
 	)
 }
@@ -1444,6 +1479,14 @@ func (o *jsiiProxy_OauthClient) ResetOauthClientId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOauthClientId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OauthClient) ResetOptionalScopes() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOptionalScopes",
 		nil, // no parameters
 	)
 }

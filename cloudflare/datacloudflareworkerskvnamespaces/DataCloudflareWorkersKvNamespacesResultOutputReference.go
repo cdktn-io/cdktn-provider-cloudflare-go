@@ -33,6 +33,7 @@ type DataCloudflareWorkersKvNamespacesResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareWorkersKvNamespacesResult
 	SetInternalValue(val *DataCloudflareWorkersKvNamespacesResult)
+	Jurisdiction() *string
 	SupportsUrlEncoding() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -137,6 +138,16 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespacesResultOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespacesResultOutputReference) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
 		&returns,
 	)
 	return returns

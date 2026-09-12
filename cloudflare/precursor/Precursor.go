@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor cloudflare_precursor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor cloudflare_precursor}.
 type Precursor interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_Precursor) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor cloudflare_precursor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor cloudflare_precursor} Resource.
 func NewPrecursor(scope constructs.Construct, id *string, config *PrecursorConfig) Precursor {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewPrecursor(scope constructs.Construct, id *string, config *PrecursorConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/precursor cloudflare_precursor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/precursor cloudflare_precursor} Resource.
 func NewPrecursor_Override(p Precursor, scope constructs.Construct, id *string, config *PrecursorConfig) {
 	_init_.Initialize()
 

@@ -13,6 +13,9 @@ import (
 
 type ZeroTrustAccessGroupRequireDevicePostureOutputReference interface {
 	cdktn.ComplexObject
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +70,7 @@ type ZeroTrustAccessGroupRequireDevicePostureOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetAccountId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -80,6 +84,26 @@ type ZeroTrustAccessGroupRequireDevicePostureOutputReference interface {
 // The jsii proxy struct for ZeroTrustAccessGroupRequireDevicePostureOutputReference
 type jsiiProxy_ZeroTrustAccessGroupRequireDevicePostureOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireDevicePostureOutputReference) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireDevicePostureOutputReference) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustAccessGroupRequireDevicePostureOutputReference) ComplexObjectIndex() interface{} {
@@ -197,6 +221,17 @@ func NewZeroTrustAccessGroupRequireDevicePostureOutputReference_Override(z ZeroT
 		"@cdktn/provider-cloudflare.zeroTrustAccessGroup.ZeroTrustAccessGroupRequireDevicePostureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireDevicePostureOutputReference)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -450,6 +485,14 @@ func (z *jsiiProxy_ZeroTrustAccessGroupRequireDevicePostureOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupRequireDevicePostureOutputReference) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAccountId",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessGroupRequireDevicePostureOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

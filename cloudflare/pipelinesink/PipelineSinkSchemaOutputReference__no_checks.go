@@ -51,10 +51,6 @@ func (p *jsiiProxy_PipelineSinkSchemaOutputReference) validatePutFieldsParameter
 	return nil
 }
 
-func (p *jsiiProxy_PipelineSinkSchemaOutputReference) validatePutFormatParameters(value *PipelineSinkSchemaFormat) error {
-	return nil
-}
-
 func (p *jsiiProxy_PipelineSinkSchemaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

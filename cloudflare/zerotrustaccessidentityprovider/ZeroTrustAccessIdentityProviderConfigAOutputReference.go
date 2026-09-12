@@ -73,6 +73,9 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	EnableEncryption() interface{}
 	SetEnableEncryption(val interface{})
 	EnableEncryptionInput() interface{}
+	ForceAuthn() interface{}
+	SetForceAuthn(val interface{})
+	ForceAuthnInput() interface{}
 	// Experimental.
 	Fqn() *string
 	HeaderAttributes() ZeroTrustAccessIdentityProviderConfigHeaderAttributesList
@@ -85,6 +88,9 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	IssuerUrl() *string
 	SetIssuerUrl(val *string)
 	IssuerUrlInput() *string
+	MaxSsoUrlLength() *float64
+	SetMaxSsoUrlLength(val *float64)
+	MaxSsoUrlLengthInput() *float64
 	OktaAccount() *string
 	SetOktaAccount(val *string)
 	OktaAccountInput() *string
@@ -167,9 +173,11 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	ResetEmailAttributeName()
 	ResetEmailClaimName()
 	ResetEnableEncryption()
+	ResetForceAuthn()
 	ResetHeaderAttributes()
 	ResetIdpPublicCerts()
 	ResetIssuerUrl()
+	ResetMaxSsoUrlLength()
 	ResetOktaAccount()
 	ResetOneloginAccount()
 	ResetPingEnvId()
@@ -526,6 +534,26 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Enable
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ForceAuthn() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAuthn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ForceAuthnInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAuthnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -601,6 +629,26 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Issuer
 	_jsii_.Get(
 		j,
 		"issuerUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) MaxSsoUrlLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSsoUrlLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) MaxSsoUrlLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSsoUrlLengthInput",
 		&returns,
 	)
 	return returns
@@ -1071,6 +1119,17 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetEnab
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetForceAuthn(val interface{}) {
+	if err := j.validateSetForceAuthnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceAuthn",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetIdpPublicCerts(val *[]*string) {
 	if err := j.validateSetIdpPublicCertsParameters(val); err != nil {
 		panic(err)
@@ -1100,6 +1159,17 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetIssu
 	_jsii_.Set(
 		j,
 		"issuerUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetMaxSsoUrlLength(val *float64) {
+	if err := j.validateSetMaxSsoUrlLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxSsoUrlLength",
 		val,
 	)
 }
@@ -1564,6 +1634,14 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetE
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetForceAuthn() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetForceAuthn",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetHeaderAttributes() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1584,6 +1662,14 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetI
 	_jsii_.InvokeVoid(
 		z,
 		"resetIssuerUrl",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetMaxSsoUrlLength() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMaxSsoUrlLength",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns}.
 type DataCloudflareEmailRoutingDns interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -27,7 +27,7 @@ type DataCloudflareEmailRoutingDns interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Errors() DataCloudflareEmailRoutingDnsErrorsList
+	Dns() DataCloudflareEmailRoutingDnsDnsList
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -41,7 +41,6 @@ type DataCloudflareEmailRoutingDns interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
-	Messages() DataCloudflareEmailRoutingDnsMessagesList
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -50,12 +49,9 @@ type DataCloudflareEmailRoutingDns interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Result() DataCloudflareEmailRoutingDnsResultOutputReference
-	ResultInfo() DataCloudflareEmailRoutingDnsResultInfoOutputReference
 	Subdomain() *string
 	SetSubdomain(val *string)
 	SubdomainInput() *string
-	Success() cdktn.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -107,7 +103,6 @@ type DataCloudflareEmailRoutingDns interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSubdomain()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -176,11 +171,11 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingDns) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingDns) Errors() DataCloudflareEmailRoutingDnsErrorsList {
-	var returns DataCloudflareEmailRoutingDnsErrorsList
+func (j *jsiiProxy_DataCloudflareEmailRoutingDns) Dns() DataCloudflareEmailRoutingDnsDnsList {
+	var returns DataCloudflareEmailRoutingDnsDnsList
 	_jsii_.Get(
 		j,
-		"errors",
+		"dns",
 		&returns,
 	)
 	return returns
@@ -236,16 +231,6 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingDns) Lifecycle() *cdktn.TerraformRe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingDns) Messages() DataCloudflareEmailRoutingDnsMessagesList {
-	var returns DataCloudflareEmailRoutingDnsMessagesList
-	_jsii_.Get(
-		j,
-		"messages",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareEmailRoutingDns) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -276,26 +261,6 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingDns) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareEmailRoutingDns) Result() DataCloudflareEmailRoutingDnsResultOutputReference {
-	var returns DataCloudflareEmailRoutingDnsResultOutputReference
-	_jsii_.Get(
-		j,
-		"result",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareEmailRoutingDns) ResultInfo() DataCloudflareEmailRoutingDnsResultInfoOutputReference {
-	var returns DataCloudflareEmailRoutingDnsResultInfoOutputReference
-	_jsii_.Get(
-		j,
-		"resultInfo",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareEmailRoutingDns) Subdomain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -311,16 +276,6 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingDns) SubdomainInput() *string {
 	_jsii_.Get(
 		j,
 		"subdomainInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareEmailRoutingDns) Success() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"success",
 		&returns,
 	)
 	return returns
@@ -377,7 +332,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingDns) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns} Data Source.
 func NewDataCloudflareEmailRoutingDns(scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingDnsConfig) DataCloudflareEmailRoutingDns {
 	_init_.Initialize()
 
@@ -395,7 +350,7 @@ func NewDataCloudflareEmailRoutingDns(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns} Data Source.
 func NewDataCloudflareEmailRoutingDns_Override(d DataCloudflareEmailRoutingDns, scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingDnsConfig) {
 	_init_.Initialize()
 
@@ -782,14 +737,6 @@ func (d *jsiiProxy_DataCloudflareEmailRoutingDns) ResetSubdomain() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSubdomain",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareEmailRoutingDns) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

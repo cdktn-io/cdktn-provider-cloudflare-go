@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
 type StreamLiveInput interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -66,6 +66,7 @@ type StreamLiveInput interface {
 	Modified() *string
 	// The tree node.
 	Node() constructs.Node
+	Playback() StreamLiveInputPlaybackOutputReference
 	PreferLowLatency() interface{}
 	SetPreferLowLatency(val interface{})
 	PreferLowLatencyInput() interface{}
@@ -475,6 +476,16 @@ func (j *jsiiProxy_StreamLiveInput) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_StreamLiveInput) Playback() StreamLiveInputPlaybackOutputReference {
+	var returns StreamLiveInputPlaybackOutputReference
+	_jsii_.Get(
+		j,
+		"playback",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamLiveInput) PreferLowLatency() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -656,7 +667,7 @@ func (j *jsiiProxy_StreamLiveInput) WebRtcPlayback() StreamLiveInputWebRtcPlayba
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLiveInputConfig) StreamLiveInput {
 	_init_.Initialize()
 
@@ -674,7 +685,7 @@ func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput_Override(s StreamLiveInput, scope constructs.Construct, id *string, config *StreamLiveInputConfig) {
 	_init_.Initialize()
 

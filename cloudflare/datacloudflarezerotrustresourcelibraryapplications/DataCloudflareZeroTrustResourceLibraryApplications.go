@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications}.
 type DataCloudflareZeroTrustResourceLibraryApplications interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -30,6 +30,9 @@ type DataCloudflareZeroTrustResourceLibraryApplications interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Fields() *string
+	SetFields(val *string)
+	FieldsInput() *string
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -113,6 +116,7 @@ type DataCloudflareZeroTrustResourceLibraryApplications interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetFields()
 	ResetFilter()
 	ResetLimit()
 	ResetMaxItems()
@@ -205,6 +209,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) DependsOn
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) Fields() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) FieldsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldsInput",
 		&returns,
 	)
 	return returns
@@ -441,7 +465,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplications(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationsConfig) DataCloudflareZeroTrustResourceLibraryApplications {
 	_init_.Initialize()
 
@@ -459,7 +483,7 @@ func NewDataCloudflareZeroTrustResourceLibraryApplications(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.24.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplications_Override(d DataCloudflareZeroTrustResourceLibraryApplications, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationsConfig) {
 	_init_.Initialize()
 
@@ -496,6 +520,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications)SetDepends
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications)SetFields(val *string) {
+	if err := j.validateSetFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fields",
 		val,
 	)
 }
@@ -886,6 +921,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) RegisterP
 		d,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) ResetFields() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFields",
+		nil, // no parameters
 	)
 }
 

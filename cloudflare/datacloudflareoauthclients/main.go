@@ -159,6 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "logoUri", GoGetter: "LogoUri"},
+			_jsii_.MemberProperty{JsiiProperty: "optionalScopes", GoGetter: "OptionalScopes"},
 			_jsii_.MemberProperty{JsiiProperty: "policyUri", GoGetter: "PolicyUri"},
 			_jsii_.MemberProperty{JsiiProperty: "postLogoutRedirectUris", GoGetter: "PostLogoutRedirectUris"},
 			_jsii_.MemberProperty{JsiiProperty: "promotedAt", GoGetter: "PromotedAt"},

@@ -31,7 +31,6 @@ type DataCloudflareTurnstileWidgetsResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeployedVia() *string
 	Domains() *[]*string
 	EphemeralId() cdktn.IResolvable
 	// Experimental.
@@ -39,7 +38,6 @@ type DataCloudflareTurnstileWidgetsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareTurnstileWidgetsResult
 	SetInternalValue(val *DataCloudflareTurnstileWidgetsResult)
-	LastModifiedVia() *string
 	Mode() *string
 	ModifiedOn() *string
 	Name() *string
@@ -153,16 +151,6 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) DeployedVia() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"deployedVia",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Domains() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -208,16 +196,6 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareTurnstileWidgetsResultOutputReference) LastModifiedVia() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastModifiedVia",
 		&returns,
 	)
 	return returns

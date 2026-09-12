@@ -139,6 +139,8 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetOriginErrorPagePassthru(val interface{})
 	OriginErrorPagePassthruInput() interface{}
 	OriginInput() interface{}
+	OriginRangeRequests() RulesetRulesActionParametersOriginRangeRequestsOutputReference
+	OriginRangeRequestsInput() interface{}
 	Overrides() RulesetRulesActionParametersOverridesOutputReference
 	OverridesInput() interface{}
 	Phases() *[]*string
@@ -285,6 +287,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutNoStore(value *RulesetRulesActionParametersNoStore)
 	PutNoTransform(value *RulesetRulesActionParametersNoTransform)
 	PutOrigin(value *RulesetRulesActionParametersOrigin)
+	PutOriginRangeRequests(value *RulesetRulesActionParametersOriginRangeRequests)
 	PutOverrides(value *RulesetRulesActionParametersOverrides)
 	PutPrivate(value *RulesetRulesActionParametersPrivate)
 	PutProxyRevalidate(value *RulesetRulesActionParametersProxyRevalidate)
@@ -343,6 +346,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetOrigin()
 	ResetOriginCacheControl()
 	ResetOriginErrorPagePassthru()
+	ResetOriginRangeRequests()
 	ResetOverrides()
 	ResetPhases()
 	ResetPolish()
@@ -1280,6 +1284,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OriginInput() in
 	_jsii_.Get(
 		j,
 		"originInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OriginRangeRequests() RulesetRulesActionParametersOriginRangeRequestsOutputReference {
+	var returns RulesetRulesActionParametersOriginRangeRequestsOutputReference
+	_jsii_.Get(
+		j,
+		"originRangeRequests",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OriginRangeRequestsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"originRangeRequestsInput",
 		&returns,
 	)
 	return returns
@@ -3007,6 +3031,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutOrigin(value 
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutOriginRangeRequests(value *RulesetRulesActionParametersOriginRangeRequests) {
+	if err := r.validatePutOriginRangeRequestsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putOriginRangeRequests",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutOverrides(value *RulesetRulesActionParametersOverrides) {
 	if err := r.validatePutOverridesParameters(value); err != nil {
 		panic(err)
@@ -3515,6 +3550,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOriginError
 	_jsii_.InvokeVoid(
 		r,
 		"resetOriginErrorPagePassthru",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOriginRangeRequests() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOriginRangeRequests",
 		nil, // no parameters
 	)
 }

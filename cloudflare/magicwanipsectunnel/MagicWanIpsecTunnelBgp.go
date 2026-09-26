@@ -7,12 +7,20 @@ package magicwanipsectunnel
 type MagicWanIpsecTunnelBgp struct {
 	// ASN used on the customer end of the BGP session.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_ipsec_tunnel#customer_asn MagicWanIpsecTunnel#customer_asn}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_ipsec_tunnel#customer_asn MagicWanIpsecTunnel#customer_asn}
 	CustomerAsn *float64 `field:"required" json:"customerAsn" yaml:"customerAsn"`
+	// UUID of the BGP filter profile to apply to routes advertised by Cloudflare.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_ipsec_tunnel#export_filter_id MagicWanIpsecTunnel#export_filter_id}
+	ExportFilterId *string `field:"optional" json:"exportFilterId" yaml:"exportFilterId"`
 	// Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_ipsec_tunnel#extra_prefixes MagicWanIpsecTunnel#extra_prefixes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_ipsec_tunnel#extra_prefixes MagicWanIpsecTunnel#extra_prefixes}
 	ExtraPrefixes *[]*string `field:"optional" json:"extraPrefixes" yaml:"extraPrefixes"`
+	// UUID of the BGP filter profile to apply to routes advertised to Cloudflare.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_ipsec_tunnel#import_filter_id MagicWanIpsecTunnel#import_filter_id}
+	ImportFilterId *string `field:"optional" json:"importFilterId" yaml:"importFilterId"`
 	// MD5 key to use for session authentication.
 	//
 	// Note that *this is not a security measure*. MD5 is not a valid security mechanism, and the
@@ -30,7 +38,7 @@ type MagicWanIpsecTunnelBgp struct {
 	// (0x0C), and the question mark (`?`). Requests specifying an MD5 key with one or more of
 	// these disallowed characters will be rejected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/magic_wan_ipsec_tunnel#md5_key MagicWanIpsecTunnel#md5_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_wan_ipsec_tunnel#md5_key MagicWanIpsecTunnel#md5_key}
 	Md5Key *string `field:"optional" json:"md5Key" yaml:"md5Key"`
 }
 

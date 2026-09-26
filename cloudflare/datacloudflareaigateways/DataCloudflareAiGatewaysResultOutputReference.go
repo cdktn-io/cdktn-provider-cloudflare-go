@@ -14,6 +14,7 @@ import (
 type DataCloudflareAiGatewaysResultOutputReference interface {
 	cdktn.ComplexObject
 	Authentication() cdktn.IResolvable
+	ByokOnly() cdktn.IResolvable
 	CacheInvalidateOnUpdate() cdktn.IResolvable
 	CacheTtl() *float64
 	CollectLogs() cdktn.IResolvable
@@ -111,6 +112,16 @@ func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) Authentication
 	_jsii_.Get(
 		j,
 		"authentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) ByokOnly() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"byokOnly",
 		&returns,
 	)
 	return returns

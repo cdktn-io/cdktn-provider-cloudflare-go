@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
 type EmailRoutingSettings interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -62,6 +62,9 @@ type EmailRoutingSettings interface {
 	RawOverrides() interface{}
 	SkipWizard() cdktn.IResolvable
 	Status() *string
+	SupportSubaddress() interface{}
+	SetSupportSubaddress(val interface{})
+	SupportSubaddressInput() interface{}
 	Tag() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -167,6 +170,7 @@ type EmailRoutingSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSupportSubaddress()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -394,6 +398,26 @@ func (j *jsiiProxy_EmailRoutingSettings) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EmailRoutingSettings) SupportSubaddress() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"supportSubaddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingSettings) SupportSubaddressInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"supportSubaddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmailRoutingSettings) Tag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -455,7 +479,7 @@ func (j *jsiiProxy_EmailRoutingSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
 func NewEmailRoutingSettings(scope constructs.Construct, id *string, config *EmailRoutingSettingsConfig) EmailRoutingSettings {
 	_init_.Initialize()
 
@@ -473,7 +497,7 @@ func NewEmailRoutingSettings(scope constructs.Construct, id *string, config *Ema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
 func NewEmailRoutingSettings_Override(e EmailRoutingSettings, scope constructs.Construct, id *string, config *EmailRoutingSettingsConfig) {
 	_init_.Initialize()
 
@@ -548,6 +572,17 @@ func (j *jsiiProxy_EmailRoutingSettings)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmailRoutingSettings)SetSupportSubaddress(val interface{}) {
+	if err := j.validateSetSupportSubaddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportSubaddress",
 		val,
 	)
 }
@@ -947,6 +982,14 @@ func (e *jsiiProxy_EmailRoutingSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailRoutingSettings) ResetSupportSubaddress() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSupportSubaddress",
 		nil, // no parameters
 	)
 }

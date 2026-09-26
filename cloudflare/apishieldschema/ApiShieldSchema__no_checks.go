@@ -123,6 +123,10 @@ func (j *jsiiProxy_ApiShieldSchema) validateSetNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_ApiShieldSchema) validateSetOmitSourceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiShieldSchema) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

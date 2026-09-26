@@ -31,11 +31,17 @@ type MagicWanIpsecTunnelBgpOutputReference interface {
 	CustomerAsn() *float64
 	SetCustomerAsn(val *float64)
 	CustomerAsnInput() *float64
+	ExportFilterId() *string
+	SetExportFilterId(val *string)
+	ExportFilterIdInput() *string
 	ExtraPrefixes() *[]*string
 	SetExtraPrefixes(val *[]*string)
 	ExtraPrefixesInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	ImportFilterId() *string
+	SetImportFilterId(val *string)
+	ImportFilterIdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Md5Key() *string
@@ -73,7 +79,9 @@ type MagicWanIpsecTunnelBgpOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetExportFilterId()
 	ResetExtraPrefixes()
+	ResetImportFilterId()
 	ResetMd5Key()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -140,6 +148,26 @@ func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) CustomerAsnInput() *fl
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) ExportFilterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"exportFilterId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) ExportFilterIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"exportFilterIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) ExtraPrefixes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -165,6 +193,26 @@ func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) ImportFilterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importFilterId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) ImportFilterIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importFilterIdInput",
 		&returns,
 	)
 	return returns
@@ -281,6 +329,17 @@ func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference)SetCustomerAsn(val *flo
 	)
 }
 
+func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference)SetExportFilterId(val *string) {
+	if err := j.validateSetExportFilterIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportFilterId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference)SetExtraPrefixes(val *[]*string) {
 	if err := j.validateSetExtraPrefixesParameters(val); err != nil {
 		panic(err)
@@ -288,6 +347,17 @@ func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference)SetExtraPrefixes(val *[
 	_jsii_.Set(
 		j,
 		"extraPrefixes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference)SetImportFilterId(val *string) {
+	if err := j.validateSetImportFilterIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"importFilterId",
 		val,
 	)
 }
@@ -522,10 +592,26 @@ func (m *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) InterpolationForAttrib
 	return returns
 }
 
+func (m *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) ResetExportFilterId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExportFilterId",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) ResetExtraPrefixes() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetExtraPrefixes",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) ResetImportFilterId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetImportFilterId",
 		nil, // no parameters
 	)
 }

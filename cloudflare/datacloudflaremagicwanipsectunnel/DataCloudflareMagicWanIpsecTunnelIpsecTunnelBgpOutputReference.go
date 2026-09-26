@@ -29,9 +29,11 @@ type DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomerAsn() *float64
+	ExportFilterId() *string
 	ExtraPrefixes() *[]*string
 	// Experimental.
 	Fqn() *string
+	ImportFilterId() *string
 	InternalValue() *DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgp
 	SetInternalValue(val *DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgp)
 	Md5Key() *string
@@ -122,6 +124,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference) ExportFilterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"exportFilterId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference) ExtraPrefixes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -137,6 +149,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference) ImportFilterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importFilterId",
 		&returns,
 	)
 	return returns

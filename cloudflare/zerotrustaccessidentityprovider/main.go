@@ -202,6 +202,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSsoTargetUrl", GoMethod: "ResetSsoTargetUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSupportGroups", GoMethod: "ResetSupportGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenUrl", GoMethod: "ResetTokenUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseLoginHint", GoMethod: "ResetUseLoginHint"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictToAccountMembers", GoGetter: "RestrictToAccountMembers"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictToAccountMembersInput", GoGetter: "RestrictToAccountMembersInput"},
@@ -218,6 +219,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenUrl", GoGetter: "TokenUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenUrlInput", GoGetter: "TokenUrlInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useLoginHint", GoGetter: "UseLoginHint"},
+			_jsii_.MemberProperty{JsiiProperty: "useLoginHintInput", GoGetter: "UseLoginHintInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference{}

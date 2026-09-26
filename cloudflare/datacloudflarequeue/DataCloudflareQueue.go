@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/queue cloudflare_queue}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/queue cloudflare_queue}.
 type DataCloudflareQueue interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -42,6 +42,7 @@ type DataCloudflareQueue interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Jurisdiction() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -268,6 +269,16 @@ func (j *jsiiProxy_DataCloudflareQueue) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareQueue) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareQueue) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -409,7 +420,7 @@ func (j *jsiiProxy_DataCloudflareQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/queue cloudflare_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/queue cloudflare_queue} Data Source.
 func NewDataCloudflareQueue(scope constructs.Construct, id *string, config *DataCloudflareQueueConfig) DataCloudflareQueue {
 	_init_.Initialize()
 
@@ -427,7 +438,7 @@ func NewDataCloudflareQueue(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/queue cloudflare_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/queue cloudflare_queue} Data Source.
 func NewDataCloudflareQueue_Override(d DataCloudflareQueue, scope constructs.Construct, id *string, config *DataCloudflareQueueConfig) {
 	_init_.Initialize()
 

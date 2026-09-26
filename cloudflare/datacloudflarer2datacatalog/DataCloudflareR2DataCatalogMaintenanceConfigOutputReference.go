@@ -33,6 +33,7 @@ type DataCloudflareR2DataCatalogMaintenanceConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareR2DataCatalogMaintenanceConfig
 	SetInternalValue(val *DataCloudflareR2DataCatalogMaintenanceConfig)
+	Interval() *string
 	SnapshotExpiration() DataCloudflareR2DataCatalogMaintenanceConfigSnapshotExpirationOutputReference
 	// Experimental.
 	TerraformAttribute() *string
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataCloudflareR2DataCatalogMaintenanceConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareR2DataCatalogMaintenanceConfigOutputReference) Interval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interval",
 		&returns,
 	)
 	return returns

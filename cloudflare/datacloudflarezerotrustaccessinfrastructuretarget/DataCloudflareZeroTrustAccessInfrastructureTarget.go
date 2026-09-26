@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}.
 type DataCloudflareZeroTrustAccessInfrastructureTarget interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -57,6 +57,7 @@ type DataCloudflareZeroTrustAccessInfrastructureTarget interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() cdktn.StringMap
 	TargetId() *string
 	SetTargetId(val *string)
 	TargetIdInput() *string
@@ -339,6 +340,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTarget) RawOverrid
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTarget) Tags() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTarget) TargetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -390,7 +401,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTarget) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Data Source.
 func NewDataCloudflareZeroTrustAccessInfrastructureTarget(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessInfrastructureTargetConfig) DataCloudflareZeroTrustAccessInfrastructureTarget {
 	_init_.Initialize()
 
@@ -408,7 +419,7 @@ func NewDataCloudflareZeroTrustAccessInfrastructureTarget(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Data Source.
 func NewDataCloudflareZeroTrustAccessInfrastructureTarget_Override(d DataCloudflareZeroTrustAccessInfrastructureTarget, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessInfrastructureTargetConfig) {
 	_init_.Initialize()
 

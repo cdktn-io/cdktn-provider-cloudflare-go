@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream cloudflare_stream}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream cloudflare_stream}.
 type Stream interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -42,6 +42,9 @@ type Stream interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DirectUser() interface{}
+	SetDirectUser(val interface{})
+	DirectUserInput() interface{}
 	Duration() *float64
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
@@ -207,6 +210,7 @@ type Stream interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAllowedOrigins()
 	ResetCreator()
+	ResetDirectUser()
 	ResetIdentifier()
 	ResetMaxDurationSeconds()
 	ResetMeta()
@@ -371,6 +375,26 @@ func (j *jsiiProxy_Stream) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Stream) DirectUser() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"directUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Stream) DirectUserInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"directUserInput",
 		&returns,
 	)
 	return returns
@@ -807,7 +831,7 @@ func (j *jsiiProxy_Stream) Watermark() StreamWatermarkOutputReference {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream cloudflare_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream cloudflare_stream} Resource.
 func NewStream(scope constructs.Construct, id *string, config *StreamConfig) Stream {
 	_init_.Initialize()
 
@@ -825,7 +849,7 @@ func NewStream(scope constructs.Construct, id *string, config *StreamConfig) Str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/stream cloudflare_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/stream cloudflare_stream} Resource.
 func NewStream_Override(s Stream, scope constructs.Construct, id *string, config *StreamConfig) {
 	_init_.Initialize()
 
@@ -895,6 +919,17 @@ func (j *jsiiProxy_Stream)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Stream)SetDirectUser(val interface{}) {
+	if err := j.validateSetDirectUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"directUser",
 		val,
 	)
 }
@@ -1428,6 +1463,14 @@ func (s *jsiiProxy_Stream) ResetCreator() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCreator",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Stream) ResetDirectUser() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDirectUser",
 		nil, // no parameters
 	)
 }

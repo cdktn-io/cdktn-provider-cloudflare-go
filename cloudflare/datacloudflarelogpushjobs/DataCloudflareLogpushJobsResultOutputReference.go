@@ -32,6 +32,7 @@ type DataCloudflareLogpushJobsResultOutputReference interface {
 	DestinationConf() *string
 	Enabled() cdktn.IResolvable
 	ErrorMessage() *string
+	FilterAttackTraffic() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	Frequency() *string
@@ -159,6 +160,16 @@ func (j *jsiiProxy_DataCloudflareLogpushJobsResultOutputReference) ErrorMessage(
 	_jsii_.Get(
 		j,
 		"errorMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushJobsResultOutputReference) FilterAttackTraffic() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"filterAttackTraffic",
 		&returns,
 	)
 	return returns

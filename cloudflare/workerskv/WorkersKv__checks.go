@@ -361,6 +361,22 @@ func (j *jsiiProxy_WorkersKv) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_WorkersKv) validateSetExpirationParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WorkersKv) validateSetExpirationTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkersKv) validateSetKeyNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

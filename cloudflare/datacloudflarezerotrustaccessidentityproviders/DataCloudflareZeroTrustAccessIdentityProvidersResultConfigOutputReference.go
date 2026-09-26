@@ -72,6 +72,7 @@ type DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOutputReference i
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenUrl() *string
+	UseLoginHint() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -496,6 +497,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOut
 	_jsii_.Get(
 		j,
 		"tokenUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvidersResultConfigOutputReference) UseLoginHint() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"useLoginHint",
 		&returns,
 	)
 	return returns

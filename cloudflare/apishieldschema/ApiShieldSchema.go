@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
 type ApiShieldSchema interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -55,6 +55,9 @@ type ApiShieldSchema interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OmitSource() interface{}
+	SetOmitSource(val interface{})
+	OmitSourceInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -176,6 +179,7 @@ type ApiShieldSchema interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetName()
+	ResetOmitSource()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -378,6 +382,26 @@ func (j *jsiiProxy_ApiShieldSchema) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ApiShieldSchema) OmitSource() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"omitSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldSchema) OmitSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"omitSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShieldSchema) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -529,7 +553,7 @@ func (j *jsiiProxy_ApiShieldSchema) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
 func NewApiShieldSchema(scope constructs.Construct, id *string, config *ApiShieldSchemaConfig) ApiShieldSchema {
 	_init_.Initialize()
 
@@ -547,7 +571,7 @@ func NewApiShieldSchema(scope constructs.Construct, id *string, config *ApiShiel
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_schema cloudflare_api_shield_schema} Resource.
 func NewApiShieldSchema_Override(a ApiShieldSchema, scope constructs.Construct, id *string, config *ApiShieldSchemaConfig) {
 	_init_.Initialize()
 
@@ -636,6 +660,17 @@ func (j *jsiiProxy_ApiShieldSchema)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiShieldSchema)SetOmitSource(val interface{}) {
+	if err := j.validateSetOmitSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"omitSource",
 		val,
 	)
 }
@@ -1076,6 +1111,14 @@ func (a *jsiiProxy_ApiShieldSchema) ResetName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiShieldSchema) ResetOmitSource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOmitSource",
 		nil, // no parameters
 	)
 }

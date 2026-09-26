@@ -41,6 +41,7 @@ type DataCloudflareAiSearchInstanceIndexingOptionsOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UseOcr() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceIndexingOptionsOutputReference)
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceIndexingOptionsOutputReference) UseOcr() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"useOcr",
 		&returns,
 	)
 	return returns

@@ -17,6 +17,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	AllowModeSwitch() cdktn.IResolvable
 	AllowUpdates() cdktn.IResolvable
 	AutoConnect() *float64
+	BrowserExtensionConfig() DataCloudflareZeroTrustDeviceCustomProfilesResultBrowserExtensionConfigOutputReference
 	CaptivePortal() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -54,6 +55,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	Name() *string
 	PolicyId() *string
 	Precedence() *float64
+	ProfileType() *string
 	RegisterInterfaceIpWithDns() cdktn.IResolvable
 	SccmVpnBoundarySupport() cdktn.IResolvable
 	ServiceModeV2() DataCloudflareZeroTrustDeviceCustomProfilesResultServiceModeV2OutputReference
@@ -69,6 +71,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TunnelProtocol() *string
+	UninstallProtection() cdktn.IResolvable
 	VirtualNetworks() DataCloudflareZeroTrustDeviceCustomProfilesResultVirtualNetworksOutputReference
 	// Experimental.
 	ComputeFqn() *string
@@ -144,6 +147,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"autoConnect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) BrowserExtensionConfig() DataCloudflareZeroTrustDeviceCustomProfilesResultBrowserExtensionConfigOutputReference {
+	var returns DataCloudflareZeroTrustDeviceCustomProfilesResultBrowserExtensionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"browserExtensionConfig",
 		&returns,
 	)
 	return returns
@@ -379,6 +392,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) ProfileType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"profileType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) RegisterInterfaceIpWithDns() cdktn.IResolvable {
 	var returns cdktn.IResolvable
 	_jsii_.Get(
@@ -464,6 +487,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"tunnelProtocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) UninstallProtection() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"uninstallProtection",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members cloudflare_user_group_members}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members cloudflare_user_group_members}.
 type UserGroupMembers interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -34,6 +34,9 @@ type UserGroupMembers interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -42,6 +45,9 @@ type UserGroupMembers interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FuzzyEmail() *string
+	SetFuzzyEmail(val *string)
+	FuzzyEmailInput() *string
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -51,6 +57,12 @@ type UserGroupMembers interface {
 	MembersInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	Page() *float64
+	SetPage(val *float64)
+	PageInput() *float64
+	PerPage() *float64
+	SetPerPage(val *float64)
+	PerPageInput() *float64
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -163,9 +175,13 @@ type UserGroupMembers interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetDirection()
+	ResetFuzzyEmail()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPage()
+	ResetPerPage()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -263,6 +279,26 @@ func (j *jsiiProxy_UserGroupMembers) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_UserGroupMembers) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserGroupMembers) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_UserGroupMembers) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -288,6 +324,26 @@ func (j *jsiiProxy_UserGroupMembers) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserGroupMembers) FuzzyEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fuzzyEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserGroupMembers) FuzzyEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fuzzyEmailInput",
 		&returns,
 	)
 	return returns
@@ -338,6 +394,46 @@ func (j *jsiiProxy_UserGroupMembers) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserGroupMembers) Page() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"page",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserGroupMembers) PageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserGroupMembers) PerPage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"perPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserGroupMembers) PerPageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"perPageInput",
 		&returns,
 	)
 	return returns
@@ -424,7 +520,7 @@ func (j *jsiiProxy_UserGroupMembers) UserGroupIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members cloudflare_user_group_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members cloudflare_user_group_members} Resource.
 func NewUserGroupMembers(scope constructs.Construct, id *string, config *UserGroupMembersConfig) UserGroupMembers {
 	_init_.Initialize()
 
@@ -442,7 +538,7 @@ func NewUserGroupMembers(scope constructs.Construct, id *string, config *UserGro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/user_group_members cloudflare_user_group_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/user_group_members cloudflare_user_group_members} Resource.
 func NewUserGroupMembers_Override(u UserGroupMembers, scope constructs.Construct, id *string, config *UserGroupMembersConfig) {
 	_init_.Initialize()
 
@@ -494,10 +590,32 @@ func (j *jsiiProxy_UserGroupMembers)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_UserGroupMembers)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"direction",
+		val,
+	)
+}
+
 func (j *jsiiProxy_UserGroupMembers)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_UserGroupMembers)SetFuzzyEmail(val *string) {
+	if err := j.validateSetFuzzyEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fuzzyEmail",
 		val,
 	)
 }
@@ -509,6 +627,28 @@ func (j *jsiiProxy_UserGroupMembers)SetLifecycle(val *cdktn.TerraformResourceLif
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_UserGroupMembers)SetPage(val *float64) {
+	if err := j.validateSetPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"page",
+		val,
+	)
+}
+
+func (j *jsiiProxy_UserGroupMembers)SetPerPage(val *float64) {
+	if err := j.validateSetPerPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"perPage",
 		val,
 	)
 }
@@ -934,10 +1074,42 @@ func (u *jsiiProxy_UserGroupMembers) RegisterProviderFeatureUsage(feature cdktn.
 	)
 }
 
+func (u *jsiiProxy_UserGroupMembers) ResetDirection() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserGroupMembers) ResetFuzzyEmail() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetFuzzyEmail",
+		nil, // no parameters
+	)
+}
+
 func (u *jsiiProxy_UserGroupMembers) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserGroupMembers) ResetPage() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetPage",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserGroupMembers) ResetPerPage() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetPerPage",
 		nil, // no parameters
 	)
 }

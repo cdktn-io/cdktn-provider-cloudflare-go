@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain cloudflare_email_security_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain cloudflare_email_security_domain}.
 type EmailSecurityDomain interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -747,7 +747,7 @@ func (j *jsiiProxy_EmailSecurityDomain) TransportInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain cloudflare_email_security_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain cloudflare_email_security_domain} Resource.
 func NewEmailSecurityDomain(scope constructs.Construct, id *string, config *EmailSecurityDomainConfig) EmailSecurityDomain {
 	_init_.Initialize()
 
@@ -765,7 +765,7 @@ func NewEmailSecurityDomain(scope constructs.Construct, id *string, config *Emai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/email_security_domain cloudflare_email_security_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain cloudflare_email_security_domain} Resource.
 func NewEmailSecurityDomain_Override(e EmailSecurityDomain, scope constructs.Construct, id *string, config *EmailSecurityDomainConfig) {
 	_init_.Initialize()
 

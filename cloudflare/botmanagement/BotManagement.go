@@ -12,12 +12,24 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktn.TerraformResource
+	AiBotsMigrationOptOut() interface{}
+	SetAiBotsMigrationOptOut(val interface{})
+	AiBotsMigrationOptOutInput() interface{}
 	AiBotsProtection() *string
 	SetAiBotsProtection(val *string)
 	AiBotsProtectionInput() *string
+	Aisearch() *string
+	SetAisearch(val *string)
+	AisearchInput() *string
+	AiTraining() *string
+	SetAiTraining(val *string)
+	AiTrainingInput() *string
+	AiUser() *string
+	SetAiUser(val *string)
+	AiUserInput() *string
 	AutoUpdateModel() interface{}
 	SetAutoUpdateModel(val interface{})
 	AutoUpdateModelInput() interface{}
@@ -70,6 +82,9 @@ type BotManagement interface {
 	IsRobotsTxtManaged() interface{}
 	SetIsRobotsTxtManaged(val interface{})
 	IsRobotsTxtManagedInput() interface{}
+	JsdApiResultsEnabled() interface{}
+	SetJsdApiResultsEnabled(val interface{})
+	JsdApiResultsEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -207,7 +222,11 @@ type BotManagement interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetAiBotsMigrationOptOut()
 	ResetAiBotsProtection()
+	ResetAisearch()
+	ResetAiTraining()
+	ResetAiUser()
 	ResetAutoUpdateModel()
 	ResetBmCookieEnabled()
 	ResetBotPreferenceSyncEnabled()
@@ -217,6 +236,7 @@ type BotManagement interface {
 	ResetEnableJs()
 	ResetFightMode()
 	ResetIsRobotsTxtManaged()
+	ResetJsdApiResultsEnabled()
 	ResetOptimizeWordpress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -253,6 +273,26 @@ type jsiiProxy_BotManagement struct {
 	internal.Type__cdktnTerraformResource
 }
 
+func (j *jsiiProxy_BotManagement) AiBotsMigrationOptOut() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aiBotsMigrationOptOut",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) AiBotsMigrationOptOutInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aiBotsMigrationOptOutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BotManagement) AiBotsProtection() *string {
 	var returns *string
 	_jsii_.Get(
@@ -268,6 +308,66 @@ func (j *jsiiProxy_BotManagement) AiBotsProtectionInput() *string {
 	_jsii_.Get(
 		j,
 		"aiBotsProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) Aisearch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aisearch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) AisearchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aisearchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) AiTraining() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aiTraining",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) AiTrainingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aiTrainingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) AiUser() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aiUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) AiUserInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aiUserInput",
 		&returns,
 	)
 	return returns
@@ -543,6 +643,26 @@ func (j *jsiiProxy_BotManagement) IsRobotsTxtManagedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BotManagement) JsdApiResultsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jsdApiResultsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) JsdApiResultsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jsdApiResultsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BotManagement) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -784,7 +904,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -802,7 +922,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -813,6 +933,17 @@ func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *
 	)
 }
 
+func (j *jsiiProxy_BotManagement)SetAiBotsMigrationOptOut(val interface{}) {
+	if err := j.validateSetAiBotsMigrationOptOutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aiBotsMigrationOptOut",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BotManagement)SetAiBotsProtection(val *string) {
 	if err := j.validateSetAiBotsProtectionParameters(val); err != nil {
 		panic(err)
@@ -820,6 +951,39 @@ func (j *jsiiProxy_BotManagement)SetAiBotsProtection(val *string) {
 	_jsii_.Set(
 		j,
 		"aiBotsProtection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetAisearch(val *string) {
+	if err := j.validateSetAisearchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aisearch",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetAiTraining(val *string) {
+	if err := j.validateSetAiTrainingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aiTraining",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetAiUser(val *string) {
+	if err := j.validateSetAiUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aiUser",
 		val,
 	)
 }
@@ -957,6 +1121,17 @@ func (j *jsiiProxy_BotManagement)SetIsRobotsTxtManaged(val interface{}) {
 	_jsii_.Set(
 		j,
 		"isRobotsTxtManaged",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetJsdApiResultsEnabled(val interface{}) {
+	if err := j.validateSetJsdApiResultsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jsdApiResultsEnabled",
 		val,
 	)
 }
@@ -1448,10 +1623,42 @@ func (b *jsiiProxy_BotManagement) RegisterProviderFeatureUsage(feature cdktn.Pro
 	)
 }
 
+func (b *jsiiProxy_BotManagement) ResetAiBotsMigrationOptOut() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAiBotsMigrationOptOut",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BotManagement) ResetAiBotsProtection() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAiBotsProtection",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetAisearch() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAisearch",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetAiTraining() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAiTraining",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetAiUser() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAiUser",
 		nil, // no parameters
 	)
 }
@@ -1524,6 +1731,14 @@ func (b *jsiiProxy_BotManagement) ResetIsRobotsTxtManaged() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetIsRobotsTxtManaged",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetJsdApiResultsEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetJsdApiResultsEnabled",
 		nil, // no parameters
 	)
 }

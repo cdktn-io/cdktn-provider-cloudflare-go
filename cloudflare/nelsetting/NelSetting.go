@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/nel_setting cloudflare_nel_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/nel_setting cloudflare_nel_setting}.
 type NelSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_NelSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/nel_setting cloudflare_nel_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/nel_setting cloudflare_nel_setting} Resource.
 func NewNelSetting(scope constructs.Construct, id *string, config *NelSettingConfig) NelSetting {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewNelSetting(scope constructs.Construct, id *string, config *NelSettingCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/nel_setting cloudflare_nel_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/nel_setting cloudflare_nel_setting} Resource.
 func NewNelSetting_Override(n NelSetting, scope constructs.Construct, id *string, config *NelSettingConfig) {
 	_init_.Initialize()
 

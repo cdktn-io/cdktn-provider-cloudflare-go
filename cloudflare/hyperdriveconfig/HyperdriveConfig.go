@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
 type HyperdriveConfig interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -46,6 +46,9 @@ type HyperdriveConfig interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Integration() *string
+	SetIntegration(val *string)
+	IntegrationInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -176,7 +179,9 @@ type HyperdriveConfig interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetCaching()
+	ResetIntegration()
 	ResetMtls()
+	ResetOrigin()
 	ResetOriginConnectionLimit()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -343,6 +348,26 @@ func (j *jsiiProxy_HyperdriveConfig) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfig) Integration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfig) IntegrationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationInput",
 		&returns,
 	)
 	return returns
@@ -529,7 +554,7 @@ func (j *jsiiProxy_HyperdriveConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
 func NewHyperdriveConfig(scope constructs.Construct, id *string, config *HyperdriveConfigConfig) HyperdriveConfig {
 	_init_.Initialize()
 
@@ -547,7 +572,7 @@ func NewHyperdriveConfig(scope constructs.Construct, id *string, config *Hyperdr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
 func NewHyperdriveConfig_Override(h HyperdriveConfig, scope constructs.Construct, id *string, config *HyperdriveConfigConfig) {
 	_init_.Initialize()
 
@@ -603,6 +628,17 @@ func (j *jsiiProxy_HyperdriveConfig)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HyperdriveConfig)SetIntegration(val *string) {
+	if err := j.validateSetIntegrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"integration",
 		val,
 	)
 }
@@ -1080,10 +1116,26 @@ func (h *jsiiProxy_HyperdriveConfig) ResetCaching() {
 	)
 }
 
+func (h *jsiiProxy_HyperdriveConfig) ResetIntegration() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetIntegration",
+		nil, // no parameters
+	)
+}
+
 func (h *jsiiProxy_HyperdriveConfig) ResetMtls() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetMtls",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HyperdriveConfig) ResetOrigin() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetOrigin",
 		nil, // no parameters
 	)
 }

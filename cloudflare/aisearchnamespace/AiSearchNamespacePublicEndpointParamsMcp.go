@@ -5,11 +5,11 @@ package aisearchnamespace
 
 
 type AiSearchNamespacePublicEndpointParamsMcp struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ai_search_namespace#description AiSearchNamespace#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_search_namespace#description AiSearchNamespace#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Disable MCP endpoint for this public endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ai_search_namespace#disabled AiSearchNamespace#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_search_namespace#disabled AiSearchNamespace#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
 }
 

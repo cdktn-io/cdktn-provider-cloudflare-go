@@ -174,7 +174,23 @@ func (j *jsiiProxy_MagicWanGreTunnelBgpOutputReference) validateSetCustomerAsnPa
 	return nil
 }
 
+func (j *jsiiProxy_MagicWanGreTunnelBgpOutputReference) validateSetExportFilterIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MagicWanGreTunnelBgpOutputReference) validateSetExtraPrefixesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanGreTunnelBgpOutputReference) validateSetImportFilterIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

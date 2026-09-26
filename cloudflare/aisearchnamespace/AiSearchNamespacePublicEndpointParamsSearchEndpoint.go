@@ -7,7 +7,7 @@ package aisearchnamespace
 type AiSearchNamespacePublicEndpointParamsSearchEndpoint struct {
 	// Disable search endpoint for this public endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ai_search_namespace#disabled AiSearchNamespace#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_search_namespace#disabled AiSearchNamespace#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
 }
 

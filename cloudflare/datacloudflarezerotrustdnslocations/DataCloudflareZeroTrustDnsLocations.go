@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_dns_locations cloudflare_zero_trust_dns_locations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_locations cloudflare_zero_trust_dns_locations}.
 type DataCloudflareZeroTrustDnsLocations interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -30,6 +30,12 @@ type DataCloudflareZeroTrustDnsLocations interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
+	Filter() *[]*string
+	SetFilter(val *[]*string)
+	FilterInput() *[]*string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -47,6 +53,9 @@ type DataCloudflareZeroTrustDnsLocations interface {
 	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -54,6 +63,9 @@ type DataCloudflareZeroTrustDnsLocations interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflareZeroTrustDnsLocationsResultList
+	Search() *string
+	SetSearch(val *string)
+	SearchInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -99,10 +111,14 @@ type DataCloudflareZeroTrustDnsLocations interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
+	ResetDirection()
+	ResetFilter()
 	ResetMaxItems()
+	ResetOrderBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSearch()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -191,6 +207,46 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) Filter() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) FilterInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -261,6 +317,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -286,6 +362,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) Result() DataCloudflareZ
 	_jsii_.Get(
 		j,
 		"result",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) Search() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"search",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) SearchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"searchInput",
 		&returns,
 	)
 	return returns
@@ -322,7 +418,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_dns_locations cloudflare_zero_trust_dns_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_locations cloudflare_zero_trust_dns_locations} Data Source.
 func NewDataCloudflareZeroTrustDnsLocations(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDnsLocationsConfig) DataCloudflareZeroTrustDnsLocations {
 	_init_.Initialize()
 
@@ -340,7 +436,7 @@ func NewDataCloudflareZeroTrustDnsLocations(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_dns_locations cloudflare_zero_trust_dns_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_locations cloudflare_zero_trust_dns_locations} Data Source.
 func NewDataCloudflareZeroTrustDnsLocations_Override(d DataCloudflareZeroTrustDnsLocations, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDnsLocationsConfig) {
 	_init_.Initialize()
 
@@ -381,6 +477,28 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations)SetDependsOn(val *[]*stri
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations)SetFilter(val *[]*string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -411,10 +529,32 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations)SetMaxItems(val *float64)
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations)SetSearch(val *string) {
+	if err := j.validateSetSearchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"search",
 		val,
 	)
 }
@@ -723,6 +863,22 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocations) ResetAccountId() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocations) ResetDirection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocations) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocations) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
@@ -731,10 +887,26 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocations) ResetMaxItems() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocations) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderBy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocations) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocations) ResetSearch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSearch",
 		nil, // no parameters
 	)
 }

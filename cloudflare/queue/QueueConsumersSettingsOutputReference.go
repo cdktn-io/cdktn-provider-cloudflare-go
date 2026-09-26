@@ -29,6 +29,7 @@ type QueueConsumersSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Email() QueueConsumersSettingsEmailList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *QueueConsumersSettings
@@ -36,6 +37,7 @@ type QueueConsumersSettingsOutputReference interface {
 	MaxConcurrency() *float64
 	MaxRetries() *float64
 	MaxWaitTimeMs() *float64
+	Pagerduty() QueueConsumersSettingsPagerdutyList
 	RetryDelay() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -46,6 +48,7 @@ type QueueConsumersSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VisibilityTimeoutMs() *float64
+	Webhooks() QueueConsumersSettingsWebhooksList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -125,6 +128,16 @@ func (j *jsiiProxy_QueueConsumersSettingsOutputReference) CreationStack() *[]*st
 	return returns
 }
 
+func (j *jsiiProxy_QueueConsumersSettingsOutputReference) Email() QueueConsumersSettingsEmailList {
+	var returns QueueConsumersSettingsEmailList
+	_jsii_.Get(
+		j,
+		"email",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QueueConsumersSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -175,6 +188,16 @@ func (j *jsiiProxy_QueueConsumersSettingsOutputReference) MaxWaitTimeMs() *float
 	return returns
 }
 
+func (j *jsiiProxy_QueueConsumersSettingsOutputReference) Pagerduty() QueueConsumersSettingsPagerdutyList {
+	var returns QueueConsumersSettingsPagerdutyList
+	_jsii_.Get(
+		j,
+		"pagerduty",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QueueConsumersSettingsOutputReference) RetryDelay() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -210,6 +233,16 @@ func (j *jsiiProxy_QueueConsumersSettingsOutputReference) VisibilityTimeoutMs() 
 	_jsii_.Get(
 		j,
 		"visibilityTimeoutMs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QueueConsumersSettingsOutputReference) Webhooks() QueueConsumersSettingsWebhooksList {
+	var returns QueueConsumersSettingsWebhooksList
+	_jsii_.Get(
+		j,
+		"webhooks",
 		&returns,
 	)
 	return returns

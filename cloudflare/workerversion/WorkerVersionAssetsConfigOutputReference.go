@@ -13,6 +13,9 @@ import (
 
 type WorkerVersionAssetsConfigOutputReference interface {
 	cdktn.ComplexObject
+	BasePath() *string
+	SetBasePath(val *string)
+	BasePathInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +76,7 @@ type WorkerVersionAssetsConfigOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetBasePath()
 	ResetHtmlHandling()
 	ResetNotFoundHandling()
 	ResetRunWorkerFirst()
@@ -89,6 +93,26 @@ type WorkerVersionAssetsConfigOutputReference interface {
 // The jsii proxy struct for WorkerVersionAssetsConfigOutputReference
 type jsiiProxy_WorkerVersionAssetsConfigOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) BasePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) BasePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basePathInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -246,6 +270,17 @@ func NewWorkerVersionAssetsConfigOutputReference_Override(w WorkerVersionAssetsC
 		"@cdktn/provider-cloudflare.workerVersion.WorkerVersionAssetsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference)SetBasePath(val *string) {
+	if err := j.validateSetBasePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"basePath",
+		val,
 	)
 }
 
@@ -521,6 +556,14 @@ func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) ResetBasePath() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetBasePath",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) ResetHtmlHandling() {

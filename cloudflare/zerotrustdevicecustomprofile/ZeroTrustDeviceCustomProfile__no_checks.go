@@ -79,6 +79,10 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutBrowserExtensionConfigParameters(value *ZeroTrustDeviceCustomProfileBrowserExtensionConfig) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutDnsSearchSuffixesParameters(value interface{}) error {
 	return nil
 }
@@ -195,6 +199,10 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetPrecedenceParameters
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetProfileTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
@@ -216,6 +224,10 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetSwitchLockedParamete
 }
 
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetTunnelProtocolParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetUninstallProtectionParameters(val interface{}) error {
 	return nil
 }
 

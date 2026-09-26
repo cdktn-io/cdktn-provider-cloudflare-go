@@ -138,6 +138,9 @@ type WorkersScriptBindingsOutputReference interface {
 	StoreId() *string
 	SetStoreId(val *string)
 	StoreIdInput() *string
+	Stream() *string
+	SetStream(val *string)
+	StreamInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -225,6 +228,7 @@ type WorkersScriptBindingsOutputReference interface {
 	ResetServiceId()
 	ResetSimple()
 	ResetStoreId()
+	ResetStream()
 	ResetText()
 	ResetTunnelId()
 	ResetUsages()
@@ -1015,6 +1019,26 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) StoreIdInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Stream() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stream",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) StreamInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"streamInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1586,6 +1610,17 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetStoreId(val *string) 
 	_jsii_.Set(
 		j,
 		"storeId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetStream(val *string) {
+	if err := j.validateSetStreamParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stream",
 		val,
 	)
 }
@@ -2162,6 +2197,14 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetStoreId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetStoreId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetStream() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStream",
 		nil, // no parameters
 	)
 }

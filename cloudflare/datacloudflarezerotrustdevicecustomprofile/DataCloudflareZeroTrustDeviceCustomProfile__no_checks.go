@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) validateOverrideL
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) validatePutFilterParameters(value *DataCloudflareZeroTrustDeviceCustomProfileFilter) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

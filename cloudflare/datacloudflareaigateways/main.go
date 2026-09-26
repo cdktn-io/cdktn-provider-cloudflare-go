@@ -401,6 +401,7 @@ func init() {
 		reflect.TypeOf((*DataCloudflareAiGatewaysResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
+			_jsii_.MemberProperty{JsiiProperty: "byokOnly", GoGetter: "ByokOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheInvalidateOnUpdate", GoGetter: "CacheInvalidateOnUpdate"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheTtl", GoGetter: "CacheTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "collectLogs", GoGetter: "CollectLogs"},

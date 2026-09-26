@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}.
 type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -31,6 +31,8 @@ type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Filter() DataCloudflareZeroTrustGatewayProxyEndpointFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -91,6 +93,7 @@ type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareZeroTrustGatewayProxyEndpointFilter)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -105,9 +108,11 @@ type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProxyEndpointId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -201,6 +206,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) DependsOn() *[]*
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) Filter() DataCloudflareZeroTrustGatewayProxyEndpointFilterOutputReference {
+	var returns DataCloudflareZeroTrustGatewayProxyEndpointFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -387,7 +412,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) UpdatedAt() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Data Source.
 func NewDataCloudflareZeroTrustGatewayProxyEndpoint(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayProxyEndpointConfig) DataCloudflareZeroTrustGatewayProxyEndpoint {
 	_init_.Initialize()
 
@@ -405,7 +430,7 @@ func NewDataCloudflareZeroTrustGatewayProxyEndpoint(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Data Source.
 func NewDataCloudflareZeroTrustGatewayProxyEndpoint_Override(d DataCloudflareZeroTrustGatewayProxyEndpoint, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayProxyEndpointConfig) {
 	_init_.Initialize()
 
@@ -769,6 +794,17 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) OverrideLogicalI
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) PutFilter(value *DataCloudflareZeroTrustGatewayProxyEndpointFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
 	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
@@ -788,10 +824,26 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ResetAccountId()
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) ResetProxyEndpointId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProxyEndpointId",
 		nil, // no parameters
 	)
 }

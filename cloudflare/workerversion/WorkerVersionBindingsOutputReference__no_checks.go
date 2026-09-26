@@ -211,6 +211,10 @@ func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetStoreIdParam
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetStreamParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersionBindingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

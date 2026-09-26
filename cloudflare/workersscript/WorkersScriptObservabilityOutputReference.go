@@ -38,6 +38,8 @@ type WorkersScriptObservabilityOutputReference interface {
 	HeadSamplingRateInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Issues() WorkersScriptObservabilityIssuesOutputReference
+	IssuesInput() interface{}
 	Logs() WorkersScriptObservabilityLogsOutputReference
 	LogsInput() interface{}
 	// Experimental.
@@ -74,9 +76,11 @@ type WorkersScriptObservabilityOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutIssues(value *WorkersScriptObservabilityIssues)
 	PutLogs(value *WorkersScriptObservabilityLogs)
 	PutTraces(value *WorkersScriptObservabilityTraces)
 	ResetHeadSamplingRate()
+	ResetIssues()
 	ResetLogs()
 	ResetTraces()
 	// Produce the Token's value at resolution time.
@@ -179,6 +183,26 @@ func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) InternalValue() in
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) Issues() WorkersScriptObservabilityIssuesOutputReference {
+	var returns WorkersScriptObservabilityIssuesOutputReference
+	_jsii_.Get(
+		j,
+		"issues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) IssuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"issuesInput",
 		&returns,
 	)
 	return returns
@@ -535,6 +559,17 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) InterpolationForAt
 	return returns
 }
 
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) PutIssues(value *WorkersScriptObservabilityIssues) {
+	if err := w.validatePutIssuesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putIssues",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) PutLogs(value *WorkersScriptObservabilityLogs) {
 	if err := w.validatePutLogsParameters(value); err != nil {
 		panic(err)
@@ -561,6 +596,14 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetHeadSamplingR
 	_jsii_.InvokeVoid(
 		w,
 		"resetHeadSamplingRate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetIssues() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetIssues",
 		nil, // no parameters
 	)
 }

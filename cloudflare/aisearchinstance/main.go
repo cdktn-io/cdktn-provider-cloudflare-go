@@ -322,10 +322,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keywordTokenizer", GoGetter: "KeywordTokenizer"},
 			_jsii_.MemberProperty{JsiiProperty: "keywordTokenizerInput", GoGetter: "KeywordTokenizerInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeywordTokenizer", GoMethod: "ResetKeywordTokenizer"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseOcr", GoMethod: "ResetUseOcr"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useOcr", GoGetter: "UseOcr"},
+			_jsii_.MemberProperty{JsiiProperty: "useOcrInput", GoGetter: "UseOcrInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference{}

@@ -75,6 +75,10 @@ func (j *jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference) validateSetTe
 	return nil
 }
 
+func (j *jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference) validateSetUseOcrParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewAiSearchInstanceIndexingOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

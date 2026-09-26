@@ -29,6 +29,7 @@ type DataCloudflareQueueConsumersResultSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Email() DataCloudflareQueueConsumersResultSettingsEmailList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareQueueConsumersResultSettings
@@ -36,6 +37,7 @@ type DataCloudflareQueueConsumersResultSettingsOutputReference interface {
 	MaxConcurrency() *float64
 	MaxRetries() *float64
 	MaxWaitTimeMs() *float64
+	Pagerduty() DataCloudflareQueueConsumersResultSettingsPagerdutyList
 	RetryDelay() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -46,6 +48,7 @@ type DataCloudflareQueueConsumersResultSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VisibilityTimeoutMs() *float64
+	Webhooks() DataCloudflareQueueConsumersResultSettingsWebhooksList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -125,6 +128,16 @@ func (j *jsiiProxy_DataCloudflareQueueConsumersResultSettingsOutputReference) Cr
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareQueueConsumersResultSettingsOutputReference) Email() DataCloudflareQueueConsumersResultSettingsEmailList {
+	var returns DataCloudflareQueueConsumersResultSettingsEmailList
+	_jsii_.Get(
+		j,
+		"email",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareQueueConsumersResultSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -175,6 +188,16 @@ func (j *jsiiProxy_DataCloudflareQueueConsumersResultSettingsOutputReference) Ma
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareQueueConsumersResultSettingsOutputReference) Pagerduty() DataCloudflareQueueConsumersResultSettingsPagerdutyList {
+	var returns DataCloudflareQueueConsumersResultSettingsPagerdutyList
+	_jsii_.Get(
+		j,
+		"pagerduty",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareQueueConsumersResultSettingsOutputReference) RetryDelay() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -210,6 +233,16 @@ func (j *jsiiProxy_DataCloudflareQueueConsumersResultSettingsOutputReference) Vi
 	_jsii_.Get(
 		j,
 		"visibilityTimeoutMs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueueConsumersResultSettingsOutputReference) Webhooks() DataCloudflareQueueConsumersResultSettingsWebhooksList {
+	var returns DataCloudflareQueueConsumersResultSettingsWebhooksList
+	_jsii_.Get(
+		j,
+		"webhooks",
 		&returns,
 	)
 	return returns

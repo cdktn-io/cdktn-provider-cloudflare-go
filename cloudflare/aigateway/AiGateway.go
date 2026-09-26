@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ai_gateway cloudflare_ai_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway cloudflare_ai_gateway}.
 type AiGateway interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -21,6 +21,9 @@ type AiGateway interface {
 	Authentication() interface{}
 	SetAuthentication(val interface{})
 	AuthenticationInput() interface{}
+	ByokOnly() interface{}
+	SetByokOnly(val interface{})
+	ByokOnlyInput() interface{}
 	CacheInvalidateOnUpdate() interface{}
 	SetCacheInvalidateOnUpdate(val interface{})
 	CacheInvalidateOnUpdateInput() interface{}
@@ -232,6 +235,7 @@ type AiGateway interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAuthentication()
+	ResetByokOnly()
 	ResetDlp()
 	ResetGuardrails()
 	ResetLogClassification()
@@ -314,6 +318,26 @@ func (j *jsiiProxy_AiGateway) AuthenticationInput() interface{} {
 	_jsii_.Get(
 		j,
 		"authenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGateway) ByokOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"byokOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGateway) ByokOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"byokOnlyInput",
 		&returns,
 	)
 	return returns
@@ -970,7 +994,7 @@ func (j *jsiiProxy_AiGateway) ZdrInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
 func NewAiGateway(scope constructs.Construct, id *string, config *AiGatewayConfig) AiGateway {
 	_init_.Initialize()
 
@@ -988,7 +1012,7 @@ func NewAiGateway(scope constructs.Construct, id *string, config *AiGatewayConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/ai_gateway cloudflare_ai_gateway} Resource.
 func NewAiGateway_Override(a AiGateway, scope constructs.Construct, id *string, config *AiGatewayConfig) {
 	_init_.Initialize()
 
@@ -1017,6 +1041,17 @@ func (j *jsiiProxy_AiGateway)SetAuthentication(val interface{}) {
 	_jsii_.Set(
 		j,
 		"authentication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiGateway)SetByokOnly(val interface{}) {
+	if err := j.validateSetByokOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"byokOnly",
 		val,
 	)
 }
@@ -1726,6 +1761,14 @@ func (a *jsiiProxy_AiGateway) ResetAuthentication() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiGateway) ResetByokOnly() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetByokOnly",
 		nil, // no parameters
 	)
 }

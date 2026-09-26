@@ -115,6 +115,10 @@ func (j *jsiiProxy_Queue) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Queue) validateSetJurisdictionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Queue) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

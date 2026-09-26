@@ -127,6 +127,10 @@ func (j *jsiiProxy_RateLimit) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_RateLimit) validateSetRateLimitIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RateLimit) validateSetThresholdParameters(val *float64) error {
 	return nil
 }

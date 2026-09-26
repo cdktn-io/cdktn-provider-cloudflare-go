@@ -44,8 +44,6 @@ type DataCloudflareMagicTransitConnectorsResultOutputReference interface {
 	LastUpdated() *string
 	LicenseKey() *string
 	Notes() *string
-	Primary() cdktn.IResolvable
-	SiteId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -259,26 +257,6 @@ func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) No
 	_jsii_.Get(
 		j,
 		"notes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) Primary() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"primary",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareMagicTransitConnectorsResultOutputReference) SiteId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"siteId",
 		&returns,
 	)
 	return returns

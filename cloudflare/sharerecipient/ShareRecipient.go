@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient cloudflare_share_recipient}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient cloudflare_share_recipient}.
 type ShareRecipient interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -45,6 +45,9 @@ type ShareRecipient interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IncludeResources() interface{}
+	SetIncludeResources(val interface{})
+	IncludeResourcesInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -170,6 +173,7 @@ type ShareRecipient interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetIncludeResources()
 	ResetOrganizationId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -327,6 +331,26 @@ func (j *jsiiProxy_ShareRecipient) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ShareRecipient) IncludeResources() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ShareRecipient) IncludeResourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeResourcesInput",
 		&returns,
 	)
 	return returns
@@ -493,7 +517,7 @@ func (j *jsiiProxy_ShareRecipient) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
 func NewShareRecipient(scope constructs.Construct, id *string, config *ShareRecipientConfig) ShareRecipient {
 	_init_.Initialize()
 
@@ -511,7 +535,7 @@ func NewShareRecipient(scope constructs.Construct, id *string, config *ShareReci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
 func NewShareRecipient_Override(s ShareRecipient, scope constructs.Construct, id *string, config *ShareRecipientConfig) {
 	_init_.Initialize()
 
@@ -567,6 +591,17 @@ func (j *jsiiProxy_ShareRecipient)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ShareRecipient)SetIncludeResources(val interface{}) {
+	if err := j.validateSetIncludeResourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeResources",
 		val,
 	)
 }
@@ -1011,6 +1046,14 @@ func (s *jsiiProxy_ShareRecipient) RegisterProviderFeatureUsage(feature cdktn.Pr
 		s,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (s *jsiiProxy_ShareRecipient) ResetIncludeResources() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIncludeResources",
+		nil, // no parameters
 	)
 }
 

@@ -63,7 +63,15 @@ func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) validateSetCustomerAsn
 	return nil
 }
 
+func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) validateSetExportFilterIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) validateSetExtraPrefixesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnelBgpOutputReference) validateSetImportFilterIdParameters(val *string) error {
 	return nil
 }
 

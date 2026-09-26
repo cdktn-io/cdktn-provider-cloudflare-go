@@ -119,6 +119,10 @@ func (j *jsiiProxy_SchemaValidationSchemas) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_SchemaValidationSchemas) validateSetOmitSourceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchemaValidationSchemas) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

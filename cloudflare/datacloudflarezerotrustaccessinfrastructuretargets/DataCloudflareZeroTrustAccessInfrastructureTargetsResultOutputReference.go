@@ -37,6 +37,7 @@ type DataCloudflareZeroTrustAccessInfrastructureTargetsResultOutputReference int
 	SetInternalValue(val *DataCloudflareZeroTrustAccessInfrastructureTargetsResult)
 	Ip() DataCloudflareZeroTrustAccessInfrastructureTargetsResultIpOutputReference
 	ModifiedAt() *string
+	Tags() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -179,6 +180,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetsResultOutpu
 	_jsii_.Get(
 		j,
 		"modifiedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetsResultOutputReference) Tags() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

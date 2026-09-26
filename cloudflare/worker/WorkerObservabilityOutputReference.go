@@ -38,6 +38,8 @@ type WorkerObservabilityOutputReference interface {
 	HeadSamplingRateInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Issues() WorkerObservabilityIssuesOutputReference
+	IssuesInput() interface{}
 	Logs() WorkerObservabilityLogsOutputReference
 	LogsInput() interface{}
 	// Experimental.
@@ -74,10 +76,12 @@ type WorkerObservabilityOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutIssues(value *WorkerObservabilityIssues)
 	PutLogs(value *WorkerObservabilityLogs)
 	PutTraces(value *WorkerObservabilityTraces)
 	ResetEnabled()
 	ResetHeadSamplingRate()
+	ResetIssues()
 	ResetLogs()
 	ResetTraces()
 	// Produce the Token's value at resolution time.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_WorkerObservabilityOutputReference) InternalValue() interface
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityOutputReference) Issues() WorkerObservabilityIssuesOutputReference {
+	var returns WorkerObservabilityIssuesOutputReference
+	_jsii_.Get(
+		j,
+		"issues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerObservabilityOutputReference) IssuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"issuesInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +560,17 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) InterpolationForAttribute
 	return returns
 }
 
+func (w *jsiiProxy_WorkerObservabilityOutputReference) PutIssues(value *WorkerObservabilityIssues) {
+	if err := w.validatePutIssuesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putIssues",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerObservabilityOutputReference) PutLogs(value *WorkerObservabilityLogs) {
 	if err := w.validatePutLogsParameters(value); err != nil {
 		panic(err)
@@ -570,6 +605,14 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) ResetHeadSamplingRate() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetHeadSamplingRate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerObservabilityOutputReference) ResetIssues() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetIssues",
 		nil, // no parameters
 	)
 }

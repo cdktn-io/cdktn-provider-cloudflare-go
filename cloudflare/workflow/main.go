@@ -74,6 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSchedules", GoMethod: "ResetSchedules"},
 			_jsii_.MemberProperty{JsiiProperty: "schedules", GoGetter: "Schedules"},
 			_jsii_.MemberProperty{JsiiProperty: "schedulesInput", GoGetter: "SchedulesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "scriptDeleted", GoGetter: "ScriptDeleted"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptName", GoGetter: "ScriptName"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptNameInput", GoGetter: "ScriptNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

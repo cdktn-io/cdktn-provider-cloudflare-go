@@ -115,6 +115,10 @@ func (j *jsiiProxy_ApiShield) validateSetLifecycleParameters(val *cdktn.Terrafor
 	return nil
 }
 
+func (j *jsiiProxy_ApiShield) validateSetNormalizeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiShield) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

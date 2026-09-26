@@ -119,11 +119,19 @@ func (j *jsiiProxy_TurnstileWidget) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_TurnstileWidget) validateSetDirectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TurnstileWidget) validateSetDomainsParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_TurnstileWidget) validateSetEphemeralIdParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TurnstileWidget) validateSetFilterParameters(val *string) error {
 	return nil
 }
 
@@ -140,6 +148,18 @@ func (j *jsiiProxy_TurnstileWidget) validateSetNameParameters(val *string) error
 }
 
 func (j *jsiiProxy_TurnstileWidget) validateSetOfflabelParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TurnstileWidget) validateSetOrderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TurnstileWidget) validateSetPageParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_TurnstileWidget) validateSetPerPageParameters(val *float64) error {
 	return nil
 }
 

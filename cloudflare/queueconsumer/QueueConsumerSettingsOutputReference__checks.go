@@ -93,6 +93,99 @@ func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validateInterpolationFo
 	return nil
 }
 
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validatePutEmailParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*QueueConsumerSettingsEmail:
+		value := value.(*[]*QueueConsumerSettingsEmail)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QueueConsumerSettingsEmail:
+		value_ := value.([]*QueueConsumerSettingsEmail)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*QueueConsumerSettingsEmail; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validatePutPagerdutyParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*QueueConsumerSettingsPagerduty:
+		value := value.(*[]*QueueConsumerSettingsPagerduty)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QueueConsumerSettingsPagerduty:
+		value_ := value.([]*QueueConsumerSettingsPagerduty)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*QueueConsumerSettingsPagerduty; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validatePutWebhooksParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*QueueConsumerSettingsWebhooks:
+		value := value.(*[]*QueueConsumerSettingsWebhooks)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*QueueConsumerSettingsWebhooks:
+		value_ := value.([]*QueueConsumerSettingsWebhooks)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*QueueConsumerSettingsWebhooks; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")

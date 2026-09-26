@@ -29,6 +29,7 @@ type DataCloudflareQueueConsumerSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Email() DataCloudflareQueueConsumerSettingsEmailList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareQueueConsumerSettings
@@ -36,6 +37,7 @@ type DataCloudflareQueueConsumerSettingsOutputReference interface {
 	MaxConcurrency() *float64
 	MaxRetries() *float64
 	MaxWaitTimeMs() *float64
+	Pagerduty() DataCloudflareQueueConsumerSettingsPagerdutyList
 	RetryDelay() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -46,6 +48,7 @@ type DataCloudflareQueueConsumerSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VisibilityTimeoutMs() *float64
+	Webhooks() DataCloudflareQueueConsumerSettingsWebhooksList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -125,6 +128,16 @@ func (j *jsiiProxy_DataCloudflareQueueConsumerSettingsOutputReference) CreationS
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareQueueConsumerSettingsOutputReference) Email() DataCloudflareQueueConsumerSettingsEmailList {
+	var returns DataCloudflareQueueConsumerSettingsEmailList
+	_jsii_.Get(
+		j,
+		"email",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareQueueConsumerSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -175,6 +188,16 @@ func (j *jsiiProxy_DataCloudflareQueueConsumerSettingsOutputReference) MaxWaitTi
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareQueueConsumerSettingsOutputReference) Pagerduty() DataCloudflareQueueConsumerSettingsPagerdutyList {
+	var returns DataCloudflareQueueConsumerSettingsPagerdutyList
+	_jsii_.Get(
+		j,
+		"pagerduty",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareQueueConsumerSettingsOutputReference) RetryDelay() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -210,6 +233,16 @@ func (j *jsiiProxy_DataCloudflareQueueConsumerSettingsOutputReference) Visibilit
 	_jsii_.Get(
 		j,
 		"visibilityTimeoutMs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueueConsumerSettingsOutputReference) Webhooks() DataCloudflareQueueConsumerSettingsWebhooksList {
+	var returns DataCloudflareQueueConsumerSettingsWebhooksList
+	_jsii_.Get(
+		j,
+		"webhooks",
 		&returns,
 	)
 	return returns

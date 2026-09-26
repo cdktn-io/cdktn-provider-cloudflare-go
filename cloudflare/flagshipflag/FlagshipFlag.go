@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag cloudflare_flagship_flag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag cloudflare_flagship_flag}.
 type FlagshipFlag interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -46,9 +46,6 @@ type FlagshipFlag interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
-	FlagKey() *string
-	SetFlagKey(val *string)
-	FlagKeyInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -57,6 +54,7 @@ type FlagshipFlag interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -186,7 +184,6 @@ type FlagshipFlag interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetDescription()
-	ResetFlagKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -368,26 +365,6 @@ func (j *jsiiProxy_FlagshipFlag) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FlagshipFlag) FlagKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flagKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FlagshipFlag) FlagKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flagKeyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_FlagshipFlag) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -413,6 +390,16 @@ func (j *jsiiProxy_FlagshipFlag) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FlagshipFlag) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -599,7 +586,7 @@ func (j *jsiiProxy_FlagshipFlag) VariationsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
 func NewFlagshipFlag(scope constructs.Construct, id *string, config *FlagshipFlagConfig) FlagshipFlag {
 	_init_.Initialize()
 
@@ -617,7 +604,7 @@ func NewFlagshipFlag(scope constructs.Construct, id *string, config *FlagshipFla
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
 func NewFlagshipFlag_Override(f FlagshipFlag, scope constructs.Construct, id *string, config *FlagshipFlagConfig) {
 	_init_.Initialize()
 
@@ -709,17 +696,6 @@ func (j *jsiiProxy_FlagshipFlag)SetEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FlagshipFlag)SetFlagKey(val *string) {
-	if err := j.validateSetFlagKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"flagKey",
 		val,
 	)
 }
@@ -1190,14 +1166,6 @@ func (f *jsiiProxy_FlagshipFlag) ResetDescription() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_FlagshipFlag) ResetFlagKey() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetFlagKey",
 		nil, // no parameters
 	)
 }

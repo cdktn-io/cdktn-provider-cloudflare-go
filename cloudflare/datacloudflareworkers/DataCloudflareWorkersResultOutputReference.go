@@ -38,6 +38,7 @@ type DataCloudflareWorkersResultOutputReference interface {
 	Logpush() cdktn.IResolvable
 	Name() *string
 	Observability() DataCloudflareWorkersResultObservabilityOutputReference
+	PreviewsBaseConfig() DataCloudflareWorkersResultPreviewsBaseConfigOutputReference
 	References() DataCloudflareWorkersResultReferencesOutputReference
 	Subdomain() DataCloudflareWorkersResultSubdomainOutputReference
 	Tags() *[]*string
@@ -195,6 +196,16 @@ func (j *jsiiProxy_DataCloudflareWorkersResultOutputReference) Observability() D
 	_jsii_.Get(
 		j,
 		"observability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersResultOutputReference) PreviewsBaseConfig() DataCloudflareWorkersResultPreviewsBaseConfigOutputReference {
+	var returns DataCloudflareWorkersResultPreviewsBaseConfigOutputReference
+	_jsii_.Get(
+		j,
+		"previewsBaseConfig",
 		&returns,
 	)
 	return returns

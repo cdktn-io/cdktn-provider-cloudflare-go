@@ -83,11 +83,27 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetCountParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetDirectionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetFilterParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetMaxItemsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetOrderByParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetSearchParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store cloudflare_secrets_store}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store cloudflare_secrets_store}.
 type SecretsStore interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -35,6 +35,9 @@ type SecretsStore interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Force() interface{}
+	SetForce(val interface{})
+	ForceInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -162,6 +165,7 @@ type SecretsStore interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetForce()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -267,6 +271,26 @@ func (j *jsiiProxy_SecretsStore) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsStore) Force() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"force",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsStore) ForceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceInput",
 		&returns,
 	)
 	return returns
@@ -423,7 +447,7 @@ func (j *jsiiProxy_SecretsStore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store cloudflare_secrets_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store cloudflare_secrets_store} Resource.
 func NewSecretsStore(scope constructs.Construct, id *string, config *SecretsStoreConfig) SecretsStore {
 	_init_.Initialize()
 
@@ -441,7 +465,7 @@ func NewSecretsStore(scope constructs.Construct, id *string, config *SecretsStor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/secrets_store cloudflare_secrets_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/secrets_store cloudflare_secrets_store} Resource.
 func NewSecretsStore_Override(s SecretsStore, scope constructs.Construct, id *string, config *SecretsStoreConfig) {
 	_init_.Initialize()
 
@@ -489,6 +513,17 @@ func (j *jsiiProxy_SecretsStore)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsStore)SetForce(val interface{}) {
+	if err := j.validateSetForceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"force",
 		val,
 	)
 }
@@ -919,6 +954,14 @@ func (s *jsiiProxy_SecretsStore) RegisterProviderFeatureUsage(feature cdktn.Prov
 		s,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (s *jsiiProxy_SecretsStore) ResetForce() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForce",
+		nil, // no parameters
 	)
 }
 

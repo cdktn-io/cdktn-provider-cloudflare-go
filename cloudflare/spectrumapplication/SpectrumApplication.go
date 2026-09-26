@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/spectrum_application cloudflare_spectrum_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/spectrum_application cloudflare_spectrum_application}.
 type SpectrumApplication interface {
 	cdktn.TerraformResource
 	ArgoSmartRouting() interface{}
@@ -66,6 +66,9 @@ type SpectrumApplication interface {
 	OriginPort() *map[string]interface{}
 	SetOriginPort(val *map[string]interface{})
 	OriginPortInput() *map[string]interface{}
+	OriginWorkerId() *string
+	SetOriginWorkerId(val *string)
+	OriginWorkerIdInput() *string
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
@@ -201,6 +204,7 @@ type SpectrumApplication interface {
 	ResetOriginDirect()
 	ResetOriginDns()
 	ResetOriginPort()
+	ResetOriginWorkerId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -505,6 +509,26 @@ func (j *jsiiProxy_SpectrumApplication) OriginPortInput() *map[string]interface{
 	return returns
 }
 
+func (j *jsiiProxy_SpectrumApplication) OriginWorkerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originWorkerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpectrumApplication) OriginWorkerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originWorkerIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpectrumApplication) Protocol() *string {
 	var returns *string
 	_jsii_.Get(
@@ -686,7 +710,7 @@ func (j *jsiiProxy_SpectrumApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication(scope constructs.Construct, id *string, config *SpectrumApplicationConfig) SpectrumApplication {
 	_init_.Initialize()
 
@@ -704,7 +728,7 @@ func NewSpectrumApplication(scope constructs.Construct, id *string, config *Spec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication_Override(s SpectrumApplication, scope constructs.Construct, id *string, config *SpectrumApplicationConfig) {
 	_init_.Initialize()
 
@@ -804,6 +828,17 @@ func (j *jsiiProxy_SpectrumApplication)SetOriginPort(val *map[string]interface{}
 	_jsii_.Set(
 		j,
 		"originPort",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpectrumApplication)SetOriginWorkerId(val *string) {
+	if err := j.validateSetOriginWorkerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"originWorkerId",
 		val,
 	)
 }
@@ -1350,6 +1385,14 @@ func (s *jsiiProxy_SpectrumApplication) ResetOriginPort() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOriginPort",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpectrumApplication) ResetOriginWorkerId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOriginWorkerId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}.
 type DataCloudflareZeroTrustOrganization interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -62,6 +62,7 @@ type DataCloudflareZeroTrustOrganization interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceTokenInactivity() DataCloudflareZeroTrustOrganizationServiceTokenInactivityOutputReference
 	SessionDuration() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -69,6 +70,7 @@ type DataCloudflareZeroTrustOrganization interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TrustedAccounts() *[]*string
 	UiReadOnlyToggleReason() *string
 	UserSeatExpirationInactiveTime() *string
 	WarpAuthNonBrowser401() cdktn.IResolvable
@@ -397,6 +399,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) ServiceTokenInactivity() DataCloudflareZeroTrustOrganizationServiceTokenInactivityOutputReference {
+	var returns DataCloudflareZeroTrustOrganizationServiceTokenInactivityOutputReference
+	_jsii_.Get(
+		j,
+		"serviceTokenInactivity",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) SessionDuration() *string {
 	var returns *string
 	_jsii_.Get(
@@ -432,6 +444,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) TerraformResourceType() 
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) TrustedAccounts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"trustedAccounts",
 		&returns,
 	)
 	return returns
@@ -498,7 +520,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
 func NewDataCloudflareZeroTrustOrganization(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustOrganizationConfig) DataCloudflareZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -516,7 +538,7 @@ func NewDataCloudflareZeroTrustOrganization(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
 func NewDataCloudflareZeroTrustOrganization_Override(d DataCloudflareZeroTrustOrganization, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 

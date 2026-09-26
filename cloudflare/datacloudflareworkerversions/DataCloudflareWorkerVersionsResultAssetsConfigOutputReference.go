@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareWorkerVersionsResultAssetsConfigOutputReference interface {
 	cdktn.ComplexObject
+	BasePath() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,6 +81,16 @@ type DataCloudflareWorkerVersionsResultAssetsConfigOutputReference interface {
 // The jsii proxy struct for DataCloudflareWorkerVersionsResultAssetsConfigOutputReference
 type jsiiProxy_DataCloudflareWorkerVersionsResultAssetsConfigOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultAssetsConfigOutputReference) BasePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basePath",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareWorkerVersionsResultAssetsConfigOutputReference) ComplexObjectIndex() interface{} {

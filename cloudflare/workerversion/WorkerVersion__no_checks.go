@@ -163,6 +163,14 @@ func (j *jsiiProxy_WorkerVersion) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersion) validateSetDeployParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerVersion) validateSetIncludeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

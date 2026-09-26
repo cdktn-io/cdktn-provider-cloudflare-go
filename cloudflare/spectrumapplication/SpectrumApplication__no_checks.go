@@ -139,6 +139,10 @@ func (j *jsiiProxy_SpectrumApplication) validateSetOriginPortParameters(val *map
 	return nil
 }
 
+func (j *jsiiProxy_SpectrumApplication) validateSetOriginWorkerIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpectrumApplication) validateSetProtocolParameters(val *string) error {
 	return nil
 }

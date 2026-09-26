@@ -219,6 +219,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTokenIdParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTrafficExclusionsParameters(val *[]*string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
 type DataCloudflareZeroTrustLists interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -30,6 +30,12 @@ type DataCloudflareZeroTrustLists interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
+	Filter() *[]*string
+	SetFilter(val *[]*string)
+	FilterInput() *[]*string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -47,6 +53,9 @@ type DataCloudflareZeroTrustLists interface {
 	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -54,6 +63,9 @@ type DataCloudflareZeroTrustLists interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflareZeroTrustListsResultList
+	Search() *string
+	SetSearch(val *string)
+	SearchInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -102,10 +114,14 @@ type DataCloudflareZeroTrustLists interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
+	ResetDirection()
+	ResetFilter()
 	ResetMaxItems()
+	ResetOrderBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSearch()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -195,6 +211,46 @@ func (j *jsiiProxy_DataCloudflareZeroTrustLists) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustLists) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustLists) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustLists) Filter() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustLists) FilterInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustLists) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -265,6 +321,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustLists) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustLists) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustLists) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustLists) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -290,6 +366,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustLists) Result() DataCloudflareZeroTrus
 	_jsii_.Get(
 		j,
 		"result",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustLists) Search() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"search",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustLists) SearchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"searchInput",
 		&returns,
 	)
 	return returns
@@ -346,7 +442,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustLists) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists} Data Source.
 func NewDataCloudflareZeroTrustLists(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustListsConfig) DataCloudflareZeroTrustLists {
 	_init_.Initialize()
 
@@ -364,7 +460,7 @@ func NewDataCloudflareZeroTrustLists(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists} Data Source.
 func NewDataCloudflareZeroTrustLists_Override(d DataCloudflareZeroTrustLists, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustListsConfig) {
 	_init_.Initialize()
 
@@ -405,6 +501,28 @@ func (j *jsiiProxy_DataCloudflareZeroTrustLists)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustLists)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustLists)SetFilter(val *[]*string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustLists)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -435,10 +553,32 @@ func (j *jsiiProxy_DataCloudflareZeroTrustLists)SetMaxItems(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustLists)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustLists)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustLists)SetSearch(val *string) {
+	if err := j.validateSetSearchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"search",
 		val,
 	)
 }
@@ -758,6 +898,22 @@ func (d *jsiiProxy_DataCloudflareZeroTrustLists) ResetAccountId() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustLists) ResetDirection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustLists) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustLists) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
@@ -766,10 +922,26 @@ func (d *jsiiProxy_DataCloudflareZeroTrustLists) ResetMaxItems() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustLists) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderBy",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustLists) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustLists) ResetSearch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSearch",
 		nil, // no parameters
 	)
 }

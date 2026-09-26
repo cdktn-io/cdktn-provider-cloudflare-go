@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
 type ZeroTrustDeviceDefaultProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -89,6 +89,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	// The tree node.
 	Node() constructs.Node
 	PolicyId() *string
+	ProfileType() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -122,6 +123,9 @@ type ZeroTrustDeviceDefaultProfile interface {
 	TunnelProtocol() *string
 	SetTunnelProtocol(val *string)
 	TunnelProtocolInput() *string
+	UninstallProtection() interface{}
+	SetUninstallProtection(val interface{})
+	UninstallProtectionInput() interface{}
 	VirtualNetworks() ZeroTrustDeviceDefaultProfileVirtualNetworksOutputReference
 	VirtualNetworksInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -244,6 +248,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	ResetSupportUrl()
 	ResetSwitchLocked()
 	ResetTunnelProtocol()
+	ResetUninstallProtection()
 	ResetVirtualNetworks()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -712,6 +717,16 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) PolicyId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ProfileType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"profileType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -892,6 +907,26 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TunnelProtocolInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) UninstallProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uninstallProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) UninstallProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uninstallProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) VirtualNetworks() ZeroTrustDeviceDefaultProfileVirtualNetworksOutputReference {
 	var returns ZeroTrustDeviceDefaultProfileVirtualNetworksOutputReference
 	_jsii_.Get(
@@ -913,7 +948,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) VirtualNetworksInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) ZeroTrustDeviceDefaultProfile {
 	_init_.Initialize()
 
@@ -931,7 +966,7 @@ func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile_Override(z ZeroTrustDeviceDefaultProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) {
 	_init_.Initialize()
 
@@ -1171,6 +1206,17 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetTunnelProtocol(val *string) 
 	_jsii_.Set(
 		j,
 		"tunnelProtocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetUninstallProtection(val interface{}) {
+	if err := j.validateSetUninstallProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uninstallProtection",
 		val,
 	)
 }
@@ -1777,6 +1823,14 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetTunnelProtocol() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetTunnelProtocol",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetUninstallProtection() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUninstallProtection",
 		nil, // no parameters
 	)
 }

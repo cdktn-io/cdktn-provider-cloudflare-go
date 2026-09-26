@@ -12,12 +12,11 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit cloudflare_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit cloudflare_rate_limit}.
 type RateLimit interface {
 	cdktn.TerraformResource
 	Action() RateLimitActionOutputReference
 	ActionInput() interface{}
-	Bypass() RateLimitBypassList
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	// Experimental.
@@ -34,8 +33,6 @@ type RateLimit interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Description() *string
-	Disabled() cdktn.IResolvable
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -44,7 +41,6 @@ type RateLimit interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -64,6 +60,9 @@ type RateLimit interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	RateLimitId() *string
+	SetRateLimitId(val *string)
+	RateLimitIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -175,6 +174,7 @@ type RateLimit interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRateLimitId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -217,16 +217,6 @@ func (j *jsiiProxy_RateLimit) ActionInput() interface{} {
 	_jsii_.Get(
 		j,
 		"actionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimit) Bypass() RateLimitBypassList {
-	var returns RateLimitBypassList
-	_jsii_.Get(
-		j,
-		"bypass",
 		&returns,
 	)
 	return returns
@@ -282,26 +272,6 @@ func (j *jsiiProxy_RateLimit) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimit) Description() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimit) Disabled() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"disabled",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RateLimit) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -327,16 +297,6 @@ func (j *jsiiProxy_RateLimit) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimit) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
 		&returns,
 	)
 	return returns
@@ -417,6 +377,26 @@ func (j *jsiiProxy_RateLimit) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RateLimit) RateLimitId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rateLimitId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RateLimit) RateLimitIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rateLimitIdInput",
 		&returns,
 	)
 	return returns
@@ -503,7 +483,7 @@ func (j *jsiiProxy_RateLimit) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfig) RateLimit {
 	_init_.Initialize()
 
@@ -521,7 +501,7 @@ func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit_Override(r RateLimit, scope constructs.Construct, id *string, config *RateLimitConfig) {
 	_init_.Initialize()
 
@@ -607,6 +587,17 @@ func (j *jsiiProxy_RateLimit)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RateLimit)SetRateLimitId(val *string) {
+	if err := j.validateSetRateLimitIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rateLimitId",
 		val,
 	)
 }
@@ -1039,6 +1030,14 @@ func (r *jsiiProxy_RateLimit) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RateLimit) ResetRateLimitId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRateLimitId",
 		nil, // no parameters
 	)
 }

@@ -80,6 +80,9 @@ type DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference inte
 	Order() *string
 	SetOrder(val *string)
 	OrderInput() *string
+	Tag() *[]*string
+	SetTag(val *[]*string)
+	TagInput() *[]*string
 	TargetIds() *[]*string
 	SetTargetIds(val *[]*string)
 	TargetIdsInput() *[]*string
@@ -134,6 +137,7 @@ type DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference inte
 	ResetModifiedAfter()
 	ResetModifiedBefore()
 	ResetOrder()
+	ResetTag()
 	ResetTargetIds()
 	ResetVirtualNetworkId()
 	// Produce the Token's value at resolution time.
@@ -521,6 +525,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Tag() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) TagInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) TargetIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -814,6 +838,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	_jsii_.Set(
 		j,
 		"order",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference)SetTag(val *[]*string) {
+	if err := j.validateSetTagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tag",
 		val,
 	)
 }
@@ -1172,6 +1207,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	_jsii_.InvokeVoid(
 		d,
 		"resetOrder",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) ResetTag() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTag",
 		nil, // no parameters
 	)
 }

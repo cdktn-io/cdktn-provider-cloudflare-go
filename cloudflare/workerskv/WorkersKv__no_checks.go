@@ -111,6 +111,14 @@ func (j *jsiiProxy_WorkersKv) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_WorkersKv) validateSetExpirationParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersKv) validateSetExpirationTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersKv) validateSetKeyNameParameters(val *string) error {
 	return nil
 }

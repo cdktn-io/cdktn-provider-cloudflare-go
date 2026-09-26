@@ -24,11 +24,15 @@ type QueueConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A Resource identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue#account_id Queue#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue#account_id Queue#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue#queue_name Queue#queue_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue#queue_name Queue#queue_name}.
 	QueueName *string `field:"required" json:"queueName" yaml:"queueName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue#settings Queue#settings}.
+	// Available values: "eu", "us", "fedramp".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue#jurisdiction Queue#jurisdiction}
+	Jurisdiction *string `field:"optional" json:"jurisdiction" yaml:"jurisdiction"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue#settings Queue#settings}.
 	Settings *QueueSettings `field:"optional" json:"settings" yaml:"settings"`
 }
 

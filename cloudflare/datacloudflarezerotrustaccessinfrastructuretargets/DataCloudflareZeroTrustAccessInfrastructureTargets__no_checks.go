@@ -155,6 +155,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetTagParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetTargetIdsParameters(val *[]*string) error {
 	return nil
 }

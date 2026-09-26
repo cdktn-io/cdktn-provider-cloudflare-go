@@ -33,6 +33,7 @@ type DataCloudflareFlagshipFlagsResultOutputReference interface {
 	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareFlagshipFlagsResult
 	SetInternalValue(val *DataCloudflareFlagshipFlagsResult)
 	Key() *string
@@ -153,6 +154,16 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlagsResultOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareFlagshipFlagsResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

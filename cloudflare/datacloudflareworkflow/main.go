@@ -54,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkflowName", GoMethod: "ResetWorkflowName"},
 			_jsii_.MemberProperty{JsiiProperty: "schedules", GoGetter: "Schedules"},
+			_jsii_.MemberProperty{JsiiProperty: "scriptDeleted", GoGetter: "ScriptDeleted"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptName", GoGetter: "ScriptName"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},

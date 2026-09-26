@@ -51,6 +51,10 @@ func (w *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateSetBasePathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersionAssetsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

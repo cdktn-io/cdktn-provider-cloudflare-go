@@ -187,6 +187,10 @@ func (j *jsiiProxy_WorkersScript) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScript) validateSetForceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScript) validateSetKeepAssetsParameters(val interface{}) error {
 	return nil
 }

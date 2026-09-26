@@ -18,6 +18,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
+			_jsii_.MemberProperty{JsiiProperty: "byokOnly", GoGetter: "ByokOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheInvalidateOnUpdate", GoGetter: "CacheInvalidateOnUpdate"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheTtl", GoGetter: "CacheTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

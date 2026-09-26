@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareFlagshipFlag) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareFlagshipFlag) validatePutFilterParameters(value *DataCloudflareFlagshipFlagFilter) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareFlagshipFlag) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

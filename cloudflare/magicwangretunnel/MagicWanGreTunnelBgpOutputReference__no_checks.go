@@ -63,7 +63,15 @@ func (j *jsiiProxy_MagicWanGreTunnelBgpOutputReference) validateSetCustomerAsnPa
 	return nil
 }
 
+func (j *jsiiProxy_MagicWanGreTunnelBgpOutputReference) validateSetExportFilterIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicWanGreTunnelBgpOutputReference) validateSetExtraPrefixesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanGreTunnelBgpOutputReference) validateSetImportFilterIdParameters(val *string) error {
 	return nil
 }
 

@@ -133,6 +133,9 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	TokenUrl() *string
 	SetTokenUrl(val *string)
 	TokenUrlInput() *string
+	UseLoginHint() interface{}
+	SetUseLoginHint(val interface{})
+	UseLoginHintInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -189,6 +192,7 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	ResetSsoTargetUrl()
 	ResetSupportGroups()
 	ResetTokenUrl()
+	ResetUseLoginHint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -904,6 +908,26 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) TokenU
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) UseLoginHint() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLoginHint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) UseLoginHintInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLoginHintInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewZeroTrustAccessIdentityProviderConfigAOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessIdentityProviderConfigAOutputReference {
 	_init_.Initialize()
@@ -1313,6 +1337,17 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetToke
 	_jsii_.Set(
 		j,
 		"tokenUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetUseLoginHint(val interface{}) {
+	if err := j.validateSetUseLoginHintParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useLoginHint",
 		val,
 	)
 }
@@ -1758,6 +1793,14 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetT
 	_jsii_.InvokeVoid(
 		z,
 		"resetTokenUrl",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetUseLoginHint() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUseLoginHint",
 		nil, // no parameters
 	)
 }

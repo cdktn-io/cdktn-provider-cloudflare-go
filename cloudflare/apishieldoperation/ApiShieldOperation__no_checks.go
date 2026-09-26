@@ -111,6 +111,10 @@ func (j *jsiiProxy_ApiShieldOperation) validateSetEndpointParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ApiShieldOperation) validateSetFeatureParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiShieldOperation) validateSetHostParameters(val *string) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (j *jsiiProxy_ApiShieldOperation) validateSetMethodParameters(val *string) 
 }
 
 func (j *jsiiProxy_ApiShieldOperation) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiShieldOperation) validateSetWithSchemasParameters(val interface{}) error {
 	return nil
 }
 

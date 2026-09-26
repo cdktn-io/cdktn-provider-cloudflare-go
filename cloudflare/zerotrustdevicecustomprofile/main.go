@@ -26,6 +26,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "allowUpdatesInput", GoGetter: "AllowUpdatesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoConnect", GoGetter: "AutoConnect"},
 			_jsii_.MemberProperty{JsiiProperty: "autoConnectInput", GoGetter: "AutoConnectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "browserExtensionConfig", GoGetter: "BrowserExtensionConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "browserExtensionConfigInput", GoGetter: "BrowserExtensionConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "captivePortal", GoGetter: "CaptivePortal"},
 			_jsii_.MemberProperty{JsiiProperty: "captivePortalInput", GoGetter: "CaptivePortalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -86,8 +88,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "policyId", GoGetter: "PolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "precedence", GoGetter: "Precedence"},
 			_jsii_.MemberProperty{JsiiProperty: "precedenceInput", GoGetter: "PrecedenceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "profileType", GoGetter: "ProfileType"},
+			_jsii_.MemberProperty{JsiiProperty: "profileTypeInput", GoGetter: "ProfileTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putBrowserExtensionConfig", GoMethod: "PutBrowserExtensionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putDnsSearchSuffixes", GoMethod: "PutDnsSearchSuffixes"},
 			_jsii_.MemberMethod{JsiiMethod: "putExclude", GoMethod: "PutExclude"},
 			_jsii_.MemberMethod{JsiiMethod: "putGlobalAcceleration", GoMethod: "PutGlobalAcceleration"},
@@ -102,6 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowModeSwitch", GoMethod: "ResetAllowModeSwitch"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowUpdates", GoMethod: "ResetAllowUpdates"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoConnect", GoMethod: "ResetAutoConnect"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBrowserExtensionConfig", GoMethod: "ResetBrowserExtensionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaptivePortal", GoMethod: "ResetCaptivePortal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableAutoFallback", GoMethod: "ResetDisableAutoFallback"},
@@ -113,14 +119,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetInclude", GoMethod: "ResetInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLanAllowMinutes", GoMethod: "ResetLanAllowMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLanAllowSubnetSize", GoMethod: "ResetLanAllowSubnetSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMatch", GoMethod: "ResetMatch"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrecedence", GoMethod: "ResetPrecedence"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProfileType", GoMethod: "ResetProfileType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegisterInterfaceIpWithDns", GoMethod: "ResetRegisterInterfaceIpWithDns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSccmVpnBoundarySupport", GoMethod: "ResetSccmVpnBoundarySupport"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceModeV2", GoMethod: "ResetServiceModeV2"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSupportUrl", GoMethod: "ResetSupportUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSwitchLocked", GoMethod: "ResetSwitchLocked"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnelProtocol", GoMethod: "ResetTunnelProtocol"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUninstallProtection", GoMethod: "ResetUninstallProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVirtualNetworks", GoMethod: "ResetVirtualNetworks"},
 			_jsii_.MemberProperty{JsiiProperty: "sccmVpnBoundarySupport", GoGetter: "SccmVpnBoundarySupport"},
 			_jsii_.MemberProperty{JsiiProperty: "sccmVpnBoundarySupportInput", GoGetter: "SccmVpnBoundarySupportInput"},
@@ -142,6 +151,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelProtocol", GoGetter: "TunnelProtocol"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelProtocolInput", GoGetter: "TunnelProtocolInput"},
+			_jsii_.MemberProperty{JsiiProperty: "uninstallProtection", GoGetter: "UninstallProtection"},
+			_jsii_.MemberProperty{JsiiProperty: "uninstallProtectionInput", GoGetter: "UninstallProtectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworks", GoGetter: "VirtualNetworks"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworksInput", GoGetter: "VirtualNetworksInput"},
 			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
@@ -149,6 +160,46 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustDeviceCustomProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileBrowserExtensionConfig",
+		reflect.TypeOf((*ZeroTrustDeviceCustomProfileBrowserExtensionConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.zeroTrustDeviceCustomProfile.ZeroTrustDeviceCustomProfileBrowserExtensionConfigOutputReference",
+		reflect.TypeOf((*ZeroTrustDeviceCustomProfileBrowserExtensionConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyControl", GoGetter: "ProxyControl"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyControlInput", GoGetter: "ProxyControlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyEnabled", GoGetter: "ProxyEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyEnabledInput", GoGetter: "ProxyEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustDeviceCustomProfileBrowserExtensionConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

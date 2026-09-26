@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/d1_database cloudflare_d1_database}.
 type D1Database interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -35,6 +35,9 @@ type D1Database interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Fields() *[]*string
+	SetFields(val *[]*string)
+	FieldsInput() *[]*string
 	FileSize() *float64
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
@@ -174,6 +177,7 @@ type D1Database interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetFields()
 	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -282,6 +286,26 @@ func (j *jsiiProxy_D1Database) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) Fields() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"fields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) FieldsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"fieldsInput",
 		&returns,
 	)
 	return returns
@@ -528,7 +552,7 @@ func (j *jsiiProxy_D1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseConfig) D1Database {
 	_init_.Initialize()
 
@@ -546,7 +570,7 @@ func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database_Override(d D1Database, scope constructs.Construct, id *string, config *D1DatabaseConfig) {
 	_init_.Initialize()
 
@@ -594,6 +618,17 @@ func (j *jsiiProxy_D1Database)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_D1Database)SetFields(val *[]*string) {
+	if err := j.validateSetFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fields",
 		val,
 	)
 }
@@ -1057,6 +1092,14 @@ func (d *jsiiProxy_D1Database) RegisterProviderFeatureUsage(feature cdktn.Provid
 		d,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (d *jsiiProxy_D1Database) ResetFields() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFields",
+		nil, // no parameters
 	)
 }
 

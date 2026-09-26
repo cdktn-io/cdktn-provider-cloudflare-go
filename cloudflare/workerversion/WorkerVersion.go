@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker_version cloudflare_worker_version}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker_version cloudflare_worker_version}.
 type WorkerVersion interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -22,6 +22,8 @@ type WorkerVersion interface {
 	AnnotationsInput() interface{}
 	Assets() WorkerVersionAssetsOutputReference
 	AssetsInput() interface{}
+	AuthorEmail() *string
+	AuthorId() *string
 	Bindings() WorkerVersionBindingsList
 	BindingsInput() interface{}
 	CacheOptions() WorkerVersionCacheOptionsOutputReference
@@ -51,8 +53,12 @@ type WorkerVersion interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Deploy() interface{}
+	SetDeploy(val interface{})
+	DeployInput() interface{}
 	Exports() WorkerVersionExportsMap
 	ExportsInput() interface{}
+	ExportsReconciliation() WorkerVersionExportsReconciliationOutputReference
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -62,6 +68,9 @@ type WorkerVersion interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Include() *string
+	SetInclude(val *string)
+	IncludeInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -219,7 +228,9 @@ type WorkerVersion interface {
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
 	ResetContainers()
+	ResetDeploy()
 	ResetExports()
+	ResetInclude()
 	ResetLimits()
 	ResetMainModule()
 	ResetMigrations()
@@ -312,6 +323,26 @@ func (j *jsiiProxy_WorkerVersion) AssetsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"assetsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) AuthorEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) AuthorId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorId",
 		&returns,
 	)
 	return returns
@@ -477,6 +508,26 @@ func (j *jsiiProxy_WorkerVersion) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerVersion) Deploy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deploy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) DeployInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deployInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerVersion) Exports() WorkerVersionExportsMap {
 	var returns WorkerVersionExportsMap
 	_jsii_.Get(
@@ -492,6 +543,16 @@ func (j *jsiiProxy_WorkerVersion) ExportsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"exportsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) ExportsReconciliation() WorkerVersionExportsReconciliationOutputReference {
+	var returns WorkerVersionExportsReconciliationOutputReference
+	_jsii_.Get(
+		j,
+		"exportsReconciliation",
 		&returns,
 	)
 	return returns
@@ -532,6 +593,26 @@ func (j *jsiiProxy_WorkerVersion) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) Include() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"include",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersion) IncludeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"includeInput",
 		&returns,
 	)
 	return returns
@@ -838,7 +919,7 @@ func (j *jsiiProxy_WorkerVersion) WorkerIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVersionConfig) WorkerVersion {
 	_init_.Initialize()
 
@@ -856,7 +937,7 @@ func NewWorkerVersion(scope constructs.Construct, id *string, config *WorkerVers
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker_version cloudflare_worker_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker_version cloudflare_worker_version} Resource.
 func NewWorkerVersion_Override(w WorkerVersion, scope constructs.Construct, id *string, config *WorkerVersionConfig) {
 	_init_.Initialize()
 
@@ -930,10 +1011,32 @@ func (j *jsiiProxy_WorkerVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_WorkerVersion)SetDeploy(val interface{}) {
+	if err := j.validateSetDeployParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerVersion)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersion)SetInclude(val *string) {
+	if err := j.validateSetIncludeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"include",
 		val,
 	)
 }
@@ -1558,10 +1661,26 @@ func (w *jsiiProxy_WorkerVersion) ResetContainers() {
 	)
 }
 
+func (w *jsiiProxy_WorkerVersion) ResetDeploy() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDeploy",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerVersion) ResetExports() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetExports",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersion) ResetInclude() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetInclude",
 		nil, // no parameters
 	)
 }

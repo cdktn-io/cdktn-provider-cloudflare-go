@@ -36,6 +36,7 @@ type DataCloudflareQueuesResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareQueuesResult
 	SetInternalValue(val *DataCloudflareQueuesResult)
+	Jurisdiction() *string
 	ModifiedOn() *string
 	Producers() DataCloudflareQueuesResultProducersList
 	ProducersTotalCount() *float64
@@ -174,6 +175,16 @@ func (j *jsiiProxy_DataCloudflareQueuesResultOutputReference) InternalValue() *D
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueuesResultOutputReference) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
 		&returns,
 	)
 	return returns

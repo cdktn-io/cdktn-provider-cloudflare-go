@@ -156,6 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "destinationConf", GoGetter: "DestinationConf"},
 			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
 			_jsii_.MemberProperty{JsiiProperty: "errorMessage", GoGetter: "ErrorMessage"},
+			_jsii_.MemberProperty{JsiiProperty: "filterAttackTraffic", GoGetter: "FilterAttackTraffic"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "frequency", GoGetter: "Frequency"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},

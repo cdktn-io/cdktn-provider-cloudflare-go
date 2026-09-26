@@ -131,6 +131,10 @@ func (j *jsiiProxy_Account) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Account) validateSetStandaloneParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Account) validateSetTypeParameters(val *string) error {
 	return nil
 }

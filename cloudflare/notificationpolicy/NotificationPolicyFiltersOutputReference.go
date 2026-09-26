@@ -151,6 +151,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TokenId() *[]*string
+	SetTokenId(val *[]*string)
+	TokenIdInput() *[]*string
 	TrafficExclusions() *[]*string
 	SetTrafficExclusions(val *[]*string)
 	TrafficExclusionsInput() *[]*string
@@ -230,6 +233,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetTargetHostname()
 	ResetTargetIp()
 	ResetTargetZoneName()
+	ResetTokenId()
 	ResetTrafficExclusions()
 	ResetTunnelId()
 	ResetTunnelName()
@@ -1061,6 +1065,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TerraformResource()
 	return returns
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TokenId() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TokenIdInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TrafficExclusions() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1671,6 +1695,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTerraformResource
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTokenId(val *[]*string) {
+	if err := j.validateSetTokenIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTrafficExclusions(val *[]*string) {
 	if err := j.validateSetTrafficExclusionsParameters(val); err != nil {
 		panic(err)
@@ -2215,6 +2250,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetZoneName
 	_jsii_.InvokeVoid(
 		n,
 		"resetTargetZoneName",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTokenId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTokenId",
 		nil, // no parameters
 	)
 }

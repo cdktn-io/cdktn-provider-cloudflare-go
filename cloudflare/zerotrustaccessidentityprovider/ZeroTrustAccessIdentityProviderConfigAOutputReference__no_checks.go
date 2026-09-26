@@ -195,6 +195,10 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) validateSetUseLoginHintParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewZeroTrustAccessIdentityProviderConfigAOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

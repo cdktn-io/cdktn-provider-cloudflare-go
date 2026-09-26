@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/logpush_job cloudflare_logpush_job}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/logpush_job cloudflare_logpush_job}.
 type LogpushJob interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -46,6 +46,9 @@ type LogpushJob interface {
 	ErrorMessage() *string
 	Filter() *string
 	SetFilter(val *string)
+	FilterAttackTraffic() interface{}
+	SetFilterAttackTraffic(val interface{})
+	FilterAttackTrafficInput() interface{}
 	FilterInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
@@ -206,6 +209,7 @@ type LogpushJob interface {
 	ResetDataset()
 	ResetEnabled()
 	ResetFilter()
+	ResetFilterAttackTraffic()
 	ResetFrequency()
 	ResetKind()
 	ResetLogpullOptions()
@@ -391,6 +395,26 @@ func (j *jsiiProxy_LogpushJob) Filter() *string {
 	_jsii_.Get(
 		j,
 		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) FilterAttackTraffic() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterAttackTraffic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) FilterAttackTrafficInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterAttackTrafficInput",
 		&returns,
 	)
 	return returns
@@ -747,7 +771,7 @@ func (j *jsiiProxy_LogpushJob) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobConfig) LogpushJob {
 	_init_.Initialize()
 
@@ -765,7 +789,7 @@ func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob_Override(l LogpushJob, scope constructs.Construct, id *string, config *LogpushJobConfig) {
 	_init_.Initialize()
 
@@ -857,6 +881,17 @@ func (j *jsiiProxy_LogpushJob)SetFilter(val *string) {
 	_jsii_.Set(
 		j,
 		"filter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogpushJob)SetFilterAttackTraffic(val interface{}) {
+	if err := j.validateSetFilterAttackTrafficParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterAttackTraffic",
 		val,
 	)
 }
@@ -1417,6 +1452,14 @@ func (l *jsiiProxy_LogpushJob) ResetFilter() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogpushJob) ResetFilterAttackTraffic() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFilterAttackTraffic",
 		nil, // no parameters
 	)
 }

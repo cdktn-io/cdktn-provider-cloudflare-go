@@ -111,6 +111,10 @@ func (j *jsiiProxy_SecretsStore) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_SecretsStore) validateSetForceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsStore) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

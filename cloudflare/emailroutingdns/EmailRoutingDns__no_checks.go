@@ -119,6 +119,10 @@ func (j *jsiiProxy_EmailRoutingDns) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_EmailRoutingDns) validateSetSubdomainParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailRoutingDns) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

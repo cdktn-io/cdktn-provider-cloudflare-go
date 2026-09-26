@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles) validateSetMaxIt
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles) validateSetProfileTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareZeroTrustDeviceCustomProfilesParameters(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceCustomProfilesConfig) error {
 	return nil
 }

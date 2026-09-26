@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue cloudflare_queue}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue cloudflare_queue}.
 type Queue interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -46,6 +46,9 @@ type Queue interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Jurisdiction() *string
+	SetJurisdiction(val *string)
+	JurisdictionInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -170,6 +173,7 @@ type Queue interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -341,6 +345,26 @@ func (j *jsiiProxy_Queue) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Queue) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Queue) JurisdictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Queue) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -502,7 +526,7 @@ func (j *jsiiProxy_Queue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue {
 	_init_.Initialize()
 
@@ -520,7 +544,7 @@ func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue_Override(q Queue, scope constructs.Construct, id *string, config *QueueConfig) {
 	_init_.Initialize()
 
@@ -576,6 +600,17 @@ func (j *jsiiProxy_Queue)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Queue)SetJurisdiction(val *string) {
+	if err := j.validateSetJurisdictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jurisdiction",
 		val,
 	)
 }
@@ -1009,6 +1044,14 @@ func (q *jsiiProxy_Queue) RegisterProviderFeatureUsage(feature cdktn.ProviderFea
 		q,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (q *jsiiProxy_Queue) ResetJurisdiction() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetJurisdiction",
+		nil, // no parameters
 	)
 }
 

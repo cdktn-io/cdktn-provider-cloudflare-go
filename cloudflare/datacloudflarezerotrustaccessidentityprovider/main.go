@@ -142,6 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenUrl", GoGetter: "TokenUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useLoginHint", GoGetter: "UseLoginHint"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference{}

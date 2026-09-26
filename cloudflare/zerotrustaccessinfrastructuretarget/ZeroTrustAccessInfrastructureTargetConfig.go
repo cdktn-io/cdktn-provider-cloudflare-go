@@ -24,7 +24,7 @@ type ZeroTrustAccessInfrastructureTargetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_access_infrastructure_target#account_id ZeroTrustAccessInfrastructureTarget#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_access_infrastructure_target#account_id ZeroTrustAccessInfrastructureTarget#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A non-unique field that refers to a target.
 	//
@@ -33,11 +33,15 @@ type ZeroTrustAccessInfrastructureTargetConfig struct {
 	// and period, does not support spaces, and must start and end with an
 	// alphanumeric character.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_access_infrastructure_target#hostname ZeroTrustAccessInfrastructureTarget#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_access_infrastructure_target#hostname ZeroTrustAccessInfrastructureTarget#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
 	// The IPv4/IPv6 address that identifies where to reach a target.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_access_infrastructure_target#ip ZeroTrustAccessInfrastructureTarget#ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_access_infrastructure_target#ip ZeroTrustAccessInfrastructureTarget#ip}
 	Ip *ZeroTrustAccessInfrastructureTargetIp `field:"required" json:"ip" yaml:"ip"`
+	// Optional tags to associate with the target. Keys and values are user-defined strings.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_access_infrastructure_target#tags ZeroTrustAccessInfrastructureTarget#tags}
+	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

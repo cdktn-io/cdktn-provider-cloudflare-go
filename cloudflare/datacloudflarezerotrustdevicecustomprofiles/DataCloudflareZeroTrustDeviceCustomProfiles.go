@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_custom_profiles cloudflare_zero_trust_device_custom_profiles}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_custom_profiles cloudflare_zero_trust_device_custom_profiles}.
 type DataCloudflareZeroTrustDeviceCustomProfiles interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -47,6 +47,9 @@ type DataCloudflareZeroTrustDeviceCustomProfiles interface {
 	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
+	ProfileType() *string
+	SetProfileType(val *string)
+	ProfileTypeInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -103,6 +106,7 @@ type DataCloudflareZeroTrustDeviceCustomProfiles interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProfileType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -261,6 +265,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles) Node() construct
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles) ProfileType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"profileType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles) ProfileTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"profileTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -322,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_custom_profiles cloudflare_zero_trust_device_custom_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_custom_profiles cloudflare_zero_trust_device_custom_profiles} Data Source.
 func NewDataCloudflareZeroTrustDeviceCustomProfiles(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceCustomProfilesConfig) DataCloudflareZeroTrustDeviceCustomProfiles {
 	_init_.Initialize()
 
@@ -340,7 +364,7 @@ func NewDataCloudflareZeroTrustDeviceCustomProfiles(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_custom_profiles cloudflare_zero_trust_device_custom_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_custom_profiles cloudflare_zero_trust_device_custom_profiles} Data Source.
 func NewDataCloudflareZeroTrustDeviceCustomProfiles_Override(d DataCloudflareZeroTrustDeviceCustomProfiles, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceCustomProfilesConfig) {
 	_init_.Initialize()
 
@@ -407,6 +431,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles)SetMaxItems(val *
 	_jsii_.Set(
 		j,
 		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles)SetProfileType(val *string) {
+	if err := j.validateSetProfileTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"profileType",
 		val,
 	)
 }
@@ -735,6 +770,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles) ResetOverrideLog
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfiles) ResetProfileType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProfileType",
 		nil, // no parameters
 	)
 }

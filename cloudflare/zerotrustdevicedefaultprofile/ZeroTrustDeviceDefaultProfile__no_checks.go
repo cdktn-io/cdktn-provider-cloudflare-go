@@ -199,6 +199,10 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetTunnelProtocolParam
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetUninstallProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewZeroTrustDeviceDefaultProfileParameters(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) error {
 	return nil
 }

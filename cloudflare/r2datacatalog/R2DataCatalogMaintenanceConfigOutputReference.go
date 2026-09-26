@@ -33,6 +33,7 @@ type R2DataCatalogMaintenanceConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *R2DataCatalogMaintenanceConfig
 	SetInternalValue(val *R2DataCatalogMaintenanceConfig)
+	Interval() *string
 	SnapshotExpiration() R2DataCatalogMaintenanceConfigSnapshotExpirationOutputReference
 	// Experimental.
 	TerraformAttribute() *string
@@ -136,6 +137,16 @@ func (j *jsiiProxy_R2DataCatalogMaintenanceConfigOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2DataCatalogMaintenanceConfigOutputReference) Interval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interval",
 		&returns,
 	)
 	return returns

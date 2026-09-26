@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/dns_record cloudflare_dns_record}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/dns_record cloudflare_dns_record}.
 type DnsRecord interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -50,6 +50,9 @@ type DnsRecord interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IncludeShadowMetadata() interface{}
+	SetIncludeShadowMetadata(val interface{})
+	IncludeShadowMetadataInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -199,6 +202,7 @@ type DnsRecord interface {
 	ResetComment()
 	ResetContent()
 	ResetData()
+	ResetIncludeShadowMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -399,6 +403,26 @@ func (j *jsiiProxy_DnsRecord) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecord) IncludeShadowMetadata() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeShadowMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecord) IncludeShadowMetadataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeShadowMetadataInput",
 		&returns,
 	)
 	return returns
@@ -705,7 +729,7 @@ func (j *jsiiProxy_DnsRecord) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/dns_record cloudflare_dns_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/dns_record cloudflare_dns_record} Resource.
 func NewDnsRecord(scope constructs.Construct, id *string, config *DnsRecordConfig) DnsRecord {
 	_init_.Initialize()
 
@@ -723,7 +747,7 @@ func NewDnsRecord(scope constructs.Construct, id *string, config *DnsRecordConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/dns_record cloudflare_dns_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/dns_record cloudflare_dns_record} Resource.
 func NewDnsRecord_Override(d DnsRecord, scope constructs.Construct, id *string, config *DnsRecordConfig) {
 	_init_.Initialize()
 
@@ -790,6 +814,17 @@ func (j *jsiiProxy_DnsRecord)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DnsRecord)SetIncludeShadowMetadata(val interface{}) {
+	if err := j.validateSetIncludeShadowMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeShadowMetadata",
 		val,
 	)
 }
@@ -1334,6 +1369,14 @@ func (d *jsiiProxy_DnsRecord) ResetData() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetData",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsRecord) ResetIncludeShadowMetadata() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeShadowMetadata",
 		nil, // no parameters
 	)
 }

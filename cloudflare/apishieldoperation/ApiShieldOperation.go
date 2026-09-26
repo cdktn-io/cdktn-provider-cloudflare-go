@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 type ApiShieldOperation interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -34,6 +34,9 @@ type ApiShieldOperation interface {
 	Endpoint() *string
 	SetEndpoint(val *string)
 	EndpointInput() *string
+	Feature() *[]*string
+	SetFeature(val *[]*string)
+	FeatureInput() *[]*string
 	Features() ApiShieldOperationFeaturesOutputReference
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
@@ -75,6 +78,9 @@ type ApiShieldOperation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WithSchemas() interface{}
+	SetWithSchemas(val interface{})
+	WithSchemasInput() interface{}
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -170,9 +176,11 @@ type ApiShieldOperation interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetFeature()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWithSchemas()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -265,6 +273,26 @@ func (j *jsiiProxy_ApiShieldOperation) EndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"endpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldOperation) Feature() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"feature",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldOperation) FeatureInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"featureInput",
 		&returns,
 	)
 	return returns
@@ -470,6 +498,26 @@ func (j *jsiiProxy_ApiShieldOperation) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApiShieldOperation) WithSchemas() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withSchemas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldOperation) WithSchemasInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withSchemasInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShieldOperation) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -491,7 +539,7 @@ func (j *jsiiProxy_ApiShieldOperation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiShieldOperationConfig) ApiShieldOperation {
 	_init_.Initialize()
 
@@ -509,7 +557,7 @@ func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiSh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation_Override(a ApiShieldOperation, scope constructs.Construct, id *string, config *ApiShieldOperationConfig) {
 	_init_.Initialize()
 
@@ -557,6 +605,17 @@ func (j *jsiiProxy_ApiShieldOperation)SetEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"endpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiShieldOperation)SetFeature(val *[]*string) {
+	if err := j.validateSetFeatureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"feature",
 		val,
 	)
 }
@@ -617,6 +676,17 @@ func (j *jsiiProxy_ApiShieldOperation)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiShieldOperation)SetWithSchemas(val interface{}) {
+	if err := j.validateSetWithSchemasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"withSchemas",
 		val,
 	)
 }
@@ -1012,10 +1082,26 @@ func (a *jsiiProxy_ApiShieldOperation) RegisterProviderFeatureUsage(feature cdkt
 	)
 }
 
+func (a *jsiiProxy_ApiShieldOperation) ResetFeature() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFeature",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApiShieldOperation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiShieldOperation) ResetWithSchemas() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWithSchemas",
 		nil, // no parameters
 	)
 }

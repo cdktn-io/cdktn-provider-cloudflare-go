@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
 type SchemaValidationSchemas interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -53,6 +53,9 @@ type SchemaValidationSchemas interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OmitSource() interface{}
+	SetOmitSource(val interface{})
+	OmitSourceInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -171,6 +174,7 @@ type SchemaValidationSchemas interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetOmitSource()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -361,6 +365,26 @@ func (j *jsiiProxy_SchemaValidationSchemas) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SchemaValidationSchemas) OmitSource() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"omitSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SchemaValidationSchemas) OmitSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"omitSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SchemaValidationSchemas) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -492,7 +516,7 @@ func (j *jsiiProxy_SchemaValidationSchemas) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource.
 func NewSchemaValidationSchemas(scope constructs.Construct, id *string, config *SchemaValidationSchemasConfig) SchemaValidationSchemas {
 	_init_.Initialize()
 
@@ -510,7 +534,7 @@ func NewSchemaValidationSchemas(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource.
 func NewSchemaValidationSchemas_Override(s SchemaValidationSchemas, scope constructs.Construct, id *string, config *SchemaValidationSchemasConfig) {
 	_init_.Initialize()
 
@@ -588,6 +612,17 @@ func (j *jsiiProxy_SchemaValidationSchemas)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SchemaValidationSchemas)SetOmitSource(val interface{}) {
+	if err := j.validateSetOmitSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"omitSource",
 		val,
 	)
 }
@@ -1021,6 +1056,14 @@ func (s *jsiiProxy_SchemaValidationSchemas) RegisterProviderFeatureUsage(feature
 		s,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (s *jsiiProxy_SchemaValidationSchemas) ResetOmitSource() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOmitSource",
+		nil, // no parameters
 	)
 }
 

@@ -127,6 +127,10 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewZeroTrustAccessInfrastructureTargetParameters(scope constructs.Construct, id *string, config *ZeroTrustAccessInfrastructureTargetConfig) error {
 	return nil
 }

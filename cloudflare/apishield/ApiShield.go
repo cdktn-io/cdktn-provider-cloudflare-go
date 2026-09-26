@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield cloudflare_api_shield}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield cloudflare_api_shield}.
 type ApiShield interface {
 	cdktn.TerraformResource
 	AuthIdCharacteristics() ApiShieldAuthIdCharacteristicsList
@@ -48,6 +48,9 @@ type ApiShield interface {
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Normalize() interface{}
+	SetNormalize(val interface{})
+	NormalizeInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -160,6 +163,7 @@ type ApiShield interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetNormalize()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -320,6 +324,26 @@ func (j *jsiiProxy_ApiShield) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ApiShield) Normalize() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"normalize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShield) NormalizeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"normalizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShield) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -401,7 +425,7 @@ func (j *jsiiProxy_ApiShield) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfig) ApiShield {
 	_init_.Initialize()
 
@@ -419,7 +443,7 @@ func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield_Override(a ApiShield, scope constructs.Construct, id *string, config *ApiShieldConfig) {
 	_init_.Initialize()
 
@@ -475,6 +499,17 @@ func (j *jsiiProxy_ApiShield)SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiShield)SetNormalize(val interface{}) {
+	if err := j.validateSetNormalizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"normalize",
 		val,
 	)
 }
@@ -897,6 +932,14 @@ func (a *jsiiProxy_ApiShield) RegisterProviderFeatureUsage(feature cdktn.Provide
 		a,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (a *jsiiProxy_ApiShield) ResetNormalize() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNormalize",
+		nil, // no parameters
 	)
 }
 

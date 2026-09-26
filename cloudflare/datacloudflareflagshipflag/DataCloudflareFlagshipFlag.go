@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/flagship_flag cloudflare_flagship_flag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag cloudflare_flagship_flag}.
 type DataCloudflareFlagshipFlag interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -36,6 +36,8 @@ type DataCloudflareFlagshipFlag interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	Enabled() cdktn.IResolvable
+	Filter() DataCloudflareFlagshipFlagFilterOutputReference
+	FilterInput() interface{}
 	FlagKey() *string
 	SetFlagKey(val *string)
 	FlagKeyInput() *string
@@ -47,6 +49,7 @@ type DataCloudflareFlagshipFlag interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	Key() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -96,6 +99,7 @@ type DataCloudflareFlagshipFlag interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareFlagshipFlagFilter)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -109,6 +113,8 @@ type DataCloudflareFlagshipFlag interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetFilter()
+	ResetFlagKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -250,6 +256,26 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlag) Enabled() cdktn.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareFlagshipFlag) Filter() DataCloudflareFlagshipFlagFilterOutputReference {
+	var returns DataCloudflareFlagshipFlagFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareFlagshipFlag) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareFlagshipFlag) FlagKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -295,6 +321,16 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlag) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareFlagshipFlag) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -431,7 +467,7 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlag) Variations() cdktn.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source.
 func NewDataCloudflareFlagshipFlag(scope constructs.Construct, id *string, config *DataCloudflareFlagshipFlagConfig) DataCloudflareFlagshipFlag {
 	_init_.Initialize()
 
@@ -449,7 +485,7 @@ func NewDataCloudflareFlagshipFlag(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source.
 func NewDataCloudflareFlagshipFlag_Override(d DataCloudflareFlagshipFlag, scope constructs.Construct, id *string, config *DataCloudflareFlagshipFlagConfig) {
 	_init_.Initialize()
 
@@ -824,6 +860,17 @@ func (d *jsiiProxy_DataCloudflareFlagshipFlag) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareFlagshipFlag) PutFilter(value *DataCloudflareFlagshipFlagFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareFlagshipFlag) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
 	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
@@ -832,6 +879,22 @@ func (d *jsiiProxy_DataCloudflareFlagshipFlag) RegisterProviderFeatureUsage(feat
 		d,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareFlagshipFlag) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareFlagshipFlag) ResetFlagKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFlagKey",
+		nil, // no parameters
 	)
 }
 

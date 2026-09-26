@@ -33,6 +33,7 @@ type DataCloudflareHyperdriveConfigsResultOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
+	Integration() DataCloudflareHyperdriveConfigsResultIntegrationOutputReference
 	InternalValue() *DataCloudflareHyperdriveConfigsResult
 	SetInternalValue(val *DataCloudflareHyperdriveConfigsResult)
 	ModifiedOn() *string
@@ -153,6 +154,16 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOutputReference) Id() *s
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOutputReference) Integration() DataCloudflareHyperdriveConfigsResultIntegrationOutputReference {
+	var returns DataCloudflareHyperdriveConfigsResultIntegrationOutputReference
+	_jsii_.Get(
+		j,
+		"integration",
 		&returns,
 	)
 	return returns

@@ -119,6 +119,10 @@ func (j *jsiiProxy_WorkersDeployment) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_WorkersDeployment) validateSetForceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersDeployment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

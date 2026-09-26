@@ -123,6 +123,10 @@ func (j *jsiiProxy_Stream) validateSetCreatorParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Stream) validateSetDirectUserParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Stream) validateSetIdentifierParameters(val *string) error {
 	return nil
 }

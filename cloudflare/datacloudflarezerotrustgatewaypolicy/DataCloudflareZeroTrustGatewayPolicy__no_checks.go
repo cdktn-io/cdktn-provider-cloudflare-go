@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicy) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicy) validatePutFilterParameters(value *DataCloudflareZeroTrustGatewayPolicyFilter) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustGatewayPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
 type ZeroTrustResourceLibraryApplication interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -188,8 +188,11 @@ type ZeroTrustResourceLibraryApplication interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetCategoryId()
 	ResetHostnames()
+	ResetHumanId()
 	ResetIpSubnets()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -653,7 +656,7 @@ func (j *jsiiProxy_ZeroTrustResourceLibraryApplication) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Resource.
 func NewZeroTrustResourceLibraryApplication(scope constructs.Construct, id *string, config *ZeroTrustResourceLibraryApplicationConfig) ZeroTrustResourceLibraryApplication {
 	_init_.Initialize()
 
@@ -671,7 +674,7 @@ func NewZeroTrustResourceLibraryApplication(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Resource.
 func NewZeroTrustResourceLibraryApplication_Override(z ZeroTrustResourceLibraryApplication, scope constructs.Construct, id *string, config *ZeroTrustResourceLibraryApplicationConfig) {
 	_init_.Initialize()
 
@@ -1218,6 +1221,14 @@ func (z *jsiiProxy_ZeroTrustResourceLibraryApplication) RegisterProviderFeatureU
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustResourceLibraryApplication) ResetCategoryId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetCategoryId",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustResourceLibraryApplication) ResetHostnames() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1226,10 +1237,26 @@ func (z *jsiiProxy_ZeroTrustResourceLibraryApplication) ResetHostnames() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustResourceLibraryApplication) ResetHumanId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetHumanId",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustResourceLibraryApplication) ResetIpSubnets() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetIpSubnets",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustResourceLibraryApplication) ResetName() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetName",
 		nil, // no parameters
 	)
 }

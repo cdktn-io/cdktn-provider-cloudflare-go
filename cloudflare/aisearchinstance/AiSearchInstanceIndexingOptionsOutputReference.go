@@ -43,6 +43,9 @@ type AiSearchInstanceIndexingOptionsOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UseOcr() interface{}
+	SetUseOcr(val interface{})
+	UseOcrInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type AiSearchInstanceIndexingOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKeywordTokenizer()
+	ResetUseOcr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference) TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference) UseOcr() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useOcr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference) UseOcrInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useOcrInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewAiSearchInstanceIndexingOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AiSearchInstanceIndexingOptionsOutputReference {
 	_init_.Initialize()
@@ -263,6 +287,17 @@ func (j *jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference)SetTerraformRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference)SetUseOcr(val interface{}) {
+	if err := j.validateSetUseOcrParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useOcr",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (a *jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference) ResetKeywordT
 	_jsii_.InvokeVoid(
 		a,
 		"resetKeywordTokenizer",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstanceIndexingOptionsOutputReference) ResetUseOcr() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUseOcr",
 		nil, // no parameters
 	)
 }

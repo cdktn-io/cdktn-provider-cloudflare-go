@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv cloudflare_workers_kv}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv cloudflare_workers_kv}.
 type WorkersKv interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -34,6 +34,12 @@ type WorkersKv interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Expiration() *float64
+	SetExpiration(val *float64)
+	ExpirationInput() *float64
+	ExpirationTtl() *float64
+	SetExpirationTtl(val *float64)
+	ExpirationTtlInput() *float64
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -169,6 +175,8 @@ type WorkersKv interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetExpiration()
+	ResetExpirationTtl()
 	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -265,6 +273,46 @@ func (j *jsiiProxy_WorkersKv) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersKv) Expiration() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expiration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersKv) ExpirationInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersKv) ExpirationTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersKv) ExpirationTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationTtlInput",
 		&returns,
 	)
 	return returns
@@ -471,7 +519,7 @@ func (j *jsiiProxy_WorkersKv) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
 func NewWorkersKv(scope constructs.Construct, id *string, config *WorkersKvConfig) WorkersKv {
 	_init_.Initialize()
 
@@ -489,7 +537,7 @@ func NewWorkersKv(scope constructs.Construct, id *string, config *WorkersKvConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
 func NewWorkersKv_Override(w WorkersKv, scope constructs.Construct, id *string, config *WorkersKvConfig) {
 	_init_.Initialize()
 
@@ -537,6 +585,28 @@ func (j *jsiiProxy_WorkersKv)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersKv)SetExpiration(val *float64) {
+	if err := j.validateSetExpirationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expiration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersKv)SetExpirationTtl(val *float64) {
+	if err := j.validateSetExpirationTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expirationTtl",
 		val,
 	)
 }
@@ -1000,6 +1070,22 @@ func (w *jsiiProxy_WorkersKv) RegisterProviderFeatureUsage(feature cdktn.Provide
 		w,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (w *jsiiProxy_WorkersKv) ResetExpiration() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetExpiration",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersKv) ResetExpirationTtl() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetExpirationTtl",
+		nil, // no parameters
 	)
 }
 

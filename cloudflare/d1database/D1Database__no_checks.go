@@ -115,6 +115,10 @@ func (j *jsiiProxy_D1Database) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_D1Database) validateSetFieldsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_D1Database) validateSetJurisdictionParameters(val *string) error {
 	return nil
 }

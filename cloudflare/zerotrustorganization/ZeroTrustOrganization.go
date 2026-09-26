@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -93,6 +93,8 @@ type ZeroTrustOrganization interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceTokenInactivity() ZeroTrustOrganizationServiceTokenInactivityOutputReference
+	ServiceTokenInactivityInput() interface{}
 	SessionDuration() *string
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
@@ -102,6 +104,7 @@ type ZeroTrustOrganization interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TrustedAccounts() *[]*string
 	UiReadOnlyToggleReason() *string
 	SetUiReadOnlyToggleReason(val *string)
 	UiReadOnlyToggleReasonInput() *string
@@ -200,6 +203,7 @@ type ZeroTrustOrganization interface {
 	PutLoginDesign(value *ZeroTrustOrganizationLoginDesign)
 	PutMfaConfig(value *ZeroTrustOrganizationMfaConfig)
 	PutMfaSshPivKeyRequirements(value *ZeroTrustOrganizationMfaSshPivKeyRequirements)
+	PutServiceTokenInactivity(value *ZeroTrustOrganizationServiceTokenInactivity)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -230,6 +234,7 @@ type ZeroTrustOrganization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServiceTokenInactivity()
 	ResetSessionDuration()
 	ResetUiReadOnlyToggleReason()
 	ResetUserSeatExpirationInactiveTime()
@@ -673,6 +678,26 @@ func (j *jsiiProxy_ZeroTrustOrganization) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) ServiceTokenInactivity() ZeroTrustOrganizationServiceTokenInactivityOutputReference {
+	var returns ZeroTrustOrganizationServiceTokenInactivityOutputReference
+	_jsii_.Get(
+		j,
+		"serviceTokenInactivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) ServiceTokenInactivityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serviceTokenInactivityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) SessionDuration() *string {
 	var returns *string
 	_jsii_.Get(
@@ -718,6 +743,16 @@ func (j *jsiiProxy_ZeroTrustOrganization) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) TrustedAccounts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"trustedAccounts",
 		&returns,
 	)
 	return returns
@@ -824,7 +859,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -842,7 +877,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 
@@ -1510,6 +1545,17 @@ func (z *jsiiProxy_ZeroTrustOrganization) PutMfaSshPivKeyRequirements(value *Zer
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustOrganization) PutServiceTokenInactivity(value *ZeroTrustOrganizationServiceTokenInactivity) {
+	if err := z.validatePutServiceTokenInactivityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putServiceTokenInactivity",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustOrganization) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
 	if err := z.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
@@ -1637,6 +1683,14 @@ func (z *jsiiProxy_ZeroTrustOrganization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetServiceTokenInactivity() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetServiceTokenInactivity",
 		nil, // no parameters
 	)
 }

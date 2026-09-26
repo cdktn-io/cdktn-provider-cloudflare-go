@@ -31,6 +31,8 @@ type QueueConsumerSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Email() QueueConsumerSettingsEmailList
+	EmailInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -44,6 +46,8 @@ type QueueConsumerSettingsOutputReference interface {
 	MaxWaitTimeMs() *float64
 	SetMaxWaitTimeMs(val *float64)
 	MaxWaitTimeMsInput() *float64
+	Pagerduty() QueueConsumerSettingsPagerdutyList
+	PagerdutyInput() interface{}
 	RetryDelay() *float64
 	SetRetryDelay(val *float64)
 	RetryDelayInput() *float64
@@ -58,6 +62,8 @@ type QueueConsumerSettingsOutputReference interface {
 	VisibilityTimeoutMs() *float64
 	SetVisibilityTimeoutMs(val *float64)
 	VisibilityTimeoutMsInput() *float64
+	Webhooks() QueueConsumerSettingsWebhooksList
+	WebhooksInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,12 +88,18 @@ type QueueConsumerSettingsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutEmail(value interface{})
+	PutPagerduty(value interface{})
+	PutWebhooks(value interface{})
 	ResetBatchSize()
+	ResetEmail()
 	ResetMaxConcurrency()
 	ResetMaxRetries()
 	ResetMaxWaitTimeMs()
+	ResetPagerduty()
 	ResetRetryDelay()
 	ResetVisibilityTimeoutMs()
+	ResetWebhooks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -148,6 +160,26 @@ func (j *jsiiProxy_QueueConsumerSettingsOutputReference) CreationStack() *[]*str
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QueueConsumerSettingsOutputReference) Email() QueueConsumerSettingsEmailList {
+	var returns QueueConsumerSettingsEmailList
+	_jsii_.Get(
+		j,
+		"email",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QueueConsumerSettingsOutputReference) EmailInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emailInput",
 		&returns,
 	)
 	return returns
@@ -233,6 +265,26 @@ func (j *jsiiProxy_QueueConsumerSettingsOutputReference) MaxWaitTimeMsInput() *f
 	return returns
 }
 
+func (j *jsiiProxy_QueueConsumerSettingsOutputReference) Pagerduty() QueueConsumerSettingsPagerdutyList {
+	var returns QueueConsumerSettingsPagerdutyList
+	_jsii_.Get(
+		j,
+		"pagerduty",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QueueConsumerSettingsOutputReference) PagerdutyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pagerdutyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QueueConsumerSettingsOutputReference) RetryDelay() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -288,6 +340,26 @@ func (j *jsiiProxy_QueueConsumerSettingsOutputReference) VisibilityTimeoutMsInpu
 	_jsii_.Get(
 		j,
 		"visibilityTimeoutMsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QueueConsumerSettingsOutputReference) Webhooks() QueueConsumerSettingsWebhooksList {
+	var returns QueueConsumerSettingsWebhooksList
+	_jsii_.Get(
+		j,
+		"webhooks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QueueConsumerSettingsOutputReference) WebhooksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webhooksInput",
 		&returns,
 	)
 	return returns
@@ -628,10 +700,51 @@ func (q *jsiiProxy_QueueConsumerSettingsOutputReference) InterpolationForAttribu
 	return returns
 }
 
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) PutEmail(value interface{}) {
+	if err := q.validatePutEmailParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"putEmail",
+		[]interface{}{value},
+	)
+}
+
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) PutPagerduty(value interface{}) {
+	if err := q.validatePutPagerdutyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"putPagerduty",
+		[]interface{}{value},
+	)
+}
+
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) PutWebhooks(value interface{}) {
+	if err := q.validatePutWebhooksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"putWebhooks",
+		[]interface{}{value},
+	)
+}
+
 func (q *jsiiProxy_QueueConsumerSettingsOutputReference) ResetBatchSize() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetBatchSize",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) ResetEmail() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetEmail",
 		nil, // no parameters
 	)
 }
@@ -660,6 +773,14 @@ func (q *jsiiProxy_QueueConsumerSettingsOutputReference) ResetMaxWaitTimeMs() {
 	)
 }
 
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) ResetPagerduty() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetPagerduty",
+		nil, // no parameters
+	)
+}
+
 func (q *jsiiProxy_QueueConsumerSettingsOutputReference) ResetRetryDelay() {
 	_jsii_.InvokeVoid(
 		q,
@@ -672,6 +793,14 @@ func (q *jsiiProxy_QueueConsumerSettingsOutputReference) ResetVisibilityTimeoutM
 	_jsii_.InvokeVoid(
 		q,
 		"resetVisibilityTimeoutMs",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) ResetWebhooks() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetWebhooks",
 		nil, // no parameters
 	)
 }

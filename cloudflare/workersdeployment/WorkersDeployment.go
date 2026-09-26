@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
 type WorkersDeployment interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -38,6 +38,9 @@ type WorkersDeployment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Force() interface{}
+	SetForce(val interface{})
+	ForceInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -173,6 +176,7 @@ type WorkersDeployment interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAnnotations()
+	ResetForce()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -308,6 +312,26 @@ func (j *jsiiProxy_WorkersDeployment) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersDeployment) Force() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"force",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersDeployment) ForceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceInput",
 		&returns,
 	)
 	return returns
@@ -504,7 +528,7 @@ func (j *jsiiProxy_WorkersDeployment) VersionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment(scope constructs.Construct, id *string, config *WorkersDeploymentConfig) WorkersDeployment {
 	_init_.Initialize()
 
@@ -522,7 +546,7 @@ func NewWorkersDeployment(scope constructs.Construct, id *string, config *Worker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment_Override(w WorkersDeployment, scope constructs.Construct, id *string, config *WorkersDeploymentConfig) {
 	_init_.Initialize()
 
@@ -570,6 +594,17 @@ func (j *jsiiProxy_WorkersDeployment)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersDeployment)SetForce(val interface{}) {
+	if err := j.validateSetForceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"force",
 		val,
 	)
 }
@@ -1040,6 +1075,14 @@ func (w *jsiiProxy_WorkersDeployment) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersDeployment) ResetForce() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetForce",
 		nil, // no parameters
 	)
 }

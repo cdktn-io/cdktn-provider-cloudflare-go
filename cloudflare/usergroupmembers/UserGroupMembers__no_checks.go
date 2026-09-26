@@ -115,7 +115,23 @@ func (j *jsiiProxy_UserGroupMembers) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_UserGroupMembers) validateSetDirectionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_UserGroupMembers) validateSetFuzzyEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserGroupMembers) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_UserGroupMembers) validateSetPageParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_UserGroupMembers) validateSetPerPageParameters(val *float64) error {
 	return nil
 }
 

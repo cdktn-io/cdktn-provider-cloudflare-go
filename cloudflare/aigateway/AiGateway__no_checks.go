@@ -127,6 +127,10 @@ func (j *jsiiProxy_AiGateway) validateSetAuthenticationParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_AiGateway) validateSetByokOnlyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiGateway) validateSetCacheInvalidateOnUpdateParameters(val interface{}) error {
 	return nil
 }

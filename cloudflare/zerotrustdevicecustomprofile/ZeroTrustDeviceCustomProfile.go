@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
 type ZeroTrustDeviceCustomProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -30,6 +30,8 @@ type ZeroTrustDeviceCustomProfile interface {
 	AutoConnect() *float64
 	SetAutoConnect(val *float64)
 	AutoConnectInput() *float64
+	BrowserExtensionConfig() ZeroTrustDeviceCustomProfileBrowserExtensionConfigOutputReference
+	BrowserExtensionConfigInput() interface{}
 	CaptivePortal() *float64
 	SetCaptivePortal(val *float64)
 	CaptivePortalInput() *float64
@@ -103,6 +105,9 @@ type ZeroTrustDeviceCustomProfile interface {
 	Precedence() *float64
 	SetPrecedence(val *float64)
 	PrecedenceInput() *float64
+	ProfileType() *string
+	SetProfileType(val *string)
+	ProfileTypeInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -137,6 +142,9 @@ type ZeroTrustDeviceCustomProfile interface {
 	TunnelProtocol() *string
 	SetTunnelProtocol(val *string)
 	TunnelProtocolInput() *string
+	UninstallProtection() interface{}
+	SetUninstallProtection(val interface{})
+	UninstallProtectionInput() interface{}
 	VirtualNetworks() ZeroTrustDeviceCustomProfileVirtualNetworksOutputReference
 	VirtualNetworksInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -218,6 +226,7 @@ type ZeroTrustDeviceCustomProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBrowserExtensionConfig(value *ZeroTrustDeviceCustomProfileBrowserExtensionConfig)
 	PutDnsSearchSuffixes(value interface{})
 	PutExclude(value interface{})
 	PutGlobalAcceleration(value *ZeroTrustDeviceCustomProfileGlobalAcceleration)
@@ -241,6 +250,7 @@ type ZeroTrustDeviceCustomProfile interface {
 	ResetAllowModeSwitch()
 	ResetAllowUpdates()
 	ResetAutoConnect()
+	ResetBrowserExtensionConfig()
 	ResetCaptivePortal()
 	ResetDescription()
 	ResetDisableAutoFallback()
@@ -252,16 +262,19 @@ type ZeroTrustDeviceCustomProfile interface {
 	ResetInclude()
 	ResetLanAllowMinutes()
 	ResetLanAllowSubnetSize()
+	ResetMatch()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrecedence()
+	ResetProfileType()
 	ResetRegisterInterfaceIpWithDns()
 	ResetSccmVpnBoundarySupport()
 	ResetServiceModeV2()
 	ResetSupportUrl()
 	ResetSwitchLocked()
 	ResetTunnelProtocol()
+	ResetUninstallProtection()
 	ResetVirtualNetworks()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -385,6 +398,26 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) AutoConnectInput() *float64 {
 	_jsii_.Get(
 		j,
 		"autoConnectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) BrowserExtensionConfig() ZeroTrustDeviceCustomProfileBrowserExtensionConfigOutputReference {
+	var returns ZeroTrustDeviceCustomProfileBrowserExtensionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"browserExtensionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) BrowserExtensionConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"browserExtensionConfigInput",
 		&returns,
 	)
 	return returns
@@ -820,6 +853,26 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) PrecedenceInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) ProfileType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"profileType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) ProfileTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"profileTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -1010,6 +1063,26 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) TunnelProtocolInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) UninstallProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uninstallProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) UninstallProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"uninstallProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) VirtualNetworks() ZeroTrustDeviceCustomProfileVirtualNetworksOutputReference {
 	var returns ZeroTrustDeviceCustomProfileVirtualNetworksOutputReference
 	_jsii_.Get(
@@ -1031,7 +1104,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) VirtualNetworksInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) ZeroTrustDeviceCustomProfile {
 	_init_.Initialize()
 
@@ -1049,7 +1122,7 @@ func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile_Override(z ZeroTrustDeviceCustomProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -1274,6 +1347,17 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile)SetPrecedence(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile)SetProfileType(val *string) {
+	if err := j.validateSetProfileTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"profileType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -1344,6 +1428,17 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile)SetTunnelProtocol(val *string) {
 	_jsii_.Set(
 		j,
 		"tunnelProtocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile)SetUninstallProtection(val interface{}) {
+	if err := j.validateSetUninstallProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uninstallProtection",
 		val,
 	)
 }
@@ -1717,6 +1812,17 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutBrowserExtensionConfig(value *ZeroTrustDeviceCustomProfileBrowserExtensionConfig) {
+	if err := z.validatePutBrowserExtensionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putBrowserExtensionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutDnsSearchSuffixes(value interface{}) {
 	if err := z.validatePutDnsSearchSuffixesParameters(value); err != nil {
 		panic(err)
@@ -1826,6 +1932,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetAutoConnect() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetBrowserExtensionConfig() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetBrowserExtensionConfig",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetCaptivePortal() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1914,6 +2028,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetLanAllowSubnetSize() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetMatch() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMatch",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1926,6 +2048,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetPrecedence() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetPrecedence",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetProfileType() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetProfileType",
 		nil, // no parameters
 	)
 }
@@ -1974,6 +2104,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetTunnelProtocol() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetTunnelProtocol",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetUninstallProtection() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUninstallProtection",
 		nil, // no parameters
 	)
 }

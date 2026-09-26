@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "originDirect", GoGetter: "OriginDirect"},
 			_jsii_.MemberProperty{JsiiProperty: "originDns", GoGetter: "OriginDns"},
 			_jsii_.MemberProperty{JsiiProperty: "originPort", GoGetter: "OriginPort"},
+			_jsii_.MemberProperty{JsiiProperty: "originWorkerId", GoGetter: "OriginWorkerId"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},

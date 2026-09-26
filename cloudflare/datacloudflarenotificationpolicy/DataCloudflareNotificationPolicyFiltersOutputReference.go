@@ -77,6 +77,7 @@ type DataCloudflareNotificationPolicyFiltersOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TokenId() *[]*string
 	TrafficExclusions() *[]*string
 	TunnelId() *[]*string
 	TunnelName() *[]*string
@@ -557,6 +558,16 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicyFiltersOutputReference) Terra
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareNotificationPolicyFiltersOutputReference) TokenId() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenId",
 		&returns,
 	)
 	return returns

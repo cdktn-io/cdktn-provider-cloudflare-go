@@ -34,6 +34,7 @@ type DataCloudflareWorkerObservabilityOutputReference interface {
 	HeadSamplingRate() *float64
 	InternalValue() *DataCloudflareWorkerObservability
 	SetInternalValue(val *DataCloudflareWorkerObservability)
+	Issues() DataCloudflareWorkerObservabilityIssuesOutputReference
 	Logs() DataCloudflareWorkerObservabilityLogsOutputReference
 	// Experimental.
 	TerraformAttribute() *string
@@ -148,6 +149,16 @@ func (j *jsiiProxy_DataCloudflareWorkerObservabilityOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerObservabilityOutputReference) Issues() DataCloudflareWorkerObservabilityIssuesOutputReference {
+	var returns DataCloudflareWorkerObservabilityIssuesOutputReference
+	_jsii_.Get(
+		j,
+		"issues",
 		&returns,
 	)
 	return returns

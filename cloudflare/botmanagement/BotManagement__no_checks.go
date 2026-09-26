@@ -99,7 +99,23 @@ func validateBotManagement_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_BotManagement) validateSetAiBotsMigrationOptOutParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotManagement) validateSetAiBotsProtectionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotManagement) validateSetAisearchParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotManagement) validateSetAiTrainingParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotManagement) validateSetAiUserParameters(val *string) error {
 	return nil
 }
 
@@ -144,6 +160,10 @@ func (j *jsiiProxy_BotManagement) validateSetFightModeParameters(val interface{}
 }
 
 func (j *jsiiProxy_BotManagement) validateSetIsRobotsTxtManagedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotManagement) validateSetJsdApiResultsEnabledParameters(val interface{}) error {
 	return nil
 }
 

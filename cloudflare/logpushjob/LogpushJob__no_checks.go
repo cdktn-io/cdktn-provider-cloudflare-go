@@ -131,6 +131,10 @@ func (j *jsiiProxy_LogpushJob) validateSetFilterParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_LogpushJob) validateSetFilterAttackTrafficParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogpushJob) validateSetFrequencyParameters(val *string) error {
 	return nil
 }

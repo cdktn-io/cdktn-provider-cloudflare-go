@@ -450,6 +450,14 @@ func (j *jsiiProxy_SpectrumApplication) validateSetOriginPortParameters(val *map
 	return nil
 }
 
+func (j *jsiiProxy_SpectrumApplication) validateSetOriginWorkerIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpectrumApplication) validateSetProtocolParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

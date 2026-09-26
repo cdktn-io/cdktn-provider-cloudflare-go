@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 type TurnstileWidget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -42,12 +42,18 @@ type TurnstileWidget interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DeployedVia() *string
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
 	Domains() *[]*string
 	SetDomains(val *[]*string)
 	DomainsInput() *[]*string
 	EphemeralId() interface{}
 	SetEphemeralId(val interface{})
 	EphemeralIdInput() interface{}
+	Filter() *string
+	SetFilter(val *string)
+	FilterInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -74,6 +80,15 @@ type TurnstileWidget interface {
 	Offlabel() interface{}
 	SetOfflabel(val interface{})
 	OfflabelInput() interface{}
+	Order() *string
+	SetOrder(val *string)
+	OrderInput() *string
+	Page() *float64
+	SetPage(val *float64)
+	PageInput() *float64
+	PerPage() *float64
+	SetPerPage(val *float64)
+	PerPageInput() *float64
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -189,11 +204,16 @@ type TurnstileWidget interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetBotFightMode()
 	ResetClearanceLevel()
+	ResetDirection()
 	ResetEphemeralId()
+	ResetFilter()
 	ResetOfflabel()
+	ResetOrder()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPage()
+	ResetPerPage()
 	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -352,6 +372,26 @@ func (j *jsiiProxy_TurnstileWidget) DeployedVia() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TurnstileWidget) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TurnstileWidget) Domains() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -387,6 +427,26 @@ func (j *jsiiProxy_TurnstileWidget) EphemeralIdInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ephemeralIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) Filter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) FilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -532,6 +592,66 @@ func (j *jsiiProxy_TurnstileWidget) OfflabelInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TurnstileWidget) Order() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"order",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) OrderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) Page() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"page",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) PageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) PerPage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"perPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) PerPageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"perPageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TurnstileWidget) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -633,7 +753,7 @@ func (j *jsiiProxy_TurnstileWidget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget(scope constructs.Construct, id *string, config *TurnstileWidgetConfig) TurnstileWidget {
 	_init_.Initialize()
 
@@ -651,7 +771,7 @@ func NewTurnstileWidget(scope constructs.Construct, id *string, config *Turnstil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget_Override(t TurnstileWidget, scope constructs.Construct, id *string, config *TurnstileWidgetConfig) {
 	_init_.Initialize()
 
@@ -725,6 +845,17 @@ func (j *jsiiProxy_TurnstileWidget)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_TurnstileWidget)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"direction",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TurnstileWidget)SetDomains(val *[]*string) {
 	if err := j.validateSetDomainsParameters(val); err != nil {
 		panic(err)
@@ -743,6 +874,17 @@ func (j *jsiiProxy_TurnstileWidget)SetEphemeralId(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ephemeralId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TurnstileWidget)SetFilter(val *string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filter",
 		val,
 	)
 }
@@ -795,6 +937,39 @@ func (j *jsiiProxy_TurnstileWidget)SetOfflabel(val interface{}) {
 	_jsii_.Set(
 		j,
 		"offlabel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TurnstileWidget)SetOrder(val *string) {
+	if err := j.validateSetOrderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"order",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TurnstileWidget)SetPage(val *float64) {
+	if err := j.validateSetPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"page",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TurnstileWidget)SetPerPage(val *float64) {
+	if err := j.validateSetPerPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"perPage",
 		val,
 	)
 }
@@ -1225,10 +1400,26 @@ func (t *jsiiProxy_TurnstileWidget) ResetClearanceLevel() {
 	)
 }
 
+func (t *jsiiProxy_TurnstileWidget) ResetDirection() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TurnstileWidget) ResetEphemeralId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetEphemeralId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TurnstileWidget) ResetFilter() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetFilter",
 		nil, // no parameters
 	)
 }
@@ -1241,10 +1432,34 @@ func (t *jsiiProxy_TurnstileWidget) ResetOfflabel() {
 	)
 }
 
+func (t *jsiiProxy_TurnstileWidget) ResetOrder() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOrder",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TurnstileWidget) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TurnstileWidget) ResetPage() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPage",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TurnstileWidget) ResetPerPage() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPerPage",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}.
 type ZeroTrustAccessInfrastructureTarget interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -66,6 +66,9 @@ type ZeroTrustAccessInfrastructureTarget interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -168,6 +171,7 @@ type ZeroTrustAccessInfrastructureTarget interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -415,6 +419,26 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -446,7 +470,7 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
 func NewZeroTrustAccessInfrastructureTarget(scope constructs.Construct, id *string, config *ZeroTrustAccessInfrastructureTargetConfig) ZeroTrustAccessInfrastructureTarget {
 	_init_.Initialize()
 
@@ -464,7 +488,7 @@ func NewZeroTrustAccessInfrastructureTarget(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Resource.
 func NewZeroTrustAccessInfrastructureTarget_Override(z ZeroTrustAccessInfrastructureTarget, scope constructs.Construct, id *string, config *ZeroTrustAccessInfrastructureTargetConfig) {
 	_init_.Initialize()
 
@@ -561,6 +585,17 @@ func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget)SetProvisioners(val *[]in
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessInfrastructureTarget)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -960,6 +995,14 @@ func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessInfrastructureTarget) ResetTags() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetTags",
 		nil, // no parameters
 	)
 }

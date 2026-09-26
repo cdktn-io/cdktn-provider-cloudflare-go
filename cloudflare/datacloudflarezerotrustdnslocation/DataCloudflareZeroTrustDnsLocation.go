@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 type DataCloudflareZeroTrustDnsLocation interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -37,6 +37,8 @@ type DataCloudflareZeroTrustDnsLocation interface {
 	DohSubdomain() *string
 	EcsSupport() cdktn.IResolvable
 	Endpoints() DataCloudflareZeroTrustDnsLocationEndpointsOutputReference
+	Filter() DataCloudflareZeroTrustDnsLocationFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -99,6 +101,7 @@ type DataCloudflareZeroTrustDnsLocation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareZeroTrustDnsLocationFilter)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -113,6 +116,8 @@ type DataCloudflareZeroTrustDnsLocation interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
+	ResetFilter()
+	ResetLocationId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -269,6 +274,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) Endpoints() DataCloudflar
 	_jsii_.Get(
 		j,
 		"endpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) Filter() DataCloudflareZeroTrustDnsLocationFilterOutputReference {
+	var returns DataCloudflareZeroTrustDnsLocationFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -475,7 +500,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocation) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
 func NewDataCloudflareZeroTrustDnsLocation(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDnsLocationConfig) DataCloudflareZeroTrustDnsLocation {
 	_init_.Initialize()
 
@@ -493,7 +518,7 @@ func NewDataCloudflareZeroTrustDnsLocation(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source.
 func NewDataCloudflareZeroTrustDnsLocation_Override(d DataCloudflareZeroTrustDnsLocation, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDnsLocationConfig) {
 	_init_.Initialize()
 
@@ -857,6 +882,17 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) OverrideLogicalId(newLogi
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) PutFilter(value *DataCloudflareZeroTrustDnsLocationFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
 	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
@@ -872,6 +908,22 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDnsLocation) ResetLocationId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocationId",
 		nil, // no parameters
 	)
 }

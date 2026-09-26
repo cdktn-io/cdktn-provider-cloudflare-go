@@ -124,6 +124,7 @@ func init() {
 		"@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultAssetsConfigOutputReference",
 		reflect.TypeOf((*DataCloudflareWorkerVersionsResultAssetsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "basePath", GoGetter: "BasePath"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -408,6 +409,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "serviceId", GoGetter: "ServiceId"},
 			_jsii_.MemberProperty{JsiiProperty: "simple", GoGetter: "Simple"},
 			_jsii_.MemberProperty{JsiiProperty: "storeId", GoGetter: "StoreId"},
+			_jsii_.MemberProperty{JsiiProperty: "stream", GoGetter: "Stream"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "text", GoGetter: "Text"},
@@ -1128,6 +1130,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "assets", GoGetter: "Assets"},
+			_jsii_.MemberProperty{JsiiProperty: "authorEmail", GoGetter: "AuthorEmail"},
+			_jsii_.MemberProperty{JsiiProperty: "authorId", GoGetter: "AuthorId"},
 			_jsii_.MemberProperty{JsiiProperty: "bindings", GoGetter: "Bindings"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheOptions", GoGetter: "CacheOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityDate", GoGetter: "CompatibilityDate"},

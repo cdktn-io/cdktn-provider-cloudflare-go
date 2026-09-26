@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
 type DataCloudflareZeroTrustDeviceCustomProfile interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -22,6 +22,7 @@ type DataCloudflareZeroTrustDeviceCustomProfile interface {
 	AllowModeSwitch() cdktn.IResolvable
 	AllowUpdates() cdktn.IResolvable
 	AutoConnect() *float64
+	BrowserExtensionConfig() DataCloudflareZeroTrustDeviceCustomProfileBrowserExtensionConfigOutputReference
 	CaptivePortal() *float64
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
@@ -43,6 +44,8 @@ type DataCloudflareZeroTrustDeviceCustomProfile interface {
 	Exclude() DataCloudflareZeroTrustDeviceCustomProfileExcludeList
 	ExcludeOfficeIps() cdktn.IResolvable
 	FallbackDomains() DataCloudflareZeroTrustDeviceCustomProfileFallbackDomainsList
+	Filter() DataCloudflareZeroTrustDeviceCustomProfileFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -68,6 +71,7 @@ type DataCloudflareZeroTrustDeviceCustomProfile interface {
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
 	Precedence() *float64
+	ProfileType() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -87,6 +91,7 @@ type DataCloudflareZeroTrustDeviceCustomProfile interface {
 	// Experimental.
 	TerraformResourceType() *string
 	TunnelProtocol() *string
+	UninstallProtection() cdktn.IResolvable
 	VirtualNetworks() DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworksOutputReference
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -113,6 +118,7 @@ type DataCloudflareZeroTrustDeviceCustomProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareZeroTrustDeviceCustomProfileFilter)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -127,9 +133,11 @@ type DataCloudflareZeroTrustDeviceCustomProfile interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -213,6 +221,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) AutoConnect() *fl
 	_jsii_.Get(
 		j,
 		"autoConnect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) BrowserExtensionConfig() DataCloudflareZeroTrustDeviceCustomProfileBrowserExtensionConfigOutputReference {
+	var returns DataCloudflareZeroTrustDeviceCustomProfileBrowserExtensionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"browserExtensionConfig",
 		&returns,
 	)
 	return returns
@@ -343,6 +361,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) FallbackDomains()
 	_jsii_.Get(
 		j,
 		"fallbackDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) Filter() DataCloudflareZeroTrustDeviceCustomProfileFilterOutputReference {
+	var returns DataCloudflareZeroTrustDeviceCustomProfileFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -498,6 +536,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) Precedence() *flo
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) ProfileType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"profileType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -618,6 +666,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) TunnelProtocol() 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) UninstallProtection() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"uninstallProtection",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) VirtualNetworks() DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworksOutputReference {
 	var returns DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworksOutputReference
 	_jsii_.Get(
@@ -629,7 +687,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) VirtualNetworks()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source.
 func NewDataCloudflareZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceCustomProfileConfig) DataCloudflareZeroTrustDeviceCustomProfile {
 	_init_.Initialize()
 
@@ -647,7 +705,7 @@ func NewDataCloudflareZeroTrustDeviceCustomProfile(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source.
 func NewDataCloudflareZeroTrustDeviceCustomProfile_Override(d DataCloudflareZeroTrustDeviceCustomProfile, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -1011,6 +1069,17 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) OverrideLogicalId
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) PutFilter(value *DataCloudflareZeroTrustDeviceCustomProfileFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
 	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
@@ -1030,10 +1099,26 @@ func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) ResetAccountId() 
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfile) ResetPolicyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPolicyId",
 		nil, // no parameters
 	)
 }

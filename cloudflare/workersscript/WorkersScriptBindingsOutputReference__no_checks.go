@@ -207,6 +207,10 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetStoreIdParam
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetStreamParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

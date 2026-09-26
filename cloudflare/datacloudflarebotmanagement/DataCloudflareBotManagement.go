@@ -12,10 +12,14 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/bot_management cloudflare_bot_management}.
 type DataCloudflareBotManagement interface {
 	cdktn.TerraformDataSource
+	AiBotsMigrationOptOut() cdktn.IResolvable
 	AiBotsProtection() *string
+	Aisearch() *string
+	AiTraining() *string
+	AiUser() *string
 	AutoUpdateModel() cdktn.IResolvable
 	BmCookieEnabled() cdktn.IResolvable
 	BotPreferenceSyncEnabled() cdktn.IResolvable
@@ -46,6 +50,7 @@ type DataCloudflareBotManagement interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	IsRobotsTxtManaged() cdktn.IResolvable
+	JsdApiResultsEnabled() cdktn.IResolvable
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -145,11 +150,51 @@ type jsiiProxy_DataCloudflareBotManagement struct {
 	internal.Type__cdktnTerraformDataSource
 }
 
+func (j *jsiiProxy_DataCloudflareBotManagement) AiBotsMigrationOptOut() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"aiBotsMigrationOptOut",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareBotManagement) AiBotsProtection() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"aiBotsProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareBotManagement) Aisearch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aisearch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareBotManagement) AiTraining() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aiTraining",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareBotManagement) AiUser() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aiUser",
 		&returns,
 	)
 	return returns
@@ -320,6 +365,16 @@ func (j *jsiiProxy_DataCloudflareBotManagement) IsRobotsTxtManaged() cdktn.IReso
 	_jsii_.Get(
 		j,
 		"isRobotsTxtManaged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareBotManagement) JsdApiResultsEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"jsdApiResultsEnabled",
 		&returns,
 	)
 	return returns
@@ -496,7 +551,7 @@ func (j *jsiiProxy_DataCloudflareBotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) DataCloudflareBotManagement {
 	_init_.Initialize()
 
@@ -514,7 +569,7 @@ func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement_Override(d DataCloudflareBotManagement, scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) {
 	_init_.Initialize()
 

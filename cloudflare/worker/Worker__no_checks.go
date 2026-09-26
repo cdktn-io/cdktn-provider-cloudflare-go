@@ -83,6 +83,10 @@ func (w *jsiiProxy_Worker) validatePutObservabilityParameters(value *WorkerObser
 	return nil
 }
 
+func (w *jsiiProxy_Worker) validatePutPreviewsBaseConfigParameters(value *WorkerPreviewsBaseConfig) error {
+	return nil
+}
+
 func (w *jsiiProxy_Worker) validatePutSubdomainParameters(value *WorkerSubdomain) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_Worker) validateSetConnectionParameters(val interface{}) erro
 }
 
 func (j *jsiiProxy_Worker) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Worker) validateSetForceParameters(val interface{}) error {
 	return nil
 }
 

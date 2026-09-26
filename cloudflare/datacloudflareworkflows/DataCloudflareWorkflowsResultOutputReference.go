@@ -39,6 +39,7 @@ type DataCloudflareWorkflowsResultOutputReference interface {
 	ModifiedOn() *string
 	Name() *string
 	Schedules() DataCloudflareWorkflowsResultSchedulesList
+	ScriptDeleted() cdktn.IResolvable
 	ScriptName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -203,6 +204,16 @@ func (j *jsiiProxy_DataCloudflareWorkflowsResultOutputReference) Schedules() Dat
 	_jsii_.Get(
 		j,
 		"schedules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkflowsResultOutputReference) ScriptDeleted() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"scriptDeleted",
 		&returns,
 	)
 	return returns

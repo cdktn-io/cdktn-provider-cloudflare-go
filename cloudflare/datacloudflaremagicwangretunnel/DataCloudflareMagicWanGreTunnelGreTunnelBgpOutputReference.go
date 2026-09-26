@@ -29,9 +29,11 @@ type DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomerAsn() *float64
+	ExportFilterId() *string
 	ExtraPrefixes() *[]*string
 	// Experimental.
 	Fqn() *string
+	ImportFilterId() *string
 	InternalValue() *DataCloudflareMagicWanGreTunnelGreTunnelBgp
 	SetInternalValue(val *DataCloudflareMagicWanGreTunnelGreTunnelBgp)
 	Md5Key() *string
@@ -122,6 +124,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference) C
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference) ExportFilterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"exportFilterId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference) ExtraPrefixes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -137,6 +149,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference) F
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference) ImportFilterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"importFilterId",
 		&returns,
 	)
 	return returns

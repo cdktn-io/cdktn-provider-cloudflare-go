@@ -124,6 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "schedules", GoGetter: "Schedules"},
+			_jsii_.MemberProperty{JsiiProperty: "scriptDeleted", GoGetter: "ScriptDeleted"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptName", GoGetter: "ScriptName"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

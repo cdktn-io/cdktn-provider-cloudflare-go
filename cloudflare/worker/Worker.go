@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker cloudflare_worker}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker cloudflare_worker}.
 type Worker interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -36,6 +36,9 @@ type Worker interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DeployedOn() *string
+	Force() interface{}
+	SetForce(val interface{})
+	ForceInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -59,6 +62,8 @@ type Worker interface {
 	Node() constructs.Node
 	Observability() WorkerObservabilityOutputReference
 	ObservabilityInput() interface{}
+	PreviewsBaseConfig() WorkerPreviewsBaseConfigOutputReference
+	PreviewsBaseConfigInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -164,6 +169,7 @@ type Worker interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutObservability(value *WorkerObservability)
+	PutPreviewsBaseConfig(value *WorkerPreviewsBaseConfig)
 	PutSubdomain(value *WorkerSubdomain)
 	PutTailConsumers(value interface{})
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
@@ -179,11 +185,13 @@ type Worker interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetForce()
 	ResetLogpush()
 	ResetObservability()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreviewsBaseConfig()
 	ResetSubdomain()
 	ResetTags()
 	ResetTailConsumers()
@@ -304,6 +312,26 @@ func (j *jsiiProxy_Worker) DeployedOn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Worker) Force() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"force",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Worker) ForceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Worker) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -419,6 +447,26 @@ func (j *jsiiProxy_Worker) ObservabilityInput() interface{} {
 	_jsii_.Get(
 		j,
 		"observabilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Worker) PreviewsBaseConfig() WorkerPreviewsBaseConfigOutputReference {
+	var returns WorkerPreviewsBaseConfigOutputReference
+	_jsii_.Get(
+		j,
+		"previewsBaseConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Worker) PreviewsBaseConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"previewsBaseConfigInput",
 		&returns,
 	)
 	return returns
@@ -565,7 +613,7 @@ func (j *jsiiProxy_Worker) UpdatedOn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker cloudflare_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker cloudflare_worker} Resource.
 func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Worker {
 	_init_.Initialize()
 
@@ -583,7 +631,7 @@ func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Wor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker cloudflare_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker cloudflare_worker} Resource.
 func NewWorker_Override(w Worker, scope constructs.Construct, id *string, config *WorkerConfig) {
 	_init_.Initialize()
 
@@ -631,6 +679,17 @@ func (j *jsiiProxy_Worker)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Worker)SetForce(val interface{}) {
+	if err := j.validateSetForceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"force",
 		val,
 	)
 }
@@ -1086,6 +1145,17 @@ func (w *jsiiProxy_Worker) PutObservability(value *WorkerObservability) {
 	)
 }
 
+func (w *jsiiProxy_Worker) PutPreviewsBaseConfig(value *WorkerPreviewsBaseConfig) {
+	if err := w.validatePutPreviewsBaseConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putPreviewsBaseConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Worker) PutSubdomain(value *WorkerSubdomain) {
 	if err := w.validatePutSubdomainParameters(value); err != nil {
 		panic(err)
@@ -1119,6 +1189,14 @@ func (w *jsiiProxy_Worker) RegisterProviderFeatureUsage(feature cdktn.ProviderFe
 	)
 }
 
+func (w *jsiiProxy_Worker) ResetForce() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetForce",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_Worker) ResetLogpush() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1139,6 +1217,14 @@ func (w *jsiiProxy_Worker) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Worker) ResetPreviewsBaseConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPreviewsBaseConfig",
 		nil, // no parameters
 	)
 }

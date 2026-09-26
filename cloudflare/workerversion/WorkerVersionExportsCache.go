@@ -7,7 +7,7 @@ package workerversion
 type WorkerVersionExportsCache struct {
 	// Whether caching is enabled for this entrypoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/worker_version#enabled WorkerVersion#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker_version#enabled WorkerVersion#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

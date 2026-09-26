@@ -95,6 +95,10 @@ func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaSshPivKeyRequirementsPar
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustOrganization) validatePutServiceTokenInactivityParameters(value *ZeroTrustOrganizationServiceTokenInactivity) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustOrganization) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

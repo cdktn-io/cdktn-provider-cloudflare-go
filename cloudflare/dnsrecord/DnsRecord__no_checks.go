@@ -123,6 +123,10 @@ func (j *jsiiProxy_DnsRecord) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_DnsRecord) validateSetIncludeShadowMetadataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsRecord) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

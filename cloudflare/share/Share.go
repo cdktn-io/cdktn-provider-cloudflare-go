@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share cloudflare_share}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share cloudflare_share}.
 type Share interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -49,6 +49,12 @@ type Share interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IncludeRecipientCounts() interface{}
+	SetIncludeRecipientCounts(val interface{})
+	IncludeRecipientCountsInput() interface{}
+	IncludeResources() interface{}
+	SetIncludeResources(val interface{})
+	IncludeResourcesInput() interface{}
 	Kind() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -177,6 +183,8 @@ type Share interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetIncludeRecipientCounts()
+	ResetIncludeResources()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -377,6 +385,46 @@ func (j *jsiiProxy_Share) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Share) IncludeRecipientCounts() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeRecipientCounts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) IncludeRecipientCountsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeRecipientCountsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) IncludeResources() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) IncludeResourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeResourcesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Share) Kind() *string {
 	var returns *string
 	_jsii_.Get(
@@ -568,7 +616,7 @@ func (j *jsiiProxy_Share) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share cloudflare_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share cloudflare_share} Resource.
 func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share {
 	_init_.Initialize()
 
@@ -586,7 +634,7 @@ func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/share cloudflare_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/share cloudflare_share} Resource.
 func NewShare_Override(s Share, scope constructs.Construct, id *string, config *ShareConfig) {
 	_init_.Initialize()
 
@@ -642,6 +690,28 @@ func (j *jsiiProxy_Share)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Share)SetIncludeRecipientCounts(val interface{}) {
+	if err := j.validateSetIncludeRecipientCountsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeRecipientCounts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Share)SetIncludeResources(val interface{}) {
+	if err := j.validateSetIncludeResourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeResources",
 		val,
 	)
 }
@@ -1086,6 +1156,22 @@ func (s *jsiiProxy_Share) RegisterProviderFeatureUsage(feature cdktn.ProviderFea
 		s,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (s *jsiiProxy_Share) ResetIncludeRecipientCounts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIncludeRecipientCounts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Share) ResetIncludeResources() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIncludeResources",
+		nil, // no parameters
 	)
 }
 

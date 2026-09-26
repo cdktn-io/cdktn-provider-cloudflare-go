@@ -47,6 +47,10 @@ func (w *jsiiProxy_WorkerObservabilityOutputReference) validateInterpolationForA
 	return nil
 }
 
+func (w *jsiiProxy_WorkerObservabilityOutputReference) validatePutIssuesParameters(value *WorkerObservabilityIssues) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerObservabilityOutputReference) validatePutLogsParameters(value *WorkerObservabilityLogs) error {
 	return nil
 }

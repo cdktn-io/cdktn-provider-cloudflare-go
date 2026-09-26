@@ -227,6 +227,22 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetCountParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetDirectionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetFilterParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -236,6 +252,22 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetLifecyclePara
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetMaxItemsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetOrderByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocations) validateSetSearchParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

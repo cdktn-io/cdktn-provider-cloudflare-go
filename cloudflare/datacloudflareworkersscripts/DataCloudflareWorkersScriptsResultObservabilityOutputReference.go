@@ -34,6 +34,7 @@ type DataCloudflareWorkersScriptsResultObservabilityOutputReference interface {
 	HeadSamplingRate() *float64
 	InternalValue() *DataCloudflareWorkersScriptsResultObservability
 	SetInternalValue(val *DataCloudflareWorkersScriptsResultObservability)
+	Issues() DataCloudflareWorkersScriptsResultObservabilityIssuesOutputReference
 	Logs() DataCloudflareWorkersScriptsResultObservabilityLogsOutputReference
 	RedactQueryString() cdktn.IResolvable
 	// Experimental.
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultObservabilityOutputReferenc
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultObservabilityOutputReference) Issues() DataCloudflareWorkersScriptsResultObservabilityIssuesOutputReference {
+	var returns DataCloudflareWorkersScriptsResultObservabilityIssuesOutputReference
+	_jsii_.Get(
+		j,
+		"issues",
 		&returns,
 	)
 	return returns

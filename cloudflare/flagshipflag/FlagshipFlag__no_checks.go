@@ -131,10 +131,6 @@ func (j *jsiiProxy_FlagshipFlag) validateSetEnabledParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_FlagshipFlag) validateSetFlagKeyParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_FlagshipFlag) validateSetKeyParameters(val *string) error {
 	return nil
 }

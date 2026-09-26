@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account cloudflare_account}.
 type Account interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type Account interface {
 	RawOverrides() interface{}
 	Settings() AccountSettingsOutputReference
 	SettingsInput() interface{}
+	Standalone() interface{}
+	SetStandalone(val interface{})
+	StandaloneInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -175,6 +178,7 @@ type Account interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSettings()
+	ResetStandalone()
 	ResetType()
 	ResetUnit()
 	SynthesizeAttributes() *map[string]interface{}
@@ -414,6 +418,26 @@ func (j *jsiiProxy_Account) SettingsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Account) Standalone() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"standalone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Account) StandaloneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"standaloneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Account) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -485,7 +509,7 @@ func (j *jsiiProxy_Account) UnitInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) Account {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.25.0/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount_Override(a Account, scope constructs.Construct, id *string, config *AccountConfig) {
 	_init_.Initialize()
 
@@ -589,6 +613,17 @@ func (j *jsiiProxy_Account)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Account)SetStandalone(val interface{}) {
+	if err := j.validateSetStandaloneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"standalone",
 		val,
 	)
 }
@@ -1037,6 +1072,14 @@ func (a *jsiiProxy_Account) ResetSettings() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSettings",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Account) ResetStandalone() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStandalone",
 		nil, // no parameters
 	)
 }

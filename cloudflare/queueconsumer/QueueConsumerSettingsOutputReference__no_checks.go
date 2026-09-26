@@ -47,6 +47,18 @@ func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validateInterpolationFo
 	return nil
 }
 
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validatePutEmailParameters(value interface{}) error {
+	return nil
+}
+
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validatePutPagerdutyParameters(value interface{}) error {
+	return nil
+}
+
+func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validatePutWebhooksParameters(value interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_QueueConsumerSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

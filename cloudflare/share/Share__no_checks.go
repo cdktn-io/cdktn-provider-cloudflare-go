@@ -119,6 +119,14 @@ func (j *jsiiProxy_Share) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Share) validateSetIncludeRecipientCountsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Share) validateSetIncludeResourcesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Share) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

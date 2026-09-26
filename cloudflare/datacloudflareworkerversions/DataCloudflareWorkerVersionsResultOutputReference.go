@@ -15,6 +15,8 @@ type DataCloudflareWorkerVersionsResultOutputReference interface {
 	cdktn.ComplexObject
 	Annotations() DataCloudflareWorkerVersionsResultAnnotationsOutputReference
 	Assets() DataCloudflareWorkerVersionsResultAssetsOutputReference
+	AuthorEmail() *string
+	AuthorId() *string
 	Bindings() DataCloudflareWorkerVersionsResultBindingsList
 	CacheOptions() DataCloudflareWorkerVersionsResultCacheOptionsOutputReference
 	CompatibilityDate() *string
@@ -117,6 +119,26 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) Assets() D
 	_jsii_.Get(
 		j,
 		"assets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) AuthorEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultOutputReference) AuthorId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorId",
 		&returns,
 	)
 	return returns

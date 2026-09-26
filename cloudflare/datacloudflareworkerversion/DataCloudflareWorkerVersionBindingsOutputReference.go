@@ -69,6 +69,7 @@ type DataCloudflareWorkerVersionBindingsOutputReference interface {
 	ServiceId() *string
 	Simple() DataCloudflareWorkerVersionBindingsSimpleOutputReference
 	StoreId() *string
+	Stream() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -537,6 +538,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) StoreId()
 	_jsii_.Get(
 		j,
 		"storeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionBindingsOutputReference) Stream() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stream",
 		&returns,
 	)
 	return returns

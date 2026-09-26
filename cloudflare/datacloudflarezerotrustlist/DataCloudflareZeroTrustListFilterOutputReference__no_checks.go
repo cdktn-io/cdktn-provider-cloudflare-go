@@ -59,7 +59,23 @@ func (j *jsiiProxy_DataCloudflareZeroTrustListFilterOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustListFilterOutputReference) validateSetDirectionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustListFilterOutputReference) validateSetFilterParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustListFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustListFilterOutputReference) validateSetOrderByParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustListFilterOutputReference) validateSetSearchParameters(val *string) error {
 	return nil
 }
 

@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference interface {
 	cdktn.ComplexObject
+	Category() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -33,6 +34,7 @@ type DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference inte
 	Id() *string
 	InternalValue() *DataCloudflareAccountApiTokenPermissionGroupsListResult
 	SetInternalValue(val *DataCloudflareAccountApiTokenPermissionGroupsListResult)
+	IsSelectable() cdktn.IResolvable
 	Name() *string
 	Scopes() *[]*string
 	// Experimental.
@@ -80,6 +82,16 @@ type DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference inte
 // The jsii proxy struct for DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference
 type jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference) Category() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"category",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference) ComplexObjectIndex() interface{} {
@@ -137,6 +149,16 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutput
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroupsListResultOutputReference) IsSelectable() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"isSelectable",
 		&returns,
 	)
 	return returns

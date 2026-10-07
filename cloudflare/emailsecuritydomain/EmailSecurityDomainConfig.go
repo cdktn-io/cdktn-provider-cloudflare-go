@@ -24,31 +24,53 @@ type EmailSecurityDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#account_id EmailSecurityDomain#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}.
-	AllowedDeliveryModes *[]*string `field:"required" json:"allowedDeliveryModes" yaml:"allowedDeliveryModes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}.
-	Domain *string `field:"required" json:"domain" yaml:"domain"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}.
-	DropDispositions *[]*string `field:"required" json:"dropDispositions" yaml:"dropDispositions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}.
-	IpRestrictions *[]*string `field:"required" json:"ipRestrictions" yaml:"ipRestrictions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}.
-	Regions *[]*string `field:"required" json:"regions" yaml:"regions"`
-	// Available values: "AllItems", "Inbox".
+	// Delivery modes to onboard the domain through.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#allowed_delivery_modes EmailSecurityDomain#allowed_delivery_modes}
+	AllowedDeliveryModes *[]*string `field:"required" json:"allowedDeliveryModes" yaml:"allowedDeliveryModes"`
+	// The email domain to protect.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#domain EmailSecurityDomain#domain}
+	Domain *string `field:"required" json:"domain" yaml:"domain"`
+	// Dispositions to drop instead of delivering, e.g. `["MALICIOUS", "SPAM"]`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#drop_dispositions EmailSecurityDomain#drop_dispositions}
+	DropDispositions *[]*string `field:"required" json:"dropDispositions" yaml:"dropDispositions"`
+	// Source IP ranges mail is accepted from. Any other source is rejected.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#ip_restrictions EmailSecurityDomain#ip_restrictions}
+	IpRestrictions *[]*string `field:"required" json:"ipRestrictions" yaml:"ipRestrictions"`
+	// Regions that process messages for this domain, e.g. `["GLOBAL"]` or `["US"]`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#regions EmailSecurityDomain#regions}
+	Regions *[]*string `field:"required" json:"regions" yaml:"regions"`
+	// The mailbox folder to scan, for API-scanning domains. Available values: "AllItems", "Inbox".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#folder EmailSecurityDomain#folder}
 	Folder *string `field:"optional" json:"folder" yaml:"folder"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}.
+	// Identifier of the CASB integration that authorizes this domain.
+	//
+	// The integration also enables API scanning, post-delivery actions, and directory sync.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#integration_id EmailSecurityDomain#integration_id}
 	IntegrationId *string `field:"optional" json:"integrationId" yaml:"integrationId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}.
+	// Number of hops to trace back through received headers when reconstructing the original message (1-20).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#lookback_hops EmailSecurityDomain#lookback_hops}
 	LookbackHops *float64 `field:"optional" json:"lookbackHops" yaml:"lookbackHops"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}.
+	// Require TLS on inbound connections.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#require_tls_inbound EmailSecurityDomain#require_tls_inbound}
 	RequireTlsInbound interface{} `field:"optional" json:"requireTlsInbound" yaml:"requireTlsInbound"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}.
+	// Require TLS on outbound connections.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#require_tls_outbound EmailSecurityDomain#require_tls_outbound}
 	RequireTlsOutbound interface{} `field:"optional" json:"requireTlsOutbound" yaml:"requireTlsOutbound"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}.
+	// The mail transport hostname for MX/Inline delivery — the MX record Cloudflare delivers email to (e.g. `mx.example.com`).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_domain#transport EmailSecurityDomain#transport}
 	Transport *string `field:"optional" json:"transport" yaml:"transport"`
 }
 

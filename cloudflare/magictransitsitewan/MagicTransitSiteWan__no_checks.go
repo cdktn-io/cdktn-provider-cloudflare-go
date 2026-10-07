@@ -115,7 +115,15 @@ func (j *jsiiProxy_MagicTransitSiteWan) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_MagicTransitSiteWan) validateSetHealthCheckRateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicTransitSiteWan) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan) validateSetLoadBalanceInnerFlowsParameters(val interface{}) error {
 	return nil
 }
 

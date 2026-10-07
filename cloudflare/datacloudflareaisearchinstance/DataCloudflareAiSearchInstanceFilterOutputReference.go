@@ -30,6 +30,9 @@ type DataCloudflareAiSearchInstanceFilterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hostname() *string
+	SetHostname(val *string)
+	HostnameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Namespace() *string
@@ -76,6 +79,7 @@ type DataCloudflareAiSearchInstanceFilterOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetHostname()
 	ResetNamespace()
 	ResetOrderBy()
 	ResetOrderByDirection()
@@ -130,6 +134,26 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) Fqn() *s
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) HostnameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +315,17 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostname",
 		val,
 	)
 }
@@ -556,6 +591,14 @@ func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) ResetHostname() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHostname",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) ResetNamespace() {

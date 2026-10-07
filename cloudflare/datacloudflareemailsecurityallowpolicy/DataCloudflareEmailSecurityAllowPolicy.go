@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/email_security_allow_policy cloudflare_email_security_allow_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/email_security_allow_policy cloudflare_email_security_allow_policy}.
 type DataCloudflareEmailSecurityAllowPolicy interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicy) VerifySender() cdktn.
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/email_security_allow_policy cloudflare_email_security_allow_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/email_security_allow_policy cloudflare_email_security_allow_policy} Data Source.
 func NewDataCloudflareEmailSecurityAllowPolicy(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityAllowPolicyConfig) DataCloudflareEmailSecurityAllowPolicy {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewDataCloudflareEmailSecurityAllowPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/email_security_allow_policy cloudflare_email_security_allow_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/email_security_allow_policy cloudflare_email_security_allow_policy} Data Source.
 func NewDataCloudflareEmailSecurityAllowPolicy_Override(d DataCloudflareEmailSecurityAllowPolicy, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityAllowPolicyConfig) {
 	_init_.Initialize()
 

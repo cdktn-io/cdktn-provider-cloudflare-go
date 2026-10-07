@@ -190,7 +190,7 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference) validateSetLimitParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference) validateSetLimitParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

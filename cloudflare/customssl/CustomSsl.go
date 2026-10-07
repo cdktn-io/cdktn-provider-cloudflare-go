@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
 type CustomSsl interface {
 	cdktn.TerraformResource
 	BundleMethod() *string
@@ -679,7 +679,7 @@ func (j *jsiiProxy_CustomSsl) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfig) CustomSsl {
 	_init_.Initialize()
 
@@ -697,7 +697,7 @@ func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl_Override(c CustomSsl, scope constructs.Construct, id *string, config *CustomSslConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules}.
 type DataCloudflareZoneTracingRules interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareZoneTracingRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules} Data Source.
 func NewDataCloudflareZoneTracingRules(scope constructs.Construct, id *string, config *DataCloudflareZoneTracingRulesConfig) DataCloudflareZoneTracingRules {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataCloudflareZoneTracingRules(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zone_tracing_rules cloudflare_zone_tracing_rules} Data Source.
 func NewDataCloudflareZoneTracingRules_Override(d DataCloudflareZoneTracingRules, scope constructs.Construct, id *string, config *DataCloudflareZoneTracingRulesConfig) {
 	_init_.Initialize()
 

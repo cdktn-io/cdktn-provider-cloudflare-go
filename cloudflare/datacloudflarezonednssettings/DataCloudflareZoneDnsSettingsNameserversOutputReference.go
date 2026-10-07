@@ -32,6 +32,7 @@ type DataCloudflareZoneDnsSettingsNameserversOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareZoneDnsSettingsNameservers
 	SetInternalValue(val *DataCloudflareZoneDnsSettingsNameservers)
+	NameserverSetId() *string
 	NsSet() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataCloudflareZoneDnsSettingsNameserversOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZoneDnsSettingsNameserversOutputReference) NameserverSetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameserverSetId",
 		&returns,
 	)
 	return returns

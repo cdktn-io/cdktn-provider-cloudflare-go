@@ -32,6 +32,9 @@ type ZoneDnsSettingsNameserversOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	NameserverSetId() *string
+	SetNameserverSetId(val *string)
+	NameserverSetIdInput() *string
 	NsSet() *float64
 	SetNsSet(val *float64)
 	NsSetInput() *float64
@@ -70,8 +73,8 @@ type ZoneDnsSettingsNameserversOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetNameserverSetId()
 	ResetNsSet()
-	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -132,6 +135,26 @@ func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) InternalValue() in
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) NameserverSetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameserverSetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) NameserverSetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameserverSetIdInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +277,17 @@ func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference)SetNameserverSetId(val *string) {
+	if err := j.validateSetNameserverSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nameserverSetId",
 		val,
 	)
 }
@@ -488,18 +522,18 @@ func (z *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) InterpolationForAt
 	return returns
 }
 
-func (z *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) ResetNsSet() {
+func (z *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) ResetNameserverSetId() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetNsSet",
+		"resetNameserverSetId",
 		nil, // no parameters
 	)
 }
 
-func (z *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) ResetType() {
+func (z *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) ResetNsSet() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetType",
+		"resetNsSet",
 		nil, // no parameters
 	)
 }

@@ -29,6 +29,7 @@ type DataCloudflareAccountTokensResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CreatorEmailAtCreation() *string
 	ExpiresOn() *string
 	// Experimental.
 	Fqn() *string
@@ -41,6 +42,8 @@ type DataCloudflareAccountTokensResultOutputReference interface {
 	Name() *string
 	NotBefore() *string
 	Policies() DataCloudflareAccountTokensResultPoliciesList
+	ProvisionerId() *string
+	ProvisionerType() *string
 	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -124,6 +127,16 @@ func (j *jsiiProxy_DataCloudflareAccountTokensResultOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountTokensResultOutputReference) CreatorEmailAtCreation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creatorEmailAtCreation",
 		&returns,
 	)
 	return returns
@@ -224,6 +237,26 @@ func (j *jsiiProxy_DataCloudflareAccountTokensResultOutputReference) Policies() 
 	_jsii_.Get(
 		j,
 		"policies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountTokensResultOutputReference) ProvisionerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountTokensResultOutputReference) ProvisionerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionerType",
 		&returns,
 	)
 	return returns

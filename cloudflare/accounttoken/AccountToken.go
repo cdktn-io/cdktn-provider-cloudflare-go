@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account_token cloudflare_account_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/account_token cloudflare_account_token}.
 type AccountToken interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -32,6 +32,7 @@ type AccountToken interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatorEmailAtCreation() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,10 +70,12 @@ type AccountToken interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProvisionerId() *string
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProvisionerType() *string
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
@@ -293,6 +296,16 @@ func (j *jsiiProxy_AccountToken) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccountToken) CreatorEmailAtCreation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creatorEmailAtCreation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountToken) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -483,11 +496,31 @@ func (j *jsiiProxy_AccountToken) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_AccountToken) ProvisionerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionerId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountToken) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountToken) ProvisionerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionerType",
 		&returns,
 	)
 	return returns
@@ -564,7 +597,7 @@ func (j *jsiiProxy_AccountToken) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account_token cloudflare_account_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/account_token cloudflare_account_token} Resource.
 func NewAccountToken(scope constructs.Construct, id *string, config *AccountTokenConfig) AccountToken {
 	_init_.Initialize()
 
@@ -582,7 +615,7 @@ func NewAccountToken(scope constructs.Construct, id *string, config *AccountToke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account_token cloudflare_account_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/account_token cloudflare_account_token} Resource.
 func NewAccountToken_Override(a AccountToken, scope constructs.Construct, id *string, config *AccountTokenConfig) {
 	_init_.Initialize()
 

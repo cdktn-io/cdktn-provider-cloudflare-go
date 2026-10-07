@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances}.
 type DataCloudflareAiSearchInstances interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -38,6 +38,9 @@ type DataCloudflareAiSearchInstances interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hostname() *string
+	SetHostname(val *string)
+	HostnameInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -111,6 +114,7 @@ type DataCloudflareAiSearchInstances interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
+	ResetHostname()
 	ResetMaxItems()
 	ResetNamespace()
 	ResetOrderBy()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) HostnameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameInput",
 		&returns,
 	)
 	return returns
@@ -418,7 +442,7 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
 func NewDataCloudflareAiSearchInstances(scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstancesConfig) DataCloudflareAiSearchInstances {
 	_init_.Initialize()
 
@@ -436,7 +460,7 @@ func NewDataCloudflareAiSearchInstances(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source.
 func NewDataCloudflareAiSearchInstances_Override(d DataCloudflareAiSearchInstances, scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstancesConfig) {
 	_init_.Initialize()
 
@@ -481,6 +505,17 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances)SetForEach(val cdktn.ITerrafo
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstances)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostname",
 		val,
 	)
 }
@@ -859,6 +894,14 @@ func (d *jsiiProxy_DataCloudflareAiSearchInstances) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAiSearchInstances) ResetHostname() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHostname",
 		nil, // no parameters
 	)
 }

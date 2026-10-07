@@ -24,13 +24,13 @@ type DataCloudflareEmailSecurityDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/email_security_domain#account_id DataCloudflareEmailSecurityDomain#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/email_security_domain#account_id DataCloudflareEmailSecurityDomain#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Domain identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/email_security_domain#domain_id DataCloudflareEmailSecurityDomain#domain_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/email_security_domain#domain_id DataCloudflareEmailSecurityDomain#domain_id}
 	DomainId *string `field:"optional" json:"domainId" yaml:"domainId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/email_security_domain#filter DataCloudflareEmailSecurityDomain#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/email_security_domain#filter DataCloudflareEmailSecurityDomain#filter}.
 	Filter *DataCloudflareEmailSecurityDomainFilter `field:"optional" json:"filter" yaml:"filter"`
 }
 

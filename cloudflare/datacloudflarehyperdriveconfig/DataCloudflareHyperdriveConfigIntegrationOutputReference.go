@@ -33,7 +33,7 @@ type DataCloudflareHyperdriveConfigIntegrationOutputReference interface {
 	DatabaseName() *string
 	// Experimental.
 	Fqn() *string
-	Integration() *string
+	HyperdriveConfigProvider() *string
 	InternalValue() *DataCloudflareHyperdriveConfigIntegration
 	SetInternalValue(val *DataCloudflareHyperdriveConfigIntegration)
 	OrganizationName() *string
@@ -155,11 +155,11 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigIntegrationOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareHyperdriveConfigIntegrationOutputReference) Integration() *string {
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigIntegrationOutputReference) HyperdriveConfigProvider() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"integration",
+		"hyperdriveConfigProvider",
 		&returns,
 	)
 	return returns

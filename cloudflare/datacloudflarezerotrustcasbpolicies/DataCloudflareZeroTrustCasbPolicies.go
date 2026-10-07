@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_casb_policies cloudflare_zero_trust_casb_policies}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_casb_policies cloudflare_zero_trust_casb_policies}.
 type DataCloudflareZeroTrustCasbPolicies interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustCasbPolicies) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_casb_policies cloudflare_zero_trust_casb_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_casb_policies cloudflare_zero_trust_casb_policies} Data Source.
 func NewDataCloudflareZeroTrustCasbPolicies(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustCasbPoliciesConfig) DataCloudflareZeroTrustCasbPolicies {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataCloudflareZeroTrustCasbPolicies(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_casb_policies cloudflare_zero_trust_casb_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_casb_policies cloudflare_zero_trust_casb_policies} Data Source.
 func NewDataCloudflareZeroTrustCasbPolicies_Override(d DataCloudflareZeroTrustCasbPolicies, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustCasbPoliciesConfig) {
 	_init_.Initialize()
 

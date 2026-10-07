@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference interface {
 	cdktn.ComplexObject
+	Category() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,11 +29,16 @@ type DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Deprecated() *string
+	Description() *string
+	Editable() *string
+	EolAt() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareAccountMemberPoliciesPermissionGroupsMeta
 	SetInternalValue(val *DataCloudflareAccountMemberPoliciesPermissionGroupsMeta)
-	Key() *string
+	Label() *string
+	Scopes() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,7 +47,7 @@ type DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference inte
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
-	Value() *string
+	Visibility() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -81,6 +87,16 @@ type jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputRefe
 	internal.Type__cdktnComplexObject
 }
 
+func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Category() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"category",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -111,6 +127,46 @@ func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Deprecated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deprecated",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Editable() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) EolAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eolAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -131,11 +187,21 @@ func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Key() *string {
+func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Label() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"key",
+		"label",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Scopes() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopes",
 		&returns,
 	)
 	return returns
@@ -161,11 +227,11 @@ func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Value() *string {
+func (j *jsiiProxy_DataCloudflareAccountMemberPoliciesPermissionGroupsMetaOutputReference) Visibility() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"value",
+		"visibility",
 		&returns,
 	)
 	return returns

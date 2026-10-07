@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
 type DataCloudflareZeroTrustDlpCustomProfile interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -508,7 +508,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfile) UpdatedAt() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source.
 func NewDataCloudflareZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpCustomProfileConfig) DataCloudflareZeroTrustDlpCustomProfile {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewDataCloudflareZeroTrustDlpCustomProfile(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source.
 func NewDataCloudflareZeroTrustDlpCustomProfile_Override(d DataCloudflareZeroTrustDlpCustomProfile, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpCustomProfileConfig) {
 	_init_.Initialize()
 

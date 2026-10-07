@@ -7,19 +7,19 @@ package precursor
 type PrecursorEnforcementRules struct {
 	// The filter expression that determines which requests the rule matches.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/precursor#expression Precursor#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/precursor#expression Precursor#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 	// The override mode Precursor applies to requests matching an enforcement rule. Unlike `default_mode`, this cannot be `off`. Available values: "min-friction", "max-security".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/precursor#mode Precursor#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/precursor#mode Precursor#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
 	// An informative description of the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/precursor#description Precursor#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/precursor#description Precursor#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Whether the rule is active.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/precursor#enabled Precursor#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/precursor#enabled Precursor#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

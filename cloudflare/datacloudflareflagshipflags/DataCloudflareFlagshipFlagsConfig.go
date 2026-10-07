@@ -22,21 +22,21 @@ type DataCloudflareFlagshipFlagsConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Cloudflare account ID.
+	// Cloudflare account ID that owns the Flagship app.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flags#account_id DataCloudflareFlagshipFlags#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flags#account_id DataCloudflareFlagshipFlags#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// App identifier.
+	// Flagship app ID returned when the app was created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flags#app_id DataCloudflareFlagshipFlags#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flags#app_id DataCloudflareFlagshipFlags#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// Max items to return (1–200).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flags#limit DataCloudflareFlagshipFlags#limit}
-	Limit *string `field:"optional" json:"limit" yaml:"limit"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flags#limit DataCloudflareFlagshipFlags#limit}
+	Limit *float64 `field:"optional" json:"limit" yaml:"limit"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flags#max_items DataCloudflareFlagshipFlags#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flags#max_items DataCloudflareFlagshipFlags#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 }
 

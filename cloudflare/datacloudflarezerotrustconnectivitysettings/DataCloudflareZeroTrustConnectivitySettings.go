@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
 type DataCloudflareZeroTrustConnectivitySettings interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustConnectivitySettings) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings} Data Source.
 func NewDataCloudflareZeroTrustConnectivitySettings(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustConnectivitySettingsConfig) DataCloudflareZeroTrustConnectivitySettings {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataCloudflareZeroTrustConnectivitySettings(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings} Data Source.
 func NewDataCloudflareZeroTrustConnectivitySettings_Override(d DataCloudflareZeroTrustConnectivitySettings, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustConnectivitySettingsConfig) {
 	_init_.Initialize()
 

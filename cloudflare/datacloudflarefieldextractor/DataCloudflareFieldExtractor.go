@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/field_extractor cloudflare_field_extractor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/field_extractor cloudflare_field_extractor}.
 type DataCloudflareFieldExtractor interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataCloudflareFieldExtractor) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/field_extractor cloudflare_field_extractor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/field_extractor cloudflare_field_extractor} Data Source.
 func NewDataCloudflareFieldExtractor(scope constructs.Construct, id *string, config *DataCloudflareFieldExtractorConfig) DataCloudflareFieldExtractor {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataCloudflareFieldExtractor(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/field_extractor cloudflare_field_extractor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/field_extractor cloudflare_field_extractor} Data Source.
 func NewDataCloudflareFieldExtractor_Override(d DataCloudflareFieldExtractor, scope constructs.Construct, id *string, config *DataCloudflareFieldExtractorConfig) {
 	_init_.Initialize()
 

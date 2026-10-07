@@ -32,9 +32,9 @@ type DataCloudflareFlagshipFlagFilterOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Limit() *string
-	SetLimit(val *string)
-	LimitInput() *string
+	Limit() *float64
+	SetLimit(val *float64)
+	LimitInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference) InternalValu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference) Limit() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference) Limit() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"limit",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference) Limit() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference) LimitInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference) LimitInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"limitInput",
@@ -234,7 +234,7 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference)SetLimit(val *string) {
+func (j *jsiiProxy_DataCloudflareFlagshipFlagFilterOutputReference)SetLimit(val *float64) {
 	if err := j.validateSetLimitParameters(val); err != nil {
 		panic(err)
 	}

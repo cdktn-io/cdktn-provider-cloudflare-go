@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_sending_subdomain cloudflare_email_sending_subdomain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_sending_subdomain cloudflare_email_sending_subdomain}.
 type EmailSendingSubdomain interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -515,7 +515,7 @@ func (j *jsiiProxy_EmailSendingSubdomain) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_sending_subdomain cloudflare_email_sending_subdomain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_sending_subdomain cloudflare_email_sending_subdomain} Resource.
 func NewEmailSendingSubdomain(scope constructs.Construct, id *string, config *EmailSendingSubdomainConfig) EmailSendingSubdomain {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewEmailSendingSubdomain(scope constructs.Construct, id *string, config *Em
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_sending_subdomain cloudflare_email_sending_subdomain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_sending_subdomain cloudflare_email_sending_subdomain} Resource.
 func NewEmailSendingSubdomain_Override(e EmailSendingSubdomain, scope constructs.Construct, id *string, config *EmailSendingSubdomainConfig) {
 	_init_.Initialize()
 

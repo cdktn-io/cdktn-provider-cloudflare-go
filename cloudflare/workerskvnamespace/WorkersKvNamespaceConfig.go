@@ -22,20 +22,20 @@ type WorkersKvNamespaceConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Identifier.
+	// ID of the Cloudflare account that owns the Workers KV namespaces.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// A human-readable string name for a Namespace.
+	// Human-readable string name for a Workers KV namespace.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
 	// Specify the jurisdiction to restrict the KV namespace to durably store data within.
 	//
 	// Can only be set at namespace creation time.
 	// Available values: "eu", "fedramp", "us".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
 	Jurisdiction *string `field:"optional" json:"jurisdiction" yaml:"jurisdiction"`
 }
 

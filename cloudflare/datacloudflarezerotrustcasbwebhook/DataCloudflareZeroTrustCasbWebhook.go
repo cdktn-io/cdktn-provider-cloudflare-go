@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_casb_webhook cloudflare_zero_trust_casb_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_casb_webhook cloudflare_zero_trust_casb_webhook}.
 type DataCloudflareZeroTrustCasbWebhook interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustCasbWebhook) WebhookIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_casb_webhook cloudflare_zero_trust_casb_webhook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_casb_webhook cloudflare_zero_trust_casb_webhook} Data Source.
 func NewDataCloudflareZeroTrustCasbWebhook(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustCasbWebhookConfig) DataCloudflareZeroTrustCasbWebhook {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewDataCloudflareZeroTrustCasbWebhook(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/zero_trust_casb_webhook cloudflare_zero_trust_casb_webhook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_casb_webhook cloudflare_zero_trust_casb_webhook} Data Source.
 func NewDataCloudflareZeroTrustCasbWebhook_Override(d DataCloudflareZeroTrustCasbWebhook, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustCasbWebhookConfig) {
 	_init_.Initialize()
 

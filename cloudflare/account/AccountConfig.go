@@ -24,29 +24,29 @@ type AccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#name Account#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/account#name Account#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Parent container details.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#managed_by Account#managed_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/account#managed_by Account#managed_by}
 	ManagedBy *AccountManagedBy `field:"optional" json:"managedBy" yaml:"managedBy"`
 	// Account settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#settings Account#settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/account#settings Account#settings}
 	Settings *AccountSettings `field:"optional" json:"settings" yaml:"settings"`
 	// Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#standalone Account#standalone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/account#standalone Account#standalone}
 	Standalone interface{} `field:"optional" json:"standalone" yaml:"standalone"`
 	// Available values: "standard", "enterprise".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#type Account#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/account#type Account#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 	// Information related to the tenant unit.
 	//
 	// Provide its ID and omit `standalone` to create the Account within an Organization. See https://developers.cloudflare.com/tenant/how-to/manage-accounts/.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/account#unit Account#unit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/account#unit Account#unit}
 	Unit *AccountUnit `field:"optional" json:"unit" yaml:"unit"`
 }
 

@@ -24,11 +24,11 @@ type EmailRoutingSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Whether subaddressing (plus-addressing) is honored when matching incoming mail against routing rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_routing_settings#support_subaddress EmailRoutingSettings#support_subaddress}
 	SupportSubaddress interface{} `field:"optional" json:"supportSubaddress" yaml:"supportSubaddress"`
 }
 

@@ -24,101 +24,107 @@ type ZeroTrustOrganizationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// When set to true, users can authenticate via WARP for any application in your organization.
 	//
 	// Application settings will take precedence over this value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
 	AllowAuthenticateViaWarp interface{} `field:"optional" json:"allowAuthenticateViaWarp" yaml:"allowAuthenticateViaWarp"`
 	// The unique subdomain assigned to your Zero Trust organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
 	AuthDomain *string `field:"optional" json:"authDomain" yaml:"authDomain"`
 	// When set to `true`, users skip the identity provider selection step during login.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
 	AutoRedirectToIdentity interface{} `field:"optional" json:"autoRedirectToIdentity" yaml:"autoRedirectToIdentity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}.
 	CustomPages *ZeroTrustOrganizationCustomPages `field:"optional" json:"customPages" yaml:"customPages"`
 	// Determines whether to deny all requests to Cloudflare-protected resources that lack an associated Access application.
 	//
 	// If enabled, you must explicitly configure an Access application and policy to allow traffic to your Cloudflare-protected resources. For domains you want to be public across all subdomains, add the domain to the `deny_unmatched_requests_exempted_zone_names` array.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#deny_unmatched_requests ZeroTrustOrganization#deny_unmatched_requests}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#deny_unmatched_requests ZeroTrustOrganization#deny_unmatched_requests}
 	DenyUnmatchedRequests interface{} `field:"optional" json:"denyUnmatchedRequests" yaml:"denyUnmatchedRequests"`
 	// Contains zone names to exempt from the `deny_unmatched_requests` feature.
 	//
 	// Requests to a subdomain in an exempted zone will block unauthenticated traffic by default if there is a configured Access application and policy that matches the request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#deny_unmatched_requests_exempted_zone_names ZeroTrustOrganization#deny_unmatched_requests_exempted_zone_names}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#deny_unmatched_requests_exempted_zone_names ZeroTrustOrganization#deny_unmatched_requests_exempted_zone_names}
 	DenyUnmatchedRequestsExemptedZoneNames *[]*string `field:"optional" json:"denyUnmatchedRequestsExemptedZoneNames" yaml:"denyUnmatchedRequestsExemptedZoneNames"`
 	// Lock all settings as Read-Only in the Dashboard, regardless of user permission.
 	//
 	// Updates may only be made via the API or Terraform for this account when enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
 	IsUiReadOnly interface{} `field:"optional" json:"isUiReadOnly" yaml:"isUiReadOnly"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}.
 	LoginDesign *ZeroTrustOrganizationLoginDesign `field:"optional" json:"loginDesign" yaml:"loginDesign"`
 	// Configures multi-factor authentication (MFA) settings for an organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#mfa_config ZeroTrustOrganization#mfa_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#mfa_config ZeroTrustOrganization#mfa_config}
 	MfaConfig *ZeroTrustOrganizationMfaConfig `field:"optional" json:"mfaConfig" yaml:"mfaConfig"`
 	// Indicates if this organization can enforce multi-factor authentication (MFA) requirements at the application and policy level.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#mfa_configuration_allowed ZeroTrustOrganization#mfa_configuration_allowed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#mfa_configuration_allowed ZeroTrustOrganization#mfa_configuration_allowed}
 	MfaConfigurationAllowed interface{} `field:"optional" json:"mfaConfigurationAllowed" yaml:"mfaConfigurationAllowed"`
 	// Determines whether global MFA settings apply to applications by default.
 	//
 	// The organization must have MFA enabled with at least one authentication method and a session duration configured. Note: 'allowed_authenticators' cannot contain only the infrastructure SSH authenticators ('piv_key' and 'ssh_fido2_key') if the organization has any non-infrastructure applications.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#mfa_required_for_all_apps ZeroTrustOrganization#mfa_required_for_all_apps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#mfa_required_for_all_apps ZeroTrustOrganization#mfa_required_for_all_apps}
 	MfaRequiredForAllApps interface{} `field:"optional" json:"mfaRequiredForAllApps" yaml:"mfaRequiredForAllApps"`
 	// Configures SSH PIV key requirements for MFA using hardware security keys.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#mfa_ssh_piv_key_requirements ZeroTrustOrganization#mfa_ssh_piv_key_requirements}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#mfa_ssh_piv_key_requirements ZeroTrustOrganization#mfa_ssh_piv_key_requirements}
 	MfaSshPivKeyRequirements *ZeroTrustOrganizationMfaSshPivKeyRequirements `field:"optional" json:"mfaSshPivKeyRequirements" yaml:"mfaSshPivKeyRequirements"`
 	// The name of your Zero Trust organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Configures automatic enforcement for inactive service tokens.
 	//
 	// A service token is inactive if no policy references it, and it has not successfully authenticated with an Access application during the selected inactivity period. This setting applies to every service token in your Zero Trust account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#service_token_inactivity ZeroTrustOrganization#service_token_inactivity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#service_token_inactivity ZeroTrustOrganization#service_token_inactivity}
 	ServiceTokenInactivity *ZeroTrustOrganizationServiceTokenInactivity `field:"optional" json:"serviceTokenInactivity" yaml:"serviceTokenInactivity"`
 	// The amount of time that tokens issued for applications will be valid.
 	//
 	// Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
 	SessionDuration *string `field:"optional" json:"sessionDuration" yaml:"sessionDuration"`
+	// Enables new behaviors for requests made with Access service tokens.
+	//
+	// Unauthorized requests emit audit logs, and return a 401 or 403 status code in the response instead of redirecting to the login page. Successful requests no longer receive a CF_Authorization cookie in the response. Zero Trust organizations created on or after October 5, 2026 will have this setting enabled by default, and cannot disable it.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#strict_service_token_auth ZeroTrustOrganization#strict_service_token_auth}
+	StrictServiceTokenAuth interface{} `field:"optional" json:"strictServiceTokenAuth" yaml:"strictServiceTokenAuth"`
 	// A description of the reason why the UI read only field is being toggled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
 	UiReadOnlyToggleReason *string `field:"optional" json:"uiReadOnlyToggleReason" yaml:"uiReadOnlyToggleReason"`
 	// The amount of time a user seat is inactive before it expires.
 	//
 	// When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count.  Minimum value for this setting is 1 month (730h). Must be in the format `300ms` or `2h45m`. Valid time units are: `ns`, `us` (or `µs`), `ms`, `s`, `m`, `h`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
 	UserSeatExpirationInactiveTime *string `field:"optional" json:"userSeatExpirationInactiveTime" yaml:"userSeatExpirationInactiveTime"`
 	// When enabled, unsuccessful WARP authentication requests with a non-HTML Accept header return a 401 response instead of redirecting to the login page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#warp_auth_non_browser_401 ZeroTrustOrganization#warp_auth_non_browser_401}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#warp_auth_non_browser_401 ZeroTrustOrganization#warp_auth_non_browser_401}
 	WarpAuthNonBrowser401 interface{} `field:"optional" json:"warpAuthNonBrowser401" yaml:"warpAuthNonBrowser401"`
 	// The amount of time that tokens issued for applications will be valid.
 	//
 	// Must be in the format `30m` or `2h45m`. Valid time units are: m, h.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
 	WarpAuthSessionDuration *string `field:"optional" json:"warpAuthSessionDuration" yaml:"warpAuthSessionDuration"`
 	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

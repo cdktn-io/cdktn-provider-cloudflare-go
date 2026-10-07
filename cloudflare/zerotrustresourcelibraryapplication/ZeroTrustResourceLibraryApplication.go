@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application}.
 type ZeroTrustResourceLibraryApplication interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -656,7 +656,7 @@ func (j *jsiiProxy_ZeroTrustResourceLibraryApplication) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Resource.
 func NewZeroTrustResourceLibraryApplication(scope constructs.Construct, id *string, config *ZeroTrustResourceLibraryApplicationConfig) ZeroTrustResourceLibraryApplication {
 	_init_.Initialize()
 
@@ -674,7 +674,7 @@ func NewZeroTrustResourceLibraryApplication(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_resource_library_application cloudflare_zero_trust_resource_library_application} Resource.
 func NewZeroTrustResourceLibraryApplication_Override(z ZeroTrustResourceLibraryApplication, scope constructs.Construct, id *string, config *ZeroTrustResourceLibraryApplicationConfig) {
 	_init_.Initialize()
 

@@ -34,6 +34,7 @@ type DataCloudflareMagicTransitSiteWansResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareMagicTransitSiteWansResult
 	SetInternalValue(val *DataCloudflareMagicTransitSiteWansResult)
+	LoadBalanceInnerFlows() cdktn.IResolvable
 	Name() *string
 	Physport() *float64
 	Priority() *float64
@@ -152,6 +153,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteWansResultOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteWansResultOutputReference) LoadBalanceInnerFlows() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"loadBalanceInnerFlows",
 		&returns,
 	)
 	return returns

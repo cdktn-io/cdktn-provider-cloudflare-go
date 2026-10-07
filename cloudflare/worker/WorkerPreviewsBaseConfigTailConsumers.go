@@ -7,7 +7,7 @@ package worker
 type WorkerPreviewsBaseConfigTailConsumers struct {
 	// Name of the consumer Worker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/worker#name Worker#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/worker#name Worker#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

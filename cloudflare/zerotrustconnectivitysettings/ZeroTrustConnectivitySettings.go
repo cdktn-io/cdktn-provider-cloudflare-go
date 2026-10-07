@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings}.
 type ZeroTrustConnectivitySettings interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ZeroTrustConnectivitySettings) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings} Resource.
 func NewZeroTrustConnectivitySettings(scope constructs.Construct, id *string, config *ZeroTrustConnectivitySettingsConfig) ZeroTrustConnectivitySettings {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewZeroTrustConnectivitySettings(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_connectivity_settings cloudflare_zero_trust_connectivity_settings} Resource.
 func NewZeroTrustConnectivitySettings_Override(z ZeroTrustConnectivitySettings, scope constructs.Construct, id *string, config *ZeroTrustConnectivitySettingsConfig) {
 	_init_.Initialize()
 

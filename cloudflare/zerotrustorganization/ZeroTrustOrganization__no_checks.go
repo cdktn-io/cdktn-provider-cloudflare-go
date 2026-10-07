@@ -179,6 +179,10 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetSessionDurationParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetStrictServiceTokenAuthParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) validateSetUiReadOnlyToggleReasonParameters(val *string) error {
 	return nil
 }

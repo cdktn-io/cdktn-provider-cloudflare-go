@@ -24,15 +24,17 @@ type EmailSecurityBlockSenderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}.
+	// Whether `pattern` is a regular expression instead of a literal value.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}
 	IsRegex interface{} `field:"required" json:"isRegex" yaml:"isRegex"`
 	// The pattern value to match.
 	//
 	// The format depends on `pattern_type`: a valid email address for EMAIL (e.g. `user@example.com`), a valid domain name for DOMAIN (e.g. `example.com`), or a plain IPv4 or IPv6 address or CIDR block for IP (e.g. `1.2.3.4`, `1.2.3.0/24`, `2606:4700:4700::1111`, or `2606:4700:4700::/48`); the API rejects private or unique-local, loopback, link-local, unspecified, and IPv4 broadcast addresses, including their IPv4-mapped IPv6 equivalents.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}
 	Pattern *string `field:"required" json:"pattern" yaml:"pattern"`
 	// Type of pattern matching.
 	//
@@ -42,9 +44,9 @@ type EmailSecurityBlockSenderConfig struct {
 	// - UNKNOWN: deprecated; you cannot use this when creating or updating policies, but it may appear on existing entries.
 	// Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
 	PatternType *string `field:"required" json:"patternType" yaml:"patternType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
 	Comments *string `field:"optional" json:"comments" yaml:"comments"`
 }
 

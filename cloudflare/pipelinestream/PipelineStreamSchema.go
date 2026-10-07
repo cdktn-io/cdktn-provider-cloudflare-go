@@ -5,9 +5,9 @@ package pipelinestream
 
 
 type PipelineStreamSchema struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_stream#fields PipelineStream#fields}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pipeline_stream#fields PipelineStream#fields}.
 	Fields interface{} `field:"optional" json:"fields" yaml:"fields"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pipeline_stream#inferred PipelineStream#inferred}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pipeline_stream#inferred PipelineStream#inferred}.
 	Inferred interface{} `field:"optional" json:"inferred" yaml:"inferred"`
 }
 

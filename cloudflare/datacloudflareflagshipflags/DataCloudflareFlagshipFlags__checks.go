@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlags) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareFlagshipFlags) validateSetLimitParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareFlagshipFlags) validateSetLimitParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

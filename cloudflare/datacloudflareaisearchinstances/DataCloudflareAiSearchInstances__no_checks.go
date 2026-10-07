@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetCountParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstances) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

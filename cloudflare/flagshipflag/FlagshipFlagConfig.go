@@ -22,46 +22,48 @@ type FlagshipFlagConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Cloudflare account ID.
+	// Cloudflare account ID that owns the Flagship app.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#account_id FlagshipFlag#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/flagship_flag#account_id FlagshipFlag#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// App identifier.
+	// Flagship app ID returned when the app was created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#app_id FlagshipFlag#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/flagship_flag#app_id FlagshipFlag#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// Variation served when no rule matches or the flag is disabled. Must be a key in `variations`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#default_variation FlagshipFlag#default_variation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/flagship_flag#default_variation FlagshipFlag#default_variation}
 	DefaultVariation *string `field:"required" json:"defaultVariation" yaml:"defaultVariation"`
 	// When false, the flag bypasses all rules and always serves `default_variation`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#enabled FlagshipFlag#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/flagship_flag#enabled FlagshipFlag#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// Unique identifier for the flag within an app. Used in all evaluation and SDK calls.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#key FlagshipFlag#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/flagship_flag#key FlagshipFlag#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// Targeting rules evaluated in ascending `priority`;
 	//
 	// the first matching rule wins. An empty array means the flag always serves `default_variation`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#rules FlagshipFlag#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/flagship_flag#rules FlagshipFlag#rules}
 	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
 	// Map of variation name to value.
 	//
 	// All values must be the same type (boolean, string, number, or JSON object/array). Each serialized value must be 10KB or smaller.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#variations FlagshipFlag#variations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/flagship_flag#variations FlagshipFlag#variations}
 	Variations *map[string]*string `field:"required" json:"variations" yaml:"variations"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#description FlagshipFlag#description}.
+	// Optional operator-facing description. It does not affect flag evaluation.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/flagship_flag#description FlagshipFlag#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Deprecated compatibility field.
 	//
 	// Omit it; the API ignores this value and infers the type from the flag's variations.
 	// Available values: "boolean", "string", "number", "json".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/flagship_flag#type FlagshipFlag#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/flagship_flag#type FlagshipFlag#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

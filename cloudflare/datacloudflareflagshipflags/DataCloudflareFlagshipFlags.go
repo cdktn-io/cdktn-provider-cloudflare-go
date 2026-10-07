@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flags cloudflare_flagship_flags}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flags cloudflare_flagship_flags}.
 type DataCloudflareFlagshipFlags interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -45,9 +45,9 @@ type DataCloudflareFlagshipFlags interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
-	Limit() *string
-	SetLimit(val *string)
-	LimitInput() *string
+	Limit() *float64
+	SetLimit(val *float64)
+	LimitInput() *float64
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
@@ -257,8 +257,8 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlags) Lifecycle() *cdktn.TerraformReso
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareFlagshipFlags) Limit() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareFlagshipFlags) Limit() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"limit",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlags) Limit() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareFlagshipFlags) LimitInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareFlagshipFlags) LimitInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"limitInput",
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlags) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flags cloudflare_flagship_flags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flags cloudflare_flagship_flags} Data Source.
 func NewDataCloudflareFlagshipFlags(scope constructs.Construct, id *string, config *DataCloudflareFlagshipFlagsConfig) DataCloudflareFlagshipFlags {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataCloudflareFlagshipFlags(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_flags cloudflare_flagship_flags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_flags cloudflare_flagship_flags} Data Source.
 func NewDataCloudflareFlagshipFlags_Override(d DataCloudflareFlagshipFlags, scope constructs.Construct, id *string, config *DataCloudflareFlagshipFlagsConfig) {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlags)SetLifecycle(val *cdktn.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareFlagshipFlags)SetLimit(val *string) {
+func (j *jsiiProxy_DataCloudflareFlagshipFlags)SetLimit(val *float64) {
 	if err := j.validateSetLimitParameters(val); err != nil {
 		panic(err)
 	}

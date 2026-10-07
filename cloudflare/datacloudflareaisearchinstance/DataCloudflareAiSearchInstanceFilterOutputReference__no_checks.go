@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -24,11 +24,11 @@ type DataCloudflareFieldExtractorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Cloudflare account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/field_extractor#account_id DataCloudflareFieldExtractor#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/field_extractor#account_id DataCloudflareFieldExtractor#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Extractor type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/field_extractor#extractor DataCloudflareFieldExtractor#extractor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/field_extractor#extractor DataCloudflareFieldExtractor#extractor}
 	Extractor *string `field:"required" json:"extractor" yaml:"extractor"`
 }
 

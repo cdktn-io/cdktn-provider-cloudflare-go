@@ -63,6 +63,10 @@ func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) validateSetInterna
 	return nil
 }
 
+func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) validateSetNameserverSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneDnsSettingsNameserversOutputReference) validateSetNsSetParameters(val *float64) error {
 	return nil
 }

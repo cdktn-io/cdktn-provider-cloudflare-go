@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile}.
 type DataCloudflareMagicWanBgpFilterProfile interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -386,7 +386,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanBgpFilterProfile) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile} Data Source.
 func NewDataCloudflareMagicWanBgpFilterProfile(scope constructs.Construct, id *string, config *DataCloudflareMagicWanBgpFilterProfileConfig) DataCloudflareMagicWanBgpFilterProfile {
 	_init_.Initialize()
 
@@ -404,7 +404,7 @@ func NewDataCloudflareMagicWanBgpFilterProfile(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/magic_wan_bgp_filter_profile cloudflare_magic_wan_bgp_filter_profile} Data Source.
 func NewDataCloudflareMagicWanBgpFilterProfile_Override(d DataCloudflareMagicWanBgpFilterProfile, scope constructs.Construct, id *string, config *DataCloudflareMagicWanBgpFilterProfileConfig) {
 	_init_.Initialize()
 

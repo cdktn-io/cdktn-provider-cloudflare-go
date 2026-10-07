@@ -24,15 +24,17 @@ type PagesDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// The domain name.
+	// Fully qualified domain name for the Pages project, such as `example.com`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pages_domain#name PagesDomain#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_domain#name PagesDomain#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Name of the project.
+	// Name of the Pages project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
+	// Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
 	ProjectName *string `field:"required" json:"projectName" yaml:"projectName"`
 }
 

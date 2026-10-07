@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
 type MagicTransitSiteWan interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -43,11 +43,16 @@ type MagicTransitSiteWan interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HealthCheckRate() *string
+	SetHealthCheckRate(val *string)
+	HealthCheckRateInput() *string
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	LoadBalanceInnerFlows() interface{}
+	SetLoadBalanceInnerFlows(val interface{})
+	LoadBalanceInnerFlowsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -176,6 +181,8 @@ type MagicTransitSiteWan interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetHealthCheckRate()
+	ResetLoadBalanceInnerFlows()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -320,6 +327,16 @@ func (j *jsiiProxy_MagicTransitSiteWan) HealthCheckRate() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicTransitSiteWan) HealthCheckRateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckRateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicTransitSiteWan) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -335,6 +352,26 @@ func (j *jsiiProxy_MagicTransitSiteWan) Lifecycle() *cdktn.TerraformResourceLife
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan) LoadBalanceInnerFlows() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"loadBalanceInnerFlows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan) LoadBalanceInnerFlowsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"loadBalanceInnerFlowsInput",
 		&returns,
 	)
 	return returns
@@ -531,7 +568,7 @@ func (j *jsiiProxy_MagicTransitSiteWan) VlanTagInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
 func NewMagicTransitSiteWan(scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) MagicTransitSiteWan {
 	_init_.Initialize()
 
@@ -549,7 +586,7 @@ func NewMagicTransitSiteWan(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
 func NewMagicTransitSiteWan_Override(m MagicTransitSiteWan, scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) {
 	_init_.Initialize()
 
@@ -609,6 +646,17 @@ func (j *jsiiProxy_MagicTransitSiteWan)SetForEach(val cdktn.ITerraformIterator) 
 	)
 }
 
+func (j *jsiiProxy_MagicTransitSiteWan)SetHealthCheckRate(val *string) {
+	if err := j.validateSetHealthCheckRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheckRate",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MagicTransitSiteWan)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -616,6 +664,17 @@ func (j *jsiiProxy_MagicTransitSiteWan)SetLifecycle(val *cdktn.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan)SetLoadBalanceInnerFlows(val interface{}) {
+	if err := j.validateSetLoadBalanceInnerFlowsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loadBalanceInnerFlows",
 		val,
 	)
 }
@@ -1082,6 +1141,22 @@ func (m *jsiiProxy_MagicTransitSiteWan) RegisterProviderFeatureUsage(feature cdk
 		m,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteWan) ResetHealthCheckRate() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetHealthCheckRate",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteWan) ResetLoadBalanceInnerFlows() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLoadBalanceInnerFlows",
+		nil, // no parameters
 	)
 }
 

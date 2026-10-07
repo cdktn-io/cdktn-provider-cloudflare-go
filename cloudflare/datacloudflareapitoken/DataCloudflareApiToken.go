@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token cloudflare_api_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token cloudflare_api_token}.
 type DataCloudflareApiToken interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataCloudflareApiToken interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatorEmailAtCreation() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,6 +57,8 @@ type DataCloudflareApiToken interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProvisionerId() *string
+	ProvisionerType() *string
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
@@ -175,6 +178,16 @@ func (j *jsiiProxy_DataCloudflareApiToken) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareApiToken) CreatorEmailAtCreation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creatorEmailAtCreation",
 		&returns,
 	)
 	return returns
@@ -350,6 +363,26 @@ func (j *jsiiProxy_DataCloudflareApiToken) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareApiToken) ProvisionerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareApiToken) ProvisionerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionerType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareApiToken) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -421,7 +454,7 @@ func (j *jsiiProxy_DataCloudflareApiToken) TokenIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token cloudflare_api_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token cloudflare_api_token} Data Source.
 func NewDataCloudflareApiToken(scope constructs.Construct, id *string, config *DataCloudflareApiTokenConfig) DataCloudflareApiToken {
 	_init_.Initialize()
 
@@ -439,7 +472,7 @@ func NewDataCloudflareApiToken(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/api_token cloudflare_api_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/api_token cloudflare_api_token} Data Source.
 func NewDataCloudflareApiToken_Override(d DataCloudflareApiToken, scope constructs.Construct, id *string, config *DataCloudflareApiTokenConfig) {
 	_init_.Initialize()
 

@@ -22,13 +22,13 @@ type DataCloudflareFlagshipAppConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Cloudflare account ID.
+	// Cloudflare account ID that owns the Flagship app.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_app#account_id DataCloudflareFlagshipApp#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_app#account_id DataCloudflareFlagshipApp#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// App identifier.
+	// Flagship app ID returned when the app was created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/data-sources/flagship_app#app_id DataCloudflareFlagshipApp#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/flagship_app#app_id DataCloudflareFlagshipApp#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 }
 

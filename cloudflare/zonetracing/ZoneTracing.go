@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing cloudflare_zone_tracing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing cloudflare_zone_tracing}.
 type ZoneTracing interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -522,7 +522,7 @@ func (j *jsiiProxy_ZoneTracing) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing cloudflare_zone_tracing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing cloudflare_zone_tracing} Resource.
 func NewZoneTracing(scope constructs.Construct, id *string, config *ZoneTracingConfig) ZoneTracing {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewZoneTracing(scope constructs.Construct, id *string, config *ZoneTracingC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zone_tracing cloudflare_zone_tracing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zone_tracing cloudflare_zone_tracing} Resource.
 func NewZoneTracing_Override(z ZoneTracing, scope constructs.Construct, id *string, config *ZoneTracingConfig) {
 	_init_.Initialize()
 

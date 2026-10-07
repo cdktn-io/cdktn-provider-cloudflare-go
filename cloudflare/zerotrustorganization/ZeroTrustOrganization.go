@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -98,6 +98,9 @@ type ZeroTrustOrganization interface {
 	SessionDuration() *string
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
+	StrictServiceTokenAuth() interface{}
+	SetStrictServiceTokenAuth(val interface{})
+	StrictServiceTokenAuthInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -236,6 +239,7 @@ type ZeroTrustOrganization interface {
 	ResetOverrideLogicalId()
 	ResetServiceTokenInactivity()
 	ResetSessionDuration()
+	ResetStrictServiceTokenAuth()
 	ResetUiReadOnlyToggleReason()
 	ResetUserSeatExpirationInactiveTime()
 	ResetWarpAuthNonBrowser401()
@@ -718,6 +722,26 @@ func (j *jsiiProxy_ZeroTrustOrganization) SessionDurationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) StrictServiceTokenAuth() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"strictServiceTokenAuth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) StrictServiceTokenAuthInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"strictServiceTokenAuthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -859,7 +883,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -877,7 +901,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.26.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 
@@ -1073,6 +1097,17 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetSessionDuration(val *string) {
 	_jsii_.Set(
 		j,
 		"sessionDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization)SetStrictServiceTokenAuth(val interface{}) {
+	if err := j.validateSetStrictServiceTokenAuthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"strictServiceTokenAuth",
 		val,
 	)
 }
@@ -1699,6 +1734,14 @@ func (z *jsiiProxy_ZeroTrustOrganization) ResetSessionDuration() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetSessionDuration",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetStrictServiceTokenAuth() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetStrictServiceTokenAuth",
 		nil, // no parameters
 	)
 }

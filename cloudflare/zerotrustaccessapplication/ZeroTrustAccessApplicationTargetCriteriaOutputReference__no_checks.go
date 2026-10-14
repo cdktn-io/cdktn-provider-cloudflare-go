@@ -47,6 +47,18 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) vali
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validatePutExcludeParameters(value *ZeroTrustAccessApplicationTargetCriteriaExclude) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validatePutIncludeParameters(value *ZeroTrustAccessApplicationTargetCriteriaInclude) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validatePutRequireParameters(value *ZeroTrustAccessApplicationTargetCriteriaRequire) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

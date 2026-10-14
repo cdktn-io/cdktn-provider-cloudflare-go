@@ -28,8 +28,12 @@ type ZeroTrustAccessApplicationTargetCriteriaOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Exclude() ZeroTrustAccessApplicationTargetCriteriaExcludeOutputReference
+	ExcludeInput() interface{}
 	// Experimental.
 	Fqn() *string
+	Include() ZeroTrustAccessApplicationTargetCriteriaIncludeOutputReference
+	IncludeInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Port() *float64
@@ -38,6 +42,8 @@ type ZeroTrustAccessApplicationTargetCriteriaOutputReference interface {
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
+	Require() ZeroTrustAccessApplicationTargetCriteriaRequireOutputReference
+	RequireInput() interface{}
 	TargetAttributes() interface{}
 	SetTargetAttributes(val interface{})
 	TargetAttributesInput() interface{}
@@ -73,6 +79,13 @@ type ZeroTrustAccessApplicationTargetCriteriaOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutExclude(value *ZeroTrustAccessApplicationTargetCriteriaExclude)
+	PutInclude(value *ZeroTrustAccessApplicationTargetCriteriaInclude)
+	PutRequire(value *ZeroTrustAccessApplicationTargetCriteriaRequire)
+	ResetExclude()
+	ResetInclude()
+	ResetRequire()
+	ResetTargetAttributes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -118,11 +131,51 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Crea
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Exclude() ZeroTrustAccessApplicationTargetCriteriaExcludeOutputReference {
+	var returns ZeroTrustAccessApplicationTargetCriteriaExcludeOutputReference
+	_jsii_.Get(
+		j,
+		"exclude",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) ExcludeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Include() ZeroTrustAccessApplicationTargetCriteriaIncludeOutputReference {
+	var returns ZeroTrustAccessApplicationTargetCriteriaIncludeOutputReference
+	_jsii_.Get(
+		j,
+		"include",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) IncludeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeInput",
 		&returns,
 	)
 	return returns
@@ -173,6 +226,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Prot
 	_jsii_.Get(
 		j,
 		"protocolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Require() ZeroTrustAccessApplicationTargetCriteriaRequireOutputReference {
+	var returns ZeroTrustAccessApplicationTargetCriteriaRequireOutputReference
+	_jsii_.Get(
+		j,
+		"require",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) RequireInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireInput",
 		&returns,
 	)
 	return returns
@@ -518,6 +591,71 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) PutExclude(value *ZeroTrustAccessApplicationTargetCriteriaExclude) {
+	if err := z.validatePutExcludeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putExclude",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) PutInclude(value *ZeroTrustAccessApplicationTargetCriteriaInclude) {
+	if err := z.validatePutIncludeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putInclude",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) PutRequire(value *ZeroTrustAccessApplicationTargetCriteriaRequire) {
+	if err := z.validatePutRequireParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putRequire",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) ResetExclude() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetExclude",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) ResetInclude() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetInclude",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) ResetRequire() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRequire",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) ResetTargetAttributes() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetTargetAttributes",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

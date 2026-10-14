@@ -214,6 +214,14 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutput
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference) validateSetLookupParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference) validateSetOffsetParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

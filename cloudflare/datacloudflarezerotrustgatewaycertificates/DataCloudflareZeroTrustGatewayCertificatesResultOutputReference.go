@@ -41,6 +41,7 @@ type DataCloudflareZeroTrustGatewayCertificatesResultOutputReference interface {
 	InUse() cdktn.IResolvable
 	IssuerOrg() *string
 	IssuerRaw() *string
+	Region() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -226,6 +227,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCertificatesResultOutputReferen
 	_jsii_.Get(
 		j,
 		"issuerRaw",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayCertificatesResultOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
 		&returns,
 	)
 	return returns

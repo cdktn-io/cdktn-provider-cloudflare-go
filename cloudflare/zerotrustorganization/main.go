@@ -60,10 +60,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mfaConfigInput", GoGetter: "MfaConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaConfigurationAllowed", GoGetter: "MfaConfigurationAllowed"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaConfigurationAllowedInput", GoGetter: "MfaConfigurationAllowedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaPivKeyRequirements", GoGetter: "MfaPivKeyRequirements"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaPivKeyRequirementsInput", GoGetter: "MfaPivKeyRequirementsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaRequiredForAllApps", GoGetter: "MfaRequiredForAllApps"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaRequiredForAllAppsInput", GoGetter: "MfaRequiredForAllAppsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "mfaSshPivKeyRequirements", GoGetter: "MfaSshPivKeyRequirements"},
-			_jsii_.MemberProperty{JsiiProperty: "mfaSshPivKeyRequirementsInput", GoGetter: "MfaSshPivKeyRequirementsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCustomPages", GoMethod: "PutCustomPages"},
 			_jsii_.MemberMethod{JsiiMethod: "putLoginDesign", GoMethod: "PutLoginDesign"},
 			_jsii_.MemberMethod{JsiiMethod: "putMfaConfig", GoMethod: "PutMfaConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "putMfaSshPivKeyRequirements", GoMethod: "PutMfaSshPivKeyRequirements"},
+			_jsii_.MemberMethod{JsiiMethod: "putMfaPivKeyRequirements", GoMethod: "PutMfaPivKeyRequirements"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceTokenInactivity", GoMethod: "PutServiceTokenInactivity"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
@@ -91,8 +91,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLoginDesign", GoMethod: "ResetLoginDesign"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMfaConfig", GoMethod: "ResetMfaConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMfaConfigurationAllowed", GoMethod: "ResetMfaConfigurationAllowed"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMfaPivKeyRequirements", GoMethod: "ResetMfaPivKeyRequirements"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMfaRequiredForAllApps", GoMethod: "ResetMfaRequiredForAllApps"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMfaSshPivKeyRequirements", GoMethod: "ResetMfaSshPivKeyRequirements"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceTokenInactivity", GoMethod: "ResetServiceTokenInactivity"},
@@ -283,12 +283,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements",
-		reflect.TypeOf((*ZeroTrustOrganizationMfaSshPivKeyRequirements)(nil)).Elem(),
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaPivKeyRequirements",
+		reflect.TypeOf((*ZeroTrustOrganizationMfaPivKeyRequirements)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference",
-		reflect.TypeOf((*ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference)(nil)).Elem(),
+		"@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaPivKeyRequirementsOutputReference",
+		reflect.TypeOf((*ZeroTrustOrganizationMfaPivKeyRequirementsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "touchPolicyInput", GoGetter: "TouchPolicyInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference{}
+			j := jsiiProxy_ZeroTrustOrganizationMfaPivKeyRequirementsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

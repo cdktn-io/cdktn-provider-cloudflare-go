@@ -63,6 +63,7 @@ type DataCloudflareWorkerVersionsResultBindingsOutputReference interface {
 	Part() *string
 	Pipeline() *string
 	QueueName() *string
+	Retry() DataCloudflareWorkerVersionsResultBindingsRetryOutputReference
 	ScriptName() *string
 	SecretName() *string
 	Service() *string
@@ -478,6 +479,16 @@ func (j *jsiiProxy_DataCloudflareWorkerVersionsResultBindingsOutputReference) Qu
 	_jsii_.Get(
 		j,
 		"queueName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkerVersionsResultBindingsOutputReference) Retry() DataCloudflareWorkerVersionsResultBindingsRetryOutputReference {
+	var returns DataCloudflareWorkerVersionsResultBindingsRetryOutputReference
+	_jsii_.Get(
+		j,
+		"retry",
 		&returns,
 	)
 	return returns

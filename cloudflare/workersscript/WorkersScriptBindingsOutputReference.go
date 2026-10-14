@@ -121,6 +121,8 @@ type WorkersScriptBindingsOutputReference interface {
 	QueueName() *string
 	SetQueueName(val *string)
 	QueueNameInput() *string
+	Retry() WorkersScriptBindingsRetryOutputReference
+	RetryInput() interface{}
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
@@ -192,6 +194,7 @@ type WorkersScriptBindingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOutbound(value *WorkersScriptBindingsOutbound)
+	PutRetry(value *WorkersScriptBindingsRetry)
 	PutSimple(value *WorkersScriptBindingsSimple)
 	ResetAlgorithm()
 	ResetAllowedDestinationAddresses()
@@ -222,6 +225,7 @@ type WorkersScriptBindingsOutputReference interface {
 	ResetPart()
 	ResetPipeline()
 	ResetQueueName()
+	ResetRetry()
 	ResetScriptName()
 	ResetSecretName()
 	ResetService()
@@ -894,6 +898,26 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) QueueNameInput() *strin
 	_jsii_.Get(
 		j,
 		"queueNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Retry() WorkersScriptBindingsRetryOutputReference {
+	var returns WorkersScriptBindingsRetryOutputReference
+	_jsii_.Get(
+		j,
+		"retry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) RetryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retryInput",
 		&returns,
 	)
 	return returns
@@ -1910,6 +1934,17 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) PutOutbound(value *Work
 	)
 }
 
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) PutRetry(value *WorkersScriptBindingsRetry) {
+	if err := w.validatePutRetryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putRetry",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptBindingsOutputReference) PutSimple(value *WorkersScriptBindingsSimple) {
 	if err := w.validatePutSimpleParameters(value); err != nil {
 		panic(err)
@@ -2149,6 +2184,14 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetQueueName() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetQueueName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetRetry() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRetry",
 		nil, // no parameters
 	)
 }

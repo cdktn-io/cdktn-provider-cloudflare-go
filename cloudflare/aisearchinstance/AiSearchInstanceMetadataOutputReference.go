@@ -26,6 +26,8 @@ type AiSearchInstanceMetadataOutputReference interface {
 	CreatedFromAisearchWizard() interface{}
 	SetCreatedFromAisearchWizard(val interface{})
 	CreatedFromAisearchWizardInput() interface{}
+	CreatedFromEmdashPlugin() AiSearchInstanceMetadataCreatedFromEmdashPluginOutputReference
+	CreatedFromEmdashPluginInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -70,7 +72,9 @@ type AiSearchInstanceMetadataOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	PutCreatedFromEmdashPlugin(value *AiSearchInstanceMetadataCreatedFromEmdashPlugin)
 	ResetCreatedFromAisearchWizard()
+	ResetCreatedFromEmdashPlugin()
 	ResetWorkerDomain()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -122,6 +126,26 @@ func (j *jsiiProxy_AiSearchInstanceMetadataOutputReference) CreatedFromAisearchW
 	_jsii_.Get(
 		j,
 		"createdFromAisearchWizardInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceMetadataOutputReference) CreatedFromEmdashPlugin() AiSearchInstanceMetadataCreatedFromEmdashPluginOutputReference {
+	var returns AiSearchInstanceMetadataCreatedFromEmdashPluginOutputReference
+	_jsii_.Get(
+		j,
+		"createdFromEmdashPlugin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiSearchInstanceMetadataOutputReference) CreatedFromEmdashPluginInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createdFromEmdashPluginInput",
 		&returns,
 	)
 	return returns
@@ -488,10 +512,29 @@ func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) InterpolationForAttr
 	return returns
 }
 
+func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) PutCreatedFromEmdashPlugin(value *AiSearchInstanceMetadataCreatedFromEmdashPlugin) {
+	if err := a.validatePutCreatedFromEmdashPluginParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCreatedFromEmdashPlugin",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) ResetCreatedFromAisearchWizard() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCreatedFromAisearchWizard",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) ResetCreatedFromEmdashPlugin() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCreatedFromEmdashPlugin",
 		nil, // no parameters
 	)
 }

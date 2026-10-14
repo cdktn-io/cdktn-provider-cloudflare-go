@@ -24,6 +24,7 @@ type DataCloudflareAiSearchInstanceMetadataOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	CreatedFromAisearchWizard() cdktn.IResolvable
+	CreatedFromEmdashPlugin() DataCloudflareAiSearchInstanceMetadataCreatedFromEmdashPluginOutputReference
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -106,6 +107,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceMetadataOutputReference) Create
 	_jsii_.Get(
 		j,
 		"createdFromAisearchWizard",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstanceMetadataOutputReference) CreatedFromEmdashPlugin() DataCloudflareAiSearchInstanceMetadataCreatedFromEmdashPluginOutputReference {
+	var returns DataCloudflareAiSearchInstanceMetadataCreatedFromEmdashPluginOutputReference
+	_jsii_.Get(
+		j,
+		"createdFromEmdashPlugin",
 		&returns,
 	)
 	return returns

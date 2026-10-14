@@ -14,6 +14,7 @@ import (
 type DataCloudflarePagesProjectsResultOutputReference interface {
 	cdktn.ComplexObject
 	BuildConfig() DataCloudflarePagesProjectsResultBuildConfigOutputReference
+	BuildImageAutoUpgrade() DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference
 	CanonicalDeployment() DataCloudflarePagesProjectsResultCanonicalDeploymentOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
@@ -100,6 +101,16 @@ func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) BuildConfig
 	_jsii_.Get(
 		j,
 		"buildConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePagesProjectsResultOutputReference) BuildImageAutoUpgrade() DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference {
+	var returns DataCloudflarePagesProjectsResultBuildImageAutoUpgradeOutputReference
+	_jsii_.Get(
+		j,
+		"buildImageAutoUpgrade",
 		&returns,
 	)
 	return returns

@@ -54,7 +54,7 @@ type DataCloudflareZeroTrustDlpPredefinedProfileEntriesOutputReference interface
 	Type() *string
 	UpdatedAt() *string
 	Variant() DataCloudflareZeroTrustDlpPredefinedProfileEntriesVariantOutputReference
-	WordList() *string
+	WordList() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesOutputReference) WordList() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesOutputReference) WordList() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"wordList",

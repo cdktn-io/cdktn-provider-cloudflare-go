@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -73,11 +73,11 @@ type ZeroTrustOrganization interface {
 	MfaConfigurationAllowed() interface{}
 	SetMfaConfigurationAllowed(val interface{})
 	MfaConfigurationAllowedInput() interface{}
+	MfaPivKeyRequirements() ZeroTrustOrganizationMfaPivKeyRequirementsOutputReference
+	MfaPivKeyRequirementsInput() interface{}
 	MfaRequiredForAllApps() interface{}
 	SetMfaRequiredForAllApps(val interface{})
 	MfaRequiredForAllAppsInput() interface{}
-	MfaSshPivKeyRequirements() ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference
-	MfaSshPivKeyRequirementsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -205,7 +205,7 @@ type ZeroTrustOrganization interface {
 	PutCustomPages(value *ZeroTrustOrganizationCustomPages)
 	PutLoginDesign(value *ZeroTrustOrganizationLoginDesign)
 	PutMfaConfig(value *ZeroTrustOrganizationMfaConfig)
-	PutMfaSshPivKeyRequirements(value *ZeroTrustOrganizationMfaSshPivKeyRequirements)
+	PutMfaPivKeyRequirements(value *ZeroTrustOrganizationMfaPivKeyRequirements)
 	PutServiceTokenInactivity(value *ZeroTrustOrganizationServiceTokenInactivity)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
@@ -231,8 +231,8 @@ type ZeroTrustOrganization interface {
 	ResetLoginDesign()
 	ResetMfaConfig()
 	ResetMfaConfigurationAllowed()
+	ResetMfaPivKeyRequirements()
 	ResetMfaRequiredForAllApps()
-	ResetMfaSshPivKeyRequirements()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -582,6 +582,26 @@ func (j *jsiiProxy_ZeroTrustOrganization) MfaConfigurationAllowedInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) MfaPivKeyRequirements() ZeroTrustOrganizationMfaPivKeyRequirementsOutputReference {
+	var returns ZeroTrustOrganizationMfaPivKeyRequirementsOutputReference
+	_jsii_.Get(
+		j,
+		"mfaPivKeyRequirements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) MfaPivKeyRequirementsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mfaPivKeyRequirementsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) MfaRequiredForAllApps() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -597,26 +617,6 @@ func (j *jsiiProxy_ZeroTrustOrganization) MfaRequiredForAllAppsInput() interface
 	_jsii_.Get(
 		j,
 		"mfaRequiredForAllAppsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustOrganization) MfaSshPivKeyRequirements() ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference {
-	var returns ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference
-	_jsii_.Get(
-		j,
-		"mfaSshPivKeyRequirements",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustOrganization) MfaSshPivKeyRequirementsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"mfaSshPivKeyRequirementsInput",
 		&returns,
 	)
 	return returns
@@ -883,7 +883,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -901,7 +901,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 
@@ -1569,13 +1569,13 @@ func (z *jsiiProxy_ZeroTrustOrganization) PutMfaConfig(value *ZeroTrustOrganizat
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustOrganization) PutMfaSshPivKeyRequirements(value *ZeroTrustOrganizationMfaSshPivKeyRequirements) {
-	if err := z.validatePutMfaSshPivKeyRequirementsParameters(value); err != nil {
+func (z *jsiiProxy_ZeroTrustOrganization) PutMfaPivKeyRequirements(value *ZeroTrustOrganizationMfaPivKeyRequirements) {
+	if err := z.validatePutMfaPivKeyRequirementsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
-		"putMfaSshPivKeyRequirements",
+		"putMfaPivKeyRequirements",
 		[]interface{}{value},
 	)
 }
@@ -1690,18 +1690,18 @@ func (z *jsiiProxy_ZeroTrustOrganization) ResetMfaConfigurationAllowed() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustOrganization) ResetMfaRequiredForAllApps() {
+func (z *jsiiProxy_ZeroTrustOrganization) ResetMfaPivKeyRequirements() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetMfaRequiredForAllApps",
+		"resetMfaPivKeyRequirements",
 		nil, // no parameters
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustOrganization) ResetMfaSshPivKeyRequirements() {
+func (z *jsiiProxy_ZeroTrustOrganization) ResetMfaRequiredForAllApps() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetMfaSshPivKeyRequirements",
+		"resetMfaRequiredForAllApps",
 		nil, // no parameters
 	)
 }

@@ -44,8 +44,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loginDesign", GoGetter: "LoginDesign"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaConfig", GoGetter: "MfaConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "mfaPivKeyRequirements", GoGetter: "MfaPivKeyRequirements"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaRequiredForAllApps", GoGetter: "MfaRequiredForAllApps"},
-			_jsii_.MemberProperty{JsiiProperty: "mfaSshPivKeyRequirements", GoGetter: "MfaSshPivKeyRequirements"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
@@ -206,12 +206,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustOrganization.DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirements",
-		reflect.TypeOf((*DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirements)(nil)).Elem(),
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustOrganization.DataCloudflareZeroTrustOrganizationMfaPivKeyRequirements",
+		reflect.TypeOf((*DataCloudflareZeroTrustOrganizationMfaPivKeyRequirements)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustOrganization.DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference",
-		reflect.TypeOf((*DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference)(nil)).Elem(),
+		"@cdktn/provider-cloudflare.dataCloudflareZeroTrustOrganization.DataCloudflareZeroTrustOrganizationMfaPivKeyRequirementsOutputReference",
+		reflect.TypeOf((*DataCloudflareZeroTrustOrganizationMfaPivKeyRequirementsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "touchPolicy", GoGetter: "TouchPolicy"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataCloudflareZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference{}
+			j := jsiiProxy_DataCloudflareZeroTrustOrganizationMfaPivKeyRequirementsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

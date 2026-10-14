@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pages_project cloudflare_pages_project}.
 type PagesProject interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -20,6 +20,7 @@ type PagesProject interface {
 	AccountIdInput() *string
 	BuildConfig() PagesProjectBuildConfigOutputReference
 	BuildConfigInput() interface{}
+	BuildImageAutoUpgrade() PagesProjectBuildImageAutoUpgradeOutputReference
 	CanonicalDeployment() PagesProjectCanonicalDeploymentOutputReference
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
@@ -250,6 +251,16 @@ func (j *jsiiProxy_PagesProject) BuildConfigInput() interface{} {
 	_jsii_.Get(
 		j,
 		"buildConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProject) BuildImageAutoUpgrade() PagesProjectBuildImageAutoUpgradeOutputReference {
+	var returns PagesProjectBuildImageAutoUpgradeOutputReference
+	_jsii_.Get(
+		j,
+		"buildImageAutoUpgrade",
 		&returns,
 	)
 	return returns
@@ -606,7 +617,7 @@ func (j *jsiiProxy_PagesProject) UsesFunctions() cdktn.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjectConfig) PagesProject {
 	_init_.Initialize()
 
@@ -624,7 +635,7 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject_Override(p PagesProject, scope constructs.Construct, id *string, config *PagesProjectConfig) {
 	_init_.Initialize()
 

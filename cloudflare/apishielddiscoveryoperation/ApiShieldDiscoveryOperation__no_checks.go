@@ -107,11 +107,11 @@ func (j *jsiiProxy_ApiShieldDiscoveryOperation) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldDiscoveryOperation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApiShieldDiscoveryOperation) validateSetDiscoveryIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldDiscoveryOperation) validateSetOperationIdParameters(val *string) error {
+func (j *jsiiProxy_ApiShieldDiscoveryOperation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

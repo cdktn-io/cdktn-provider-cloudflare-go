@@ -47,6 +47,10 @@ func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) validateInterpolatio
 	return nil
 }
 
+func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) validatePutCreatedFromEmdashPluginParameters(value *AiSearchInstanceMetadataCreatedFromEmdashPlugin) error {
+	return nil
+}
+
 func (a *jsiiProxy_AiSearchInstanceMetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }

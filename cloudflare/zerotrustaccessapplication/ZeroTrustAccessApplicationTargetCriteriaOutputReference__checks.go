@@ -93,6 +93,39 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) vali
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validatePutExcludeParameters(value *ZeroTrustAccessApplicationTargetCriteriaExclude) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validatePutIncludeParameters(value *ZeroTrustAccessApplicationTargetCriteriaInclude) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validatePutRequireParameters(value *ZeroTrustAccessApplicationTargetCriteriaRequire) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	if context == nil {
 		return fmt.Errorf("parameter context is required, but nil was provided")

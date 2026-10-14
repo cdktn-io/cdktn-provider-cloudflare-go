@@ -54,7 +54,7 @@ type DataCloudflareZeroTrustDlpCustomProfileSharedEntriesOutputReference interfa
 	Type() *string
 	UpdatedAt() *string
 	Variant() DataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariantOutputReference
-	WordList() *string
+	WordList() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileSharedEntriesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileSharedEntriesOutputReference) WordList() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileSharedEntriesOutputReference) WordList() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"wordList",

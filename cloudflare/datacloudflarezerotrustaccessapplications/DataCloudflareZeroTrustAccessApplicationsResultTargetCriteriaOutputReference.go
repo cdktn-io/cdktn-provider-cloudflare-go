@@ -28,12 +28,15 @@ type DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaOutputReferenc
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Exclude() DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaExcludeOutputReference
 	// Experimental.
 	Fqn() *string
+	Include() DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaIncludeOutputReference
 	InternalValue() *DataCloudflareZeroTrustAccessApplicationsResultTargetCriteria
 	SetInternalValue(val *DataCloudflareZeroTrustAccessApplicationsResultTargetCriteria)
 	Port() *float64
 	Protocol() *string
+	Require() DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaRequireOutputReference
 	TargetAttributes() cdktn.StringListMap
 	// Experimental.
 	TerraformAttribute() *string
@@ -112,11 +115,31 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultTargetCriteria
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaOutputReference) Exclude() DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaExcludeOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaExcludeOutputReference
+	_jsii_.Get(
+		j,
+		"exclude",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaOutputReference) Include() DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaIncludeOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaIncludeOutputReference
+	_jsii_.Get(
+		j,
+		"include",
 		&returns,
 	)
 	return returns
@@ -147,6 +170,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultTargetCriteria
 	_jsii_.Get(
 		j,
 		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaOutputReference) Require() DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaRequireOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationsResultTargetCriteriaRequireOutputReference
+	_jsii_.Get(
+		j,
+		"require",
 		&returns,
 	)
 	return returns

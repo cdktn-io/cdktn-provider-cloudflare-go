@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -23,6 +23,9 @@ type WorkersScript interface {
 	Assets() WorkersScriptAssetsOutputReference
 	AssetsInput() interface{}
 	Bindings() WorkersScriptBindingsList
+	BindingsInherit() *string
+	SetBindingsInherit(val *string)
+	BindingsInheritInput() *string
 	BindingsInput() interface{}
 	BodyPart() *string
 	SetBodyPart(val *string)
@@ -250,6 +253,7 @@ type WorkersScript interface {
 	ResetAnnotations()
 	ResetAssets()
 	ResetBindings()
+	ResetBindingsInherit()
 	ResetBodyPart()
 	ResetCacheOptions()
 	ResetCompatibilityDate()
@@ -367,6 +371,26 @@ func (j *jsiiProxy_WorkersScript) Bindings() WorkersScriptBindingsList {
 	_jsii_.Get(
 		j,
 		"bindings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) BindingsInherit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bindingsInherit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) BindingsInheritInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bindingsInheritInput",
 		&returns,
 	)
 	return returns
@@ -1133,7 +1157,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -1151,7 +1175,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -1169,6 +1193,17 @@ func (j *jsiiProxy_WorkersScript)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScript)SetBindingsInherit(val *string) {
+	if err := j.validateSetBindingsInheritParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bindingsInherit",
 		val,
 	)
 }
@@ -1927,6 +1962,14 @@ func (w *jsiiProxy_WorkersScript) ResetBindings() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetBindings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetBindingsInherit() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetBindingsInherit",
 		nil, // no parameters
 	)
 }

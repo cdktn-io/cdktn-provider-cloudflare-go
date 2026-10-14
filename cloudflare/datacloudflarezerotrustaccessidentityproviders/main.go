@@ -180,6 +180,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "issuerUrl", GoGetter: "IssuerUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "loginPageAutoPrompt", GoGetter: "LoginPageAutoPrompt"},
 			_jsii_.MemberProperty{JsiiProperty: "maxSsoUrlLength", GoGetter: "MaxSsoUrlLength"},
 			_jsii_.MemberProperty{JsiiProperty: "oktaAccount", GoGetter: "OktaAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "oneloginAccount", GoGetter: "OneloginAccount"},

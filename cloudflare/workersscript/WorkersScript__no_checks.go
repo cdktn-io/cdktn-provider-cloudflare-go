@@ -151,6 +151,10 @@ func (j *jsiiProxy_WorkersScript) validateSetAccountIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScript) validateSetBindingsInheritParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScript) validateSetBodyPartParameters(val *string) error {
 	return nil
 }

@@ -122,6 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "inUse", GoGetter: "InUse"},
 			_jsii_.MemberProperty{JsiiProperty: "issuerOrg", GoGetter: "IssuerOrg"},
 			_jsii_.MemberProperty{JsiiProperty: "issuerRaw", GoGetter: "IssuerRaw"},
+			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

@@ -23,6 +23,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "assets", GoGetter: "Assets"},
 			_jsii_.MemberProperty{JsiiProperty: "assetsInput", GoGetter: "AssetsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bindings", GoGetter: "Bindings"},
+			_jsii_.MemberProperty{JsiiProperty: "bindingsInherit", GoGetter: "BindingsInherit"},
+			_jsii_.MemberProperty{JsiiProperty: "bindingsInheritInput", GoGetter: "BindingsInheritInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bindingsInput", GoGetter: "BindingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyPart", GoGetter: "BodyPart"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyPartInput", GoGetter: "BodyPartInput"},
@@ -122,6 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssets", GoMethod: "ResetAssets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBindings", GoMethod: "ResetBindings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBindingsInherit", GoMethod: "ResetBindingsInherit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBodyPart", GoMethod: "ResetBodyPart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCacheOptions", GoMethod: "ResetCacheOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompatibilityDate", GoMethod: "ResetCompatibilityDate"},
@@ -507,6 +510,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pipeline", GoGetter: "Pipeline"},
 			_jsii_.MemberProperty{JsiiProperty: "pipelineInput", GoGetter: "PipelineInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putOutbound", GoMethod: "PutOutbound"},
+			_jsii_.MemberMethod{JsiiMethod: "putRetry", GoMethod: "PutRetry"},
 			_jsii_.MemberMethod{JsiiMethod: "putSimple", GoMethod: "PutSimple"},
 			_jsii_.MemberProperty{JsiiProperty: "queueName", GoGetter: "QueueName"},
 			_jsii_.MemberProperty{JsiiProperty: "queueNameInput", GoGetter: "QueueNameInput"},
@@ -539,6 +543,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPart", GoMethod: "ResetPart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPipeline", GoMethod: "ResetPipeline"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueueName", GoMethod: "ResetQueueName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRetry", GoMethod: "ResetRetry"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScriptName", GoMethod: "ResetScriptName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretName", GoMethod: "ResetSecretName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetService", GoMethod: "ResetService"},
@@ -552,6 +557,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetVersionId", GoMethod: "ResetVersionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkflowName", GoMethod: "ResetWorkflowName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "retry", GoGetter: "Retry"},
+			_jsii_.MemberProperty{JsiiProperty: "retryInput", GoGetter: "RetryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptName", GoGetter: "ScriptName"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptNameInput", GoGetter: "ScriptNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretName", GoGetter: "SecretName"},
@@ -584,6 +591,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersScriptBindingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsRetry",
+		reflect.TypeOf((*WorkersScriptBindingsRetry)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsRetryOutputReference",
+		reflect.TypeOf((*WorkersScriptBindingsRetryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxAttempts", GoGetter: "MaxAttempts"},
+			_jsii_.MemberProperty{JsiiProperty: "maxAttemptsInput", GoGetter: "MaxAttemptsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxAttempts", GoMethod: "ResetMaxAttempts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimeoutMs", GoMethod: "ResetTimeoutMs"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timeoutMs", GoGetter: "TimeoutMs"},
+			_jsii_.MemberProperty{JsiiProperty: "timeoutMsInput", GoGetter: "TimeoutMsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkersScriptBindingsRetryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

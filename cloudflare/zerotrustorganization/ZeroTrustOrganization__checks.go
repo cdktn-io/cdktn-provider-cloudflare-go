@@ -248,7 +248,7 @@ func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaConfigParameters(value *
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaSshPivKeyRequirementsParameters(value *ZeroTrustOrganizationMfaSshPivKeyRequirements) error {
+func (z *jsiiProxy_ZeroTrustOrganization) validatePutMfaPivKeyRequirementsParameters(value *ZeroTrustOrganizationMfaPivKeyRequirements) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

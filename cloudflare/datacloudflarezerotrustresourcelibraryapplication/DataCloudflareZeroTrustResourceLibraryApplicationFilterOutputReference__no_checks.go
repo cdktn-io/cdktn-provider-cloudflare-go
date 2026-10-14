@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutput
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference) validateSetLookupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference) validateSetOffsetParameters(val *float64) error {
 	return nil
 }

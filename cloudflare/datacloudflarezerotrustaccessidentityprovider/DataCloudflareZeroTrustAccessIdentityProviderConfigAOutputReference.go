@@ -51,6 +51,7 @@ type DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference interfa
 	InternalValue() *DataCloudflareZeroTrustAccessIdentityProviderConfigA
 	SetInternalValue(val *DataCloudflareZeroTrustAccessIdentityProviderConfigA)
 	IssuerUrl() *string
+	LoginPageAutoPrompt() cdktn.IResolvable
 	MaxSsoUrlLength() *float64
 	OktaAccount() *string
 	OneloginAccount() *string
@@ -347,6 +348,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputRef
 	_jsii_.Get(
 		j,
 		"issuerUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference) LoginPageAutoPrompt() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"loginPageAutoPrompt",
 		&returns,
 	)
 	return returns

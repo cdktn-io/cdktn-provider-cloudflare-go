@@ -24,7 +24,7 @@ type DataCloudflareZeroTrustListsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specify the Cloudflare account identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Sort direction.
 	//
@@ -39,7 +39,7 @@ type DataCloudflareZeroTrustListsConfig struct {
 	//   * `desc` — descending.
 	// Available values: "asc", "desc".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#direction DataCloudflareZeroTrustLists#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_lists#direction DataCloudflareZeroTrustLists#direction}
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 	// Filter the returned lists by one or more `field:value` pairs.
 	//
@@ -58,11 +58,11 @@ type DataCloudflareZeroTrustListsConfig struct {
 	// `type` is restricted to the valid list type values, and `item_count` must be
 	// a non-negative integer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#filter DataCloudflareZeroTrustLists#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_lists#filter DataCloudflareZeroTrustLists#filter}
 	Filter *[]*string `field:"optional" json:"filter" yaml:"filter"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// Field to sort the returned lists by.
 	//
@@ -75,15 +75,15 @@ type DataCloudflareZeroTrustListsConfig struct {
 	//   * `item_count` — sort by number of items in the list.
 	// Available values: "name", "created_at", "updated_at", "item_count".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#order_by DataCloudflareZeroTrustLists#order_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_lists#order_by DataCloudflareZeroTrustLists#order_by}
 	OrderBy *string `field:"optional" json:"orderBy" yaml:"orderBy"`
 	// Case-insensitive substring match on the list name or description. When combined with `filter`, both must match (logical AND).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#search DataCloudflareZeroTrustLists#search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_lists#search DataCloudflareZeroTrustLists#search}
 	Search *string `field:"optional" json:"search" yaml:"search"`
 	// Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

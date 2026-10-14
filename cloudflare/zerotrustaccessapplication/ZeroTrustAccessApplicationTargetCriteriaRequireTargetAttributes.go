@@ -1,0 +1,11 @@
+// Copyright IBM Corp. 2021, 2026
+// SPDX-License-Identifier: MPL-2.0
+
+package zerotrustaccessapplication
+
+
+type ZeroTrustAccessApplicationTargetCriteriaRequireTargetAttributes struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_access_application#hostname ZeroTrustAccessApplication#hostname}.
+	Hostname *[]*string `field:"required" json:"hostname" yaml:"hostname"`
+}
+

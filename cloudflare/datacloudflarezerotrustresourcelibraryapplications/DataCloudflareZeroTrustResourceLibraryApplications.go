@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications}.
 type DataCloudflareZeroTrustResourceLibraryApplications interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -51,6 +51,9 @@ type DataCloudflareZeroTrustResourceLibraryApplications interface {
 	Limit() *float64
 	SetLimit(val *float64)
 	LimitInput() *float64
+	Lookup() *string
+	SetLookup(val *string)
+	LookupInput() *string
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
@@ -119,6 +122,7 @@ type DataCloudflareZeroTrustResourceLibraryApplications interface {
 	ResetFields()
 	ResetFilter()
 	ResetLimit()
+	ResetLookup()
 	ResetMaxItems()
 	ResetOffset()
 	ResetOrderBy()
@@ -314,6 +318,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) LimitInpu
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) Lookup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lookup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) LookupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lookupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) MaxItems() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -465,7 +489,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplications(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationsConfig) DataCloudflareZeroTrustResourceLibraryApplications {
 	_init_.Initialize()
 
@@ -483,7 +507,7 @@ func NewDataCloudflareZeroTrustResourceLibraryApplications(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplications_Override(d DataCloudflareZeroTrustResourceLibraryApplications, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationsConfig) {
 	_init_.Initialize()
 
@@ -572,6 +596,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications)SetLimit(v
 	_jsii_.Set(
 		j,
 		"limit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications)SetLookup(val *string) {
+	if err := j.validateSetLookupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lookup",
 		val,
 	)
 }
@@ -944,6 +979,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) ResetLimi
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) ResetLookup() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLookup",
 		nil, // no parameters
 	)
 }

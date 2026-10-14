@@ -51,6 +51,10 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) validatePutOutboundPara
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) validatePutRetryParameters(value *WorkersScriptBindingsRetry) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScriptBindingsOutputReference) validatePutSimpleParameters(value *WorkersScriptBindingsSimple) error {
 	return nil
 }

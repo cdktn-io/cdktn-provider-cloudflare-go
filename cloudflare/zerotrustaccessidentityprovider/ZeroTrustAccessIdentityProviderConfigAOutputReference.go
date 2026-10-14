@@ -88,6 +88,9 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	IssuerUrl() *string
 	SetIssuerUrl(val *string)
 	IssuerUrlInput() *string
+	LoginPageAutoPrompt() interface{}
+	SetLoginPageAutoPrompt(val interface{})
+	LoginPageAutoPromptInput() interface{}
 	MaxSsoUrlLength() *float64
 	SetMaxSsoUrlLength(val *float64)
 	MaxSsoUrlLengthInput() *float64
@@ -180,6 +183,7 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	ResetHeaderAttributes()
 	ResetIdpPublicCerts()
 	ResetIssuerUrl()
+	ResetLoginPageAutoPrompt()
 	ResetMaxSsoUrlLength()
 	ResetOktaAccount()
 	ResetOneloginAccount()
@@ -633,6 +637,26 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Issuer
 	_jsii_.Get(
 		j,
 		"issuerUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) LoginPageAutoPrompt() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"loginPageAutoPrompt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) LoginPageAutoPromptInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"loginPageAutoPromptInput",
 		&returns,
 	)
 	return returns
@@ -1187,6 +1211,17 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetIssu
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetLoginPageAutoPrompt(val interface{}) {
+	if err := j.validateSetLoginPageAutoPromptParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loginPageAutoPrompt",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetMaxSsoUrlLength(val *float64) {
 	if err := j.validateSetMaxSsoUrlLengthParameters(val); err != nil {
 		panic(err)
@@ -1697,6 +1732,14 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetI
 	_jsii_.InvokeVoid(
 		z,
 		"resetIssuerUrl",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetLoginPageAutoPrompt() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetLoginPageAutoPrompt",
 		nil, // no parameters
 	)
 }

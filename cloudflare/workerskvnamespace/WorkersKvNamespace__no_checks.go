@@ -119,6 +119,10 @@ func (j *jsiiProxy_WorkersKvNamespace) validateSetLifecycleParameters(val *cdktn
 	return nil
 }
 
+func (j *jsiiProxy_WorkersKvNamespace) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersKvNamespace) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

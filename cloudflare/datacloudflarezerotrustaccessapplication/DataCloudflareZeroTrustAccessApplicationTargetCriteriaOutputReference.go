@@ -28,12 +28,15 @@ type DataCloudflareZeroTrustAccessApplicationTargetCriteriaOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Exclude() DataCloudflareZeroTrustAccessApplicationTargetCriteriaExcludeOutputReference
 	// Experimental.
 	Fqn() *string
+	Include() DataCloudflareZeroTrustAccessApplicationTargetCriteriaIncludeOutputReference
 	InternalValue() *DataCloudflareZeroTrustAccessApplicationTargetCriteria
 	SetInternalValue(val *DataCloudflareZeroTrustAccessApplicationTargetCriteria)
 	Port() *float64
 	Protocol() *string
+	Require() DataCloudflareZeroTrustAccessApplicationTargetCriteriaRequireOutputReference
 	TargetAttributes() cdktn.StringListMap
 	// Experimental.
 	TerraformAttribute() *string
@@ -112,11 +115,31 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationTargetCriteriaOutputR
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationTargetCriteriaOutputReference) Exclude() DataCloudflareZeroTrustAccessApplicationTargetCriteriaExcludeOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationTargetCriteriaExcludeOutputReference
+	_jsii_.Get(
+		j,
+		"exclude",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationTargetCriteriaOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationTargetCriteriaOutputReference) Include() DataCloudflareZeroTrustAccessApplicationTargetCriteriaIncludeOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationTargetCriteriaIncludeOutputReference
+	_jsii_.Get(
+		j,
+		"include",
 		&returns,
 	)
 	return returns
@@ -147,6 +170,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationTargetCriteriaOutputR
 	_jsii_.Get(
 		j,
 		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationTargetCriteriaOutputReference) Require() DataCloudflareZeroTrustAccessApplicationTargetCriteriaRequireOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationTargetCriteriaRequireOutputReference
+	_jsii_.Get(
+		j,
+		"require",
 		&returns,
 	)
 	return returns

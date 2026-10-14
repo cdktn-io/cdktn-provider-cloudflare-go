@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
 type ApiShieldDiscoveryOperation interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type ApiShieldDiscoveryOperation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DiscoveryId() *string
+	SetDiscoveryId(val *string)
+	DiscoveryIdInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -39,16 +42,12 @@ type ApiShieldDiscoveryOperation interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	OperationId() *string
-	SetOperationId(val *string)
-	OperationIdInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -167,7 +166,6 @@ type ApiShieldDiscoveryOperation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetState()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -245,6 +243,26 @@ func (j *jsiiProxy_ApiShieldDiscoveryOperation) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ApiShieldDiscoveryOperation) DiscoveryId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldDiscoveryOperation) DiscoveryIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShieldDiscoveryOperation) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -275,16 +293,6 @@ func (j *jsiiProxy_ApiShieldDiscoveryOperation) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShieldDiscoveryOperation) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiShieldDiscoveryOperation) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -300,26 +308,6 @@ func (j *jsiiProxy_ApiShieldDiscoveryOperation) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiShieldDiscoveryOperation) OperationId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"operationId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiShieldDiscoveryOperation) OperationIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"operationIdInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +414,7 @@ func (j *jsiiProxy_ApiShieldDiscoveryOperation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation} Resource.
 func NewApiShieldDiscoveryOperation(scope constructs.Construct, id *string, config *ApiShieldDiscoveryOperationConfig) ApiShieldDiscoveryOperation {
 	_init_.Initialize()
 
@@ -444,7 +432,7 @@ func NewApiShieldDiscoveryOperation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.27.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation} Resource.
 func NewApiShieldDiscoveryOperation_Override(a ApiShieldDiscoveryOperation, scope constructs.Construct, id *string, config *ApiShieldDiscoveryOperationConfig) {
 	_init_.Initialize()
 
@@ -485,6 +473,17 @@ func (j *jsiiProxy_ApiShieldDiscoveryOperation)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_ApiShieldDiscoveryOperation)SetDiscoveryId(val *string) {
+	if err := j.validateSetDiscoveryIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"discoveryId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApiShieldDiscoveryOperation)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -500,17 +499,6 @@ func (j *jsiiProxy_ApiShieldDiscoveryOperation)SetLifecycle(val *cdktn.Terraform
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiShieldDiscoveryOperation)SetOperationId(val *string) {
-	if err := j.validateSetOperationIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"operationId",
 		val,
 	)
 }
@@ -948,14 +936,6 @@ func (a *jsiiProxy_ApiShieldDiscoveryOperation) ResetState() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetState",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiShieldDiscoveryOperation) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

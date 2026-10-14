@@ -41,6 +41,9 @@ type DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference inte
 	Limit() *float64
 	SetLimit(val *float64)
 	LimitInput() *float64
+	Lookup() *string
+	SetLookup(val *string)
+	LookupInput() *string
 	Offset() *float64
 	SetOffset(val *float64)
 	OffsetInput() *float64
@@ -85,6 +88,7 @@ type DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference inte
 	ResetFields()
 	ResetFilter()
 	ResetLimit()
+	ResetLookup()
 	ResetOffset()
 	ResetOrderBy()
 	ResetSearch()
@@ -208,6 +212,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutput
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference) Lookup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lookup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference) LookupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lookupInput",
 		&returns,
 	)
 	return returns
@@ -383,6 +407,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutput
 	_jsii_.Set(
 		j,
 		"limit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference)SetLookup(val *string) {
+	if err := j.validateSetLookupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lookup",
 		val,
 	)
 }
@@ -648,6 +683,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutput
 	_jsii_.InvokeVoid(
 		d,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplicationFilterOutputReference) ResetLookup() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLookup",
 		nil, // no parameters
 	)
 }

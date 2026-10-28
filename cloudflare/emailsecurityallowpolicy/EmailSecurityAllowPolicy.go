@@ -5,14 +5,14 @@ package emailsecurityallowpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecurityallowpolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecurityallowpolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy}.
 type EmailSecurityAllowPolicy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -668,7 +668,7 @@ func (j *jsiiProxy_EmailSecurityAllowPolicy) VerifySenderInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy} Resource.
 func NewEmailSecurityAllowPolicy(scope constructs.Construct, id *string, config *EmailSecurityAllowPolicyConfig) EmailSecurityAllowPolicy {
 	_init_.Initialize()
 
@@ -686,7 +686,7 @@ func NewEmailSecurityAllowPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy} Resource.
 func NewEmailSecurityAllowPolicy_Override(e EmailSecurityAllowPolicy, scope constructs.Construct, id *string, config *EmailSecurityAllowPolicyConfig) {
 	_init_.Initialize()
 

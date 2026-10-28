@@ -5,14 +5,14 @@ package datacloudflarer2bucketeventnotification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarer2bucketeventnotification/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarer2bucketeventnotification/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
 type DataCloudflareR2BucketEventNotification interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source.
 func NewDataCloudflareR2BucketEventNotification(scope constructs.Construct, id *string, config *DataCloudflareR2BucketEventNotificationConfig) DataCloudflareR2BucketEventNotification {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataCloudflareR2BucketEventNotification(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source.
 func NewDataCloudflareR2BucketEventNotification_Override(d DataCloudflareR2BucketEventNotification, scope constructs.Construct, id *string, config *DataCloudflareR2BucketEventNotificationConfig) {
 	_init_.Initialize()
 

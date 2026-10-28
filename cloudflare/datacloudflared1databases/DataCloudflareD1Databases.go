@@ -5,14 +5,14 @@ package datacloudflared1databases
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflared1databases/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflared1databases/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/d1_databases cloudflare_d1_databases}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/d1_databases cloudflare_d1_databases}.
 type DataCloudflareD1Databases interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareD1Databases) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/d1_databases cloudflare_d1_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/d1_databases cloudflare_d1_databases} Data Source.
 func NewDataCloudflareD1Databases(scope constructs.Construct, id *string, config *DataCloudflareD1DatabasesConfig) DataCloudflareD1Databases {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataCloudflareD1Databases(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/d1_databases cloudflare_d1_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/d1_databases cloudflare_d1_databases} Data Source.
 func NewDataCloudflareD1Databases_Override(d DataCloudflareD1Databases, scope constructs.Construct, id *string, config *DataCloudflareD1DatabasesConfig) {
 	_init_.Initialize()
 

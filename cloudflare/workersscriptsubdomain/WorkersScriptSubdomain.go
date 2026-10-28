@@ -5,14 +5,14 @@ package workersscriptsubdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersscriptsubdomain/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersscriptsubdomain/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}.
 type WorkersScriptSubdomain interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_WorkersScriptSubdomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
 func NewWorkersScriptSubdomain(scope constructs.Construct, id *string, config *WorkersScriptSubdomainConfig) WorkersScriptSubdomain {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewWorkersScriptSubdomain(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource.
 func NewWorkersScriptSubdomain_Override(w WorkersScriptSubdomain, scope constructs.Construct, id *string, config *WorkersScriptSubdomainConfig) {
 	_init_.Initialize()
 

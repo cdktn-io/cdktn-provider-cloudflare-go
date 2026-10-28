@@ -5,14 +5,14 @@ package observatoryscheduledtest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/observatoryscheduledtest/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/observatoryscheduledtest/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
 type ObservatoryScheduledTest interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_ObservatoryScheduledTest) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
 func NewObservatoryScheduledTest(scope constructs.Construct, id *string, config *ObservatoryScheduledTestConfig) ObservatoryScheduledTest {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewObservatoryScheduledTest(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
 func NewObservatoryScheduledTest_Override(o ObservatoryScheduledTest, scope constructs.Construct, id *string, config *ObservatoryScheduledTestConfig) {
 	_init_.Initialize()
 

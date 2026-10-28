@@ -5,14 +5,14 @@ package zerotrustgatewaypacfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustgatewaypacfile/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustgatewaypacfile/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
 type ZeroTrustGatewayPacfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -505,7 +505,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPacfile) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
 func NewZeroTrustGatewayPacfile(scope constructs.Construct, id *string, config *ZeroTrustGatewayPacfileConfig) ZeroTrustGatewayPacfile {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewZeroTrustGatewayPacfile(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile} Resource.
 func NewZeroTrustGatewayPacfile_Override(z ZeroTrustGatewayPacfile, scope constructs.Construct, id *string, config *ZeroTrustGatewayPacfileConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package secretsstore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/secretsstore/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/secretsstore/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/secrets_store cloudflare_secrets_store}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store cloudflare_secrets_store}.
 type SecretsStore interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -447,7 +447,7 @@ func (j *jsiiProxy_SecretsStore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/secrets_store cloudflare_secrets_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store cloudflare_secrets_store} Resource.
 func NewSecretsStore(scope constructs.Construct, id *string, config *SecretsStoreConfig) SecretsStore {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewSecretsStore(scope constructs.Construct, id *string, config *SecretsStor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/secrets_store cloudflare_secrets_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store cloudflare_secrets_store} Resource.
 func NewSecretsStore_Override(s SecretsStore, scope constructs.Construct, id *string, config *SecretsStoreConfig) {
 	_init_.Initialize()
 

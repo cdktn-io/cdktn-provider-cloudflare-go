@@ -5,14 +5,14 @@ package datacloudflarezerotrustresourcelibraryapplications
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustresourcelibraryapplications/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrustresourcelibraryapplications/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications}.
 type DataCloudflareZeroTrustResourceLibraryApplications interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -489,7 +489,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustResourceLibraryApplications) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplications(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationsConfig) DataCloudflareZeroTrustResourceLibraryApplications {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewDataCloudflareZeroTrustResourceLibraryApplications(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_applications cloudflare_zero_trust_resource_library_applications} Data Source.
 func NewDataCloudflareZeroTrustResourceLibraryApplications_Override(d DataCloudflareZeroTrustResourceLibraryApplications, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustResourceLibraryApplicationsConfig) {
 	_init_.Initialize()
 

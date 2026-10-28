@@ -7,7 +7,7 @@ package worker
 type WorkerPreviewsBaseConfigEnv struct {
 	// The kind of resource that the binding provides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/worker#type Worker#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/worker#type Worker#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

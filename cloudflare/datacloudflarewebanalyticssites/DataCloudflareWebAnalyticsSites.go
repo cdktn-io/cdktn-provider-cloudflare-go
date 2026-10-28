@@ -5,14 +5,14 @@ package datacloudflarewebanalyticssites
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarewebanalyticssites/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarewebanalyticssites/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites}.
 type DataCloudflareWebAnalyticsSites interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareWebAnalyticsSites) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source.
 func NewDataCloudflareWebAnalyticsSites(scope constructs.Construct, id *string, config *DataCloudflareWebAnalyticsSitesConfig) DataCloudflareWebAnalyticsSites {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataCloudflareWebAnalyticsSites(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source.
 func NewDataCloudflareWebAnalyticsSites_Override(d DataCloudflareWebAnalyticsSites, scope constructs.Construct, id *string, config *DataCloudflareWebAnalyticsSitesConfig) {
 	_init_.Initialize()
 

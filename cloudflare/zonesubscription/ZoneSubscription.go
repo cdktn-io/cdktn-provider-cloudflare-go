@@ -5,14 +5,14 @@ package zonesubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonesubscription/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonesubscription/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription cloudflare_zone_subscription}.
 type ZoneSubscription interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -481,7 +481,7 @@ func (j *jsiiProxy_ZoneSubscription) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
 func NewZoneSubscription(scope constructs.Construct, id *string, config *ZoneSubscriptionConfig) ZoneSubscription {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewZoneSubscription(scope constructs.Construct, id *string, config *ZoneSub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
 func NewZoneSubscription_Override(z ZoneSubscription, scope constructs.Construct, id *string, config *ZoneSubscriptionConfig) {
 	_init_.Initialize()
 

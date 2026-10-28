@@ -5,14 +5,14 @@ package zerotrustcasbpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustcasbpolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustcasbpolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_policy cloudflare_zero_trust_casb_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_policy cloudflare_zero_trust_casb_policy}.
 type ZeroTrustCasbPolicy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -585,7 +585,7 @@ func (j *jsiiProxy_ZeroTrustCasbPolicy) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_policy cloudflare_zero_trust_casb_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_policy cloudflare_zero_trust_casb_policy} Resource.
 func NewZeroTrustCasbPolicy(scope constructs.Construct, id *string, config *ZeroTrustCasbPolicyConfig) ZeroTrustCasbPolicy {
 	_init_.Initialize()
 
@@ -603,7 +603,7 @@ func NewZeroTrustCasbPolicy(scope constructs.Construct, id *string, config *Zero
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_policy cloudflare_zero_trust_casb_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_policy cloudflare_zero_trust_casb_policy} Resource.
 func NewZeroTrustCasbPolicy_Override(z ZeroTrustCasbPolicy, scope constructs.Construct, id *string, config *ZeroTrustCasbPolicyConfig) {
 	_init_.Initialize()
 

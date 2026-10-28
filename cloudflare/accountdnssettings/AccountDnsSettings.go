@@ -5,14 +5,14 @@ package accountdnssettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/accountdnssettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/accountdnssettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
 type AccountDnsSettings interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_AccountDnsSettings) ZoneDefaultsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
 func NewAccountDnsSettings(scope constructs.Construct, id *string, config *AccountDnsSettingsConfig) AccountDnsSettings {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewAccountDnsSettings(scope constructs.Construct, id *string, config *Accou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account_dns_settings cloudflare_account_dns_settings} Resource.
 func NewAccountDnsSettings_Override(a AccountDnsSettings, scope constructs.Construct, id *string, config *AccountDnsSettingsConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package byoipprefix
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/byoipprefix/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/byoipprefix/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 type ByoIpPrefix interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -617,7 +617,7 @@ func (j *jsiiProxy_ByoIpPrefix) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
 func NewByoIpPrefix(scope constructs.Construct, id *string, config *ByoIpPrefixConfig) ByoIpPrefix {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewByoIpPrefix(scope constructs.Construct, id *string, config *ByoIpPrefixC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource.
 func NewByoIpPrefix_Override(b ByoIpPrefix, scope constructs.Construct, id *string, config *ByoIpPrefixConfig) {
 	_init_.Initialize()
 

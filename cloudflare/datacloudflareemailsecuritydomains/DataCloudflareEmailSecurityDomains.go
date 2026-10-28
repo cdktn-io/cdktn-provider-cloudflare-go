@@ -5,14 +5,14 @@ package datacloudflareemailsecuritydomains
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareemailsecuritydomains/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareemailsecuritydomains/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/email_security_domains cloudflare_email_security_domains}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_security_domains cloudflare_email_security_domains}.
 type DataCloudflareEmailSecurityDomains interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -513,7 +513,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityDomains) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/email_security_domains cloudflare_email_security_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_security_domains cloudflare_email_security_domains} Data Source.
 func NewDataCloudflareEmailSecurityDomains(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityDomainsConfig) DataCloudflareEmailSecurityDomains {
 	_init_.Initialize()
 
@@ -531,7 +531,7 @@ func NewDataCloudflareEmailSecurityDomains(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/email_security_domains cloudflare_email_security_domains} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_security_domains cloudflare_email_security_domains} Data Source.
 func NewDataCloudflareEmailSecurityDomains_Override(d DataCloudflareEmailSecurityDomains, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityDomainsConfig) {
 	_init_.Initialize()
 

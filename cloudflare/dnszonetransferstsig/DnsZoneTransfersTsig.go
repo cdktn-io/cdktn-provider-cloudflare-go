@@ -5,14 +5,14 @@ package dnszonetransferstsig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/dnszonetransferstsig/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/dnszonetransferstsig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig}.
 type DnsZoneTransfersTsig interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -447,7 +447,7 @@ func (j *jsiiProxy_DnsZoneTransfersTsig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Resource.
 func NewDnsZoneTransfersTsig(scope constructs.Construct, id *string, config *DnsZoneTransfersTsigConfig) DnsZoneTransfersTsig {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewDnsZoneTransfersTsig(scope constructs.Construct, id *string, config *Dns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig} Resource.
 func NewDnsZoneTransfersTsig_Override(d DnsZoneTransfersTsig, scope constructs.Construct, id *string, config *DnsZoneTransfersTsigConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package streamaudiotrack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamaudiotrack/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamaudiotrack/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
 type StreamAudioTrack interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_StreamAudioTrack) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
 func NewStreamAudioTrack(scope constructs.Construct, id *string, config *StreamAudioTrackConfig) StreamAudioTrack {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewStreamAudioTrack(scope constructs.Construct, id *string, config *StreamA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_audio_track cloudflare_stream_audio_track} Resource.
 func NewStreamAudioTrack_Override(s StreamAudioTrack, scope constructs.Construct, id *string, config *StreamAudioTrackConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package clientcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/clientcertificate/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/clientcertificate/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/client_certificate cloudflare_client_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/client_certificate cloudflare_client_certificate}.
 type ClientCertificate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -613,7 +613,7 @@ func (j *jsiiProxy_ClientCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/client_certificate cloudflare_client_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/client_certificate cloudflare_client_certificate} Resource.
 func NewClientCertificate(scope constructs.Construct, id *string, config *ClientCertificateConfig) ClientCertificate {
 	_init_.Initialize()
 
@@ -631,7 +631,7 @@ func NewClientCertificate(scope constructs.Construct, id *string, config *Client
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/client_certificate cloudflare_client_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/client_certificate cloudflare_client_certificate} Resource.
 func NewClientCertificate_Override(c ClientCertificate, scope constructs.Construct, id *string, config *ClientCertificateConfig) {
 	_init_.Initialize()
 

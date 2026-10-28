@@ -5,14 +5,14 @@ package apishieldoperationschemavalidationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishieldoperationschemavalidationsettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishieldoperationschemavalidationsettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings}.
 type ApiShieldOperationSchemaValidationSettings interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_ApiShieldOperationSchemaValidationSettings) ZoneIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
 func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, id *string, config *ApiShieldOperationSchemaValidationSettingsConfig) ApiShieldOperationSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewApiShieldOperationSchemaValidationSettings(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_operation_schema_validation_settings cloudflare_api_shield_operation_schema_validation_settings} Resource.
 func NewApiShieldOperationSchemaValidationSettings_Override(a ApiShieldOperationSchemaValidationSettings, scope constructs.Construct, id *string, config *ApiShieldOperationSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 

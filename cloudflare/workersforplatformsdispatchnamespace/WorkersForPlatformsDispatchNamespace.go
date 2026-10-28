@@ -5,14 +5,14 @@ package workersforplatformsdispatchnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/workersforplatformsdispatchnamespace/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/workersforplatformsdispatchnamespace/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
 type WorkersForPlatformsDispatchNamespace interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -490,7 +490,7 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TrustedWorkers() cdktn.
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
 func NewWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *string, config *WorkersForPlatformsDispatchNamespaceConfig) WorkersForPlatformsDispatchNamespace {
 	_init_.Initialize()
 
@@ -508,7 +508,7 @@ func NewWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
 func NewWorkersForPlatformsDispatchNamespace_Override(w WorkersForPlatformsDispatchNamespace, scope constructs.Construct, id *string, config *WorkersForPlatformsDispatchNamespaceConfig) {
 	_init_.Initialize()
 

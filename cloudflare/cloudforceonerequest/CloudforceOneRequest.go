@@ -5,14 +5,14 @@ package cloudforceonerequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/cloudforceonerequest/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/cloudforceonerequest/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 type CloudforceOneRequest interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -586,7 +586,7 @@ func (j *jsiiProxy_CloudforceOneRequest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
 func NewCloudforceOneRequest(scope constructs.Construct, id *string, config *CloudforceOneRequestConfig) CloudforceOneRequest {
 	_init_.Initialize()
 
@@ -604,7 +604,7 @@ func NewCloudforceOneRequest(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
 func NewCloudforceOneRequest_Override(c CloudforceOneRequest, scope constructs.Construct, id *string, config *CloudforceOneRequestConfig) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package ruleset
 type RulesetRulesActionParametersOriginRangeRequests struct {
 	// Whether to use range requests. `default` is the behaviour the zone gets without this rule. Available values: "on", "off", "default".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ruleset#mode Ruleset#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ruleset#mode Ruleset#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
 }
 

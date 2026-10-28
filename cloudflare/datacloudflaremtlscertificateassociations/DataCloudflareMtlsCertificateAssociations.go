@@ -5,14 +5,14 @@ package datacloudflaremtlscertificateassociations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremtlscertificateassociations/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremtlscertificateassociations/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations}.
 type DataCloudflareMtlsCertificateAssociations interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareMtlsCertificateAssociations) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations} Data Source.
 func NewDataCloudflareMtlsCertificateAssociations(scope constructs.Construct, id *string, config *DataCloudflareMtlsCertificateAssociationsConfig) DataCloudflareMtlsCertificateAssociations {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataCloudflareMtlsCertificateAssociations(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/mtls_certificate_associations cloudflare_mtls_certificate_associations} Data Source.
 func NewDataCloudflareMtlsCertificateAssociations_Override(d DataCloudflareMtlsCertificateAssociations, scope constructs.Construct, id *string, config *DataCloudflareMtlsCertificateAssociationsConfig) {
 	_init_.Initialize()
 

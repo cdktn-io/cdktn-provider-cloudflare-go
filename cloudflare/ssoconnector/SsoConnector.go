@@ -5,14 +5,14 @@ package ssoconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/ssoconnector/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/ssoconnector/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/sso_connector cloudflare_sso_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/sso_connector cloudflare_sso_connector}.
 type SsoConnector interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -506,7 +506,7 @@ func (j *jsiiProxy_SsoConnector) Verification() SsoConnectorVerificationOutputRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/sso_connector cloudflare_sso_connector} Resource.
 func NewSsoConnector(scope constructs.Construct, id *string, config *SsoConnectorConfig) SsoConnector {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewSsoConnector(scope constructs.Construct, id *string, config *SsoConnecto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/sso_connector cloudflare_sso_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/sso_connector cloudflare_sso_connector} Resource.
 func NewSsoConnector_Override(s SsoConnector, scope constructs.Construct, id *string, config *SsoConnectorConfig) {
 	_init_.Initialize()
 

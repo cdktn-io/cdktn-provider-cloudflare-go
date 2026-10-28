@@ -5,14 +5,14 @@ package imagevariant
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/imagevariant/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/imagevariant/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant cloudflare_image_variant}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant cloudflare_image_variant}.
 type ImageVariant interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_ImageVariant) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant cloudflare_image_variant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant cloudflare_image_variant} Resource.
 func NewImageVariant(scope constructs.Construct, id *string, config *ImageVariantConfig) ImageVariant {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewImageVariant(scope constructs.Construct, id *string, config *ImageVarian
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/image_variant cloudflare_image_variant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/image_variant cloudflare_image_variant} Resource.
 func NewImageVariant_Override(i ImageVariant, scope constructs.Construct, id *string, config *ImageVariantConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package usergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/usergroup/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/usergroup/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group cloudflare_user_group}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group cloudflare_user_group}.
 type UserGroup interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -447,7 +447,7 @@ func (j *jsiiProxy_UserGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group cloudflare_user_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group cloudflare_user_group} Resource.
 func NewUserGroup(scope constructs.Construct, id *string, config *UserGroupConfig) UserGroup {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewUserGroup(scope constructs.Construct, id *string, config *UserGroupConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/user_group cloudflare_user_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/user_group cloudflare_user_group} Resource.
 func NewUserGroup_Override(u UserGroup, scope constructs.Construct, id *string, config *UserGroupConfig) {
 	_init_.Initialize()
 

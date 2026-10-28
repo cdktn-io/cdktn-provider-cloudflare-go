@@ -5,14 +5,14 @@ package datacloudflaremanagedtransforms
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremanagedtransforms/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremanagedtransforms/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/managed_transforms cloudflare_managed_transforms}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/managed_transforms cloudflare_managed_transforms}.
 type DataCloudflareManagedTransforms interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataCloudflareManagedTransforms) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
 func NewDataCloudflareManagedTransforms(scope constructs.Construct, id *string, config *DataCloudflareManagedTransformsConfig) DataCloudflareManagedTransforms {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataCloudflareManagedTransforms(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/managed_transforms cloudflare_managed_transforms} Data Source.
 func NewDataCloudflareManagedTransforms_Override(d DataCloudflareManagedTransforms, scope constructs.Construct, id *string, config *DataCloudflareManagedTransformsConfig) {
 	_init_.Initialize()
 

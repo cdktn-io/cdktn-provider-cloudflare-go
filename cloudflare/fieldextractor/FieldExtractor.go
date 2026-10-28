@@ -5,14 +5,14 @@ package fieldextractor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/fieldextractor/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/fieldextractor/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/field_extractor cloudflare_field_extractor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/field_extractor cloudflare_field_extractor}.
 type FieldExtractor interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_FieldExtractor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/field_extractor cloudflare_field_extractor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/field_extractor cloudflare_field_extractor} Resource.
 func NewFieldExtractor(scope constructs.Construct, id *string, config *FieldExtractorConfig) FieldExtractor {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewFieldExtractor(scope constructs.Construct, id *string, config *FieldExtr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/field_extractor cloudflare_field_extractor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/field_extractor cloudflare_field_extractor} Resource.
 func NewFieldExtractor_Override(f FieldExtractor, scope constructs.Construct, id *string, config *FieldExtractorConfig) {
 	_init_.Initialize()
 

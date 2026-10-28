@@ -5,14 +5,14 @@ package datacloudflaretokenvalidationconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaretokenvalidationconfig/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaretokenvalidationconfig/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/token_validation_config cloudflare_token_validation_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/token_validation_config cloudflare_token_validation_config}.
 type DataCloudflareTokenValidationConfig interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataCloudflareTokenValidationConfig) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
 func NewDataCloudflareTokenValidationConfig(scope constructs.Construct, id *string, config *DataCloudflareTokenValidationConfigConfig) DataCloudflareTokenValidationConfig {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataCloudflareTokenValidationConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/token_validation_config cloudflare_token_validation_config} Data Source.
 func NewDataCloudflareTokenValidationConfig_Override(d DataCloudflareTokenValidationConfig, scope constructs.Construct, id *string, config *DataCloudflareTokenValidationConfigConfig) {
 	_init_.Initialize()
 

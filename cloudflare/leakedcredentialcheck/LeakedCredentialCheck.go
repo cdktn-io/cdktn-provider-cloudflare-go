@@ -5,14 +5,14 @@ package leakedcredentialcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/leakedcredentialcheck/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/leakedcredentialcheck/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
 type LeakedCredentialCheck interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_LeakedCredentialCheck) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
 func NewLeakedCredentialCheck(scope constructs.Construct, id *string, config *LeakedCredentialCheckConfig) LeakedCredentialCheck {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewLeakedCredentialCheck(scope constructs.Construct, id *string, config *Le
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/leaked_credential_check cloudflare_leaked_credential_check} Resource.
 func NewLeakedCredentialCheck_Override(l LeakedCredentialCheck, scope constructs.Construct, id *string, config *LeakedCredentialCheckConfig) {
 	_init_.Initialize()
 

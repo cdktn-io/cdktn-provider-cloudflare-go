@@ -5,14 +5,14 @@ package datacloudflarer2bucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarer2bucket/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarer2bucket/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
 type DataCloudflareR2Bucket interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataCloudflareR2Bucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
 func NewDataCloudflareR2Bucket(scope constructs.Construct, id *string, config *DataCloudflareR2BucketConfig) DataCloudflareR2Bucket {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataCloudflareR2Bucket(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
 func NewDataCloudflareR2Bucket_Override(d DataCloudflareR2Bucket, scope constructs.Construct, id *string, config *DataCloudflareR2BucketConfig) {
 	_init_.Initialize()
 

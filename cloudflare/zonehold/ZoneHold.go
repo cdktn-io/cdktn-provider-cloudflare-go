@@ -5,14 +5,14 @@ package zonehold
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zonehold/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zonehold/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_hold cloudflare_zone_hold}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_hold cloudflare_zone_hold}.
 type ZoneHold interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_ZoneHold) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_hold cloudflare_zone_hold} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_hold cloudflare_zone_hold} Resource.
 func NewZoneHold(scope constructs.Construct, id *string, config *ZoneHoldConfig) ZoneHold {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewZoneHold(scope constructs.Construct, id *string, config *ZoneHoldConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zone_hold cloudflare_zone_hold} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_hold cloudflare_zone_hold} Resource.
 func NewZoneHold_Override(z ZoneHold, scope constructs.Construct, id *string, config *ZoneHoldConfig) {
 	_init_.Initialize()
 

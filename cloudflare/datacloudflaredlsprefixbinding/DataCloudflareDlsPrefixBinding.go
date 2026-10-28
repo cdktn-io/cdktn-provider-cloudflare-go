@@ -5,14 +5,14 @@ package datacloudflaredlsprefixbinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaredlsprefixbinding/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaredlsprefixbinding/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding}.
 type DataCloudflareDlsPrefixBinding interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataCloudflareDlsPrefixBinding) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding} Data Source.
 func NewDataCloudflareDlsPrefixBinding(scope constructs.Construct, id *string, config *DataCloudflareDlsPrefixBindingConfig) DataCloudflareDlsPrefixBinding {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDataCloudflareDlsPrefixBinding(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dls_prefix_binding cloudflare_dls_prefix_binding} Data Source.
 func NewDataCloudflareDlsPrefixBinding_Override(d DataCloudflareDlsPrefixBinding, scope constructs.Construct, id *string, config *DataCloudflareDlsPrefixBindingConfig) {
 	_init_.Initialize()
 

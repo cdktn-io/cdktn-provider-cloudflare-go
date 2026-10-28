@@ -5,9 +5,9 @@ package customhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/customhostname/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/customhostname/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

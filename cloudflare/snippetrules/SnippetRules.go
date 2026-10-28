@@ -5,14 +5,14 @@ package snippetrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/snippetrules/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/snippetrules/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet_rules cloudflare_snippet_rules}.
 type SnippetRules interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_SnippetRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRulesConfig) SnippetRules {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules_Override(s SnippetRules, scope constructs.Construct, id *string, config *SnippetRulesConfig) {
 	_init_.Initialize()
 

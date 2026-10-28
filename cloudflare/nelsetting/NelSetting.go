@@ -5,14 +5,14 @@ package nelsetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/nelsetting/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/nelsetting/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/nel_setting cloudflare_nel_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/nel_setting cloudflare_nel_setting}.
 type NelSetting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_NelSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/nel_setting cloudflare_nel_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/nel_setting cloudflare_nel_setting} Resource.
 func NewNelSetting(scope constructs.Construct, id *string, config *NelSettingConfig) NelSetting {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewNelSetting(scope constructs.Construct, id *string, config *NelSettingCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/nel_setting cloudflare_nel_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/nel_setting cloudflare_nel_setting} Resource.
 func NewNelSetting_Override(n NelSetting, scope constructs.Construct, id *string, config *NelSettingConfig) {
 	_init_.Initialize()
 

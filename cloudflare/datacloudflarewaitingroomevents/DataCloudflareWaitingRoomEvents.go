@@ -5,14 +5,14 @@ package datacloudflarewaitingroomevents
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarewaitingroomevents/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarewaitingroomevents/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/waiting_room_events cloudflare_waiting_room_events}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/waiting_room_events cloudflare_waiting_room_events}.
 type DataCloudflareWaitingRoomEvents interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomEvents) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
 func NewDataCloudflareWaitingRoomEvents(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomEventsConfig) DataCloudflareWaitingRoomEvents {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataCloudflareWaitingRoomEvents(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
 func NewDataCloudflareWaitingRoomEvents_Override(d DataCloudflareWaitingRoomEvents, scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomEventsConfig) {
 	_init_.Initialize()
 

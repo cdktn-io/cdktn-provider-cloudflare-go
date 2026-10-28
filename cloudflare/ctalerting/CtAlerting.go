@@ -5,14 +5,14 @@ package ctalerting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/ctalerting/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/ctalerting/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ct_alerting cloudflare_ct_alerting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ct_alerting cloudflare_ct_alerting}.
 type CtAlerting interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_CtAlerting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ct_alerting cloudflare_ct_alerting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ct_alerting cloudflare_ct_alerting} Resource.
 func NewCtAlerting(scope constructs.Construct, id *string, config *CtAlertingConfig) CtAlerting {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewCtAlerting(scope constructs.Construct, id *string, config *CtAlertingCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/ct_alerting cloudflare_ct_alerting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ct_alerting cloudflare_ct_alerting} Resource.
 func NewCtAlerting_Override(c CtAlerting, scope constructs.Construct, id *string, config *CtAlertingConfig) {
 	_init_.Initialize()
 

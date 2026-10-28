@@ -5,14 +5,14 @@ package datacloudflarezerotrustdlpdatatag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdlpdatatag/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrustdlpdatatag/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dlp_data_tag cloudflare_zero_trust_dlp_data_tag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dlp_data_tag cloudflare_zero_trust_dlp_data_tag}.
 type DataCloudflareZeroTrustDlpDataTag interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -387,7 +387,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpDataTag) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dlp_data_tag cloudflare_zero_trust_dlp_data_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dlp_data_tag cloudflare_zero_trust_dlp_data_tag} Data Source.
 func NewDataCloudflareZeroTrustDlpDataTag(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpDataTagConfig) DataCloudflareZeroTrustDlpDataTag {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewDataCloudflareZeroTrustDlpDataTag(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_dlp_data_tag cloudflare_zero_trust_dlp_data_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dlp_data_tag cloudflare_zero_trust_dlp_data_tag} Data Source.
 func NewDataCloudflareZeroTrustDlpDataTag_Override(d DataCloudflareZeroTrustDlpDataTag, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpDataTagConfig) {
 	_init_.Initialize()
 

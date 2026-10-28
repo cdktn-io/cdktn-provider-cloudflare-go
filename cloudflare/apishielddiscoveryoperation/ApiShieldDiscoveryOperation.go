@@ -5,14 +5,14 @@ package apishielddiscoveryoperation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/apishielddiscoveryoperation/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/apishielddiscoveryoperation/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation}.
 type ApiShieldDiscoveryOperation interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ApiShieldDiscoveryOperation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation} Resource.
 func NewApiShieldDiscoveryOperation(scope constructs.Construct, id *string, config *ApiShieldDiscoveryOperationConfig) ApiShieldDiscoveryOperation {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewApiShieldDiscoveryOperation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_shield_discovery_operation cloudflare_api_shield_discovery_operation} Resource.
 func NewApiShieldDiscoveryOperation_Override(a ApiShieldDiscoveryOperation, scope constructs.Construct, id *string, config *ApiShieldDiscoveryOperationConfig) {
 	_init_.Initialize()
 

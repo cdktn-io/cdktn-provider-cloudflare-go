@@ -5,14 +5,14 @@ package datacloudflarenotificationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarenotificationpolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarenotificationpolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/notification_policy cloudflare_notification_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/notification_policy cloudflare_notification_policy}.
 type DataCloudflareNotificationPolicy interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/notification_policy cloudflare_notification_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/notification_policy cloudflare_notification_policy} Data Source.
 func NewDataCloudflareNotificationPolicy(scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyConfig) DataCloudflareNotificationPolicy {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataCloudflareNotificationPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/notification_policy cloudflare_notification_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/notification_policy cloudflare_notification_policy} Data Source.
 func NewDataCloudflareNotificationPolicy_Override(d DataCloudflareNotificationPolicy, scope constructs.Construct, id *string, config *DataCloudflareNotificationPolicyConfig) {
 	_init_.Initialize()
 

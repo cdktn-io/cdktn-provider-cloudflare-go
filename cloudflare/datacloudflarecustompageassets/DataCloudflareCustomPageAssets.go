@@ -5,14 +5,14 @@ package datacloudflarecustompageassets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecustompageassets/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarecustompageassets/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/custom_page_assets cloudflare_custom_page_assets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/custom_page_assets cloudflare_custom_page_assets}.
 type DataCloudflareCustomPageAssets interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareCustomPageAssets) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/custom_page_assets cloudflare_custom_page_assets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/custom_page_assets cloudflare_custom_page_assets} Data Source.
 func NewDataCloudflareCustomPageAssets(scope constructs.Construct, id *string, config *DataCloudflareCustomPageAssetsConfig) DataCloudflareCustomPageAssets {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataCloudflareCustomPageAssets(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/custom_page_assets cloudflare_custom_page_assets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/custom_page_assets cloudflare_custom_page_assets} Data Source.
 func NewDataCloudflareCustomPageAssets_Override(d DataCloudflareCustomPageAssets, scope constructs.Construct, id *string, config *DataCloudflareCustomPageAssetsConfig) {
 	_init_.Initialize()
 

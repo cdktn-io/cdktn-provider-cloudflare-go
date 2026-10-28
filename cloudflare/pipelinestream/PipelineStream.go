@@ -5,14 +5,14 @@ package pipelinestream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pipelinestream/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pipelinestream/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pipeline_stream cloudflare_pipeline_stream}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/pipeline_stream cloudflare_pipeline_stream}.
 type PipelineStream interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -541,7 +541,7 @@ func (j *jsiiProxy_PipelineStream) WorkerBindingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pipeline_stream cloudflare_pipeline_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/pipeline_stream cloudflare_pipeline_stream} Resource.
 func NewPipelineStream(scope constructs.Construct, id *string, config *PipelineStreamConfig) PipelineStream {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewPipelineStream(scope constructs.Construct, id *string, config *PipelineS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/pipeline_stream cloudflare_pipeline_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/pipeline_stream cloudflare_pipeline_stream} Resource.
 func NewPipelineStream_Override(p PipelineStream, scope constructs.Construct, id *string, config *PipelineStreamConfig) {
 	_init_.Initialize()
 

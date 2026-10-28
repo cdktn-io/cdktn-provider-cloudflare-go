@@ -5,14 +5,14 @@ package datacloudflarezerotrusttunnelcloudflaredroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrusttunnelcloudflaredroute/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrusttunnelcloudflaredroute/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route}.
 type DataCloudflareZeroTrustTunnelCloudflaredRoute interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoute) VirtualNetwork
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredRoute(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredRouteConfig) DataCloudflareZeroTrustTunnelCloudflaredRoute {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredRoute(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_tunnel_cloudflared_route cloudflare_zero_trust_tunnel_cloudflared_route} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredRoute_Override(d DataCloudflareZeroTrustTunnelCloudflaredRoute, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredRouteConfig) {
 	_init_.Initialize()
 

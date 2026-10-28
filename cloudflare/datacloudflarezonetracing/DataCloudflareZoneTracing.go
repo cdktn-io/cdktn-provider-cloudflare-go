@@ -5,14 +5,14 @@ package datacloudflarezonetracing
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonetracing/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonetracing/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_tracing cloudflare_zone_tracing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_tracing cloudflare_zone_tracing}.
 type DataCloudflareZoneTracing interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataCloudflareZoneTracing) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_tracing cloudflare_zone_tracing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_tracing cloudflare_zone_tracing} Data Source.
 func NewDataCloudflareZoneTracing(scope constructs.Construct, id *string, config *DataCloudflareZoneTracingConfig) DataCloudflareZoneTracing {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataCloudflareZoneTracing(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_tracing cloudflare_zone_tracing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_tracing cloudflare_zone_tracing} Data Source.
 func NewDataCloudflareZoneTracing_Override(d DataCloudflareZoneTracing, scope constructs.Construct, id *string, config *DataCloudflareZoneTracingConfig) {
 	_init_.Initialize()
 

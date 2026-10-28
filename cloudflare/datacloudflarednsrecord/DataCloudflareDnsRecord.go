@@ -5,14 +5,14 @@ package datacloudflarednsrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarednsrecord/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarednsrecord/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dns_record cloudflare_dns_record}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dns_record cloudflare_dns_record}.
 type DataCloudflareDnsRecord interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -557,7 +557,7 @@ func (j *jsiiProxy_DataCloudflareDnsRecord) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dns_record cloudflare_dns_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dns_record cloudflare_dns_record} Data Source.
 func NewDataCloudflareDnsRecord(scope constructs.Construct, id *string, config *DataCloudflareDnsRecordConfig) DataCloudflareDnsRecord {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewDataCloudflareDnsRecord(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/dns_record cloudflare_dns_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/dns_record cloudflare_dns_record} Data Source.
 func NewDataCloudflareDnsRecord_Override(d DataCloudflareDnsRecord, scope constructs.Construct, id *string, config *DataCloudflareDnsRecordConfig) {
 	_init_.Initialize()
 

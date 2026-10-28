@@ -5,14 +5,14 @@ package datacloudflarecallssfuapps
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarecallssfuapps/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarecallssfuapps/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps}.
 type DataCloudflareCallsSfuApps interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareCallsSfuApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
 func NewDataCloudflareCallsSfuApps(scope constructs.Construct, id *string, config *DataCloudflareCallsSfuAppsConfig) DataCloudflareCallsSfuApps {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataCloudflareCallsSfuApps(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
 func NewDataCloudflareCallsSfuApps_Override(d DataCloudflareCallsSfuApps, scope constructs.Construct, id *string, config *DataCloudflareCallsSfuAppsConfig) {
 	_init_.Initialize()
 

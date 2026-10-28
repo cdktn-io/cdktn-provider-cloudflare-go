@@ -5,7 +5,7 @@ package zerotrustaccessapplication
 
 
 type ZeroTrustAccessApplicationTargetCriteriaIncludeTargetAttributes struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_access_application#hostname ZeroTrustAccessApplication#hostname}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_application#hostname ZeroTrustAccessApplication#hostname}.
 	Hostname *[]*string `field:"required" json:"hostname" yaml:"hostname"`
 }
 

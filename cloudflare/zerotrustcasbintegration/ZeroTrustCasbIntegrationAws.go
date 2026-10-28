@@ -7,7 +7,7 @@ package zerotrustcasbintegration
 type ZeroTrustCasbIntegrationAws struct {
 	// Authenticate by delegating to a cross-account IAM role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_casb_integration#aws_iam_role ZeroTrustCasbIntegration#aws_iam_role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_casb_integration#aws_iam_role ZeroTrustCasbIntegration#aws_iam_role}
 	AwsIamRole *ZeroTrustCasbIntegrationAwsAwsIamRole `field:"optional" json:"awsIamRole" yaml:"awsIamRole"`
 }
 

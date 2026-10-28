@@ -5,14 +5,14 @@ package datacloudflarezonecachevariants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonecachevariants/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonecachevariants/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}.
 type DataCloudflareZoneCacheVariants interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareZoneCacheVariants) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source.
 func NewDataCloudflareZoneCacheVariants(scope constructs.Construct, id *string, config *DataCloudflareZoneCacheVariantsConfig) DataCloudflareZoneCacheVariants {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataCloudflareZoneCacheVariants(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source.
 func NewDataCloudflareZoneCacheVariants_Override(d DataCloudflareZoneCacheVariants, scope constructs.Construct, id *string, config *DataCloudflareZoneCacheVariantsConfig) {
 	_init_.Initialize()
 

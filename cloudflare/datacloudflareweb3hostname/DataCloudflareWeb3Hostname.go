@@ -5,14 +5,14 @@ package datacloudflareweb3hostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareweb3hostname/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareweb3hostname/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/web3_hostname cloudflare_web3_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/web3_hostname cloudflare_web3_hostname}.
 type DataCloudflareWeb3Hostname interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataCloudflareWeb3Hostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/web3_hostname cloudflare_web3_hostname} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/web3_hostname cloudflare_web3_hostname} Data Source.
 func NewDataCloudflareWeb3Hostname(scope constructs.Construct, id *string, config *DataCloudflareWeb3HostnameConfig) DataCloudflareWeb3Hostname {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataCloudflareWeb3Hostname(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/web3_hostname cloudflare_web3_hostname} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/web3_hostname cloudflare_web3_hostname} Data Source.
 func NewDataCloudflareWeb3Hostname_Override(d DataCloudflareWeb3Hostname, scope constructs.Construct, id *string, config *DataCloudflareWeb3HostnameConfig) {
 	_init_.Initialize()
 

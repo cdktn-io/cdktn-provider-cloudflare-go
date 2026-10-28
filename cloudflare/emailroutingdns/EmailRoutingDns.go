@@ -5,14 +5,14 @@ package emailroutingdns
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingdns/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingdns/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
 type EmailRoutingDns interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -503,7 +503,7 @@ func (j *jsiiProxy_EmailRoutingDns) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
 func NewEmailRoutingDns(scope constructs.Construct, id *string, config *EmailRoutingDnsConfig) EmailRoutingDns {
 	_init_.Initialize()
 
@@ -521,7 +521,7 @@ func NewEmailRoutingDns(scope constructs.Construct, id *string, config *EmailRou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_dns cloudflare_email_routing_dns} Resource.
 func NewEmailRoutingDns_Override(e EmailRoutingDns, scope constructs.Construct, id *string, config *EmailRoutingDnsConfig) {
 	_init_.Initialize()
 

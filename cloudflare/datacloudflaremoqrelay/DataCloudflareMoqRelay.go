@@ -5,14 +5,14 @@ package datacloudflaremoqrelay
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremoqrelay/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremoqrelay/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/moq_relay cloudflare_moq_relay}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/moq_relay cloudflare_moq_relay}.
 type DataCloudflareMoqRelay interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -411,7 +411,7 @@ func (j *jsiiProxy_DataCloudflareMoqRelay) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/moq_relay cloudflare_moq_relay} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/moq_relay cloudflare_moq_relay} Data Source.
 func NewDataCloudflareMoqRelay(scope constructs.Construct, id *string, config *DataCloudflareMoqRelayConfig) DataCloudflareMoqRelay {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewDataCloudflareMoqRelay(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/moq_relay cloudflare_moq_relay} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/moq_relay cloudflare_moq_relay} Data Source.
 func NewDataCloudflareMoqRelay_Override(d DataCloudflareMoqRelay, scope constructs.Construct, id *string, config *DataCloudflareMoqRelayConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package zerotrustdeviceipprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/zerotrustdeviceipprofile/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/zerotrustdeviceipprofile/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile}.
 type ZeroTrustDeviceIpProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -540,7 +540,7 @@ func (j *jsiiProxy_ZeroTrustDeviceIpProfile) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
 func NewZeroTrustDeviceIpProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceIpProfileConfig) ZeroTrustDeviceIpProfile {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewZeroTrustDeviceIpProfile(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_ip_profile cloudflare_zero_trust_device_ip_profile} Resource.
 func NewZeroTrustDeviceIpProfile_Override(z ZeroTrustDeviceIpProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceIpProfileConfig) {
 	_init_.Initialize()
 

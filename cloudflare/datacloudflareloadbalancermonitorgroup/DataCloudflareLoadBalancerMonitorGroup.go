@@ -5,14 +5,14 @@ package datacloudflareloadbalancermonitorgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareloadbalancermonitorgroup/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareloadbalancermonitorgroup/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group}.
 type DataCloudflareLoadBalancerMonitorGroup interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerMonitorGroup) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group} Data Source.
 func NewDataCloudflareLoadBalancerMonitorGroup(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerMonitorGroupConfig) DataCloudflareLoadBalancerMonitorGroup {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataCloudflareLoadBalancerMonitorGroup(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group} Data Source.
 func NewDataCloudflareLoadBalancerMonitorGroup_Override(d DataCloudflareLoadBalancerMonitorGroup, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerMonitorGroupConfig) {
 	_init_.Initialize()
 

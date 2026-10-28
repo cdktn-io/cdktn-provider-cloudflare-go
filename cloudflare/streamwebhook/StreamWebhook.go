@@ -5,14 +5,14 @@ package streamwebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/streamwebhook/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/streamwebhook/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_webhook cloudflare_stream_webhook}.
 type StreamWebhook interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_StreamWebhook) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
 func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebhookConfig) StreamWebhook {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewStreamWebhook(scope constructs.Construct, id *string, config *StreamWebh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/stream_webhook cloudflare_stream_webhook} Resource.
 func NewStreamWebhook_Override(s StreamWebhook, scope constructs.Construct, id *string, config *StreamWebhookConfig) {
 	_init_.Initialize()
 

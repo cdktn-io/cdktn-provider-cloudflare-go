@@ -24,11 +24,11 @@ type FlagshipAppConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Cloudflare account ID that owns the Flagship app.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/flagship_app#account_id FlagshipApp#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_app#account_id FlagshipApp#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the Flagship app (1–64 letters, numbers, hyphens, or underscores).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/flagship_app#name FlagshipApp#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_app#name FlagshipApp#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

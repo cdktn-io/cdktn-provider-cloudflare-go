@@ -5,14 +5,14 @@ package datacloudflareratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareratelimit/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareratelimit/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/rate_limit cloudflare_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/rate_limit cloudflare_rate_limit}.
 type DataCloudflareRateLimit interface {
 	cdktn.TerraformDataSource
 	Action() DataCloudflareRateLimitActionOutputReference
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataCloudflareRateLimit) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
 func NewDataCloudflareRateLimit(scope constructs.Construct, id *string, config *DataCloudflareRateLimitConfig) DataCloudflareRateLimit {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataCloudflareRateLimit(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source.
 func NewDataCloudflareRateLimit_Override(d DataCloudflareRateLimit, scope constructs.Construct, id *string, config *DataCloudflareRateLimitConfig) {
 	_init_.Initialize()
 

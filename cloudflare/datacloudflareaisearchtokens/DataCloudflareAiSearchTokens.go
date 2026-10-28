@@ -5,14 +5,14 @@ package datacloudflareaisearchtokens
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareaisearchtokens/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareaisearchtokens/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens}.
 type DataCloudflareAiSearchTokens interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataCloudflareAiSearchTokens) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens} Data Source.
 func NewDataCloudflareAiSearchTokens(scope constructs.Construct, id *string, config *DataCloudflareAiSearchTokensConfig) DataCloudflareAiSearchTokens {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataCloudflareAiSearchTokens(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens} Data Source.
 func NewDataCloudflareAiSearchTokens_Override(d DataCloudflareAiSearchTokens, scope constructs.Construct, id *string, config *DataCloudflareAiSearchTokensConfig) {
 	_init_.Initialize()
 

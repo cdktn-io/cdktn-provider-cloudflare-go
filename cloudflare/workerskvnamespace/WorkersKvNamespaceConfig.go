@@ -24,25 +24,25 @@ type WorkersKvNamespaceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the Cloudflare account that owns the Workers KV namespaces.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Human-readable string name for a Workers KV namespace.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
 	// Specify the jurisdiction to restrict the KV namespace to durably store data within.
 	//
 	// Can only be set at namespace creation time.
 	// Available values: "eu", "fedramp", "us".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_kv_namespace#jurisdiction WorkersKvNamespace#jurisdiction}
 	Jurisdiction *string `field:"optional" json:"jurisdiction" yaml:"jurisdiction"`
 	// The mode of the Workers KV namespace.
 	//
 	// Specify `instant` when creating a namespace to create a KV Instant namespace. Omit this field when creating a namespace to create a classic namespace. Currently, `instant` is the only supported explicit value.
 	// Available values: "instant".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/workers_kv_namespace#mode WorkersKvNamespace#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_kv_namespace#mode WorkersKvNamespace#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
 

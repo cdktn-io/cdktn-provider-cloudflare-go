@@ -5,14 +5,14 @@ package argotieredcaching
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/argotieredcaching/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/argotieredcaching/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 type ArgoTieredCaching interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_ArgoTieredCaching) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
 func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTieredCachingConfig) ArgoTieredCaching {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewArgoTieredCaching(scope constructs.Construct, id *string, config *ArgoTi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/argo_tiered_caching cloudflare_argo_tiered_caching} Resource.
 func NewArgoTieredCaching_Override(a ArgoTieredCaching, scope constructs.Construct, id *string, config *ArgoTieredCachingConfig) {
 	_init_.Initialize()
 

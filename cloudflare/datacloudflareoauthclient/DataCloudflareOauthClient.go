@@ -5,14 +5,14 @@ package datacloudflareoauthclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareoauthclient/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareoauthclient/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/oauth_client cloudflare_oauth_client}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/oauth_client cloudflare_oauth_client}.
 type DataCloudflareOauthClient interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -529,7 +529,7 @@ func (j *jsiiProxy_DataCloudflareOauthClient) Visibility() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/oauth_client cloudflare_oauth_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/oauth_client cloudflare_oauth_client} Data Source.
 func NewDataCloudflareOauthClient(scope constructs.Construct, id *string, config *DataCloudflareOauthClientConfig) DataCloudflareOauthClient {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewDataCloudflareOauthClient(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/oauth_client cloudflare_oauth_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/oauth_client cloudflare_oauth_client} Data Source.
 func NewDataCloudflareOauthClient_Override(d DataCloudflareOauthClient, scope constructs.Construct, id *string, config *DataCloudflareOauthClientConfig) {
 	_init_.Initialize()
 

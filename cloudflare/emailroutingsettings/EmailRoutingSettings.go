@@ -5,14 +5,14 @@ package emailroutingsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailroutingsettings/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailroutingsettings/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
 type EmailRoutingSettings interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -479,7 +479,7 @@ func (j *jsiiProxy_EmailRoutingSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
 func NewEmailRoutingSettings(scope constructs.Construct, id *string, config *EmailRoutingSettingsConfig) EmailRoutingSettings {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewEmailRoutingSettings(scope constructs.Construct, id *string, config *Ema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_routing_settings cloudflare_email_routing_settings} Resource.
 func NewEmailRoutingSettings_Override(e EmailRoutingSettings, scope constructs.Construct, id *string, config *EmailRoutingSettingsConfig) {
 	_init_.Initialize()
 

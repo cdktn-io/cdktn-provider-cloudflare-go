@@ -5,14 +5,14 @@ package datacloudflaremagicnetworkmonitoringconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflaremagicnetworkmonitoringconfiguration/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflaremagicnetworkmonitoringconfiguration/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration}.
 type DataCloudflareMagicNetworkMonitoringConfiguration interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringConfiguration) WarpDevice
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringConfiguration(scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringConfigurationConfig) DataCloudflareMagicNetworkMonitoringConfiguration {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataCloudflareMagicNetworkMonitoringConfiguration(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringConfiguration_Override(d DataCloudflareMagicNetworkMonitoringConfiguration, scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringConfigurationConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datacloudflareconnectivitydirectoryservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareconnectivitydirectoryservice/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareconnectivitydirectoryservice/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service}.
 type DataCloudflareConnectivityDirectoryService interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -456,7 +456,7 @@ func (j *jsiiProxy_DataCloudflareConnectivityDirectoryService) UpdatedAt() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
 func NewDataCloudflareConnectivityDirectoryService(scope constructs.Construct, id *string, config *DataCloudflareConnectivityDirectoryServiceConfig) DataCloudflareConnectivityDirectoryService {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewDataCloudflareConnectivityDirectoryService(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source.
 func NewDataCloudflareConnectivityDirectoryService_Override(d DataCloudflareConnectivityDirectoryService, scope constructs.Construct, id *string, config *DataCloudflareConnectivityDirectoryServiceConfig) {
 	_init_.Initialize()
 

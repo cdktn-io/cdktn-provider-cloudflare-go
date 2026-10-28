@@ -5,14 +5,14 @@ package emailsecuritytrusteddomains
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/emailsecuritytrusteddomains/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/emailsecuritytrusteddomains/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
 type EmailSecurityTrustedDomains interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -527,7 +527,7 @@ func (j *jsiiProxy_EmailSecurityTrustedDomains) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) EmailSecurityTrustedDomains {
 	_init_.Initialize()
 
@@ -545,7 +545,7 @@ func NewEmailSecurityTrustedDomains(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource.
 func NewEmailSecurityTrustedDomains_Override(e EmailSecurityTrustedDomains, scope constructs.Construct, id *string, config *EmailSecurityTrustedDomainsConfig) {
 	_init_.Initialize()
 

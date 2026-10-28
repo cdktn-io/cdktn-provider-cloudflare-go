@@ -5,14 +5,14 @@ package datacloudflareshareresources
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareshareresources/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareshareresources/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/share_resources cloudflare_share_resources}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share_resources cloudflare_share_resources}.
 type DataCloudflareShareResourcesA interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -392,7 +392,7 @@ func (j *jsiiProxy_DataCloudflareShareResourcesA) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/share_resources cloudflare_share_resources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share_resources cloudflare_share_resources} Data Source.
 func NewDataCloudflareShareResourcesA(scope constructs.Construct, id *string, config *DataCloudflareShareResourcesAConfig) DataCloudflareShareResourcesA {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewDataCloudflareShareResourcesA(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/share_resources cloudflare_share_resources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share_resources cloudflare_share_resources} Data Source.
 func NewDataCloudflareShareResourcesA_Override(d DataCloudflareShareResourcesA, scope constructs.Construct, id *string, config *DataCloudflareShareResourcesAConfig) {
 	_init_.Initialize()
 

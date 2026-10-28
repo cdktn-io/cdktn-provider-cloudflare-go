@@ -5,14 +5,14 @@ package datacloudflarezerotrustdevicedeploymentgroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezerotrustdevicedeploymentgroups/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezerotrustdevicedeploymentgroups/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups}.
 type DataCloudflareZeroTrustDeviceDeploymentGroups interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDeploymentGroups) VersionConfig(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Data Source.
 func NewDataCloudflareZeroTrustDeviceDeploymentGroups(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDeploymentGroupsConfig) DataCloudflareZeroTrustDeviceDeploymentGroups {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataCloudflareZeroTrustDeviceDeploymentGroups(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_device_deployment_groups cloudflare_zero_trust_device_deployment_groups} Data Source.
 func NewDataCloudflareZeroTrustDeviceDeploymentGroups_Override(d DataCloudflareZeroTrustDeviceDeploymentGroups, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDeploymentGroupsConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package pageshieldpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/pageshieldpolicy/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/pageshieldpolicy/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/page_shield_policy cloudflare_page_shield_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/page_shield_policy cloudflare_page_shield_policy}.
 type PageShieldPolicy interface {
 	cdktn.TerraformResource
 	Action() *string
@@ -493,7 +493,7 @@ func (j *jsiiProxy_PageShieldPolicy) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/page_shield_policy cloudflare_page_shield_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/page_shield_policy cloudflare_page_shield_policy} Resource.
 func NewPageShieldPolicy(scope constructs.Construct, id *string, config *PageShieldPolicyConfig) PageShieldPolicy {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewPageShieldPolicy(scope constructs.Construct, id *string, config *PageShi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/page_shield_policy cloudflare_page_shield_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/page_shield_policy cloudflare_page_shield_policy} Resource.
 func NewPageShieldPolicy_Override(p PageShieldPolicy, scope constructs.Construct, id *string, config *PageShieldPolicyConfig) {
 	_init_.Initialize()
 

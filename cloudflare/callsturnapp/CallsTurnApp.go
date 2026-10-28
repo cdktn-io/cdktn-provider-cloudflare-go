@@ -5,14 +5,14 @@ package callsturnapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/callsturnapp/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/callsturnapp/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
 type CallsTurnApp interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -459,7 +459,7 @@ func (j *jsiiProxy_CallsTurnApp) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
 func NewCallsTurnApp(scope constructs.Construct, id *string, config *CallsTurnAppConfig) CallsTurnApp {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewCallsTurnApp(scope constructs.Construct, id *string, config *CallsTurnAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource.
 func NewCallsTurnApp_Override(c CallsTurnApp, scope constructs.Construct, id *string, config *CallsTurnAppConfig) {
 	_init_.Initialize()
 

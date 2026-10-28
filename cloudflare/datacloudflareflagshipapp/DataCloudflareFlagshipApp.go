@@ -5,14 +5,14 @@ package datacloudflareflagshipapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflareflagshipapp/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflareflagshipapp/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/flagship_app cloudflare_flagship_app}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/flagship_app cloudflare_flagship_app}.
 type DataCloudflareFlagshipApp interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataCloudflareFlagshipApp) UpdatedBy() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/flagship_app cloudflare_flagship_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/flagship_app cloudflare_flagship_app} Data Source.
 func NewDataCloudflareFlagshipApp(scope constructs.Construct, id *string, config *DataCloudflareFlagshipAppConfig) DataCloudflareFlagshipApp {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataCloudflareFlagshipApp(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/flagship_app cloudflare_flagship_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/flagship_app cloudflare_flagship_app} Data Source.
 func NewDataCloudflareFlagshipApp_Override(d DataCloudflareFlagshipApp, scope constructs.Construct, id *string, config *DataCloudflareFlagshipAppConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datacloudflarezonelockdowns
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16/datacloudflarezonelockdowns/internal"
+	"github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v17/datacloudflarezonelockdowns/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
 type DataCloudflareZoneLockdowns interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -538,7 +538,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdowns) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
 func NewDataCloudflareZoneLockdowns(scope constructs.Construct, id *string, config *DataCloudflareZoneLockdownsConfig) DataCloudflareZoneLockdowns {
 	_init_.Initialize()
 
@@ -556,7 +556,7 @@ func NewDataCloudflareZoneLockdowns(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
 func NewDataCloudflareZoneLockdowns_Override(d DataCloudflareZoneLockdowns, scope constructs.Construct, id *string, config *DataCloudflareZoneLockdownsConfig) {
 	_init_.Initialize()
 

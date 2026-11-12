@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender}.
 type DataCloudflareEmailSecurityBlockSender interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -32,6 +32,7 @@ type DataCloudflareEmailSecurityBlockSender interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpiresAt() *string
 	Filter() DataCloudflareEmailSecurityBlockSenderFilterOutputReference
 	FilterInput() interface{}
 	// Experimental.
@@ -216,6 +217,16 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) DependsOn() *[]*strin
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) ExpiresAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAt",
 		&returns,
 	)
 	return returns
@@ -422,7 +433,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSender) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
 func NewDataCloudflareEmailSecurityBlockSender(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityBlockSenderConfig) DataCloudflareEmailSecurityBlockSender {
 	_init_.Initialize()
 
@@ -440,7 +451,7 @@ func NewDataCloudflareEmailSecurityBlockSender(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/email_security_block_sender cloudflare_email_security_block_sender} Data Source.
 func NewDataCloudflareEmailSecurityBlockSender_Override(d DataCloudflareEmailSecurityBlockSender, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityBlockSenderConfig) {
 	_init_.Initialize()
 

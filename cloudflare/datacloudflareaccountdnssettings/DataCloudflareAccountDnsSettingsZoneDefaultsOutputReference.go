@@ -29,7 +29,6 @@ type DataCloudflareAccountDnsSettingsZoneDefaultsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	FlattenAllCnames() cdktn.IResolvable
-	FoundationDns() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalDns() DataCloudflareAccountDnsSettingsZoneDefaultsInternalDnsOutputReference
@@ -123,16 +122,6 @@ func (j *jsiiProxy_DataCloudflareAccountDnsSettingsZoneDefaultsOutputReference) 
 	_jsii_.Get(
 		j,
 		"flattenAllCnames",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAccountDnsSettingsZoneDefaultsOutputReference) FoundationDns() cdktn.IResolvable {
-	var returns cdktn.IResolvable
-	_jsii_.Get(
-		j,
-		"foundationDns",
 		&returns,
 	)
 	return returns

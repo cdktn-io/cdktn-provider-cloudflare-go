@@ -37,7 +37,11 @@ type DataCloudflareZeroTrustAccessServiceTokensResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareZeroTrustAccessServiceTokensResult
 	SetInternalValue(val *DataCloudflareZeroTrustAccessServiceTokensResult)
+	LeakReportedAt() *string
+	LeakReporter() *string
+	LeakReportUrl() *string
 	Name() *string
+	Tags() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -185,11 +189,51 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) LeakReportedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leakReportedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) LeakReporter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leakReporter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) LeakReportUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leakReportUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceTokensResultOutputReference) Tags() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

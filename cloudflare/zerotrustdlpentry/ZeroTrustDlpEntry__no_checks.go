@@ -143,6 +143,10 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) validateSetTypeParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDlpEntry) validateSetValidatorIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewZeroTrustDlpEntryParameters(scope constructs.Construct, id *string, config *ZeroTrustDlpEntryConfig) error {
 	return nil
 }

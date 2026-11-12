@@ -13,6 +13,7 @@ import (
 
 type OrganizationMetaOutputReference interface {
 	cdktn.ComplexObject
+	AreChildAccountsAccessibleByOrgMembers() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +36,7 @@ type OrganizationMetaOutputReference interface {
 	SetInternalValue(val *OrganizationMeta)
 	ManagedBy() *string
 	TenantFlags() OrganizationMetaTenantFlagsOutputReference
+	TenantType() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +82,16 @@ type OrganizationMetaOutputReference interface {
 // The jsii proxy struct for OrganizationMetaOutputReference
 type jsiiProxy_OrganizationMetaOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_OrganizationMetaOutputReference) AreChildAccountsAccessibleByOrgMembers() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"areChildAccountsAccessibleByOrgMembers",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OrganizationMetaOutputReference) ComplexObjectIndex() interface{} {
@@ -157,6 +169,16 @@ func (j *jsiiProxy_OrganizationMetaOutputReference) TenantFlags() OrganizationMe
 	_jsii_.Get(
 		j,
 		"tenantFlags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationMetaOutputReference) TenantType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantType",
 		&returns,
 	)
 	return returns

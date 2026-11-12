@@ -54,6 +54,7 @@ type DataCloudflareZeroTrustDlpCustomEntriesResultOutputReference interface {
 	Type() *string
 	UpdatedAt() *string
 	UploadStatus() *string
+	ValidatorIds() *[]*string
 	Variant() DataCloudflareZeroTrustDlpCustomEntriesResultVariantOutputReference
 	WordList() *[]*string
 	// Experimental.
@@ -300,6 +301,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomEntriesResultOutputReference)
 	_jsii_.Get(
 		j,
 		"uploadStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomEntriesResultOutputReference) ValidatorIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validatorIds",
 		&returns,
 	)
 	return returns

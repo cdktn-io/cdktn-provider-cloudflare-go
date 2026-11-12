@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComment", GoMethod: "ResetComment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScopes", GoMethod: "ResetScopes"},
 			_jsii_.MemberProperty{JsiiProperty: "scopes", GoGetter: "Scopes"},
 			_jsii_.MemberProperty{JsiiProperty: "scopesInput", GoGetter: "ScopesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},

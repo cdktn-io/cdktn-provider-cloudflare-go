@@ -15,7 +15,6 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	cdktn.ComplexObject
 	AddHeaders() cdktn.StringListMap
 	AllowChildBypass() cdktn.IResolvable
-	AuditSsh() DataCloudflareZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference
 	BisoAdminControls() DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference
 	BlockPage() DataCloudflareZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
 	BlockPageEnabled() cdktn.IResolvable
@@ -41,6 +40,7 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	DnsResolvers() DataCloudflareZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	Egress() DataCloudflareZeroTrustGatewayPolicyRuleSettingsEgressOutputReference
 	ForensicCopy() DataCloudflareZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
+	Forward() DataCloudflareZeroTrustGatewayPolicyRuleSettingsForwardOutputReference
 	// Experimental.
 	Fqn() *string
 	IgnoreCnameCategoryMatches() cdktn.IResolvable
@@ -122,16 +122,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	_jsii_.Get(
 		j,
 		"allowChildBypass",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) AuditSsh() DataCloudflareZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference {
-	var returns DataCloudflareZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference
-	_jsii_.Get(
-		j,
-		"auditSsh",
 		&returns,
 	)
 	return returns
@@ -262,6 +252,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	_jsii_.Get(
 		j,
 		"forensicCopy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) Forward() DataCloudflareZeroTrustGatewayPolicyRuleSettingsForwardOutputReference {
+	var returns DataCloudflareZeroTrustGatewayPolicyRuleSettingsForwardOutputReference
+	_jsii_.Get(
+		j,
+		"forward",
 		&returns,
 	)
 	return returns

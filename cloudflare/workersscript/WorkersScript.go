@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -34,6 +34,8 @@ type WorkersScript interface {
 	CacheOptionsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CodeUpdateStrategy() WorkersScriptCodeUpdateStrategyOutputReference
+	CodeUpdateStrategyInput() interface{}
 	CompatibilityDate() *string
 	SetCompatibilityDate(val *string)
 	CompatibilityDateInput() *string
@@ -229,6 +231,7 @@ type WorkersScript interface {
 	PutAssets(value *WorkersScriptAssets)
 	PutBindings(value interface{})
 	PutCacheOptions(value *WorkersScriptCacheOptions)
+	PutCodeUpdateStrategy(value *WorkersScriptCodeUpdateStrategy)
 	PutExports(value interface{})
 	PutFiles(value interface{})
 	PutLimits(value *WorkersScriptLimits)
@@ -256,6 +259,7 @@ type WorkersScript interface {
 	ResetBindingsInherit()
 	ResetBodyPart()
 	ResetCacheOptions()
+	ResetCodeUpdateStrategy()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
 	ResetContent()
@@ -451,6 +455,26 @@ func (j *jsiiProxy_WorkersScript) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) CodeUpdateStrategy() WorkersScriptCodeUpdateStrategyOutputReference {
+	var returns WorkersScriptCodeUpdateStrategyOutputReference
+	_jsii_.Get(
+		j,
+		"codeUpdateStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) CodeUpdateStrategyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeUpdateStrategyInput",
 		&returns,
 	)
 	return returns
@@ -1157,7 +1181,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -1175,7 +1199,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -1843,6 +1867,17 @@ func (w *jsiiProxy_WorkersScript) PutCacheOptions(value *WorkersScriptCacheOptio
 	)
 }
 
+func (w *jsiiProxy_WorkersScript) PutCodeUpdateStrategy(value *WorkersScriptCodeUpdateStrategy) {
+	if err := w.validatePutCodeUpdateStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCodeUpdateStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScript) PutExports(value interface{}) {
 	if err := w.validatePutExportsParameters(value); err != nil {
 		panic(err)
@@ -1986,6 +2021,14 @@ func (w *jsiiProxy_WorkersScript) ResetCacheOptions() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCacheOptions",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetCodeUpdateStrategy() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCodeUpdateStrategy",
 		nil, // no parameters
 	)
 }

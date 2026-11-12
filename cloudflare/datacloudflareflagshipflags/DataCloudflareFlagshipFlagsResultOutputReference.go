@@ -37,6 +37,7 @@ type DataCloudflareFlagshipFlagsResultOutputReference interface {
 	InternalValue() *DataCloudflareFlagshipFlagsResult
 	SetInternalValue(val *DataCloudflareFlagshipFlagsResult)
 	Key() *string
+	Metadata() cdktn.AnyMap
 	Rules() DataCloudflareFlagshipFlagsResultRulesList
 	// Experimental.
 	TerraformAttribute() *string
@@ -184,6 +185,16 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlagsResultOutputReference) Key() *stri
 	_jsii_.Get(
 		j,
 		"key",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareFlagshipFlagsResultOutputReference) Metadata() cdktn.AnyMap {
+	var returns cdktn.AnyMap
+	_jsii_.Get(
+		j,
+		"metadata",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/flagship_flag cloudflare_flagship_flag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/flagship_flag cloudflare_flagship_flag}.
 type DataCloudflareFlagshipFlag interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -55,6 +55,7 @@ type DataCloudflareFlagshipFlag interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Metadata() cdktn.AnyMap
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -356,6 +357,16 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlag) Lifecycle() *cdktn.TerraformResou
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareFlagshipFlag) Metadata() cdktn.AnyMap {
+	var returns cdktn.AnyMap
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareFlagshipFlag) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -467,7 +478,7 @@ func (j *jsiiProxy_DataCloudflareFlagshipFlag) Variations() cdktn.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source.
 func NewDataCloudflareFlagshipFlag(scope constructs.Construct, id *string, config *DataCloudflareFlagshipFlagConfig) DataCloudflareFlagshipFlag {
 	_init_.Initialize()
 
@@ -485,7 +496,7 @@ func NewDataCloudflareFlagshipFlag(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/flagship_flag cloudflare_flagship_flag} Data Source.
 func NewDataCloudflareFlagshipFlag_Override(d DataCloudflareFlagshipFlag, scope constructs.Construct, id *string, config *DataCloudflareFlagshipFlagConfig) {
 	_init_.Initialize()
 

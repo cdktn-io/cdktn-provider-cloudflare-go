@@ -63,10 +63,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putNat", GoMethod: "PutNat"},
+			_jsii_.MemberMethod{JsiiMethod: "putRemoteSubnets", GoMethod: "PutRemoteSubnets"},
 			_jsii_.MemberMethod{JsiiMethod: "putRoutedSubnets", GoMethod: "PutRoutedSubnets"},
 			_jsii_.MemberMethod{JsiiMethod: "putStaticAddressing", GoMethod: "PutStaticAddressing"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteSubnets", GoGetter: "RemoteSubnets"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteSubnetsInput", GoGetter: "RemoteSubnetsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBondId", GoMethod: "ResetBondId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHaLink", GoMethod: "ResetHaLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsBreakout", GoMethod: "ResetIsBreakout"},
@@ -75,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNat", GoMethod: "ResetNat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPhysport", GoMethod: "ResetPhysport"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRemoteSubnets", GoMethod: "ResetRemoteSubnets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoutedSubnets", GoMethod: "ResetRoutedSubnets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStaticAddressing", GoMethod: "ResetStaticAddressing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVlanTag", GoMethod: "ResetVlanTag"},
@@ -142,6 +146,68 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicTransitSiteLanNatOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnets",
+		reflect.TypeOf((*MagicTransitSiteLanRemoteSubnets)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsList",
+		reflect.TypeOf((*MagicTransitSiteLanRemoteSubnetsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MagicTransitSiteLanRemoteSubnetsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRemoteSubnetsOutputReference",
+		reflect.TypeOf((*MagicTransitSiteLanRemoteSubnetsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "localAliasPrefix", GoGetter: "LocalAliasPrefix"},
+			_jsii_.MemberProperty{JsiiProperty: "localAliasPrefixInput", GoGetter: "LocalAliasPrefixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "remotePrefix", GoGetter: "RemotePrefix"},
+			_jsii_.MemberProperty{JsiiProperty: "remotePrefixInput", GoGetter: "RemotePrefixInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MagicTransitSiteLanRemoteSubnetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

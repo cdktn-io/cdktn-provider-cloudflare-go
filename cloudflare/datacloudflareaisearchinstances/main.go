@@ -328,6 +328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cache", GoGetter: "Cache"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheThreshold", GoGetter: "CacheThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheTtl", GoGetter: "CacheTtl"},
+			_jsii_.MemberProperty{JsiiProperty: "chunk", GoGetter: "Chunk"},
 			_jsii_.MemberProperty{JsiiProperty: "chunkOverlap", GoGetter: "ChunkOverlap"},
 			_jsii_.MemberProperty{JsiiProperty: "chunkSize", GoGetter: "ChunkSize"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -377,7 +378,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceParams", GoGetter: "SourceParams"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberProperty{JsiiProperty: "summarization", GoGetter: "Summarization"},
+			_jsii_.MemberProperty{JsiiProperty: "summarizationModel", GoGetter: "SummarizationModel"},
 			_jsii_.MemberProperty{JsiiProperty: "syncInterval", GoGetter: "SyncInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "systemPromptAisearch", GoGetter: "SystemPromptAisearch"},
+			_jsii_.MemberProperty{JsiiProperty: "systemPromptIndexSummarization", GoGetter: "SystemPromptIndexSummarization"},
+			_jsii_.MemberProperty{JsiiProperty: "systemPromptRewriteQuery", GoGetter: "SystemPromptRewriteQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenId", GoGetter: "TokenId"},
@@ -622,6 +628,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataType", GoGetter: "DataType"},
 			_jsii_.MemberProperty{JsiiProperty: "direction", GoGetter: "Direction"},
 			_jsii_.MemberProperty{JsiiProperty: "field", GoGetter: "Field"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -794,7 +801,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parseOptions", GoGetter: "ParseOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "parseType", GoGetter: "ParseType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "storeOptions", GoGetter: "StoreOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -901,45 +907,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktn/provider-cloudflare.dataCloudflareAiSearchInstances.DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerStoreOptions",
-		reflect.TypeOf((*DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerStoreOptions)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktn/provider-cloudflare.dataCloudflareAiSearchInstances.DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerStoreOptionsOutputReference",
-		reflect.TypeOf((*DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerStoreOptionsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "r2Jurisdiction", GoGetter: "R2Jurisdiction"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "storageId", GoGetter: "StorageId"},
-			_jsii_.MemberProperty{JsiiProperty: "storageType", GoGetter: "StorageType"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerStoreOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

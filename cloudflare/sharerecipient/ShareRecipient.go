@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient cloudflare_share_recipient}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_recipient cloudflare_share_recipient}.
 type ShareRecipient interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -55,9 +55,6 @@ type ShareRecipient interface {
 	Modified() *string
 	// The tree node.
 	Node() constructs.Node
-	OrganizationId() *string
-	SetOrganizationId(val *string)
-	OrganizationIdInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -174,7 +171,6 @@ type ShareRecipient interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetIncludeResources()
-	ResetOrganizationId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -386,26 +382,6 @@ func (j *jsiiProxy_ShareRecipient) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ShareRecipient) OrganizationId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"organizationId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ShareRecipient) OrganizationIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"organizationIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ShareRecipient) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -517,7 +493,7 @@ func (j *jsiiProxy_ShareRecipient) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient cloudflare_share_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
 func NewShareRecipient(scope constructs.Construct, id *string, config *ShareRecipientConfig) ShareRecipient {
 	_init_.Initialize()
 
@@ -535,7 +511,7 @@ func NewShareRecipient(scope constructs.Construct, id *string, config *ShareReci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share_recipient cloudflare_share_recipient} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share_recipient cloudflare_share_recipient} Resource.
 func NewShareRecipient_Override(s ShareRecipient, scope constructs.Construct, id *string, config *ShareRecipientConfig) {
 	_init_.Initialize()
 
@@ -613,17 +589,6 @@ func (j *jsiiProxy_ShareRecipient)SetLifecycle(val *cdktn.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ShareRecipient)SetOrganizationId(val *string) {
-	if err := j.validateSetOrganizationIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"organizationId",
 		val,
 	)
 }
@@ -1053,14 +1018,6 @@ func (s *jsiiProxy_ShareRecipient) ResetIncludeResources() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIncludeResources",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ShareRecipient) ResetOrganizationId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetOrganizationId",
 		nil, // no parameters
 	)
 }

@@ -18,6 +18,7 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	Cache() cdktn.IResolvable
 	CacheThreshold() *string
 	CacheTtl() *float64
+	Chunk() cdktn.IResolvable
 	ChunkOverlap() *float64
 	ChunkSize() *float64
 	// the index of the complex object in a list.
@@ -68,7 +69,12 @@ type DataCloudflareAiSearchInstancesResultOutputReference interface {
 	Source() *string
 	SourceParams() DataCloudflareAiSearchInstancesResultSourceParamsOutputReference
 	Status() *string
+	Summarization() cdktn.IResolvable
+	SummarizationModel() *string
 	SyncInterval() *float64
+	SystemPromptAisearch() *string
+	SystemPromptIndexSummarization() *string
+	SystemPromptRewriteQuery() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -163,6 +169,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) CacheTt
 	_jsii_.Get(
 		j,
 		"cacheTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Chunk() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"chunk",
 		&returns,
 	)
 	return returns
@@ -528,11 +544,61 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Status(
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) Summarization() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"summarization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SummarizationModel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"summarizationModel",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SyncInterval() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"syncInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SystemPromptAisearch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"systemPromptAisearch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SystemPromptIndexSummarization() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"systemPromptIndexSummarization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultOutputReference) SystemPromptRewriteQuery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"systemPromptRewriteQuery",
 		&returns,
 	)
 	return returns

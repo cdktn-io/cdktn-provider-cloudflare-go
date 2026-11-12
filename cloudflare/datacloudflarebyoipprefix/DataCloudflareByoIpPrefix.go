@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 type DataCloudflareByoIpPrefix interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -22,6 +22,8 @@ type DataCloudflareByoIpPrefix interface {
 	AdvertisedModifiedAt() *string
 	Approved() *string
 	Asn() *float64
+	AsnOwnershipValidationState() *string
+	AspaValidationState() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
 	Cidr() *string
@@ -201,6 +203,26 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) Asn() *float64 {
 	_jsii_.Get(
 		j,
 		"asn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) AsnOwnershipValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"asnOwnershipValidationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) AspaValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aspaValidationState",
 		&returns,
 	)
 	return returns
@@ -497,7 +519,7 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
 func NewDataCloudflareByoIpPrefix(scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixConfig) DataCloudflareByoIpPrefix {
 	_init_.Initialize()
 
@@ -515,7 +537,7 @@ func NewDataCloudflareByoIpPrefix(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
 func NewDataCloudflareByoIpPrefix_Override(d DataCloudflareByoIpPrefix, scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixConfig) {
 	_init_.Initialize()
 

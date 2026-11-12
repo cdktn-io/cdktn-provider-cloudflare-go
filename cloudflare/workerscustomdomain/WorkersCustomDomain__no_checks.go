@@ -111,6 +111,10 @@ func (j *jsiiProxy_WorkersCustomDomain) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_WorkersCustomDomain) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersCustomDomain) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_WorkersCustomDomain) validateSetHostnameParameters(val *strin
 }
 
 func (j *jsiiProxy_WorkersCustomDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersCustomDomain) validateSetPreviewsEnabledParameters(val interface{}) error {
 	return nil
 }
 

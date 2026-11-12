@@ -79,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "uploadStatus", GoGetter: "UploadStatus"},
+			_jsii_.MemberProperty{JsiiProperty: "validatorIds", GoGetter: "ValidatorIds"},
 			_jsii_.MemberProperty{JsiiProperty: "variant", GoGetter: "Variant"},
 			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "wordList", GoGetter: "WordList"},

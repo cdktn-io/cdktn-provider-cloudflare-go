@@ -606,6 +606,14 @@ func (j *jsiiProxy_AiSearchInstance) validateSetMaxNumResultsParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_AiSearchInstance) validateSetNamespaceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AiSearchInstance) validateSetPausedParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

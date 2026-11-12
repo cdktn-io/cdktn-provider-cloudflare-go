@@ -1463,6 +1463,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "vary", GoGetter: "Vary"},
+			_jsii_.MemberProperty{JsiiProperty: "webmcpEnabled", GoGetter: "WebmcpEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "webmcpPacks", GoGetter: "WebmcpPacks"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference{}

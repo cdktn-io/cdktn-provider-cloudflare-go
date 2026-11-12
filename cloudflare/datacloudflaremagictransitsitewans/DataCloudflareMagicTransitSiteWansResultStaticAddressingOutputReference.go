@@ -35,6 +35,7 @@ type DataCloudflareMagicTransitSiteWansResultStaticAddressingOutputReference int
 	InternalValue() *DataCloudflareMagicTransitSiteWansResultStaticAddressing
 	SetInternalValue(val *DataCloudflareMagicTransitSiteWansResultStaticAddressing)
 	SecondaryAddress() *string
+	SecondaryGatewayAddress() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteWansResultStaticAddressingOutpu
 	_jsii_.Get(
 		j,
 		"secondaryAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteWansResultStaticAddressingOutputReference) SecondaryGatewayAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryGatewayAddress",
 		&returns,
 	)
 	return returns

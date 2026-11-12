@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareOrganizationsResultMetaOutputReference interface {
 	cdktn.ComplexObject
+	AreChildAccountsAccessibleByOrgMembers() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +36,7 @@ type DataCloudflareOrganizationsResultMetaOutputReference interface {
 	SetInternalValue(val *DataCloudflareOrganizationsResultMeta)
 	ManagedBy() *string
 	TenantFlags() DataCloudflareOrganizationsResultMetaTenantFlagsOutputReference
+	TenantType() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +82,16 @@ type DataCloudflareOrganizationsResultMetaOutputReference interface {
 // The jsii proxy struct for DataCloudflareOrganizationsResultMetaOutputReference
 type jsiiProxy_DataCloudflareOrganizationsResultMetaOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationsResultMetaOutputReference) AreChildAccountsAccessibleByOrgMembers() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"areChildAccountsAccessibleByOrgMembers",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareOrganizationsResultMetaOutputReference) ComplexObjectIndex() interface{} {
@@ -157,6 +169,16 @@ func (j *jsiiProxy_DataCloudflareOrganizationsResultMetaOutputReference) TenantF
 	_jsii_.Get(
 		j,
 		"tenantFlags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationsResultMetaOutputReference) TenantType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantType",
 		&returns,
 	)
 	return returns

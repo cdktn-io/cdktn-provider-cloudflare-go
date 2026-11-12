@@ -59,11 +59,19 @@ func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetDirectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetOrderByParameters(val *string) error {
 	return nil
 }
 

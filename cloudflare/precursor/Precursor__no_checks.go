@@ -79,7 +79,7 @@ func (p *jsiiProxy_Precursor) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
-func (p *jsiiProxy_Precursor) validatePutEnforcementRulesParameters(value interface{}) error {
+func (p *jsiiProxy_Precursor) validatePutRulesParameters(value interface{}) error {
 	return nil
 }
 
@@ -111,15 +111,19 @@ func (j *jsiiProxy_Precursor) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_Precursor) validateSetDefaultModeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Precursor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
+func (j *jsiiProxy_Precursor) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Precursor) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Precursor) validateSetShowInterstitialParameters(val interface{}) error {
 	return nil
 }
 

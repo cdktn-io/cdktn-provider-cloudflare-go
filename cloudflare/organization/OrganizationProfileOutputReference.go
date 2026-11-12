@@ -79,6 +79,11 @@ type OrganizationProfileOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetBusinessAddress()
+	ResetBusinessEmail()
+	ResetBusinessName()
+	ResetBusinessPhone()
+	ResetExternalMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -586,6 +591,46 @@ func (o *jsiiProxy_OrganizationProfileOutputReference) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OrganizationProfileOutputReference) ResetBusinessAddress() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBusinessAddress",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationProfileOutputReference) ResetBusinessEmail() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBusinessEmail",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationProfileOutputReference) ResetBusinessName() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBusinessName",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationProfileOutputReference) ResetBusinessPhone() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBusinessPhone",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationProfileOutputReference) ResetExternalMetadata() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetExternalMetadata",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OrganizationProfileOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

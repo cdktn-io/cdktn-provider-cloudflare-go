@@ -31,6 +31,9 @@ type DataCloudflareEmailSecurityAllowPolicyFilterOutputReference interface {
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
+	Expired() interface{}
+	SetExpired(val interface{})
+	ExpiredInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -92,6 +95,7 @@ type DataCloudflareEmailSecurityAllowPolicyFilterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDirection()
+	ResetExpired()
 	ResetIsAcceptableSender()
 	ResetIsExemptRecipient()
 	ResetIsTrustedSender()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference) 
 	_jsii_.Get(
 		j,
 		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference) Expired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference) ExpiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expiredInput",
 		&returns,
 	)
 	return returns
@@ -422,6 +446,17 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference)S
 	_jsii_.Set(
 		j,
 		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference)SetExpired(val interface{}) {
+	if err := j.validateSetExpiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expired",
 		val,
 	)
 }
@@ -737,6 +772,14 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference) 
 	_jsii_.InvokeVoid(
 		d,
 		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference) ResetExpired() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExpired",
 		nil, // no parameters
 	)
 }

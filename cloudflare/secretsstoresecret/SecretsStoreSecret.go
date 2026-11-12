@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret cloudflare_secrets_store_secret}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret cloudflare_secrets_store_secret}.
 type SecretsStoreSecret interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -179,6 +179,7 @@ type SecretsStoreSecret interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScopes()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -527,7 +528,7 @@ func (j *jsiiProxy_SecretsStoreSecret) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret cloudflare_secrets_store_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret cloudflare_secrets_store_secret} Resource.
 func NewSecretsStoreSecret(scope constructs.Construct, id *string, config *SecretsStoreSecretConfig) SecretsStoreSecret {
 	_init_.Initialize()
 
@@ -545,7 +546,7 @@ func NewSecretsStoreSecret(scope constructs.Construct, id *string, config *Secre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/secrets_store_secret cloudflare_secrets_store_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/secrets_store_secret cloudflare_secrets_store_secret} Resource.
 func NewSecretsStoreSecret_Override(s SecretsStoreSecret, scope constructs.Construct, id *string, config *SecretsStoreSecretConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1083,14 @@ func (s *jsiiProxy_SecretsStoreSecret) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsStoreSecret) ResetScopes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetScopes",
 		nil, // no parameters
 	)
 }

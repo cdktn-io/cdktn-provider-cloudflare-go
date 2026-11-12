@@ -95,6 +95,10 @@ func (w *jsiiProxy_WorkersScript) validatePutCacheOptionsParameters(value *Worke
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScript) validatePutCodeUpdateStrategyParameters(value *WorkersScriptCodeUpdateStrategy) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScript) validatePutExportsParameters(value interface{}) error {
 	return nil
 }

@@ -61,6 +61,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "originPortInput", GoGetter: "OriginPortInput"},
 			_jsii_.MemberProperty{JsiiProperty: "originWorkerId", GoGetter: "OriginWorkerId"},
 			_jsii_.MemberProperty{JsiiProperty: "originWorkerIdInput", GoGetter: "OriginWorkerIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "originWorkerName", GoGetter: "OriginWorkerName"},
+			_jsii_.MemberProperty{JsiiProperty: "originWorkerStatus", GoGetter: "OriginWorkerStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
 			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},

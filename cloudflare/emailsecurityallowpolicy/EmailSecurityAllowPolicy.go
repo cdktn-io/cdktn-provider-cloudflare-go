@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy}.
 type EmailSecurityAllowPolicy interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -38,6 +38,9 @@ type EmailSecurityAllowPolicy interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpiresAt() *string
+	SetExpiresAt(val *string)
+	ExpiresAtInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -194,6 +197,7 @@ type EmailSecurityAllowPolicy interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetComments()
+	ResetExpiresAt()
 	ResetIsRecipient()
 	ResetIsSender()
 	ResetIsSpoof()
@@ -322,6 +326,26 @@ func (j *jsiiProxy_EmailSecurityAllowPolicy) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailSecurityAllowPolicy) ExpiresAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailSecurityAllowPolicy) ExpiresAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAtInput",
 		&returns,
 	)
 	return returns
@@ -668,7 +692,7 @@ func (j *jsiiProxy_EmailSecurityAllowPolicy) VerifySenderInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy} Resource.
 func NewEmailSecurityAllowPolicy(scope constructs.Construct, id *string, config *EmailSecurityAllowPolicyConfig) EmailSecurityAllowPolicy {
 	_init_.Initialize()
 
@@ -686,7 +710,7 @@ func NewEmailSecurityAllowPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_allow_policy cloudflare_email_security_allow_policy} Resource.
 func NewEmailSecurityAllowPolicy_Override(e EmailSecurityAllowPolicy, scope constructs.Construct, id *string, config *EmailSecurityAllowPolicyConfig) {
 	_init_.Initialize()
 
@@ -745,6 +769,17 @@ func (j *jsiiProxy_EmailSecurityAllowPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmailSecurityAllowPolicy)SetExpiresAt(val *string) {
+	if err := j.validateSetExpiresAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expiresAt",
 		val,
 	)
 }
@@ -1281,6 +1316,14 @@ func (e *jsiiProxy_EmailSecurityAllowPolicy) ResetComments() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetComments",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailSecurityAllowPolicy) ResetExpiresAt() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetExpiresAt",
 		nil, // no parameters
 	)
 }

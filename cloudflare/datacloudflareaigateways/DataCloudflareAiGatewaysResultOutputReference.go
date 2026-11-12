@@ -35,6 +35,8 @@ type DataCloudflareAiGatewaysResultOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Dlp() DataCloudflareAiGatewaysResultDlpOutputReference
+	FedrampLevel() *string
+	FedrampMode() *string
 	// Experimental.
 	Fqn() *string
 	Guardrails() DataCloudflareAiGatewaysResultGuardrailsOutputReference
@@ -202,6 +204,26 @@ func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) Dlp() DataClou
 	_jsii_.Get(
 		j,
 		"dlp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) FedrampLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fedrampLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiGatewaysResultOutputReference) FedrampMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fedrampMode",
 		&returns,
 	)
 	return returns

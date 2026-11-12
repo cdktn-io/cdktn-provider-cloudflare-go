@@ -151,6 +151,10 @@ func (j *jsiiProxy_ZeroTrustOrganization) validateSetDenyUnmatchedRequestsExempt
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustOrganization) validateSetDisableEndUserAppCreationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustOrganization) validateSetIsUiReadOnlyParameters(val interface{}) error {
 	return nil
 }

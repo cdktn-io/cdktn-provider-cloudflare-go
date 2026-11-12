@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_deployment cloudflare_workers_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_deployment cloudflare_workers_deployment}.
 type DataCloudflareWorkersDeployment interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -22,6 +22,7 @@ type DataCloudflareWorkersDeployment interface {
 	AuthorEmail() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CodeUpdateStrategy() DataCloudflareWorkersDeploymentCodeUpdateStrategyOutputReference
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -183,6 +184,16 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment) CdktfStack() cdktn.Terraform
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersDeployment) CodeUpdateStrategy() DataCloudflareWorkersDeploymentCodeUpdateStrategyOutputReference {
+	var returns DataCloudflareWorkersDeploymentCodeUpdateStrategyOutputReference
+	_jsii_.Get(
+		j,
+		"codeUpdateStrategy",
 		&returns,
 	)
 	return returns
@@ -409,7 +420,7 @@ func (j *jsiiProxy_DataCloudflareWorkersDeployment) Versions() DataCloudflareWor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
 func NewDataCloudflareWorkersDeployment(scope constructs.Construct, id *string, config *DataCloudflareWorkersDeploymentConfig) DataCloudflareWorkersDeployment {
 	_init_.Initialize()
 
@@ -427,7 +438,7 @@ func NewDataCloudflareWorkersDeployment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_deployment cloudflare_workers_deployment} Data Source.
 func NewDataCloudflareWorkersDeployment_Override(d DataCloudflareWorkersDeployment, scope constructs.Construct, id *string, config *DataCloudflareWorkersDeploymentConfig) {
 	_init_.Initialize()
 

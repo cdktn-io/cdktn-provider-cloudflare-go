@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 type OriginCaCertificate interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -70,12 +70,16 @@ type OriginCaCertificate interface {
 	RequestType() *string
 	SetRequestType(val *string)
 	RequestTypeInput() *string
+	RevokedAt() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -172,6 +176,7 @@ type OriginCaCertificate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRequestedValidity()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -439,6 +444,16 @@ func (j *jsiiProxy_OriginCaCertificate) RequestTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OriginCaCertificate) RevokedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"revokedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OriginCaCertificate) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -469,8 +484,28 @@ func (j *jsiiProxy_OriginCaCertificate) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OriginCaCertificate) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+func (j *jsiiProxy_OriginCaCertificate) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate(scope constructs.Construct, id *string, config *OriginCaCertificateConfig) OriginCaCertificate {
 	_init_.Initialize()
 
@@ -488,7 +523,7 @@ func NewOriginCaCertificate(scope constructs.Construct, id *string, config *Orig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate_Override(o OriginCaCertificate, scope constructs.Construct, id *string, config *OriginCaCertificateConfig) {
 	_init_.Initialize()
 
@@ -607,6 +642,17 @@ func (j *jsiiProxy_OriginCaCertificate)SetRequestType(val *string) {
 	_jsii_.Set(
 		j,
 		"requestType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OriginCaCertificate)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
 		val,
 	)
 }
@@ -1003,6 +1049,14 @@ func (o *jsiiProxy_OriginCaCertificate) ResetRequestedValidity() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRequestedValidity",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OriginCaCertificate) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
 type ZeroTrustAccessServiceToken interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -55,6 +55,9 @@ type ZeroTrustAccessServiceToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	LeakReportedAt() *string
+	LeakReporter() *string
+	LeakReportUrl() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -77,6 +80,9 @@ type ZeroTrustAccessServiceToken interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -186,6 +192,7 @@ type ZeroTrustAccessServiceToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreviousClientSecretExpiresAt()
+	ResetTags()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -414,6 +421,36 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) LeakReportedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leakReportedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) LeakReporter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leakReporter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) LeakReportUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leakReportUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -504,6 +541,26 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -555,7 +612,7 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) ZeroTrustAccessServiceToken {
 	_init_.Initialize()
 
@@ -573,7 +630,7 @@ func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken_Override(z ZeroTrustAccessServiceToken, scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) {
 	_init_.Initialize()
 
@@ -714,6 +771,17 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessServiceToken)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1153,6 +1221,14 @@ func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetPreviousClientSecretExpires
 	_jsii_.InvokeVoid(
 		z,
 		"resetPreviousClientSecretExpiresAt",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessServiceToken) ResetTags() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetTags",
 		nil, // no parameters
 	)
 }

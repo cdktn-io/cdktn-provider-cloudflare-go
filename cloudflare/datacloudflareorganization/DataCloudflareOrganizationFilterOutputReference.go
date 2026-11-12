@@ -30,6 +30,9 @@ type DataCloudflareOrganizationFilterOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
 	// Experimental.
 	Fqn() *string
 	Id() *[]*string
@@ -37,8 +40,13 @@ type DataCloudflareOrganizationFilterOutputReference interface {
 	IdInput() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Member() DataCloudflareOrganizationFilterMemberOutputReference
+	MemberInput() interface{}
 	Name() DataCloudflareOrganizationFilterNameOutputReference
 	NameInput() interface{}
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByInput() *string
 	PageSize() *float64
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
@@ -80,11 +88,15 @@ type DataCloudflareOrganizationFilterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutContaining(value *DataCloudflareOrganizationFilterContaining)
+	PutMember(value *DataCloudflareOrganizationFilterMember)
 	PutName(value *DataCloudflareOrganizationFilterName)
 	PutParent(value *DataCloudflareOrganizationFilterParent)
 	ResetContaining()
+	ResetDirection()
 	ResetId()
+	ResetMember()
 	ResetName()
+	ResetOrderBy()
 	ResetPageSize()
 	ResetPageToken()
 	ResetParent()
@@ -153,6 +165,26 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) CreationStac
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -193,6 +225,26 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) InternalValu
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) Member() DataCloudflareOrganizationFilterMemberOutputReference {
+	var returns DataCloudflareOrganizationFilterMemberOutputReference
+	_jsii_.Get(
+		j,
+		"member",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) MemberInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"memberInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) Name() DataCloudflareOrganizationFilterNameOutputReference {
 	var returns DataCloudflareOrganizationFilterNameOutputReference
 	_jsii_.Get(
@@ -208,6 +260,26 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) NameInput() 
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
 		&returns,
 	)
 	return returns
@@ -343,6 +415,17 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference)SetComplexObj
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"direction",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference)SetId(val *[]*string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -361,6 +444,17 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
 		val,
 	)
 }
@@ -606,6 +700,17 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) PutContainin
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) PutMember(value *DataCloudflareOrganizationFilterMember) {
+	if err := d.validatePutMemberParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMember",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) PutName(value *DataCloudflareOrganizationFilterName) {
 	if err := d.validatePutNameParameters(value); err != nil {
 		panic(err)
@@ -636,6 +741,14 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) ResetContain
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) ResetDirection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -644,10 +757,26 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) ResetId() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) ResetMember() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMember",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderBy",
 		nil, // no parameters
 	)
 }

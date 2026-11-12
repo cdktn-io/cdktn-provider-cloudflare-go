@@ -171,6 +171,10 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetEnabledParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetEnableDeviceCredentialAuthenticationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetExcludeOfficeIpsParameters(val interface{}) error {
 	return nil
 }

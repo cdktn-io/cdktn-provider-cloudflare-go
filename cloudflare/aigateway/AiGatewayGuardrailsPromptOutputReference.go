@@ -49,6 +49,9 @@ type AiGatewayGuardrailsPromptOutputReference interface {
 	S13() *string
 	SetS13(val *string)
 	S13Input() *string
+	S14() *string
+	SetS14(val *string)
+	S14Input() *string
 	S1Input() *string
 	S2() *string
 	SetS2(val *string)
@@ -112,6 +115,7 @@ type AiGatewayGuardrailsPromptOutputReference interface {
 	ResetS11()
 	ResetS12()
 	ResetS13()
+	ResetS14()
 	ResetS2()
 	ResetS3()
 	ResetS4()
@@ -290,6 +294,26 @@ func (j *jsiiProxy_AiGatewayGuardrailsPromptOutputReference) S13Input() *string 
 	_jsii_.Get(
 		j,
 		"s13Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayGuardrailsPromptOutputReference) S14() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s14",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiGatewayGuardrailsPromptOutputReference) S14Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s14Input",
 		&returns,
 	)
 	return returns
@@ -608,6 +632,17 @@ func (j *jsiiProxy_AiGatewayGuardrailsPromptOutputReference)SetS13(val *string) 
 	_jsii_.Set(
 		j,
 		"s13",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiGatewayGuardrailsPromptOutputReference)SetS14(val *string) {
+	if err := j.validateSetS14Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"s14",
 		val,
 	)
 }
@@ -952,6 +987,14 @@ func (a *jsiiProxy_AiGatewayGuardrailsPromptOutputReference) ResetS13() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetS13",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiGatewayGuardrailsPromptOutputReference) ResetS14() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetS14",
 		nil, // no parameters
 	)
 }

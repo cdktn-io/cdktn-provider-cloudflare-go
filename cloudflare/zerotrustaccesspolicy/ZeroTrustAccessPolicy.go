@@ -12,13 +12,12 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
 type ZeroTrustAccessPolicy interface {
 	cdktn.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AppCount() *float64
 	ApprovalGroups() ZeroTrustAccessPolicyApprovalGroupsList
 	ApprovalGroupsInput() interface{}
 	ApprovalRequired() interface{}
@@ -73,6 +72,9 @@ type ZeroTrustAccessPolicy interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PolicyResolutionAccountId() *string
+	SetPolicyResolutionAccountId(val *string)
+	PolicyResolutionAccountIdInput() *string
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -210,6 +212,7 @@ type ZeroTrustAccessPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyResolutionAccountId()
 	ResetPurposeJustificationPrompt()
 	ResetPurposeJustificationRequired()
 	ResetRequire()
@@ -256,16 +259,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
 		&returns,
 	)
 	return returns
@@ -571,6 +564,26 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessPolicy) PolicyResolutionAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyResolutionAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) PolicyResolutionAccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyResolutionAccountIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessPolicy) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -732,7 +745,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) ZeroTrustAccessPolicy {
 	_init_.Initialize()
 
@@ -750,7 +763,7 @@ func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy_Override(z ZeroTrustAccessPolicy, scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -861,6 +874,17 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy)SetPolicyResolutionAccountId(val *string) {
+	if err := j.validateSetPolicyResolutionAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyResolutionAccountId",
 		val,
 	)
 }
@@ -1423,6 +1447,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetPolicyResolutionAccountId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPolicyResolutionAccountId",
 		nil, // no parameters
 	)
 }

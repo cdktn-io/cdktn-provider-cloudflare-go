@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies) validateSetDirectio
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies) validateSetExpiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies) validateSetIsAcceptableSenderParameters(val interface{}) error {
 	return nil
 }

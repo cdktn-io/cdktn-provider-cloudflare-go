@@ -215,6 +215,17 @@ func (r *jsiiProxy_R2DataCatalog) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (r *jsiiProxy_R2DataCatalog) validatePutCredentialParameters(value *R2DataCatalogCredential) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_R2DataCatalog) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	if feature == "" {
 		return fmt.Errorf("parameter feature is required, but nil was provided")

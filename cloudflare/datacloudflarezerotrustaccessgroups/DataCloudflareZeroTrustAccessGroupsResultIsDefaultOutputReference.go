@@ -57,6 +57,7 @@ type DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference interface
 	Okta() DataCloudflareZeroTrustAccessGroupsResultIsDefaultOktaOutputReference
 	Saml() DataCloudflareZeroTrustAccessGroupsResultIsDefaultSamlOutputReference
 	ServiceToken() DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTokenOutputReference
+	ServiceTokenTag() DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTokenTagOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -400,6 +401,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputRefer
 	_jsii_.Get(
 		j,
 		"serviceToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIsDefaultOutputReference) ServiceTokenTag() DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTokenTagOutputReference {
+	var returns DataCloudflareZeroTrustAccessGroupsResultIsDefaultServiceTokenTagOutputReference
+	_jsii_.Get(
+		j,
+		"serviceTokenTag",
 		&returns,
 	)
 	return returns

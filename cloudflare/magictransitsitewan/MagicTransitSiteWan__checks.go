@@ -432,6 +432,22 @@ func (j *jsiiProxy_MagicTransitSiteWan) validateSetPriorityParameters(val *float
 	return nil
 }
 
+func (j *jsiiProxy_MagicTransitSiteWan) validateSetProvisionedDownloadKbpsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan) validateSetProvisionedUploadKbpsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MagicTransitSiteWan) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

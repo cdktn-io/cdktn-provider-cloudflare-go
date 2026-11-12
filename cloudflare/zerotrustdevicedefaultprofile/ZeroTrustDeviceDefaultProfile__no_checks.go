@@ -159,6 +159,10 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetDisableAutoFallback
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetEnableDeviceCredentialAuthenticationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetExcludeOfficeIpsParameters(val interface{}) error {
 	return nil
 }

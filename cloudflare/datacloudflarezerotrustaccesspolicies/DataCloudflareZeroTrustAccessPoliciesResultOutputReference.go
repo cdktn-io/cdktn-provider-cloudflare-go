@@ -45,6 +45,7 @@ type DataCloudflareZeroTrustAccessPoliciesResultOutputReference interface {
 	IsolationRequired() cdktn.IResolvable
 	MfaConfig() DataCloudflareZeroTrustAccessPoliciesResultMfaConfigOutputReference
 	Name() *string
+	PolicyResolutionAccountId() *string
 	PurposeJustificationPrompt() *string
 	PurposeJustificationRequired() cdktn.IResolvable
 	Require() DataCloudflareZeroTrustAccessPoliciesResultRequireList
@@ -273,6 +274,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference) N
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultOutputReference) PolicyResolutionAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyResolutionAccountId",
 		&returns,
 	)
 	return returns

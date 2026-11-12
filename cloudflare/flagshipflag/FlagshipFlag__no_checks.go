@@ -139,6 +139,10 @@ func (j *jsiiProxy_FlagshipFlag) validateSetLifecycleParameters(val *cdktn.Terra
 	return nil
 }
 
+func (j *jsiiProxy_FlagshipFlag) validateSetMetadataParameters(val *map[string]interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FlagshipFlag) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

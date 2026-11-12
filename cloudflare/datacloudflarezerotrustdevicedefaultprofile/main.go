@@ -30,6 +30,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "disableAutoFallback", GoGetter: "DisableAutoFallback"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsSearchSuffixes", GoGetter: "DnsSearchSuffixes"},
 			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enableDeviceCredentialAuthentication", GoGetter: "EnableDeviceCredentialAuthentication"},
 			_jsii_.MemberProperty{JsiiProperty: "exclude", GoGetter: "Exclude"},
 			_jsii_.MemberProperty{JsiiProperty: "excludeOfficeIps", GoGetter: "ExcludeOfficeIps"},
 			_jsii_.MemberProperty{JsiiProperty: "fallbackDomains", GoGetter: "FallbackDomains"},

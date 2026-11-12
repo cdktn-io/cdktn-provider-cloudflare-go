@@ -83,6 +83,10 @@ func (w *jsiiProxy_WorkersDeployment) validatePutAnnotationsParameters(value *Wo
 	return nil
 }
 
+func (w *jsiiProxy_WorkersDeployment) validatePutCodeUpdateStrategyParameters(value *WorkersDeploymentCodeUpdateStrategy) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersDeployment) validatePutVersionsParameters(value interface{}) error {
 	return nil
 }

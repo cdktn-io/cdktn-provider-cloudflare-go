@@ -101,7 +101,23 @@ func (c *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) validateSetCertificateAuthorityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) validateSetCertVerificationModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) validateSetClientCertificateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

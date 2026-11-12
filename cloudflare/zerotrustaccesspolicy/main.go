@@ -18,7 +18,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "appCount", GoGetter: "AppCount"},
 			_jsii_.MemberProperty{JsiiProperty: "approvalGroups", GoGetter: "ApprovalGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "approvalGroupsInput", GoGetter: "ApprovalGroupsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "approvalRequired", GoGetter: "ApprovalRequired"},
@@ -66,6 +65,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "policyResolutionAccountId", GoGetter: "PolicyResolutionAccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "policyResolutionAccountIdInput", GoGetter: "PolicyResolutionAccountIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "purposeJustificationPrompt", GoGetter: "PurposeJustificationPrompt"},
@@ -90,6 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetIsolationRequired", GoMethod: "ResetIsolationRequired"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMfaConfig", GoMethod: "ResetMfaConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPolicyResolutionAccountId", GoMethod: "ResetPolicyResolutionAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPurposeJustificationPrompt", GoMethod: "ResetPurposeJustificationPrompt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPurposeJustificationRequired", GoMethod: "ResetPurposeJustificationRequired"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequire", GoMethod: "ResetRequire"},
@@ -1278,6 +1280,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOkta", GoMethod: "PutOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "putSaml", GoMethod: "PutSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceToken", GoMethod: "PutServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "putServiceTokenTag", GoMethod: "PutServiceTokenTag"},
 			_jsii_.MemberMethod{JsiiMethod: "putUserRiskScore", GoMethod: "PutUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnyValidServiceToken", GoMethod: "ResetAnyValidServiceToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthContext", GoMethod: "ResetAuthContext"},
@@ -1304,12 +1307,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOkta", GoMethod: "ResetOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSaml", GoMethod: "ResetSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceToken", GoMethod: "ResetServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceTokenTag", GoMethod: "ResetServiceTokenTag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserRiskScore", GoMethod: "ResetUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "saml", GoGetter: "Saml"},
 			_jsii_.MemberProperty{JsiiProperty: "samlInput", GoGetter: "SamlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceToken", GoGetter: "ServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceTokenInput", GoGetter: "ServiceTokenInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceTokenTag", GoGetter: "ServiceTokenTag"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceTokenTagInput", GoGetter: "ServiceTokenTagInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -1398,6 +1404,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessPolicyExcludeServiceTokenOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyExcludeServiceTokenTag",
+		reflect.TypeOf((*ZeroTrustAccessPolicyExcludeServiceTokenTag)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyExcludeServiceTokenTagOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessPolicyExcludeServiceTokenTagOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
+			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessPolicyExcludeServiceTokenTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -2451,6 +2497,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOkta", GoMethod: "PutOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "putSaml", GoMethod: "PutSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceToken", GoMethod: "PutServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "putServiceTokenTag", GoMethod: "PutServiceTokenTag"},
 			_jsii_.MemberMethod{JsiiMethod: "putUserRiskScore", GoMethod: "PutUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnyValidServiceToken", GoMethod: "ResetAnyValidServiceToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthContext", GoMethod: "ResetAuthContext"},
@@ -2477,12 +2524,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOkta", GoMethod: "ResetOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSaml", GoMethod: "ResetSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceToken", GoMethod: "ResetServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceTokenTag", GoMethod: "ResetServiceTokenTag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserRiskScore", GoMethod: "ResetUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "saml", GoGetter: "Saml"},
 			_jsii_.MemberProperty{JsiiProperty: "samlInput", GoGetter: "SamlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceToken", GoGetter: "ServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceTokenInput", GoGetter: "ServiceTokenInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceTokenTag", GoGetter: "ServiceTokenTag"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceTokenTagInput", GoGetter: "ServiceTokenTagInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -2571,6 +2621,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessPolicyIncludeServiceTokenOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyIncludeServiceTokenTag",
+		reflect.TypeOf((*ZeroTrustAccessPolicyIncludeServiceTokenTag)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyIncludeServiceTokenTagOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessPolicyIncludeServiceTokenTagOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
+			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessPolicyIncludeServiceTokenTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
@@ -3669,6 +3759,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOkta", GoMethod: "PutOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "putSaml", GoMethod: "PutSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceToken", GoMethod: "PutServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "putServiceTokenTag", GoMethod: "PutServiceTokenTag"},
 			_jsii_.MemberMethod{JsiiMethod: "putUserRiskScore", GoMethod: "PutUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnyValidServiceToken", GoMethod: "ResetAnyValidServiceToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthContext", GoMethod: "ResetAuthContext"},
@@ -3695,12 +3786,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOkta", GoMethod: "ResetOkta"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSaml", GoMethod: "ResetSaml"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceToken", GoMethod: "ResetServiceToken"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceTokenTag", GoMethod: "ResetServiceTokenTag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserRiskScore", GoMethod: "ResetUserRiskScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "saml", GoGetter: "Saml"},
 			_jsii_.MemberProperty{JsiiProperty: "samlInput", GoGetter: "SamlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceToken", GoGetter: "ServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceTokenInput", GoGetter: "ServiceTokenInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceTokenTag", GoGetter: "ServiceTokenTag"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceTokenTagInput", GoGetter: "ServiceTokenTagInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -3789,6 +3883,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustAccessPolicyRequireServiceTokenOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireServiceTokenTag",
+		reflect.TypeOf((*ZeroTrustAccessPolicyRequireServiceTokenTag)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireServiceTokenTagOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessPolicyRequireServiceTokenTagOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
+			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessPolicyRequireServiceTokenTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

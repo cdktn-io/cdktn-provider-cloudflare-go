@@ -28,6 +28,7 @@ type DataCloudflareAiSearchInstancesResultRetrievalOptionsBoostByOutputReference
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataType() *string
 	Direction() *string
 	Field() *string
 	// Experimental.
@@ -106,6 +107,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultRetrievalOptionsBoostByO
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultRetrievalOptionsBoostByOutputReference) DataType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataType",
 		&returns,
 	)
 	return returns

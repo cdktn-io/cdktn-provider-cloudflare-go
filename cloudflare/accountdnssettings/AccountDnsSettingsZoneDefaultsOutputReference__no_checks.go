@@ -75,10 +75,6 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetFla
 	return nil
 }
 
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetFoundationDnsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

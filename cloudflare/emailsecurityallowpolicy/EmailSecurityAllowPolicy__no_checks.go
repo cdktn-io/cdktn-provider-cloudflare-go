@@ -115,6 +115,10 @@ func (j *jsiiProxy_EmailSecurityAllowPolicy) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_EmailSecurityAllowPolicy) validateSetExpiresAtParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailSecurityAllowPolicy) validateSetIsAcceptableSenderParameters(val interface{}) error {
 	return nil
 }

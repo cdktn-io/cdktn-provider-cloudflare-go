@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server}.
 type ZeroTrustAccessAiControlsMcpServer interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -93,6 +93,7 @@ type ZeroTrustAccessAiControlsMcpServer interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RegisteredAt() *string
 	SecureWebGateway() interface{}
 	SetSecureWebGateway(val interface{})
 	SecureWebGatewayInput() interface{}
@@ -659,6 +660,16 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) RegisteredAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registeredAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) SecureWebGateway() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -770,7 +781,7 @@ func (j *jsiiProxy_ZeroTrustAccessAiControlsMcpServer) UpdatedToolsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
 func NewZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpServerConfig) ZeroTrustAccessAiControlsMcpServer {
 	_init_.Initialize()
 
@@ -788,7 +799,7 @@ func NewZeroTrustAccessAiControlsMcpServer(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_access_ai_controls_mcp_server cloudflare_zero_trust_access_ai_controls_mcp_server} Resource.
 func NewZeroTrustAccessAiControlsMcpServer_Override(z ZeroTrustAccessAiControlsMcpServer, scope constructs.Construct, id *string, config *ZeroTrustAccessAiControlsMcpServerConfig) {
 	_init_.Initialize()
 

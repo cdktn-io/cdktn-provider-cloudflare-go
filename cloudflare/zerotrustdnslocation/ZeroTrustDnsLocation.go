@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 type ZeroTrustDnsLocation interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -38,6 +38,9 @@ type ZeroTrustDnsLocation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Dns64Enabled() interface{}
+	SetDns64Enabled(val interface{})
+	Dns64EnabledInput() interface{}
 	DnsDestinationIpsId() *string
 	SetDnsDestinationIpsId(val *string)
 	DnsDestinationIpsIdInput() *string
@@ -186,6 +189,7 @@ type ZeroTrustDnsLocation interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetClientDefault()
+	ResetDns64Enabled()
 	ResetDnsDestinationIpsId()
 	ResetEcsSupport()
 	ResetEndpoints()
@@ -316,6 +320,26 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocation) Dns64Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dns64Enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocation) Dns64EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dns64EnabledInput",
 		&returns,
 	)
 	return returns
@@ -622,7 +646,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
 func NewZeroTrustDnsLocation(scope constructs.Construct, id *string, config *ZeroTrustDnsLocationConfig) ZeroTrustDnsLocation {
 	_init_.Initialize()
 
@@ -640,7 +664,7 @@ func NewZeroTrustDnsLocation(scope constructs.Construct, id *string, config *Zer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
 func NewZeroTrustDnsLocation_Override(z ZeroTrustDnsLocation, scope constructs.Construct, id *string, config *ZeroTrustDnsLocationConfig) {
 	_init_.Initialize()
 
@@ -699,6 +723,17 @@ func (j *jsiiProxy_ZeroTrustDnsLocation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocation)SetDns64Enabled(val interface{}) {
+	if err := j.validateSetDns64EnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dns64Enabled",
 		val,
 	)
 }
@@ -1191,6 +1226,14 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) ResetClientDefault() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetClientDefault",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDnsLocation) ResetDns64Enabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDns64Enabled",
 		nil, // no parameters
 	)
 }

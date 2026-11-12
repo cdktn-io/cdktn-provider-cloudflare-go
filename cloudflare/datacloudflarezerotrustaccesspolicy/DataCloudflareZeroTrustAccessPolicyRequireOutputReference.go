@@ -57,6 +57,7 @@ type DataCloudflareZeroTrustAccessPolicyRequireOutputReference interface {
 	Okta() DataCloudflareZeroTrustAccessPolicyRequireOktaOutputReference
 	Saml() DataCloudflareZeroTrustAccessPolicyRequireSamlOutputReference
 	ServiceToken() DataCloudflareZeroTrustAccessPolicyRequireServiceTokenOutputReference
+	ServiceTokenTag() DataCloudflareZeroTrustAccessPolicyRequireServiceTokenTagOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -400,6 +401,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyRequireOutputReference) Se
 	_jsii_.Get(
 		j,
 		"serviceToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPolicyRequireOutputReference) ServiceTokenTag() DataCloudflareZeroTrustAccessPolicyRequireServiceTokenTagOutputReference {
+	var returns DataCloudflareZeroTrustAccessPolicyRequireServiceTokenTagOutputReference
+	_jsii_.Get(
+		j,
+		"serviceTokenTag",
 		&returns,
 	)
 	return returns

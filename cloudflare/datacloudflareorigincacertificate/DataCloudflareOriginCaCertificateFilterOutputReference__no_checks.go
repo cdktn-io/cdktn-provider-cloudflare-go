@@ -63,14 +63,6 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) validateSetLimitParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) validateSetOffsetParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

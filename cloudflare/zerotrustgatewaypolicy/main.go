@@ -164,45 +164,6 @@ func init() {
 		reflect.TypeOf((*ZeroTrustGatewayPolicyRuleSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsAuditSsh",
-		reflect.TypeOf((*ZeroTrustGatewayPolicyRuleSettingsAuditSsh)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference",
-		reflect.TypeOf((*ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "commandLogging", GoGetter: "CommandLogging"},
-			_jsii_.MemberProperty{JsiiProperty: "commandLoggingInput", GoGetter: "CommandLoggingInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCommandLogging", GoMethod: "ResetCommandLogging"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
 		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls",
 		reflect.TypeOf((*ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls)(nil)).Elem(),
 	)
@@ -627,6 +588,44 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsForward",
+		reflect.TypeOf((*ZeroTrustGatewayPolicyRuleSettingsForward)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsForwardOutputReference",
+		reflect.TypeOf((*ZeroTrustGatewayPolicyRuleSettingsForwardOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "workerId", GoGetter: "WorkerId"},
+			_jsii_.MemberProperty{JsiiProperty: "workerIdInput", GoGetter: "WorkerIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsForwardOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktn/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsL4Override",
 		reflect.TypeOf((*ZeroTrustGatewayPolicyRuleSettingsL4Override)(nil)).Elem(),
 	)
@@ -724,8 +723,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "addHeadersInput", GoGetter: "AddHeadersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowChildBypass", GoGetter: "AllowChildBypass"},
 			_jsii_.MemberProperty{JsiiProperty: "allowChildBypassInput", GoGetter: "AllowChildBypassInput"},
-			_jsii_.MemberProperty{JsiiProperty: "auditSsh", GoGetter: "AuditSsh"},
-			_jsii_.MemberProperty{JsiiProperty: "auditSshInput", GoGetter: "AuditSshInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bisoAdminControls", GoGetter: "BisoAdminControls"},
 			_jsii_.MemberProperty{JsiiProperty: "bisoAdminControlsInput", GoGetter: "BisoAdminControlsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPage", GoGetter: "BlockPage"},
@@ -750,6 +747,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "egressInput", GoGetter: "EgressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forensicCopy", GoGetter: "ForensicCopy"},
 			_jsii_.MemberProperty{JsiiProperty: "forensicCopyInput", GoGetter: "ForensicCopyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "forward", GoGetter: "Forward"},
+			_jsii_.MemberProperty{JsiiProperty: "forwardInput", GoGetter: "ForwardInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -781,13 +780,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "overrideIpsInput", GoGetter: "OverrideIpsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "payloadLog", GoGetter: "PayloadLog"},
 			_jsii_.MemberProperty{JsiiProperty: "payloadLogInput", GoGetter: "PayloadLogInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putAuditSsh", GoMethod: "PutAuditSsh"},
 			_jsii_.MemberMethod{JsiiMethod: "putBisoAdminControls", GoMethod: "PutBisoAdminControls"},
 			_jsii_.MemberMethod{JsiiMethod: "putBlockPage", GoMethod: "PutBlockPage"},
 			_jsii_.MemberMethod{JsiiMethod: "putCheckSession", GoMethod: "PutCheckSession"},
 			_jsii_.MemberMethod{JsiiMethod: "putDnsResolvers", GoMethod: "PutDnsResolvers"},
 			_jsii_.MemberMethod{JsiiMethod: "putEgress", GoMethod: "PutEgress"},
 			_jsii_.MemberMethod{JsiiMethod: "putForensicCopy", GoMethod: "PutForensicCopy"},
+			_jsii_.MemberMethod{JsiiMethod: "putForward", GoMethod: "PutForward"},
 			_jsii_.MemberMethod{JsiiMethod: "putL4Override", GoMethod: "PutL4Override"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotificationSettings", GoMethod: "PutNotificationSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putPayloadLog", GoMethod: "PutPayloadLog"},
@@ -801,7 +800,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redirectInput", GoGetter: "RedirectInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAddHeaders", GoMethod: "ResetAddHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowChildBypass", GoMethod: "ResetAllowChildBypass"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAuditSsh", GoMethod: "ResetAuditSsh"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBisoAdminControls", GoMethod: "ResetBisoAdminControls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockPage", GoMethod: "ResetBlockPage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockPageEnabled", GoMethod: "ResetBlockPageEnabled"},
@@ -812,6 +810,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsResolvers", GoMethod: "ResetDnsResolvers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEgress", GoMethod: "ResetEgress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForensicCopy", GoMethod: "ResetForensicCopy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetForward", GoMethod: "ResetForward"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreCnameCategoryMatches", GoMethod: "ResetIgnoreCnameCategoryMatches"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsecureDisableDnssecValidation", GoMethod: "ResetInsecureDisableDnssecValidation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpCategories", GoMethod: "ResetIpCategories"},

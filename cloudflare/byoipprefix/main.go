@@ -23,6 +23,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "approved", GoGetter: "Approved"},
 			_jsii_.MemberProperty{JsiiProperty: "asn", GoGetter: "Asn"},
 			_jsii_.MemberProperty{JsiiProperty: "asnInput", GoGetter: "AsnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "asnOwnershipValidationState", GoGetter: "AsnOwnershipValidationState"},
+			_jsii_.MemberProperty{JsiiProperty: "aspaValidationState", GoGetter: "AspaValidationState"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrInput", GoGetter: "CidrInput"},

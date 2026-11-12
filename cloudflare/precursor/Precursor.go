@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor cloudflare_precursor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor cloudflare_precursor}.
 type Precursor interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -27,15 +27,10 @@ type Precursor interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultMode() *string
-	SetDefaultMode(val *string)
-	DefaultModeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnforcementRules() PrecursorEnforcementRulesList
-	EnforcementRulesInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -49,6 +44,9 @@ type Precursor interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -61,6 +59,11 @@ type Precursor interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Rules() PrecursorRulesList
+	RulesInput() interface{}
+	ShowInterstitial() interface{}
+	SetShowInterstitial(val interface{})
+	ShowInterstitialInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -149,7 +152,7 @@ type Precursor interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEnforcementRules(value interface{})
+	PutRules(value interface{})
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -163,11 +166,12 @@ type Precursor interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
-	ResetDefaultMode()
-	ResetEnforcementRules()
+	ResetMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRules()
+	ResetShowInterstitial()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -235,51 +239,11 @@ func (j *jsiiProxy_Precursor) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Precursor) DefaultMode() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"defaultMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Precursor) DefaultModeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"defaultModeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Precursor) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Precursor) EnforcementRules() PrecursorEnforcementRulesList {
-	var returns PrecursorEnforcementRulesList
-	_jsii_.Get(
-		j,
-		"enforcementRules",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Precursor) EnforcementRulesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enforcementRulesInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +299,26 @@ func (j *jsiiProxy_Precursor) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Precursor) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Precursor) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Precursor) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -370,6 +354,46 @@ func (j *jsiiProxy_Precursor) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Precursor) Rules() PrecursorRulesList {
+	var returns PrecursorRulesList
+	_jsii_.Get(
+		j,
+		"rules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Precursor) RulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rulesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Precursor) ShowInterstitial() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showInterstitial",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Precursor) ShowInterstitialInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showInterstitialInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +450,7 @@ func (j *jsiiProxy_Precursor) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor cloudflare_precursor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor cloudflare_precursor} Resource.
 func NewPrecursor(scope constructs.Construct, id *string, config *PrecursorConfig) Precursor {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewPrecursor(scope constructs.Construct, id *string, config *PrecursorConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor cloudflare_precursor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor cloudflare_precursor} Resource.
 func NewPrecursor_Override(p Precursor, scope constructs.Construct, id *string, config *PrecursorConfig) {
 	_init_.Initialize()
 
@@ -477,17 +501,6 @@ func (j *jsiiProxy_Precursor)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Precursor)SetDefaultMode(val *string) {
-	if err := j.validateSetDefaultModeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"defaultMode",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Precursor)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -515,6 +528,17 @@ func (j *jsiiProxy_Precursor)SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	)
 }
 
+func (j *jsiiProxy_Precursor)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Precursor)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -530,6 +554,17 @@ func (j *jsiiProxy_Precursor)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Precursor)SetShowInterstitial(val interface{}) {
+	if err := j.validateSetShowInterstitialParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"showInterstitial",
 		val,
 	)
 }
@@ -914,13 +949,13 @@ func (p *jsiiProxy_Precursor) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (p *jsiiProxy_Precursor) PutEnforcementRules(value interface{}) {
-	if err := p.validatePutEnforcementRulesParameters(value); err != nil {
+func (p *jsiiProxy_Precursor) PutRules(value interface{}) {
+	if err := p.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
-		"putEnforcementRules",
+		"putRules",
 		[]interface{}{value},
 	)
 }
@@ -936,18 +971,10 @@ func (p *jsiiProxy_Precursor) RegisterProviderFeatureUsage(feature cdktn.Provide
 	)
 }
 
-func (p *jsiiProxy_Precursor) ResetDefaultMode() {
+func (p *jsiiProxy_Precursor) ResetMode() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetDefaultMode",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_Precursor) ResetEnforcementRules() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetEnforcementRules",
+		"resetMode",
 		nil, // no parameters
 	)
 }
@@ -956,6 +983,22 @@ func (p *jsiiProxy_Precursor) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Precursor) ResetRules() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRules",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Precursor) ResetShowInterstitial() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetShowInterstitial",
 		nil, // no parameters
 	)
 }

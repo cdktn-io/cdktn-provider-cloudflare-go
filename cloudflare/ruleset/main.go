@@ -1758,6 +1758,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetUri", GoMethod: "ResetUri"},
 			_jsii_.MemberMethod{JsiiMethod: "resetValues", GoMethod: "ResetValues"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVary", GoMethod: "ResetVary"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebmcpEnabled", GoMethod: "ResetWebmcpEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebmcpPacks", GoMethod: "ResetWebmcpPacks"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "respectStrongEtags", GoGetter: "RespectStrongEtags"},
 			_jsii_.MemberProperty{JsiiProperty: "respectStrongEtagsInput", GoGetter: "RespectStrongEtagsInput"},
@@ -1812,6 +1814,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vary", GoGetter: "Vary"},
 			_jsii_.MemberProperty{JsiiProperty: "varyInput", GoGetter: "VaryInput"},
+			_jsii_.MemberProperty{JsiiProperty: "webmcpEnabled", GoGetter: "WebmcpEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "webmcpEnabledInput", GoGetter: "WebmcpEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "webmcpPacks", GoGetter: "WebmcpPacks"},
+			_jsii_.MemberProperty{JsiiProperty: "webmcpPacksInput", GoGetter: "WebmcpPacksInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOutputReference{}

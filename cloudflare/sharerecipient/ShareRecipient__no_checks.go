@@ -119,10 +119,6 @@ func (j *jsiiProxy_ShareRecipient) validateSetLifecycleParameters(val *cdktn.Ter
 	return nil
 }
 
-func (j *jsiiProxy_ShareRecipient) validateSetOrganizationIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ShareRecipient) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

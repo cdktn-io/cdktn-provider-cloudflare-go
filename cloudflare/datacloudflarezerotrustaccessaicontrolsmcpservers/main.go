@@ -296,6 +296,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "modifiedBy", GoGetter: "ModifiedBy"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "prompts", GoGetter: "Prompts"},
+			_jsii_.MemberProperty{JsiiProperty: "registeredAt", GoGetter: "RegisteredAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "secureWebGateway", GoGetter: "SecureWebGateway"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},

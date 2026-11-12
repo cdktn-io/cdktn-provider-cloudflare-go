@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ai_search_instance cloudflare_ai_search_instance}.
 type AiSearchInstance interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -101,6 +101,8 @@ type AiSearchInstance interface {
 	ModifiedAt() *string
 	ModifiedBy() *string
 	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Paused() interface{}
@@ -287,6 +289,7 @@ type AiSearchInstance interface {
 	ResetIndexMethod()
 	ResetMaxNumResults()
 	ResetMetadata()
+	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -865,6 +868,16 @@ func (j *jsiiProxy_AiSearchInstance) Namespace() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AiSearchInstance) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AiSearchInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -1316,7 +1329,7 @@ func (j *jsiiProxy_AiSearchInstance) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearchInstanceConfig) AiSearchInstance {
 	_init_.Initialize()
 
@@ -1334,7 +1347,7 @@ func NewAiSearchInstance(scope constructs.Construct, id *string, config *AiSearc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ai_search_instance cloudflare_ai_search_instance} Resource.
 func NewAiSearchInstance_Override(a AiSearchInstance, scope constructs.Construct, id *string, config *AiSearchInstanceConfig) {
 	_init_.Initialize()
 
@@ -1544,6 +1557,17 @@ func (j *jsiiProxy_AiSearchInstance)SetMaxNumResults(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxNumResults",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiSearchInstance)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
 		val,
 	)
 }
@@ -2313,6 +2337,14 @@ func (a *jsiiProxy_AiSearchInstance) ResetMetadata() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMetadata",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstance) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNamespace",
 		nil, // no parameters
 	)
 }

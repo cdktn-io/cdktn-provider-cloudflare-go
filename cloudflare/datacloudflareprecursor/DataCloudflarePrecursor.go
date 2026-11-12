@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor cloudflare_precursor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor cloudflare_precursor}.
 type DataCloudflarePrecursor interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -23,12 +23,10 @@ type DataCloudflarePrecursor interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultMode() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnforcementRules() DataCloudflarePrecursorEnforcementRulesList
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -42,6 +40,7 @@ type DataCloudflarePrecursor interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Mode() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -50,6 +49,8 @@ type DataCloudflarePrecursor interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Rules() DataCloudflarePrecursorRulesList
+	ShowInterstitial() cdktn.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -158,31 +159,11 @@ func (j *jsiiProxy_DataCloudflarePrecursor) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflarePrecursor) DefaultMode() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"defaultMode",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflarePrecursor) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflarePrecursor) EnforcementRules() DataCloudflarePrecursorEnforcementRulesList {
-	var returns DataCloudflarePrecursorEnforcementRulesList
-	_jsii_.Get(
-		j,
-		"enforcementRules",
 		&returns,
 	)
 	return returns
@@ -238,6 +219,16 @@ func (j *jsiiProxy_DataCloudflarePrecursor) Lifecycle() *cdktn.TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePrecursor) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePrecursor) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -263,6 +254,26 @@ func (j *jsiiProxy_DataCloudflarePrecursor) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePrecursor) Rules() DataCloudflarePrecursorRulesList {
+	var returns DataCloudflarePrecursorRulesList
+	_jsii_.Get(
+		j,
+		"rules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePrecursor) ShowInterstitial() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"showInterstitial",
 		&returns,
 	)
 	return returns
@@ -319,7 +330,7 @@ func (j *jsiiProxy_DataCloudflarePrecursor) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor cloudflare_precursor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor cloudflare_precursor} Data Source.
 func NewDataCloudflarePrecursor(scope constructs.Construct, id *string, config *DataCloudflarePrecursorConfig) DataCloudflarePrecursor {
 	_init_.Initialize()
 
@@ -337,7 +348,7 @@ func NewDataCloudflarePrecursor(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/precursor cloudflare_precursor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/precursor cloudflare_precursor} Data Source.
 func NewDataCloudflarePrecursor_Override(d DataCloudflarePrecursor, scope constructs.Construct, id *string, config *DataCloudflarePrecursorConfig) {
 	_init_.Initialize()
 

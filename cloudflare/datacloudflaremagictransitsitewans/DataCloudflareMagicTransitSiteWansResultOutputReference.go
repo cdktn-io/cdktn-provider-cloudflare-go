@@ -38,6 +38,8 @@ type DataCloudflareMagicTransitSiteWansResultOutputReference interface {
 	Name() *string
 	Physport() *float64
 	Priority() *float64
+	ProvisionedDownloadKbps() *float64
+	ProvisionedUploadKbps() *float64
 	SiteId() *string
 	StaticAddressing() DataCloudflareMagicTransitSiteWansResultStaticAddressingOutputReference
 	// Experimental.
@@ -193,6 +195,26 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteWansResultOutputReference) Prio
 	_jsii_.Get(
 		j,
 		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteWansResultOutputReference) ProvisionedDownloadKbps() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedDownloadKbps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteWansResultOutputReference) ProvisionedUploadKbps() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedUploadKbps",
 		&returns,
 	)
 	return returns

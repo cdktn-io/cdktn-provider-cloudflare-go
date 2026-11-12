@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/spectrum_application cloudflare_spectrum_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/spectrum_application cloudflare_spectrum_application}.
 type SpectrumApplication interface {
 	cdktn.TerraformResource
 	ArgoSmartRouting() interface{}
@@ -69,6 +69,8 @@ type SpectrumApplication interface {
 	OriginWorkerId() *string
 	SetOriginWorkerId(val *string)
 	OriginWorkerIdInput() *string
+	OriginWorkerName() *string
+	OriginWorkerStatus() *string
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
@@ -529,6 +531,26 @@ func (j *jsiiProxy_SpectrumApplication) OriginWorkerIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SpectrumApplication) OriginWorkerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originWorkerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpectrumApplication) OriginWorkerStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originWorkerStatus",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpectrumApplication) Protocol() *string {
 	var returns *string
 	_jsii_.Get(
@@ -710,7 +732,7 @@ func (j *jsiiProxy_SpectrumApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication(scope constructs.Construct, id *string, config *SpectrumApplicationConfig) SpectrumApplication {
 	_init_.Initialize()
 
@@ -728,7 +750,7 @@ func NewSpectrumApplication(scope constructs.Construct, id *string, config *Spec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication_Override(s SpectrumApplication, scope constructs.Construct, id *string, config *SpectrumApplicationConfig) {
 	_init_.Initialize()
 

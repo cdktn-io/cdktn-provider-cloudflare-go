@@ -59,6 +59,10 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }
@@ -68,6 +72,10 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) valid
 }
 
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) validateSetPreviewsEnabledParameters(val interface{}) error {
 	return nil
 }
 

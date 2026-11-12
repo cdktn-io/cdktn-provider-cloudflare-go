@@ -53,6 +53,7 @@ type DataCloudflareZeroTrustDlpCustomProfileEntriesOutputReference interface {
 	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	UpdatedAt() *string
+	ValidatorIds() *[]*string
 	Variant() DataCloudflareZeroTrustDlpCustomProfileEntriesVariantOutputReference
 	WordList() *[]*string
 	// Experimental.
@@ -289,6 +290,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileEntriesOutputReference
 	_jsii_.Get(
 		j,
 		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpCustomProfileEntriesOutputReference) ValidatorIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validatorIds",
 		&returns,
 	)
 	return returns

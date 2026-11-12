@@ -33,6 +33,9 @@ type DataCloudflareShareFilterOutputReference interface {
 	DirectionInput() *string
 	// Experimental.
 	Fqn() *string
+	IncludeTagsFrom() *string
+	SetIncludeTagsFrom(val *string)
+	IncludeTagsFromInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Kind() *string
@@ -86,6 +89,7 @@ type DataCloudflareShareFilterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDirection()
+	ResetIncludeTagsFrom()
 	ResetKind()
 	ResetOrder()
 	ResetResourceTypes()
@@ -162,6 +166,26 @@ func (j *jsiiProxy_DataCloudflareShareFilterOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareShareFilterOutputReference) IncludeTagsFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"includeTagsFrom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareShareFilterOutputReference) IncludeTagsFromInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"includeTagsFromInput",
 		&returns,
 	)
 	return returns
@@ -374,6 +398,17 @@ func (j *jsiiProxy_DataCloudflareShareFilterOutputReference)SetDirection(val *st
 	_jsii_.Set(
 		j,
 		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareShareFilterOutputReference)SetIncludeTagsFrom(val *string) {
+	if err := j.validateSetIncludeTagsFromParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeTagsFrom",
 		val,
 	)
 }
@@ -667,6 +702,14 @@ func (d *jsiiProxy_DataCloudflareShareFilterOutputReference) ResetDirection() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareShareFilterOutputReference) ResetIncludeTagsFrom() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeTagsFrom",
 		nil, // no parameters
 	)
 }

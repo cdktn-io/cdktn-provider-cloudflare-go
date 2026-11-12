@@ -79,6 +79,10 @@ func (r *jsiiProxy_R2DataCatalog) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (r *jsiiProxy_R2DataCatalog) validatePutCredentialParameters(value *R2DataCatalogCredential) error {
+	return nil
+}
+
 func (r *jsiiProxy_R2DataCatalog) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

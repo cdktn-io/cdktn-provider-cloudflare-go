@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstance) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAiSearchInstance) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareAiSearchInstanceParameters(scope constructs.Construct, id *string, config *DataCloudflareAiSearchInstanceConfig) error {
 	return nil
 }

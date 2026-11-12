@@ -18,6 +18,8 @@ type DataCloudflareByoIpPrefixesResultOutputReference interface {
 	AdvertisedModifiedAt() *string
 	Approved() *string
 	Asn() *float64
+	AsnOwnershipValidationState() *string
+	AspaValidationState() *string
 	Cidr() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -142,6 +144,26 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) Asn() *floa
 	_jsii_.Get(
 		j,
 		"asn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) AsnOwnershipValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"asnOwnershipValidationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefixesResultOutputReference) AspaValidationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aspaValidationState",
 		&returns,
 	)
 	return returns

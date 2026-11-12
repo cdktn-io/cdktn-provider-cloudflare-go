@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_security_allow_policies cloudflare_email_security_allow_policies}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/email_security_allow_policies cloudflare_email_security_allow_policies}.
 type DataCloudflareEmailSecurityAllowPolicies interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -33,6 +33,9 @@ type DataCloudflareEmailSecurityAllowPolicies interface {
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
+	Expired() interface{}
+	SetExpired(val interface{})
+	ExpiredInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -126,6 +129,7 @@ type DataCloudflareEmailSecurityAllowPolicies interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetDirection()
+	ResetExpired()
 	ResetIsAcceptableSender()
 	ResetIsExemptRecipient()
 	ResetIsTrustedSender()
@@ -241,6 +245,26 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies) DirectionInput() *s
 	_jsii_.Get(
 		j,
 		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies) Expired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies) ExpiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expiredInput",
 		&returns,
 	)
 	return returns
@@ -537,7 +561,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies) VerifySenderInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_security_allow_policies cloudflare_email_security_allow_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/email_security_allow_policies cloudflare_email_security_allow_policies} Data Source.
 func NewDataCloudflareEmailSecurityAllowPolicies(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityAllowPoliciesConfig) DataCloudflareEmailSecurityAllowPolicies {
 	_init_.Initialize()
 
@@ -555,7 +579,7 @@ func NewDataCloudflareEmailSecurityAllowPolicies(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/email_security_allow_policies cloudflare_email_security_allow_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/email_security_allow_policies cloudflare_email_security_allow_policies} Data Source.
 func NewDataCloudflareEmailSecurityAllowPolicies_Override(d DataCloudflareEmailSecurityAllowPolicies, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityAllowPoliciesConfig) {
 	_init_.Initialize()
 
@@ -603,6 +627,17 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies)SetDirection(val *st
 	_jsii_.Set(
 		j,
 		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies)SetExpired(val interface{}) {
+	if err := j.validateSetExpiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expired",
 		val,
 	)
 }
@@ -1033,6 +1068,14 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies) ResetDirection() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityAllowPolicies) ResetExpired() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExpired",
 		nil, // no parameters
 	)
 }

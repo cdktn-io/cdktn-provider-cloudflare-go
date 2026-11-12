@@ -104,6 +104,17 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validatePutC
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validatePutMemberParameters(value *DataCloudflareOrganizationFilterMember) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validatePutNameParameters(value *DataCloudflareOrganizationFilterName) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -199,6 +210,14 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetDirectionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetIdParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -226,6 +245,14 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetI
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DataCloudflareOrganizationFilter; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetOrderByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

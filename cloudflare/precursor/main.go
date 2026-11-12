@@ -20,11 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultMode", GoGetter: "DefaultMode"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultModeInput", GoGetter: "DefaultModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
-			_jsii_.MemberProperty{JsiiProperty: "enforcementRules", GoGetter: "EnforcementRules"},
-			_jsii_.MemberProperty{JsiiProperty: "enforcementRulesInput", GoGetter: "EnforcementRulesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -43,6 +39,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -50,12 +48,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putEnforcementRules", GoMethod: "PutEnforcementRules"},
+			_jsii_.MemberMethod{JsiiMethod: "putRules", GoMethod: "PutRules"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDefaultMode", GoMethod: "ResetDefaultMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnforcementRules", GoMethod: "ResetEnforcementRules"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRules", GoMethod: "ResetRules"},
+			_jsii_.MemberMethod{JsiiMethod: "resetShowInterstitial", GoMethod: "ResetShowInterstitial"},
+			_jsii_.MemberProperty{JsiiProperty: "rules", GoGetter: "Rules"},
+			_jsii_.MemberProperty{JsiiProperty: "rulesInput", GoGetter: "RulesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "showInterstitial", GoGetter: "ShowInterstitial"},
+			_jsii_.MemberProperty{JsiiProperty: "showInterstitialInput", GoGetter: "ShowInterstitialInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -80,12 +83,12 @@ func init() {
 		reflect.TypeOf((*PrecursorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRules",
-		reflect.TypeOf((*PrecursorEnforcementRules)(nil)).Elem(),
+		"@cdktn/provider-cloudflare.precursor.PrecursorRules",
+		reflect.TypeOf((*PrecursorRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesList",
-		reflect.TypeOf((*PrecursorEnforcementRulesList)(nil)).Elem(),
+		"@cdktn/provider-cloudflare.precursor.PrecursorRulesList",
+		reflect.TypeOf((*PrecursorRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,14 +103,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_PrecursorEnforcementRulesList{}
+			j := jsiiProxy_PrecursorRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktn/provider-cloudflare.precursor.PrecursorEnforcementRulesOutputReference",
-		reflect.TypeOf((*PrecursorEnforcementRulesOutputReference)(nil)).Elem(),
+		"@cdktn/provider-cloudflare.precursor.PrecursorRulesOutputReference",
+		reflect.TypeOf((*PrecursorRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,17 +136,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
-			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "showInterstitial", GoGetter: "ShowInterstitial"},
+			_jsii_.MemberProperty{JsiiProperty: "showInterstitialInput", GoGetter: "ShowInterstitialInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_PrecursorEnforcementRulesOutputReference{}
+			j := jsiiProxy_PrecursorRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

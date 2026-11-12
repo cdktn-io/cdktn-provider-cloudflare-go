@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/pipeline_streams cloudflare_pipeline_streams}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/pipeline_streams cloudflare_pipeline_streams}.
 type DataCloudflarePipelineStreams interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -30,6 +30,9 @@ type DataCloudflarePipelineStreams interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -50,6 +53,9 @@ type DataCloudflarePipelineStreams interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByInput() *string
 	PipelineId() *string
 	SetPipelineId(val *string)
 	PipelineIdInput() *string
@@ -105,8 +111,10 @@ type DataCloudflarePipelineStreams interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccountId()
+	ResetDirection()
 	ResetMaxItems()
 	ResetName()
+	ResetOrderBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -194,6 +202,26 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreams) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreams) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
 		&returns,
 	)
 	return returns
@@ -289,6 +317,26 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineStreams) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreams) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineStreams) PipelineId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -370,7 +418,7 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/pipeline_streams cloudflare_pipeline_streams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/pipeline_streams cloudflare_pipeline_streams} Data Source.
 func NewDataCloudflarePipelineStreams(scope constructs.Construct, id *string, config *DataCloudflarePipelineStreamsConfig) DataCloudflarePipelineStreams {
 	_init_.Initialize()
 
@@ -388,7 +436,7 @@ func NewDataCloudflarePipelineStreams(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/pipeline_streams cloudflare_pipeline_streams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/pipeline_streams cloudflare_pipeline_streams} Data Source.
 func NewDataCloudflarePipelineStreams_Override(d DataCloudflarePipelineStreams, scope constructs.Construct, id *string, config *DataCloudflarePipelineStreamsConfig) {
 	_init_.Initialize()
 
@@ -425,6 +473,17 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreams)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"direction",
 		val,
 	)
 }
@@ -466,6 +525,17 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreams)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
 		val,
 	)
 }
@@ -793,6 +863,14 @@ func (d *jsiiProxy_DataCloudflarePipelineStreams) ResetAccountId() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflarePipelineStreams) ResetDirection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflarePipelineStreams) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
@@ -805,6 +883,14 @@ func (d *jsiiProxy_DataCloudflarePipelineStreams) ResetName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflarePipelineStreams) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderBy",
 		nil, // no parameters
 	)
 }

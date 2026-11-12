@@ -22,11 +22,19 @@ type OrganizationConfig struct {
 	Provider cdktn.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#name Organization#name}.
+	// The Organization name, limited to 65 UTF-8 bytes.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#name Organization#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#parent Organization#parent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent Organization#parent}.
 	Parent *OrganizationParent `field:"optional" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization#profile Organization#profile}.
+	// The current parent Organization ID. A different value is rejected; this endpoint cannot move an Organization.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#parent_id Organization#parent_id}
+	ParentId *string `field:"optional" json:"parentId" yaml:"parentId"`
+	// Optional profile fields, each limited to 1,000 UTF-8 bytes. An empty profile is ignored.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization#profile Organization#profile}
 	Profile *OrganizationProfile `field:"optional" json:"profile" yaml:"profile"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account cloudflare_account}.
 type Account interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -41,6 +41,7 @@ type Account interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	LegacyFlags() AccountLegacyFlagsOutputReference
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -308,6 +309,16 @@ func (j *jsiiProxy_Account) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Account) LegacyFlags() AccountLegacyFlagsOutputReference {
+	var returns AccountLegacyFlagsOutputReference
+	_jsii_.Get(
+		j,
+		"legacyFlags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Account) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -509,7 +520,7 @@ func (j *jsiiProxy_Account) UnitInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) Account {
 	_init_.Initialize()
 
@@ -527,7 +538,7 @@ func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount_Override(a Account, scope constructs.Construct, id *string, config *AccountConfig) {
 	_init_.Initialize()
 

@@ -24,31 +24,39 @@ type DataCloudflareWorkersCustomDomainsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domains#account_id DataCloudflareWorkersCustomDomains#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domains#account_id DataCloudflareWorkersCustomDomains#account_id}
+	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// Whether the configured hostname is routable for the domain.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domains#enabled DataCloudflareWorkersCustomDomains#enabled}
+	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// Worker environment associated with the domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domains#environment DataCloudflareWorkersCustomDomains#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domains#environment DataCloudflareWorkersCustomDomains#environment}
 	Environment *string `field:"optional" json:"environment" yaml:"environment"`
 	// Hostname of the domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domains#hostname DataCloudflareWorkersCustomDomains#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domains#hostname DataCloudflareWorkersCustomDomains#hostname}
 	Hostname *string `field:"optional" json:"hostname" yaml:"hostname"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domains#max_items DataCloudflareWorkersCustomDomains#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domains#max_items DataCloudflareWorkersCustomDomains#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
+	// Whether previews are routable for the domain.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domains#previews_enabled DataCloudflareWorkersCustomDomains#previews_enabled}
+	PreviewsEnabled interface{} `field:"optional" json:"previewsEnabled" yaml:"previewsEnabled"`
 	// Name of the Worker associated with the domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domains#service DataCloudflareWorkersCustomDomains#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domains#service DataCloudflareWorkersCustomDomains#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// ID of the zone containing the domain hostname.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domains#zone_id DataCloudflareWorkersCustomDomains#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domains#zone_id DataCloudflareWorkersCustomDomains#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 	// Name of the zone containing the domain hostname.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domains#zone_name DataCloudflareWorkersCustomDomains#zone_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domains#zone_name DataCloudflareWorkersCustomDomains#zone_name}
 	ZoneName *string `field:"optional" json:"zoneName" yaml:"zoneName"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
 type DataCloudflareZeroTrustDlpPredefinedEntry interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -74,6 +74,7 @@ type DataCloudflareZeroTrustDlpPredefinedEntry interface {
 	Type() *string
 	UpdatedAt() *string
 	UploadStatus() *string
+	ValidatorIds() *[]*string
 	Variant() DataCloudflareZeroTrustDlpPredefinedEntryVariantOutputReference
 	WordList() *[]*string
 	// Experimental.
@@ -476,6 +477,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) UploadStatus() *st
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) ValidatorIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validatorIds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) Variant() DataCloudflareZeroTrustDlpPredefinedEntryVariantOutputReference {
 	var returns DataCloudflareZeroTrustDlpPredefinedEntryVariantOutputReference
 	_jsii_.Get(
@@ -497,7 +508,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedEntry) WordList() *[]*str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
 func NewDataCloudflareZeroTrustDlpPredefinedEntry(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpPredefinedEntryConfig) DataCloudflareZeroTrustDlpPredefinedEntry {
 	_init_.Initialize()
 
@@ -515,7 +526,7 @@ func NewDataCloudflareZeroTrustDlpPredefinedEntry(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Data Source.
 func NewDataCloudflareZeroTrustDlpPredefinedEntry_Override(d DataCloudflareZeroTrustDlpPredefinedEntry, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpPredefinedEntryConfig) {
 	_init_.Initialize()
 

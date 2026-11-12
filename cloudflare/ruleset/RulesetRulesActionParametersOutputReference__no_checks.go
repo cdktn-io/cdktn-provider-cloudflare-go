@@ -391,6 +391,14 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetValue
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetWebmcpEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetWebmcpPacksParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewRulesetRulesActionParametersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

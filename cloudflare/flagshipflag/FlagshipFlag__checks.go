@@ -452,6 +452,14 @@ func (j *jsiiProxy_FlagshipFlag) validateSetLifecycleParameters(val *cdktn.Terra
 	return nil
 }
 
+func (j *jsiiProxy_FlagshipFlag) validateSetMetadataParameters(val *map[string]interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FlagshipFlag) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

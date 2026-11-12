@@ -83,15 +83,7 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificates) validateSetLifecycleParam
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificates) validateSetLimitParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareOriginCaCertificates) validateSetMaxItemsParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareOriginCaCertificates) validateSetOffsetParameters(val *float64) error {
 	return nil
 }
 

@@ -30,6 +30,7 @@ type DataCloudflareEmailSecurityBlockSendersResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExpiresAt() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSendersResultOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSendersResultOutputReference) ExpiresAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAt",
 		&returns,
 	)
 	return returns

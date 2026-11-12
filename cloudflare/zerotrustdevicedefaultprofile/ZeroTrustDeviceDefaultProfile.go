@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
 type ZeroTrustDeviceDefaultProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -56,6 +56,9 @@ type ZeroTrustDeviceDefaultProfile interface {
 	DnsSearchSuffixes() ZeroTrustDeviceDefaultProfileDnsSearchSuffixesList
 	DnsSearchSuffixesInput() interface{}
 	Enabled() cdktn.IResolvable
+	EnableDeviceCredentialAuthentication() interface{}
+	SetEnableDeviceCredentialAuthentication(val interface{})
+	EnableDeviceCredentialAuthenticationInput() interface{}
 	Exclude() ZeroTrustDeviceDefaultProfileExcludeList
 	ExcludeInput() interface{}
 	ExcludeOfficeIps() interface{}
@@ -233,6 +236,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	ResetCaptivePortal()
 	ResetDisableAutoFallback()
 	ResetDnsSearchSuffixes()
+	ResetEnableDeviceCredentialAuthentication()
 	ResetExclude()
 	ResetExcludeOfficeIps()
 	ResetGlobalAcceleration()
@@ -502,6 +506,26 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Enabled() cdktn.IResolvable {
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) EnableDeviceCredentialAuthentication() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDeviceCredentialAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) EnableDeviceCredentialAuthenticationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDeviceCredentialAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -948,7 +972,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) VirtualNetworksInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) ZeroTrustDeviceDefaultProfile {
 	_init_.Initialize()
 
@@ -966,7 +990,7 @@ func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile_Override(z ZeroTrustDeviceDefaultProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) {
 	_init_.Initialize()
 
@@ -1080,6 +1104,17 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetDisableAutoFallback(val inte
 	_jsii_.Set(
 		j,
 		"disableAutoFallback",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetEnableDeviceCredentialAuthentication(val interface{}) {
+	if err := j.validateSetEnableDeviceCredentialAuthenticationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDeviceCredentialAuthentication",
 		val,
 	)
 }
@@ -1719,6 +1754,14 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetDnsSearchSuffixes() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetDnsSearchSuffixes",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetEnableDeviceCredentialAuthentication() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnableDeviceCredentialAuthentication",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
 type WorkersCustomDomain interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -35,6 +35,9 @@ type WorkersCustomDomain interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
@@ -56,6 +59,9 @@ type WorkersCustomDomain interface {
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PreviewsEnabled() interface{}
+	SetPreviewsEnabled(val interface{})
+	PreviewsEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -173,10 +179,12 @@ type WorkersCustomDomain interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetEnabled()
 	ResetEnvironment()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreviewsEnabled()
 	ResetZoneId()
 	ResetZoneName()
 	SynthesizeAttributes() *map[string]interface{}
@@ -286,6 +294,26 @@ func (j *jsiiProxy_WorkersCustomDomain) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersCustomDomain) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersCustomDomain) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersCustomDomain) Environment() *string {
 	var returns *string
 	_jsii_.Get(
@@ -381,6 +409,26 @@ func (j *jsiiProxy_WorkersCustomDomain) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersCustomDomain) PreviewsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"previewsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersCustomDomain) PreviewsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"previewsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -507,7 +555,7 @@ func (j *jsiiProxy_WorkersCustomDomain) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
 func NewWorkersCustomDomain(scope constructs.Construct, id *string, config *WorkersCustomDomainConfig) WorkersCustomDomain {
 	_init_.Initialize()
 
@@ -525,7 +573,7 @@ func NewWorkersCustomDomain(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
 func NewWorkersCustomDomain_Override(w WorkersCustomDomain, scope constructs.Construct, id *string, config *WorkersCustomDomainConfig) {
 	_init_.Initialize()
 
@@ -577,6 +625,17 @@ func (j *jsiiProxy_WorkersCustomDomain)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_WorkersCustomDomain)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkersCustomDomain)SetEnvironment(val *string) {
 	if err := j.validateSetEnvironmentParameters(val); err != nil {
 		panic(err)
@@ -614,6 +673,17 @@ func (j *jsiiProxy_WorkersCustomDomain)SetLifecycle(val *cdktn.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersCustomDomain)SetPreviewsEnabled(val interface{}) {
+	if err := j.validateSetPreviewsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"previewsEnabled",
 		val,
 	)
 }
@@ -1050,6 +1120,14 @@ func (w *jsiiProxy_WorkersCustomDomain) RegisterProviderFeatureUsage(feature cdk
 	)
 }
 
+func (w *jsiiProxy_WorkersCustomDomain) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersCustomDomain) ResetEnvironment() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1062,6 +1140,14 @@ func (w *jsiiProxy_WorkersCustomDomain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersCustomDomain) ResetPreviewsEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPreviewsEnabled",
 		nil, // no parameters
 	)
 }

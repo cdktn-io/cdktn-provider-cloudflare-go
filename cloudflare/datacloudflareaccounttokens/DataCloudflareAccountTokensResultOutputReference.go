@@ -53,6 +53,8 @@ type DataCloudflareAccountTokensResultOutputReference interface {
 	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TokenPrefix() *string
+	TokenSuffix() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -287,6 +289,26 @@ func (j *jsiiProxy_DataCloudflareAccountTokensResultOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountTokensResultOutputReference) TokenPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountTokensResultOutputReference) TokenSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenSuffix",
 		&returns,
 	)
 	return returns

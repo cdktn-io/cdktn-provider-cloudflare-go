@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share cloudflare_share}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share cloudflare_share}.
 type DataCloudflareShare interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -53,6 +53,9 @@ type DataCloudflareShare interface {
 	IncludeResources() interface{}
 	SetIncludeResources(val interface{})
 	IncludeResourcesInput() interface{}
+	IncludeTagsFrom() *string
+	SetIncludeTagsFrom(val *string)
+	IncludeTagsFromInput() *string
 	Kind() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -74,6 +77,7 @@ type DataCloudflareShare interface {
 	SetShareId(val *string)
 	ShareIdInput() *string
 	Status() *string
+	Tags() cdktn.StringMap
 	TargetType() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -123,6 +127,7 @@ type DataCloudflareShare interface {
 	ResetFilter()
 	ResetIncludeRecipientCounts()
 	ResetIncludeResources()
+	ResetIncludeTagsFrom()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -375,6 +380,26 @@ func (j *jsiiProxy_DataCloudflareShare) IncludeResourcesInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareShare) IncludeTagsFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"includeTagsFrom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareShare) IncludeTagsFromInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"includeTagsFromInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareShare) Kind() *string {
 	var returns *string
 	_jsii_.Get(
@@ -495,6 +520,16 @@ func (j *jsiiProxy_DataCloudflareShare) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareShare) Tags() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareShare) TargetType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -536,7 +571,7 @@ func (j *jsiiProxy_DataCloudflareShare) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share cloudflare_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share cloudflare_share} Data Source.
 func NewDataCloudflareShare(scope constructs.Construct, id *string, config *DataCloudflareShareConfig) DataCloudflareShare {
 	_init_.Initialize()
 
@@ -554,7 +589,7 @@ func NewDataCloudflareShare(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/share cloudflare_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/share cloudflare_share} Data Source.
 func NewDataCloudflareShare_Override(d DataCloudflareShare, scope constructs.Construct, id *string, config *DataCloudflareShareConfig) {
 	_init_.Initialize()
 
@@ -621,6 +656,17 @@ func (j *jsiiProxy_DataCloudflareShare)SetIncludeResources(val interface{}) {
 	_jsii_.Set(
 		j,
 		"includeResources",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareShare)SetIncludeTagsFrom(val *string) {
+	if err := j.validateSetIncludeTagsFromParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeTagsFrom",
 		val,
 	)
 }
@@ -982,6 +1028,14 @@ func (d *jsiiProxy_DataCloudflareShare) ResetIncludeResources() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIncludeResources",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareShare) ResetIncludeTagsFrom() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeTagsFrom",
 		nil, // no parameters
 	)
 }

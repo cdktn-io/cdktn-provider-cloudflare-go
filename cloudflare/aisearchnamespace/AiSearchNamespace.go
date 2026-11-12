@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_search_namespace cloudflare_ai_search_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace}.
 type AiSearchNamespace interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -46,6 +46,7 @@ type AiSearchNamespace interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -329,6 +330,16 @@ func (j *jsiiProxy_AiSearchNamespace) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AiSearchNamespace) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AiSearchNamespace) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -460,7 +471,7 @@ func (j *jsiiProxy_AiSearchNamespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
 func NewAiSearchNamespace(scope constructs.Construct, id *string, config *AiSearchNamespaceConfig) AiSearchNamespace {
 	_init_.Initialize()
 
@@ -478,7 +489,7 @@ func NewAiSearchNamespace(scope constructs.Construct, id *string, config *AiSear
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/ai_search_namespace cloudflare_ai_search_namespace} Resource.
 func NewAiSearchNamespace_Override(a AiSearchNamespace, scope constructs.Construct, id *string, config *AiSearchNamespaceConfig) {
 	_init_.Initialize()
 

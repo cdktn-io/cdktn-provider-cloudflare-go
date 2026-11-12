@@ -70,6 +70,8 @@ type AiSearchInstanceIndexMethodOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetKeyword()
+	ResetVector()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -484,6 +486,22 @@ func (a *jsiiProxy_AiSearchInstanceIndexMethodOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AiSearchInstanceIndexMethodOutputReference) ResetKeyword() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKeyword",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiSearchInstanceIndexMethodOutputReference) ResetVector() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVector",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AiSearchInstanceIndexMethodOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

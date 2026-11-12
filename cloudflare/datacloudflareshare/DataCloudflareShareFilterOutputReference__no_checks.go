@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataCloudflareShareFilterOutputReference) validateSetDirectio
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareShareFilterOutputReference) validateSetIncludeTagsFromParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareShareFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

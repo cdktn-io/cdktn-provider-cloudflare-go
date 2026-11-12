@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domain cloudflare_workers_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domain cloudflare_workers_custom_domain}.
 type DataCloudflareWorkersCustomDomain interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -34,6 +34,7 @@ type DataCloudflareWorkersCustomDomain interface {
 	DomainId() *string
 	SetDomainId(val *string)
 	DomainIdInput() *string
+	Enabled() cdktn.IResolvable
 	Environment() *string
 	Filter() DataCloudflareWorkersCustomDomainFilterOutputReference
 	FilterInput() interface{}
@@ -53,6 +54,7 @@ type DataCloudflareWorkersCustomDomain interface {
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PreviewsEnabled() cdktn.IResolvable
 	// Experimental.
 	Provider() cdktn.TerraformProvider
 	// Experimental.
@@ -107,7 +109,6 @@ type DataCloudflareWorkersCustomDomain interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
-	ResetAccountId()
 	ResetDomainId()
 	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -231,6 +232,16 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomain) DomainIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomain) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomain) Environment() *string {
 	var returns *string
 	_jsii_.Get(
@@ -331,6 +342,16 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomain) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomain) PreviewsEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"previewsEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomain) Provider() cdktn.TerraformProvider {
 	var returns cdktn.TerraformProvider
 	_jsii_.Get(
@@ -412,7 +433,7 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomain) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domain cloudflare_workers_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domain cloudflare_workers_custom_domain} Data Source.
 func NewDataCloudflareWorkersCustomDomain(scope constructs.Construct, id *string, config *DataCloudflareWorkersCustomDomainConfig) DataCloudflareWorkersCustomDomain {
 	_init_.Initialize()
 
@@ -430,7 +451,7 @@ func NewDataCloudflareWorkersCustomDomain(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workers_custom_domain cloudflare_workers_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workers_custom_domain cloudflare_workers_custom_domain} Data Source.
 func NewDataCloudflareWorkersCustomDomain_Override(d DataCloudflareWorkersCustomDomain, scope constructs.Construct, id *string, config *DataCloudflareWorkersCustomDomainConfig) {
 	_init_.Initialize()
 
@@ -813,14 +834,6 @@ func (d *jsiiProxy_DataCloudflareWorkersCustomDomain) RegisterProviderFeatureUsa
 		d,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareWorkersCustomDomain) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

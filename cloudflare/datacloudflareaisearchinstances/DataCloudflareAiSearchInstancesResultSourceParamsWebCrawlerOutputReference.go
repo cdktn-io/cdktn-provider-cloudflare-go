@@ -35,7 +35,6 @@ type DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerOutputReference 
 	SetInternalValue(val *DataCloudflareAiSearchInstancesResultSourceParamsWebCrawler)
 	ParseOptions() DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptionsOutputReference
 	ParseType() *string
-	StoreOptions() DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerStoreOptionsOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -158,16 +157,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerOu
 	_jsii_.Get(
 		j,
 		"parseType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerOutputReference) StoreOptions() DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerStoreOptionsOutputReference {
-	var returns DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerStoreOptionsOutputReference
-	_jsii_.Get(
-		j,
-		"storeOptions",
 		&returns,
 	)
 	return returns

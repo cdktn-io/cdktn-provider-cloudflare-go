@@ -49,6 +49,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference inte
 	ModifiedBy() *string
 	Name() *string
 	Prompts() cdktn.StringMapList
+	RegisteredAt() *string
 	SecureWebGateway() cdktn.IResolvable
 	Status() *string
 	// Experimental.
@@ -316,6 +317,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutput
 	_jsii_.Get(
 		j,
 		"prompts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference) RegisteredAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registeredAt",
 		&returns,
 	)
 	return returns

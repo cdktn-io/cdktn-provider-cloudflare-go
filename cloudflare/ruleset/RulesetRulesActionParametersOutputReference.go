@@ -244,6 +244,12 @@ type RulesetRulesActionParametersOutputReference interface {
 	ValuesInput() *[]*string
 	Vary() RulesetRulesActionParametersVaryOutputReference
 	VaryInput() interface{}
+	WebmcpEnabled() interface{}
+	SetWebmcpEnabled(val interface{})
+	WebmcpEnabledInput() interface{}
+	WebmcpPacks() *[]*string
+	SetWebmcpPacks(val *[]*string)
+	WebmcpPacksInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -384,6 +390,8 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetUri()
 	ResetValues()
 	ResetVary()
+	ResetWebmcpEnabled()
+	ResetWebmcpPacks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -2069,6 +2077,46 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) VaryInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) WebmcpEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webmcpEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) WebmcpEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webmcpEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) WebmcpPacks() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"webmcpPacks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) WebmcpPacksInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"webmcpPacksInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewRulesetRulesActionParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersOutputReference {
 	_init_.Initialize()
@@ -2632,6 +2680,28 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetValues(val *[]
 	_jsii_.Set(
 		j,
 		"values",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetWebmcpEnabled(val interface{}) {
+	if err := j.validateSetWebmcpEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webmcpEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetWebmcpPacks(val *[]*string) {
+	if err := j.validateSetWebmcpPacksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webmcpPacks",
 		val,
 	)
 }
@@ -3854,6 +3924,22 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetVary() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetVary",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetWebmcpEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetWebmcpEnabled",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetWebmcpPacks() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetWebmcpPacks",
 		nil, // no parameters
 	)
 }

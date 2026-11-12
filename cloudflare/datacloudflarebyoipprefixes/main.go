@@ -101,6 +101,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "advertisedModifiedAt", GoGetter: "AdvertisedModifiedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "approved", GoGetter: "Approved"},
 			_jsii_.MemberProperty{JsiiProperty: "asn", GoGetter: "Asn"},
+			_jsii_.MemberProperty{JsiiProperty: "asnOwnershipValidationState", GoGetter: "AsnOwnershipValidationState"},
+			_jsii_.MemberProperty{JsiiProperty: "aspaValidationState", GoGetter: "AspaValidationState"},
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

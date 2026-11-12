@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) validateSetDirection
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) validateSetExpiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenders) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

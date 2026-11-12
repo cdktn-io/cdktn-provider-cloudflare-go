@@ -35,7 +35,6 @@ type OrganizationParentOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -148,16 +147,6 @@ func (j *jsiiProxy_OrganizationParentOutputReference) InternalValue() interface{
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OrganizationParentOutputReference) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
 		&returns,
 	)
 	return returns

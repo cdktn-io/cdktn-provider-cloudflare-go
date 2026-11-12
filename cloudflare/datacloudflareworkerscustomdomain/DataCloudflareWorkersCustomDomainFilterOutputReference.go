@@ -28,6 +28,9 @@ type DataCloudflareWorkersCustomDomainFilterOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
@@ -38,6 +41,9 @@ type DataCloudflareWorkersCustomDomainFilterOutputReference interface {
 	HostnameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PreviewsEnabled() interface{}
+	SetPreviewsEnabled(val interface{})
+	PreviewsEnabledInput() interface{}
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
@@ -79,8 +85,10 @@ type DataCloudflareWorkersCustomDomainFilterOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetEnabled()
 	ResetEnvironment()
 	ResetHostname()
+	ResetPreviewsEnabled()
 	ResetService()
 	ResetZoneId()
 	ResetZoneName()
@@ -124,6 +132,26 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -184,6 +212,26 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) PreviewsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"previewsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) PreviewsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"previewsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -319,6 +367,17 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference)SetCom
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference)SetEnvironment(val *string) {
 	if err := j.validateSetEnvironmentParameters(val); err != nil {
 		panic(err)
@@ -348,6 +407,17 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference)SetPreviewsEnabled(val interface{}) {
+	if err := j.validateSetPreviewsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"previewsEnabled",
 		val,
 	)
 }
@@ -593,6 +663,14 @@ func (d *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) Inter
 	return returns
 }
 
+func (d *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) ResetEnvironment() {
 	_jsii_.InvokeVoid(
 		d,
@@ -605,6 +683,14 @@ func (d *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) Reset
 	_jsii_.InvokeVoid(
 		d,
 		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersCustomDomainFilterOutputReference) ResetPreviewsEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPreviewsEnabled",
 		nil, // no parameters
 	)
 }

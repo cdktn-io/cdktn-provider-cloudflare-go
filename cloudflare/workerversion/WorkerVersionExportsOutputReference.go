@@ -25,6 +25,9 @@ type WorkerVersionExportsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Container() *string
+	SetContainer(val *string)
+	ContainerInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -86,6 +89,7 @@ type WorkerVersionExportsOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCache(value *WorkerVersionExportsCache)
 	ResetCache()
+	ResetContainer()
 	ResetRenamedTo()
 	ResetState()
 	ResetStorage()
@@ -141,6 +145,26 @@ func (j *jsiiProxy_WorkerVersionExportsOutputReference) ComplexObjectIsFromSet()
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionExportsOutputReference) Container() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"container",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerVersionExportsOutputReference) ContainerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerInput",
 		&returns,
 	)
 	return returns
@@ -362,6 +386,17 @@ func (j *jsiiProxy_WorkerVersionExportsOutputReference)SetComplexObjectIsFromSet
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerVersionExportsOutputReference)SetContainer(val *string) {
+	if err := j.validateSetContainerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"container",
 		val,
 	)
 }
@@ -666,6 +701,14 @@ func (w *jsiiProxy_WorkerVersionExportsOutputReference) ResetCache() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCache",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerVersionExportsOutputReference) ResetContainer() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetContainer",
 		nil, // no parameters
 	)
 }

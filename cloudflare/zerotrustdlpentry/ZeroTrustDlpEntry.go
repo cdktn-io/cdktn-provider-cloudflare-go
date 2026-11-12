@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
 type ZeroTrustDlpEntry interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -90,6 +90,9 @@ type ZeroTrustDlpEntry interface {
 	TypeInput() *string
 	UpdatedAt() *string
 	UploadStatus() *string
+	ValidatorIds() *[]*string
+	SetValidatorIds(val *[]*string)
+	ValidatorIdsInput() *[]*string
 	Variant() ZeroTrustDlpEntryVariantOutputReference
 	WordList() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -191,6 +194,7 @@ type ZeroTrustDlpEntry interface {
 	ResetOverrideLogicalId()
 	ResetProfileId()
 	ResetType()
+	ResetValidatorIds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -608,6 +612,26 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) UploadStatus() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpEntry) ValidatorIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validatorIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpEntry) ValidatorIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validatorIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDlpEntry) Variant() ZeroTrustDlpEntryVariantOutputReference {
 	var returns ZeroTrustDlpEntryVariantOutputReference
 	_jsii_.Get(
@@ -629,7 +653,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) WordList() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Resource.
 func NewZeroTrustDlpEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpEntryConfig) ZeroTrustDlpEntry {
 	_init_.Initialize()
 
@@ -647,7 +671,7 @@ func NewZeroTrustDlpEntry(scope constructs.Construct, id *string, config *ZeroTr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Resource.
 func NewZeroTrustDlpEntry_Override(z ZeroTrustDlpEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpEntryConfig) {
 	_init_.Initialize()
 
@@ -788,6 +812,17 @@ func (j *jsiiProxy_ZeroTrustDlpEntry)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDlpEntry)SetValidatorIds(val *[]*string) {
+	if err := j.validateSetValidatorIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validatorIds",
 		val,
 	)
 }
@@ -1211,6 +1246,14 @@ func (z *jsiiProxy_ZeroTrustDlpEntry) ResetType() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpEntry) ResetValidatorIds() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetValidatorIds",
 		nil, // no parameters
 	)
 }

@@ -5,11 +5,15 @@ package hyperdriveconfig
 
 
 type HyperdriveConfigCaching struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}.
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}.
+	// Specify the maximum duration (in seconds) items should persist in the cache. Defaults to 60 seconds if not specified.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}
 	MaxAge *float64 `field:"optional" json:"maxAge" yaml:"maxAge"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}.
+	// Specify the number of seconds the cache may serve a stale response. Defaults to 15 seconds if not specified.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}
 	StaleWhileRevalidate *float64 `field:"optional" json:"staleWhileRevalidate" yaml:"staleWhileRevalidate"`
 }
 

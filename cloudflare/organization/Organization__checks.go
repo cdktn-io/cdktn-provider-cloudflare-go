@@ -391,6 +391,14 @@ func (j *jsiiProxy_Organization) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Organization) validateSetParentIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Organization) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
 type DataCloudflareZeroTrustAccessServiceToken interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -45,6 +45,9 @@ type DataCloudflareZeroTrustAccessServiceToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	LeakReportedAt() *string
+	LeakReporter() *string
+	LeakReportUrl() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -61,6 +64,7 @@ type DataCloudflareZeroTrustAccessServiceToken interface {
 	ServiceTokenId() *string
 	SetServiceTokenId(val *string)
 	ServiceTokenIdInput() *string
+	Tags() cdktn.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -304,6 +308,36 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) LeakReportedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leakReportedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) LeakReporter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leakReporter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) LeakReportUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leakReportUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -374,6 +408,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) ServiceTokenIdInpu
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) Tags() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
 	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -425,7 +469,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessServiceToken) ZoneIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Data Source.
 func NewDataCloudflareZeroTrustAccessServiceToken(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessServiceTokenConfig) DataCloudflareZeroTrustAccessServiceToken {
 	_init_.Initialize()
 
@@ -443,7 +487,7 @@ func NewDataCloudflareZeroTrustAccessServiceToken(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Data Source.
 func NewDataCloudflareZeroTrustAccessServiceToken_Override(d DataCloudflareZeroTrustAccessServiceToken, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessServiceTokenConfig) {
 	_init_.Initialize()
 

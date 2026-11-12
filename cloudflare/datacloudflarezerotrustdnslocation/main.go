@@ -23,6 +23,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "dns64Enabled", GoGetter: "Dns64Enabled"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsDestinationIpsId", GoGetter: "DnsDestinationIpsId"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsDestinationIpv6BlockId", GoGetter: "DnsDestinationIpv6BlockId"},
 			_jsii_.MemberProperty{JsiiProperty: "dohSubdomain", GoGetter: "DohSubdomain"},

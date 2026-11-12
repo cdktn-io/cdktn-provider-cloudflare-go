@@ -15,6 +15,7 @@ type DataCloudflareWorkersDeploymentsResultDeploymentsOutputReference interface 
 	cdktn.ComplexObject
 	Annotations() DataCloudflareWorkersDeploymentsResultDeploymentsAnnotationsOutputReference
 	AuthorEmail() *string
+	CodeUpdateStrategy() DataCloudflareWorkersDeploymentsResultDeploymentsCodeUpdateStrategyOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -101,6 +102,16 @@ func (j *jsiiProxy_DataCloudflareWorkersDeploymentsResultDeploymentsOutputRefere
 	_jsii_.Get(
 		j,
 		"authorEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersDeploymentsResultDeploymentsOutputReference) CodeUpdateStrategy() DataCloudflareWorkersDeploymentsResultDeploymentsCodeUpdateStrategyOutputReference {
+	var returns DataCloudflareWorkersDeploymentsResultDeploymentsCodeUpdateStrategyOutputReference
+	_jsii_.Get(
+		j,
+		"codeUpdateStrategy",
 		&returns,
 	)
 	return returns

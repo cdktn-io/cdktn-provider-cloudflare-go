@@ -123,10 +123,6 @@ func (j *jsiiProxy_ZoneDnsSettings) validateSetFlattenAllCnamesParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ZoneDnsSettings) validateSetFoundationDnsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneDnsSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

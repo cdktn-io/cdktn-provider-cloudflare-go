@@ -40,6 +40,7 @@ type DataCloudflareMagicTransitSiteLansResultOutputReference interface {
 	Name() *string
 	Nat() DataCloudflareMagicTransitSiteLansResultNatOutputReference
 	Physport() *float64
+	RemoteSubnets() DataCloudflareMagicTransitSiteLansResultRemoteSubnetsList
 	RoutedSubnets() DataCloudflareMagicTransitSiteLansResultRoutedSubnetsList
 	SiteId() *string
 	StaticAddressing() DataCloudflareMagicTransitSiteLansResultStaticAddressingOutputReference
@@ -216,6 +217,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) Phys
 	_jsii_.Get(
 		j,
 		"physport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultOutputReference) RemoteSubnets() DataCloudflareMagicTransitSiteLansResultRemoteSubnetsList {
+	var returns DataCloudflareMagicTransitSiteLansResultRemoteSubnetsList
+	_jsii_.Get(
+		j,
+		"remoteSubnets",
 		&returns,
 	)
 	return returns

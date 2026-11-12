@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validatePutC
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validatePutMemberParameters(value *DataCloudflareOrganizationFilterMember) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validatePutNameParameters(value *DataCloudflareOrganizationFilterName) error {
 	return nil
 }
@@ -71,11 +75,19 @@ func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetDirectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetIdParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizationFilterOutputReference) validateSetOrderByParameters(val *string) error {
 	return nil
 }
 

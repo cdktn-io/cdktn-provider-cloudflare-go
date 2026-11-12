@@ -155,6 +155,10 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetNameParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetPolicyResolutionAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

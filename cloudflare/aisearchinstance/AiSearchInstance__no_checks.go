@@ -195,6 +195,10 @@ func (j *jsiiProxy_AiSearchInstance) validateSetMaxNumResultsParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_AiSearchInstance) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiSearchInstance) validateSetPausedParameters(val interface{}) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataCloudflareOrganizations) validatePutContainingParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizations) validatePutMemberParameters(value *DataCloudflareOrganizationsMember) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareOrganizations) validatePutNameParameters(value *DataCloudflareOrganizationsName) error {
 	return nil
 }
@@ -91,6 +95,10 @@ func (j *jsiiProxy_DataCloudflareOrganizations) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareOrganizations) validateSetDirectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareOrganizations) validateSetIdParameters(val *[]*string) error {
 	return nil
 }
@@ -100,6 +108,10 @@ func (j *jsiiProxy_DataCloudflareOrganizations) validateSetLifecycleParameters(v
 }
 
 func (j *jsiiProxy_DataCloudflareOrganizations) validateSetMaxItemsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizations) validateSetOrderByParameters(val *string) error {
 	return nil
 }
 

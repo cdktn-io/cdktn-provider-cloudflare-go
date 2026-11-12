@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer cloudflare_load_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer cloudflare_load_balancer}.
 type LoadBalancer interface {
 	cdktn.TerraformResource
 	AdaptiveRouting() LoadBalancerAdaptiveRoutingOutputReference
@@ -73,6 +73,8 @@ type LoadBalancer interface {
 	NetworksInput() *[]*string
 	// The tree node.
 	Node() constructs.Node
+	PoolSets() LoadBalancerPoolSetsList
+	PoolSetsInput() interface{}
 	PopPools() interface{}
 	SetPopPools(val interface{})
 	PopPoolsInput() interface{}
@@ -201,6 +203,7 @@ type LoadBalancer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdaptiveRouting(value *LoadBalancerAdaptiveRouting)
 	PutLocationStrategy(value *LoadBalancerLocationStrategy)
+	PutPoolSets(value interface{})
 	PutRandomSteering(value *LoadBalancerRandomSteering)
 	PutRules(value interface{})
 	PutSessionAffinityAttributes(value *LoadBalancerSessionAffinityAttributes)
@@ -226,6 +229,7 @@ type LoadBalancer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPoolSets()
 	ResetPopPools()
 	ResetProxied()
 	ResetRandomSteering()
@@ -573,6 +577,26 @@ func (j *jsiiProxy_LoadBalancer) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancer) PoolSets() LoadBalancerPoolSetsList {
+	var returns LoadBalancerPoolSetsList
+	_jsii_.Get(
+		j,
+		"poolSets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancer) PoolSetsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"poolSetsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancer) PopPools() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -864,7 +888,7 @@ func (j *jsiiProxy_LoadBalancer) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer cloudflare_load_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalancerConfig) LoadBalancer {
 	_init_.Initialize()
 
@@ -882,7 +906,7 @@ func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/load_balancer cloudflare_load_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer_Override(l LoadBalancer, scope constructs.Construct, id *string, config *LoadBalancerConfig) {
 	_init_.Initialize()
 
@@ -1517,6 +1541,17 @@ func (l *jsiiProxy_LoadBalancer) PutLocationStrategy(value *LoadBalancerLocation
 	)
 }
 
+func (l *jsiiProxy_LoadBalancer) PutPoolSets(value interface{}) {
+	if err := l.validatePutPoolSetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putPoolSets",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoadBalancer) PutRandomSteering(value *LoadBalancerRandomSteering) {
 	if err := l.validatePutRandomSteeringParameters(value); err != nil {
 		panic(err)
@@ -1613,6 +1648,14 @@ func (l *jsiiProxy_LoadBalancer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancer) ResetPoolSets() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPoolSets",
 		nil, // no parameters
 	)
 }

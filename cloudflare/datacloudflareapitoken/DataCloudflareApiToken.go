@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_token cloudflare_api_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/api_token cloudflare_api_token}.
 type DataCloudflareApiToken interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -71,6 +71,8 @@ type DataCloudflareApiToken interface {
 	TokenId() *string
 	SetTokenId(val *string)
 	TokenIdInput() *string
+	TokenPrefix() *string
+	TokenSuffix() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -453,8 +455,28 @@ func (j *jsiiProxy_DataCloudflareApiToken) TokenIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareApiToken) TokenPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenPrefix",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_token cloudflare_api_token} Data Source.
+func (j *jsiiProxy_DataCloudflareApiToken) TokenSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenSuffix",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/api_token cloudflare_api_token} Data Source.
 func NewDataCloudflareApiToken(scope constructs.Construct, id *string, config *DataCloudflareApiTokenConfig) DataCloudflareApiToken {
 	_init_.Initialize()
 
@@ -472,7 +494,7 @@ func NewDataCloudflareApiToken(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/api_token cloudflare_api_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/api_token cloudflare_api_token} Data Source.
 func NewDataCloudflareApiToken_Override(d DataCloudflareApiToken, scope constructs.Construct, id *string, config *DataCloudflareApiTokenConfig) {
 	_init_.Initialize()
 

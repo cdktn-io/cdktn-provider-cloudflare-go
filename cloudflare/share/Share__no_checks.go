@@ -79,6 +79,10 @@ func (s *jsiiProxy_Share) validateOverrideLogicalIdParameters(newLogicalId *stri
 	return nil
 }
 
+func (s *jsiiProxy_Share) validatePutExcludedRecipientsParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Share) validatePutRecipientsParameters(value interface{}) error {
 	return nil
 }
@@ -127,6 +131,10 @@ func (j *jsiiProxy_Share) validateSetIncludeResourcesParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Share) validateSetIncludeTagsFromParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Share) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -136,6 +144,10 @@ func (j *jsiiProxy_Share) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Share) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Share) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

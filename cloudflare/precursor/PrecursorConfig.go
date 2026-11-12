@@ -24,17 +24,24 @@ type PrecursorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#zone_id Precursor#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#zone_id Precursor#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// The zone-level Precursor enforcement mode applied to requests that do not match a more specific enforcement rule.
+	// Controls Precursor detection for the zone.
 	//
-	// Available values: "off", "min-friction", "max-security".
+	// `off` disables detection,
+	// `monitor` records detections without affecting bot scores, and `arm`
+	// allows detections to affect bot scores.
+	// Available values: "off", "monitor", "arm".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#default_mode Precursor#default_mode}
-	DefaultMode *string `field:"optional" json:"defaultMode" yaml:"defaultMode"`
-	// The ordered list of enforcement rules for the zone.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#mode Precursor#mode}
+	Mode *string `field:"optional" json:"mode" yaml:"mode"`
+	// The ordered list of Precursor rules for the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/precursor#enforcement_rules Precursor#enforcement_rules}
-	EnforcementRules interface{} `field:"optional" json:"enforcementRules" yaml:"enforcementRules"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#rules Precursor#rules}
+	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
+	// Whether Precursor shows an interstitial when it takes action on a request.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/precursor#show_interstitial Precursor#show_interstitial}
+	ShowInterstitial interface{} `field:"optional" json:"showInterstitial" yaml:"showInterstitial"`
 }
 

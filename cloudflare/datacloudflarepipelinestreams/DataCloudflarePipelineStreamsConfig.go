@@ -24,19 +24,27 @@ type DataCloudflarePipelineStreamsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specifies the public ID of the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/pipeline_streams#account_id DataCloudflarePipelineStreams#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/pipeline_streams#account_id DataCloudflarePipelineStreams#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
+	// Sort direction. Available values: "asc", "desc".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/pipeline_streams#direction DataCloudflarePipelineStreams#direction}
+	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/pipeline_streams#max_items DataCloudflarePipelineStreams#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/pipeline_streams#max_items DataCloudflarePipelineStreams#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// Filters streams by name (case-insensitive substring).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/pipeline_streams#name DataCloudflarePipelineStreams#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/pipeline_streams#name DataCloudflarePipelineStreams#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
+	// Sorts streams by this field. Defaults to `created_at`. Available values: "name", "created_at".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/pipeline_streams#order_by DataCloudflarePipelineStreams#order_by}
+	OrderBy *string `field:"optional" json:"orderBy" yaml:"orderBy"`
 	// Specifies the public ID of the pipeline.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/pipeline_streams#pipeline_id DataCloudflarePipelineStreams#pipeline_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/pipeline_streams#pipeline_id DataCloudflarePipelineStreams#pipeline_id}
 	PipelineId *string `field:"optional" json:"pipelineId" yaml:"pipelineId"`
 }
 

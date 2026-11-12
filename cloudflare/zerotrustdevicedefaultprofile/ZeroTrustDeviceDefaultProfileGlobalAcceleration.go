@@ -7,19 +7,27 @@ package zerotrustdevicedefaultprofile
 type ZeroTrustDeviceDefaultProfileGlobalAcceleration struct {
 	// IP:port entries for the API endpoints.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_default_profile#api_endpoints ZeroTrustDeviceDefaultProfile#api_endpoints}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_default_profile#api_endpoints ZeroTrustDeviceDefaultProfile#api_endpoints}
 	ApiEndpoints *[]*string `field:"required" json:"apiEndpoints" yaml:"apiEndpoints"`
 	// Global acceleration settings are used only when "enabled".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_default_profile#enabled ZeroTrustDeviceDefaultProfile#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_default_profile#enabled ZeroTrustDeviceDefaultProfile#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// IP:port entries for the MASQUE tunnel endpoints. Either wireguard_endpoints or masque_endpoints must be provided.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_default_profile#masque_endpoints ZeroTrustDeviceDefaultProfile#masque_endpoints}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_default_profile#masque_endpoints ZeroTrustDeviceDefaultProfile#masque_endpoints}
 	MasqueEndpoints *[]*string `field:"required" json:"masqueEndpoints" yaml:"masqueEndpoints"`
 	// IP:port entries for the WireGuard tunnel endpoints. Either wireguard_endpoints or masque_endpoints must be provided.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_default_profile#wireguard_endpoints ZeroTrustDeviceDefaultProfile#wireguard_endpoints}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_default_profile#wireguard_endpoints ZeroTrustDeviceDefaultProfile#wireguard_endpoints}
 	WireguardEndpoints *[]*string `field:"required" json:"wireguardEndpoints" yaml:"wireguardEndpoints"`
+	// Whether WARP users may manually override the automatic Global Acceleration decision. Defaults to true when not provided.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_default_profile#allow_manual_override ZeroTrustDeviceDefaultProfile#allow_manual_override}
+	AllowManualOverride interface{} `field:"optional" json:"allowManualOverride" yaml:"allowManualOverride"`
+	// Automatically switch Global Acceleration regions based on device location. Defaults to false when not provided.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_default_profile#autoswitch ZeroTrustDeviceDefaultProfile#autoswitch}
+	Autoswitch interface{} `field:"optional" json:"autoswitch" yaml:"autoswitch"`
 }
 

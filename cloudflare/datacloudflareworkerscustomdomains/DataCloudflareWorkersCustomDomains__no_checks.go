@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomains) validateSetCountParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomains) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomains) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomains) validateSetLifecycleParam
 }
 
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomains) validateSetMaxItemsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomains) validateSetPreviewsEnabledParameters(val interface{}) error {
 	return nil
 }
 

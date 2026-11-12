@@ -68,6 +68,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenId", GoGetter: "TokenId"},
 			_jsii_.MemberProperty{JsiiProperty: "tokenIdInput", GoGetter: "TokenIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenPrefix", GoGetter: "TokenPrefix"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenSuffix", GoGetter: "TokenSuffix"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},

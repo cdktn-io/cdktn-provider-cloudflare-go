@@ -24,25 +24,31 @@ type WorkersDeploymentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the script.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
 	ScriptName *string `field:"required" json:"scriptName" yaml:"scriptName"`
-	// Available values: "percentage".
+	// Strategy for routing traffic across the listed versions. `percentage` splits traffic according to each version's `percentage`. Available values: "percentage".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
 	Strategy *string `field:"required" json:"strategy" yaml:"strategy"`
 	// Worker versions included in this deployment.
 	//
 	// Each object must contain a `version_id` UUID and a `percentage`; percentages across all objects must total 100. In the `cf` CLI, pass the entire array as one JSON value to `--versions`, either inline, for example `--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'`, or from a JSON file with `--versions
 	Versions interface{} `field:"required" json:"versions" yaml:"versions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
+	// Metadata attached to the deployment.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}
 	Annotations *WorkersDeploymentAnnotations `field:"optional" json:"annotations" yaml:"annotations"`
+	// Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#code_update_strategy WorkersDeployment#code_update_strategy}
+	CodeUpdateStrategy *WorkersDeploymentCodeUpdateStrategy `field:"optional" json:"codeUpdateStrategy" yaml:"codeUpdateStrategy"`
 	// If set to true, the deployment will be created even if normally blocked by something such rolling back to an older version when a secret has changed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment#force WorkersDeployment#force}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment#force WorkersDeployment#force}
 	Force interface{} `field:"optional" json:"force" yaml:"force"`
 }
 

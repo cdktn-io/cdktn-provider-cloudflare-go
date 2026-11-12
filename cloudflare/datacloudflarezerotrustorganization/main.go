@@ -27,6 +27,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "denyUnmatchedRequests", GoGetter: "DenyUnmatchedRequests"},
 			_jsii_.MemberProperty{JsiiProperty: "denyUnmatchedRequestsExemptedZoneNames", GoGetter: "DenyUnmatchedRequestsExemptedZoneNames"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "disableEndUserAppCreation", GoGetter: "DisableEndUserAppCreation"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

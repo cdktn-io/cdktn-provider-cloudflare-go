@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account_token cloudflare_account_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account_token cloudflare_account_token}.
 type DataCloudflareAccountToken interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -74,6 +74,8 @@ type DataCloudflareAccountToken interface {
 	TokenId() *string
 	SetTokenId(val *string)
 	TokenIdInput() *string
+	TokenPrefix() *string
+	TokenSuffix() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -477,8 +479,28 @@ func (j *jsiiProxy_DataCloudflareAccountToken) TokenIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccountToken) TokenPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenPrefix",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account_token cloudflare_account_token} Data Source.
+func (j *jsiiProxy_DataCloudflareAccountToken) TokenSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenSuffix",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account_token cloudflare_account_token} Data Source.
 func NewDataCloudflareAccountToken(scope constructs.Construct, id *string, config *DataCloudflareAccountTokenConfig) DataCloudflareAccountToken {
 	_init_.Initialize()
 
@@ -496,7 +518,7 @@ func NewDataCloudflareAccountToken(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/account_token cloudflare_account_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/account_token cloudflare_account_token} Data Source.
 func NewDataCloudflareAccountToken_Override(d DataCloudflareAccountToken, scope constructs.Construct, id *string, config *DataCloudflareAccountTokenConfig) {
 	_init_.Initialize()
 

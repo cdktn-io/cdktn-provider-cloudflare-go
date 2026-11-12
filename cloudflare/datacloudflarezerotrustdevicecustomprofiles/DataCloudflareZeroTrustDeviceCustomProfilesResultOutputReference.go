@@ -39,6 +39,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	DisableAutoFallback() cdktn.IResolvable
 	DnsSearchSuffixes() DataCloudflareZeroTrustDeviceCustomProfilesResultDnsSearchSuffixesList
 	Enabled() cdktn.IResolvable
+	EnableDeviceCredentialAuthentication() cdktn.IResolvable
 	Exclude() DataCloudflareZeroTrustDeviceCustomProfilesResultExcludeList
 	ExcludeOfficeIps() cdktn.IResolvable
 	FallbackDomains() DataCloudflareZeroTrustDeviceCustomProfilesResultFallbackDomainsList
@@ -247,6 +248,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) EnableDeviceCredentialAuthentication() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"enableDeviceCredentialAuthentication",
 		&returns,
 	)
 	return returns

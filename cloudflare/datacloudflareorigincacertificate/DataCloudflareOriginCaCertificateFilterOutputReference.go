@@ -32,12 +32,6 @@ type DataCloudflareOriginCaCertificateFilterOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Limit() *float64
-	SetLimit(val *float64)
-	LimitInput() *float64
-	Offset() *float64
-	SetOffset(val *float64)
-	OffsetInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,8 +67,6 @@ type DataCloudflareOriginCaCertificateFilterOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	ResetLimit()
-	ResetOffset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -135,46 +127,6 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) Limit() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"limit",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) LimitInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"limitInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) Offset() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"offset",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) OffsetInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"offsetInput",
 		&returns,
 	)
 	return returns
@@ -277,28 +229,6 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference)SetLimit(val *float64) {
-	if err := j.validateSetLimitParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"limit",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference)SetOffset(val *float64) {
-	if err := j.validateSetOffsetParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"offset",
 		val,
 	)
 }
@@ -520,22 +450,6 @@ func (d *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) Inter
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) ResetLimit() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLimit",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) ResetOffset() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOffset",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

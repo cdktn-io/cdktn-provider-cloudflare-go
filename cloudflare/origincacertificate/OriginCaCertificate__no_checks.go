@@ -131,6 +131,10 @@ func (j *jsiiProxy_OriginCaCertificate) validateSetRequestTypeParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_OriginCaCertificate) validateSetZoneIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewOriginCaCertificateParameters(scope constructs.Construct, id *string, config *OriginCaCertificateConfig) error {
 	return nil
 }

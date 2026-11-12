@@ -79,6 +79,10 @@ func (b *jsiiProxy_BotManagement) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (b *jsiiProxy_BotManagement) validatePutAiAgentsParameters(value *BotManagementAiAgents) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotManagement) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

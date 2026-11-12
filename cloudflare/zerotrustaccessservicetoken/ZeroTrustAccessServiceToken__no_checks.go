@@ -139,6 +139,10 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares cloudflare_shares}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares cloudflare_shares}.
 type DataCloudflareShares interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -47,6 +47,9 @@ type DataCloudflareShares interface {
 	IncludeResources() interface{}
 	SetIncludeResources(val interface{})
 	IncludeResourcesInput() interface{}
+	IncludeTagsFrom() *string
+	SetIncludeTagsFrom(val *string)
+	IncludeTagsFromInput() *string
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -128,6 +131,7 @@ type DataCloudflareShares interface {
 	ResetDirection()
 	ResetIncludeRecipientCounts()
 	ResetIncludeResources()
+	ResetIncludeTagsFrom()
 	ResetKind()
 	ResetMaxItems()
 	ResetOrder()
@@ -311,6 +315,26 @@ func (j *jsiiProxy_DataCloudflareShares) IncludeResourcesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"includeResourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareShares) IncludeTagsFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"includeTagsFrom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareShares) IncludeTagsFromInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"includeTagsFromInput",
 		&returns,
 	)
 	return returns
@@ -537,7 +561,7 @@ func (j *jsiiProxy_DataCloudflareShares) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares cloudflare_shares} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares cloudflare_shares} Data Source.
 func NewDataCloudflareShares(scope constructs.Construct, id *string, config *DataCloudflareSharesConfig) DataCloudflareShares {
 	_init_.Initialize()
 
@@ -555,7 +579,7 @@ func NewDataCloudflareShares(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/shares cloudflare_shares} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/shares cloudflare_shares} Data Source.
 func NewDataCloudflareShares_Override(d DataCloudflareShares, scope constructs.Construct, id *string, config *DataCloudflareSharesConfig) {
 	_init_.Initialize()
 
@@ -633,6 +657,17 @@ func (j *jsiiProxy_DataCloudflareShares)SetIncludeResources(val interface{}) {
 	_jsii_.Set(
 		j,
 		"includeResources",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareShares)SetIncludeTagsFrom(val *string) {
+	if err := j.validateSetIncludeTagsFromParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeTagsFrom",
 		val,
 	)
 }
@@ -1049,6 +1084,14 @@ func (d *jsiiProxy_DataCloudflareShares) ResetIncludeResources() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIncludeResources",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareShares) ResetIncludeTagsFrom() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeTagsFrom",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
 type ZeroTrustDeviceCustomProfile interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -62,6 +62,9 @@ type ZeroTrustDeviceCustomProfile interface {
 	DnsSearchSuffixesInput() interface{}
 	Enabled() interface{}
 	SetEnabled(val interface{})
+	EnableDeviceCredentialAuthentication() interface{}
+	SetEnableDeviceCredentialAuthentication(val interface{})
+	EnableDeviceCredentialAuthenticationInput() interface{}
 	EnabledInput() interface{}
 	Exclude() ZeroTrustDeviceCustomProfileExcludeList
 	ExcludeInput() interface{}
@@ -256,6 +259,7 @@ type ZeroTrustDeviceCustomProfile interface {
 	ResetDisableAutoFallback()
 	ResetDnsSearchSuffixes()
 	ResetEnabled()
+	ResetEnableDeviceCredentialAuthentication()
 	ResetExclude()
 	ResetExcludeOfficeIps()
 	ResetGlobalAcceleration()
@@ -568,6 +572,26 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) Enabled() interface{} {
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) EnableDeviceCredentialAuthentication() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDeviceCredentialAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) EnableDeviceCredentialAuthenticationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDeviceCredentialAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -1104,7 +1128,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) VirtualNetworksInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) ZeroTrustDeviceCustomProfile {
 	_init_.Initialize()
 
@@ -1122,7 +1146,7 @@ func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile_Override(z ZeroTrustDeviceCustomProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -1258,6 +1282,17 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile)SetEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile)SetEnableDeviceCredentialAuthentication(val interface{}) {
+	if err := j.validateSetEnableDeviceCredentialAuthenticationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDeviceCredentialAuthentication",
 		val,
 	)
 }
@@ -1976,6 +2011,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetEnableDeviceCredentialAuthentication() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnableDeviceCredentialAuthentication",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workflow cloudflare_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workflow cloudflare_workflow}.
 type DataCloudflareWorkflow interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -44,6 +44,7 @@ type DataCloudflareWorkflow interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	Instances() cdktn.NumberMap
+	Jurisdiction() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -294,6 +295,16 @@ func (j *jsiiProxy_DataCloudflareWorkflow) Instances() cdktn.NumberMap {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkflow) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkflow) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -445,7 +456,7 @@ func (j *jsiiProxy_DataCloudflareWorkflow) WorkflowNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workflow cloudflare_workflow} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workflow cloudflare_workflow} Data Source.
 func NewDataCloudflareWorkflow(scope constructs.Construct, id *string, config *DataCloudflareWorkflowConfig) DataCloudflareWorkflow {
 	_init_.Initialize()
 
@@ -463,7 +474,7 @@ func NewDataCloudflareWorkflow(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/workflow cloudflare_workflow} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/workflow cloudflare_workflow} Data Source.
 func NewDataCloudflareWorkflow_Override(d DataCloudflareWorkflow, scope constructs.Construct, id *string, config *DataCloudflareWorkflowConfig) {
 	_init_.Initialize()
 

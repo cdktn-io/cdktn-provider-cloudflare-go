@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
 type EmailSecurityBlockSender interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -38,6 +38,9 @@ type EmailSecurityBlockSender interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpiresAt() *string
+	SetExpiresAt(val *string)
+	ExpiresAtInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -173,6 +176,7 @@ type EmailSecurityBlockSender interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetComments()
+	ResetExpiresAt()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -298,6 +302,26 @@ func (j *jsiiProxy_EmailSecurityBlockSender) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailSecurityBlockSender) ExpiresAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailSecurityBlockSender) ExpiresAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresAtInput",
 		&returns,
 	)
 	return returns
@@ -504,7 +528,7 @@ func (j *jsiiProxy_EmailSecurityBlockSender) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
 func NewEmailSecurityBlockSender(scope constructs.Construct, id *string, config *EmailSecurityBlockSenderConfig) EmailSecurityBlockSender {
 	_init_.Initialize()
 
@@ -522,7 +546,7 @@ func NewEmailSecurityBlockSender(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource.
 func NewEmailSecurityBlockSender_Override(e EmailSecurityBlockSender, scope constructs.Construct, id *string, config *EmailSecurityBlockSenderConfig) {
 	_init_.Initialize()
 
@@ -581,6 +605,17 @@ func (j *jsiiProxy_EmailSecurityBlockSender)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmailSecurityBlockSender)SetExpiresAt(val *string) {
+	if err := j.validateSetExpiresAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expiresAt",
 		val,
 	)
 }
@@ -1040,6 +1075,14 @@ func (e *jsiiProxy_EmailSecurityBlockSender) ResetComments() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetComments",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailSecurityBlockSender) ResetExpiresAt() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetExpiresAt",
 		nil, // no parameters
 	)
 }

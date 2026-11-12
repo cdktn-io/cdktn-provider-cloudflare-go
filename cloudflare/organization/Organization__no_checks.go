@@ -123,6 +123,10 @@ func (j *jsiiProxy_Organization) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Organization) validateSetParentIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Organization) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

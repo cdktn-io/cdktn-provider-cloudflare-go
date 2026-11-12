@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_token cloudflare_api_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/api_token cloudflare_api_token}.
 type ApiToken interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -84,6 +84,8 @@ type ApiToken interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TokenPrefix() *string
+	TokenSuffix() *string
 	Value() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -563,6 +565,26 @@ func (j *jsiiProxy_ApiToken) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApiToken) TokenPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiToken) TokenSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenSuffix",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiToken) Value() *string {
 	var returns *string
 	_jsii_.Get(
@@ -574,7 +596,7 @@ func (j *jsiiProxy_ApiToken) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_token cloudflare_api_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/api_token cloudflare_api_token} Resource.
 func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig) ApiToken {
 	_init_.Initialize()
 
@@ -592,7 +614,7 @@ func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/api_token cloudflare_api_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/api_token cloudflare_api_token} Resource.
 func NewApiToken_Override(a ApiToken, scope constructs.Construct, id *string, config *ApiTokenConfig) {
 	_init_.Initialize()
 

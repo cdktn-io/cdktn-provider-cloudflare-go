@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "aiAgents", GoGetter: "AiAgents"},
+			_jsii_.MemberProperty{JsiiProperty: "aiAgentsInput", GoGetter: "AiAgentsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "aiBotsMigrationOptOut", GoGetter: "AiBotsMigrationOptOut"},
 			_jsii_.MemberProperty{JsiiProperty: "aiBotsMigrationOptOutInput", GoGetter: "AiBotsMigrationOptOutInput"},
 			_jsii_.MemberProperty{JsiiProperty: "aiBotsProtection", GoGetter: "AiBotsProtection"},
@@ -78,8 +80,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putAiAgents", GoMethod: "PutAiAgents"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAiAgents", GoMethod: "ResetAiAgents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAiBotsMigrationOptOut", GoMethod: "ResetAiBotsMigrationOptOut"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAiBotsProtection", GoMethod: "ResetAiBotsProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAisearch", GoMethod: "ResetAisearch"},
@@ -130,6 +134,57 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_BotManagement{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.botManagement.BotManagementAiAgents",
+		reflect.TypeOf((*BotManagementAiAgents)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.botManagement.BotManagementAiAgentsOutputReference",
+		reflect.TypeOf((*BotManagementAiAgentsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "anthropicAgent", GoGetter: "AnthropicAgent"},
+			_jsii_.MemberProperty{JsiiProperty: "anthropicAgentInput", GoGetter: "AnthropicAgentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "googleAgent", GoGetter: "GoogleAgent"},
+			_jsii_.MemberProperty{JsiiProperty: "googleAgentInput", GoGetter: "GoogleAgentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "instinct", GoGetter: "Instinct"},
+			_jsii_.MemberProperty{JsiiProperty: "instinctInput", GoGetter: "InstinctInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "muse", GoGetter: "Muse"},
+			_jsii_.MemberProperty{JsiiProperty: "museInput", GoGetter: "MuseInput"},
+			_jsii_.MemberProperty{JsiiProperty: "openaiAgent", GoGetter: "OpenaiAgent"},
+			_jsii_.MemberProperty{JsiiProperty: "openaiAgentInput", GoGetter: "OpenaiAgentInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAnthropicAgent", GoMethod: "ResetAnthropicAgent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGoogleAgent", GoMethod: "ResetGoogleAgent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstinct", GoMethod: "ResetInstinct"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMuse", GoMethod: "ResetMuse"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOpenaiAgent", GoMethod: "ResetOpenaiAgent"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BotManagementAiAgentsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

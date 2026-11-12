@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/monetization_rules cloudflare_monetization_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/monetization_rules cloudflare_monetization_rules}.
 type DataCloudflareMonetizationRules interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareMonetizationRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/monetization_rules cloudflare_monetization_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/monetization_rules cloudflare_monetization_rules} Data Source.
 func NewDataCloudflareMonetizationRules(scope constructs.Construct, id *string, config *DataCloudflareMonetizationRulesConfig) DataCloudflareMonetizationRules {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataCloudflareMonetizationRules(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/monetization_rules cloudflare_monetization_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/monetization_rules cloudflare_monetization_rules} Data Source.
 func NewDataCloudflareMonetizationRules_Override(d DataCloudflareMonetizationRules, scope constructs.Construct, id *string, config *DataCloudflareMonetizationRulesConfig) {
 	_init_.Initialize()
 

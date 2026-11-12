@@ -39,6 +39,7 @@ type DataCloudflareOriginCaCertificatesResultOutputReference interface {
 	SetInternalValue(val *DataCloudflareOriginCaCertificatesResult)
 	RequestedValidity() *float64
 	RequestType() *string
+	RevokedAt() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -201,6 +202,16 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificatesResultOutputReference) Requ
 	_jsii_.Get(
 		j,
 		"requestType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificatesResultOutputReference) RevokedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"revokedAt",
 		&returns,
 	)
 	return returns

@@ -13,7 +13,9 @@ import (
 
 type DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference interface {
 	cdktn.ComplexObject
+	CertificateAuthority() *string
 	CertVerificationMode() *string
+	ClientCertificate() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,11 +82,31 @@ type jsiiProxy_DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputRefere
 	internal.Type__cdktnComplexObject
 }
 
+func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference) CertificateAuthority() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateAuthority",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference) CertVerificationMode() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"certVerificationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference) ClientCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificate",
 		&returns,
 	)
 	return returns

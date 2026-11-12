@@ -47,10 +47,6 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateIn
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutAuditSshParameters(value *ZeroTrustGatewayPolicyRuleSettingsAuditSsh) error {
-	return nil
-}
-
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutBisoAdminControlsParameters(value *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls) error {
 	return nil
 }
@@ -72,6 +68,10 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePu
 }
 
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutForensicCopyParameters(value *ZeroTrustGatewayPolicyRuleSettingsForensicCopy) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutForwardParameters(value *ZeroTrustGatewayPolicyRuleSettingsForward) error {
 	return nil
 }
 

@@ -13,9 +13,15 @@ import (
 
 type ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference interface {
 	cdktn.ComplexObject
+	AllowManualOverride() interface{}
+	SetAllowManualOverride(val interface{})
+	AllowManualOverrideInput() interface{}
 	ApiEndpoints() *[]*string
 	SetApiEndpoints(val *[]*string)
 	ApiEndpointsInput() *[]*string
+	Autoswitch() interface{}
+	SetAutoswitch(val interface{})
+	AutoswitchInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +82,8 @@ type ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetAllowManualOverride()
+	ResetAutoswitch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -89,6 +97,26 @@ type ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference interface {
 // The jsii proxy struct for ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference
 type jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) AllowManualOverride() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowManualOverride",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) AllowManualOverrideInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowManualOverrideInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) ApiEndpoints() *[]*string {
@@ -106,6 +134,26 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReferenc
 	_jsii_.Get(
 		j,
 		"apiEndpointsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) Autoswitch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoswitch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) AutoswitchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoswitchInput",
 		&returns,
 	)
 	return returns
@@ -269,6 +317,17 @@ func NewZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference_Override(
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference)SetAllowManualOverride(val interface{}) {
+	if err := j.validateSetAllowManualOverrideParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowManualOverride",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference)SetApiEndpoints(val *[]*string) {
 	if err := j.validateSetApiEndpointsParameters(val); err != nil {
 		panic(err)
@@ -276,6 +335,17 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReferenc
 	_jsii_.Set(
 		j,
 		"apiEndpoints",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference)SetAutoswitch(val interface{}) {
+	if err := j.validateSetAutoswitchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoswitch",
 		val,
 	)
 }
@@ -552,6 +622,22 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReferenc
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) ResetAllowManualOverride() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAllowManualOverride",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) ResetAutoswitch() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAutoswitch",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

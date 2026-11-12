@@ -75,6 +75,10 @@ func (j *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference) validateSetSecondaryGatewayAddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

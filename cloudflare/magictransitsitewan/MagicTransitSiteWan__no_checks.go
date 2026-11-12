@@ -139,6 +139,14 @@ func (j *jsiiProxy_MagicTransitSiteWan) validateSetPriorityParameters(val *float
 	return nil
 }
 
+func (j *jsiiProxy_MagicTransitSiteWan) validateSetProvisionedDownloadKbpsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan) validateSetProvisionedUploadKbpsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicTransitSiteWan) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

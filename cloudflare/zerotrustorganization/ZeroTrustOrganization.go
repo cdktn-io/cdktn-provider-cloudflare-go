@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -51,6 +51,9 @@ type ZeroTrustOrganization interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableEndUserAppCreation() interface{}
+	SetDisableEndUserAppCreation(val interface{})
+	DisableEndUserAppCreationInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -227,6 +230,7 @@ type ZeroTrustOrganization interface {
 	ResetCustomPages()
 	ResetDenyUnmatchedRequests()
 	ResetDenyUnmatchedRequestsExemptedZoneNames()
+	ResetDisableEndUserAppCreation()
 	ResetIsUiReadOnly()
 	ResetLoginDesign()
 	ResetMfaConfig()
@@ -457,6 +461,26 @@ func (j *jsiiProxy_ZeroTrustOrganization) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) DisableEndUserAppCreation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableEndUserAppCreation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization) DisableEndUserAppCreationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableEndUserAppCreationInput",
 		&returns,
 	)
 	return returns
@@ -883,7 +907,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -901,7 +925,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 
@@ -1004,6 +1028,17 @@ func (j *jsiiProxy_ZeroTrustOrganization)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustOrganization)SetDisableEndUserAppCreation(val interface{}) {
+	if err := j.validateSetDisableEndUserAppCreationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableEndUserAppCreation",
 		val,
 	)
 }
@@ -1654,6 +1689,14 @@ func (z *jsiiProxy_ZeroTrustOrganization) ResetDenyUnmatchedRequestsExemptedZone
 	_jsii_.InvokeVoid(
 		z,
 		"resetDenyUnmatchedRequestsExemptedZoneNames",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustOrganization) ResetDisableEndUserAppCreation() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDisableEndUserAppCreation",
 		nil, // no parameters
 	)
 }

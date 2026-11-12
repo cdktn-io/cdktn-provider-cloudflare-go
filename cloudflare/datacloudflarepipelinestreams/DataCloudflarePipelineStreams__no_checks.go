@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineStreams) validateSetDirectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineStreams) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (j *jsiiProxy_DataCloudflarePipelineStreams) validateSetMaxItemsParameters(
 }
 
 func (j *jsiiProxy_DataCloudflarePipelineStreams) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreams) validateSetOrderByParameters(val *string) error {
 	return nil
 }
 

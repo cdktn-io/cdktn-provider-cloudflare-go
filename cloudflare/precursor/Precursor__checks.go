@@ -215,22 +215,22 @@ func (p *jsiiProxy_Precursor) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
-func (p *jsiiProxy_Precursor) validatePutEnforcementRulesParameters(value interface{}) error {
+func (p *jsiiProxy_Precursor) validatePutRulesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktn.IResolvable:
 		// ok
-	case *[]*PrecursorEnforcementRules:
-		value := value.(*[]*PrecursorEnforcementRules)
+	case *[]*PrecursorRules:
+		value := value.(*[]*PrecursorRules)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*PrecursorEnforcementRules:
-		value_ := value.([]*PrecursorEnforcementRules)
+	case []*PrecursorRules:
+		value_ := value.([]*PrecursorRules)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -239,7 +239,7 @@ func (p *jsiiProxy_Precursor) validatePutEnforcementRulesParameters(value interf
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PrecursorEnforcementRules; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PrecursorRules; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -384,17 +384,17 @@ func (j *jsiiProxy_Precursor) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_Precursor) validateSetDefaultModeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_Precursor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_Precursor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_Precursor) validateSetModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -440,6 +440,26 @@ func (j *jsiiProxy_Precursor) validateSetProvisionersParameters(val *[]interface
 			if !_jsii_.IsAnonymousProxy(v) {
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktn.FileProvisioner, *cdktn.LocalExecProvisioner, *cdktn.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Precursor) validateSetShowInterstitialParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktn.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

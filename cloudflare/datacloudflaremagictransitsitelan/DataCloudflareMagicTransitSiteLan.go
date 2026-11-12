@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
 type DataCloudflareMagicTransitSiteLan interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -61,6 +61,7 @@ type DataCloudflareMagicTransitSiteLan interface {
 	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteSubnets() DataCloudflareMagicTransitSiteLanRemoteSubnetsList
 	RoutedSubnets() DataCloudflareMagicTransitSiteLanRoutedSubnetsList
 	SiteId() *string
 	SetSiteId(val *string)
@@ -372,6 +373,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) RemoteSubnets() DataCloudflareMagicTransitSiteLanRemoteSubnetsList {
+	var returns DataCloudflareMagicTransitSiteLanRemoteSubnetsList
+	_jsii_.Get(
+		j,
+		"remoteSubnets",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) RoutedSubnets() DataCloudflareMagicTransitSiteLanRoutedSubnetsList {
 	var returns DataCloudflareMagicTransitSiteLanRoutedSubnetsList
 	_jsii_.Get(
@@ -453,7 +464,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) VlanTag() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
 func NewDataCloudflareMagicTransitSiteLan(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteLanConfig) DataCloudflareMagicTransitSiteLan {
 	_init_.Initialize()
 
@@ -471,7 +482,7 @@ func NewDataCloudflareMagicTransitSiteLan(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Data Source.
 func NewDataCloudflareMagicTransitSiteLan_Override(d DataCloudflareMagicTransitSiteLan, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteLanConfig) {
 	_init_.Initialize()
 

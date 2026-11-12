@@ -87,6 +87,10 @@ func (l *jsiiProxy_LoadBalancer) validatePutLocationStrategyParameters(value *Lo
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancer) validatePutPoolSetsParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancer) validatePutRandomSteeringParameters(value *LoadBalancerRandomSteering) error {
 	return nil
 }

@@ -576,6 +576,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dns64Enabled", GoGetter: "Dns64Enabled"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsDestinationIpsId", GoGetter: "DnsDestinationIpsId"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsDestinationIpv6BlockId", GoGetter: "DnsDestinationIpv6BlockId"},
 			_jsii_.MemberProperty{JsiiProperty: "dohSubdomain", GoGetter: "DohSubdomain"},

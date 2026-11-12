@@ -34,6 +34,8 @@ type DataCloudflareAccountsResultManagedByOutputReference interface {
 	SetInternalValue(val *DataCloudflareAccountsResultManagedBy)
 	ParentOrgId() *string
 	ParentOrgName() *string
+	RootOrgId() *string
+	ShouldDisplayParentOrgs() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +148,26 @@ func (j *jsiiProxy_DataCloudflareAccountsResultManagedByOutputReference) ParentO
 	_jsii_.Get(
 		j,
 		"parentOrgName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountsResultManagedByOutputReference) RootOrgId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootOrgId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountsResultManagedByOutputReference) ShouldDisplayParentOrgs() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"shouldDisplayParentOrgs",
 		&returns,
 	)
 	return returns

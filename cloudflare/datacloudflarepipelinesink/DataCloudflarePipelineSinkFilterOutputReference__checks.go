@@ -166,6 +166,14 @@ func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetDirectionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktn.IResolvable:
@@ -191,6 +199,14 @@ func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetI
 }
 
 func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineSinkFilterOutputReference) validateSetOrderByParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

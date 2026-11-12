@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataCloudflareShare) validateSetIncludeResourcesParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareShare) validateSetIncludeTagsFromParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareShare) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }

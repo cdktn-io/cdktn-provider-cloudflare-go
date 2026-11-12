@@ -34,6 +34,8 @@ type AccountManagedByOutputReference interface {
 	SetInternalValue(val interface{})
 	ParentOrgId() *string
 	ParentOrgName() *string
+	RootOrgId() *string
+	ShouldDisplayParentOrgs() cdktn.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +148,26 @@ func (j *jsiiProxy_AccountManagedByOutputReference) ParentOrgName() *string {
 	_jsii_.Get(
 		j,
 		"parentOrgName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountManagedByOutputReference) RootOrgId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootOrgId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountManagedByOutputReference) ShouldDisplayParentOrgs() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"shouldDisplayParentOrgs",
 		&returns,
 	)
 	return returns

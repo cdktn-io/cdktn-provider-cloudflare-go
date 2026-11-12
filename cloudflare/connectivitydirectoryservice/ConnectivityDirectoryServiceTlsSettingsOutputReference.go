@@ -13,9 +13,15 @@ import (
 
 type ConnectivityDirectoryServiceTlsSettingsOutputReference interface {
 	cdktn.ComplexObject
+	CertificateAuthority() *string
+	SetCertificateAuthority(val *string)
+	CertificateAuthorityInput() *string
 	CertVerificationMode() *string
 	SetCertVerificationMode(val *string)
 	CertVerificationModeInput() *string
+	ClientCertificate() *string
+	SetClientCertificate(val *string)
+	ClientCertificateInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +73,8 @@ type ConnectivityDirectoryServiceTlsSettingsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetCertificateAuthority()
+	ResetClientCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -80,6 +88,26 @@ type ConnectivityDirectoryServiceTlsSettingsOutputReference interface {
 // The jsii proxy struct for ConnectivityDirectoryServiceTlsSettingsOutputReference
 type jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference struct {
 	internal.Type__cdktnComplexObject
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) CertificateAuthority() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateAuthority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) CertificateAuthorityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateAuthorityInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) CertVerificationMode() *string {
@@ -97,6 +125,26 @@ func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) CertV
 	_jsii_.Get(
 		j,
 		"certVerificationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) ClientCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) ClientCertificateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateInput",
 		&returns,
 	)
 	return returns
@@ -200,6 +248,17 @@ func NewConnectivityDirectoryServiceTlsSettingsOutputReference_Override(c Connec
 	)
 }
 
+func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference)SetCertificateAuthority(val *string) {
+	if err := j.validateSetCertificateAuthorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateAuthority",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference)SetCertVerificationMode(val *string) {
 	if err := j.validateSetCertVerificationModeParameters(val); err != nil {
 		panic(err)
@@ -207,6 +266,17 @@ func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference)SetCer
 	_jsii_.Set(
 		j,
 		"certVerificationMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference)SetClientCertificate(val *string) {
+	if err := j.validateSetClientCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientCertificate",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (c *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) ResetCertificateAuthority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCertificateAuthority",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) ResetClientCertificate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClientCertificate",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ConnectivityDirectoryServiceTlsSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {

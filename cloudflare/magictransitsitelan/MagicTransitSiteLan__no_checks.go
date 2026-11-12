@@ -83,6 +83,10 @@ func (m *jsiiProxy_MagicTransitSiteLan) validatePutNatParameters(value *MagicTra
 	return nil
 }
 
+func (m *jsiiProxy_MagicTransitSiteLan) validatePutRemoteSubnetsParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicTransitSiteLan) validatePutRoutedSubnetsParameters(value interface{}) error {
 	return nil
 }

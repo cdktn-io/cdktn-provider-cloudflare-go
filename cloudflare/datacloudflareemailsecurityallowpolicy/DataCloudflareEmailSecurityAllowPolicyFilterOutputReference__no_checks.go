@@ -63,6 +63,10 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference) validateSetExpiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityAllowPolicyFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

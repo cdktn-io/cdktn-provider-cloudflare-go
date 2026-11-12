@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataCloudflareShares) validateSetIncludeResourcesParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareShares) validateSetIncludeTagsFromParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareShares) validateSetKindParameters(val *string) error {
 	return nil
 }

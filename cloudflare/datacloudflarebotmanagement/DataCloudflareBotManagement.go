@@ -12,9 +12,10 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/bot_management cloudflare_bot_management}.
 type DataCloudflareBotManagement interface {
 	cdktn.TerraformDataSource
+	AiAgents() DataCloudflareBotManagementAiAgentsOutputReference
 	AiBotsMigrationOptOut() cdktn.IResolvable
 	AiBotsProtection() *string
 	Aisearch() *string
@@ -148,6 +149,16 @@ type DataCloudflareBotManagement interface {
 // The jsii proxy struct for DataCloudflareBotManagement
 type jsiiProxy_DataCloudflareBotManagement struct {
 	internal.Type__cdktnTerraformDataSource
+}
+
+func (j *jsiiProxy_DataCloudflareBotManagement) AiAgents() DataCloudflareBotManagementAiAgentsOutputReference {
+	var returns DataCloudflareBotManagementAiAgentsOutputReference
+	_jsii_.Get(
+		j,
+		"aiAgents",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareBotManagement) AiBotsMigrationOptOut() cdktn.IResolvable {
@@ -551,7 +562,7 @@ func (j *jsiiProxy_DataCloudflareBotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) DataCloudflareBotManagement {
 	_init_.Initialize()
 
@@ -569,7 +580,7 @@ func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement_Override(d DataCloudflareBotManagement, scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) {
 	_init_.Initialize()
 

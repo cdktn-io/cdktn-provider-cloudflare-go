@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share cloudflare_share}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share cloudflare_share}.
 type Share interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -40,6 +40,8 @@ type Share interface {
 	SetDependsOn(val *[]*string)
 	DisassociatedRecipientCount() *float64
 	DisassociatingRecipientCount() *float64
+	ExcludedRecipients() ShareExcludedRecipientsList
+	ExcludedRecipientsInput() interface{}
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -55,6 +57,9 @@ type Share interface {
 	IncludeResources() interface{}
 	SetIncludeResources(val interface{})
 	IncludeResourcesInput() interface{}
+	IncludeTagsFrom() *string
+	SetIncludeTagsFrom(val *string)
+	IncludeTagsFromInput() *string
 	Kind() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
@@ -82,6 +87,9 @@ type Share interface {
 	Resources() ShareResourcesList
 	ResourcesInput() interface{}
 	Status() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	TargetType() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
@@ -168,6 +176,7 @@ type Share interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutExcludedRecipients(value interface{})
 	PutRecipients(value interface{})
 	PutResources(value interface{})
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
@@ -183,11 +192,16 @@ type Share interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetExcludedRecipients()
 	ResetIncludeRecipientCounts()
 	ResetIncludeResources()
+	ResetIncludeTagsFrom()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRecipients()
+	ResetResources()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -345,6 +359,26 @@ func (j *jsiiProxy_Share) DisassociatingRecipientCount() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Share) ExcludedRecipients() ShareExcludedRecipientsList {
+	var returns ShareExcludedRecipientsList
+	_jsii_.Get(
+		j,
+		"excludedRecipients",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) ExcludedRecipientsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludedRecipientsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Share) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -420,6 +454,26 @@ func (j *jsiiProxy_Share) IncludeResourcesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"includeResourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) IncludeTagsFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"includeTagsFrom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) IncludeTagsFromInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"includeTagsFromInput",
 		&returns,
 	)
 	return returns
@@ -575,6 +629,26 @@ func (j *jsiiProxy_Share) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Share) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Share) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Share) TargetType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -616,7 +690,7 @@ func (j *jsiiProxy_Share) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share cloudflare_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share cloudflare_share} Resource.
 func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share {
 	_init_.Initialize()
 
@@ -634,7 +708,7 @@ func NewShare(scope constructs.Construct, id *string, config *ShareConfig) Share
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/share cloudflare_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/share cloudflare_share} Resource.
 func NewShare_Override(s Share, scope constructs.Construct, id *string, config *ShareConfig) {
 	_init_.Initialize()
 
@@ -716,6 +790,17 @@ func (j *jsiiProxy_Share)SetIncludeResources(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Share)SetIncludeTagsFrom(val *string) {
+	if err := j.validateSetIncludeTagsFromParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeTagsFrom",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Share)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -753,6 +838,17 @@ func (j *jsiiProxy_Share)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Share)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1126,6 +1222,17 @@ func (s *jsiiProxy_Share) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_Share) PutExcludedRecipients(value interface{}) {
+	if err := s.validatePutExcludedRecipientsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putExcludedRecipients",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_Share) PutRecipients(value interface{}) {
 	if err := s.validatePutRecipientsParameters(value); err != nil {
 		panic(err)
@@ -1159,6 +1266,14 @@ func (s *jsiiProxy_Share) RegisterProviderFeatureUsage(feature cdktn.ProviderFea
 	)
 }
 
+func (s *jsiiProxy_Share) ResetExcludedRecipients() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExcludedRecipients",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Share) ResetIncludeRecipientCounts() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1175,10 +1290,42 @@ func (s *jsiiProxy_Share) ResetIncludeResources() {
 	)
 }
 
+func (s *jsiiProxy_Share) ResetIncludeTagsFrom() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIncludeTagsFrom",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Share) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Share) ResetRecipients() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRecipients",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Share) ResetResources() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Share) ResetTags() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTags",
 		nil, // no parameters
 	)
 }

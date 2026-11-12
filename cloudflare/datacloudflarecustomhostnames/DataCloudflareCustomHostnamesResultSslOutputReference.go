@@ -30,9 +30,7 @@ type DataCloudflareCustomHostnamesResultSslOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	CustomCertificate() *string
 	CustomCsrId() *string
-	CustomKey() *string
 	DcvDelegationRecords() DataCloudflareCustomHostnamesResultSslDcvDelegationRecordsList
 	ExpiresOn() *string
 	// Experimental.
@@ -149,31 +147,11 @@ func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) CustomCertificate() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customCertificate",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) CustomCsrId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"customCsrId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareCustomHostnamesResultSslOutputReference) CustomKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"customKey",
 		&returns,
 	)
 	return returns

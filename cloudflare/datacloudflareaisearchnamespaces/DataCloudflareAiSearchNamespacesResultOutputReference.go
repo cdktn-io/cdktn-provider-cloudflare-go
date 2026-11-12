@@ -32,6 +32,7 @@ type DataCloudflareAiSearchNamespacesResultOutputReference interface {
 	Description() *string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareAiSearchNamespacesResult
 	SetInternalValue(val *DataCloudflareAiSearchNamespacesResult)
 	Name() *string
@@ -139,6 +140,16 @@ func (j *jsiiProxy_DataCloudflareAiSearchNamespacesResultOutputReference) Fqn() 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiSearchNamespacesResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

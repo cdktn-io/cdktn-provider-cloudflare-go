@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations cloudflare_organizations}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations cloudflare_organizations}.
 type DataCloudflareOrganizations interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -29,6 +29,9 @@ type DataCloudflareOrganizations interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -47,10 +50,15 @@ type DataCloudflareOrganizations interface {
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
+	Member() DataCloudflareOrganizationsMemberOutputReference
+	MemberInput() interface{}
 	Name() DataCloudflareOrganizationsNameOutputReference
 	NameInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByInput() *string
 	PageSize() *float64
 	SetPageSize(val *float64)
 	PageSizeInput() *float64
@@ -98,6 +106,7 @@ type DataCloudflareOrganizations interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutContaining(value *DataCloudflareOrganizationsContaining)
+	PutMember(value *DataCloudflareOrganizationsMember)
 	PutName(value *DataCloudflareOrganizationsName)
 	PutParent(value *DataCloudflareOrganizationsParent)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
@@ -114,9 +123,12 @@ type DataCloudflareOrganizations interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetContaining()
+	ResetDirection()
 	ResetId()
 	ResetMaxItems()
+	ResetMember()
 	ResetName()
+	ResetOrderBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -211,6 +223,26 @@ func (j *jsiiProxy_DataCloudflareOrganizations) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareOrganizations) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizations) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareOrganizations) ForEach() cdktn.ITerraformIterator {
 	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
@@ -291,6 +323,26 @@ func (j *jsiiProxy_DataCloudflareOrganizations) MaxItemsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareOrganizations) Member() DataCloudflareOrganizationsMemberOutputReference {
+	var returns DataCloudflareOrganizationsMemberOutputReference
+	_jsii_.Get(
+		j,
+		"member",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizations) MemberInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"memberInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareOrganizations) Name() DataCloudflareOrganizationsNameOutputReference {
 	var returns DataCloudflareOrganizationsNameOutputReference
 	_jsii_.Get(
@@ -316,6 +368,26 @@ func (j *jsiiProxy_DataCloudflareOrganizations) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizations) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizations) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
 		&returns,
 	)
 	return returns
@@ -442,7 +514,7 @@ func (j *jsiiProxy_DataCloudflareOrganizations) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations cloudflare_organizations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations cloudflare_organizations} Data Source.
 func NewDataCloudflareOrganizations(scope constructs.Construct, id *string, config *DataCloudflareOrganizationsConfig) DataCloudflareOrganizations {
 	_init_.Initialize()
 
@@ -460,7 +532,7 @@ func NewDataCloudflareOrganizations(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/organizations cloudflare_organizations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/organizations cloudflare_organizations} Data Source.
 func NewDataCloudflareOrganizations_Override(d DataCloudflareOrganizations, scope constructs.Construct, id *string, config *DataCloudflareOrganizationsConfig) {
 	_init_.Initialize()
 
@@ -486,6 +558,17 @@ func (j *jsiiProxy_DataCloudflareOrganizations)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizations)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"direction",
 		val,
 	)
 }
@@ -527,6 +610,17 @@ func (j *jsiiProxy_DataCloudflareOrganizations)SetMaxItems(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareOrganizations)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
 		val,
 	)
 }
@@ -857,6 +951,17 @@ func (d *jsiiProxy_DataCloudflareOrganizations) PutContaining(value *DataCloudfl
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizations) PutMember(value *DataCloudflareOrganizationsMember) {
+	if err := d.validatePutMemberParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMember",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareOrganizations) PutName(value *DataCloudflareOrganizationsName) {
 	if err := d.validatePutNameParameters(value); err != nil {
 		panic(err)
@@ -898,6 +1003,14 @@ func (d *jsiiProxy_DataCloudflareOrganizations) ResetContaining() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizations) ResetDirection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareOrganizations) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -914,10 +1027,26 @@ func (d *jsiiProxy_DataCloudflareOrganizations) ResetMaxItems() {
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareOrganizations) ResetMember() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMember",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareOrganizations) ResetName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareOrganizations) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderBy",
 		nil, // no parameters
 	)
 }

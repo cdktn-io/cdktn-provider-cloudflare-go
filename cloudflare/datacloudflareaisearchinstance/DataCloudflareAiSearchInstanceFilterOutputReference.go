@@ -35,9 +35,6 @@ type DataCloudflareAiSearchInstanceFilterOutputReference interface {
 	HostnameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Namespace() *string
-	SetNamespace(val *string)
-	NamespaceInput() *string
 	OrderBy() *string
 	SetOrderBy(val *string)
 	OrderByDirection() *string
@@ -80,7 +77,6 @@ type DataCloudflareAiSearchInstanceFilterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetHostname()
-	ResetNamespace()
 	ResetOrderBy()
 	ResetOrderByDirection()
 	ResetSearch()
@@ -164,26 +160,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) Namespace() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"namespace",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) NamespaceInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"namespaceInput",
 		&returns,
 	)
 	return returns
@@ -337,17 +313,6 @@ func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference)SetNamespace(val *string) {
-	if err := j.validateSetNamespaceParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"namespace",
 		val,
 	)
 }
@@ -597,14 +562,6 @@ func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) ResetHos
 	_jsii_.InvokeVoid(
 		d,
 		"resetHostname",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareAiSearchInstanceFilterOutputReference) ResetNamespace() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNamespace",
 		nil, // no parameters
 	)
 }

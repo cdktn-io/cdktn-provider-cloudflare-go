@@ -215,6 +215,37 @@ func (s *jsiiProxy_Share) validateOverrideLogicalIdParameters(newLogicalId *stri
 	return nil
 }
 
+func (s *jsiiProxy_Share) validatePutExcludedRecipientsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktn.IResolvable:
+		// ok
+	case *[]*ShareExcludedRecipients:
+		value := value.(*[]*ShareExcludedRecipients)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ShareExcludedRecipients:
+		value_ := value.([]*ShareExcludedRecipients)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ShareExcludedRecipients; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_Share) validatePutRecipientsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -463,6 +494,14 @@ func (j *jsiiProxy_Share) validateSetIncludeResourcesParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Share) validateSetIncludeTagsFromParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Share) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -520,6 +559,14 @@ func (j *jsiiProxy_Share) validateSetProvisionersParameters(val *[]interface{}) 
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktn.FileProvisioner, *cdktn.LocalExecProvisioner, *cdktn.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Share) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

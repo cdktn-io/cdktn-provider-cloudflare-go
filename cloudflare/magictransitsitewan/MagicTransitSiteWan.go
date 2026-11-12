@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
 type MagicTransitSiteWan interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -68,6 +68,12 @@ type MagicTransitSiteWan interface {
 	Provider() cdktn.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktn.TerraformProvider)
+	ProvisionedDownloadKbps() *float64
+	SetProvisionedDownloadKbps(val *float64)
+	ProvisionedDownloadKbpsInput() *float64
+	ProvisionedUploadKbps() *float64
+	SetProvisionedUploadKbps(val *float64)
+	ProvisionedUploadKbpsInput() *float64
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -188,6 +194,8 @@ type MagicTransitSiteWan interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPriority()
+	ResetProvisionedDownloadKbps()
+	ResetProvisionedUploadKbps()
 	ResetStaticAddressing()
 	ResetVlanTag()
 	SynthesizeAttributes() *map[string]interface{}
@@ -457,6 +465,46 @@ func (j *jsiiProxy_MagicTransitSiteWan) Provider() cdktn.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_MagicTransitSiteWan) ProvisionedDownloadKbps() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedDownloadKbps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan) ProvisionedDownloadKbpsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedDownloadKbpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan) ProvisionedUploadKbps() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedUploadKbps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan) ProvisionedUploadKbpsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedUploadKbpsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicTransitSiteWan) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -568,7 +616,7 @@ func (j *jsiiProxy_MagicTransitSiteWan) VlanTagInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
 func NewMagicTransitSiteWan(scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) MagicTransitSiteWan {
 	_init_.Initialize()
 
@@ -586,7 +634,7 @@ func NewMagicTransitSiteWan(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
 func NewMagicTransitSiteWan_Override(m MagicTransitSiteWan, scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) {
 	_init_.Initialize()
 
@@ -716,6 +764,28 @@ func (j *jsiiProxy_MagicTransitSiteWan)SetProvider(val cdktn.TerraformProvider) 
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan)SetProvisionedDownloadKbps(val *float64) {
+	if err := j.validateSetProvisionedDownloadKbpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedDownloadKbps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitSiteWan)SetProvisionedUploadKbps(val *float64) {
+	if err := j.validateSetProvisionedUploadKbpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedUploadKbps",
 		val,
 	)
 }
@@ -1180,6 +1250,22 @@ func (m *jsiiProxy_MagicTransitSiteWan) ResetPriority() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteWan) ResetProvisionedDownloadKbps() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProvisionedDownloadKbps",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteWan) ResetProvisionedUploadKbps() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetProvisionedUploadKbps",
 		nil, // no parameters
 	)
 }

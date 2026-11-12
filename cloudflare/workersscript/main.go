@@ -31,6 +31,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cacheOptions", GoGetter: "CacheOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheOptionsInput", GoGetter: "CacheOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "codeUpdateStrategy", GoGetter: "CodeUpdateStrategy"},
+			_jsii_.MemberProperty{JsiiProperty: "codeUpdateStrategyInput", GoGetter: "CodeUpdateStrategyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityDate", GoGetter: "CompatibilityDate"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityDateInput", GoGetter: "CompatibilityDateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibilityFlags", GoGetter: "CompatibilityFlags"},
@@ -111,6 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAssets", GoMethod: "PutAssets"},
 			_jsii_.MemberMethod{JsiiMethod: "putBindings", GoMethod: "PutBindings"},
 			_jsii_.MemberMethod{JsiiMethod: "putCacheOptions", GoMethod: "PutCacheOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putCodeUpdateStrategy", GoMethod: "PutCodeUpdateStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "putExports", GoMethod: "PutExports"},
 			_jsii_.MemberMethod{JsiiMethod: "putFiles", GoMethod: "PutFiles"},
 			_jsii_.MemberMethod{JsiiMethod: "putLimits", GoMethod: "PutLimits"},
@@ -127,6 +130,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBindingsInherit", GoMethod: "ResetBindingsInherit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBodyPart", GoMethod: "ResetBodyPart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCacheOptions", GoMethod: "ResetCacheOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCodeUpdateStrategy", GoMethod: "ResetCodeUpdateStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompatibilityDate", GoMethod: "ResetCompatibilityDate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompatibilityFlags", GoMethod: "ResetCompatibilityFlags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContent", GoMethod: "ResetContent"},
@@ -718,6 +722,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersScriptCacheOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptCodeUpdateStrategy",
+		reflect.TypeOf((*WorkersScriptCodeUpdateStrategy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.workersScript.WorkersScriptCodeUpdateStrategyOutputReference",
+		reflect.TypeOf((*WorkersScriptCodeUpdateStrategyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxDelay", GoGetter: "MaxDelay"},
+			_jsii_.MemberProperty{JsiiProperty: "maxDelayInput", GoGetter: "MaxDelayInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxDelay", GoMethod: "ResetMaxDelay"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkersScriptCodeUpdateStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

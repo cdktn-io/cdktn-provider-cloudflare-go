@@ -127,6 +127,10 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetDns64EnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetDnsDestinationIpsIdParameters(val *string) error {
 	return nil
 }

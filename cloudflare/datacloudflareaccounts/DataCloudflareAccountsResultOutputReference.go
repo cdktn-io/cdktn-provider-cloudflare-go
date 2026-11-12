@@ -34,6 +34,7 @@ type DataCloudflareAccountsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareAccountsResult
 	SetInternalValue(val *DataCloudflareAccountsResult)
+	LegacyFlags() DataCloudflareAccountsResultLegacyFlagsOutputReference
 	ManagedBy() DataCloudflareAccountsResultManagedByOutputReference
 	Name() *string
 	Settings() DataCloudflareAccountsResultSettingsOutputReference
@@ -150,6 +151,16 @@ func (j *jsiiProxy_DataCloudflareAccountsResultOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountsResultOutputReference) LegacyFlags() DataCloudflareAccountsResultLegacyFlagsOutputReference {
+	var returns DataCloudflareAccountsResultLegacyFlagsOutputReference
+	_jsii_.Get(
+		j,
+		"legacyFlags",
 		&returns,
 	)
 	return returns

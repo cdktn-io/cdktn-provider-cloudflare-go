@@ -28,6 +28,9 @@ type DataCloudflarePipelineStreamFilterOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -35,6 +38,9 @@ type DataCloudflarePipelineStreamFilterOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	OrderBy() *string
+	SetOrderBy(val *string)
+	OrderByInput() *string
 	PipelineId() *string
 	SetPipelineId(val *string)
 	PipelineIdInput() *string
@@ -70,7 +76,9 @@ type DataCloudflarePipelineStreamFilterOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
+	ResetDirection()
 	ResetName()
+	ResetOrderBy()
 	ResetPipelineId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -117,6 +125,26 @@ func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) CreationSt
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -152,6 +180,26 @@ func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) NameInput(
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) OrderBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) OrderByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderByInput",
 		&returns,
 	)
 	return returns
@@ -247,6 +295,17 @@ func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference)SetComplexO
 	)
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"direction",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -265,6 +324,17 @@ func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference)SetName(val
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orderBy",
 		val,
 	)
 }
@@ -488,10 +558,26 @@ func (d *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) Interpolat
 	return returns
 }
 
+func (d *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) ResetDirection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflarePipelineStreamFilterOutputReference) ResetOrderBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrderBy",
 		nil, // no parameters
 	)
 }

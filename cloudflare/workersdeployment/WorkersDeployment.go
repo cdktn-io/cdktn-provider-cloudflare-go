@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment cloudflare_workers_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
 type WorkersDeployment interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -23,6 +23,8 @@ type WorkersDeployment interface {
 	AuthorEmail() *string
 	// Experimental.
 	CdktfStack() cdktn.TerraformStack
+	CodeUpdateStrategy() WorkersDeploymentCodeUpdateStrategyOutputReference
+	CodeUpdateStrategyInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -161,6 +163,7 @@ type WorkersDeployment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAnnotations(value *WorkersDeploymentAnnotations)
+	PutCodeUpdateStrategy(value *WorkersDeploymentCodeUpdateStrategy)
 	PutVersions(value interface{})
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
@@ -176,6 +179,7 @@ type WorkersDeployment interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAnnotations()
+	ResetCodeUpdateStrategy()
 	ResetForce()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -262,6 +266,26 @@ func (j *jsiiProxy_WorkersDeployment) CdktfStack() cdktn.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersDeployment) CodeUpdateStrategy() WorkersDeploymentCodeUpdateStrategyOutputReference {
+	var returns WorkersDeploymentCodeUpdateStrategyOutputReference
+	_jsii_.Get(
+		j,
+		"codeUpdateStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersDeployment) CodeUpdateStrategyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeUpdateStrategyInput",
 		&returns,
 	)
 	return returns
@@ -528,7 +552,7 @@ func (j *jsiiProxy_WorkersDeployment) VersionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment(scope constructs.Construct, id *string, config *WorkersDeploymentConfig) WorkersDeployment {
 	_init_.Initialize()
 
@@ -546,7 +570,7 @@ func NewWorkersDeployment(scope constructs.Construct, id *string, config *Worker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment_Override(w WorkersDeployment, scope constructs.Construct, id *string, config *WorkersDeploymentConfig) {
 	_init_.Initialize()
 
@@ -1049,6 +1073,17 @@ func (w *jsiiProxy_WorkersDeployment) PutAnnotations(value *WorkersDeploymentAnn
 	)
 }
 
+func (w *jsiiProxy_WorkersDeployment) PutCodeUpdateStrategy(value *WorkersDeploymentCodeUpdateStrategy) {
+	if err := w.validatePutCodeUpdateStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCodeUpdateStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersDeployment) PutVersions(value interface{}) {
 	if err := w.validatePutVersionsParameters(value); err != nil {
 		panic(err)
@@ -1075,6 +1110,14 @@ func (w *jsiiProxy_WorkersDeployment) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersDeployment) ResetCodeUpdateStrategy() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCodeUpdateStrategy",
 		nil, // no parameters
 	)
 }

@@ -22,7 +22,7 @@ type DataCloudflareZeroTrustResourceLibraryApplicationFilter struct {
 	//
 	// Unknown or empty property names return `400`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_application#fields DataCloudflareZeroTrustResourceLibraryApplication#fields}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_resource_library_application#fields DataCloudflareZeroTrustResourceLibraryApplication#fields}
 	Fields *string `field:"optional" json:"fields" yaml:"fields"`
 	// Filter applications using `key:value` format.
 	//
@@ -38,39 +38,42 @@ type DataCloudflareZeroTrustResourceLibraryApplicationFilter struct {
 	// - `supported`: supported Cloudflare product. Values: `GATEWAY`, `ACCESS`, `CASB`.
 	// - `review_status`: account-specific Gateway review status. Values: `approved`, `unapproved`, `in_review`, `unreviewed`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_resource_library_application#filter DataCloudflareZeroTrustResourceLibraryApplication#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 	// Number of results to return. Defaults to 25; values are clamped to 1–250.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_application#limit DataCloudflareZeroTrustResourceLibraryApplication#limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_resource_library_application#limit DataCloudflareZeroTrustResourceLibraryApplication#limit}
 	Limit *float64 `field:"optional" json:"limit" yaml:"limit"`
 	// Find complete, case-insensitive application name mentions in a phrase or rule sentence.
 	//
 	// Misspelled names do not match. Returns matching applications
-	// ranked by relevance. Must be between 2 and 1000 characters. Uses the same
+	// ranked by relevance. Must be between 2 and 1000 characters, with no control
+	// characters other than tab and line breaks. Uses the same
 	// filters, fields, and pagination as listing. `search` cannot be combined
 	// with lookup. Results are ranked by relevance, so `order_by` is ignored.
+	// To keep the text out of URLs, send it to `POST .../applications/lookup` instead.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_application#lookup DataCloudflareZeroTrustResourceLibraryApplication#lookup}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_resource_library_application#lookup DataCloudflareZeroTrustResourceLibraryApplication#lookup}
 	Lookup *string `field:"optional" json:"lookup" yaml:"lookup"`
-	// Number of results to skip. Defaults to 0; negative values are clamped to 0.
+	// Number of results to skip. Defaults to 0; negative values are clamped to 0. Ignored when `cursor` is provided.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_application#offset DataCloudflareZeroTrustResourceLibraryApplication#offset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_resource_library_application#offset DataCloudflareZeroTrustResourceLibraryApplication#offset}
 	Offset *float64 `field:"optional" json:"offset" yaml:"offset"`
 	// Order results using field:direction format.
 	//
 	// Supported fields are name, id, human_id,
 	// category_id, application_type, application_confidence_score, and gen_ai_score.
-	// Supported directions are asc and desc. Ignored when search is provided; results are
+	// Supported directions are asc and desc. name and application_type ignore the case of
+	// the letters A to Z, and ties sort by id. Ignored when search is provided; results are
 	// ranked by relevance instead. Also ignored when lookup is provided.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_application#order_by DataCloudflareZeroTrustResourceLibraryApplication#order_by}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_resource_library_application#order_by DataCloudflareZeroTrustResourceLibraryApplication#order_by}
 	OrderBy *string `field:"optional" json:"orderBy" yaml:"orderBy"`
 	// Fuzzy search across application name and hostnames.
 	//
 	// Results are ranked by relevance. Must be between 2 and 200 characters. Can be combined with filter parameters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_resource_library_application#search DataCloudflareZeroTrustResourceLibraryApplication#search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_resource_library_application#search DataCloudflareZeroTrustResourceLibraryApplication#search}
 	Search *string `field:"optional" json:"search" yaml:"search"`
 }
 

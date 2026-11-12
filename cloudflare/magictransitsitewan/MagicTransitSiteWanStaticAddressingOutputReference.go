@@ -41,6 +41,9 @@ type MagicTransitSiteWanStaticAddressingOutputReference interface {
 	SecondaryAddress() *string
 	SetSecondaryAddress(val *string)
 	SecondaryAddressInput() *string
+	SecondaryGatewayAddress() *string
+	SetSecondaryGatewayAddress(val *string)
+	SecondaryGatewayAddressInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,6 +77,7 @@ type MagicTransitSiteWanStaticAddressingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetSecondaryAddress()
+	ResetSecondaryGatewayAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktn.IResolveContext) interface{}
@@ -199,6 +203,26 @@ func (j *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference) Secondary
 	return returns
 }
 
+func (j *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference) SecondaryGatewayAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryGatewayAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference) SecondaryGatewayAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryGatewayAddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -309,6 +333,17 @@ func (j *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference)SetSeconda
 	_jsii_.Set(
 		j,
 		"secondaryAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference)SetSecondaryGatewayAddress(val *string) {
+	if err := j.validateSetSecondaryGatewayAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryGatewayAddress",
 		val,
 	)
 }
@@ -525,6 +560,14 @@ func (m *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference) ResetSeco
 	_jsii_.InvokeVoid(
 		m,
 		"resetSecondaryAddress",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteWanStaticAddressingOutputReference) ResetSecondaryGatewayAddress() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSecondaryGatewayAddress",
 		nil, // no parameters
 	)
 }

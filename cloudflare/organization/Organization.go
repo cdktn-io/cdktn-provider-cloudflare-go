@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization cloudflare_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization cloudflare_organization}.
 type Organization interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -52,6 +52,9 @@ type Organization interface {
 	// The tree node.
 	Node() constructs.Node
 	Parent() OrganizationParentOutputReference
+	ParentId() *string
+	SetParentId(val *string)
+	ParentIdInput() *string
 	ParentInput() interface{}
 	Profile() OrganizationProfileOutputReference
 	ProfileInput() interface{}
@@ -169,6 +172,7 @@ type Organization interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParent()
+	ResetParentId()
 	ResetProfile()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -357,6 +361,26 @@ func (j *jsiiProxy_Organization) Parent() OrganizationParentOutputReference {
 	return returns
 }
 
+func (j *jsiiProxy_Organization) ParentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Organization) ParentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Organization) ParentInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -448,7 +472,7 @@ func (j *jsiiProxy_Organization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization cloudflare_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization cloudflare_organization} Resource.
 func NewOrganization(scope constructs.Construct, id *string, config *OrganizationConfig) Organization {
 	_init_.Initialize()
 
@@ -466,7 +490,7 @@ func NewOrganization(scope constructs.Construct, id *string, config *Organizatio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization cloudflare_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization cloudflare_organization} Resource.
 func NewOrganization_Override(o Organization, scope constructs.Construct, id *string, config *OrganizationConfig) {
 	_init_.Initialize()
 
@@ -533,6 +557,17 @@ func (j *jsiiProxy_Organization)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Organization)SetParentId(val *string) {
+	if err := j.validateSetParentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parentId",
 		val,
 	)
 }
@@ -970,6 +1005,14 @@ func (o *jsiiProxy_Organization) ResetParent() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetParent",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_Organization) ResetParentId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetParentId",
 		nil, // no parameters
 	)
 }

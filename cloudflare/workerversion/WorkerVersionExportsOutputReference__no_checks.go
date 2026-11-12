@@ -63,6 +63,10 @@ func (j *jsiiProxy_WorkerVersionExportsOutputReference) validateSetComplexObject
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersionExportsOutputReference) validateSetContainerParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersionExportsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

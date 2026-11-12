@@ -12,9 +12,11 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktn.TerraformResource
+	AiAgents() BotManagementAiAgentsOutputReference
+	AiAgentsInput() interface{}
 	AiBotsMigrationOptOut() interface{}
 	SetAiBotsMigrationOptOut(val interface{})
 	AiBotsMigrationOptOutInput() interface{}
@@ -209,6 +211,7 @@ type BotManagement interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAiAgents(value *BotManagementAiAgents)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
 	//
 	// Called by generated provider bindings when a versioned feature is
@@ -222,6 +225,7 @@ type BotManagement interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetAiAgents()
 	ResetAiBotsMigrationOptOut()
 	ResetAiBotsProtection()
 	ResetAisearch()
@@ -271,6 +275,26 @@ type BotManagement interface {
 // The jsii proxy struct for BotManagement
 type jsiiProxy_BotManagement struct {
 	internal.Type__cdktnTerraformResource
+}
+
+func (j *jsiiProxy_BotManagement) AiAgents() BotManagementAiAgentsOutputReference {
+	var returns BotManagementAiAgentsOutputReference
+	_jsii_.Get(
+		j,
+		"aiAgents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) AiAgentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aiAgentsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BotManagement) AiBotsMigrationOptOut() interface{} {
@@ -904,7 +928,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -922,7 +946,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -1612,6 +1636,17 @@ func (b *jsiiProxy_BotManagement) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (b *jsiiProxy_BotManagement) PutAiAgents(value *BotManagementAiAgents) {
+	if err := b.validatePutAiAgentsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putAiAgents",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BotManagement) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
 	if err := b.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
 		panic(err)
@@ -1620,6 +1655,14 @@ func (b *jsiiProxy_BotManagement) RegisterProviderFeatureUsage(feature cdktn.Pro
 		b,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetAiAgents() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAiAgents",
+		nil, // no parameters
 	)
 }
 

@@ -15,7 +15,6 @@ type DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference int
 	cdktn.ComplexObject
 	AddHeaders() cdktn.StringListMap
 	AllowChildBypass() cdktn.IResolvable
-	AuditSsh() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsAuditSshOutputReference
 	BisoAdminControls() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsBisoAdminControlsOutputReference
 	BlockPage() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsBlockPageOutputReference
 	BlockPageEnabled() cdktn.IResolvable
@@ -41,6 +40,7 @@ type DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference int
 	DnsResolvers() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsDnsResolversOutputReference
 	Egress() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsEgressOutputReference
 	ForensicCopy() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsForensicCopyOutputReference
+	Forward() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsForwardOutputReference
 	// Experimental.
 	Fqn() *string
 	IgnoreCnameCategoryMatches() cdktn.IResolvable
@@ -122,16 +122,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutpu
 	_jsii_.Get(
 		j,
 		"allowChildBypass",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference) AuditSsh() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsAuditSshOutputReference {
-	var returns DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsAuditSshOutputReference
-	_jsii_.Get(
-		j,
-		"auditSsh",
 		&returns,
 	)
 	return returns
@@ -262,6 +252,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutpu
 	_jsii_.Get(
 		j,
 		"forensicCopy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference) Forward() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsForwardOutputReference {
+	var returns DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsForwardOutputReference
+	_jsii_.Get(
+		j,
+		"forward",
 		&returns,
 	)
 	return returns

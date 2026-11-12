@@ -87,6 +87,10 @@ func (j *jsiiProxy_AiGatewayGuardrailsResponseOutputReference) validateSetS13Par
 	return nil
 }
 
+func (j *jsiiProxy_AiGatewayGuardrailsResponseOutputReference) validateSetS14Parameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiGatewayGuardrailsResponseOutputReference) validateSetS2Parameters(val *string) error {
 	return nil
 }

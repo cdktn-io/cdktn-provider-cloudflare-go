@@ -238,6 +238,14 @@ func (j *jsiiProxy_AiGatewayGuardrailsResponseOutputReference) validateSetS13Par
 	return nil
 }
 
+func (j *jsiiProxy_AiGatewayGuardrailsResponseOutputReference) validateSetS14Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AiGatewayGuardrailsResponseOutputReference) validateSetS2Parameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

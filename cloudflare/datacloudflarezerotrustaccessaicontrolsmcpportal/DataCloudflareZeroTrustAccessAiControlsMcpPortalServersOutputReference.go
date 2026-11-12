@@ -51,6 +51,7 @@ type DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference inte
 	Name() *string
 	OnBehalf() cdktn.IResolvable
 	Prompts() cdktn.StringMapList
+	RegisteredAt() *string
 	SecureWebGateway() cdktn.IResolvable
 	ServerId() *string
 	Status() *string
@@ -339,6 +340,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutput
 	_jsii_.Get(
 		j,
 		"prompts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessAiControlsMcpPortalServersOutputReference) RegisteredAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"registeredAt",
 		&returns,
 	)
 	return returns

@@ -36,6 +36,7 @@ type DataCloudflareWorkflowsResultOutputReference interface {
 	Instances() cdktn.NumberMap
 	InternalValue() *DataCloudflareWorkflowsResult
 	SetInternalValue(val *DataCloudflareWorkflowsResult)
+	Jurisdiction() *string
 	ModifiedOn() *string
 	Name() *string
 	Schedules() DataCloudflareWorkflowsResultSchedulesList
@@ -174,6 +175,16 @@ func (j *jsiiProxy_DataCloudflareWorkflowsResultOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkflowsResultOutputReference) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
 		&returns,
 	)
 	return returns

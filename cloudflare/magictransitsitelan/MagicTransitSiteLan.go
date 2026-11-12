@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
 type MagicTransitSiteLan interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -79,6 +79,8 @@ type MagicTransitSiteLan interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteSubnets() MagicTransitSiteLanRemoteSubnetsList
+	RemoteSubnetsInput() interface{}
 	RoutedSubnets() MagicTransitSiteLanRoutedSubnetsList
 	RoutedSubnetsInput() interface{}
 	SiteId() *string
@@ -175,6 +177,7 @@ type MagicTransitSiteLan interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNat(value *MagicTransitSiteLanNat)
+	PutRemoteSubnets(value interface{})
 	PutRoutedSubnets(value interface{})
 	PutStaticAddressing(value *MagicTransitSiteLanStaticAddressing)
 	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
@@ -200,6 +203,7 @@ type MagicTransitSiteLan interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPhysport()
+	ResetRemoteSubnets()
 	ResetRoutedSubnets()
 	ResetStaticAddressing()
 	ResetVlanTag()
@@ -530,6 +534,26 @@ func (j *jsiiProxy_MagicTransitSiteLan) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MagicTransitSiteLan) RemoteSubnets() MagicTransitSiteLanRemoteSubnetsList {
+	var returns MagicTransitSiteLanRemoteSubnetsList
+	_jsii_.Get(
+		j,
+		"remoteSubnets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteLan) RemoteSubnetsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"remoteSubnetsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicTransitSiteLan) RoutedSubnets() MagicTransitSiteLanRoutedSubnetsList {
 	var returns MagicTransitSiteLanRoutedSubnetsList
 	_jsii_.Get(
@@ -641,7 +665,7 @@ func (j *jsiiProxy_MagicTransitSiteLan) VlanTagInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
 func NewMagicTransitSiteLan(scope constructs.Construct, id *string, config *MagicTransitSiteLanConfig) MagicTransitSiteLan {
 	_init_.Initialize()
 
@@ -659,7 +683,7 @@ func NewMagicTransitSiteLan(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan} Resource.
 func NewMagicTransitSiteLan_Override(m MagicTransitSiteLan, scope constructs.Construct, id *string, config *MagicTransitSiteLanConfig) {
 	_init_.Initialize()
 
@@ -1217,6 +1241,17 @@ func (m *jsiiProxy_MagicTransitSiteLan) PutNat(value *MagicTransitSiteLanNat) {
 	)
 }
 
+func (m *jsiiProxy_MagicTransitSiteLan) PutRemoteSubnets(value interface{}) {
+	if err := m.validatePutRemoteSubnetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putRemoteSubnets",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MagicTransitSiteLan) PutRoutedSubnets(value interface{}) {
 	if err := m.validatePutRoutedSubnetsParameters(value); err != nil {
 		panic(err)
@@ -1310,6 +1345,14 @@ func (m *jsiiProxy_MagicTransitSiteLan) ResetPhysport() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPhysport",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteLan) ResetRemoteSubnets() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRemoteSubnets",
 		nil, // no parameters
 	)
 }

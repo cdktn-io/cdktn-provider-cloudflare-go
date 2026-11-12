@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}.
 type DataCloudflareZeroTrustOrganization interface {
 	cdktn.TerraformDataSource
 	AccountId() *string
@@ -36,6 +36,7 @@ type DataCloudflareZeroTrustOrganization interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableEndUserAppCreation() cdktn.IResolvable
 	// Experimental.
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
@@ -265,6 +266,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) DisableEndUserAppCreation() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"disableEndUserAppCreation",
 		&returns,
 	)
 	return returns
@@ -531,7 +542,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
 func NewDataCloudflareZeroTrustOrganization(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustOrganizationConfig) DataCloudflareZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -549,7 +560,7 @@ func NewDataCloudflareZeroTrustOrganization(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source.
 func NewDataCloudflareZeroTrustOrganization_Override(d DataCloudflareZeroTrustOrganization, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 

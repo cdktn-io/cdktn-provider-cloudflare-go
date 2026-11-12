@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareAiSearchNamespace) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareAiSearchNamespace) validatePutFilterParameters(value *DataCloudflareAiSearchNamespaceFilter) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareAiSearchNamespace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }

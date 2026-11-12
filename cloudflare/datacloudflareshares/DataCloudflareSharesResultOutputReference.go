@@ -46,6 +46,7 @@ type DataCloudflareSharesResultOutputReference interface {
 	OrganizationId() *string
 	Resources() DataCloudflareSharesResultResourcesList
 	Status() *string
+	Tags() cdktn.StringMap
 	TargetType() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -279,6 +280,16 @@ func (j *jsiiProxy_DataCloudflareSharesResultOutputReference) Status() *string {
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSharesResultOutputReference) Tags() cdktn.StringMap {
+	var returns cdktn.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

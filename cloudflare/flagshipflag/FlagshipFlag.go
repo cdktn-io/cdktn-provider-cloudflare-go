@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag cloudflare_flagship_flag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag cloudflare_flagship_flag}.
 type FlagshipFlag interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -62,6 +62,9 @@ type FlagshipFlag interface {
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
+	Metadata() *map[string]interface{}
+	SetMetadata(val *map[string]interface{})
+	MetadataInput() *map[string]interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -184,6 +187,7 @@ type FlagshipFlag interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetDescription()
+	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -435,6 +439,26 @@ func (j *jsiiProxy_FlagshipFlag) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_FlagshipFlag) Metadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FlagshipFlag) MetadataInput() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"metadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FlagshipFlag) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -586,7 +610,7 @@ func (j *jsiiProxy_FlagshipFlag) VariationsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
 func NewFlagshipFlag(scope constructs.Construct, id *string, config *FlagshipFlagConfig) FlagshipFlag {
 	_init_.Initialize()
 
@@ -604,7 +628,7 @@ func NewFlagshipFlag(scope constructs.Construct, id *string, config *FlagshipFla
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/flagship_flag cloudflare_flagship_flag} Resource.
 func NewFlagshipFlag_Override(f FlagshipFlag, scope constructs.Construct, id *string, config *FlagshipFlagConfig) {
 	_init_.Initialize()
 
@@ -726,6 +750,17 @@ func (j *jsiiProxy_FlagshipFlag)SetLifecycle(val *cdktn.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FlagshipFlag)SetMetadata(val *map[string]interface{}) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metadata",
 		val,
 	)
 }
@@ -1166,6 +1201,14 @@ func (f *jsiiProxy_FlagshipFlag) ResetDescription() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FlagshipFlag) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetMetadata",
 		nil, // no parameters
 	)
 }

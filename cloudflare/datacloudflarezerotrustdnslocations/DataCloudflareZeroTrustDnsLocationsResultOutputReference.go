@@ -30,6 +30,7 @@ type DataCloudflareZeroTrustDnsLocationsResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Dns64Enabled() cdktn.IResolvable
 	DnsDestinationIpsId() *string
 	DnsDestinationIpv6BlockId() *string
 	DohSubdomain() *string
@@ -139,6 +140,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationsResultOutputReference) Cre
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDnsLocationsResultOutputReference) Dns64Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"dns64Enabled",
 		&returns,
 	)
 	return returns

@@ -147,6 +147,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) validatePutServi
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) validatePutServiceTokenTagParameters(value *ZeroTrustAccessPolicyIncludeServiceTokenTag) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) validatePutUserRiskScoreParameters(value *ZeroTrustAccessPolicyIncludeUserRiskScore) error {
 	return nil
 }

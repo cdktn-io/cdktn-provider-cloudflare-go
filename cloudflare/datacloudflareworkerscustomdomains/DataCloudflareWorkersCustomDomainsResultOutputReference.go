@@ -29,6 +29,7 @@ type DataCloudflareWorkersCustomDomainsResultOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() cdktn.IResolvable
 	Environment() *string
 	// Experimental.
 	Fqn() *string
@@ -36,6 +37,7 @@ type DataCloudflareWorkersCustomDomainsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareWorkersCustomDomainsResult
 	SetInternalValue(val *DataCloudflareWorkersCustomDomainsResult)
+	PreviewsEnabled() cdktn.IResolvable
 	Service() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -126,6 +128,16 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference) Crea
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference) Environment() *string {
 	var returns *string
 	_jsii_.Get(
@@ -171,6 +183,16 @@ func (j *jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersCustomDomainsResultOutputReference) PreviewsEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"previewsEnabled",
 		&returns,
 	)
 	return returns

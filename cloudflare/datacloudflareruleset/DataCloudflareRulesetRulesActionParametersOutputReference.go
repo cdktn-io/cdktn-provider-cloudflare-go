@@ -120,6 +120,8 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	Uri() DataCloudflareRulesetRulesActionParametersUriOutputReference
 	Values() *[]*string
 	Vary() DataCloudflareRulesetRulesActionParametersVaryOutputReference
+	WebmcpEnabled() cdktn.IResolvable
+	WebmcpPacks() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -1024,6 +1026,26 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Va
 	_jsii_.Get(
 		j,
 		"vary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) WebmcpEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
+	_jsii_.Get(
+		j,
+		"webmcpEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) WebmcpPacks() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"webmcpPacks",
 		&returns,
 	)
 	return returns

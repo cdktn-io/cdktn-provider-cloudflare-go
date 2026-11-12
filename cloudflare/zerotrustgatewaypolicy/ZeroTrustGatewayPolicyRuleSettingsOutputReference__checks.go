@@ -93,17 +93,6 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateIn
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutAuditSshParameters(value *ZeroTrustGatewayPolicyRuleSettingsAuditSsh) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutBisoAdminControlsParameters(value *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -160,6 +149,17 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePu
 }
 
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutForensicCopyParameters(value *ZeroTrustGatewayPolicyRuleSettingsForensicCopy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutForwardParameters(value *ZeroTrustGatewayPolicyRuleSettingsForward) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

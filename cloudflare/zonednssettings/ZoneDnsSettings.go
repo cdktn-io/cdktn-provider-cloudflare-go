@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_dns_settings cloudflare_zone_dns_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings}.
 type ZoneDnsSettings interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -38,9 +38,6 @@ type ZoneDnsSettings interface {
 	ForEach() cdktn.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktn.ITerraformIterator)
-	FoundationDns() interface{}
-	SetFoundationDns(val interface{})
-	FoundationDnsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -184,7 +181,6 @@ type ZoneDnsSettings interface {
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetFlattenAllCnames()
-	ResetFoundationDns()
 	ResetInternalDns()
 	ResetMultiProvider()
 	ResetNameservers()
@@ -297,26 +293,6 @@ func (j *jsiiProxy_ZoneDnsSettings) ForEach() cdktn.ITerraformIterator {
 	_jsii_.Get(
 		j,
 		"forEach",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneDnsSettings) FoundationDns() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"foundationDns",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneDnsSettings) FoundationDnsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"foundationDnsInput",
 		&returns,
 	)
 	return returns
@@ -583,7 +559,7 @@ func (j *jsiiProxy_ZoneDnsSettings) ZoneModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
 func NewZoneDnsSettings(scope constructs.Construct, id *string, config *ZoneDnsSettingsConfig) ZoneDnsSettings {
 	_init_.Initialize()
 
@@ -601,7 +577,7 @@ func NewZoneDnsSettings(scope constructs.Construct, id *string, config *ZoneDnsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/zone_dns_settings cloudflare_zone_dns_settings} Resource.
 func NewZoneDnsSettings_Override(z ZoneDnsSettings, scope constructs.Construct, id *string, config *ZoneDnsSettingsConfig) {
 	_init_.Initialize()
 
@@ -657,17 +633,6 @@ func (j *jsiiProxy_ZoneDnsSettings)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneDnsSettings)SetFoundationDns(val interface{}) {
-	if err := j.validateSetFoundationDnsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"foundationDns",
 		val,
 	)
 }
@@ -1174,14 +1139,6 @@ func (z *jsiiProxy_ZoneDnsSettings) ResetFlattenAllCnames() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetFlattenAllCnames",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneDnsSettings) ResetFoundationDns() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetFoundationDns",
 		nil, // no parameters
 	)
 }

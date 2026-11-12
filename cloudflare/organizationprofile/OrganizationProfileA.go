@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile cloudflare_organization_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile cloudflare_organization_profile}.
 type OrganizationProfileA interface {
 	cdktn.TerraformResource
 	BusinessAddress() *string
@@ -171,6 +171,11 @@ type OrganizationProfileA interface {
 	// that needs it.
 	// Experimental.
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
+	ResetBusinessAddress()
+	ResetBusinessEmail()
+	ResetBusinessName()
+	ResetBusinessPhone()
+	ResetExternalMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -482,7 +487,7 @@ func (j *jsiiProxy_OrganizationProfileA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile cloudflare_organization_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile cloudflare_organization_profile} Resource.
 func NewOrganizationProfileA(scope constructs.Construct, id *string, config *OrganizationProfileAConfig) OrganizationProfileA {
 	_init_.Initialize()
 
@@ -500,7 +505,7 @@ func NewOrganizationProfileA(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/organization_profile cloudflare_organization_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/organization_profile cloudflare_organization_profile} Resource.
 func NewOrganizationProfileA_Override(o OrganizationProfileA, scope constructs.Construct, id *string, config *OrganizationProfileAConfig) {
 	_init_.Initialize()
 
@@ -1022,6 +1027,46 @@ func (o *jsiiProxy_OrganizationProfileA) RegisterProviderFeatureUsage(feature cd
 		o,
 		"registerProviderFeatureUsage",
 		[]interface{}{feature},
+	)
+}
+
+func (o *jsiiProxy_OrganizationProfileA) ResetBusinessAddress() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBusinessAddress",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationProfileA) ResetBusinessEmail() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBusinessEmail",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationProfileA) ResetBusinessName() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBusinessName",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationProfileA) ResetBusinessPhone() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBusinessPhone",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationProfileA) ResetExternalMetadata() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetExternalMetadata",
+		nil, // no parameters
 	)
 }
 

@@ -82,6 +82,8 @@ type ZeroTrustAccessGroupIncludeOutputReference interface {
 	SamlInput() interface{}
 	ServiceToken() ZeroTrustAccessGroupIncludeServiceTokenOutputReference
 	ServiceTokenInput() interface{}
+	ServiceTokenTag() ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference
+	ServiceTokenTagInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -141,6 +143,7 @@ type ZeroTrustAccessGroupIncludeOutputReference interface {
 	PutOkta(value *ZeroTrustAccessGroupIncludeOkta)
 	PutSaml(value *ZeroTrustAccessGroupIncludeSaml)
 	PutServiceToken(value *ZeroTrustAccessGroupIncludeServiceToken)
+	PutServiceTokenTag(value *ZeroTrustAccessGroupIncludeServiceTokenTag)
 	PutUserRiskScore(value *ZeroTrustAccessGroupIncludeUserRiskScore)
 	ResetAnyValidServiceToken()
 	ResetAuthContext()
@@ -167,6 +170,7 @@ type ZeroTrustAccessGroupIncludeOutputReference interface {
 	ResetOkta()
 	ResetSaml()
 	ResetServiceToken()
+	ResetServiceTokenTag()
 	ResetUserRiskScore()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -728,6 +732,26 @@ func (j *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) ServiceTokenInput
 	_jsii_.Get(
 		j,
 		"serviceTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) ServiceTokenTag() ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference {
+	var returns ZeroTrustAccessGroupIncludeServiceTokenTagOutputReference
+	_jsii_.Get(
+		j,
+		"serviceTokenTag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) ServiceTokenTagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serviceTokenTagInput",
 		&returns,
 	)
 	return returns
@@ -1317,6 +1341,17 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) PutServiceToken(v
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) PutServiceTokenTag(value *ZeroTrustAccessGroupIncludeServiceTokenTag) {
+	if err := z.validatePutServiceTokenTagParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putServiceTokenTag",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) PutUserRiskScore(value *ZeroTrustAccessGroupIncludeUserRiskScore) {
 	if err := z.validatePutUserRiskScoreParameters(value); err != nil {
 		panic(err)
@@ -1524,6 +1559,14 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) ResetServiceToken
 	_jsii_.InvokeVoid(
 		z,
 		"resetServiceToken",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) ResetServiceTokenTag() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetServiceTokenTag",
 		nil, // no parameters
 	)
 }

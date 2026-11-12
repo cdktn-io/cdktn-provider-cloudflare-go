@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow cloudflare_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow cloudflare_workflow}.
 type Workflow interface {
 	cdktn.TerraformResource
 	AccountId() *string
@@ -53,6 +53,9 @@ type Workflow interface {
 	Id() *string
 	Instances() cdktn.NumberMap
 	IsDeleted() *float64
+	Jurisdiction() *string
+	SetJurisdiction(val *string)
+	JurisdictionInput() *string
 	// Experimental.
 	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
@@ -189,6 +192,7 @@ type Workflow interface {
 	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetConcurrency()
 	ResetDefaultRetention()
+	ResetJurisdiction()
 	ResetLimits()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -421,6 +425,26 @@ func (j *jsiiProxy_Workflow) IsDeleted() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Workflow) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) JurisdictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Workflow) Lifecycle() *cdktn.TerraformResourceLifecycle {
 	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -642,7 +666,7 @@ func (j *jsiiProxy_Workflow) WorkflowNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig) Workflow {
 	_init_.Initialize()
 
@@ -660,7 +684,7 @@ func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.28.1/docs/resources/workflow cloudflare_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.29.0/docs/resources/workflow cloudflare_workflow} Resource.
 func NewWorkflow_Override(w Workflow, scope constructs.Construct, id *string, config *WorkflowConfig) {
 	_init_.Initialize()
 
@@ -727,6 +751,17 @@ func (j *jsiiProxy_Workflow)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workflow)SetJurisdiction(val *string) {
+	if err := j.validateSetJurisdictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jurisdiction",
 		val,
 	)
 }
@@ -1219,6 +1254,14 @@ func (w *jsiiProxy_Workflow) ResetDefaultRetention() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetDefaultRetention",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workflow) ResetJurisdiction() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJurisdiction",
 		nil, // no parameters
 	)
 }

@@ -19,8 +19,6 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	AllowChildBypass() interface{}
 	SetAllowChildBypass(val interface{})
 	AllowChildBypassInput() interface{}
-	AuditSsh() ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference
-	AuditSshInput() interface{}
 	BisoAdminControls() ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference
 	BisoAdminControlsInput() interface{}
 	BlockPage() ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
@@ -60,6 +58,8 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	EgressInput() interface{}
 	ForensicCopy() ZeroTrustGatewayPolicyRuleSettingsForensicCopyOutputReference
 	ForensicCopyInput() interface{}
+	Forward() ZeroTrustGatewayPolicyRuleSettingsForwardOutputReference
+	ForwardInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IgnoreCnameCategoryMatches() interface{}
@@ -134,13 +134,13 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
-	PutAuditSsh(value *ZeroTrustGatewayPolicyRuleSettingsAuditSsh)
 	PutBisoAdminControls(value *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls)
 	PutBlockPage(value *ZeroTrustGatewayPolicyRuleSettingsBlockPage)
 	PutCheckSession(value *ZeroTrustGatewayPolicyRuleSettingsCheckSession)
 	PutDnsResolvers(value *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers)
 	PutEgress(value *ZeroTrustGatewayPolicyRuleSettingsEgress)
 	PutForensicCopy(value *ZeroTrustGatewayPolicyRuleSettingsForensicCopy)
+	PutForward(value *ZeroTrustGatewayPolicyRuleSettingsForward)
 	PutL4Override(value *ZeroTrustGatewayPolicyRuleSettingsL4Override)
 	PutNotificationSettings(value *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
 	PutPayloadLog(value *ZeroTrustGatewayPolicyRuleSettingsPayloadLog)
@@ -150,7 +150,6 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	PutUntrustedCert(value *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert)
 	ResetAddHeaders()
 	ResetAllowChildBypass()
-	ResetAuditSsh()
 	ResetBisoAdminControls()
 	ResetBlockPage()
 	ResetBlockPageEnabled()
@@ -161,6 +160,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetDnsResolvers()
 	ResetEgress()
 	ResetForensicCopy()
+	ResetForward()
 	ResetIgnoreCnameCategoryMatches()
 	ResetInsecureDisableDnssecValidation()
 	ResetIpCategories()
@@ -226,26 +226,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AllowChild
 	_jsii_.Get(
 		j,
 		"allowChildBypassInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AuditSsh() ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference {
-	var returns ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference
-	_jsii_.Get(
-		j,
-		"auditSsh",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AuditSshInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"auditSshInput",
 		&returns,
 	)
 	return returns
@@ -476,6 +456,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ForensicCo
 	_jsii_.Get(
 		j,
 		"forensicCopyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Forward() ZeroTrustGatewayPolicyRuleSettingsForwardOutputReference {
+	var returns ZeroTrustGatewayPolicyRuleSettingsForwardOutputReference
+	_jsii_.Get(
+		j,
+		"forward",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ForwardInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forwardInput",
 		&returns,
 	)
 	return returns
@@ -1244,17 +1244,6 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Interpolat
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutAuditSsh(value *ZeroTrustGatewayPolicyRuleSettingsAuditSsh) {
-	if err := z.validatePutAuditSshParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putAuditSsh",
-		[]interface{}{value},
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutBisoAdminControls(value *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls) {
 	if err := z.validatePutBisoAdminControlsParameters(value); err != nil {
 		panic(err)
@@ -1317,6 +1306,17 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutForensi
 	_jsii_.InvokeVoid(
 		z,
 		"putForensicCopy",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutForward(value *ZeroTrustGatewayPolicyRuleSettingsForward) {
+	if err := z.validatePutForwardParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putForward",
 		[]interface{}{value},
 	)
 }
@@ -1414,14 +1414,6 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetAllow
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetAuditSsh() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAuditSsh",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetBisoAdminControls() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1498,6 +1490,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetForen
 	_jsii_.InvokeVoid(
 		z,
 		"resetForensicCopy",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetForward() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetForward",
 		nil, // no parameters
 	)
 }

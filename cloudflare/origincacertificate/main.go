@@ -60,6 +60,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestTypeInput", GoGetter: "RequestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestedValidity", GoMethod: "ResetRequestedValidity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
+			_jsii_.MemberProperty{JsiiProperty: "revokedAt", GoGetter: "RevokedAt"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -70,6 +72,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_OriginCaCertificate{}

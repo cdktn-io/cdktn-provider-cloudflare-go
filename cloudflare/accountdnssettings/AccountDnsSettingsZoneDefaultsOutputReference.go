@@ -31,9 +31,6 @@ type AccountDnsSettingsZoneDefaultsOutputReference interface {
 	FlattenAllCnames() interface{}
 	SetFlattenAllCnames(val interface{})
 	FlattenAllCnamesInput() interface{}
-	FoundationDns() interface{}
-	SetFoundationDns(val interface{})
-	FoundationDnsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalDns() AccountDnsSettingsZoneDefaultsInternalDnsOutputReference
@@ -92,7 +89,6 @@ type AccountDnsSettingsZoneDefaultsOutputReference interface {
 	PutNameservers(value *AccountDnsSettingsZoneDefaultsNameservers)
 	PutSoa(value *AccountDnsSettingsZoneDefaultsSoa)
 	ResetFlattenAllCnames()
-	ResetFoundationDns()
 	ResetInternalDns()
 	ResetMultiProvider()
 	ResetNameservers()
@@ -160,26 +156,6 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FlattenAllCnam
 	_jsii_.Get(
 		j,
 		"flattenAllCnamesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FoundationDns() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"foundationDns",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) FoundationDnsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"foundationDnsInput",
 		&returns,
 	)
 	return returns
@@ -422,17 +398,6 @@ func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetFlattenAllCn
 	_jsii_.Set(
 		j,
 		"flattenAllCnames",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference)SetFoundationDns(val interface{}) {
-	if err := j.validateSetFoundationDnsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"foundationDns",
 		val,
 	)
 }
@@ -737,14 +702,6 @@ func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) ResetFlattenAl
 	_jsii_.InvokeVoid(
 		a,
 		"resetFlattenAllCnames",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccountDnsSettingsZoneDefaultsOutputReference) ResetFoundationDns() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetFoundationDns",
 		nil, // no parameters
 	)
 }

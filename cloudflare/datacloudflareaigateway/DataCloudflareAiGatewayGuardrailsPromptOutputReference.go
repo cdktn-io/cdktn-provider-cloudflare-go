@@ -38,6 +38,7 @@ type DataCloudflareAiGatewayGuardrailsPromptOutputReference interface {
 	S11() *string
 	S12() *string
 	S13() *string
+	S14() *string
 	S2() *string
 	S3() *string
 	S4() *string
@@ -198,6 +199,16 @@ func (j *jsiiProxy_DataCloudflareAiGatewayGuardrailsPromptOutputReference) S13()
 	_jsii_.Get(
 		j,
 		"s13",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAiGatewayGuardrailsPromptOutputReference) S14() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s14",
 		&returns,
 	)
 	return returns

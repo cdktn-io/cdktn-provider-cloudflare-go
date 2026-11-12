@@ -51,7 +51,15 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) validateSetAllowManualOverrideParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) validateSetApiEndpointsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileGlobalAccelerationOutputReference) validateSetAutoswitchParameters(val interface{}) error {
 	return nil
 }
 

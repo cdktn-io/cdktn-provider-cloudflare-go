@@ -64,6 +64,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networksInput", GoGetter: "NetworksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "poolSets", GoGetter: "PoolSets"},
+			_jsii_.MemberProperty{JsiiProperty: "poolSetsInput", GoGetter: "PoolSetsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "popPools", GoGetter: "PopPools"},
 			_jsii_.MemberProperty{JsiiProperty: "popPoolsInput", GoGetter: "PopPoolsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -72,6 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "proxiedInput", GoGetter: "ProxiedInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAdaptiveRouting", GoMethod: "PutAdaptiveRouting"},
 			_jsii_.MemberMethod{JsiiMethod: "putLocationStrategy", GoMethod: "PutLocationStrategy"},
+			_jsii_.MemberMethod{JsiiMethod: "putPoolSets", GoMethod: "PutPoolSets"},
 			_jsii_.MemberMethod{JsiiMethod: "putRandomSteering", GoMethod: "PutRandomSteering"},
 			_jsii_.MemberMethod{JsiiMethod: "putRules", GoMethod: "PutRules"},
 			_jsii_.MemberMethod{JsiiMethod: "putSessionAffinityAttributes", GoMethod: "PutSessionAffinityAttributes"},
@@ -88,6 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLocationStrategy", GoMethod: "ResetLocationStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworks", GoMethod: "ResetNetworks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPoolSets", GoMethod: "ResetPoolSets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPopPools", GoMethod: "ResetPopPools"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProxied", GoMethod: "ResetProxied"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRandomSteering", GoMethod: "ResetRandomSteering"},
@@ -211,6 +215,269 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerLocationStrategyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSets",
+		reflect.TypeOf((*LoadBalancerPoolSets)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponse",
+		reflect.TypeOf((*LoadBalancerPoolSetsFixedResponse)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsFixedResponseOutputReference",
+		reflect.TypeOf((*LoadBalancerPoolSetsFixedResponseOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "contentType", GoGetter: "ContentType"},
+			_jsii_.MemberProperty{JsiiProperty: "contentTypeInput", GoGetter: "ContentTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
+			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "messageBody", GoGetter: "MessageBody"},
+			_jsii_.MemberProperty{JsiiProperty: "messageBodyInput", GoGetter: "MessageBodyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContentType", GoMethod: "ResetContentType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMessageBody", GoMethod: "ResetMessageBody"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStatusCode", GoMethod: "ResetStatusCode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "statusCode", GoGetter: "StatusCode"},
+			_jsii_.MemberProperty{JsiiProperty: "statusCodeInput", GoGetter: "StatusCodeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerPoolSetsFixedResponseOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsList",
+		reflect.TypeOf((*LoadBalancerPoolSetsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerPoolSetsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatch",
+		reflect.TypeOf((*LoadBalancerPoolSetsMatch)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchOutputReference",
+		reflect.TypeOf((*LoadBalancerPoolSetsMatchOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "default", GoGetter: "Default"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultInput", GoGetter: "DefaultInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putTopology", GoMethod: "PutTopology"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefault", GoMethod: "ResetDefault"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTopology", GoMethod: "ResetTopology"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "topology", GoGetter: "Topology"},
+			_jsii_.MemberProperty{JsiiProperty: "topologyInput", GoGetter: "TopologyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerPoolSetsMatchOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopology",
+		reflect.TypeOf((*LoadBalancerPoolSetsMatchTopology)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsMatchTopologyOutputReference",
+		reflect.TypeOf((*LoadBalancerPoolSetsMatchTopologyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "countries", GoGetter: "Countries"},
+			_jsii_.MemberProperty{JsiiProperty: "countriesInput", GoGetter: "CountriesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pops", GoGetter: "Pops"},
+			_jsii_.MemberProperty{JsiiProperty: "popsInput", GoGetter: "PopsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "regions", GoGetter: "Regions"},
+			_jsii_.MemberProperty{JsiiProperty: "regionsInput", GoGetter: "RegionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCountries", GoMethod: "ResetCountries"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPops", GoMethod: "ResetPops"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRegions", GoMethod: "ResetRegions"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerPoolSetsMatchTopologyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOutputReference",
+		reflect.TypeOf((*LoadBalancerPoolSetsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "disabled", GoGetter: "Disabled"},
+			_jsii_.MemberProperty{JsiiProperty: "disabledInput", GoGetter: "DisabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fixedResponse", GoGetter: "FixedResponse"},
+			_jsii_.MemberProperty{JsiiProperty: "fixedResponseInput", GoGetter: "FixedResponseInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "match", GoGetter: "Match"},
+			_jsii_.MemberProperty{JsiiProperty: "matchInput", GoGetter: "MatchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "overrides", GoGetter: "Overrides"},
+			_jsii_.MemberProperty{JsiiProperty: "overridesInput", GoGetter: "OverridesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putFixedResponse", GoMethod: "PutFixedResponse"},
+			_jsii_.MemberMethod{JsiiMethod: "putMatch", GoMethod: "PutMatch"},
+			_jsii_.MemberMethod{JsiiMethod: "putOverrides", GoMethod: "PutOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisabled", GoMethod: "ResetDisabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFixedResponse", GoMethod: "ResetFixedResponse"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMatch", GoMethod: "ResetMatch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOverrides", GoMethod: "ResetOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerPoolSetsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverrides",
+		reflect.TypeOf((*LoadBalancerPoolSetsOverrides)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerPoolSetsOverridesOutputReference",
+		reflect.TypeOf((*LoadBalancerPoolSetsOverridesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fallbackPool", GoGetter: "FallbackPool"},
+			_jsii_.MemberProperty{JsiiProperty: "fallbackPoolInput", GoGetter: "FallbackPoolInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "poolDefaultWeight", GoGetter: "PoolDefaultWeight"},
+			_jsii_.MemberProperty{JsiiProperty: "poolDefaultWeightInput", GoGetter: "PoolDefaultWeightInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pools", GoGetter: "Pools"},
+			_jsii_.MemberProperty{JsiiProperty: "poolsInput", GoGetter: "PoolsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "poolWeights", GoGetter: "PoolWeights"},
+			_jsii_.MemberProperty{JsiiProperty: "poolWeightsInput", GoGetter: "PoolWeightsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFallbackPool", GoMethod: "ResetFallbackPool"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPoolDefaultWeight", GoMethod: "ResetPoolDefaultWeight"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPools", GoMethod: "ResetPools"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPoolWeights", GoMethod: "ResetPoolWeights"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSteeringPolicy", GoMethod: "ResetSteeringPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "steeringPolicy", GoGetter: "SteeringPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "steeringPolicyInput", GoGetter: "SteeringPolicyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerPoolSetsOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},

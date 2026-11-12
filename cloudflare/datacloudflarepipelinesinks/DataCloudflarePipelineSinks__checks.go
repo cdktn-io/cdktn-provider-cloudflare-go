@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataCloudflarePipelineSinks) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflarePipelineSinks) validateSetDirectionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflarePipelineSinks) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -244,6 +252,14 @@ func (j *jsiiProxy_DataCloudflarePipelineSinks) validateSetMaxItemsParameters(va
 }
 
 func (j *jsiiProxy_DataCloudflarePipelineSinks) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflarePipelineSinks) validateSetOrderByParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

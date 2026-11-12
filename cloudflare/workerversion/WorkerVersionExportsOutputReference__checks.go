@@ -177,6 +177,14 @@ func (j *jsiiProxy_WorkerVersionExportsOutputReference) validateSetComplexObject
 	return nil
 }
 
+func (j *jsiiProxy_WorkerVersionExportsOutputReference) validateSetContainerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkerVersionExportsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktn.IResolvable:
